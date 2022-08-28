@@ -1,0 +1,38 @@
+/* purpose responsive padding  */
+
+@media (min-width: 1040px) and (max-width: 1103px) {
+  .purpose-padding {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1104px) and (max-width: 1109px) {
+  .purpose-padding {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1110px) and (max-width: 1196px) {
+  .purpose-padding {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1198px) and (max-width: 1292px) {
+  .purpose-padding {
+    padding-bottom: 44px;
+  }
+}
+@media (min-width: 1294px) and (max-width: 1376px) {
+  .purpose-padding {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1422px) and (max-width: 1439px) {
+  .purpose-padding {
+    padding-bottom: 44px;
+  }
+}
+@media (min-width: 1536px) {
+  .purpose-padding {
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,90 @@
+/* scroll animation  */
+@keyframes scrollFromBottomAnimation {
+    0% {
+      transform: translateY(10%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  .scroll-animation {
+    animation: scrollFromBottomAnimation 0.8s !important;
+  }
+
+@keyframes scrollFromBottomAnimationLess {
+    0% {
+      transform: translateY(1%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  .scroll-animation-less {
+    animation: scrollFromBottomAnimationLess 0.8s !important;
+  }
+
+
+
+@keyframes scrollFromTopAnimation {
+    0% {
+      transform: translateY(-20%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  .scroll-animation-top {
+    animation: scrollFromTopAnimation 0.8s !important;
+  }
+
+@keyframes zooming {
+    0% {
+      transform: scale(95%);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+  
+  .zooming-animation {
+    animation: zooming 0.6s ease-in-out !important;
+  }
+@keyframes zoomingLess {
+    0% {
+      transform: scale(99%);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+  
+  .zooming-less-animation {
+    animation: zoomingLess 0.6s ease-in-out !important;
+  }
+    
+ @keyframes careerScrollbar {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .careerScrollbar {
+    animation: careerScrollbar 0.7s;
+  } 
+
+  .service-scroll {
+    animation: scrollFromBottomAnimationLess 0.8s !important;
+  }
+  @media (min-width: 1024px) {
+    .service-scroll {
+      animation: scrollFromBottomAnimation 0.8s !important;
+    }
+  }

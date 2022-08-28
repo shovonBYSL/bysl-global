@@ -1,0 +1,44 @@
+.bg-1{
+    animation: 
+      bg-1 15s linear infinite alternate;
+  }
+  .bg-2{
+    animation: 
+      bg-2 15s linear infinite alternate;
+  }
+  
+  @keyframes bg-1 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(0px, 250px);
+    }
+    
+    80% {
+      transform: translate(0px, 50px);
+    }
+  }
+  @keyframes bg-2 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(0, 250px);
+    }
+    
+    80% {
+      transform: translate(0, 50px);
+    }
+  }
+
+  @media (min-width: 2526px) {
+    .bg-1{
+      left:-15% !important
+    }
+    .bg-2{
+      right:-15% !important
+    }
+  }

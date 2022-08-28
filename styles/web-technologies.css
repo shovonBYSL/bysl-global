@@ -1,0 +1,50 @@
+.img_animate1 div.rounded-full {
+  cursor: pointer;
+}
+.img_animate1 div.rounded-full p {
+  background: #fff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(57, 62, 80, 0.5);
+}
+.img_animate1 div.rounded-full:hover p {
+  background: #fff;
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: visible;
+}
+.img_animate1 div.rounded-full p::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  background: rgb(255, 255, 255);
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 768px) {
+  .img_animate1 div.rounded-full p {
+    font-size: 7.08642px;
+    line-height: 8px;
+  }
+  .img_animate1 div.rounded-full:hover p {
+    top: -30px;
+  } 
+}

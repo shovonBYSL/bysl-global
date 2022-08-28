@@ -1,0 +1,168 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "SF Pro Display", sans-serif !important;
+  background-color: #f8f8fa;
+}
+/* html {
+  scroll-behavior: smooth !important;
+} */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.clip-video video {
+  clip-path: inset(1px 1px);
+}
+.box {
+  margin: 0 24px;
+}
+.aiml-box {
+  margin-left: 24px;
+}
+.navbar {
+  display: none;
+}
+#nav:hover .navbar {
+  display: block;
+}
+
+.nav-arrow-icon {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.nav-dropdown:hover .nav-arrow-icon {
+  visibility: visible;
+  opacity: 100;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-47%, -50%);
+}
+
+.text-position-middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-position-left {
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* media queries  */
+@media (min-width: 360px) {
+  .mobileTech .swiper-slide-active .mobileTechImg {
+    height: 325px;
+  }
+}
+@media (min-width: 640px) {
+  .box {
+    margin: 0 40px;
+  }
+  .aiml-box, .marketing-box {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .mobileTech .swiper-slide-active .mobileTechImg {
+    width: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .box,
+  .resource-box {
+    margin: 0 60px;
+  }
+  .aiml-box, .marketing-box {
+    margin-left: 60px;
+  }
+  body {
+    overflow: auto !important;
+  }
+}
+@media (min-width: 1280px) {
+  .box,
+  .resource-box {
+    margin: 0 100px;
+  }
+  .aiml-box, .marketing-box {
+    margin-left: 100px;
+  }
+  .mobileTech .swiper-slide-active .mobileTechImg {
+    height: 410px;
+    width: 190px;
+  }
+}
+@media (min-width: 1440px) {
+  .box,
+  .resource-box {
+    margin: 0 120px;
+  }
+  .aiml-box, .marketing-box {
+    margin-left: 120px;
+  }
+}
+@media (min-width: 1536px) {
+  .box,
+  .resource-box,
+  .resource-banner-box {
+    max-width: 1320px;
+    margin: auto !important;
+  }
+  .aiml-box, .marketing-box {
+    max-width: 1450px;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1700px) {
+  .aiml-box, .marketing-box {
+    max-width: 1610px;
+    margin-left: auto;
+  }
+}
+@media (min-width: 2560px) {
+  .aiml-box, .marketing-box {
+    max-width: 1320px;
+    margin: auto;
+  }
+}
+
+/* .custom-gap */
+@media (min-width: 913px) and (max-width: 959px) {
+  .custom-gap {
+    margin-top: -140px !important;
+  }
+}
+
+/* cyber technologies */
+@media (max-width: 639px) {
+  .cyber-text-middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
