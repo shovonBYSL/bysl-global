@@ -57,12 +57,12 @@ const ARVRTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/technologies/ar_vr/ar_vr_banner.mp4",
+      banner: "/images/technologies/ar_vr/ar_vr_banner.webm",
       arVrServices: arVrServicesData,
       arVrWorld: arVrWorldData,
       arVrFeatures: arVrFeaturesData,
-      demoVideo: "/images/technologies/ar_vr/demo.mp4",
-      researchVideo: "/images/technologies/ar_vr/research.mp4",
+      demoVideo: "/images/technologies/ar_vr/demo.webm",
+      researchVideo: "/images/technologies/ar_vr/research.webm",
     },
   };
 }

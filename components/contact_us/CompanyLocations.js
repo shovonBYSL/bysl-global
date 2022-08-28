@@ -37,7 +37,7 @@ const CompanyLocations = ({ data }) => {
           id === location && (
             <div
               key={id}
-              className={`supplyTab-animation h-[350px] pt-16 pl-4 xs:pl-8 md:pl-16 xl:pt-20 xl:pl-24 bg-[#EBEFF5] rounded-xl lg:rounded-[20px] relative ${
+              className={`zooming-less-animation h-[350px] pt-16 pl-4 xs:pl-8 md:pl-16 xl:pt-20 xl:pl-24 bg-[#EBEFF5] rounded-xl lg:rounded-[20px] relative ${
                 (id === 0 && "bg-[url('/images/locations/uae.svg')]") ||
                 (id === 1 && "bg-[url('/images/locations/usa.svg')]") ||
                 (id === 2 && "bg-[url('/images/locations/singapore.svg')]") ||

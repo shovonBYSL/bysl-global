@@ -87,7 +87,7 @@ const cloudSupportData = {
     "Support during working hours",
     "Deploy 3rd party services",
   ],
-  video: "/images/technologies/cloud/cloud_support.mp4",
+  video: "/images/technologies/cloud/cloud_support.webm",
 };
 
 export { cloudServicesData, cloudFeaturesData, cloudSupportData };

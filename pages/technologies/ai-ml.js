@@ -61,8 +61,8 @@ export async function getStaticProps() {
       aimlFeatures: aimlFeaturesData,
       aimlServices: aimlServicesData,
       servicesVideo:
-        "/images/technologies/ai_ml/services/aiml_services_banner.mp4",
-      applicationsVideo: "/images/technologies/ai_ml/aiml_solutions.mp4",
+        "/images/technologies/ai_ml/services/aiml_services_banner.webm",
+      applicationsVideo: "/images/technologies/ai_ml/aiml_solutions.webm",
       aimlUserExperience: aimlUserExperienceData,
     },
   };

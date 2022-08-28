@@ -80,12 +80,12 @@ const productsData = [
   {
     id: 0,
     title: "Product marketing motion video",
-    video: "/images/divisions/ict/products/0.mp4",
+    video: "/images/divisions/ict/products/0.webm",
   },
   {
     id: 1,
     title: "Shoe branding motion video",
-    video: "/images/divisions/ict/products/1.mp4",
+    video: "/images/divisions/ict/products/1.webm",
   },
   {
     id: 2,

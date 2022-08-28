@@ -81,7 +81,7 @@ export async function getStaticProps() {
       iotAppDevelopmentBanner: iotAppDevelopmentBannerData,
       iotSolutions: iotSolutionsData,
       iotsolutionsVideo:
-        "/images/technologies/iot/solutions/iot_solutions_banner.mp4",
+        "/images/technologies/iot/solutions/iot_solutions_banner.webm",
       iotSupport: iotSupportData,
     },
   };
