@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+
 import Modal from "./Modal";
 
 const FeaturesCard = ({ data }) => {
@@ -36,6 +37,7 @@ const FeaturesCard = ({ data }) => {
                 placeholder="blur"
                 blurDataURL={img}
                 layout="fill"
+                objectFit="contain"
                 alt=""
               />
             </div>

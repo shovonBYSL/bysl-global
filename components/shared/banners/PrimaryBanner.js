@@ -17,24 +17,27 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
   const foodTechPath = getPath("/divisions/food-tech");
   const dataSciencePath = getPath("/divisions/data-science");
   const informationPath = getPath("/divisions/information-security");
-  const servicePath = getPath("/service");
   const manufacturingPath = getPath("/solutions/manufacturing");
+  const servicePath = getPath("/service");
 
   return (
     <div
       className={`md:flex justify-between gap-6 max-h-max 
-      ${aiMlPath ? "items-center pt-10 md:pt-0" : "py-10 xl:py-16"} 
-      ${cyberPath && "!pb-0"} ${itesPath && "!pb-0"}`}
+      ${
+        (aiMlPath ? "items-center pt-10 md:pt-0" : "py-10 xl:py-16") ||
+        (cyberPath && "!pb-0") ||
+        (itesPath && "!pb-0")
+      }`}
     >
       <div
         className={`mb-10 md:my-0 md:pt-10 
-        ${ictPath ? "md:w-[50%]" : "md:w-[55%]"} 
-        ${webPath && "md:pt-5 lg:pt-10 xl:pt-12 2xl:pt-16"} 
-        ${aiMlPath && "mt-0"} 
         ${
           (iotPath && "xl:!pt-20") ||
           (cloudPath && "xl:!pt-20") ||
-          (blockchainPath && "!pt-20")
+          (blockchainPath && "!pt-20") ||
+          (aiMlPath && "mt-0") ||
+          (webPath && "md:pt-5 lg:pt-10 xl:pt-12 2xl:pt-16") ||
+          (ictPath ? "md:w-[50%]" : "md:w-[55%]")
         }`}
       >
         <div className="text-center md:text-start">
@@ -58,13 +61,15 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
         ) : (
           <div
             className={`h-56 xs:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative 
-            ${ictPath && "xl:h-[40vh]"}
-            ${dataSciencePath && "xl:h-[40vh]"}
-            ${mobilePath && "xl:h-[42vh]"}
-            ${servicePath && "xl:h-[40vh]"}
-            ${manufacturingPath && "xl:h-[450px]"}
-            ${informationPath && "xl:h-[280px]"}
-            ${foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]"}`}
+            ${
+              (ictPath && "xl:h-[40vh]") ||
+              (dataSciencePath && "xl:h-[40vh]") ||
+              (mobilePath && "xl:h-[42vh]") ||
+              (servicePath && "xl:h-[40vh]") ||
+              (manufacturingPath && "xl:h-[450px]") ||
+              (informationPath && "xl:h-[280px]") ||
+              (foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]")
+            }`}
           >
             <Image
               src={img}

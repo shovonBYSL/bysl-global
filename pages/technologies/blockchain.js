@@ -27,7 +27,8 @@ const BlockchainTechnologies = ({
         sub="Exploring the unique potential of blockchain technology for wider accessibility and control of data and greater security.   "
         img={banner}
       >
-        Blockchain for greater accessibility &
+        Blockchain for greater
+        <TextGradient text=" accessibility " />&
         <br className="hidden sm:block" />
         <TextGradient text=" security" /> of data
       </PrimaryBanner>

@@ -36,7 +36,7 @@ const InformationSecurity = ({
       </div>
 
       {/* services section  */}
-      <div className="pt-10 xl:pt-16 bg-blue-300">
+      <div className="bg-blue-300">
         <div className="box">
           <BannerWithBullets data={informationSecurityServices} reversed={true}>
             Masterful engineering for higher control, improved security and

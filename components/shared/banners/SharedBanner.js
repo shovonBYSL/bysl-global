@@ -22,6 +22,7 @@ const SectionBanner = ({ data }) => {
           blurDataURL={`/images/banners/${title}_banner.svg`}
           height={283}
           width={452}
+          objectFit="contain"
           alt=""
         />
       </div>
@@ -68,6 +69,7 @@ const TextBanner = (props) => {
           blurDataURL={img}
           height={380}
           width={648}
+          objectFit="contain"
           alt=""
         />
       </div>

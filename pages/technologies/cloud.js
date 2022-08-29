@@ -62,7 +62,7 @@ export async function getStaticProps() {
     props: {
       banner: "/images/banners/cloud_technologies_banner.webm",
       cloudServices: cloudServicesData,
-      cloudServiceImg: "/images/technologies/cloud/services/services.svg",
+      cloudServiceImg: "/images/technologies/cloud/services/services.png",
       cloudFeatures: cloudFeaturesData,
       cloudSupport: cloudSupportData,
     },

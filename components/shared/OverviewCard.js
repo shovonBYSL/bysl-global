@@ -43,6 +43,7 @@ const OverviewCard = (props) => {
                   placeholder="blur"
                   blurDataURL={img}
                   layout="fill"
+                  objectFit="contain"
                   alt=""
                 />
               )}

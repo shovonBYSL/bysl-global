@@ -4,7 +4,6 @@ import TriangleCardBanner from "../../components/shared/banners/TriangleCardBann
 import IconCardGroup3 from "../../components/shared/IconCardGroup3";
 import ImageShowcase from "../../components/shared/ImageShowcase";
 import ARVRBanner from "../../components/technologies_pages/ar_vr_technologies/ARVRBanner";
-import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   arVrFeaturesData,
   arVrServicesData,

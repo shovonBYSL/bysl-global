@@ -1,26 +1,29 @@
-import Image from "next/image";
+import { Link as Scroll } from "react-scroll";
 
-import SolutionCommonBannerText from "../SolutionCommonBanner";
+import { TextGradient } from "../../shared/SharedTextgroups";
+import SolutionsTextImageBanner from "../SolutionsTextImageBanner";
 
 const FinanceBanner = ({ data }) => {
   return (
-    <div className="pt-6 md:pt-0 grid grid-cols-12 gap-6">
-      <div className="col-span-12 md:col-span-7 mb-6 md:mt-10">
-        <SolutionCommonBannerText data={data} />
+    <SolutionsTextImageBanner data={data}>
+      <div className="w-full mt-6 lg:mt-8 xl:mt-10 flex flex-col md:flex-row gap-6 justify-center md:justify-start items-center">
+        <Scroll smooth={true} offset={-60} duration={500} to="overview">
+          <div className="h-max text-center rounded-md text-sm font-medium py-2 xl:py-3 w-52 md:w-[137px] hover:cursor-pointer text-white bg-gradient-to-r hover:from-blue-700 hover:to-blue-700  from-blue-900 to-blue-700">
+            Overview
+          </div>
+        </Scroll>
+        <Scroll
+          smooth={true}
+          offset={-60}
+          duration={500}
+          to="problems&solutions"
+        >
+          <div className="h-max text-center rounded-md text-sm font-medium py-2 xl:py-3 w-52 hover:cursor-pointer bg-white scrollBtn">
+            <TextGradient text="Problems & Solutions" />
+          </div>
+        </Scroll>
       </div>
-      <div className="col-span-12 md:col-span-5">
-        <Image
-          src={data.img}
-          placeholder="blur"
-          blurDataURL={data.img}
-          objectFit="contain"
-          height={444}
-          width={536}
-          priority
-          alt=""
-        />
-      </div>
-    </div>
+    </SolutionsTextImageBanner>
   );
 };
 

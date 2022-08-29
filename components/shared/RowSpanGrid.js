@@ -28,7 +28,7 @@ const RowSpanGrid = (props) => {
                   }`}
                 >
                   <div className="h-6 w-6 xl:h-10 xl:w-10 relative">
-                    <Image src={img} layout="fill" alt="" />
+                    <Image src={img} layout="fill" alt="" objectFit="contain" />
                   </div>
                 </div>
                 <p

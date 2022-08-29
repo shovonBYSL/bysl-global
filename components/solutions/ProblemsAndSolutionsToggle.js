@@ -27,28 +27,31 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
     <div id="problems&solutions" className="py-10 xl:py-16">
       <SectionHeader>{children}</SectionHeader>
       <div className="mt-10 2xl:mt-16">
-        <div className="mb-10 2xl:mb-16 w-max mx-auto flex items-center gap-10 ">
+        <div className="mb-10 2xl:mb-16 w-max mx-auto flex items-center gap-6 md:gap-10 ">
           <p
             onClick={handleProblems}
-            className={`text-xl 2xl:text-2xl font-medium hover:cursor-pointer ${
+            className={`text-xl 2xl:text-2xl font-medium hover:cursor-pointer transition-all duration-300 ${
               !problems && "opacity-40"
             }`}
           >
             <TextGradient text="Problems" />
           </p>
+
           <div
             onClick={toggleHandler}
-            className={`h-5 w-10 2xl:h-6 2xl:w-12 bg-[#E1EAF4] rounded-[20px] flex hover:cursor-pointer transition-all duration-1000 ${
-              !problems && "justify-end"
-            }`}
+            className="h-5 w-10 2xl:h-6 2xl:w-12 bg-[#E1EAF4] rounded-[20px] flex hover:cursor-pointer"
           >
-            <div className="h-6 2xl:h-8 w-6 2xl:w-8 -mt-[2px] 2xl:-mt-1 rounded-full bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center">
+            <div
+              className={`transition-all duration-300 h-6 2xl:h-8 w-6 2xl:w-8 -mt-[2px] 2xl:-mt-1 rounded-full bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center translate-x-0 ${
+                !problems && "translate-x-[50%]"
+              }`}
+            >
               <span className="h-4 2xl:h-5 w-4 2xl:w-5 bg-white rounded-full" />
             </div>
           </div>
           <p
             onClick={handleSolutions}
-            className={`text-xl 2xl:text-2xl font-medium hover:cursor-pointer ${
+            className={`text-xl 2xl:text-2xl font-medium hover:cursor-pointer transition-all duration-300 ${
               !solutions && "opacity-40"
             }`}
           >
@@ -74,8 +77,8 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
                     <div className="relative h-3 w-5 lg:h-5 2xl:h-6 lg:w-8 2xl:w-10">
                       <Image
                         src={problems ? problemImg : solutionImg}
-                        alt=""
                         layout="fill"
+                        alt=""
                       />
                     </div>
                   </div>

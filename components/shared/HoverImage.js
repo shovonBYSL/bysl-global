@@ -9,6 +9,7 @@ const HoverImage = ({ img1, img2 }) => {
           placeholder="blur"
           blurDataURL={img1}
           layout="fill"
+          objectFit="contain"
           alt=""
         />
       </div>
@@ -18,6 +19,7 @@ const HoverImage = ({ img1, img2 }) => {
           placeholder="blur"
           blurDataURL={img2}
           layout="fill"
+          objectFit="contain"
           alt=""
         />
       </div>

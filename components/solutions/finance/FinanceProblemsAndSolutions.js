@@ -73,12 +73,15 @@ const FinanceProblemsAndSolutions = ({ data }) => {
   };
 
   const TabContent = (props) => {
-    const { solution, solutionInfo, solutionPoints, benefits } = tabData;
+    const { problem, solution, solutionInfo, solutionPoints, benefits } =
+      tabData;
 
     return (
       <div className={`${props.animation && "scroll-animation-less"}`}>
         <Title label="Solution" />
-        <Heading label={solution} />
+        {/* temporary  */}
+        <Heading label={problem} />
+        {/* <Heading label={solution} /> */}
         <Info text={solutionInfo} />
         <Info text={benefits} />
         <Title label="Benefits" />

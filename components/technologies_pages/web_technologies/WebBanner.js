@@ -1,10 +1,11 @@
 const WebBanner = ({ img }) => {
   const Tech = ({ img, title }) => {
     return (
-      <>
+      <div className="relative">
+        {/* Image */}
         <img className="w-full h-full" src={img} alt="" />
         <p>{title}</p>
-      </>
+      </div>
     );
   };
 

@@ -7,8 +7,7 @@ const navbars = [
         id: 0,
         title: "Retail",
         subTitle: "Powerful web solutions to scale exponentially",
-        link: "#",
-        // link: "/solutions/retail",
+        link: "/solutions/retail",
       },
       {
         id: 1,

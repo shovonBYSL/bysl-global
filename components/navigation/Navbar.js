@@ -41,7 +41,7 @@ const Navbar = ({ colorChange, specificPath }) => {
         } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
       >
         <span
-          className={`mr-1 hover:text-gray-700 transition duration-300 ${
+          className={`mr-1 hover:text-gray-600 transition duration-300 ${
             router.asPath === link &&
             "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
           } ${!dropdowns && "pb-5"}`}
@@ -107,7 +107,7 @@ const Navbar = ({ colorChange, specificPath }) => {
             ? "bg-white shadow-[0px_-5px_20px_#d7d7d7]"
             : specificPath
             ? "backdrop-blur-sm bg-white/10 "
-            : "bg-transparent mt-5"
+            : "bg-transparent !pt-10"
         }`}
       >
         <div className="box flex justify-between items-start w-full">

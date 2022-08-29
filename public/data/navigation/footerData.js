@@ -6,7 +6,8 @@ const footerData = [
       {
         id: 0,
         name: "Retail",
-        path: "/solutions/retail",
+        path: "#",
+        // path: "/solutions/retail",
       },
       {
         id: 1,
