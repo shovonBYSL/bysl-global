@@ -36,3 +36,11 @@
     padding-bottom: 50px;
   }
 }
+
+
+/* values margin  */
+@media (min-width: 1440px) {
+  .values-margin{
+    margin-top: -30px;
+  }
+}

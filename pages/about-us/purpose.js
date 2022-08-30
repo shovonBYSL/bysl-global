@@ -12,8 +12,8 @@ const CompanyPurpose = ({ purposeBanner, purposeCard, purposeButton }) => {
       cardData={purposeCard}
       buttonData={purposeButton}
     >
-      Our purpose is to
-      <TextGradient text=" Explore, Innovate and Invest " />
+      Our purpose is to explore, innovate and invest
+      <br className="hidden xs:block" />
       for a better tomorrow.
     </CompanyInfoLayout>
   );

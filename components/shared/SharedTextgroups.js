@@ -18,7 +18,7 @@ const BannerSubTitle = (props) => {
 
 const CompanyInfoTitle = ({ children }) => {
   return (
-    <p className="w-11/12 mx-auto text-center break-words leading-5 3xl:leading-[47px] font-semibold text-lg md:text-xl lg:text-3xl 3xl:text-[40px] text-gray-800 ">
+    <p className="mx-auto text-center break-words xl:leading-[47px] font-semibold text-lg md:text-xl lg:text-3xl xl:text-[40px] text-gray-800 ">
       {children}
     </p>
   );

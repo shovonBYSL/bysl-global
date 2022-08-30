@@ -2,10 +2,10 @@ import Footer from "../components/navigation/Footer";
 import ResponsiveNavbar from "../components/navigation/ResponsiveNavbar";
 import CareerFooter from "../components/shared/CareerFooter";
 import CompanyInfoCardGroup from "../components/shared/CompanyInfoCardGroup";
+import ButtonGroup from "../components/shared/buttons/ButtonGroup";
 import PageTitle from "../components/shared/PageTitle";
 import { SectionBanner } from "../components/shared/banners/SharedBanner";
 import { CompanyInfoTitle } from "../components/shared/SharedTextgroups";
-import ButtonGroup from "../components/shared/buttons/ButtonGroup";
 import { getPath } from "../utils/paths";
 
 const CompanyInfoLayout = ({
@@ -15,7 +15,7 @@ const CompanyInfoLayout = ({
   cardData,
   buttonData,
 }) => {
-  const culturePath = getPath("/culture");
+  const culturePath = getPath("/about-us/culture");
 
   return (
     <>
@@ -26,7 +26,7 @@ const CompanyInfoLayout = ({
         <div
           className={`${
             !culturePath && "lg:px-8 2xl:px-16 3xl:px-28 "
-          }lg:py-8 2xl:py-8 3xl:py-16`}
+          } py-10 2xl:py-16`}
         >
           <CompanyInfoTitle>{children}</CompanyInfoTitle>
           <CompanyInfoCardGroup data={cardData} />

@@ -23,6 +23,7 @@ const Navbar = ({ colorChange, specificPath }) => {
                 : "/images/logo.svg"
             }
             layout="fill"
+            priority
             alt=""
           />
         </div>
@@ -37,11 +38,13 @@ const Navbar = ({ colorChange, specificPath }) => {
     return (
       <button
         className={`${
-          !colorChange && specificPath ? "text-white" : "text-gray-500"
-        } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
+          !colorChange && specificPath
+            ? "text-white hover:text-white/80"
+            : "text-gray-500 hover:text-gray-800/90"
+        } text-sm lg:text-base font-normal py-2 px-4 2xl:px-6 rounded inline-flex items-center transition duration-100`}
       >
         <span
-          className={`mr-1 hover:text-gray-600 transition duration-300 ${
+          className={`mr-1 transition duration-300 ${
             router.asPath === link &&
             "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
           } ${!dropdowns && "pb-5"}`}

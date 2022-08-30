@@ -12,8 +12,15 @@ const CompanyCulture = ({ cultureBanner, cultureCard, cultureButton }) => {
       cardData={cultureCard}
       buttonData={cultureButton}
     >
-      Our mission is to serve the world with exceptional
-      <TextGradient text=" Products & Services" />
+      A <TextGradient text=" forward-thinking " />
+      culture of
+      <br className="hidden xs:block" />
+      <TextGradient text=" learning" />, <TextGradient text=" teamwork" />, and
+      <TextGradient text=" integrity" />,
+      <br className="hidden xs:block" />
+      embracing <TextGradient text=" change" />, fueling{" "}
+      <TextGradient text=" innovation" />, and{" "}
+      <TextGradient text=" continuing development" />.
     </CompanyInfoLayout>
   );
 };

@@ -10,16 +10,15 @@ const NavbarSmall = ({ colorChange, specificPath }) => {
   return (
     <>
       <div
-        className={`h-14 bg-white shadow ${
+        className={`h-14 shadow ${
           !colorChange && specificPath
-            ? "backdrop-blur-sm bg-white/10 "
+            ? "backdrop-blur-sm bg-white/10"
             : "bg-white"
         } px-4 sm:px-8 flex items-center fixed w-full z-[100]`}
       >
         <div
           className="h-4 w-5 sm:h-5 sm:w-7 absolute"
           onClick={() => setShowDrawer(!showDrawer)}
-          // onBlur={() => setShowDrawer(false)}
         >
           <Image
             src={

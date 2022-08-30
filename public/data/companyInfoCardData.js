@@ -41,7 +41,9 @@ const purposeCardData = [
     id: 3,
     title: "For a better tomorrow",
     description:
-      "We are building an autonomous institution for fulfilling our purpose — an institution through which we can explore, innovate and invest for a better tomorrow. Here, a better tomorrow is a broad and open-ended term where tomorrow means the next day, the next week, the next month, the next year, and most importantly, the next life. BYSL Global is a responsible and visionary organization investing for a better tomorrow. The organization moves with an explicit purpose to create a better world and a better future for humanity, providing them with exceptional products and services. Harvesting the power of innovation, knowledge, technology, higher moral standards, and integrity, we are resolute in shaping a better tomorrow for all we can influence.",
+      "We are building an autonomous institution for fulfilling our purpose — an institution through which we can explore, innovate and invest for a better tomorrow. Here, a better tomorrow is a broad and open-ended term where tomorrow means the next day, the next week, the next month, the next year, and most importantly, the next life.",
+    description1:
+      "BYSL Global is a responsible and visionary organization investing for a better tomorrow. The organization moves with an explicit purpose to create a better world and a better future for humanity, providing them with exceptional products and services. Harvesting the power of innovation, knowledge, technology, higher moral standards, and integrity, we are resolute in shaping a better tomorrow for all we can influence.",
     img: "purpose_card_3",
   },
 ];
@@ -51,28 +53,36 @@ const valuesCardData = [
     id: 0,
     title: "Principles & Beliefs",
     description:
-      "BYSL Global has made its mission to work for the greater benefit of humanity. Therefore, whatever we do must be premissible, meaningful, ethical. beneficial, have real value, and be of service to the world. The vision behind the mission is to create a better future for everyone by establishing a global economic system that serves the greater interest of humanity. The board and inclusive subjectivity reassures BYSL Globals’s vision with clear objectives, paving ways to generate exceptional products and services through relentless innovations.",
+      "BYSL Global's principles - honesty, integrity, and permissibility - are derived from Islamic principles. Honesty dictates individuals to be true to not only others but also to themselves. Integrity goes even further than that; it implies the purity of soul and intentions achieved through strong moral and ethical beliefs. The strength of faith, trust, and strong belief in the organization is expected to be emitted through the powerful character and noble manners of BYSL Global's employees. ",
+    description1:
+      "Furthermore, the belief system based on the purpose, mission, vision, and core values of the organization, in its success and prosperity in the long term, should act as a constant source of motivation, confidence, and a driving force for the employees. ",
+    description2:
+      "All stakeholders and employees are expected to commit to these ideological constants with the highest level of sincerity and belief.",
     img: "values_card_0",
   },
   {
     id: 1,
     title: "Customer Experience & Satisfaction",
     description:
-      "BYSL Global has made its mission to work for the greater benefit of humanity. Therefore, whatever we do must be premissible, meaningful, ethical. beneficial, have real value, and be of service to the world. The vision behind the mission is to create a better future for everyone by establishing a global economic system that serves the greater interest of humanity. The board and inclusive subjectivity reassures BYSL Globals’s vision with clear objectives, paving ways to generate exceptional products and services through relentless innovations.",
+      "Enhancing customer satisfaction remains central to BYSL Global's business approaches. Customer satisfaction is a constant effort leading to a never-ending pursuit of exceeding customers’ expectations. To enrich customer experience, the organization takes special care in improving every mode of communication and interaction with the customers. Our commitment to customers is reflected through providing them with exceptional products and services, and creating unparalleled impressions at all levels of their journey. ",
     img: "values_card_1",
   },
   {
     id: 2,
     title: "Exceptionalism & High Standards",
     description:
-      "Exceptional products and services are revolutionary, innovative, valued, advanced, or influential. Every product and service ever product by BYSL Global meets the gold standard of exceptionalism or is otherwise discoutinued. Our relntless pursuit of making our products stand unparalleled in the competitive markets through exceptionalism is a never-endong mission. To continued our journey through constant self-refinement and trend-setting innovations, internally, we promote and apply exceptionalism owing and emanationg from our core values.",
+      "BYSL Global adopts the term 'Exceptionalism' to mean being different from the norm, what is common and ordinary, in a superior way. This concept is finely in tune with the organization's mission to serve the world with exceptional products and services. We promote exceptionalism in every aspect of our business institution and maintain high standards in everything we do. The standard of something is relative, and high standards are ensured in relation to the particular industry, market, product, or service.  ",
+    description1:
+      "In other words, whatever we do, we must do it differently and better than our peers or competitors.",
     img: "values_card_2",
   },
   {
     id: 3,
     title: "Employee Wellbeing & Team Spirit",
     description:
-      "Exceptional products and services are revolutionary, innovative, valued, advanced, or influential. Every product and service ever product by BYSL Global meets the gold standard of exceptionalism or is otherwise discoutinued. Our relntless pursuit of making our products stand unparalleled in the competitive markets through exceptionalism is a never-endong mission. To continued our journey through constant self-refinement and trend-setting innovations, internally, we promote and apply exceptionalism owing and emanationg from our core values.",
+      "Employee well-being has been one of the key focuses of BYSL Global. It is more than ensuring financial and career growth of the employees, the organization cares about the employees’ spiritual and psychological upliftment as well. A state-of-the-art working environment is ensured to inspire creativity and innovation. Strong team support and fairness of administrative and management policies fulfill the fundamental requirements for employee well-being.     ",
+    description1:
+      "Team spirit springs from how efficiently, responsibly, and respectfully the team members treat, hear and cooperate with one another. The organization focuses on building a psychologically safe atmosphere for enhancing team spirit so that teams can innovate faster, achieve higher productivity, manage risks and find better solutions to problems. ",
     img: "values_card_3",
   },
 ];
@@ -96,7 +106,9 @@ const cultureCardData = [
     id: 2,
     title: "Development",
     description:
-      "Sustainable and continuous development in every aspect of the organization is one of the key focuses of BYSL Global, and it is finely woven into the culture as well. The term 'Development’ applies   to   all organizational, infrastructural, operational, systemic,  intellectual,  and  technological advancements.  As  opposed  to  aimless development models, BYSL Global operates with  a  clear  vision  segmented  into well-defined  development objectives  and frameworks.The development process at BYSL Global goes throug h methodical exploration and innovation phases,  adapting  the  ’Lean’  development  methodology  for exploration of ideas and the ’Agile’ development methodology for innovation. These  development  methodologies  help  ensure  better  results  by  creating adaptive  strategies that are flexible  enough to change directions, optimize, increase collaboration, create feedback  cycles, minimize  working processes, eliminate waste, and deliver the maximum value. BYSL Global makes it mandatory for all employees to cultivate a development mindset.",
+      "Sustainable and continuous development in every aspect of the organization is one of the key focuses of BYSL Global, and it is also finely woven into the culture. The term 'Development' applies to all organizational, infrastructural, operational, systemic, intellectual, and technological advancements. As opposed to aimless development models, BYSL Global operates with a clear vision segmented into well-defined development objectives and frameworks.",
+    description1:
+      "The development process at BYSL Global goes through methodical exploration and innovation phases, adapting the 'Lean' development methodology for exploration of ideas and the 'Agile' development methodology for innovation. These development methodologies help ensure better results by creating adaptive strategies that are flexible enough to change directions, optimize, increase collaboration, create feedback cycles, minimize working processes, eliminate waste, and deliver the maximum value. BYSL Global makes it mandatory for all employees to cultivate a development mindset.",
     img: "culture_card_2",
   },
   {

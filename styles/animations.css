@@ -65,7 +65,7 @@
     animation: zoomingLess 0.6s ease-in-out !important;
   }
     
- @keyframes careerScrollbar {
+ @keyframes visibilityAnimation {
     0% {
       opacity: 0;
       visibility: hidden;
@@ -77,7 +77,7 @@
     }
   }
   .careerScrollbar {
-    animation: careerScrollbar 0.7s;
+    animation: visibilityAnimation 0.7s;
   } 
 
   .service-scroll {

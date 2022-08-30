@@ -2,24 +2,18 @@ import CompanyInfoCard from "./CompanyInfoCard";
 import { getPath } from "../../utils/paths";
 
 const CompanyInfoCardGroup = ({ data }) => {
-  const culturePath = getPath("/culture");
+  const culturePath = getPath("/about-us/culture");
 
   return (
     <div
-      className={`grid gap-2 md:gap-4 2xl:gap-6 py-8 xl:py-10 3xl:py-20 ${
+      className={`grid gap-4 xl:gap-6 py-8 xl:py-10 ${
         culturePath
           ? "grid-cols-1 lg:grid-cols-12"
           : "grid-cols-1 lg:grid-cols-2"
       }`}
     >
-      {data.map(({ id, title, description, img }) => (
-        <CompanyInfoCard
-          key={id}
-          id={id}
-          title={title}
-          description={description}
-          img={img}
-        />
+      {data.map((item) => (
+        <CompanyInfoCard key={item.id} data={item} />
       ))}
     </div>
   );

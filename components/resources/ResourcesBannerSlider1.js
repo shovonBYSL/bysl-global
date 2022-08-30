@@ -1,5 +1,5 @@
 import { Swiper } from "swiper/react";
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 const ResourcesBannerSlider1 = ({ size, children }) => {
   return (
@@ -16,12 +16,15 @@ const ResourcesBannerSlider1 = ({ size, children }) => {
         reverseDirection: true,
         disableOnInteraction: false,
       }}
+      pagination={{
+        clickable: true,
+      }}
       loopFillGroupWithBlank={true}
       navigation={{
         prevEl: ".resourceSlideNext-btn",
         nextEl: ".resourceSlidePrev-btn",
       }}
-      modules={[Autoplay, Navigation]}
+      modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
     >
       {children}

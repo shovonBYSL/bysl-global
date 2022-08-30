@@ -352,27 +352,27 @@ const jobList = [
 const careerWhyJoinData = [
   {
     id: 0,
-    title: "Possible Heading 1",
+    title: "An Immersive Environment For Trend-Setting Innovation",
     subTitle:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+      "BYSL Global has created the right environment on its premises to inspire, catalyze and instrumentalize the diversity of talents who are gernered to achieve excellence.",
   },
   {
     id: 1,
-    title: "Possible Heading 2",
+    title: "Challenge The Impossible To Make A Difference",
     subTitle:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+      "From crafting advanced business solutions to introducing disruptive transformation tools at the conomic and social spaces, we are always ready to challenge the impossble. ",
   },
   {
     id: 2,
-    title: "Possible Heading 3",
+    title: "Grow Skills & Discover Newer Dimensions Of Yourself  ",
     subTitle:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+      "Our strong network among the wide range of skilled individuals working to solve numerous challenges has prepared a perfect space for everyone to develop newer skills everyday",
   },
   {
     id: 3,
-    title: "Possible Heading 4",
+    title: "Working For A Better Tomorrow",
     subTitle:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+      "With a clear mission to ‘serve the world with exceptional products and services’ we are inspired to create a better tomorrow for the planet. Essentially, our journey is directed towards the wellbeing of the entire humanity. ",
   },
 ];
 

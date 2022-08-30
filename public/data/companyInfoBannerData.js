@@ -1,33 +1,25 @@
 const missionBannerData = {
   title: "mission",
-  subTitle1:
-    "An organizations’s mission explains what it does and for whom. The mission sets clear strategies for accomplishing the mid-term and long-term organizationals objectives. Deriving clear directions for future courses of actions from the mission, an organization progesses towards its corporate vision.",
-  subTitle2:
-    "The story of BYSl Global would remain incomplete without a well-defined mission that guides us through our journey as a revolutionary global busines ecosystem driven by technology. Our mission also embodies our passion and obsession with improving the life of humanity in the world and beyond",
+  subTitle:
+    "The mission of BYSL Global sets clear strategies for accomplishing the mid-term and long-term organizational objectives and helps derive clear directions for future courses of action. Hence, the story of BYSL Global would remain incomplete without a well-defined mission that guides us through our journey as a revolutionary global business ecosystem driven by technology. Our mission also embodies our passion and obsession with improving the life of humanity in the world and beyond.",
 };
 
 const purposeBannerData = {
   title: "purpose",
-  subTitle1:
-    "An organizations’s mission explains what it does and for whom. The mission sets clear strategies for accomplishing the mid-term and long-term organizationals objectives. Deriving clear directions for future courses of actions from the mission, an organization progesses towards its corporate vision.",
-  subTitle2:
-    "The story of BYSl Global would remain incomplete without a well-defined mission that guides us through our journey as a revolutionary global busines ecosystem driven by technology. Our mission also embodies our passion and obsession with improving the life of humanity in the world and beyond",
+  subTitle:
+    "Our purpose can be defined by our continuous exploration of new ideas, leading to a stream of continuous innovation, which is followed by continuous investment. It drives everything we do, providing a sense of meaning and direction for our journey. We envision creating a better tomorrow for the world and beyond. ",
 };
 
 const valuesBannerData = {
   title: "values",
-  subTitle1:
-    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-  subTitle2:
-    "The chronology of these values is arranged on a priority basis. The values we belives are Principles & Beliefs, Exceptionalism & High Standards, Customer Experience & Satisfaction, Employee Wellbeing & Team Spirit.",
+  subTitle:
+    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.  The chronology of these values has been arranged on the basis of  priority.",
 };
 
 const cultureBannerData = {
   title: "culture",
-  subTitle1:
-    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-  subTitle2:
-    "The chronology of these values is arranged on a priority basis. The values we belives are Principles & Beliefs, Exceptionalism & High Standards, Customer Experience & Satisfaction, Employee Wellbeing & Team Spirit.",
+  subTitle:
+    "Driven by the core values and purpose, BYSL Global stands as one of the world's most forward-thinking and visionary organizations. These ideological and philosophical grounds are cultivated within the organization through an exceptional cultural atmosphere that all employees and stakeholders are subjected to. The prevalent culture of the organization mainly promotes forward-thinking, learning, development, change, teamwork (cross-collaboration among different departments, groups, and individuals), innovation, and integrity. It also promotes mutual respect, respect for the organization's core values, confidentiality, refinement of actions, proactive problem solving, and leadership development.",
 };
 
 export {

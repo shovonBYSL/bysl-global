@@ -13,9 +13,7 @@ const Investments = ({ data }) => {
       <SectionTitleType title="Investments " />
       <div className="mx-4 lg:mx-12 2xl:mx-20 mb-6 lg:mb-12 2xl:mb-20">
         <SectionTitleGradient>
-          Serve the world with exceptional
-          <br className="hidden xs:block" />
-          <TextGradient text=" products and services" />
+          Investing for a better tomorrow
         </SectionTitleGradient>
       </div>
       <div className="grid grid-cols-1 xs:grid-cols-2 gap-4 xl:gap-6 3xl:gap-10">

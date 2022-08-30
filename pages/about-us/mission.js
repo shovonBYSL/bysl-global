@@ -12,8 +12,9 @@ const CompanyMission = ({ missionBanner, missionCard, missionButton }) => {
       cardData={missionCard}
       buttonData={missionButton}
     >
-      Our mission is to serve the world with exceptional
-      <TextGradient text=" Products & Services" />
+      Our mission is to serve the world
+      <br className="hidden xs:block" />
+      with exceptional products and services
     </CompanyInfoLayout>
   );
 };

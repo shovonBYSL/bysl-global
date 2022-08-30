@@ -5,6 +5,7 @@
 @import url("http://fonts.cdnfonts.com/css/sf-pro-display");
 /* @import url('https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900'); */
 
+@layer utilities {
 * {
   box-sizing: border-box;
 }
@@ -29,6 +30,7 @@ a {
 .box {
   margin: 0 24px;
 }
+
 .aiml-box {
   margin-left: 24px;
 }
@@ -201,4 +203,5 @@ a {
     background-size: 15px 100%;
     width: 100%;
   }
+}
 }

@@ -4,14 +4,13 @@
 }
 .border-gradient::before {
   border-radius: 10px;
-  padding: 2px;
 }
 .light-border-gradient::before {
   border-radius: 5px;
-  padding: 1px;
 }
 .border-gradient::before,
 .light-border-gradient::before {
+  padding: 1px;
   content: "";
   position: absolute;
   inset: 0;

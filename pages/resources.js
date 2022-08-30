@@ -1,34 +1,54 @@
-import CommonLayout from "../layouts/CommonLayout";
-import BusinessBanner from "../components/shared/banners/BusinessBanner";
-import BlogLayout from "../components/shared/BlogLayout";
-import ServiceWhyUs from "../components/individual_service/ServiceWhyUs";
-import { TextGradient } from "../components/shared/SharedTextgroups";
-import { resourcesData } from "../public/data/resourcesData";
-import { serviceWhyChooseUsData } from "../public/data/individualServiceData";
+import SolutionsLayout from "../layouts/SolutionsLayout";
 import ResourcesBanner from "../components/resources/ResourcesBanner";
+import ResourcesBlogs from "../components/resources/ResourcesBlogs";
+import ResourcesFindings from "../components/resources/ResourcesFindings";
+import ResourceFeaturedVideos from "../components/resources/ResourceFeaturedVideos";
+import { solutionsResourcesData } from "../public/data/solutions/blogData";
+import {
+  resourcesBlogsData,
+  resourcesFindingsData,
+  resourcesVideoData,
+} from "../public/data/resourcesDataNew";
 
-const Resources = ({ serviceWhyChooseUs, resources }) => {
+const Resources = ({
+  solutionsResources,
+  blogData,
+  findingsData,
+  videoData,
+}) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <CommonLayout title="Resources" noMargin={true}>
+    <SolutionsLayout
+      title="Resources"
+      data={solutionsResources}
+      noMargin={true}
+    >
       {/* banner section  */}
       <ResourcesBanner />
 
+      {/* blogs section  */}
       <div className="box">
-        {/* why us section  */}
-
-        {/* resources section  */}
-        <BlogLayout data={resources} />
+        <ResourcesBlogs data={blogData} />
       </div>
-    </CommonLayout>
+
+      {/* featured videos section  */}
+      <ResourceFeaturedVideos data={videoData} />
+
+      {/* findings section  */}
+      <div className="box">
+        <ResourcesFindings data={findingsData} />
+      </div>
+    </SolutionsLayout>
   );
 };
 
 export async function getStaticProps() {
   return {
     props: {
-      serviceWhyChooseUs: serviceWhyChooseUsData,
-      resources: resourcesData,
+      solutionsResources: solutionsResourcesData,
+      blogData: resourcesBlogsData,
+      findingsData: resourcesFindingsData,
+      videoData: resourcesVideoData,
     },
   };
 }

@@ -7,20 +7,27 @@ import {
 } from "../SharedTextgroups";
 
 const SectionBanner = ({ data }) => {
-  const { title, subTitle1, subTitle2 } = data;
+  const { title, subTitle } = data;
+
+  const missionPath = getPath("/about-us/mission");
+  const culturePath = getPath("/about-us/culture");
 
   return (
-    <div className="flex flex-col md:flex-row-reverse justify-between md:items-center py-10 xl:py-16 gap-4 2xl:gap-6">
+    <div
+      className={`flex flex-col md:flex-row-reverse justify-between md:items-center gap-4 2xl:gap-6 ${
+        !missionPath && "py-10 xl:py-16"
+      }`}
+    >
       <div
         className={`w-4/5 md:w-1/2 mx-auto flex justify-end ${
-          getPath("/culture") && "px-4 2xl:px-12"
+          culturePath && "px-4 2xl:px-12"
         }`}
       >
         <Image
           src={`/images/banners/${title}_banner.svg`}
           placeholder="blur"
           blurDataURL={`/images/banners/${title}_banner.svg`}
-          height={283}
+          height={(missionPath && 480) || 283}
           width={452}
           objectFit="contain"
           alt=""
@@ -31,10 +38,7 @@ const SectionBanner = ({ data }) => {
           {title}
         </p>
         <p className="text-gray-600 leading-5 text-xs sm:text-sm 2xl:text-base text-justify">
-          <span>{subTitle1}</span>
-          {subTitle2 && (
-            <span className="mt-2 2xl:mt-3 block">{subTitle2}</span>
-          )}
+          {subTitle}
         </p>
       </div>
     </div>

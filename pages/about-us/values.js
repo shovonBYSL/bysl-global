@@ -12,11 +12,9 @@ const CompanyValues = ({ valuesBanner, valuesCard, valuesButton }) => {
       cardData={valuesCard}
       buttonData={valuesButton}
     >
-      Our core values are our
-      <TextGradient text=" Constants " />
-      our
-      <TextGradient text=" Guidelines " />
-      for everything we do.
+      Our core values are our constants,
+      <br className="hidden xs:block" />
+      our guidelines for everything we do.
     </CompanyInfoLayout>
   );
 };
