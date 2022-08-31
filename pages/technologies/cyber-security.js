@@ -30,7 +30,8 @@ const CyberSecurityTechnologies = ({
         img={banner}
       >
         <TextGradient text="Full-scale" /> cyber protection through
-        <TextGradient text=" holistic security architecture" />
+        <TextGradient text=" holistic security " />
+        <TextGradient text="architecture" />
       </PrimaryBanner>
 
       {/* overview section  */}

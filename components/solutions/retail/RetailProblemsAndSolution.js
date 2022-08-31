@@ -25,6 +25,7 @@ const RetailProblemsAndSolution = ({ data }) => {
           {data.map(({ id, problem }) => {
             return (
               <div
+                key={id}
                 onClick={() => setTabOpen(id)}
                 className={`text-center hover:cursor-pointer connector ${
                   tabOpen === id && "border-active"
@@ -81,8 +82,6 @@ const RetailProblemsAndSolution = ({ data }) => {
                 <div key={i} className="flex items-start gap-3">
                   <Image
                     src="/images/items_icon.svg"
-                    placeholder="blur"
-                    blurDataURL="/images/items_icon.svg"
                     height={24}
                     width={24}
                     alt=""

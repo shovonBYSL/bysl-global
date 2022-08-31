@@ -52,7 +52,7 @@ const cloudFeaturesData = [
   },
   {
     id: 3,
-    title: "cPanel Control",
+    title: "Control Panel",
     subTitle:
       "From creating sub domains, database, file manager to data backup & recovery, have full control over web hosting through powerful yet  simplified tools  ",
     img: "/images/technologies/cloud/features/icon_3.svg",

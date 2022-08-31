@@ -10,9 +10,9 @@ const AIMLServices = ({ data, video }) => {
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Platforms" />
       <TechnologiesSectionTitle>
-        Building your Own World
+        Automate your world
         <br />
-        With us
+        with us
       </TechnologiesSectionTitle>
       <div className="md:flex items-center mt-6 gap-4 xl:gap-6">
         <div className="w-full md:w-1/2 clip-video">

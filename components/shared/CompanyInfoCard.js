@@ -15,8 +15,10 @@ const CompanyInfoCard = ({ data }) => {
         culturePath
           ? ((id === 0 || id === 1) && "lg:col-span-6") ||
             (id === 2 && "lg:col-span-12") ||
-            ((id === 3 || id === 5) && "lg:col-span-7") ||
-            ((id === 4 || id === 6) && "lg:col-span-5")
+            (id === 3 && "lg:col-span-7") ||
+            (id === 4 && "lg:col-span-5") ||
+            (id === 5 && "lg:col-span-8") ||
+            (id === 6 && "lg:col-span-4")
           : (id === 1 && "lg:mt-[180px]") ||
             (id === 2 &&
               (valuesPath

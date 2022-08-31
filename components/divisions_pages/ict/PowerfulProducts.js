@@ -10,9 +10,9 @@ const PowerfulProducts = ({ data }) => {
   return (
     <div className="py-10 xl:py-16">
       <TechnologiesSectionTitle>
-        <TextGradient text="Out-of-the-box " />
-        Motion
-        <br /> Graphics
+        Out-of-the-box Motion
+        <br />
+        Graphics
       </TechnologiesSectionTitle>
       <div className="my-10 grid grid-cols-12 auto-rows-max gap-6 lg:gap-10 2xl:gap-16">
         {data.map(({ id, title, img, video }) => {

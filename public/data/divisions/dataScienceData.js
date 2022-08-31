@@ -1,37 +1,37 @@
 const dataScienceControlPanelData = [
   {
     id: 0,
-    title: "Inventory Management",
+    title: "Security",
     img: "/images/divisions/data_science/control_panel/icon_0.svg",
     hoverImg: "/images/divisions/data_science/control_panel/icon_hover_0.svg",
   },
   {
     id: 1,
-    title: "Customer Service Analytics",
+    title: "Customer Service",
     img: "/images/divisions/data_science/control_panel/icon_1.svg",
     hoverImg: "/images/divisions/data_science/control_panel/icon_hover_1.svg",
   },
   {
     id: 2,
-    title: "Financial Risk Management",
+    title: "Finance",
     img: "/images/divisions/data_science/control_panel/icon_2.svg",
     hoverImg: "/images/divisions/data_science/control_panel/icon_hover_2.svg",
   },
   {
     id: 3,
-    title: "Human Resource Management",
+    title: "Human Resource",
     img: "/images/divisions/data_science/control_panel/icon_3.svg",
     hoverImg: "/images/divisions/data_science/control_panel/icon_hover_3.svg",
   },
   {
     id: 4,
-    title: "Supply Chain Managment",
+    title: "Supply Chain",
     img: "/images/divisions/data_science/control_panel/icon_4.svg",
     hoverImg: "/images/divisions/data_science/control_panel/icon_hover_4.svg",
   },
   {
     id: 5,
-    title: "Sales Process Optimization",
+    title: "Sales",
     img: "/images/divisions/data_science/control_panel/icon_5.svg",
     hoverImg: "/images/divisions/data_science/control_panel/icon_hover_5.svg",
   },

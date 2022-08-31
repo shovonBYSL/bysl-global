@@ -56,7 +56,7 @@ const OverviewCard = (props) => {
               {title}
             </p>
             {subTitle && (
-              <p className="hidden md:block text-gray-600 2xl:text-lg font-medium mt-3 !leading-6 ">
+              <p className="hidden md:block text-gray-600 2xl:text-lg mt-3 !leading-6 ">
                 {subTitle}
               </p>
             )}

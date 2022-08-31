@@ -45,7 +45,7 @@ const NavbarSmall = ({ colorChange, specificPath }) => {
           </div>
         </Link>
       </div>
-      <SideDrawer showDrawer={showDrawer} />
+      <SideDrawer showDrawer={showDrawer} setShowDrawer={setShowDrawer} />
     </>
   );
 };

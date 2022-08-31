@@ -1,7 +1,7 @@
 const cyberBenefitsData = [
   {
     id: 0,
-    title: "Detecting Incident",
+    title: "Threat Detection",
     img: "/images/technologies/cyber_security/benefits/icon_0.svg",
   },
   {
@@ -50,7 +50,7 @@ const cyberSolutionsData = [
   },
   {
     id: 1,
-    title: "Software Shield",
+    title: "Antivirus Software",
     subTitle:
       "Scalable, dynamic & cloud-based security options meant to shield software from viruses, spyware, bots, rootkits, trojans and other types of internet security threats.",
     img: "/images/technologies/cyber_security/solutions/icon_1.svg",

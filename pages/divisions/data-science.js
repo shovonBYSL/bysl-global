@@ -3,6 +3,7 @@ import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
 import IconCardGroup3 from "../../components/shared/IconCardGroup3";
 import ImageShowcase from "../../components/shared/ImageShowcase";
 import FeaturedBanner from "../../components/shared/banners/FeaturedBanner";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   dataScienceAnalysisData,
   dataScienceControlPanelData,
@@ -24,7 +25,8 @@ const DataScience = ({
           sub="We understand, analyze and harness the power of data using the best of data science and drive growth for enterprizes."
           img={banner}
         >
-          Translating data into key growth factors
+          <TextGradient text="Translating data " />
+          into key <TextGradient text=" growth factors" />
         </PrimaryBanner>
 
         {/* control panel section  */}

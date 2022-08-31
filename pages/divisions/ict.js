@@ -30,8 +30,7 @@ const ICT = ({ banner, ictSectors, erpBanner, ictSolutions, products }) => {
       <Overview4Items data={ictSectors}>
         Development that
         <br />
-        <TextGradient text="Creates " /> an
-        <TextGradient text=" Impact" />
+        Creates an Impact
       </Overview4Items>
 
       {/* erp section  */}

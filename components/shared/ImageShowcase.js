@@ -31,7 +31,7 @@ const ImageShowcase = (props) => {
             className={`w-full 
             ${
               (arVrPath &&
-                "h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] rounded-[20px] object-cover") ||
+                "h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] rounded-[20px] 2xl:rounded-[40px] object-cover") ||
               (aiMlPath && "sm:h-[400px] lg:h-[540px]")
             }`}
             src={video}

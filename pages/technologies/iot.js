@@ -36,9 +36,9 @@ const IotTechnologies = ({
 
         {/* services section  */}
         <Overview3Items data={iotServices} type="Platforms">
-          Joining the IoT revolution with
+          Joining the IoT revolution with&nbsp;
           <br className="hidden xxs:block" />
-          <TextGradient text=" smart connectivity" />
+          smart connectivity
         </Overview3Items>
       </div>
 

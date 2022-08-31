@@ -2,8 +2,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 
-import { TechnologiesSectionTitle } from "../shared/SharedTextgroups";
 import ResourceVideoModal from "./ResourceVideoModal";
+import { TechnologiesSectionTitle } from "../shared/SharedTextgroups";
 
 const ResourceFeaturedVideos = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,15 +44,16 @@ const ResourceFeaturedVideos = ({ data }) => {
                     alt=""
                   />
                   <div
-                    className={`bg-white h-[46px] w-[46px] ${
+                    className={`bg-white h-[46px] w-[46px] relative inline-flex ${
                       id === 0 && "xl:h-[74px] xl:w-[74px]"
                     } rounded-full flex justify-center items-center centered`}
                   >
                     <BsFillPlayFill
-                      className={`text-gray-800 text-xl ${
+                      className={`text-gray-800 text-xl z-10 ${
                         id === 0 && "xl:text-4xl"
                       }`}
                     />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                   </div>
                 </div>
                 <p

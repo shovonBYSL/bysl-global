@@ -12,15 +12,11 @@ const CompanyCulture = ({ cultureBanner, cultureCard, cultureButton }) => {
       cardData={cultureCard}
       buttonData={cultureButton}
     >
-      A <TextGradient text=" forward-thinking " />
-      culture of
+      A forward-thinking culture of
       <br className="hidden xs:block" />
-      <TextGradient text=" learning" />, <TextGradient text=" teamwork" />, and
-      <TextGradient text=" integrity" />,
+      learning, teamwork, and integrity,
       <br className="hidden xs:block" />
-      embracing <TextGradient text=" change" />, fueling{" "}
-      <TextGradient text=" innovation" />, and{" "}
-      <TextGradient text=" continuing development" />.
+      embracing change, fueling innovation, and continuing development.
     </CompanyInfoLayout>
   );
 };

@@ -7,7 +7,7 @@ import { Accordion, AccordionBody } from "@material-tailwind/react";
 import Button from "../shared/buttons/Button";
 import { navbars } from "../../public/data/navigation/navbarData";
 
-const SideDrawer = ({ showDrawer }) => {
+const SideDrawer = ({ showDrawer, setShowDrawer }) => {
   const router = useRouter();
   const [open, setOpen] = useState("");
 
@@ -26,8 +26,9 @@ const SideDrawer = ({ showDrawer }) => {
       className={`invisible transition-all duration-1000 w-screen h-screen overflow-hidden fixed top-14 left-0 z-50 
       ${showDrawer && "bg-[#c7c7c7]/40 !visible"}`}
     >
-      <div
-        className={`w-60 xxs:w-[280px] h-full translate-x-[-100%] transition-all duration-1000 
+      <button
+        onBlur={() => setShowDrawer(false)}
+        className={`w-60 xxs:w-[280px] translate-x-[-100%] transition-all duration-1000 
         ${showDrawer && "translate-x-[0%]"}`}
       >
         <div className="flex items-end justify-center bg-[url('/images/drawer-bg.svg')] bg-no-repeat bg-center bg-cover h-[100px]">
@@ -35,7 +36,7 @@ const SideDrawer = ({ showDrawer }) => {
             BYSL Global Technology Group
           </p>
         </div>
-        <div className="bg-white h-[calc(100vh-156px)] overflow-y-auto px-4 py-3 flex flex-col">
+        <div className="bg-white h-[calc(100vh-156px)] overflow-y-auto px-4 py-3 flex flex-col text-start">
           {navbars.map(({ id, title, link, dropdowns }) => {
             return (
               <Accordion
@@ -95,7 +96,7 @@ const SideDrawer = ({ showDrawer }) => {
             <Button link="contact-us" title="Contact Us" px={48} />
           </div>
         </div>
-      </div>
+      </button>
     </div>
   );
 };

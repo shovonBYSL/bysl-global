@@ -7,7 +7,7 @@ const MobileTechSlider = ({ mobileTechData }) => {
   const { mobileSliderData, frame } = mobileTechData;
 
   return (
-    <div className="py-10 xl:py-16 ">
+    <div className="py-10 xl:py-16">
       <div className="mb-10">
         <TechnologiesSectionTitle>
           Intuitive applications that attract
@@ -15,7 +15,7 @@ const MobileTechSlider = ({ mobileTechData }) => {
           &nbsp;& retain users
         </TechnologiesSectionTitle>
       </div>
-      <div className="relative">
+      <div className="relative max-w-[1200px] mx-auto">
         <div className="xxs:hidden">
           <Slider data={mobileSliderData} size={1.7} />
         </div>

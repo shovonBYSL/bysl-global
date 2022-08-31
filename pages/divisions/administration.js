@@ -29,18 +29,22 @@ const Administration = ({
 
       {/* Control Panel section  */}
       <IconCardGroup3 data={administrationControlPanel}>
-        Playing the <TextGradient text=" heart " /> of the
+        Playing the heart of the
         <br />
         organization
       </IconCardGroup3>
 
       {/* Financial Management section  */}
       <BannerWithBullets data={administrationMangement}>
-        Financial <TextGradient text="Management" />
+        Financial Management
       </BannerWithBullets>
 
       {/* Workpalce section  */}
-      <BannerWithBullets data={workplaceBanner} reversed={true} />
+      <BannerWithBullets data={workplaceBanner} reversed={true}>
+        Manage your workpalce
+        <br />
+        from anywhere
+      </BannerWithBullets>
     </BasicLayout>
   );
 };

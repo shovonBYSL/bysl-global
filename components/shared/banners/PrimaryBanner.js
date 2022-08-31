@@ -24,9 +24,11 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
     <div
       className={`md:flex justify-between gap-6 max-h-max 
       ${
-        (aiMlPath ? "items-center pt-10 md:pt-0" : "py-10 xl:py-16") ||
-        (cyberPath && "!pb-0") ||
-        (itesPath && "!pb-0")
+        aiMlPath
+          ? "items-center pt-10 md:pt-0"
+          : cyberPath || cloudPath || itesPath
+          ? "pt-10 xl:pt-16"
+          : "py-10 xl:py-16"
       }`}
     >
       <div
@@ -46,14 +48,16 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
           </p>
           <SectionTitleGradient>{children}</SectionTitleGradient>
           <p
-            className={`mt-4 text-gray-600 text-sm sm:text-base xl:text-xl 
+            className={`mt-4 md:max-w-[350px] lg:max-w-[450px] xl:max-w-[600px] 2xl:max-w-[700px] text-gray-600 text-sm sm:text-base xl:text-xl 
             ${servicePath && "xl:w-full xl:!text-base mt-10"}`}
           >
             {sub}
           </p>
         </div>
       </div>
-      <div className={ictPath || foodTechPath ? "md:w-[55%]" : "md:w-[45%]"}>
+      <div
+        className={`${ictPath || foodTechPath ? "md:w-[55%]" : "md:w-[45%]"}`}
+      >
         {webPath ? (
           <WebBanner img={img} />
         ) : cloudPath ? (

@@ -47,10 +47,7 @@ const ContactForm = () => {
           <TextGradient text="CONTACT US" />
         </TechnologiesSectionTitle>
         <p className="my-4 lg:my-6 xl:mb-11 text-sm text-gray-600 text-center lg:text-start">
-          If you have any questions, please feel free to drop me a line. If you
-          don't get an answer immediately, I might just be travelling through
-          the middle of nowhere. I'll get back to you as soon as I can. That's a
-          promise!
+        If you have any questions to ask or an idea to communicate, please feel free to share with us. 
         </p>
         <div className="flex justify-center lg:justify-start gap-6 md:gap-4 lg:gap-6">
           {socialIcons.map(({ id, img, link }) => (

@@ -30,7 +30,7 @@ const IconCard = (props) => {
             onClick={() => handleOpen(id)}
             className={`group gradient-bg px-2 py-5 sm:p-5 hover:cursor-pointer ${
               !subTitle && !arVrPath && "lg:py-14"
-            } ${!arVrPath && "sm:py-6"}`}
+            } ${arVrPath ? "lg:py-8 xl:py-12" : "sm:py-6"}`}
           >
             <div
               className={`h-10 w-10 lg:h-16 lg:w-16 ${
@@ -49,7 +49,7 @@ const IconCard = (props) => {
               </div>
             </div>
             <p
-              className={`text-sm lg:text-base 2xl:text-xl 3xl:text-2xl !leading-5 text-gray-800 group-hover:text-white transition-all duration-500 font-bold text-center ${
+              className={`text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl !leading-5 text-gray-800 group-hover:text-white transition-all duration-500 font-bold text-center ${
                 padding
                   ? "mt-6 xl:mt-10"
                   : subTitle

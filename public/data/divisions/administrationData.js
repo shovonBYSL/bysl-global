@@ -45,7 +45,6 @@ const administrationControlPanelData = [
 ];
 
 const workplaceBannerData = {
-  title: "Manage your workpalce from anywhere",
   subTitle:
     "Our flexible & multi-platform application API integration offer immense freedom for performing remote operations using a wide range of options for completing tasks.  ",
   features: [

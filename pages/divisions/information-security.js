@@ -23,7 +23,7 @@ const InformationSecurity = ({
         {/* banner section  */}
         <PrimaryBanner
           title="Information Security - Division"
-          sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+          sub="A holistic information security management framework setting standards for the next-gen applications and enterprise resource planning "
           img={banner}
         >
           Managing information with
