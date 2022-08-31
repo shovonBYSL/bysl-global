@@ -30,10 +30,10 @@ const Technologies = ({ data }) => {
               } relative`}
               >
                 <div
-                  className={`w-full h-32 lg:h-44 ${
+                  className={`w-full h-32 sm:h-48 ${
                     id === 2 || id === 3 || id === 4
-                      ? "xl:h-48 2xl:h-64"
-                      : "xl:h-64 2xl:h-72 3xl:h-96"
+                      ? "lg:h-56 xl:h-60 2xl:h-64"
+                      : "lg:h-72 xl:h-80 2xl:h-96"
                   } object-cover relative group-hover:scale-125 transition-all duration-[2000ms]`}
                 >
                   {id === 6 ? (

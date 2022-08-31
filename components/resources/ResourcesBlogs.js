@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { TechnologiesSectionTitle } from "../shared/SharedTextgroups";
 
 const ResourcesBlogs = ({ data }) => {

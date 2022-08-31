@@ -69,10 +69,10 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
                   )}
                 </div>
                 <AccordionBody className="py-0">
-                  <div className="flex flex-col gap-4 border-l border-gray-300 ">
+                  <div className="flex flex-col gap-4 border-l ml-3 border-gray-300 ">
                     {dropdowns?.map(({ id, title, link }) => {
                       return (
-                        <div key={id} className="ml-3">
+                        <div key={id} className="ml-5">
                           <Link href={link} passHref>
                             <p
                               className={`text-sm font-medium ${
@@ -93,7 +93,7 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
             );
           })}
           <div className="flex justify-center pt-3 pb-6">
-            <Button link="contact-us" title="Contact Us" px={48} />
+            <Button link="contact-us" title="Contact Us" px={48} xs />
           </div>
         </div>
       </button>

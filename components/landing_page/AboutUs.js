@@ -1,8 +1,6 @@
 import Link from "next/link";
 import CountUp from "react-countup";
 
-import { aboutUsData } from "../../public/data/aboutUsData";
-// import { summaryData } from "../../public/data/summaryData";
 import {
   SectionTitleGradient,
   SectionTitleType,
