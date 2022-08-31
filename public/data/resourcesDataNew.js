@@ -91,19 +91,19 @@ const resourcesVideoData = [
   {
     id: 0,
     thumb: "/images/resources/videos/video_thumb_0.png",
-    video: "",
+    video: "/images/resources/videos/video_0.webm",
     title: "Changing logistics operations solutions  with ",
   },
   {
     id: 1,
     thumb: "/images/resources/videos/video_thumb_1.png",
-    video: "",
+    video: "/images/resources/videos/video_1.webm",
     title: "Changing logistics operations solutions  with ",
   },
   {
     id: 2,
     thumb: "/images/resources/videos/video_thumb_2.png",
-    video: "",
+    video: "/images/resources/videos/video_2.webm",
     title: "Changing logistics operations solutions  with ",
   },
 ];

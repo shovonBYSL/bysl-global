@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { VscArrowLeft, VscArrowRight } from "react-icons/vsc";
-import { TextGradient } from "../shared/SharedTextgroups";
 import { SwiperSlide } from "swiper/react";
+import { VscArrowLeft, VscArrowRight } from "react-icons/vsc";
 
+import SliderLayout from "../shared/slider/SliderLayout";
 import ResourcesBannerSlider1 from "./ResourcesBannerSlider1";
 import ResourcesBannerSlider2 from "./ResourcesBannerSlider2";
-import SliderLayout from "../shared/slider/SliderLayout";
-// import { useEffect, useState } from "react";
+import { TextGradient } from "../shared/SharedTextgroups";
 
 const ResourcesBanner = ({ banner }) => {
   const BannerImage = () => {
@@ -25,7 +24,7 @@ const ResourcesBanner = ({ banner }) => {
   };
   const BannerContent = () => {
     return (
-      <div>
+      <div className="px-4 pt-6 mb-14 md:px-0 md:pt-0 md:mb-0">
         <p className="text-xs md:text-sm lg:text-base font-medium">
           <TextGradient text="Supply Chain" />
         </p>
@@ -82,14 +81,16 @@ const ResourcesBanner = ({ banner }) => {
           </div>
         </div>
       </div>
-      <div className="md:hidden pb-6 card-slider">
+      <div className="md:hidden pb-2 relative service-blog-slider">
         <SliderLayout>
-          <SwiperSlide>
-            <BannerImage />
-            <div className="px-4 py-6">
-              <BannerContent />
-            </div>
-          </SwiperSlide>
+          {[...Array(3)].map((item, i) => {
+            return (
+              <SwiperSlide key={i}>
+                <BannerImage />
+                <BannerContent />
+              </SwiperSlide>
+            );
+          })}
         </SliderLayout>
       </div>
     </>

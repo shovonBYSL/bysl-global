@@ -17,6 +17,9 @@
 .card-slider .swiper-pagination {
   position: unset;
 }
+.resource-slider-sm .swiper-pagination {
+  position: unset;
+}
 .resource-slider .swiper-pagination {
   position: unset;
   text-align: left;

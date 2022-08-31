@@ -3,7 +3,7 @@ import { TechnologiesSectionTitle } from "../shared/SharedTextgroups";
 
 const ResourcesBlogs = ({ data }) => {
   return (
-    <div className="pb-6 xl:pb-10">
+    <div className="py-6 xl:py-10">
       <TechnologiesSectionTitle>
         See what we’ve written lately
       </TechnologiesSectionTitle>

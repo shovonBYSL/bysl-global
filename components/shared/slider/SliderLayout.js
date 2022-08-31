@@ -8,13 +8,13 @@ const SliderLayout = ({ size, children }) => {
       spaceBetween={20}
       slidesPerGroup={1}
       centeredSlides={true}
-      loop={true}
       speed={1000}
+      loop={true}
+      loopFillGroupWithBlank={true}
       autoplay={{
         delay: 3500,
         disableOnInteraction: false,
       }}
-      loopFillGroupWithBlank={true}
       pagination={{
         clickable: true,
       }}

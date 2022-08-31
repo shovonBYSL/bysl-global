@@ -1,11 +1,22 @@
 import Image from "next/image";
+import { useState } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 
 import { TechnologiesSectionTitle } from "../shared/SharedTextgroups";
+import ResourceVideoModal from "./ResourceVideoModal";
 
 const ResourceFeaturedVideos = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [videoFile, setVideoFile] = useState();
+
+  const handleClick = (video) => {
+    setIsOpen(true);
+    setVideoFile(video);
+  };
+
   return (
     <div className="py-10 xl:py-16 bg-gray-800">
+      {isOpen && <ResourceVideoModal video={videoFile} setIsOpen={setIsOpen} />}
       <div className="box text-white">
         <TechnologiesSectionTitle white start>
           Featured Videos
@@ -15,7 +26,10 @@ const ResourceFeaturedVideos = ({ data }) => {
             return (
               <div
                 key={id}
-                className={`${id === 0 && "lg:row-span-2 lg:col-span-2"}`}
+                onClick={() => handleClick(video)}
+                className={`cursor-pointer ${
+                  id === 0 && "lg:row-span-2 lg:col-span-2"
+                }`}
               >
                 <div
                   className={`relative h-40 rounded-xl xl:rounded-[20px] overflow-hidden ${
@@ -32,7 +46,7 @@ const ResourceFeaturedVideos = ({ data }) => {
                   <div
                     className={`bg-white h-[46px] w-[46px] ${
                       id === 0 && "xl:h-[74px] xl:w-[74px]"
-                    } rounded-full flex justify-center items-center centered cursor-pointer`}
+                    } rounded-full flex justify-center items-center centered`}
                   >
                     <BsFillPlayFill
                       className={`text-gray-800 text-xl ${
