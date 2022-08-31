@@ -12,19 +12,21 @@ const ResourcesBlogs = ({ data }) => {
           return (
             <div
               key={id}
-              className={`shadow-[0px_0px_20px_0px_#E5EBF3] rounded-2xl lg:rounded-[20px] bg-white overflow-hidden ${
+              className={`group cursor-pointer shadow-[0px_0px_20px_0px_#E5EBF3] rounded-2xl lg:rounded-[20px] bg-white overflow-hidden ${
                 id === 0 || id === 1 ? "lg:col-span-3" : "lg:col-span-2"
               }`}
             >
-              <div className="relative h-[162px] lg:h-[200px] 2xl:h-[276px]">
-                <Image
-                  src={img}
-                  placeholder="blur"
-                  blurDataURL={img}
-                  layout="fill"
-                  objectFit="cover"
-                  alt=""
-                />
+              <div className="overflow-hidden">
+                <div className="relative h-[162px] lg:h-[200px] 2xl:h-[276px] group-hover:scale-125 transition duration-1000">
+                  <Image
+                    src={img}
+                    placeholder="blur"
+                    blurDataURL={img}
+                    layout="fill"
+                    objectFit="cover"
+                    alt=""
+                  />
+                </div>
               </div>
               <div className="py-4 px-6">
                 <p className="text-sm lg:text-base text-gray-800">{subject}</p>
