@@ -49,8 +49,8 @@ const ResourceFeaturedVideos = ({ data }) => {
                     } rounded-full flex justify-center items-center centered`}
                   >
                     <BsFillPlayFill
-                      className={`text-gray-800 text-xl z-10 ${
-                        id === 0 && "xl:text-4xl"
+                      className={`text-gray-800 text-xl z-10 ml-[3px] ${
+                        id === 0 && "xl:text-4xl xl:!ml-1"
                       }`}
                     />
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>

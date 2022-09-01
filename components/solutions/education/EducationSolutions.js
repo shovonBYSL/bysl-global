@@ -16,9 +16,9 @@ const EducationSolutions = ({ data }) => {
   return (
     <div id="solutions" className="py-10 xl:py-16 relative">
       <SectionHeader type="Solutions">
-        The problems we found in education
+        Tech-based solutions for
         <br className="hidden xs:block" />
-        &nbsp;industries
+        &nbsp;modern-day education
       </SectionHeader>
 
       <div className="mt-6 xl:mt-10 ">

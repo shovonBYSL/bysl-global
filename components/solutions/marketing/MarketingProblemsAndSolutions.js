@@ -26,14 +26,14 @@ const MarketingProblemsAndSolutions = ({ data }) => {
     solutionInfo,
     solutionPoints,
     solutionImg,
-    benefits,
+    // benefits,
   } = tabData;
 
   return (
     <div id="problems&solutions" className="py-10 xl:py-16">
-      <SectionHeader>Problem & Solution</SectionHeader>
+      <SectionHeader>Problem and solution</SectionHeader>
       <div
-        className={`w-full overflow-x-auto mt-6 xl:mt-10 flex lg:grid grid-cols-5 gap-4 lg:gap-0 bg-white ${
+        className={`w-full overflow-x-auto mt-6 xl:mt-10 flex lg:grid grid-cols-4 gap-4 lg:gap-0 bg-white ${
           (tabOpen === 0 && "rounded-l-lg lg:rounded-l-[20px]") ||
           (tabOpen === 4 && "rounded-r-lg lg:rounded-r-[20px]")
         }`}
@@ -44,7 +44,7 @@ const MarketingProblemsAndSolutions = ({ data }) => {
               id={id}
               key={id}
               onClick={() => handleClick(id)}
-              className={`w-max lg:w-full px-2 xl:px-5 2xl:px-10 rounded-lg lg:rounded-[20px] flex lg:flex-col items-center hover:cursor-pointer gap-2 lg:gap-4 transition-all duration-700 ${
+              className={`w-max lg:w-full px-2 xl:px-5 2xl:px-10 rounded-lg lg:rounded-[20px] flex lg:flex-col items-center hover:cursor-pointer gap-2 lg:gap-4 ${
                 tabOpen === id
                   ? "bg-gradient-to-r from-blue-900 to-blue-700  text-white"
                   : " text-gray-800"
@@ -59,7 +59,7 @@ const MarketingProblemsAndSolutions = ({ data }) => {
                   layout="fill"
                 />
               </div>
-              <p className="w-40 lg:w-fit text-sm xl:text-base text-center font-medium">
+              <p className="w-40 lg:w-fit text-sm xl:text-base text-center font-medium capitalize">
                 {problem}
               </p>
             </div>
@@ -88,8 +88,12 @@ const MarketingProblemsAndSolutions = ({ data }) => {
             />
           </div>
         </div>
-        <Title label="Benefits" />
-        <Info noMargin={true} text={benefits} />
+        {/* {benefits && (
+          <>
+            <Title label="Benefits" />
+            <Info noMargin={true} text={benefits} />
+          </>
+        )} */}
       </div>
     </div>
   );

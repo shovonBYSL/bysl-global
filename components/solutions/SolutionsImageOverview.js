@@ -9,10 +9,12 @@ const SolutionsImageOverview = ({ data }) => {
         <p className="text-2xl xl:text-[40px] text-gray-800 font-semibold">
           Overview
         </p>
-        <p className="mt-2 mb-6 xl:text-xl text-gray-800/80 font-medium">
-          {details1}
-        </p>
-        <p className=" text-sm xl:text-base text-gray-500">{details2}</p>
+        {details1 && (
+          <p className="mt-2 mb-4 xl:text-xl text-gray-800/80 font-medium">
+            {details1}
+          </p>
+        )}
+        <p className="mt-6 text-sm xl:text-base text-gray-500">{details2}</p>
         <p className="mt-4 text-sm xl:text-base text-gray-500">{details3}</p>
       </div>
       <div className="col-span-12 lg:col-span-5 text-center lg:pt-10">

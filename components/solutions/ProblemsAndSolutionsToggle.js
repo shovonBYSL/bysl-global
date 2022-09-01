@@ -64,6 +64,7 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
               id,
               problem,
               solution,
+              solutionInfo,
               problemInfo,
               problemImg,
               solutionImg,
@@ -83,10 +84,10 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
                     </div>
                   </div>
                   <p className="text-gray-800 font-semibold sm:text-lg 2xl:text-2xl mt-5 mb-2">
-                    {problem}
+                    {problems ? problem : solution}
                   </p>
                   <p className="text-gray-600 text-sm 2xl:text-base">
-                    {problems ? problemInfo : solution}
+                    {problems ? problemInfo : solutionInfo}
                   </p>
                 </div>
               );

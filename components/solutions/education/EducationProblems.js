@@ -13,7 +13,7 @@ const EducationProblems = ({ data }) => {
         <div className="p-4 pb-0 md:p-6 md:pb-0 lg:pb-6 xl:p-10">
           <p className="text-gray-600 mb-2">Problems</p>
           <p className="break-words text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[40px] font-bold ">
-            <TextGradient text="The problems we found in education industries" />
+            <TextGradient text="Existing problems in today’s education system" />
           </p>
           <div className="mt-6 xl:mt-10 flex flex-col gap-2 xl:gap-4">
             {data.map(({ id, problem, problemInfo }) => {

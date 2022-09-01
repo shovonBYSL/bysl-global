@@ -15,8 +15,8 @@ const SupplyChainSolutionProblems = ({ type, children, data }) => {
   return (
     <div id="problems" className="py-10 xl:py-16">
       <SectionHeader type={type}>{children}</SectionHeader>
-      <div className="mt-6 lg:mt-10 grid grid-cols-12 gap-6 items-center">
-        <div className="col-span-12 lg:col-span-3 overflow-x-auto">
+      <div className="mt-6 lg:mt-16 grid grid-cols-12 gap-6 ">
+        <div className="col-span-12 lg:col-span-3 overflow-x-auto lg:overflow-hidden">
           <div className="flex lg:flex-col gap-y-6 gap-x-8">
             {data.map(({ id, problem }) => (
               <div
@@ -59,12 +59,12 @@ const SupplyChainSolutionProblems = ({ type, children, data }) => {
               id === open && (
                 <div
                   key={id}
-                  className="grid grid-cols-9 gap-6 items-center zooming-animation"
+                  className="grid grid-cols-9 gap-6 zooming-animation"
                 >
                   <div className="col-span-9 md:col-span-5">
-                    <p className="text-center font-medium md:text-start text-xl xl:text-2xl lg:mt-5 2xl:mt-10 mb-6 text-gray-800">
+                    {/* <p className="text-center font-medium md:text-start text-xl xl:text-2xl mb-6 text-gray-800">
                       {problem}
-                    </p>
+                    </p> */}
                     <p className="text-center md:text-start text-sm xl:text-base text-gray-600">
                       {problemInfo}
                     </p>

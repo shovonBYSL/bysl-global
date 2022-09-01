@@ -24,16 +24,16 @@ const Manufacturing = ({
       <div className="box">
         {/* banner section  */}
         <PrimaryBanner
-          title="Manufacturing"
-          sub="Harness the potential of mega data pools across various platforms to introduce revolutionary transformations to individual, scientific and business journeys."
+          title="Manufacturing Industry"
+          sub="Powering the manufacturing leaders to maximize digitization of processes and operations utilizing comprehensive cloud-based solutions powered by ML, data analytics and IoT. "
           img={banner}
         >
-          A WORLD LEADER IN Manufacturing
+          Secure, agile and scalable cloud solutions for manufacturing
         </PrimaryBanner>
       </div>
 
       {/* overview section  */}
-      <SolutionsOverviewFull data={overviewData} />
+      <SolutionsOverviewFull data={overviewData} center />
 
       <div className="box">
         {/* problems & solutions section  */}

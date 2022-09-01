@@ -10,7 +10,7 @@ import { TextGradient } from "../shared/SharedTextgroups";
 const ResourcesBanner = ({ banner }) => {
   const BannerImage = () => {
     return (
-      <div className="relative h-96 lg:h-[600px] 2xl:h-[650px] 3xl:h-[725px] w-full">
+      <div className="relative h-[372px] lg:h-[70vh] 2xl:h-[80vh] max-h-[725px] w-full">
         <Image
           src="/images/banners/resources_banner_0.png"
           placeholder="blur"
@@ -49,7 +49,7 @@ const ResourcesBanner = ({ banner }) => {
 
   return (
     <>
-      <div className="hidden md:block relative mb-16 md:h-[65vh] lg:h-[95vh] xl:h-screen resource-slider">
+      <div className="hidden md:block relative mb-16 md:h-[65vh] lg:h-screen resource-slider">
         <ResourcesBannerSlider1>
           {[...Array(3)].map((item, i) => {
             return (

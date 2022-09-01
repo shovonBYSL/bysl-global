@@ -3,16 +3,16 @@ import Image from "next/image";
 import { getPath } from "../../utils/paths";
 
 const SolutionCard = ({ data }) => {
-  const { problem, solution, solutionImg, solutionPoints } = data;
+  const { solution, solutionInfo, solutionImg, solutionPoints } = data;
   const educationPath = getPath("/solutions/education");
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center relative pb-10 lg:pb-14">
-      <div className="xl:mt-10">
+      <div>
         <p className="text-gray-800 font-semibold text-lg xl:text-xl 2xl:text-2xl mb-4">
-          {problem}
+          {solution}
         </p>
-        <p className="text-gray-500 xl:text-lg mb-6">{solution}</p>
+        <p className="text-gray-500 mb-6">{solutionInfo}</p>
         <div className="grid grid-cols-1 xs:grid-cols-2 my-5 xl:mt-6 lg:mb-0 gap-y-2.5 lg:gap-x-2 xl:gap-x-0">
           {solutionPoints.map((item, i) => (
             <div key={i} className="flex items-start">

@@ -1,7 +1,7 @@
 /* gradient bg  */
 .gradient-bg,
 .navbar-bg,
-.bg-gradient-from-white,
+.bg-gradient-from-white, .solutionsBtn,
 .service-card-bg,
 .blog-text {
   position: relative;
@@ -29,6 +29,10 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.solutionsBtn {
+  background-color: white;
+  border-radius: 7px;
+}
 
 
 .navbar-bg {
@@ -45,6 +49,7 @@
 .gradient-bg::before,
 .navbar-bg::before,
 .bg-gradient-from-white::before,
+.solutionsBtn::before,
 .gradient-bg-sm::before,
 .service-card-bg::before,
 .blog-text::before {
@@ -62,6 +67,7 @@
 .gradient-bg::before,
 .navbar-bg::before,
 .bg-gradient-from-white::before,
+.solutionsBtn::before,
 .service-card-bg::before {
   background-image: linear-gradient(to right, #00469f, #1e79d6);
   transition: opacity 0.5s ease-in;
@@ -85,12 +91,16 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.solutionsBtn::before {
+  border-radius: 6px;
+}
 
 
 .gradient-bg:hover::before,
 .gradient-bg:hover .gradient-bg-sm::before,
 .navbar-bg:hover::before,
 .bg-gradient-from-white:hover::before,
+.solutionsBtn:hover::before,
 .blog-card:hover .service-card-bg::before,
 .blog-card:hover .blog-text::before {
   opacity: 1;

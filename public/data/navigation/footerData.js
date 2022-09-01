@@ -31,8 +31,8 @@ const footerData = [
       },
       {
         id: 5,
-        name: "Food and Beverage",
-        path: "/solutions/food-and-beverage",
+        name: "Food Services",
+        path: "/solutions/food-services",
       },
       {
         id: 6,

@@ -79,11 +79,9 @@ const FinanceProblemsAndSolutions = ({ data }) => {
     return (
       <div className={`${props.animation && "scroll-animation-less"}`}>
         <Title label="Solution" />
-        {/* temporary  */}
-        <Heading label={problem} />
-        {/* <Heading label={solution} /> */}
+        <Heading label={solution} />
         <Info text={solutionInfo} />
-        <Info text={benefits} />
+        {benefits && <Info text={benefits} />}
         <Title label="Benefits" />
         <BulletPoints data={solutionPoints} />
       </div>
@@ -96,8 +94,8 @@ const FinanceProblemsAndSolutions = ({ data }) => {
       className={`py-6 xl:py-10  ${margin && "mb-[1000px]"}`}
     >
       <TechnologiesSectionTitle>Problem & Solution</TechnologiesSectionTitle>
-      <div className="mt-6 xl:mt-10 grid grid-cols-12 lg:items-center gap-6">
-        <div className="col-span-12 lg:col-span-5 xl:col-span-4 flex flex-col gap-6 lg:block">
+      <div className="mt-6 xl:mt-10 grid grid-cols-12 gap-6">
+        <div className="col-span-12 lg:col-span-7 2xl:col-span-8 flex flex-col gap-6 lg:block">
           {data.map((item, i) => {
             return (
               <div key={i}>
@@ -117,7 +115,7 @@ const FinanceProblemsAndSolutions = ({ data }) => {
             );
           })}
         </div>
-        <div className="hidden lg:block lg:col-span-7 xl:col-span-8 bg-white p-5 rounded-[20px] shadow-[-4px_-4px_25px_0px_#E5EBF3]">
+        <div className="hidden lg:block lg:col-span-5 2xl:col-span-4 h-full bg-white p-5 rounded-[20px] shadow-[-4px_-4px_25px_0px_#E5EBF3]">
           <TabContent />
         </div>
       </div>

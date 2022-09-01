@@ -35,9 +35,9 @@ const navbars = [
       },
       {
         id: 5,
-        title: "Food and Beverage",
+        title: "Food Services",
         subTitle: "Intelligent systems to make life better",
-        link: "/solutions/food-and-beverage",
+        link: "/solutions/food-services",
       },
       {
         id: 6,

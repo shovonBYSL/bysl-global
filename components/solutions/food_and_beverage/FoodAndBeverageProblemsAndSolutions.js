@@ -57,7 +57,7 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
   };
 
   const TabContent = (props) => {
-    const { problem, solutionInfo, solutionImg, solutionPoints } = tabData;
+    const { solution, solutionInfo, solutionImg, solutionPoints } = tabData;
 
     return (
       <div className={`${props.animation && "scroll-animation-less"}`}>
@@ -67,12 +67,12 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
           blurDataURL={solutionImg}
           height={310}
           width={872}
-          className="!rounded-lg xl:!rounded-2xl zooming-less-animation"
+          className="!rounded-lg xl:!rounded-2xl opacity-animation"
           objectFit="cover"
           alt=""
         />
         <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 font-semibold mt-2 xl:mt-4 mb-2">
-          {problem}
+          {solution}
         </p>
         <Info text={solutionInfo} />
         <BulletPointsDouble data={solutionPoints} />
@@ -92,7 +92,7 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
     >
       <TechnologiesSectionTitle>Problem & Solution</TechnologiesSectionTitle>
       <div className="mt-6 xl:mt-10 grid grid-cols-12 lg:items-center gap-6">
-        <div className="col-span-12 lg:col-span-5 xl:col-span-4 flex flex-col gap-6">
+        <div className="col-span-12 lg:col-span-7 xl:col-span-6 flex flex-col gap-6">
           {data.map((item, i) => {
             return (
               <div key={i}>
@@ -112,7 +112,7 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
             );
           })}
         </div>
-        <div className="hidden lg:block lg:col-span-7 xl:col-span-8 bg-white p-5 rounded-[20px] shadow-[-4px_-4px_25px_0px_#E5EBF3]">
+        <div className="hidden h-full lg:block lg:col-span-5 xl:col-span-6 bg-white p-5 rounded-[20px] shadow-[-4px_-4px_25px_0px_#E5EBF3]">
           <TabContent />
         </div>
       </div>

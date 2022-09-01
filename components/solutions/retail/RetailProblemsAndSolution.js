@@ -14,14 +14,14 @@ const RetailProblemsAndSolution = ({ data }) => {
     setTabData(data[tabOpen]);
   }, [tabOpen]);
 
-  const { id, problem, problemInfo, solution, benefits, benefitPoints } =
+  const { id, problem, problemInfo, solutionInfo, benefits, benefitPoints } =
     tabData;
 
   return (
     <div id="problems&solutions" className="py-6 xl:py-10">
       <TechnologiesSectionTitle>Problem & Solution</TechnologiesSectionTitle>
       <div className="mt-6 xl:mt-10">
-        <div className="grid grid-cols-5 max-w-[1106px] mx-auto ">
+        <div className="grid grid-cols-4 max-w-[1106px] mx-auto ">
           {data.map(({ id, problem }) => {
             return (
               <div
@@ -51,7 +51,7 @@ const RetailProblemsAndSolution = ({ data }) => {
                       : "text-gray-600"
                   }`}
                 >
-                  {problem}
+                  Problem 0{id + 1}
                 </p>
               </div>
             );
@@ -74,9 +74,9 @@ const RetailProblemsAndSolution = ({ data }) => {
               <TextGradient text="Solutions:" />
             </p>
             <p className="pl-4 pt-1.5 pb-4 text-gray-500 text-sm xl:text-base">
-              {solution}
+              {solutionInfo}
             </p>
-            <p className="text-lg text-gray-800 font-medium mb-4">{benefits}</p>
+            {/* <p className="text-lg text-gray-800 font-medium mb-4">{benefits}</p> */}
             <div className="flex flex-col gap-3">
               {benefitPoints.map((item, i) => (
                 <div key={i} className="flex items-start gap-3">

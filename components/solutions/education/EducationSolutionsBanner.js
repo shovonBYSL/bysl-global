@@ -14,12 +14,17 @@ const EducationSolutionsBanner = ({ banner }) => {
             <TextGradient text="Education" />
           </p>
           <SectionTitleGradient>
-            eLearning The Future of <br /> <TextGradient text=" Education" />
+            Shaping the future with better
+            <br />
+            technology for education
           </SectionTitleGradient>
-          <p className="text-gray-600 text-sm xl:text-base w-5/6 max-w-[690px] mx-auto mt-5">
-            Harness the potential of mega data pools across various platforms to
-            introduce revolutionary transformations to individual, scientific
-            and business journeys.
+          <p className="text-gray-600 text-sm xl:text-base w-5/6 max-w-[730px] mx-auto mt-5">
+            We work to streamline information to classroom from the real world
+            as much as moving the classroom outside the four walls. We endeavor
+            to connect learning with tech utilizing next-gen applications to
+            create the classrooms of the future; a future where learners are
+            presented with simulated projections of miniatured worlds, topics of
+            studies and access knowledge from anywhere.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
-import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
+// import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
 import SolutionsImageOverview from "../../components/solutions/SolutionsImageOverview";
 import FoodAndBeverageProblemsAndSolutions from "../../components/solutions/food_and_beverage/FoodAndBeverageProblemsAndSolutions";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
@@ -8,6 +8,7 @@ import {
   foodAndBeverageOverviewData,
   foodAndBeverageProblemsAndSolutionsData,
 } from "../../public/data/solutions/foodAndBeverageData";
+import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
 
 const FoodAndBeverage = ({
   banner,
@@ -23,7 +24,8 @@ const FoodAndBeverage = ({
       noMargin={true}
     >
       {/* banner section  */}
-      <SolutionButtonBanner data={banner} />
+      <SolutionsBanner data={banner} />
+      {/* <SolutionButtonBanner data={banner} /> */}
       <div className="box">
         {/* overview section  */}
         <SolutionsImageOverview data={overviewData} />

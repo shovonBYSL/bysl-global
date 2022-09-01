@@ -21,9 +21,9 @@ const Retail = ({
     <SolutionsLayout title="Retail" data={solutionsResources}>
       {/* banner section  */}
       <SolutionsTextImageBanner data={banner}>
-        The
-        <TextGradient text=" right strategy " />
-        can reset, build back better, and grow.
+        Building the
+        <TextGradient text=" future blocks " />
+        of retail industry
       </SolutionsTextImageBanner>
 
       {/* overview section  */}

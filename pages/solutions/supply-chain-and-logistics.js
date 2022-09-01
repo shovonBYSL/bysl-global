@@ -1,6 +1,6 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
-import SupplyChainSolutionBanner from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionBanner";
+// import SupplyChainSolutionBanner from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionBanner";
 import SupplyChainSolutionProblems from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionProblems";
 import SupplyChainSolutionsSolution from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionsSolution";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
@@ -9,6 +9,7 @@ import {
   supplyChainSolutionsOverviewData,
   supplyChainAndLogisticsProblemsAndSolutionsData,
 } from "../../public/data/solutions/supplyChainAndLogisticsData";
+import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
 
 const SupplyChainAndLogistics = ({
   banner,
@@ -24,7 +25,8 @@ const SupplyChainAndLogistics = ({
       noMargin={true}
     >
       {/* banner section  */}
-      <SupplyChainSolutionBanner data={banner} />
+      <SolutionsBanner data={banner} />
+      {/* <SupplyChainSolutionBanner data={banner} /> */}
       <div className="box">
         {/* overview section  */}
         <SolutionsOverview data={overviewData} />
@@ -34,9 +36,9 @@ const SupplyChainAndLogistics = ({
           type="Problems"
           data={problemsAndSolutionsData}
         >
-          The problems we found in education&nbsp;
-          <br className="hidden xs:block" />
-          industries
+          Problems of the existing
+          <br />
+          supply chain
         </SupplyChainSolutionProblems>
 
         {/* solutions section  */}
@@ -44,8 +46,9 @@ const SupplyChainAndLogistics = ({
           type="Solutions"
           data={problemsAndSolutionsData}
         >
-          Progressing advanced Education Solutions&nbsp;
-          <br className="hidden sm:block" /> for the digital era
+          Tackling supply chain challenges with the&nbsp;
+          <br className="hidden sm:block" />
+          next-gen technologies
         </SupplyChainSolutionsSolution>
       </div>
     </SolutionsLayout>

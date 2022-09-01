@@ -29,7 +29,7 @@ const ResponsiveNavbar = () => {
   const arVrPath = getPath("/technologies/ar-vr");
   const investmentPath = getPath("/investments");
   const resourcesPath = getPath("/resources");
-  const foodAndBeveragePath = getPath("/solutions/food-and-beverage");
+  const foodAndBeveragePath = getPath("/solutions/food-services");
   const healthcarePath = getPath("/solutions/healthcare");
   const supplyChainSolutionsPath = getPath(
     "/solutions/supply-chain-and-logistics"

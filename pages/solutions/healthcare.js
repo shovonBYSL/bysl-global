@@ -1,6 +1,6 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
-import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
+// import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
   healthcareOverviewData,
@@ -8,6 +8,7 @@ import {
   healthcareSolutionsBannerData,
 } from "../../public/data/solutions/healthcareSolutionsData";
 import ProblemsAndSolutionsToggle from "../../components/solutions/ProblemsAndSolutionsToggle";
+import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
 
 const HealthCare = ({
   banner,
@@ -23,15 +24,17 @@ const HealthCare = ({
       noMargin={true}
     >
       {/* banner section  */}
-      <SolutionButtonBanner data={banner} />
+      <SolutionsBanner data={banner} />
+      {/* <SolutionButtonBanner data={banner} /> */}
 
       <div className="box">
         {/* overview section  */}
         <SolutionsOverview data={overviewData} />
         {/* problems & solutions section  */}
         <ProblemsAndSolutionsToggle data={problemsAndSolutionsData}>
-          The problems we found in <br className="hidden xxs:block" /> education
-          industries
+          Major set-backs of the existing
+          <br className="hidden xxs:block" />
+          healthcare system
         </ProblemsAndSolutionsToggle>
       </div>
     </SolutionsLayout>
