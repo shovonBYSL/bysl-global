@@ -9,7 +9,10 @@ import { navbars } from "../../public/data/navigation/navbarData";
 const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
   const handleMouseOver = () => {
-    document.querySelector(".sol-nav").style.display = "none";
+    const nav = document.querySelector(".sol-nav");
+    if (nav.style.display !== "none") {
+      nav.style.display = "none";
+    }
   };
 
   // breaking navbar code into components start
