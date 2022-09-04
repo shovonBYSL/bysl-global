@@ -10,7 +10,7 @@ const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
   const handleMouseOver = () => {
     const nav = document.querySelector(".sol-nav");
-    if (nav.style.display !== "none") {
+    if (nav) {
       nav.style.display = "none";
     }
   };
