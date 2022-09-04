@@ -41,21 +41,7 @@
     display: block;
   }
   .sol-nav {
-    /* position: fixed;
-    top: 20;
-    left: 0; */
-    /* opacity:10%; */
-    display:none
-  }
-  #nav:hover .sol-nav {
-    /* position: unset; */
-    /* display: none !important; */
-    /* opacity: 0 !important;
-    visibility: hidden */
-  }
-
-  .side-drawer:focus{
-    background-color:red
+    display: none;
   }
 
   .nav-arrow-icon {
