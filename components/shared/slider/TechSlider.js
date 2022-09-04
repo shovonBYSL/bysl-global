@@ -9,8 +9,7 @@ import {
 const TechSlider = ({ data }) => {
   const settings = {
     dots: false,
-    prevArrow: false,
-    nextArrow: false,
+    arrows: false,
     infinite: true,
     slidesToShow: 9,
     slidesToScroll: 1,
@@ -18,6 +17,8 @@ const TechSlider = ({ data }) => {
     speed: 3000,
     autoplaySpeed: 0,
     cssEase: "linear",
+    draggable: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1736,
