@@ -99,3 +99,13 @@
     width: 60px !important;
   }
 }
+
+
+
+.techSlides .slick-slide > div{
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+.techSlides .slick-arrow{
+  display: none !important;
+}

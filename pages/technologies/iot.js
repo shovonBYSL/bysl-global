@@ -1,10 +1,11 @@
-import BasicLayout from "../../layouts/BasicLayout";
+import TechnologiesLayout from "../../layouts/TechnologiesLayout";
 import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
 import Overview3Items from "../../components/shared/Overview3Items";
 import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
 import TriangleCardBanner from "../../components/shared/banners/TriangleCardBanner";
 import { TextBanner } from "../../components/shared/banners/SharedBanner";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { techSlidersData } from "../../public/data/technologies/techSlidersData";
 import {
   iotAppDevelopmentBannerData,
   iotServicesData,
@@ -19,10 +20,15 @@ const IotTechnologies = ({
   iotSolutions,
   iotSupport,
   iotsolutionsVideo,
+  sliderData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="IOT Technologies" noMargin={true}>
+    <TechnologiesLayout
+      title="IOT Technologies"
+      noMargin={true}
+      slider={sliderData}
+    >
       <div className="box">
         {/* banner section  */}
         <PrimaryBanner
@@ -69,7 +75,7 @@ const IotTechnologies = ({
           Introducing innovative & pragmatic solutions to old problems
         </BannerWithBullets>
       </div>
-    </BasicLayout>
+    </TechnologiesLayout>
   );
 };
 
@@ -83,6 +89,7 @@ export async function getStaticProps() {
       iotsolutionsVideo:
         "/images/technologies/iot/solutions/iot_solutions_banner.webm",
       iotSupport: iotSupportData,
+      sliderData: techSlidersData[7],
     },
   };
 }

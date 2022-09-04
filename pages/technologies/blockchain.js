@@ -1,10 +1,11 @@
+import TechnologiesLayout from "../../layouts/TechnologiesLayout";
 import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
 import IconCardGroup3 from "../../components/shared/IconCardGroup3";
 import ImageShowcase from "../../components/shared/ImageShowcase";
 import RowSpanGrid from "../../components/shared/RowSpanGrid";
-import BasicLayout from "../../layouts/BasicLayout";
 import { TextBanner } from "../../components/shared/banners/SharedBanner";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { techSlidersData } from "../../public/data/technologies/techSlidersData";
 import {
   blockchainFeaturesData,
   blockchainHealthBannerData,
@@ -17,10 +18,11 @@ const BlockchainTechnologies = ({
   blockchainHealthBanner,
   blockchainServices,
   supplyChainImg,
+  sliderData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="Blockchain Technologies">
+    <TechnologiesLayout title="Blockchain Technologies" slider={sliderData}>
       {/* banner section  */}
       <PrimaryBanner
         title="Blockchain Technologies"
@@ -63,7 +65,7 @@ const BlockchainTechnologies = ({
         <br />
         supply chain & logistics
       </ImageShowcase>
-    </BasicLayout>
+    </TechnologiesLayout>
   );
 };
 
@@ -75,6 +77,7 @@ export async function getStaticProps() {
       blockchainHealthBanner: blockchainHealthBannerData,
       blockchainServices: blockchainServicesData,
       supplyChainImg: "/images/technologies/blockchain/blockchain_supply.svg",
+      sliderData: techSlidersData[6],
     },
   };
 }

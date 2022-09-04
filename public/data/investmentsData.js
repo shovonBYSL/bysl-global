@@ -56,14 +56,14 @@ const marketplacePlatformsData = [
   {
     id: 0,
     title: "Citimart",
-    motto: "Grocery store with different treasures ",
+    motto: "Grocery store with top tier shopping experience",
     img: "/images/investments/marketplace_platforms/citi-mart.svg",
     logo: "/images/investments/marketplace_platforms/logo_0.svg",
   },
   {
     id: 1,
     title: "Marketplace",
-    motto: "Favorite brands and one stop smart shopping resource.",
+    motto: "Favorite brands with one stop smart shopping experience",
     img: "/images/investments/marketplace_platforms/marketplace.svg",
     logo: "/images/investments/marketplace_platforms/logo_1.svg",
   },

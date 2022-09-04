@@ -26,7 +26,7 @@ const Investments = ({
       {/* overview items section  */}
       <div className="box !max-w-[1250px]">
         <Overview4Items data={investmentOverview}>
-          In creating another upliftment of technical business
+          Emerging with disruptive innovation for a better tommorrow
         </Overview4Items>
       </div>
 
@@ -34,7 +34,7 @@ const Investments = ({
       <div id="it-platform">
         <GradientBanner
           title="IT Platforms"
-          details="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there."
+          details="Equipped with the right resources, right skill sets, right guidance and a mission to reinvent and lead the next-generation IT environment."
         />
       </div>
 
@@ -46,8 +46,7 @@ const Investments = ({
       <div id="marketplace-platform">
         <GradientBanner
           title="Marketplace Platforms"
-          details="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there."
-          details2="Thing embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
+          details="Like an ocean surrounding an island, we are meeting the needs and demands of modern days from every direction with high-end products and services through a cluster of next-generation marketplace platforms."
         />
       </div>
       <div className="box">

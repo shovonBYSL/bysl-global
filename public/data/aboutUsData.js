@@ -25,7 +25,7 @@ const aboutUsData = [
     title: "CULTURE",
     path: "/about-us/culture",
     description:
-      "Our mission is to serve the world with exceptional products & services",
+      "Forward-Thinking, Learning, Teamwork, Integrity, Change, Innovation, Development",
   },
 ];
 

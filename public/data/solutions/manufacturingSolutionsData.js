@@ -1,7 +1,7 @@
 const manufacturingOverviewData = {
   title: "Why rely on our solutions",
   subTitle1:
-    "With the advent of Industry 4.0 instrumentalizing automation in all aspects of manufacturing has simplified the communication and coordination of data along the value chain. The Industrial Internet of Things (IIoT), on the other hand, enabled the manufacturers to harvest data and translate it into useful information. The manufacturing industry is now more dependent on the use of Big Data and connecting it to the physical operations of manufacturing using various sensors, applications and devices.",
+    "The advent of Industry 4.0 instrumentalizing automation in all aspects of manufacturing has simplified the communication and coordination of data along the value chain. The Industrial Internet of Things (IIoT), on the other hand, enabled the manufacturers to harvest data and translate it into useful information. The manufacturing industry is now more dependent on the use of Big Data and connecting it to the physical operations of manufacturing using various sensors, applications and devices.",
   subTitle2:
     "Our relentless pace of innovation keeps our manufacturing partners on the forefront of technology. With cloud-based serverless digital architecture, an ecosystem of microservices and flexible costing strategy for our partners to realize digital transformation at every phase of the value chain, we open up new possibilities for solving complex design problems, running engineering simulations on cloud, achieving workflow automation in operations and supply chain and many more.",
 };
@@ -15,7 +15,7 @@ const manufacturingProblemsAndSolutionsData = [
     problemImg: "/images/solutions/manufacturing/problem_image_0.png",
     solution: "Comprehensive IT and OT solutions",
     solutionInfo:
-      "Our cost effective models for serverless computing, and a comprehensive ecosystem of microservices enables our partners to achieve competitive advantage in terms of optimizing the entire information and operational technologies. You can effortlessly build connected   smart services and increase operational efficiency Connecting factory equipment on the plant floor or deploying connected products on the field, our IoT services provide inexpensive yet secure cloud solutions, analytics, and device management to help achieve full-scale IT and OT needs.",
+      "Our cost effective models for serverless computing, and a comprehensive ecosystem of microservices enables our partners to achieve competitive advantage in terms of optimizing the entire information and operational technologies. You can effortlessly build connected   smart services and increase operational efficiency connecting factory equipment on the plant floor or deploying connected products on the field, our IoT services provide inexpensive yet secure cloud solutions, analytics, and device management to help achieve full-scale IT and OT needs.",
     solutionImg: "/images/solutions/manufacturing/solution_image_0.png",
   },
   {

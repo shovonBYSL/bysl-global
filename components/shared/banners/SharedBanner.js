@@ -82,6 +82,8 @@ const TextBanner = (props) => {
 };
 
 const GradientBanner = ({ title, details, details2 }) => {
+  const investmentPath = getPath("/investments");
+
   return (
     <div className="py-10 lg:py-24 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
       <div className="box flex flex-col lg:flex-row items-center gap-6 !max-w-[1050px]">
@@ -92,7 +94,7 @@ const GradientBanner = ({ title, details, details2 }) => {
           </p>
         </div>
         <div className="w-full lg:w-1/2">
-          <p className="text-sm ">{details}</p>
+          <p className={`text-sm ${investmentPath && "md:text-base xl:text-xl"}`}>{details}</p>
           {details2 && <p className="text-sm mt-4">{details2}</p>}
         </div>
       </div>

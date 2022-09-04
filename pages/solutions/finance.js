@@ -1,5 +1,4 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
-import FinanceBanner from "../../components/solutions/finance/FinanceBanner";
 import FinanceOverview from "../../components/solutions/finance/FinanceOverview";
 import FinanceProblemsAndSolutions from "../../components/solutions/finance/FinanceProblemsAndSolutions";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
@@ -8,6 +7,7 @@ import {
   financeOverviewData,
   financeProblemsAndSolutionsData,
 } from "../../public/data/solutions/financeSolutionsData";
+import SolutionsTextImageBanner from "../../components/solutions/SolutionsTextImageBanner";
 
 const Finance = ({
   banner,
@@ -19,7 +19,7 @@ const Finance = ({
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <SolutionsLayout title="Finance" data={solutionsResources}>
       {/* banner section  */}
-      <FinanceBanner data={banner} />
+      <SolutionsTextImageBanner data={banner} />
 
       {/* overview section  */}
       <FinanceOverview data={overview} />

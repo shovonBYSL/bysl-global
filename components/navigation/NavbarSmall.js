@@ -6,6 +6,12 @@ import SideDrawer from "./SideDrawer";
 
 const NavbarSmall = ({ colorChange, specificPath }) => {
   const [showDrawer, setShowDrawer] = useState(false);
+  const handleClick = () => {
+    const ss = document.querySelector(".side-drawer");
+    ss.focus();
+    setShowDrawer(!showDrawer);
+    console.log("test");
+  };
 
   return (
     <>
@@ -18,7 +24,8 @@ const NavbarSmall = ({ colorChange, specificPath }) => {
       >
         <div
           className="h-4 w-5 sm:h-5 sm:w-7 absolute"
-          onClick={() => setShowDrawer(!showDrawer)}
+          onClick={handleClick}
+          // onClick={() => setShowDrawer(!showDrawer)}
         >
           <Image
             src={

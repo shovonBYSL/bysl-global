@@ -1,9 +1,10 @@
-import BasicLayout from "../../layouts/BasicLayout";
+import TechnologiesLayout from "../../layouts/TechnologiesLayout";
 import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
 import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
 import IconCardGroup3 from "../../components/shared/IconCardGroup3";
 import TriangleCardBanner from "../../components/shared/banners/TriangleCardBanner";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { techSlidersData } from "../../public/data/technologies/techSlidersData";
 import {
   cloudFeaturesData,
   cloudServicesData,
@@ -16,10 +17,11 @@ const CloudTechnologies = ({
   cloudServiceImg,
   cloudFeatures,
   cloudSupport,
+  sliderData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="Cloud Technologies">
+    <TechnologiesLayout title="Cloud Technologies" slider={sliderData}>
       {/* banner section  */}
       <PrimaryBanner
         title="Cloud Technologies"
@@ -53,7 +55,7 @@ const CloudTechnologies = ({
         We lead & support
         <br className="" /> customers
       </BannerWithBullets>
-    </BasicLayout>
+    </TechnologiesLayout>
   );
 };
 
@@ -65,6 +67,7 @@ export async function getStaticProps() {
       cloudServiceImg: "/images/technologies/cloud/services/services.png",
       cloudFeatures: cloudFeaturesData,
       cloudSupport: cloudSupportData,
+      sliderData: techSlidersData[9],
     },
   };
 }

@@ -8,6 +8,9 @@ import { navbars } from "../../public/data/navigation/navbarData";
 
 const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
+  const handleMouseOver = () => {
+    document.querySelector(".sol-nav").style.display = "none";
+  };
 
   // breaking navbar code into components start
 
@@ -37,6 +40,7 @@ const Navbar = ({ colorChange, specificPath }) => {
 
     return (
       <button
+        onMouseOver={handleMouseOver}
         className={`${
           !colorChange && specificPath
             ? "text-white hover:text-white/80"

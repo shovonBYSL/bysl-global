@@ -1,9 +1,10 @@
-import BasicLayout from "../../layouts/BasicLayout";
+import TechnologiesLayout from "../../layouts/TechnologiesLayout";
 import FeaturedBanner from "../../components/shared/banners/FeaturedBanner";
 import TriangleCardBanner from "../../components/shared/banners/TriangleCardBanner";
 import IconCardGroup3 from "../../components/shared/IconCardGroup3";
 import ImageShowcase from "../../components/shared/ImageShowcase";
 import ARVRBanner from "../../components/technologies_pages/ar_vr_technologies/ARVRBanner";
+import { techSlidersData } from "../../public/data/technologies/techSlidersData";
 import {
   arVrFeaturesData,
   arVrServicesData,
@@ -17,10 +18,15 @@ const ARVRTechnologies = ({
   arVrFeatures,
   demoVideo,
   researchVideo,
+  sliderData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="AR/VR Technologies" noMargin={true}>
+    <TechnologiesLayout
+      title="AR/VR Technologies"
+      noMargin={true}
+      slider={sliderData}
+    >
       {/* banner section  */}
       <ARVRBanner banner={banner} />
 
@@ -49,7 +55,7 @@ const ARVRTechnologies = ({
         {/* How does it works */}
         <ImageShowcase video={demoVideo}>How does it works?</ImageShowcase>
       </div>
-    </BasicLayout>
+    </TechnologiesLayout>
   );
 };
 
@@ -62,6 +68,7 @@ export async function getStaticProps() {
       arVrFeatures: arVrFeaturesData,
       demoVideo: "/images/technologies/ar_vr/demo.webm",
       researchVideo: "/images/technologies/ar_vr/research.webm",
+      sliderData: techSlidersData[5],
     },
   };
 }

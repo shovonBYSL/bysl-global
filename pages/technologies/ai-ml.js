@@ -1,10 +1,11 @@
-import BasicLayout from "../../layouts/BasicLayout";
+import TechnologiesLayout from "../../layouts/TechnologiesLayout";
 import AIMLBanner from "../../components/technologies_pages/ai_ml_technologies/AIMLBanner";
 import Overview4Items from "../../components/shared/Overview4Items";
 import BannerWithBulletSingle from "../../components/shared/banners/BannerWithBulletSingle";
 import AIMLServices from "../../components/technologies_pages/ai_ml_technologies/AIMLServices";
 import ImageShowcase from "../../components/shared/ImageShowcase";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { techSlidersData } from "../../public/data/technologies/techSlidersData";
 import {
   aimlFeaturesData,
   aimlUserExperienceData,
@@ -18,10 +19,15 @@ const AIMLTechnologies = ({
   applicationsVideo,
   servicesVideo,
   aimlUserExperience,
+  sliderData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="AI/ML Technologies" noMargin={true}>
+    <TechnologiesLayout
+      title="AI/ML Technologies"
+      noMargin={true}
+      slider={sliderData}
+    >
       {/* banner section  */}
       <AIMLBanner
         title="AI/ML Technologies"
@@ -50,7 +56,7 @@ const AIMLTechnologies = ({
         {/* Big Data Analysis section  */}
         <BannerWithBulletSingle data={aimlUserExperience} type="Features" />
       </div>
-    </BasicLayout>
+    </TechnologiesLayout>
   );
 };
 
@@ -64,6 +70,7 @@ export async function getStaticProps() {
         "/images/technologies/ai_ml/services/aiml_services_banner.webm",
       applicationsVideo: "/images/technologies/ai_ml/aiml_solutions.webm",
       aimlUserExperience: aimlUserExperienceData,
+      sliderData: techSlidersData[1],
     },
   };
 }

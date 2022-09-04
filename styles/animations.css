@@ -105,7 +105,10 @@
   }
   .opacity-animation {
     animation: opacityAnimation 1.2s;
-  } 
+  }
+  .opacity-animation-fast {
+    animation: opacityAnimation 0.5s;
+  }
 
   .service-scroll {
     animation: scrollFromBottomAnimationLess 0.8s !important;

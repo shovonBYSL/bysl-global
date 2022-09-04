@@ -1,10 +1,11 @@
-import BasicLayout from "../../layouts/BasicLayout";
+import TechnologiesLayout from "../../layouts/TechnologiesLayout";
 import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
 import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
 import TriangleCardBanner from "../../components/shared/banners/TriangleCardBanner";
 import IconCardGroup3 from "../../components/shared/IconCardGroup3";
 import Overview4Items from "../../components/shared/Overview4Items";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { techSlidersData } from "../../public/data/technologies/techSlidersData";
 import {
   cyberBenefitsData,
   cyberFeaturesData,
@@ -19,10 +20,11 @@ const CyberSecurityTechnologies = ({
   featuresBanner,
   cyberSolutions,
   cyberProtection,
+  sliderData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="Cyber Security Technologies">
+    <TechnologiesLayout title="Cyber Security Technologies" slider={sliderData}>
       {/* banner section  */}
       <PrimaryBanner
         title="Cyber Security Technologies"
@@ -57,7 +59,7 @@ const CyberSecurityTechnologies = ({
       <BannerWithBullets data={cyberProtection}>
         360° Protection from APTs, DDoS & SQL injections
       </BannerWithBullets>
-    </BasicLayout>
+    </TechnologiesLayout>
   );
 };
 
@@ -71,6 +73,7 @@ export async function getStaticProps() {
         "/images/technologies/cyber_security/features/cyber_security_features_banner.svg",
       cyberSolutions: cyberSolutionsData,
       cyberProtection: cyberProtectionData,
+      sliderData: techSlidersData[8],
     },
   };
 }

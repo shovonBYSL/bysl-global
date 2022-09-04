@@ -1,10 +1,11 @@
-import BasicLayout from "../../layouts/BasicLayout";
+import TechnologiesLayout from "../../layouts/TechnologiesLayout";
 import SecondaryLargeBanner from "../../components/shared/banners/SecondaryLargeBanner";
 import IconCardGroup3 from "../../components/shared/IconCardGroup3";
 import Overview4Items from "../../components/shared/Overview4Items";
 import BigdataServices from "../../components/technologies_pages/bigdata_technologies/BigdataServices";
 import WhyBigdata from "../../components/technologies_pages/bigdata_technologies/WhyBigdata";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { techSlidersData } from "../../public/data/technologies/techSlidersData";
 import {
   bigdataBannerData,
   bigdataFeaturesData,
@@ -19,10 +20,15 @@ const BigdataTechnologies = ({
   whyBigdata,
   bigdataServices,
   bigdataFeatures,
+  sliderData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="Big Data Technologies" noMargin={true}>
+    <TechnologiesLayout
+      title="Big Data Technologies"
+      noMargin={true}
+      slider={sliderData}
+    >
       <div className="box">
         {/* banner section  */}
         <SecondaryLargeBanner data={bigdataBanner}>
@@ -48,7 +54,7 @@ const BigdataTechnologies = ({
           Multi-faceted use of Big Data
         </IconCardGroup3>
       </div>
-    </BasicLayout>
+    </TechnologiesLayout>
   );
 };
 
@@ -60,6 +66,7 @@ export async function getStaticProps() {
       whyBigdata: whyBigdataData,
       bigdataServices: bigdataServicesData,
       bigdataFeatures: bigdataFeaturesData,
+      sliderData: techSlidersData[3],
     },
   };
 }

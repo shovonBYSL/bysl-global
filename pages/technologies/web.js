@@ -1,10 +1,11 @@
-import BasicLayout from "../../layouts/BasicLayout";
+import TechnologiesLayout from "../../layouts/TechnologiesLayout";
 import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
 import FeaturedBanner from "../../components/shared/banners/FeaturedBanner";
 import Overview4Items from "../../components/shared/Overview4Items";
 import RowSpanGrid from "../../components/shared/RowSpanGrid";
 import { TextBanner } from "../../components/shared/banners/SharedBanner";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { techSlidersData } from "../../public/data/technologies/techSlidersData";
 import {
   businessValuesData,
   webBannerData,
@@ -19,10 +20,11 @@ const WebTechnologies = ({
   webServicesBanner,
   webProcess,
   webFeatures,
+  sliderData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="Web Technologies">
+    <TechnologiesLayout title="Web Technologies" slider={sliderData}>
       {/* banner section  */}
       <PrimaryBanner
         title="Web Technologies"
@@ -58,7 +60,7 @@ const WebTechnologies = ({
       <FeaturedBanner data={webFeatures}>
         Advanced features serving specific busniess needs
       </FeaturedBanner>
-    </BasicLayout>
+    </TechnologiesLayout>
   );
 };
 
@@ -70,6 +72,7 @@ export async function getStaticProps() {
       webServicesBanner: webServicesBannerData,
       webProcess: webProcessData,
       webFeatures: webFeaturesData,
+      sliderData: techSlidersData[0],
     },
   };
 }

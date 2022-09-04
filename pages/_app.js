@@ -13,6 +13,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 // notification alert
 import "react-toastify/dist/ReactToastify.css";
 
