@@ -51,7 +51,7 @@ const CompanyLocations = ({ data }) => {
                 {name}
               </p>
               {name2 && (
-                <p className="uppercase mt-2 xl:mt-4 mb-4 font-bold lg:text-xl xl:text-2xl text-gray-800">
+                <p className="uppercase mb-4 font-bold lg:text-xl xl:text-2xl text-gray-800">
                   {name2}
                 </p>
               )}
