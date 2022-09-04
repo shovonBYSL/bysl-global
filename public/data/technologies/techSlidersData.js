@@ -134,11 +134,6 @@ const techSlidersData = [
         label: "Scala",
         img: "/images/technologies/slider/aiml/icon_9.png",
       },
-      {
-        id: 10,
-        label: "Prolog",
-        img: "/images/technologies/slider/aiml/icon_10.png",
-      },
     ],
   },
   {
@@ -288,11 +283,6 @@ const techSlidersData = [
         img: "/images/technologies/slider/database/icon_5.png",
       },
       {
-        id: 6,
-        label: "Perl",
-        img: "/images/technologies/slider/database/icon_6.png",
-      },
-      {
         id: 7,
         label: "JavaScript",
         img: "/images/technologies/slider/database/icon_7.png",
@@ -306,11 +296,6 @@ const techSlidersData = [
         id: 9,
         label: "Rexx",
         img: "/images/technologies/slider/database/icon_9.png",
-      },
-      {
-        id: 10,
-        label: "Cobol",
-        img: "/images/technologies/slider/database/icon_10.png",
       },
     ],
   },
