@@ -32,7 +32,7 @@ const CompanyLocations = ({ data }) => {
         ))}
       </div>
 
-      {data.map(({ id, name, country, address, city }) => {
+      {data.map(({ id, name, name2, country, address, city }) => {
         return (
           id === location && (
             <div
@@ -50,6 +50,11 @@ const CompanyLocations = ({ data }) => {
               <p className="uppercase mt-6 xl:mt-10 mb-4 font-bold lg:text-xl xl:text-2xl text-gray-800">
                 {name}
               </p>
+              {name2 && (
+                <p className="uppercase mt-2 xl:mt-4 mb-4 font-bold lg:text-xl xl:text-2xl text-gray-800">
+                  {name2}
+                </p>
+              )}
               <p className="uppercase font-light text-sm xl:text-base text-gray-700">
                 {address}
                 <br className="hidden xs:block" /> {city}
