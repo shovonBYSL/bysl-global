@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import Router from "next/router";
 import { useRouter } from "next/router";
 
 import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
 import { navbars } from "../../public/data/navigation/navbarData";
+import { setItem } from "../../utils/sessionStorage";
 
 const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
@@ -13,6 +15,12 @@ const Navbar = ({ colorChange, specificPath }) => {
     if (nav) {
       nav.style.display = "none";
     }
+  };
+
+  const handleClick = (id) => {
+    setItem(id);
+    window.location.pathname === "/service" &&
+      Router.reload(window.location.pathname);
   };
 
   // breaking navbar code into components start
@@ -70,23 +78,30 @@ const Navbar = ({ colorChange, specificPath }) => {
 
   // dropdown items
   const DropdownItems = ({ data }) => {
-    const { title, subTitle, link } = data;
+    const { id, title, subTitle, link } = data;
 
     return (
       <Link passHref href={link}>
         <div
+          onClick={() => link === "/services" && handleClick(id)}
           className={`h-full w-full hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] border-transparent p-4 rounded-lg cursor-pointer transition-all duration-500 ${
+            link !== "/services" &&
             router.asPath === link &&
             "text-white bg-gradient-to-r from-blue-900 to-blue-700"
           }`}
         >
           <div className="flex items-center justify-between mb-2">
-            <p className={`${router.asPath !== link && "text-gray-800"}`}>
+            <p
+              className={`${
+                (link !== "/services" && router.asPath) !== link &&
+                "text-gray-800"
+              }`}
+            >
               {title}
             </p>
             <Image
               src={
-                router.asPath === link
+                link !== "/services" && router.asPath === link
                   ? "/images/navIconRightWhite.svg"
                   : "/images/navIconRight.svg"
               }
@@ -97,7 +112,9 @@ const Navbar = ({ colorChange, specificPath }) => {
           </div>
           <p
             className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs ${
-              router.asPath === link ? "text-white/40" : "text-[#393e50]/40"
+              link !== "/services" && router.asPath === link
+                ? "text-white/40"
+                : "text-[#393e50]/40"
             }`}
           >
             {subTitle}

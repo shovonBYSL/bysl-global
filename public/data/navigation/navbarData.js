@@ -123,7 +123,80 @@ const navbars = [
   {
     id: 2,
     title: "Services",
-    link: "/services",
+    dropdowns: [
+      {
+        id: 0,
+        title: "BPO",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 1,
+        title: "UI/UX Design",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 2,
+        title: "Web Development",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 3,
+        title: "Mobile App Development",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 4,
+        title: "E-Commerce Solution",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 5,
+        title: "ERP",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 6,
+        title: "Fintech",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 7,
+        title: "AI & ML",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 8,
+        title: "Fulfillment Service",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 9,
+        title: "Logistic Service",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 10,
+        title: "Cloud & Cyber Security",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+      {
+        id: 11,
+        title: "Customer Care Service",
+        subTitle: "Services Demo text",
+        link: "/services",
+      },
+    ],
   },
   {
     id: 3,
