@@ -13,7 +13,7 @@ const SolutionsLayout = (props) => {
       <div className={`${!noMargin && "box"}`}>{children}</div>
       <div className="box">
         <BlogSlider type="Resources" data={data}>
-          Read Our Latest Tips & Tricks
+          Business insights: Latest highlights
         </BlogSlider>
       </div>
       <Footer />

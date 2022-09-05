@@ -22,7 +22,7 @@ const JobTitle = ({ title }) => {
 };
 
 const JobDescriptionTitle = ({ title }) => (
-  <p className="text-gray-800 font-semibold mb-6">{title}</p>
+  <p className="text-gray-800 font-semibold mb-6">{title}:</p>
 );
 
 const JobHeader = ({ jobTitle }) => {

@@ -44,7 +44,7 @@ const RetailProblemsAndSolution = ({ data }) => {
                     } bg-gray-600`}
                   ></div>
                 </div>
-                <p
+                {/* <p
                   className={`hidden lg:block font-semibold text-sm xl:text-base mt-4 ${
                     tabOpen === id
                       ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
@@ -52,7 +52,7 @@ const RetailProblemsAndSolution = ({ data }) => {
                   }`}
                 >
                   Problem 0{id + 1}
-                </p>
+                </p> */}
               </div>
             );
           })}

@@ -236,7 +236,7 @@ const ITFeaturesData = {
   type: "Features",
   title: "Why BYSL Global Technology Group? ",
   subTitle:
-    "Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs.",
+    "Commit to excellence with unparalleled technological base required to thrive in the competitive world of business.",
   sliderData: [
     {
       id: 0,

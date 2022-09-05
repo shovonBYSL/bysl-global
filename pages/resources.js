@@ -9,8 +9,10 @@ import {
   resourcesFindingsData,
   resourcesVideoData,
 } from "../public/data/resourcesDataNew";
+import { popular } from "../utils/isPopular";
 
 const Resources = ({
+  banner,
   solutionsResources,
   blogData,
   findingsData,
@@ -24,16 +26,14 @@ const Resources = ({
       noMargin={true}
     >
       {/* banner section  */}
-      <ResourcesBanner />
-
+      <ResourcesBanner data={banner} />
+     { console.log(banner)}
       {/* blogs section  */}
       <div className="box">
         <ResourcesBlogs data={blogData} />
       </div>
-
       {/* featured videos section  */}
       <ResourceFeaturedVideos data={videoData} />
-
       {/* findings section  */}
       <div className="box">
         <ResourcesFindings data={findingsData} />
@@ -43,8 +43,11 @@ const Resources = ({
 };
 
 export async function getStaticProps() {
+  const filteredBanner = popular(solutionsResourcesData, 3);
+
   return {
     props: {
+      banner: filteredBanner,
       solutionsResources: solutionsResourcesData,
       blogData: resourcesBlogsData,
       findingsData: resourcesFindingsData,

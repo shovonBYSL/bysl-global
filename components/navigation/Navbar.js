@@ -88,9 +88,9 @@ const Navbar = ({ colorChange, specificPath }) => {
             link !== "/services" &&
             router.asPath === link &&
             "text-white bg-gradient-to-r from-blue-900 to-blue-700"
-          }`}
+          } ${!subTitle && "h-20"}`}
         >
-          <div className="flex items-center justify-between mb-2">
+          <div className={`flex items-center justify-between ${!subTitle && "mb-2"}`}>
             <p
               className={`${
                 (link !== "/services" && router.asPath) !== link &&

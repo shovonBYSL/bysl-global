@@ -84,7 +84,7 @@
   .connector::after {
     content: "";
     position: absolute;
-    top: 27%;
+    top: 50%;
     right: 5%;
     width: 70%;
     height: 2px;
