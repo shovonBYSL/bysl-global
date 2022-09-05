@@ -37,8 +37,14 @@ const JobDescription = () => {
               </Link>
             </div>
             <CompanyDescription />
-            <JobDescriptionTitle title={data.role} />
-            <p className="text-gray-600 mb-6 lg:mb-10">{data.roleDetails}</p>
+            {data.roleDetails && (
+              <>
+                <JobDescriptionTitle title={data.role} />
+                <p className="text-gray-600 mb-6 lg:mb-10">
+                  {data.roleDetails}
+                </p>
+              </>
+            )}
             {data.requirements.map(({ id, title, details }) => {
               return (
                 <div key={id} className="mb-6 lg:mb-10">
