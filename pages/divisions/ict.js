@@ -35,9 +35,9 @@ const ICT = ({ banner, ictSectors, erpBanner, ictSolutions, products }) => {
 
       {/* erp section  */}
       <TextBanner data={erpBanner} reversed={true}>
-        Rising as a Global Leader in
+        Rising as a global leader in
         <br />
-        ERP Infrastructure
+        web applications
       </TextBanner>
 
       {/* Powerful product section  */}

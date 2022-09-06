@@ -28,7 +28,7 @@ const businessValuesData = [
       "Multiple reporting tools",
       "Prediction capabilities ",
       "Third party integration",
-      "Real time analytics",
+      "Real-time analytics",
     ],
   },
   {
@@ -70,7 +70,7 @@ const webProcessData = [
   {
     id: 1,
     title: "Designing",
-    subTitle: "Innovative, dynamic, functioal &  user-friendly",
+    subTitle: "Innovative, dynamic, functional and  user-friendly",
     img: "/images/technologies/web/process/icon_1.svg",
     hoverImg: "/images/technologies/web/process/icon_hover_1.svg",
   },
@@ -83,7 +83,7 @@ const webProcessData = [
   },
   {
     id: 3,
-    title: "Deliver",
+    title: "Delivery",
     subTitle: "Convenient, timely & consistent",
     img: "/images/technologies/web/process/icon_3.svg",
     hoverImg: "/images/technologies/web/process/icon_hover_3.svg",

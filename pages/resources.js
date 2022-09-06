@@ -4,12 +4,12 @@ import ResourcesBlogs from "../components/resources/ResourcesBlogs";
 import ResourcesFindings from "../components/resources/ResourcesFindings";
 import ResourceFeaturedVideos from "../components/resources/ResourceFeaturedVideos";
 import { solutionsResourcesData } from "../public/data/solutions/blogData";
+import { popular } from "../utils/isPopular";
 import {
   resourcesBlogsData,
   resourcesFindingsData,
   resourcesVideoData,
 } from "../public/data/resourcesDataNew";
-import { popular } from "../utils/isPopular";
 
 const Resources = ({
   banner,
@@ -27,7 +27,6 @@ const Resources = ({
     >
       {/* banner section  */}
       <ResourcesBanner data={banner} />
-     { console.log(banner)}
       {/* blogs section  */}
       <div className="box">
         <ResourcesBlogs data={blogData} />

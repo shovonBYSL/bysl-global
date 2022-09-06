@@ -38,7 +38,7 @@ const foodTechAreasData = [
   },
   {
     id: 1,
-    title: "Food Inventory",
+    title: "Inventory Management",
     img: "/images/divisions/food_tech/area/icon_1.svg",
     hoverImg: "/images/divisions/food_tech/area/icon_hover_1.svg",
   },

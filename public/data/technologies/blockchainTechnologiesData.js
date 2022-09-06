@@ -38,9 +38,9 @@ const blockchainFeaturesData = [
 const blockchainServicesData = [
   {
     id: 0,
-    title: "Governmnet Services",
+    title: "Government Services",
     subTitle:
-      "We apply blockchain technologies to decentralize, protect, authenticate and democratize government databases to be easily accessed, validated and used by the public reducing frictions, costs and risks in administrative and financial processes across various ministries and offices. ",
+      "We apply blockchain technologies to decentralize, protect, authenticate and democratize government databases to be easily accessed, validated and used by the public reducing frictions, costs and risks in administrative and financial processes across various ministries and offices.",
     img: "/images/technologies/blockchain/services/icon_0.svg",
     hoverImg: "/images/technologies/blockchain/services/icon_hover_0.svg",
   },
@@ -48,7 +48,7 @@ const blockchainServicesData = [
     id: 1,
     title: "Healthcare & Education",
     subTitle:
-      "Facilitating healthcare and education sectors with secure blockchain databases to maintain important records of transactions and information allowing people to have better control and understanding of their data, records and status in real time. ",
+      "Facilitating healthcare and education sectors with secure blockchain databases to maintain important records of transactions and information allowing people to have better control and understanding of their data, records and status in real time.",
     img: "/images/technologies/blockchain/services/icon_1.svg",
     hoverImg: "/images/technologies/blockchain/services/icon_hover_1.svg",
   },
@@ -64,15 +64,15 @@ const blockchainServicesData = [
     id: 3,
     title: "Intellectual Property",
     subTitle:
-      "Credits for intellectual properties are given back to the original creators using blockchain technologies through sophisticated, decentralized yet shared ledger that is alwyas in-sync.",
+      "Credits for intellectual properties are given back to the original creators using blockchain technologies through sophisticated, decentralized yet shared ledger that is always in-sync.",
     img: "/images/technologies/blockchain/services/icon_3.svg",
     hoverImg: "/images/technologies/blockchain/services/icon_hover_3.svg",
   },
   {
     id: 4,
-    title: "Supply chain Managment ",
+    title: "Supply Chain Management",
     subTitle:
-      "Grow the potentials of a transparent, fast, resilient, and trusted supply chain by utilizing the enormosity of shared data, advanced validation, secure transactions, high security smart contracts and realtime visibility of the data.",
+      "Grow the potentials of a transparent, fast, resilient, and trusted supply chain by utilizing the enormosity of shared data, advanced validation, secure transactions, smart contracts and realtime visibility of the data.",
     img: "/images/technologies/blockchain/services/icon_4.svg",
     hoverImg: "/images/technologies/blockchain/services/icon_hover_4.svg",
   },
@@ -80,7 +80,7 @@ const blockchainServicesData = [
     id: 5,
     title: "Logistics",
     subTitle:
-      "Designed to reduce the complexity and volume of point-to-point communication in transportation systems through distributed permission platforms accessible by supply chain ecosystem, digitized workflow and trackings. ",
+      "Designed to reduce the complexity and volume of point-to-point communication in transportation systems through distributed permission platforms accessible by supply chain ecosystem, digitized workflow and trackings.",
     img: "/images/technologies/blockchain/services/icon_5.svg",
     hoverImg: "/images/technologies/blockchain/services/icon_hover_5.svg",
   },

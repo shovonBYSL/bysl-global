@@ -53,7 +53,7 @@ const WebTechnologies = ({
         data={webProcess}
         large={true}
       >
-        A never-ending <TextGradient text=" persuit" />
+        A never-ending pursuit
       </Overview4Items>
 
       {/* features section  */}

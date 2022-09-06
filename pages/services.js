@@ -3,10 +3,10 @@ import ITServices from "../components/individual_service/ITServices";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import BlogSlider from "../components/shared/slider/BlogSlider";
 import ITFeatures from "../components/individual_service/ITFeatures";
+import { solutionsResourcesData } from "../public/data/solutions/blogData";
 import {
   individualServiceITServicesData,
   ITFeaturesData,
-  serviceResourceBlogData,
   serviceWhyChooseUsData,
 } from "../public/data/individualServiceData";
 
@@ -22,10 +22,11 @@ const Service = ({
       {/* banner section  */}
       <PrimaryBanner
         title="Services"
-        sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        sub="Research-oriented, strategy-driven, tailored to business needs, and technologically cutting-edge  IT services to help businesses transform for an ever evolving technological landscape of the 
+        world of tomorrow. We craft services that open new frontiers with limitless possibilities."
         img={banner}
       >
-        DISCOVER BETTER VALUE. FASTER.
+        Triumph in business with purpose-driven tech services
       </PrimaryBanner>
 
       {/* IT services section  */}
@@ -35,9 +36,7 @@ const Service = ({
       <ITFeatures data={ITFeaturesData} />
 
       {/* resources section  */}
-      <BlogSlider data={serviceResourceBlog} type="Resources">
-        Read Our Latest Tips & Tricks
-      </BlogSlider>
+      <BlogSlider data={serviceResourceBlog} />
     </BasicLayout>
   );
 };
@@ -48,7 +47,7 @@ export async function getStaticProps() {
       banner: "/images/banners/service_banner.svg",
       individualServiceITServices: individualServiceITServicesData,
       serviceWhyChooseUs: serviceWhyChooseUsData,
-      serviceResourceBlog: serviceResourceBlogData,
+      serviceResourceBlog: solutionsResourcesData,
       ITFeaturesData,
     },
   };

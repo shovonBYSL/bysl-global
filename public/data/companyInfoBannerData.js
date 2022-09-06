@@ -7,7 +7,7 @@ const missionBannerData = {
 const purposeBannerData = {
   title: "purpose",
   subTitle:
-    "Our purpose can be defined by our continuous exploration of new ideas, leading to a stream of continuous innovation, which is followed by continuous investment. It drives everything we do, providing a sense of meaning and direction for our journey. We envision creating a better tomorrow for the world and beyond. ",
+    "Our purpose can be defined by our continuous exploration of new ideas, leading to a stream of continuous innovation, which is followed by continuous investment. It drives everything we do, providing a sense of meaning and direction for our journey. We envision creating a better tomorrow for the world and beyond.",
 };
 
 const valuesBannerData = {

@@ -1,13 +1,13 @@
 const cyberBenefitsData = [
   {
+    id: 1,
+    title: "Preventing Incidents",
+    img: "/images/technologies/cyber_security/benefits/icon_1.svg",
+  },
+  {
     id: 0,
     title: "Threat Detection",
     img: "/images/technologies/cyber_security/benefits/icon_0.svg",
-  },
-  {
-    id: 1,
-    title: "Preventing Incident",
-    img: "/images/technologies/cyber_security/benefits/icon_1.svg",
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const cyberSolutionsData = [
     id: 1,
     title: "Antivirus Software",
     subTitle:
-      "Scalable, dynamic & cloud-based security options meant to shield software from viruses, spyware, bots, rootkits, trojans and other types of internet security threats.",
+      "Scalable, dynamic and cloud-based security applications meant to shield systems from viruses, spyware, bots, rootkits, trojans and other types of internet security threats.",
     img: "/images/technologies/cyber_security/solutions/icon_1.svg",
     hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_1.svg",
   },
@@ -68,7 +68,7 @@ const cyberSolutionsData = [
     id: 3,
     title: "Payment Security",
     subTitle:
-      "Advanced fraud-protection systems to conduct risk analysis using behaviorial analytics, fingerprint technology, and ML to identify high-risk transactions.",
+      "Advanced fraud-protection systems to conduct risk analysis using behaviorial analytics and machine learning to identify high-risk transactions.",
     img: "/images/technologies/cyber_security/solutions/icon_3.svg",
     hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_3.svg",
   },
@@ -84,7 +84,7 @@ const cyberSolutionsData = [
     id: 5,
     title: "Network Scanning",
     subTitle:
-      "Whether it’s a public or private network, our advance network scanning technology combs through access port & HTTP vulnerabilities to keep your data safe and secure",
+      "Whether it’s a public or private network, our advanced network scanning technology combs through access port and HTTP vulnerabilities to keep your data safe and secure",
     img: "/images/technologies/cyber_security/solutions/icon_5.svg",
     hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_5.svg",
   },
@@ -92,12 +92,12 @@ const cyberSolutionsData = [
 
 const cyberProtectionData = {
   subTitle:
-    "From identifying threats through stress testing to implementing advanced ML-powered fraud protection systems, we empower our clients through leading-edge security solutions .",
+    "From identifying threats through stress testing to implementing advanced ML-powered fraud protection systems, we empower our clients through leading-edge security solutions.",
   features: [
-    "Identifying Threats",
+    "Identifying threats",
     "Stress testing cyber networks",
-    "Managing Cloud Security",
-    "Assessing risks & delivering prompt responses  ",
+    "Managing cloud security",
+    "Assessing risks & delivering prompt responses",
   ],
   img: "/images/technologies/cyber_security/cyber_secuirity_protection_banner.svg",
 };

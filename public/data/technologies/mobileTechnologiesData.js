@@ -16,7 +16,7 @@ const mobileFeaturesData1 = [
     id: 0,
     title: "Top-Notch Development Architecture",
     subTitle:
-      "Cloud-based, decentralized, platform independent structures to offer maximum freedom, mobility & ease of use",
+      "Cloud-based,  dynamic development architecture to offer maximum fluidity, security, mobility and ease of use",
     img: "/images/technologies/mobile/features/icon_0.svg",
   },
   {

@@ -50,15 +50,15 @@ const BlockchainTechnologies = ({
       </TextBanner>
 
       {/* services section  */}
-      <IconCardGroup3 data={blockchainServices} type="Servics">
-        Scaleable & Protected
+      <IconCardGroup3 data={blockchainServices} type="Services">
+        Scaleable & protected
         <br />
-        Features
+        features
       </IconCardGroup3>
 
       {/* Supply Chain section  */}
       <ImageShowcase
-        sub="Our blockchain solutions focus on reducing the cost involved with point-to-point communication and transportation by eliminating the maximum number of middlemen from shipping events, transactions and record keeping by building a comprehensive, decentralized and shared ledger. "
+        sub="Our blockchain solutions focus on reducing the cost involved with point-to-point communication and transportation by eliminating the maximum number of middlemen from shipping events, transactions and record keeping by building a comprehensive, decentralized and shared ledger."
         img={supplyChainImg}
       >
         Ensuring transparency in

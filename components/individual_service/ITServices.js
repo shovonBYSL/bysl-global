@@ -73,7 +73,7 @@ const ITServices = ({ data }) => {
             alt=""
           />
           <p
-            className={`text-sm xl:text-base font-bold md:font-extrabold ${
+            className={`text-sm xl:text-base font-bold md:font-extrabold w-full ${
               tabOpen === id ? "text-white" : "text-gray-800"
             }`}
           >
@@ -100,7 +100,7 @@ const ITServices = ({ data }) => {
     <div className={`py-10 xl:py-16  ${margin && "mb-[1000px]"}`}>
       <SectionTitleType title="What We Do." />
       <TechnologiesSectionTitle>
-        We Provide Various IT services
+      Trend-setting IT services
       </TechnologiesSectionTitle>
       <div className="mt-10 xl:mt-16">
         <div className="grid grid-cols-12 gap-6">

@@ -41,10 +41,10 @@ const IotTechnologies = ({
         </PrimaryBanner>
 
         {/* services section  */}
-        <Overview3Items data={iotServices} type="Platforms">
-          Joining the IoT revolution with&nbsp;
+        <Overview3Items data={iotServices} type="Platform">
+          Joining the IoT revolution&nbsp;
           <br className="hidden xxs:block" />
-          smart connectivity
+          with smart connectivity
         </Overview3Items>
       </div>
 
@@ -67,7 +67,7 @@ const IotTechnologies = ({
           black={true}
           padding={true}
         >
-          Full system design and development
+          Full system design & development
         </TriangleCardBanner>
 
         {/* innovative solution section  */}

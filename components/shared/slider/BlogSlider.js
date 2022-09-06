@@ -1,16 +1,16 @@
+import ResourceBlogLayout from "./ResourceBlogLayout";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
 } from "../SharedTextgroups";
-import ResourceBlogLayout from "./ResourceBlogLayout";
 
-const BlogSlider = (props) => {
-  const { data, type, children } = props;
-
+const BlogSlider = ({ data }) => {
   return (
     <div className="py-6 xl:py-10">
-      {type && <SectionTitleType title={type} />}
-      <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
+      <SectionTitleType title="Resources" />
+      <TechnologiesSectionTitle>
+        Business insights: Latest highlights
+      </TechnologiesSectionTitle>
       <div className="mt-5 lg:mt-10 card-slider service-blog-slider relative">
         <div className="sm:hidden">
           <ResourceBlogLayout size={1} data={data} />

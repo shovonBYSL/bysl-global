@@ -98,7 +98,6 @@ const ResourcesBanner = ({ data }) => {
           <div className="md:hidden pb-2 relative service-blog-slider">
             <SliderLayout>
               {data.map((item, i) => {
-                // console.log(item);
                 return (
                   <SwiperSlide key={i}>
                     <BannerImage data={item} />

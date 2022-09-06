@@ -31,10 +31,10 @@ const AIMLTechnologies = ({
       {/* banner section  */}
       <AIMLBanner
         title="AI/ML Technologies"
-        sub="Innovating in next-generation AI systems development adapting data-driven supervised, unsupervised, reinforced learnings using self-replicating artificial neural networks & ML artifacts to handle & simplify the massive complexity of data patterns & open new horizons for businesses. "
+        sub="Innovating in next-generation AI systems development adapting data-driven supervised, unsupervised, reinforced learnings using self-replicating artificial neural networks and ML artifacts to handle and simplify the massive complexity of data patterns and open new horizons for businesses."
         img={banner}
       >
-        Intelligent <TextGradient text=" Systems " />
+        <TextGradient text="Intelligent " /> Systems
         <br />
         to make <TextGradient text=" Life " /> Better
       </AIMLBanner>

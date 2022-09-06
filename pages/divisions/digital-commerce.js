@@ -34,10 +34,10 @@ const FoodTech = ({
 
       {/* e-commerce app section  */}
       <ImageShowcase
-        sub="Ever-evolving smart applications to securely engage, interact, converse, transact & operate across platforms to deliver value."
+        sub="Ever-evolving smart applications to securely engage, interact, converse, transact and operate across platforms to deliver value."
         img={digitalCommerceImg}
       >
-        Cutting edge e-commerece applications
+        Cutting edge e-commerce applications
         <br />
         ready to serve
       </ImageShowcase>

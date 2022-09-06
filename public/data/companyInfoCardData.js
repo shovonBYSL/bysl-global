@@ -3,14 +3,14 @@ const missionCardData = [
     id: 0,
     title: "Serving the World",
     description:
-      "BYSL Global has made its mission to work for the greater benefit of humanity. Therefore, whatever we do must be premissible, meaningful, ethical. beneficial, have real value, and be of service to the world. The vision behind the mission is to create a better future for everyone by establishing a global economic system that serves the greater interest of humanity. The board and inclusive subjectivity reassures BYSL Globals’s vision with clear objectives, paving ways to generate exceptional products and services through relentless innovations.",
+      "BYSL Global has made its mission to work for the greater benefit of humanity. Therefore, whatever we do must be permissible, meaningful, ethical, beneficial, have real value, and be of service to the world. The vision behind the mission is to create a better future for everyone by establishing a global economic system that serves the greater interest of humanity. The broad and inclusive subjectivity reassures BYSL Global's vision with clear objectives, paving ways to generate exceptional products and services through relentless innovation.",
     img: "mission_card_0",
   },
   {
     id: 1,
     title: "Exceptional Services and products",
     description:
-      "Exceptional products and services are revolutionary, innovative, valued, advanced, or influential. Every product and service ever product by BYSL Global meets the gold standard of exceptionalism or is otherwise discoutinued. Our relntless pursuit of making our products stand unparalleled in the competitive markets through exceptionalism is a never-endong mission. To continued our journey through constant self-refinement and trend-setting innovations, internally, we promote and apply exceptionalism owing and emanationg from our core values.",
+      "Exceptional products and services are revolutionary, innovative, valued, advanced, or influential. Every product and service ever produced by BYSL Global meets the gold standard of exceptionalism or is otherwise discontinued. Our relentless pursuit of making our products stand unparalleled in the competitive markets through exceptionalism is a never-ending mission. To continue our journey through constant self-refinement and trend-setting innovations, internally, we promote and apply exceptionalism owing and emanating from our core values.",
     img: "mission_card_1",
   },
 ];

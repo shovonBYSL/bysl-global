@@ -43,9 +43,7 @@ const FoodTech = ({ banner, foodTechOverview, foodTechAreas, foodBanner }) => {
 
       {/* areas section  */}
       <IconCardGroup4 data={foodTechAreas}>
-        We provide advanced
-        <br />
-        systems
+        We provide advanced systems
       </IconCardGroup4>
     </BasicLayout>
   );

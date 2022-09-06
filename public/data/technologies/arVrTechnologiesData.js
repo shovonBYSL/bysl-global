@@ -47,37 +47,37 @@ const arVrWorldData = [
 const arVrServicesData = [
   {
     id: 0,
-    title: "Commercial VR",
+    title: "Commercial",
     img: "/images/technologies/ar_vr/services/icon_0.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_0.svg",
   },
   {
     id: 1,
-    title: "Academical VR",
+    title: "Academical",
     img: "/images/technologies/ar_vr/services/icon_1.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_1.svg",
   },
   {
     id: 2,
-    title: "Community VR",
+    title: "Community",
     img: "/images/technologies/ar_vr/services/icon_2.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_2.svg",
   },
   {
     id: 3,
-    title: "Medical VR",
+    title: "Medical",
     img: "/images/technologies/ar_vr/services/icon_3.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_3.svg",
   },
   {
     id: 4,
-    title: "Artistic VR",
+    title: "Artistic",
     img: "/images/technologies/ar_vr/services/icon_4.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_4.svg",
   },
   {
     id: 5,
-    title: "Industrial VR",
+    title: "Industrial",
     img: "/images/technologies/ar_vr/services/icon_5.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_5.svg",
   },

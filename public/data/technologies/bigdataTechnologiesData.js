@@ -45,20 +45,20 @@ const whyBigdataData = [
   {
     id: 1,
     reversed: true,
-    title: "Risk Management",
+    title: "Risk management",
     subTitle:
       "Our specialized AI and ML-based applications  analyze data characteristics at greater speed to predict, manage and minimize risks through intelligent modeling using the best of data science.",
     features: [
-      "Fraud & threat detection",
+      "Fraud and threat detection",
       "Gaining better insights ",
-      "Pshychological scoring",
+      "Psychological scoring",
       "Building validation framework",
     ],
     img: "/images/technologies/bigdata/why_bigdata/banner_1.svg",
   },
   {
     id: 2,
-    title: "Operations Managment",
+    title: "Operations managment",
     subTitle:
       "We model and engineer apps that can effectively filter good data from bad ones,  then integrate, profile and cleanse data before list matching to eliminate errors & protect operational efficiency.",
     features: [
@@ -105,9 +105,9 @@ const bigdataFeaturesData = [
   },
   {
     id: 1,
-    title: "Image Processing",
+    title: "Image & Video Processing",
     subTitle:
-      "Our intelligent image and video recognition technologies harness the power of ML and AI to process images and videos faster with greater accuracy. ",
+      "Our intelligent image and video recognition technologies harness the power of ML and AI to process images and videos faster with greater accuracy.",
     img: "/images/technologies/bigdata/features/icon_1.svg",
     hoverImg: "/images/technologies/bigdata/features/icon_hover_1.svg",
   },

@@ -118,64 +118,104 @@ const navbars = [
     dropdowns: [
       {
         id: 0,
-        title: "BPO",
+        title: "UI/UX Design Services",
         link: "/services",
       },
       {
         id: 1,
-        title: "UI/UX Design",
+        title: "Web Application Development",
         link: "/services",
       },
       {
         id: 2,
-        title: "Web Development",
+        title: "Mobile Application Development",
         link: "/services",
       },
       {
         id: 3,
-        title: "Mobile App Development",
+        title: "ERP Software Development",
         link: "/services",
       },
       {
         id: 4,
-        title: "E-Commerce Solution",
+        title: "AI/ML Application Development",
         link: "/services",
       },
       {
         id: 5,
-        title: "ERP",
+        title: "AR/VR Application Development",
         link: "/services",
       },
       {
         id: 6,
-        title: "Fintech",
+        title: "Business Intelligence Application Development",
         link: "/services",
       },
       {
         id: 7,
-        title: "AI & ML",
+        title: "Workflow Automation Software Development",
         link: "/services",
       },
-      {
-        id: 8,
-        title: "Fulfillment Service",
-        link: "/services",
-      },
-      {
-        id: 9,
-        title: "Logistic Service",
-        link: "/services",
-      },
-      {
-        id: 10,
-        title: "Cloud & Cyber Security",
-        link: "/services",
-      },
-      {
-        id: 11,
-        title: "Customer Care Service",
-        link: "/services",
-      },
+      // {
+      //   id: 0,
+      //   title: "BPO",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 1,
+      //   title: "UI/UX Design",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 2,
+      //   title: "Web Development",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 3,
+      //   title: "Mobile App Development",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 4,
+      //   title: "E-Commerce Solution",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 5,
+      //   title: "ERP",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 6,
+      //   title: "Fintech",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 7,
+      //   title: "AI & ML",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 8,
+      //   title: "Fulfillment Service",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 9,
+      //   title: "Logistic Service",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 10,
+      //   title: "Cloud & Cyber Security",
+      //   link: "/services",
+      // },
+      // {
+      //   id: 11,
+      //   title: "Customer Care Service",
+      //   link: "/services",
+      // },
     ],
   },
   {

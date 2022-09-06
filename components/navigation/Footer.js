@@ -59,8 +59,9 @@ const Footer = () => {
     return (
       <>
         <p className="text-white/60 font-medium my-6 text-xs xxs:text-sm">
-          More Than Just A Job.
-          <br /> We Offer An Opportunity To Grow.
+          More than just a job.
+          <br />
+          We offer a journey to explore new horizons of possibilities.
         </p>
         <div className="w-max mx-auto lg:mx-0">
           <ButtonWhite link="careers" title="Careers" px={72} />
@@ -72,7 +73,7 @@ const Footer = () => {
   return (
     <div className="bg-gray-800">
       <div className="box pt-16 pb-8">
-        <div className="grid grid-cols-6 lg:grid-cols-5 xl:grid-cols-6 gap-4 gap-y-10 3xl:gap-14">
+        <div className="grid grid-cols-6 lg:grid-cols-5 xl:grid-cols-6 gap-4 gap-y-10 3xl:gap-12">
           <div className="col-span-6 xl:col-span-1">
             <Link passHref href="/">
               <div className="h-7 md:h-10 w-16 md:w-20 mx-auto xl:mx-0 relative hover:cursor-pointer">

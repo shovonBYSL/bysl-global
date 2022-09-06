@@ -1,7 +1,7 @@
 const aimlUserExperienceData = {
   title: "Challanges we solve with AI/ML technologies ",
   subTitle:
-    "To explore the limitless potential of data, we use AI analytics and ML technologies to identify, relate, analyze, and prepare various data metrics, and solve fundamental challenges of business while introducing disruptive innovation in retail, e-commerce, logistics, supply chain, manufacturing, healthcare and life sciences.  ",
+    "To explore the limitless potential of data, we use AI analytics and ML technologies to identify, relate, analyze, and prepare various data metrics, and solve fundamental challenges of business while introducing disruptive innovation in retail, e-commerce, logistics, supply chain, manufacturing, healthcare and life sciences.",
   img: "/images/technologies/ai_ml/aimlTechnologies_ui_banner.svg",
   features: [
     "Managing and handling the massive volume, and velocity of big data ",
@@ -14,7 +14,7 @@ const aimlUserExperienceData = {
 const aimlFeaturesData = [
   {
     id: 0,
-    title: "Design & Strategy",
+    title: "Design & Engineering",
     img: "/images/technologies/ai_ml/categories/icon_0.svg",
   },
   {

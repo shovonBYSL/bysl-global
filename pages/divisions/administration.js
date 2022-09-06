@@ -41,7 +41,7 @@ const Administration = ({
 
       {/* Workpalce section  */}
       <BannerWithBullets data={workplaceBanner} reversed={true}>
-        Manage your workpalce
+        Manage your workplace
         <br />
         from anywhere
       </BannerWithBullets>

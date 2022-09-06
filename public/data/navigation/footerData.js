@@ -6,8 +6,7 @@ const footerData = [
       {
         id: 0,
         name: "Retail",
-        path: "#",
-        // path: "/solutions/retail",
+        path: "/solutions/retail",
       },
       {
         id: 1,
@@ -53,63 +52,103 @@ const footerData = [
       {
         id: 0,
         path: "/services",
-        name: "BPO",
+        name: "UI/UX Design Services",
       },
       {
         id: 1,
         path: "/services",
-        name: "UI/UX Design",
+        name: "Web Application Development",
       },
       {
         id: 2,
         path: "/services",
-        name: "Web Development",
+        name: "Mobile Application Development",
       },
       {
         id: 3,
         path: "/services",
-        name: "Mobile App Development",
+        name: "ERP Software Development",
       },
       {
         id: 4,
         path: "/services",
-        name: "E-Commerce Solution",
+        name: "AI/ML Application Development",
       },
       {
         id: 5,
         path: "/services",
-        name: "ERP",
+        name: "AR/VR Application Development",
       },
       {
         id: 6,
         path: "/services",
-        name: "Fintech",
+        name: "Business Intelligence Application Development",
       },
       {
         id: 7,
         path: "/services",
-        name: "AI & ML",
+        name: "Workflow Automation Software Development",
       },
-      {
-        id: 8,
-        path: "/services",
-        name: "Fulfillment Service",
-      },
-      {
-        id: 9,
-        path: "/services",
-        name: "Logistic Service",
-      },
-      {
-        id: 10,
-        path: "/services",
-        name: "Cloud & Cyber Security",
-      },
-      {
-        id: 11,
-        path: "/services",
-        name: "Customer Care Service",
-      },
+      // {
+      //   id: 0,
+      //   path: "/services",
+      //   name: "BPO",
+      // },
+      // {
+      //   id: 1,
+      //   path: "/services",
+      //   name: "UI/UX Design",
+      // },
+      // {
+      //   id: 2,
+      //   path: "/services",
+      //   name: "Web Development",
+      // },
+      // {
+      //   id: 3,
+      //   path: "/services",
+      //   name: "Mobile App Development",
+      // },
+      // {
+      //   id: 4,
+      //   path: "/services",
+      //   name: "E-Commerce Solution",
+      // },
+      // {
+      //   id: 5,
+      //   path: "/services",
+      //   name: "ERP",
+      // },
+      // {
+      //   id: 6,
+      //   path: "/services",
+      //   name: "Fintech",
+      // },
+      // {
+      //   id: 7,
+      //   path: "/services",
+      //   name: "AI & ML",
+      // },
+      // {
+      //   id: 8,
+      //   path: "/services",
+      //   name: "Fulfillment Service",
+      // },
+      // {
+      //   id: 9,
+      //   path: "/services",
+      //   name: "Logistic Service",
+      // },
+      // {
+      //   id: 10,
+      //   path: "/services",
+      //   name: "Cloud & Cyber Security",
+      // },
+      // {
+      //   id: 11,
+      //   path: "/services",
+      //   name: "Customer Care Service",
+      // },
     ],
   },
   {

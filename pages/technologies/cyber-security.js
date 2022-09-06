@@ -47,12 +47,12 @@ const CyberSecurityTechnologies = ({
         black={true}
         padding={true}
       >
-        World Class Protection
+        World-class protection
       </TriangleCardBanner>
 
       {/* Solutions section  */}
-      <IconCardGroup3 data={cyberSolutions} type="Solutions">
-        Cyber Security Services
+      <IconCardGroup3 data={cyberSolutions} type="Applications">
+        Smart shields against ever growing cyber threats
       </IconCardGroup3>
 
       {/* protection data  */}

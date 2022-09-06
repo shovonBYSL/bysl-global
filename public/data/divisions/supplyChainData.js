@@ -1,17 +1,17 @@
 const supplyChainConnectivityData = [
   {
     id: 0,
-    title: "WareHousing & Storage",
+    title: "Order Fulfillment",
     img: "/images/divisions/supply_chain/connectivity/icon_0.svg",
   },
   {
     id: 1,
-    title: "Pakaging & Storage",
+    title: "Pick, Pack & Ship",
     img: "/images/divisions/supply_chain/connectivity/icon_1.svg",
   },
   {
     id: 2,
-    title: "Contract Logistic",
+    title: "Warehousing",
     img: "/images/divisions/supply_chain/connectivity/icon_2.svg",
   },
 ];
@@ -19,26 +19,30 @@ const supplyChainConnectivityData = [
 const supplyChainOverviewData = [
   {
     id: 0,
-    title: "POS System",
-    subTitle: "Research your  idea and gather requisition ",
+    title: "Planning",
+    subTitle:
+      "Improved by predictive analytics in demand planning leveraging market intelligence",
     img: "/images/divisions/supply_chain/overview/icon_0.svg",
   },
   {
     id: 1,
-    title: "Omnichannel Inventory",
-    subTitle: "Research your  idea and gather requisition ",
+    title: "Production",
+    subTitle:
+      "Higher productivity with automated production process and vendor management",
     img: "/images/divisions/supply_chain/overview/icon_1.svg",
   },
   {
     id: 2,
-    title: "Omnichannel Inventory",
-    subTitle: "Research your  idea and gather requisition ",
+    title: "Digital Supply Chain",
+    subTitle:
+      "Analytics-based planning, automated physical flow, performance management, order management and SC strategy",
     img: "/images/divisions/supply_chain/overview/icon_2.svg",
   },
   {
     id: 3,
-    title: "Transportation",
-    subTitle: "Research your  idea and gather requisition ",
+    title: "Operations",
+    subTitle:
+      "Enabled by automation increasing visibility and control among various steps of a coordinated network",
     img: "/images/divisions/supply_chain/overview/icon_3.svg",
   },
 ];
@@ -46,11 +50,11 @@ const supplyChainOverviewData = [
 const supplyChainPerceivabilityData = {
   img: "/images/divisions/supply_chain/perceivability_banner.svg",
   features: [
-    "Unequaled Flexibility & Adaptability",
-    "Solutions for Fit Every Level of Complexity",
-    "Seamless ERP Interations",
-    "One Integrated Supply Chain Platform",
-    "Solutions & Special Expertise",
+    "Lowered operational costs by deploying workflow automation",
+    "Elimination of human errors via business process automation",
+    "Faster lead time with digitized vendor management",
+    "Integrated resource allocation for optimum utilization of assets",
+    "RFID technology for fast inventory management",
   ],
 };
 

@@ -1,10 +1,8 @@
-import { data } from "autoprefixer";
 import Image from "next/image";
 
 import {
   SectionTitleGradient,
   SectionTitleType,
-  TextGradient,
 } from "../shared/SharedTextgroups";
 
 const Investments = ({ data }) => {
@@ -42,11 +40,11 @@ const Investments = ({ data }) => {
             </div>
           </div>
           <p className="text-xl xl:text-3xl font-bold text-blue-900/75">
-            IT platforms
+            IT Platforms
           </p>
         </div>
         <p className="p-5 min-h-[240px] 3xl:h-[610px] rounded-[10px] xl:rounded-[20px] bg-gradient-to-tr from-[#D4ACFB] to-[#327EC4] text-white text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-[64px] font-semibold flex justify-center items-center ">
-          Marketplace platforms
+          Marketplace Platforms
         </p>
       </div>
     </div>

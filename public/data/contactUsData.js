@@ -28,7 +28,7 @@ const companyAddress = [
     shortName: "UAE",
     name: "BYSL GLOBAL Software LLC",
     name2: "BYSL GLOBAL PLATFORMs LLC",
-    address: "Aspin commercial tower sheikhz ayed Road, ",
+    address: "Aspin commercial tower, sheikh zayed Road, ",
     city: "dubai , uae",
   },
   {

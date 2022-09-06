@@ -12,9 +12,7 @@ const SolutionsLayout = (props) => {
       <ResponsiveNavbar />
       <div className={`${!noMargin && "box"}`}>{children}</div>
       <div className="box">
-        <BlogSlider type="Resources" data={data}>
-          Business insights: Latest highlights
-        </BlogSlider>
+        <BlogSlider data={data} />
       </div>
       <Footer />
     </>

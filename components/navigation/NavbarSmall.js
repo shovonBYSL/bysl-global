@@ -10,7 +10,6 @@ const NavbarSmall = ({ colorChange, specificPath }) => {
     const ss = document.querySelector(".side-drawer");
     ss.focus();
     setShowDrawer(!showDrawer);
-    console.log("test");
   };
 
   return (

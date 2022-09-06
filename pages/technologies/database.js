@@ -31,10 +31,10 @@ const BigdataTechnologies = ({
       <DatabaseFeatures data={databaseFeatures} />
 
       {/* Solutions section  */}
-      <IconCardGroup3 data={databaseSolutions} type="Solutions">
-        Increased productivity for
+      <IconCardGroup3 data={databaseSolutions} type="Applications">
+        Increased productivity
         <br />
-        developers & data
+        for developers & data
       </IconCardGroup3>
 
       {/* Managing databases section  */}

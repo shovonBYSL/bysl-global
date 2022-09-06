@@ -28,7 +28,7 @@ const cloudServicesData = [
 const cloudFeaturesData = [
   {
     id: 0,
-    title: "Onclick Deploy",
+    title: "One-Click Deploy",
     subTitle:
       "Remove deploy dependencies, simplify DevOps operations utilizing virtualized infrastructure for faster deployment of APIs with greater control over hosting",
     img: "/images/technologies/cloud/features/icon_0.svg",
@@ -46,7 +46,7 @@ const cloudFeaturesData = [
     id: 2,
     title: "Access Control",
     subTitle:
-      "Network-based access control allowing users to manage control over access to applications and database networks",
+      "Network-based granular access control allowing admins to manage control over access to applications and database networks",
     img: "/images/technologies/cloud/features/icon_2.svg",
     hoverImg: "/images/technologies/cloud/features/icon_hover_2.svg",
   },
@@ -54,7 +54,7 @@ const cloudFeaturesData = [
     id: 3,
     title: "Control Panel",
     subTitle:
-      "From creating sub domains, database, file manager to data backup & recovery, have full control over web hosting through powerful yet  simplified tools  ",
+      "From creating sub domains, database, file manager to data backup and recovery, have full control over web hosting through powerful yet  simplified tools",
     img: "/images/technologies/cloud/features/icon_3.svg",
     hoverImg: "/images/technologies/cloud/features/icon_hover_3.svg",
   },
@@ -70,7 +70,7 @@ const cloudFeaturesData = [
     id: 5,
     title: "Domain Privacy",
     subTitle:
-      "Advanced encryption, identification & management of sensitive data &  access, ML-integrated malware protection, strict protocols for cloud environment ",
+      "Advanced encryption, identification and management of sensitive data and access, ML-integrated malware protection, strict protocols for cloud environment",
     img: "/images/technologies/cloud/features/icon_5.svg",
     hoverImg: "/images/technologies/cloud/features/icon_hover_5.svg",
   },
@@ -78,7 +78,7 @@ const cloudFeaturesData = [
 
 const cloudSupportData = {
   subTitle:
-    "From system backups to security audits, timely support and 3rd party services, we take care of the needs of our customers real-time.   ",
+    "From system backups to security audits, timely support and 3rd party services, we take care of the needs of our customers real-time.",
   features: [
     "Full system backups",
     "Security audits",

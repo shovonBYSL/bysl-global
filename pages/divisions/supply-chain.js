@@ -23,12 +23,12 @@ const SupplyChain = ({
       {/* banner section  */}
       <PrimaryBanner
         title="Supply Chain - Division"
-        sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        sub="Rethinking the supply chain infrastructure by reshaping and restructuring it with IoT, AI/ML, robotics and big data analytics to make it faster, more accurate, more flexible, more granular and extra efficient."
         img={banner}
       >
-        Operations through
+        <TextGradient text="Innovating " /> with
         <br />
-        <TextGradient text="Evolution" />,<TextGradient text=" Innovation" />.
+        <TextGradient text="supply chain 4.0" />
       </PrimaryBanner>
 
       {/* connectivity section  */}
@@ -38,9 +38,8 @@ const SupplyChain = ({
         black={true}
         padding={true}
       >
-        Worldwide Connectivity &
-        <br />
-        <TextGradient text="Compliance" />
+        IT-enabled, automated logistics
+        <br />& fulfillment services
       </TriangleCardBanner>
 
       {/* overview section  */}
@@ -48,9 +47,7 @@ const SupplyChain = ({
 
       {/* PERCEIVABILITY section  */}
       <BannerWithBulletSingle data={supplyChainPerceivability}>
-        PERCEIVABILITY. <TextGradient text="INSIGHT." />
-        <br />
-        FORESIGHT
+        Incorporating automation to maximize operational efficiency
       </BannerWithBulletSingle>
     </BasicLayout>
   );

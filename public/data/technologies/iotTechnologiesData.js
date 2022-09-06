@@ -3,7 +3,7 @@ const iotServicesData = [
     id: 0,
     title: "Smart Product",
     subTitle:
-      "Versatile sensor-based & network-based operations of interconnected devices",
+      "Versatile sensor-based and network-based operations of interconnected devices",
     img: "/images/technologies/iot/services/iot_services_icon_0.svg",
   },
   {
@@ -17,7 +17,7 @@ const iotServicesData = [
     id: 2,
     title: "Connection",
     subTitle:
-      " Connecting homes, offices and cities through seamlessly connected applications ",
+      "Connecting homes, offices and cities through seamlessly connected applications",
     img: "/images/technologies/iot/services/iot_services_icon_2.svg",
   },
 ];

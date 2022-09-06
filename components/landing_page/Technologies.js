@@ -7,7 +7,7 @@ const Technologies = ({ data }) => {
   return (
     <div className=" py-10 xl:py-16">
       <div className="mb-6 lg:mb-12 2xl:mb-20">
-        <SectionTitle title="Our Technologies" />
+        <SectionTitle title="Innovation in technologies" />
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-10 text-center gap-2 lg:gap-3 xl:gap-4 2xl:gap-5 3xl:gap-6">
         {data.map(({ id, img, video, title, link }) => {

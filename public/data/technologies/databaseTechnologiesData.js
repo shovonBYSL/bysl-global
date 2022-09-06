@@ -20,7 +20,7 @@ const databaseSolutionsData = [
   },
   {
     id: 2,
-    title: "Scalabale Web Applications",
+    title: "Scalable Web Applications",
     img: "/images/technologies/database/solutions/icon_2.svg",
     hoverImg: "/images/technologies/database/solutions/icon_hover_2.svg",
   },
@@ -52,12 +52,12 @@ const databaseFeaturesData = [
     id: 1,
     title: "Hybrid Model",
     subTitle:
-      "Offering native support for mutiple data models with multiple access methods serving both single and multi-purpse needs",
+      "Offering native support for mutiple data models with multiple access methods serving both single and multi-purpose needs",
     img: "/images/technologies/database/features/icon_1.svg",
   },
   {
     id: 2,
-    title: "Client-side Encryption",
+    title: "Client-Side Encryption",
     subTitle:
       "Using an authenticated, secure and symmetric key encryption algorithm for clients  to access data through mandatory encryption key ",
     img: "/images/technologies/database/features/icon_2.svg",

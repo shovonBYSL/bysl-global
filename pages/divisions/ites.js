@@ -4,7 +4,10 @@ import ImageShowcase from "../../components/shared/ImageShowcase";
 import Overview4Items from "../../components/shared/Overview4Items";
 import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
-import { itesOverviewData, itesUpdateData } from "../../public/data/divisions/itesData";
+import {
+  itesOverviewData,
+  itesUpdateData,
+} from "../../public/data/divisions/itesData";
 
 const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
   return (
@@ -18,7 +21,7 @@ const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
       >
         Digitize business with
         <br />
-        <TextGradient text="Integrated technology" />
+        <TextGradient text="integrated technology" />
       </PrimaryBanner>
 
       {/* overview section  */}
@@ -32,7 +35,7 @@ const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
       {/* Team Management section */}
       <ImageShowcase
         img={itesAppImg}
-        sub="Applying the right strategy, structure, and necessary to build lasting relationships with clients. "
+        sub="Applying the right strategy, structure, and technology necessary to build lasting relationships with clients."
       >
         Next-gen CRM applications
       </ImageShowcase>

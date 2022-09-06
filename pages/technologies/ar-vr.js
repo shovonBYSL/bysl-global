@@ -53,7 +53,7 @@ const ARVRTechnologies = ({
         </FeaturedBanner>
 
         {/* How does it works */}
-        <ImageShowcase video={demoVideo}>How does it works?</ImageShowcase>
+        <ImageShowcase video={demoVideo}>How does it work?</ImageShowcase>
       </div>
     </TechnologiesLayout>
   );

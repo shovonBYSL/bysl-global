@@ -56,14 +56,14 @@ const marketplacePlatformsData = [
   {
     id: 0,
     title: "Citimart",
-    motto: "Grocery store with top tier shopping experience",
+    motto: "The Premium Supermarket",
     img: "/images/investments/marketplace_platforms/citi-mart.svg",
     logo: "/images/investments/marketplace_platforms/logo_0.svg",
   },
   {
     id: 1,
-    title: "Marketplace",
-    motto: "Favorite brands with one stop smart shopping experience",
+    title: "MARKETPLACE",
+    motto: "The Most Trusted Digital Platform",
     img: "/images/investments/marketplace_platforms/marketplace.svg",
     logo: "/images/investments/marketplace_platforms/logo_1.svg",
   },
@@ -76,8 +76,8 @@ const marketplacePlatformsData = [
   },
   {
     id: 3,
-    title: "Illiyeen",
-    motto: "Luxury Clothings: Dedicated to a better lifestyle",
+    title: "ILLIYEEN",
+    motto: "The High-End Retailer",
     img: "/images/investments/marketplace_platforms/illiyeen.svg",
     logo: "/images/investments/marketplace_platforms/logo_3.svg",
   },
