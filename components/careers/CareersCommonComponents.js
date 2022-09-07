@@ -10,11 +10,9 @@ const CompanyDescription = () => (
 
 const JobTitle = ({ title }) => {
   return (
-    <div>
-      <p className="text-gray-800 text-2xl font-semibold text-center lg:text-start">
-        {title}
-      </p>
-      <p className="mt-4 mb-10 lg:mb-0 text-gray-600 text-lg font-medium text-center lg:text-start">
+    <div className="text-center">
+      <p className="text-gray-800 text-2xl font-semibold">{title}</p>
+      <p className="mt-4 mb-10 lg:mb-0 text-gray-600 text-lg font-medium">
         BYSL Global Technology Group
       </p>
     </div>
@@ -29,7 +27,7 @@ const JobHeader = ({ jobTitle }) => {
   return (
     <>
       <JobTitle title={jobTitle} />
-      <CompanyDescription />
+      {/* <CompanyDescription /> */}
     </>
   );
 };

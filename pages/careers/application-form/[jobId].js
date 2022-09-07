@@ -30,7 +30,7 @@ const ApplicationForm = () => {
   const [location, setLocation] = useState("");
   const [experience, setExperience] = useState("");
   const [background, setBackground] = useState("");
-  const [question3, setQuestion3] = useState("");
+  const [whyFit, setWhyFit] = useState("");
   const [fileName, setFileName] = useState("");
   const [filePath, setFilePath] = useState("");
 
@@ -41,7 +41,7 @@ const ApplicationForm = () => {
     location,
     experience,
     background,
-    question3,
+    whyFit,
     fileName,
   };
 
@@ -75,13 +75,17 @@ const ApplicationForm = () => {
       Host: "smtp.elasticemail.com",
       Username: "anisur.rahman@intelli.global",
       Password: "2597486C56508E185A07F608105A6853404E",
-      To: ["anisur.rahman@intelli.global"],
+      To: ["kawser.shovon@intelli.global"],
       From: "anisur.rahman@intelli.global",
-      Subject: `Recieved IntelliDigital Contact Message From ${name.toUpperCase()}`,
+      Subject: `Application for ${data.position}`,
       Body: `<div>
-      <b>Sender message</b> <br> ${experience} <br> <br> <br>
-      <b>Sender name: </b> ${name} <br>
-      <b>Sender email: </b> ${email} <br>
+      <b>Full Name:</b> <br> ${name} <br><br>
+      <b>Email: </b> <br> ${email} <br><br>
+      <b>Phone: </b> <br> ${phone} <br><br>
+      <b>Location: </b> <br> ${location} <br><br>
+      <b>How many years of professional work experience do you have?: </b> <br> ${experience} <br><br>
+      <b>Could you briefly describe your work background?: </b> <br> ${background} <br><br>
+      <b>Why do you think you are the best fit for this position?: </b> <br> ${whyFit} <br>
       </div>`,
       Attachments: [
         {
@@ -92,7 +96,6 @@ const ApplicationForm = () => {
     }).then((message) => {
       if (message == "OK") {
         toast.success("Thanks for your application");
-        console.log(userData);
         console.log(message);
         // after successful
         setName("");
@@ -101,7 +104,7 @@ const ApplicationForm = () => {
         setLocation("");
         setExperience("");
         setBackground("");
-        setQuestion3("");
+        setWhyFit("");
       }
     });
   };
@@ -113,7 +116,7 @@ const ApplicationForm = () => {
   const previewData = [
     {
       id: 0,
-      question: "Full Name",
+      question: "Full name",
       answer: name,
     },
     {
@@ -138,13 +141,13 @@ const ApplicationForm = () => {
     },
     {
       id: 5,
-      question: "Could you briefly describe your work background? ",
+      question: "Could you briefly describe your work background?",
       answer: background,
     },
     {
       id: 6,
-      question: "How many years of professional work experience do you have? ",
-      answer: question3,
+      question: "Why do you think you are the best fit for this position?",
+      answer: whyFit,
     },
   ];
 
@@ -167,14 +170,14 @@ const ApplicationForm = () => {
               className="max-w-[416px] mx-auto lg:pt-6"
             >
               {/* name input  */}
-              <CareerInputTitle title="Full Name" />
+              <CareerInputTitle title="Full name" />
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
                 name="name"
                 type="text"
-                placeholder="Your Name"
+                placeholder="Your name"
                 className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600 mb-10"
               />
 
@@ -186,7 +189,7 @@ const ApplicationForm = () => {
                 required
                 name="email"
                 type="text"
-                placeholder="Your Email"
+                placeholder="Your email"
                 className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600 mb-10"
               />
 
@@ -244,10 +247,10 @@ const ApplicationForm = () => {
               />
 
               {/* experience2 input  */}
-              <CareerInputTitle title="How many years of professional work experience do you have? *" />
+              <CareerInputTitle title="Why do you think you are the best fit for this position? *" />
               <textarea
-                value={question3}
-                onChange={(e) => setQuestion3(e.target.value)}
+                value={whyFit}
+                onChange={(e) => setWhyFit(e.target.value)}
                 required
                 name="experience2"
                 rows="5"

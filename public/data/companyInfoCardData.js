@@ -8,7 +8,7 @@ const missionCardData = [
   },
   {
     id: 1,
-    title: "Exceptional Products and Services",
+    title: "Exceptional Products And Services",
     description:
       "Exceptional products and services are revolutionary, innovative, valued, advanced, or influential. Every product and service ever produced by BYSL Global meets the gold standard of exceptionalism or is otherwise discontinued. Our relentless pursuit of making our products stand unparalleled in the competitive markets through exceptionalism is a never-ending mission. To continue our journey through constant self-refinement and trend-setting innovations, internally, we promote and apply exceptionalism owing and emanating from our core values.",
     img: "mission_card_1",
