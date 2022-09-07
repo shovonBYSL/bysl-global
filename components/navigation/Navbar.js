@@ -88,7 +88,7 @@ const Navbar = ({ colorChange, specificPath }) => {
             link !== "/services" &&
             router.asPath === link &&
             "text-white bg-gradient-to-r from-blue-900 to-blue-700"
-          } ${!subTitle && "py"}`}
+          }`}
         >
           <div
             className={`flex items-center justify-between ${
@@ -154,7 +154,7 @@ const Navbar = ({ colorChange, specificPath }) => {
                   <NavItems data={item} />
                   {dropdowns && (
                     <div className="pt-5 bg-transparent">
-                      <div className="shadow-lg shadow-[#7080B0]/10 py-12 xl:pb-[72px] absolute left-0 top-20 w-full bg-white rounded-b-lg navbar text-gray-700">
+                      <div className="shadow-lg shadow-[#7080B0]/10 py-12 xl:pb-[72px] absolute left-0 top-22 w-full bg-white rounded-b-lg navbar text-gray-700">
                         <p className="block box font-bold text-2xl pb-8">
                           <TextGradient text={title} />
                         </p>

@@ -104,8 +104,6 @@ const ApplicationForm = () => {
         setQuestion3("");
       }
     });
-
-    // setUploadedFile("");
   };
 
   // const getFiles = () => {
