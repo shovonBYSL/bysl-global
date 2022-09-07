@@ -1,14 +1,14 @@
 const missionCardData = [
   {
     id: 0,
-    title: "Serving the World",
+    title: "Serving The World",
     description:
       "BYSL Global has made its mission to work for the greater benefit of humanity. Therefore, whatever we do must be permissible, meaningful, ethical, beneficial, have real value, and be of service to the world. The vision behind the mission is to create a better future for everyone by establishing a global economic system that serves the greater interest of humanity. The broad and inclusive subjectivity reassures BYSL Global's vision with clear objectives, paving ways to generate exceptional products and services through relentless innovation.",
     img: "mission_card_0",
   },
   {
     id: 1,
-    title: "Exceptional Services and products",
+    title: "Exceptional Products and Services",
     description:
       "Exceptional products and services are revolutionary, innovative, valued, advanced, or influential. Every product and service ever produced by BYSL Global meets the gold standard of exceptionalism or is otherwise discontinued. Our relentless pursuit of making our products stand unparalleled in the competitive markets through exceptionalism is a never-ending mission. To continue our journey through constant self-refinement and trend-setting innovations, internally, we promote and apply exceptionalism owing and emanating from our core values.",
     img: "mission_card_1",
@@ -39,7 +39,7 @@ const purposeCardData = [
   },
   {
     id: 3,
-    title: "For a better tomorrow",
+    title: "For A Better Tomorrow",
     description:
       "We are building an autonomous institution for fulfilling our purpose — an institution through which we can explore, innovate and invest for a better tomorrow. Here, a better tomorrow is a broad and open-ended term where tomorrow means the next day, the next week, the next month, the next year, and most importantly, the next life.",
     description1:

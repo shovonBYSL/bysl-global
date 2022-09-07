@@ -45,16 +45,36 @@ const ApplicationForm = () => {
     fileName,
   };
 
+  const uploadFile = async (e) => {
+    if (e.target.files && e.target.files.length > 0) {
+      let file = e.target.files[0];
+
+      const base64 = await convertBase64(file);
+
+      setFilePath(base64);
+      setFileName(file.name);
+    }
+  };
+
+  let convertBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(file);
+      fileReader.onload = () => {
+        resolve(fileReader.result);
+      };
+      fileReader.onerror = (error) => {
+        reject(error);
+      };
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("working.....");
     Email.send({
-      // SecureToken: "6ffc8dd3-648e-4829-a0c6-effb3fb98190",
-      Host: "smtp.elasticemail.com",
-      Username: "kawser.shovon@intelli.global",
-      Password: "2273C3FE9FED6F2509631A1B6764C45BA978",
-      To: ["kawser.shovon@intelli.global"],
-      From: "kawser.shovon@intelli.global",
+      SecureToken: "a42b16f8-ef5b-4c84-9b8f-fe1d91552fb9 ",
+      To: ["anisur.rahman@intelli.global"],
+      From: "anisur.rahman@intelli.global",
       Subject: `Recieved IntelliDigital Contact Message From ${name.toUpperCase()}`,
       Body: `<div>
       <b>Sender message</b> <br> ${experience} <br> <br> <br>
@@ -84,30 +104,6 @@ const ApplicationForm = () => {
     });
 
     // setUploadedFile("");
-  };
-
-  const uploadFile = async (e) => {
-    if (e.target.files && e.target.files.length > 0) {
-      let file = e.target.files[0];
-
-      const base64 = await convertBase64(file);
-
-      setFilePath(base64);
-      setFileName(file.name);
-    }
-  };
-
-  let convertBase64 = (file) => {
-    return new Promise((resolve, reject) => {
-      const fileReader = new FileReader();
-      fileReader.readAsDataURL(file);
-      fileReader.onload = () => {
-        resolve(fileReader.result);
-      };
-      fileReader.onerror = (error) => {
-        reject(error);
-      };
-    });
   };
 
   // const getFiles = () => {
@@ -154,6 +150,7 @@ const ApplicationForm = () => {
 
   return (
     <>
+      <Script src="https://smtpjs.com/v3/smtp.js" />
       {data ? (
         <CommonLayout title="Application Form">
           <ToastContainer theme="dark" />
@@ -310,7 +307,6 @@ const ApplicationForm = () => {
               </div>
             </form>
           </div>
-          <Script src="https://smtpjs.com/v3/smtp.js" />
         </CommonLayout>
       ) : (
         <Loader />

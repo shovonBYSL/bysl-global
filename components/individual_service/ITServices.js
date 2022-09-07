@@ -77,11 +77,15 @@ const ITServices = ({ data }) => {
         {tabData && (
           <div className="mt-4 lg:mt-0 px-4">
             <div className="service-scroll">
-              <p className="text-gray-400 text-sm 2xl:text-base mb-4">{tabData.overview}</p>
+              <p className="text-gray-400 text-sm 2xl:text-base mb-4">
+                {tabData.overview}
+              </p>
               <p className="text-gray-800 text-sm 2xl:text-base font-semibold mb-2">
                 Our Approach to {tabData.title}
               </p>
-              <p className="text-gray-400 text-sm 2xl:text-base  mb-4">{tabData.approach}</p>
+              <p className="text-gray-400 text-sm 2xl:text-base  mb-4">
+                {tabData.approach}
+              </p>
               <span className="text-sm 2xl:text-base font-bold md:font-extrabold">
                 <TextGradient text="Services Highlights:" />
               </span>
