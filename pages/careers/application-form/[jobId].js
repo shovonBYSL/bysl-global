@@ -34,17 +34,6 @@ const ApplicationForm = () => {
   const [fileName, setFileName] = useState("");
   const [filePath, setFilePath] = useState("");
 
-  const userData = {
-    name,
-    email,
-    phone,
-    location,
-    experience,
-    background,
-    whyFit,
-    fileName,
-  };
-
   const uploadFile = async (e) => {
     if (e.target.files && e.target.files.length > 0) {
       let file = e.target.files[0];
@@ -75,7 +64,7 @@ const ApplicationForm = () => {
       Host: "smtp.elasticemail.com",
       Username: "anisur.rahman@intelli.global",
       Password: "2597486C56508E185A07F608105A6853404E",
-      To: ["kawser.shovon@intelli.global"],
+      To: ["anisur.rahman@intelli.global", "kawser.shovon@intelli.global"],
       From: "anisur.rahman@intelli.global",
       Subject: `Application for ${data.position}`,
       Body: `<div>

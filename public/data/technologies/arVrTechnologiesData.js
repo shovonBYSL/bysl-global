@@ -53,7 +53,7 @@ const arVrServicesData = [
   },
   {
     id: 1,
-    title: "Academical",
+    title: "Academic",
     img: "/images/technologies/ar_vr/services/icon_1.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_1.svg",
   },
