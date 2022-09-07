@@ -119,42 +119,42 @@ const navbars = [
       {
         id: 0,
         title: "UI/UX Design Services",
-        link: "/services",
+        link: "/services#it-services",
       },
       {
         id: 1,
         title: "Web Application Development",
-        link: "/services",
+        link: "/services#it-services",
       },
       {
         id: 2,
         title: "Mobile Application Development",
-        link: "/services",
+        link: "/services#it-services",
       },
       {
         id: 3,
         title: "ERP Software Development",
-        link: "/services",
+        link: "/services#it-services",
       },
       {
         id: 4,
         title: "AI/ML Application Development",
-        link: "/services",
+        link: "/services#it-services",
       },
       {
         id: 5,
         title: "AR/VR Application Development",
-        link: "/services",
+        link: "/services#it-services",
       },
       {
         id: 6,
         title: "Business Intelligence Application Development",
-        link: "/services",
+        link: "/services#it-services",
       },
       {
         id: 7,
         title: "Workflow Automation Software Development",
-        link: "/services",
+        link: "/services#it-services",
       },
       // {
       //   id: 0,
