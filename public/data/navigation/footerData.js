@@ -51,42 +51,42 @@ const footerData = [
     items: [
       {
         id: 0,
-        path: "/services",
+        path: "/services#it-services",
         name: "UI/UX Design Services",
       },
       {
         id: 1,
-        path: "/services",
+        path: "/services#it-services",
         name: "Web Application Development",
       },
       {
         id: 2,
-        path: "/services",
+        path: "/services#it-services",
         name: "Mobile Application Development",
       },
       {
         id: 3,
-        path: "/services",
+        path: "/services#it-services",
         name: "ERP Software Development",
       },
       {
         id: 4,
-        path: "/services",
+        path: "/services#it-services",
         name: "AI/ML Application Development",
       },
       {
         id: 5,
-        path: "/services",
+        path: "/services#it-services",
         name: "AR/VR Application Development",
       },
       {
         id: 6,
-        path: "/services",
+        path: "/services#it-services",
         name: "Business Intelligence Application Development",
       },
       {
         id: 7,
-        path: "/services",
+        path: "/services#it-services",
         name: "Workflow Automation Software Development",
       },
       // {
