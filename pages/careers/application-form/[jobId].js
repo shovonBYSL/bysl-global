@@ -10,6 +10,7 @@ import {
   JobHeader,
 } from "../../../components/careers/CareersCommonComponents";
 import { jobList } from "../../../public/data/careersData";
+import Script from "next/script";
 
 const ApplicationForm = () => {
   const [data, setData] = useState("");
@@ -32,7 +33,8 @@ const ApplicationForm = () => {
   const [experience, setExperience] = useState("");
   const [background, setBackground] = useState("");
   const [question3, setQuestion3] = useState("");
-  const [uploadedFile, setUploadedFile] = useState("");
+  const [fileName, setFileName] = useState("");
+  const [filePath, setFilePath] = useState("");
 
   const userData = {
     name,
@@ -42,19 +44,36 @@ const ApplicationForm = () => {
     experience,
     background,
     question3,
-  };
-
-  const handleFile = (e) => {
-    console.log("e:", e.files);
+    fileName,
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(userData);
-    // console.log(e.target.files[0].name);
+    Email.send({
+      SecureToken: "a42b16f8-ef5b-4c84-9b8f-fe1d91552fb9 ",
+      To: ["anisur.rahman@intelli.global"],
+      From: "anisur.rahman@intelli.global",
+      Subject: `Recieved IntelliDigital Contact Message From ${name.toUpperCase()}`,
+      Body: `<div>
+              <b>Sender message</b> <br> ${experience} <br> <br> <br>
+              <b>Sender name: </b> ${name} <br>
+              <b>Sender email: </b> ${email} <br>
+            </div>`,
+      Attachments: [
+        {
+          name: fileName,
+          data: filePath,
+        },
+      ],
+    }).then((message) => {
+      if (message == "OK") {
+        toast.success("Thanks for your application");
+        console.log(message);
+      }
+    });
 
     // after successful
-    toast.success("Thanks for your application");
     setName("");
     setEmail("");
     setPhone("");
@@ -65,26 +84,33 @@ const ApplicationForm = () => {
     // setUploadedFile(e.target.files[0].name);
   };
 
-  // let parent = getElementb
-  const onButtonClick = (e) => {
-    // console.log(e.target.firstChild.firstChild);
-    // let data = e.target.firstChild.firstChild;
-    // if (data) {
-    //   let files = data.click();
-    //   console.log(files);
-    // }
-    // let input = e.target.children[0]?.firstChild;
-    // let files = data.click();
-    getFiles();
+  const uploadFile = async (e) => {
+    if (e.target.files && e.target.files.length > 0) {
+      let file = e.target.files[0];
 
-    // console.log(data);
+      const base64 = await convertBase64(file);
+
+      setFilePath(base64);
+      setFileName(file.name);
+    }
   };
 
-  const getFiles = () => {
-    inputFile.current.click();
-    handleFile(inputFile.current);
-    // console.log(inputFile.current.files);
+  let convertBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(file);
+      fileReader.onload = () => {
+        resolve(fileReader.result);
+      };
+      fileReader.onerror = (error) => {
+        reject(error);
+      };
+    });
   };
+
+  // const getFiles = () => {
+  //   inputFile.current.click();
+  // };
 
   const previewData = [
     {
@@ -128,6 +154,7 @@ const ApplicationForm = () => {
     <>
       {data ? (
         <CommonLayout title="Application Form">
+          <Script src="https://smtpjs.com/v3/smtp.js" />
           <ToastContainer theme="dark" />
           <CareersPreviewModal jobTitle={data.position} data={previewData} />
           <div className="max-w-[856px] mx-auto py-10 xl:py-16">
@@ -227,17 +254,13 @@ const ApplicationForm = () => {
 
               {/* resume upload  */}
               <CareerInputTitle title="Upload your resume here *" />
-              <div className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center hover:cursor-pointer">
-                <label class="block">
-                  <span class="sr-only">Upload Resume</span>
+              <div className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center">
+                <label className="block">
+                  <span className="sr-only">Upload Resume</span>
                   <input
+                    onChange={uploadFile}
                     type="file"
-                    class="block w-full text-sm text-slate-500
-      file:mr-4 file:py-2 file:px-4
-      file:rounded-full file:border-0
-      file:text-sm file:font-semibold
-      file:bg-blue-50 file:text-blue-900
-      hover:file:bg-blue-100
+                    className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-900 hover:file:bg-blue-100
     "
                   />
                 </label>
@@ -264,7 +287,7 @@ const ApplicationForm = () => {
                   </p>
                 </div>
               </div> */}
-              {uploadedFile && <p className="">{uploadedFile}</p>}
+              {/* {uploadedFile && <p className="">{uploadedFile}</p>} */}
               <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10">
                 <label
                   htmlFor="application-preview"
