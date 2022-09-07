@@ -59,7 +59,7 @@ const SupplyChainSolutionProblems = ({ type, children, data }) => {
               id === open && (
                 <div
                   key={id}
-                  className="grid grid-cols-9 gap-6 zooming-animation"
+                  className="grid grid-cols-9 gap-6 service-scroll"
                 >
                   <div className="col-span-9 md:col-span-5">
                     {/* <p className="text-center font-medium md:text-start text-xl xl:text-2xl mb-6 text-gray-800">

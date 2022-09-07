@@ -29,7 +29,7 @@ const Navbar = ({ colorChange, specificPath }) => {
   const NavbarLogo = () => {
     return (
       <Link passHref href="/">
-        <div className="relative h-10 w-16 xl:w-20 hover:cursor-pointer">
+        <a className="relative h-10 w-16 xl:w-20 hover:cursor-pointer">
           <Image
             src={
               !colorChange && specificPath
@@ -40,7 +40,7 @@ const Navbar = ({ colorChange, specificPath }) => {
             priority
             alt=""
           />
-        </div>
+        </a>
       </Link>
     );
   };
@@ -68,7 +68,7 @@ const Navbar = ({ colorChange, specificPath }) => {
             title
           ) : (
             <Link href={link} passHref>
-              {title}
+              <a>{title}</a>
             </Link>
           )}
         </span>
@@ -82,7 +82,7 @@ const Navbar = ({ colorChange, specificPath }) => {
 
     return (
       <Link passHref href={link}>
-        <div
+        <a
           onClick={() => link === "/services#it-services" && handleClick(id)}
           className={`h-full w-full hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] border-transparent p-4 rounded-lg cursor-pointer transition-all duration-500 ${
             link !== "/services#it-services" &&
@@ -125,7 +125,7 @@ const Navbar = ({ colorChange, specificPath }) => {
               {subTitle}
             </p>
           )}
-        </div>
+        </a>
       </Link>
     );
   };

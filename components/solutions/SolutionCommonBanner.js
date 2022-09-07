@@ -12,7 +12,7 @@ const SolutionCommonBannerText = ({ data }) => {
           <TextGradient text={type} />
         </p>
         <SectionTitleGradient>{heading}</SectionTitleGradient>
-        <p className="mt-4 text-gray-500 text-sm xl:text-base 2xl:w-4/5 mx-4 md:mx-0">
+        <p className="mt-4 text-gray-600 text-sm xl:text-base 2xl:w-4/5 mx-4 md:mx-0">
           {subHeading}
         </p>
       </div>

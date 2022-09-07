@@ -65,7 +65,7 @@ const RetailProblemsAndSolution = ({ data }) => {
             <p className="my-4 text-2xl xl:text-[28px] 2xl:text-[32px] font-semibold">
               <TextGradient text={problem} />
             </p>
-            <p className="text-gray-500 text-sm leading-[22px]">
+            <p className="text-gray-600 text-sm leading-[22px]">
               {problemInfo}
             </p>
           </div>
@@ -73,7 +73,7 @@ const RetailProblemsAndSolution = ({ data }) => {
             <p className="text-xl xl:text-[22px] font-semibold">
               <TextGradient text="Solutions:" />
             </p>
-            <p className="pl-4 pt-1.5 pb-4 text-gray-500 text-sm xl:text-base">
+            <p className="pl-4 pt-1.5 pb-4 text-gray-600 text-sm xl:text-base">
               {solutionInfo}
             </p>
             {/* <p className="text-lg text-gray-800 font-medium mb-4">{benefits}</p> */}
@@ -86,7 +86,7 @@ const RetailProblemsAndSolution = ({ data }) => {
                     width={24}
                     alt=""
                   />
-                  <div className="text-gray-500 text-sm break-words w-full">
+                  <div className="text-gray-600 text-sm break-words w-full">
                     {item}
                   </div>
                 </div>

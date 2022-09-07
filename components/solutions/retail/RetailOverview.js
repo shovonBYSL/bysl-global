@@ -13,7 +13,7 @@ const RetailOverview = ({ data }) => {
       <TechnologiesSectionTitle>Retail Industries</TechnologiesSectionTitle>
       <div className="mt-6 grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-16 lg:items-center">
         <div className="md:col-span-7">
-          <p className="text-gray-800 text-sm xl:text-base text-center md:text-justify lg:text-start">
+          <p className="text-gray-600 text-sm xl:text-base text-center md:text-justify lg:text-start">
             {details}
           </p>
           <p className="text-lg font-semibold text-gray-800 my-4 xl:mt-10 xl:mb-6">

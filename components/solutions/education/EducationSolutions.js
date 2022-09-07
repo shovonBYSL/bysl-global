@@ -43,7 +43,7 @@ const EducationSolutions = ({ data }) => {
           {data.map((item) => {
             return (
               item.id === open && (
-                <div key={item.id} className="zooming-animation">
+                <div key={item.id} className="service-scroll">
                   <SolutionCard data={item} />
                 </div>
               )
