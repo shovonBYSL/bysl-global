@@ -1,6 +1,9 @@
 import Image from "next/image";
 
-import { individualServiceITServicesDetails } from "../../public/data/individualServiceData";
+import {
+  individualServiceITServicesDetails,
+  servicesData,
+} from "../../public/data/individualServiceData";
 import { TextGradient } from "../shared/SharedTextgroups";
 
 const {
@@ -14,6 +17,8 @@ const {
   rightServices,
   footer,
 } = individualServiceITServicesDetails;
+
+const { title, overview, approach, highlights } = servicesData[0];
 
 const ProjectsCard = (props) => {
   const { title1, title2, serviceTitle, services } = props;
@@ -74,10 +79,31 @@ const BPOCard = () => {
 
 const UIUXCard = () => {
   return (
-    <>
-      <p className="text-gray-400 mb-10">{header}</p>
-      <p className="text-gray-800 mt-10">{footer}</p>
-    </>
+    <div>
+      <p className="text-gray-400 mb-10">{overview}</p>
+      <p className="text-gray-800 font-semibold text-lg mb-2">
+        Our Approach to {title}
+      </p>
+      <p className="text-gray-400 mb-10">{approach}</p>
+      <span className="text-sm xl:text-base font-bold md:font-extrabold">
+        <TextGradient text="Services Highlights:" />
+      </span>
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        {highlights.map((item, i) => (
+          <div key={i} className="flex items-center mt-[15px]">
+            <Image
+              src="/images/services/individual_service/arrow_blue.svg"
+              height={9}
+              width={9}
+              alt=""
+            />
+            <div className="ml-2.5 text-gray-800 text-sm xl:text-base font-bold md:font-extrabold">
+              {item}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

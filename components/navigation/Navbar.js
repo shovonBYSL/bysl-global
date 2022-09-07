@@ -88,11 +88,15 @@ const Navbar = ({ colorChange, specificPath }) => {
             link !== "/services" &&
             router.asPath === link &&
             "text-white bg-gradient-to-r from-blue-900 to-blue-700"
-          } ${!subTitle && "h-20"}`}
+          } ${!subTitle && "py"}`}
         >
-          <div className={`flex items-center justify-between ${!subTitle && "mb-2"}`}>
+          <div
+            className={`flex items-center justify-between ${
+              !subTitle && "h-12 xl:h-14"
+            }`}
+          >
             <p
-              className={`${
+              className={`w-full ${
                 (link !== "/services" && router.asPath) !== link &&
                 "text-gray-800"
               }`}
@@ -110,15 +114,17 @@ const Navbar = ({ colorChange, specificPath }) => {
               width={18}
             />
           </div>
-          <p
-            className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs ${
-              link !== "/services" && router.asPath === link
-                ? "text-white/40"
-                : "text-[#393e50]/40"
-            }`}
-          >
-            {subTitle}
-          </p>
+          {subTitle && (
+            <p
+              className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs ${
+                link !== "/services" && router.asPath === link
+                  ? "text-white/40"
+                  : "text-[#393e50]/40"
+              }`}
+            >
+              {subTitle}
+            </p>
+          )}
         </div>
       </Link>
     );

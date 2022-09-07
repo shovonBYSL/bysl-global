@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
 
@@ -15,13 +15,15 @@ const ApplicationForm = () => {
   const [data, setData] = useState("");
   const router = useRouter();
   const { jobId } = router.query;
+  const inputFile = useRef(null);
+  // const uploadedFile = inputFile?.current?.value.split("fakepath\\")[1];
 
   useEffect(() => {
     if (jobId !== "undefined") {
       const singleJobData = jobList.find((item) => item.id == jobId);
       setData(singleJobData);
     }
-  }, [jobId]);
+  }, [jobId, inputFile]);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -30,6 +32,7 @@ const ApplicationForm = () => {
   const [experience, setExperience] = useState("");
   const [background, setBackground] = useState("");
   const [question3, setQuestion3] = useState("");
+  const [uploadedFile, setUploadedFile] = useState("");
 
   const userData = {
     name,
@@ -39,6 +42,48 @@ const ApplicationForm = () => {
     experience,
     background,
     question3,
+  };
+
+  const handleFile = (e) => {
+    console.log("e:", e.files);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(userData);
+    // console.log(e.target.files[0].name);
+
+    // after successful
+    toast.success("Thanks for your application");
+    setName("");
+    setEmail("");
+    setPhone("");
+    setLocation("");
+    setExperience("");
+    setBackground("");
+    setQuestion3("");
+    // setUploadedFile(e.target.files[0].name);
+  };
+
+  // let parent = getElementb
+  const onButtonClick = (e) => {
+    // console.log(e.target.firstChild.firstChild);
+    // let data = e.target.firstChild.firstChild;
+    // if (data) {
+    //   let files = data.click();
+    //   console.log(files);
+    // }
+    // let input = e.target.children[0]?.firstChild;
+    // let files = data.click();
+    getFiles();
+
+    // console.log(data);
+  };
+
+  const getFiles = () => {
+    inputFile.current.click();
+    handleFile(inputFile.current);
+    // console.log(inputFile.current.files);
   };
 
   const previewData = [
@@ -78,21 +123,6 @@ const ApplicationForm = () => {
       answer: question3,
     },
   ];
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(userData);
-
-    // after successful
-    toast.success("Thanks for your application");
-    setName("");
-    setEmail("");
-    setPhone("");
-    setLocation("");
-    setExperience("");
-    setBackground("");
-    setQuestion3("");
-  };
 
   return (
     <>
@@ -198,7 +228,34 @@ const ApplicationForm = () => {
               {/* resume upload  */}
               <CareerInputTitle title="Upload your resume here *" />
               <div className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center hover:cursor-pointer">
+                <label class="block">
+                  <span class="sr-only">Upload Resume</span>
+                  <input
+                    type="file"
+                    class="block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-blue-50 file:text-blue-900
+      hover:file:bg-blue-100
+    "
+                  />
+                </label>
+              </div>
+              {/* <div
+                id="inputParent"
+                onClick={(e) => onButtonClick(e)}
+                className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center hover:cursor-pointer"
+              >
                 <div>
+                  <input
+                    onClick={handleFile}
+                    ref={inputFile}
+                    // hidden
+                    type="file"
+                    name="cv"
+                    id=""
+                  />
                   <p className="text-sm text-gray-800/80 font-light">
                     Upload Resume
                   </p>
@@ -206,7 +263,8 @@ const ApplicationForm = () => {
                     *pdf or docx formate only
                   </p>
                 </div>
-              </div>
+              </div> */}
+              {uploadedFile && <p className="">{uploadedFile}</p>}
               <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10">
                 <label
                   htmlFor="application-preview"

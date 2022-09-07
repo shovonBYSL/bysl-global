@@ -22,7 +22,7 @@ const Service = ({
       {/* banner section  */}
       <PrimaryBanner
         title="Services"
-        sub="Research-oriented, strategy-driven, tailored to business needs, and technologically cutting-edge  IT services to help businesses transform for an ever evolving technological landscape of the 
+        sub="Research-backed, strategy-driven, tailored to business needs, and technologically cutting-edge  IT services to help businesses transform for an ever evolving technological landscape of the 
         world of tomorrow. We craft services that open new frontiers with limitless possibilities."
         img={banner}
       >

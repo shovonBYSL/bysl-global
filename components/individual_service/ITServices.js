@@ -1,18 +1,19 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import { BPOCard, UIUXCard } from "./ITServicesDetails";
 import { getItem, setItem } from "../../utils/sessionStorage";
 import { scrollYFocus } from "../../utils/scroller";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
+  TextGradient,
 } from "../shared/SharedTextgroups";
 
 const ITServices = ({ data }) => {
   const serviceId = getItem();
   const [margin, setMargin] = useState(false);
   const [tabOpen, setTabOpen] = useState(0);
+  const [tabData, setTabData] = useState(data[tabOpen]);
 
   // function for accordion handle
   const handleOpen = (id) => {
@@ -31,25 +32,11 @@ const ITServices = ({ data }) => {
 
   useEffect(() => {
     setTabOpen(serviceId ? (serviceId == "" ? 0 : serviceId) : 0);
-  }, [serviceId]);
-
-  const serviceDetails = [
-    <BPOCard />,
-    <UIUXCard />,
-    <BPOCard />,
-    <UIUXCard />,
-    <BPOCard />,
-    <UIUXCard />,
-    <BPOCard />,
-    <UIUXCard />,
-    <BPOCard />,
-    <UIUXCard />,
-    <BPOCard />,
-    <UIUXCard />,
-  ];
+    setTabData(data[tabOpen]);
+  }, [serviceId, tabData]);
 
   const Tab = ({ data }) => {
-    const { id, img, activeImg, title } = data;
+    const { id, img, activeImg, tabTitle } = data;
 
     return (
       <div
@@ -77,7 +64,7 @@ const ITServices = ({ data }) => {
               tabOpen === id ? "text-white" : "text-gray-800"
             }`}
           >
-            {title}
+            {tabTitle}
           </p>
         </div>
       </div>
@@ -86,13 +73,37 @@ const ITServices = ({ data }) => {
 
   const TabElement = () => {
     return (
-      <div className="p-5 mt-4 lg:mt-0 lg:p-10 lg:pr-0">
-        {serviceDetails.map((el, i) => (
-          <div key={i} className={`${tabOpen === i && "service-scroll"}`}>
-            {tabOpen === i && el}
+      <>
+        {tabData && (
+          <div className="p-5 mt-4 lg:mt-0 lg:p-10 lg:pr-0 lg:pb-0">
+            <div className="service-scroll">
+              <p className="text-gray-400 mb-10">{tabData.overview}</p>
+              <p className="text-gray-800 font-semibold text-lg mb-2">
+                Our Approach to {tabData.title}
+              </p>
+              <p className="text-gray-400 mb-10">{tabData.approach}</p>
+              <span className="text-sm xl:text-base font-bold md:font-extrabold">
+                <TextGradient text="Services Highlights:" />
+              </span>
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                {tabData.highlights?.map((item, i) => (
+                  <div key={i} className="flex items-center mt-[15px]">
+                    <Image
+                      src="/images/services/individual_service/arrow_blue.svg"
+                      height={9}
+                      width={9}
+                      alt=""
+                    />
+                    <div className="ml-2.5 text-gray-800 text-sm xl:text-base font-bold md:font-extrabold">
+                      {item}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        ))}
-      </div>
+        )}
+      </>
     );
   };
 
@@ -100,7 +111,7 @@ const ITServices = ({ data }) => {
     <div className={`py-10 xl:py-16  ${margin && "mb-[1000px]"}`}>
       <SectionTitleType title="What We Do." />
       <TechnologiesSectionTitle>
-      Trend-setting IT services
+        Trend-setting IT services
       </TechnologiesSectionTitle>
       <div className="mt-10 xl:mt-16">
         <div className="grid grid-cols-12 gap-6">
