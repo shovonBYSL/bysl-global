@@ -72,7 +72,9 @@ const ApplicationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     Email.send({
-      SecureToken: "a42b16f8-ef5b-4c84-9b8f-fe1d91552fb9 ",
+      Host: "smtp.elasticemail.com",
+      Username: "anisur.rahman@intelli.global",
+      Password: "2597486C56508E185A07F608105A6853404E",
       To: ["anisur.rahman@intelli.global"],
       From: "anisur.rahman@intelli.global",
       Subject: `Recieved IntelliDigital Contact Message From ${name.toUpperCase()}`,
