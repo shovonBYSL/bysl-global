@@ -83,9 +83,9 @@ const Navbar = ({ colorChange, specificPath }) => {
     return (
       <Link passHref href={link}>
         <div
-          onClick={() => link === "/services" && handleClick(id)}
+          onClick={() => link === "/services#it-services" && handleClick(id)}
           className={`h-full w-full hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] border-transparent p-4 rounded-lg cursor-pointer transition-all duration-500 ${
-            link !== "/services" &&
+            link !== "/services#it-services" &&
             router.asPath === link &&
             "text-white bg-gradient-to-r from-blue-900 to-blue-700"
           }`}
@@ -97,7 +97,7 @@ const Navbar = ({ colorChange, specificPath }) => {
           >
             <p
               className={`w-full ${
-                (link !== "/services" && router.asPath) !== link &&
+                (link !== "/services#it-services" && router.asPath) !== link &&
                 "text-gray-800"
               }`}
             >
@@ -105,7 +105,7 @@ const Navbar = ({ colorChange, specificPath }) => {
             </p>
             <Image
               src={
-                link !== "/services" && router.asPath === link
+                link !== "/services#it-services" && router.asPath === link
                   ? "/images/navIconRightWhite.svg"
                   : "/images/navIconRight.svg"
               }
@@ -117,7 +117,7 @@ const Navbar = ({ colorChange, specificPath }) => {
           {subTitle && (
             <p
               className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs ${
-                link !== "/services" && router.asPath === link
+                link !== "/services#it-services" && router.asPath === link
                   ? "text-white/40"
                   : "text-[#393e50]/40"
               }`}

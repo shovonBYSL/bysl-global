@@ -14,7 +14,7 @@ import {
 const Footer = () => {
   const handleClick = (id) => {
     setItem(id);
-    window.location.pathname === "/service" &&
+    window.location.pathname === "/service#it-services" &&
       Router.reload(window.location.pathname);
   };
 
