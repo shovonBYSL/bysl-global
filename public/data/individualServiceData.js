@@ -61,11 +61,11 @@ const serviceWhyChooseUsData = [
 const individualServiceITServicesData = [
   {
     id: 0,
-    tabTitle: "UI/UX Design",
-    // tabTitle: "UI/UX Design Services",
+    // tabTitle: "UI/UX Design",
+    tabTitle: "UI/UX Design Services",
     title: "UI/UX design",
     overview:
-      "Our team of skilled and creative visual designers with experience in designing both consumer apps and B2B applications are well-equipped to design your apps, be it an improvement to an existing interface or from scratch, that are result-oriented, validated, and highly data-driven with main focus on creating enhanced, intuitive and fluid user experiences while embracing your brand’s identity.",
+      "Our team of skilled and creative visual designers with experience in designing both consumer and B2B applications are well-equipped to design your apps, be it an improvement to an existing interface or from scratch, that are result-oriented, validated, and highly data-driven with main focus on creating enhanced, intuitive and fluid user experiences while embracing your brand’s identity.",
     approach:
       "Applying years of professional experience, knowledge of behavioral science, cognitive psychology, a keen sense of aesthetics, and the expert tweaks with the most advanced tool sets, we take a holistic approach centered around customers’ needs to create disruptive designs for web and mobile applications that excel in usability, accessibility and compatibility across platforms.",
     highlights: [
@@ -82,14 +82,14 @@ const individualServiceITServicesData = [
       "Innovation consulting",
       "Product strategy",
     ],
-    img: "/images/services/individual_service/it_services/icon_1.png",
+    img: "/images/services/individual_service/it_services/icon_0.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_1.png",
+      "/images/services/individual_service/it_services/icon_active_0.png",
   },
   {
     id: 1,
-    tabTitle: "Web App Development",
-    // tabTitle: "Web Application Development",
+    // tabTitle: "Web App Development",
+    tabTitle: "Web Application Development",
     title: "Web Services",
     overview:
       "Establish a bold, resilient and future-proof web presence in the ever-shifting digital landscape with BYSL Global. Backed by a cluster of highly skilled professionals, client-centric approach, agile workflow, depth of industry insights, and seamless collaboration empower us to deliver trend-setting outcomes and need-based solutions for our partners.",
@@ -109,14 +109,14 @@ const individualServiceITServicesData = [
       "Web application QA and testing ",
       "Web application support and maintenance",
     ],
-    img: "/images/services/individual_service/it_services/icon_2.png",
+    img: "/images/services/individual_service/it_services/icon_1.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_2.png",
+      "/images/services/individual_service/it_services/icon_active_1.png",
   },
   {
     id: 2,
-    tabTitle: "Mobile App Development",
-    // tabTitle: "Mobile Application Development",
+    // tabTitle: "Mobile App Development",
+    tabTitle: "Mobile Application Development",
     title: "Mobile App Development",
     overview:
       "BYSL Global deploys an incredible talent-pool of experienced and highly skilled mobile developers with ability to understand and analyze client’s requirements from points of UI/UX compatibility, level of technological challenge, code reuse, platform and device compatibility and translate them into outstanding results through disruptive iOS and Android mobile applications.",
@@ -136,9 +136,9 @@ const individualServiceITServicesData = [
       "Live messaging and VoIP calling application",
       "Mobile application development consultancy",
     ],
-    img: "/images/services/individual_service/it_services/icon_3.png",
+    img: "/images/services/individual_service/it_services/icon_2.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_3.png",
+      "/images/services/individual_service/it_services/icon_active_2.png",
   },
   {
     id: 3,
@@ -162,14 +162,14 @@ const individualServiceITServicesData = [
       "ERP consulting services",
       "Digital transformation",
     ],
-    img: "/images/services/individual_service/it_services/icon_5.png",
+    img: "/images/services/individual_service/it_services/icon_3.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_5.png",
+      "/images/services/individual_service/it_services/icon_active_3.png",
   },
   {
     id: 4,
-    tabTitle: "AI/ML App Development",
-    // tabTitle: "AI/ML Application Development",
+    // tabTitle: "AI/ML App Development",
+    tabTitle: "AI/ML Application Development",
     title: "AI/ML Application Development",
     overview:
       "At BYSL Global, we go the extra mile to understand your business needs and provide smart, efficient, and low cost solutions and our AI/ML application development services remain one of our core capabilities to help you drive innovation through your smart assets. From solving critical problems, automating processes to enhancing customer experience, our AI/ML powered application development services enable you to innovate in key areas of optimization and innovation in business.",
@@ -189,14 +189,15 @@ const individualServiceITServicesData = [
       "Sensor data analysis software development",
       "Recommendation engine development",
     ],
-    img: "/images/services/individual_service/it_services/icon_7.png",
+    img: "/images/services/individual_service/it_services/icon_4.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_7.png",
+      "/images/services/individual_service/it_services/icon_active_4.png",
   },
   {
     id: 5,
-    tabTitle: "AR/VR App Development",
-    // title: "AR/VR Application Development",
+    // tabTitle: "AR/VR App Development",
+    tabTitle: "AR/VR Application Development",
+    title: "AR/VR Application Development",
     overview:
       "Revolutionize marketing and customer experience, reinvent the way you interact with your customers, innovate in an environment of the future and stay at the forefront of industry by connecting the digital with the physical through cutting-edge AR/VR applications developed by BYSL Global. We synthesize industry insights, business needs and years of experience into mission-critical AR/VR applications using the latest tools and technologies. Get served with immersive experiences through powerful applications enabling advanced data visualization, recognition precisely targeting business needs.",
     approach:
@@ -221,8 +222,8 @@ const individualServiceITServicesData = [
   },
   {
     id: 6,
-    tabTitle: "BI App Development",
-    // tabTitle: "Business Intelligence Application Development",
+    // tabTitle: "BI App Development",
+    tabTitle: "Business Intelligence Application Development",
     title: "BI Application Development",
     overview:
       "To provide your business with a powerful business intelligence (BI) perspective, we have designed our application development services firmly grounded on logically and eventfully related methodologies, architectures, technologies and theories. Our well-synced, highly skilled and optimally equipped developer team at BYSL Global share a common goal of empowering your business through building future-ready BI systems with boosted capacity to channel and rout information flow, collect and analyze data, optimize report, retrieve and dispatch information in specific operational settings.",
@@ -239,8 +240,6 @@ const individualServiceITServicesData = [
       "Business trend and forecasting apps development",
       "Task scheduling and planning apps development",
       "Info discovery and data mining apps development",
-      "Data visualization apps development",
-      "Data migration apps development",
       "KPI and performance analytics ",
       "BI consultation",
     ],
@@ -274,102 +273,6 @@ const individualServiceITServicesData = [
     activeImg:
       "/images/services/individual_service/it_services/icon_active_7.png",
   },
-  // {
-  //   id: 0,
-  //   title: "BPO",
-  //   path: "bpo",
-  //   img: "/images/services/individual_service/it_services/icon_0.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_0.png",
-  // },
-  // {
-  //   id: 1,
-  //   title: "UI/UX Design",
-  //   path: "ui-ux",
-  //   img: "/images/services/individual_service/it_services/icon_1.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_1.png",
-  // },
-  // {
-  //   id: 2,
-  //   title: "Web Development",
-  //   path: "web",
-  //   img: "/images/services/individual_service/it_services/icon_2.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_2.png",
-  // },
-  // {
-  //   id: 3,
-  //   title: "App Development",
-  //   path: "app",
-  //   img: "/images/services/individual_service/it_services/icon_3.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_3.png",
-  // },
-  // {
-  //   id: 4,
-  //   title: "E-Commerce",
-  //   path: "e-commerce",
-  //   img: "/images/services/individual_service/it_services/icon_4.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_4.png",
-  // },
-  // {
-  //   id: 5,
-  //   title: "ERP",
-  //   path: "erp",
-  //   img: "/images/services/individual_service/it_services/icon_5.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_5.png",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Fintech",
-  //   path: "fintech",
-  //   img: "/images/services/individual_service/it_services/icon_6.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_6.png",
-  // },
-  // {
-  //   id: 7,
-  //   title: "AI & ML",
-  //   path: "aiml",
-  //   img: "/images/services/individual_service/it_services/icon_7.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_7.png",
-  // },
-  // {
-  //   id: 8,
-  //   title: "Fulfilment Solutions",
-  //   path: "fulfilment",
-  //   img: "/images/services/individual_service/it_services/icon_8.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_8.png",
-  // },
-  // {
-  //   id: 9,
-  //   title: "Logistics Solutions",
-  //   path: "logistics",
-  //   img: "/images/services/individual_service/it_services/icon_9.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_9.png",
-  // },
-  // {
-  //   id: 10,
-  //   title: "Cloud & Cyber Security",
-  //   path: "cloud",
-  //   img: "/images/services/individual_service/it_services/icon_10.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_10.png",
-  // },
-  // {
-  //   id: 11,
-  //   title: "Customer Care Solutions",
-  //   path: "customer",
-  //   img: "/images/services/individual_service/it_services/icon_11.png",
-  //   activeImg:
-  //     "/images/services/individual_service/it_services/icon_active_11.png",
-  // },
 ];
 
 const serviceResourceBlogData = [

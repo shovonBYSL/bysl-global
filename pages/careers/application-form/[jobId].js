@@ -1,30 +1,28 @@
-import { useEffect, useRef, useState } from "react";
+import Script from "next/script";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
 
 import CommonLayout from "../../../layouts/CommonLayout";
-import CareersPreviewModal from "../../../components/careers/CareersPreviewModal";
 import Loader from "../../../components/shared/Loader";
+import CareersPreviewModal from "../../../components/careers/CareersPreviewModal";
 import {
   CareerInputTitle,
   JobHeader,
 } from "../../../components/careers/CareersCommonComponents";
 import { jobList } from "../../../public/data/careersData";
-import Script from "next/script";
 
 const ApplicationForm = () => {
-  const [data, setData] = useState("");
   const router = useRouter();
   const { jobId } = router.query;
-  const inputFile = useRef(null);
-  // const uploadedFile = inputFile?.current?.value.split("fakepath\\")[1];
+  const [data, setData] = useState("");
 
   useEffect(() => {
     if (jobId !== "undefined") {
       const singleJobData = jobList.find((item) => item.id == jobId);
       setData(singleJobData);
     }
-  }, [jobId, inputFile]);
+  }, [jobId]);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -49,17 +47,20 @@ const ApplicationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(userData);
+    console.log("working.....");
     Email.send({
-      SecureToken: "a42b16f8-ef5b-4c84-9b8f-fe1d91552fb9 ",
-      To: ["anisur.rahman@intelli.global"],
-      From: "anisur.rahman@intelli.global",
+      // SecureToken: "6ffc8dd3-648e-4829-a0c6-effb3fb98190",
+      Host: "smtp.elasticemail.com",
+      Username: "kawser.shovon@intelli.global",
+      Password: "2273C3FE9FED6F2509631A1B6764C45BA978",
+      To: ["kawser.shovon@intelli.global"],
+      From: "kawser.shovon@intelli.global",
       Subject: `Recieved IntelliDigital Contact Message From ${name.toUpperCase()}`,
       Body: `<div>
-              <b>Sender message</b> <br> ${experience} <br> <br> <br>
-              <b>Sender name: </b> ${name} <br>
-              <b>Sender email: </b> ${email} <br>
-            </div>`,
+      <b>Sender message</b> <br> ${experience} <br> <br> <br>
+      <b>Sender name: </b> ${name} <br>
+      <b>Sender email: </b> ${email} <br>
+      </div>`,
       Attachments: [
         {
           name: fileName,
@@ -69,19 +70,20 @@ const ApplicationForm = () => {
     }).then((message) => {
       if (message == "OK") {
         toast.success("Thanks for your application");
+        console.log(userData);
         console.log(message);
+        // after successful
+        setName("");
+        setEmail("");
+        setPhone("");
+        setLocation("");
+        setExperience("");
+        setBackground("");
+        setQuestion3("");
       }
     });
 
-    // after successful
-    setName("");
-    setEmail("");
-    setPhone("");
-    setLocation("");
-    setExperience("");
-    setBackground("");
-    setQuestion3("");
-    // setUploadedFile(e.target.files[0].name);
+    // setUploadedFile("");
   };
 
   const uploadFile = async (e) => {
@@ -154,12 +156,16 @@ const ApplicationForm = () => {
     <>
       {data ? (
         <CommonLayout title="Application Form">
-          <Script src="https://smtpjs.com/v3/smtp.js" />
           <ToastContainer theme="dark" />
-          <CareersPreviewModal jobTitle={data.position} data={previewData} />
+          <CareersPreviewModal
+            jobTitle={data.position}
+            data={previewData}
+            fileName={fileName}
+          />
           <div className="max-w-[856px] mx-auto py-10 xl:py-16">
             <JobHeader jobTitle={data.position} />
             <form
+              // ref={form}
               onSubmit={handleSubmit}
               className="max-w-[416px] mx-auto lg:pt-6"
             >
@@ -304,6 +310,7 @@ const ApplicationForm = () => {
               </div>
             </form>
           </div>
+          <Script src="https://smtpjs.com/v3/smtp.js" />
         </CommonLayout>
       ) : (
         <Loader />

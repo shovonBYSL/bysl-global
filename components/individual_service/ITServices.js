@@ -41,26 +41,26 @@ const ITServices = ({ data }) => {
     return (
       <div
         onClick={() => handleOpen(id)}
-        className={`py-3 lg:py-2.5 rounded-[10px] hover:cursor-pointer w-full ${
+        className={`py-3 lg:py-2.5 px-4 rounded-[10px] hover:cursor-pointer w-full ${
           tabOpen === id
             ? "bg-gradient-to-r from-blue-900 to-blue-700"
             : "bg-blue-300 lg:bg-transparent"
         }`}
       >
         <div
-          className={`flex items-center gap-5 w-full pl-5 ${
+          className={`flex items-center gap-3 w-full ${
             tabOpen === id && "mx-auto lg:mx-0"
           }`}
         >
           <Image
             src={tabOpen === id ? activeImg : img}
-            height={20}
-            width={20}
+            height={24}
+            width={24}
             objectFit="contain"
             alt=""
           />
           <p
-            className={`text-sm xl:text-base font-bold md:font-extrabold w-full ${
+            className={`text-sm font-bold w-full ${
               tabOpen === id ? "text-white" : "text-gray-800"
             }`}
           >
@@ -75,26 +75,28 @@ const ITServices = ({ data }) => {
     return (
       <>
         {tabData && (
-          <div className="p-5 mt-4 lg:mt-0 lg:p-10 lg:pr-0 lg:pb-0">
+          <div className="mt-4 lg:mt-0 px-4">
             <div className="service-scroll">
-              <p className="text-gray-400 mb-10">{tabData.overview}</p>
-              <p className="text-gray-800 font-semibold text-lg mb-2">
+              <p className="text-gray-400 text-sm 2xl:text-base mb-4">{tabData.overview}</p>
+              <p className="text-gray-800 text-sm 2xl:text-base font-semibold mb-2">
                 Our Approach to {tabData.title}
               </p>
-              <p className="text-gray-400 mb-10">{tabData.approach}</p>
-              <span className="text-sm xl:text-base font-bold md:font-extrabold">
+              <p className="text-gray-400 text-sm 2xl:text-base  mb-4">{tabData.approach}</p>
+              <span className="text-sm 2xl:text-base font-bold md:font-extrabold">
                 <TextGradient text="Services Highlights:" />
               </span>
-              <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 mt-2">
                 {tabData.highlights?.map((item, i) => (
-                  <div key={i} className="flex items-center mt-[15px]">
-                    <Image
-                      src="/images/services/individual_service/arrow_blue.svg"
-                      height={9}
-                      width={9}
-                      alt=""
-                    />
-                    <div className="ml-2.5 text-gray-800 text-sm xl:text-base font-bold md:font-extrabold">
+                  <div key={i} className="flex">
+                    <div className="-mt-[2px]">
+                      <Image
+                        src="/images/services/individual_service/arrow_blue.svg"
+                        height={9}
+                        width={9}
+                        alt=""
+                      />
+                    </div>
+                    <div className="ml-2.5 text-gray-800 text-sm font-bold w-full">
                       {item}
                     </div>
                   </div>
@@ -113,9 +115,9 @@ const ITServices = ({ data }) => {
       <TechnologiesSectionTitle>
         Trend-setting IT services
       </TechnologiesSectionTitle>
-      <div className="mt-10 xl:mt-16">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 lg:col-span-4 2xl:col-span-3 flex flex-col space-y-4 bg-white p-5 rounded-[20px] lg:shadow-[-4px_-4px_25px_0px_#E5EBF3]">
+      <div className="mt-6 xl:mt-10">
+        <div className="grid grid-cols-12 gap-6 xl:gap-8">
+          <div className="col-span-12 lg:col-span-4 2xl:col-span-3 flex flex-col space-y-2 bg-white p-5 rounded-[20px] lg:shadow-[-4px_-4px_25px_0px_#E5EBF3]">
             {data.map((item, i) => {
               return (
                 <div key={i} id={i}>

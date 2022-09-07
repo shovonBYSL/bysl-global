@@ -69,7 +69,7 @@ const TechSlider = ({ data }) => {
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Technology" />
       <TechnologiesSectionTitle>
-        Technology using in our platforms
+        Tools we use to shape the future
       </TechnologiesSectionTitle>
       <Slider {...settings} className="mt-6 lg:mt-10 text-center techSlides">
         {data.sliders.map(({ id, label, img }) => {

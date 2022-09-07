@@ -1,7 +1,7 @@
 import { AiOutlinePlus } from "react-icons/ai";
 import { CareerInputTitle, CareerUserInput } from "./CareersCommonComponents";
 
-const CareersPreviewModal = ({ jobTitle, data }) => {
+const CareersPreviewModal = ({ jobTitle, data, fileName }) => {
   return (
     <div className="relative">
       <input
@@ -30,7 +30,7 @@ const CareersPreviewModal = ({ jobTitle, data }) => {
               })}
               <CareerInputTitle title="Your Resume" />
               <p className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-blue-700 opacity-80">
-                user_resume.pdf
+                {fileName}
               </p>
             </div>
           </div>
