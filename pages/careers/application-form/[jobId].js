@@ -154,7 +154,6 @@ const ApplicationForm = () => {
           <div className="max-w-[856px] mx-auto py-10 xl:py-16">
             <JobHeader jobTitle={data.position} />
             <form
-              // ref={form}
               onSubmit={handleSubmit}
               className="max-w-[416px] mx-auto lg:pt-6"
             >

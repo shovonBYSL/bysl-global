@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 
 import SectionHeader from "../../shared/SectionHeader";
 import SolutionCard from "../SolutionCard";
@@ -13,6 +15,8 @@ const EducationSolutions = ({ data }) => {
     screen.width >= 560 && screen.width < 1024 && educationScroll(id);
   };
 
+  const menu = ["Solutions 1", "Solutions 2", "Solutions 3", "Solutions 4"];
+
   return (
     <div id="solutions" className="py-10 xl:py-16 relative">
       <SectionHeader type="Solutions">
@@ -22,7 +26,7 @@ const EducationSolutions = ({ data }) => {
       </SectionHeader>
 
       <div className="mt-6 xl:mt-10 ">
-        <div className="overflow-x-auto">
+        {/* <div className="overflow-x-auto">
           <div className="flex gap-4 md:gap-6 w-max mx-auto">
             {data.map(({ id }) => (
               <p
@@ -49,7 +53,55 @@ const EducationSolutions = ({ data }) => {
               )
             );
           })}
-        </div>
+        </div> */}
+        {/* <div className="overflow-x-auto">
+          <div className="flex gap-4 md:gap-6 w-max mx-auto">
+            {data.map(({ id }) => (
+              <p
+                id={id}
+                key={id}
+                onClick={() => handleClick(id)}
+                className={`hover:cursor-pointer font-medium text-sm rounded-lg px-5 py-2.5 text-gray-800 ${
+                  open === id &&
+                  "text-white bg-gradient-to-r from-blue-900 to-blue-700"
+                }`}
+              >
+                Solutions {id + 1}
+              </p>
+            ))}
+          </div>
+        </div> */}
+
+        <Swiper
+          // slidesPerView={1}
+          // spaceBetween={50}
+          // slidesPerGroup={1}
+          // centeredSlides={true}
+          loop={true}
+          speed={1000}
+          // loopFillGroupWithBlank={true}
+          pagination={{
+            clickable: true,
+            renderBullet: function (index, className) {
+              return (
+                '<span class="' + className + '">' + menu[index] + "</span>"
+              );
+            },
+          }}
+          // navigation={true}
+          modules={[Pagination]}
+          className="mySwiper educationSlider"
+        >
+          {data.map((item, i) => {
+            return (
+              <SwiperSlide key={i}>
+                <div className="pt-20">
+                  <SolutionCard data={item} />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </div>
   );

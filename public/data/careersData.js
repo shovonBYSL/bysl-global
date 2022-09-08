@@ -35,7 +35,7 @@ const jobList = [
       },
       {
         id: 2,
-        title: "Additional Requirements",
+        title: "Key Qualifications",
         details: [
           "Only males are allowed to apply",
           "Deeply passionate about Graphic Design and video editing",
@@ -187,7 +187,7 @@ const jobList = [
       },
       {
         id: 2,
-        title: "Additional Requirements",
+        title: "Key Qualifications",
         details: [
           "Excellent verbal and written communication skills",
           "Build a cutting-edge api architecture following best-in-industry patterns",
@@ -260,7 +260,7 @@ const jobList = [
       },
       {
         id: 2,
-        title: "Additional Requirements",
+        title: "Key Qualifications",
         details: [
           "A good understanding of real-time messaging systems, like WebSockets, WebRTC as well as email transmission technology like SMTP, POP3, Imap etc.",
           "Familiarity with NoSQL database and Token based authentication",
@@ -316,7 +316,7 @@ const jobList = [
       },
       {
         id: 1,
-        title: "Additional Requirements",
+        title: "Key Qualifications",
         details: [
           "Proficient in Kotlin or Swift development languages.",
           "Strong development experience with Android SDK, Android/iOS UI design principles, patterns and best practices.",

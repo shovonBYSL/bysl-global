@@ -115,7 +115,7 @@ const ITServices = ({ data }) => {
 
   return (
     <div className={`py-10 xl:py-16  ${margin && "mb-[1000px]"}`}>
-      <SectionTitleType title="What We Do." />
+      <SectionTitleType title="What We Do" />
       <TechnologiesSectionTitle>
         Trend-setting IT services
       </TechnologiesSectionTitle>

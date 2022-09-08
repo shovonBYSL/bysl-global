@@ -3,11 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 import CommonLayout from "../../../layouts/CommonLayout";
-import {
-  CompanyDescription,
-  JobDescriptionTitle,
-  JobTitle,
-} from "../../../components/careers/CareersCommonComponents";
+import { JobDescriptionTitle } from "../../../components/careers/CareersCommonComponents";
 import { jobList } from "../../../public/data/careersData";
 import Loader from "../../../components/shared/Loader";
 
@@ -43,7 +39,6 @@ const JobDescription = () => {
                 </div>
               </Link>
             </div>
-            {/* <CompanyDescription /> */}
             {data.roleDetails && (
               <div>
                 <JobDescriptionTitle title={data.role} />
