@@ -21,7 +21,8 @@ const educationProblemsAndSolutionsData = [
       "Advanced student information system",
       "Digitized internal operations",
       "State-of-the-art cyber security",
-      "Super fast disaster recovery, minimized data loss and downtime",
+      "Super fast disaster recovery",
+      "Minimized data loss and downtime",
     ],
   },
   {

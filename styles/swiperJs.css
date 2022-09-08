@@ -167,6 +167,7 @@
 }
 .supplySlide .swiper-pagination {
   right: auto !important;
+  width: 100%;
 }
 
 .supplySlide .swiper-pagination-bullet {
@@ -232,7 +233,7 @@
   .supplySlide .swiper-pagination {
     display: flex;
     align-items: center;
-    top: 0 !important;
+    top: -2px !important;
     overflow-x: auto;
     max-width: 100%;
     background-color: #f8f8fa;
@@ -242,6 +243,8 @@
   .supplySlide .swiper-pagination-bullet {
     margin-right: 20px !important;
     padding-left: 0;
+    justify-content: center;
+    width: -webkit-fill-available;
   }
 
   .supplySlide .swiper-pagination-bullet::before {
@@ -270,7 +273,12 @@
 
 @media (max-width: 767px) {
   .supplySlide .swiper {
-    height: 580px !important;
+    height: 600px !important;
+  }
+}
+@media (max-width: 425px) {
+  .supplySlide .swiper {
+    height: 620px !important;
   }
 }
 /* supply chain slider end */

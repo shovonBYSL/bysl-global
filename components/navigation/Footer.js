@@ -106,7 +106,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="xl:hidden col-span-6 w-max mx-auto text-center">
+          <div className="xl:hidden col-span-6 mx-auto text-center">
             <Career />
           </div>
         </div>
