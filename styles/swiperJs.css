@@ -126,13 +126,13 @@
     align-items: baseline;
     justify-content: center;
     max-width: 100%;
-    border: 1px solid red;
     height: max-content;
 }
 .educationSlider .swiper-pagination-bullet {
   white-space: nowrap;
   padding: 10px 20px;
   border-radius: 8px;
+  height: 41px;
   margin-right: 20px !important;
   width: auto;
   text-align: center;
