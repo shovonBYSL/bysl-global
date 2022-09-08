@@ -42,7 +42,7 @@ const AboutUs = ({ summaryData, aboutUsData }) => {
         {aboutUsData?.map(({ id, path, title, description }) => {
           return (
             <Link passHref key={id} href={path}>
-              <div
+              <a
                 key={id}
                 className="bg-white h-full rounded-[10px] xl:rounded-[20px] border border-gray-200/75 hover:cursor-pointer"
               >
@@ -59,7 +59,7 @@ const AboutUs = ({ summaryData, aboutUsData }) => {
                 <p className="pb-3 xl:pb-5 px-3 xl:px-4 text-xs md:text-sm xl:text-base 2xl:text-lg text-gray-300 xl:!leading-5 ">
                   {description}
                 </p>
-              </div>
+              </a>
             </Link>
           );
         })}

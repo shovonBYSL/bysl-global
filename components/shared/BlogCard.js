@@ -34,11 +34,11 @@ const BlogCard = ({ data }) => {
         )}
       </div>
       <Link passHref href={`/resource/${id}`}>
-        <div className="service-card-bg h-[50px] border-t hover:cursor-pointer flex justify-center items-center">
+        <a className="service-card-bg h-[50px] border-t hover:cursor-pointer flex justify-center items-center">
           <p className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r group-hover:from-white from-blue-900 group-hover:to-white to-blue-700">
             Read More
           </p>
-        </div>
+        </a>
       </Link>
     </div>
   );

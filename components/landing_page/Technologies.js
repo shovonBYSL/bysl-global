@@ -13,7 +13,7 @@ const Technologies = ({ data }) => {
         {data.map(({ id, img, video, title, link }) => {
           return (
             <Link key={id} passHref href={link}>
-              <div
+              <a
                 key={id}
                 className={`group rounded-xl xl:rounded-3xl 3xl:rounded-[20px] overflow-hidden text-white text-start hover:cursor-pointer
               ${
@@ -68,7 +68,7 @@ const Technologies = ({ data }) => {
                 >
                   {title}
                 </p>
-              </div>
+              </a>
             </Link>
           );
         })}

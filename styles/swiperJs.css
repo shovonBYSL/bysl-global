@@ -195,6 +195,7 @@
   background-image: linear-gradient(to bottom, #00459f00, #1e7ad600);
   width: 3px;
   height: 24px;
+  border-radius: 10px;
 }
 .supplySlide .swiper-pagination-bullet-active::before {
   background-image: linear-gradient(to bottom, #00469f, #1e79d6);

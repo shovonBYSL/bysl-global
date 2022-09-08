@@ -50,9 +50,9 @@ const ResourcesBanner = ({ data }) => {
             </div>
           </div>
           <Link passHref href={`/resource/${id}`}>
-            <button className="w-40 text-sm light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 py-2">
+            <a className="w-40 text-sm text-center light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 py-2">
               Read More
-            </button>
+            </a>
           </Link>
         </div>
       </div>

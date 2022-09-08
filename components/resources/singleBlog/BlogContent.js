@@ -24,7 +24,7 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
           {data.map(({ id, banner, title, date }) => {
             return (
               <Link key={id} passHref href={`/resource/${id}`}>
-                <div className="cursor-pointer flex items-center gap-6">
+                <a className="cursor-pointer flex items-center gap-6">
                   <Image
                     src={banner}
                     placeholder="blur"
@@ -39,7 +39,7 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
                     <p className=" text-sm text-gray-800">{title}</p>
                     <p className="mt-2 text-sm text-gray-300">Posted {date}</p>
                   </div>
-                </div>
+                </a>
               </Link>
             );
           })}

@@ -40,14 +40,14 @@ const Footer = () => {
         {data?.map(({ id, name, path }) => {
           return (
             <Link passHref key={id} href={path}>
-              <span
+              <a
                 onClick={() => title === "Services" && handleClick(id)}
                 className={`block hover:cursor-pointer text-xs xxs:text-sm leading-5 mb-2 lg:mb-4 text-white/60 hover:text-white transition duration-300 ${
                   customItems && "xxxs:text-end sm:text-start"
                 }`}
               >
                 {name}
-              </span>
+              </a>
             </Link>
           );
         })}
@@ -76,9 +76,11 @@ const Footer = () => {
         <div className="grid grid-cols-6 lg:grid-cols-5 xl:grid-cols-6 gap-4 gap-y-10 3xl:gap-12">
           <div className="col-span-6 xl:col-span-1">
             <Link passHref href="/">
-              <div className="h-7 md:h-10 w-16 md:w-20 mx-auto xl:mx-0 relative hover:cursor-pointer">
-                <Image src="/images/logo_light.svg" layout="fill" alt="" />
-              </div>
+              <a>
+                <div className="h-7 md:h-10 w-16 md:w-20 mx-auto xl:mx-0 relative hover:cursor-pointer">
+                  <Image src="/images/logo_light.svg" layout="fill" alt="" />
+                </div>
+              </a>
             </Link>
             <div className="hidden xl:block">
               <Career />
@@ -115,12 +117,12 @@ const Footer = () => {
             {footerBottomData.map(({ id, name, path }) => {
               return (
                 <Link passHref key={id} href={path}>
-                  <p
+                  <a
                     onClick={() => handleLegal(id)}
                     className="text-white/40 text-sm hover:cursor-pointer hover:text-white"
                   >
                     {name}
-                  </p>
+                  </a>
                 </Link>
               );
             })}
