@@ -52,7 +52,7 @@ const companyAddress = [
     country: "Bangladesh",
     shortName: "BANGLADESH",
     name: "BYSL Global Technologies Inc.",
-    address: "Plot 39/2, Kalachadpur (North Baridhara), Gulshan, ",
+    address: "Plot 39/2, Kalachandpur (North Baridhara), Gulshan, ",
     city: "Dhaka 1212, Bangladesh.",
   },
 ];

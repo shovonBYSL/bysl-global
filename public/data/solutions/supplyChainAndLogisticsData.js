@@ -17,7 +17,7 @@ const supplyChainAndLogisticsBannerData = {
       link: "problems",
     },
     {
-      id: 1,
+      id: 2,
       label: "Solutions",
       link: "solutions",
     },

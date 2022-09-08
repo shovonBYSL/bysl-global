@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Link as Scroll } from "react-scroll";
 
-const SolutionsBanner = ({ data, children }) => {
+const SolutionsBanner = ({ data }) => {
   const { img, heading, title, subTitle, buttons } = data;
 
   return (

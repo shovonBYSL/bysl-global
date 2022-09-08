@@ -116,17 +116,14 @@
 
 .educationSlider .swiper-pagination {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 50% !important;
   transform: translateX(-50%);
-  /* width: 300px !important;
-  overflow-x: scroll !important; */
   overflow-x: auto;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    max-width: 100%;
-    height: max-content;
+  display: flex;
+  align-items: baseline;
+  max-width: 100%;
+  height: max-content;
 }
 .educationSlider .swiper-pagination-bullet {
   white-space: nowrap;
@@ -156,4 +153,124 @@
   height: unset !important;
 }
 
+@media (min-width: 561px) {
+  .educationSlider .swiper-pagination {
+    justify-content: center;
+  }
+}
+
 /* education slider end */
+
+/* supply chain slider start */
+.supplySlide .swiper {
+  height: 320px !important;
+}
+.supplySlide .swiper-pagination {
+  right: auto !important;
+}
+
+.supplySlide .swiper-pagination-bullet {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  white-space: nowrap;
+  display: flex !important;
+  align-items: center;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  color: #393e50 !important;
+  opacity: 1;
+  position: relative;
+  padding-left: 20px;
+  width: auto;
+}
+
+.supplySlide .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-image: linear-gradient(to bottom, #00459f00, #1e7ad600);
+  width: 3px;
+  height: 24px;
+}
+.supplySlide .swiper-pagination-bullet-active::before {
+  background-image: linear-gradient(to bottom, #00469f, #1e79d6);
+}
+.supplySlide .swiper-pagination-bullet-active {
+  background-image: linear-gradient(to right, #00469f, #1e79d6) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: transparent;
+  width: 100%;
+  border-radius: 0;
+}
+.supplySlide .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .supplySlide .swiper {
+    height: 360px !important;
+  }
+  .supplySlide .swiper-pagination {
+    display: flex;
+    align-items: center;
+    top: 0 !important;
+    overflow-x: auto;
+    max-width: 100%;
+    background-color: #f8f8fa;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+  .supplySlide .swiper-pagination-bullet {
+    margin-right: 20px !important;
+    padding-left: 0;
+  }
+
+  .supplySlide .swiper-pagination-bullet::before {
+    content: "";
+    position: absolute;
+    top: 115%;
+    transform: translateY(-115%);
+    left: 0;
+    background-image: linear-gradient(to bottom, #00459f00, #1e7ad600);
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+  }
+  .supplySlide .swiper-pagination-bullet-active::before {
+    background-image: linear-gradient(to bottom, #00469f, #1e79d6);
+  }
+}
+
+@media (max-width: 1279px) {
+  .supplySlide .swiper-pagination-bullet {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .supplySlide .swiper {
+    height: 580px !important;
+  }
+}
+/* supply chain slider end */

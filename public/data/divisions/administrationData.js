@@ -46,7 +46,7 @@ const administrationControlPanelData = [
 
 const workplaceBannerData = {
   subTitle:
-    "Our flexible & multi-platform application API integration offer immense freedom for performing remote operations using a wide range of options for completing tasks.  ",
+    "Our flexible and multi-platform application API integration offer immense freedom for performing remote operations using a wide range of options for completing tasks.  ",
   features: [
     "Integrated APIs",
     "Automated workflow",

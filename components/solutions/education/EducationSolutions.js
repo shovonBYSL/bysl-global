@@ -1,21 +1,19 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 
 import SectionHeader from "../../shared/SectionHeader";
 import SolutionCard from "../SolutionCard";
-import { supplyScroll, educationScroll } from "../../../utils/scroller";
+// import { supplyScroll, educationScroll } from "../../../utils/scroller";
 
 const EducationSolutions = ({ data }) => {
-  const [open, setOpen] = useState(0);
+  // const [open, setOpen] = useState(0);
 
-  const handleClick = (id) => {
-    setOpen(id);
-    screen.width < 560 && supplyScroll(id);
-    screen.width >= 560 && screen.width < 1024 && educationScroll(id);
-  };
-
-  const menu = ["Solutions 1", "Solutions 2", "Solutions 3", "Solutions 4"];
+  // const handleClick = (id) => {
+  //   setOpen(id);
+  //   screen.width < 560 && supplyScroll(id);
+  //   screen.width >= 560 && screen.width < 1024 && educationScroll(id);
+  // };
 
   return (
     <div id="solutions" className="py-10 xl:py-16 relative">
@@ -54,41 +52,23 @@ const EducationSolutions = ({ data }) => {
             );
           })}
         </div> */}
-        {/* <div className="overflow-x-auto">
-          <div className="flex gap-4 md:gap-6 w-max mx-auto">
-            {data.map(({ id }) => (
-              <p
-                id={id}
-                key={id}
-                onClick={() => handleClick(id)}
-                className={`hover:cursor-pointer font-medium text-sm rounded-lg px-5 py-2.5 text-gray-800 ${
-                  open === id &&
-                  "text-white bg-gradient-to-r from-blue-900 to-blue-700"
-                }`}
-              >
-                Solutions {id + 1}
-              </p>
-            ))}
-          </div>
-        </div> */}
 
         <Swiper
-          // slidesPerView={1}
-          // spaceBetween={50}
-          // slidesPerGroup={1}
-          // centeredSlides={true}
           loop={true}
-          speed={1000}
-          // loopFillGroupWithBlank={true}
+          speed={1500}
           pagination={{
             clickable: true,
-            renderBullet: function (index, className) {
+            renderBullet: function (i, className) {
               return (
-                '<span class="' + className + '">' + menu[index] + "</span>"
+                '<span class="' +
+                className +
+                '">' +
+                "Solutions " +
+                (i + 1) +
+                "</span>"
               );
             },
           }}
-          // navigation={true}
           modules={[Pagination]}
           className="mySwiper educationSlider"
         >
