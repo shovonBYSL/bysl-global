@@ -8,7 +8,7 @@ const CareersCompanyInfo = () => {
         {["mission", "purpose", "values", "culture"].map((item, i) => {
           return (
             <Link key={i} passHref href={`/about-us/${item}`}>
-              <div className="p-5 hover:bg-[#EDF1F8] rounded-[20px] transition duration-500 hover:cursor-pointer ">
+              <a className="p-5 hover:bg-[#EDF1F8] rounded-[20px] transition duration-500 hover:cursor-pointer ">
                 <div
                   className={`mx-auto relative mb-7 ${
                     i == 2
@@ -26,7 +26,7 @@ const CareersCompanyInfo = () => {
                 <p className="text-center lg:text-lg xl:text-2xl font-semibold uppercase text-gray-800">
                   {item}
                 </p>
-              </div>
+              </a>
             </Link>
           );
         })}
