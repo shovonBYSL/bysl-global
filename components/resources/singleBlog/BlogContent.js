@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import StickyBox from "react-sticky-box";
 import { useState } from "react";
+import {
+  FacebookShareButton,
+  FacebookShareCount,
+  LinkedinShareButton,
+  TwitterShareButton,
+} from "react-share";
 import { BsFillPlayFill } from "react-icons/bs";
 import { ImFacebook, ImLinkedin2, ImTwitter } from "react-icons/im";
 
@@ -136,9 +142,16 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
         <div className="flex gap-x-2 items-center">
           <p className="text-sm text-gray-300">Share</p>
           <div className="flex gap-x-4">
-            <ImFacebook className="text-gray-500 mt-0 cursor-pointer" />
-            <ImLinkedin2 className="text-gray-500 mt-0 cursor-pointer" />
-            <ImTwitter className="text-gray-500 mt-0 cursor-pointer" />
+            {/* <FacebookShareCount url={window.location.href}> */}
+            <FacebookShareButton url={window.location.href}>
+              <ImFacebook className="text-gray-500 mt-0 cursor-pointer" />
+            </FacebookShareButton>
+            <LinkedinShareButton url={window.location.href}>
+              <ImLinkedin2 className="text-gray-500 mt-0 cursor-pointer" />
+            </LinkedinShareButton>
+            <TwitterShareButton url={window.location.href}>
+              <ImTwitter className="text-gray-500 mt-0 cursor-pointer" />
+            </TwitterShareButton>
           </div>
         </div>
       </div>

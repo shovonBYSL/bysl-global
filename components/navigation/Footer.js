@@ -92,7 +92,7 @@ const Footer = () => {
               className="col-span-6 xxxs:col-span-3 sm:col-span-2 lg:col-span-1"
             >
               <Items title={title} data={items} />
-              <div className="hidden lg:block">
+              <div className="hidden lg:block mt-10">
                 {title2 && <Items title={title2} data={items2} />}
               </div>
             </div>
@@ -128,23 +128,26 @@ const Footer = () => {
             })}
           </div>
           <div className="flex justify-center md:justify-start gap-6 md:gap-4 xl:gap-6">
-            <Link passHref href="/">
-              <a>
+            <Link passHref href="https://www.facebook.com/BYSLgroup/">
+              <a target="_blank">
                 <ImFacebook className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-700 transition-all duration-150 " />
               </a>
             </Link>
-            <Link passHref href="/">
-              <a>
+            <Link
+              passHref
+              href="https://www.linkedin.com/company/byslgroup/?originalSubdomain=bd"
+            >
+              <a target="_blank">
                 <ImLinkedin2 className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-900 transition-all duration-150" />
               </a>
             </Link>
             <Link passHref href="/">
-              <a>
+              <a target="_blank">
                 <ImTwitter className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-700 transition-all duration-150" />
               </a>
             </Link>
             <Link passHref href="/">
-              <a>
+              <a target="_blank">
                 <FaPinterestP className="text-lg text-white/40 hover:cursor-pointer hover:text-pink-800 transition-all duration-150" />
               </a>
             </Link>
