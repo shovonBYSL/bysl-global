@@ -144,13 +144,13 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
           <div className="flex gap-x-4">
             {/* <FacebookShareCount url={window.location.href}> */}
             <FacebookShareButton url={window.location.href}>
-              <ImFacebook className="text-gray-500 mt-0 cursor-pointer" />
+              <ImFacebook className="text-gray-500 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
             </FacebookShareButton>
             <LinkedinShareButton url={window.location.href}>
-              <ImLinkedin2 className="text-gray-500 mt-0 cursor-pointer" />
+              <ImLinkedin2 className="text-gray-500 mt-0 cursor-pointer hover:text-blue-900 transition-all duration-150" />
             </LinkedinShareButton>
             <TwitterShareButton url={window.location.href}>
-              <ImTwitter className="text-gray-500 mt-0 cursor-pointer" />
+              <ImTwitter className="text-gray-500 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
             </TwitterShareButton>
           </div>
         </div>
