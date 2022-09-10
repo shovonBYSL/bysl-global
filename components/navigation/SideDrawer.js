@@ -22,14 +22,16 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
   }, [showDrawer]);
 
   return (
-    <div
-      className={` invisible transition-all duration-1000 w-screen h-screen overflow-hidden fixed top-14 left-0 z-50 
+    <>
+      <div
+        onClick={() => setShowDrawer(false)}
+        className={`invisible transition-all duration-1000 w-screen h-screen overflow-hidden fixed top-14 left-0 z-50 
       ${showDrawer && "bg-[#c7c7c7]/40 !visible"}`}
-    >
-      <button
-        onBlur={() => setShowDrawer(false)}
-        className={`side-drawer w-60 xxs:w-[280px] translate-x-[-100%] transition-all duration-1000 
-        ${showDrawer && "translate-x-[0%]"}`}
+      ></div>
+      <div
+        className={`fixed top-14 left-0 z-[99] side-drawer h-full w-60 xxs:w-[280px] translate-x-[-100%] transition-all duration-1000 ${
+          showDrawer && "translate-x-[0%]"
+        }`}
       >
         <div className="flex items-end justify-center bg-[url('/images/drawer-bg.svg')] bg-no-repeat bg-center bg-cover h-[100px]">
           <p className="text-white text-center font-bold mx-6 xxs:mx-8 mb-6">
@@ -96,8 +98,8 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
             <Button link="contact-us" title="Contact Us" px={48} xs />
           </div>
         </div>
-      </button>
-    </div>
+      </div>
+    </>
   );
 };
 
