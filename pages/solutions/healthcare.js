@@ -1,6 +1,5 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
-// import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
   healthcareOverviewData,
@@ -25,7 +24,6 @@ const HealthCare = ({
     >
       {/* banner section  */}
       <SolutionsBanner data={banner} />
-      {/* <SolutionButtonBanner data={banner} /> */}
 
       <div className="box">
         {/* overview section  */}

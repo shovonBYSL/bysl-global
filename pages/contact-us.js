@@ -2,14 +2,14 @@ import CompanyLocations from "../components/contact_us/CompanyLocations";
 import ContactForm from "../components/contact_us/ContactForm";
 // import ContactUsFAQ from "../components/contact_us/ContactUsFAQ";
 import CommonLayout from "../layouts/CommonLayout";
-import { companyAddress } from "../public/data/contactUsData";
+import { socialIcons, companyAddress } from "../public/data/contactUsData";
 
-const ContactUs = ({ companyAddress }) => {
+const ContactUs = ({ companyAddress, socialIcons }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <CommonLayout title="Contact Us">
       {/* contact form section  */}
-      <ContactForm />
+      <ContactForm data={socialIcons} />
 
       {/* company address section  */}
       <CompanyLocations data={companyAddress} />
@@ -24,6 +24,7 @@ export async function getStaticProps() {
   return {
     props: {
       companyAddress,
+      socialIcons,
     },
   };
 }

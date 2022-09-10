@@ -4,7 +4,6 @@ import StickyBox from "react-sticky-box";
 import { useState } from "react";
 import {
   FacebookShareButton,
-  FacebookShareCount,
   LinkedinShareButton,
   TwitterShareButton,
 } from "react-share";
@@ -142,7 +141,6 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
         <div className="flex gap-x-2 items-center">
           <p className="text-sm text-gray-300">Share</p>
           <div className="flex gap-x-4">
-            {/* <FacebookShareCount url={window.location.href}> */}
             <FacebookShareButton url={window.location.href}>
               <ImFacebook className="text-gray-500 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
             </FacebookShareButton>

@@ -64,7 +64,11 @@ const ApplicationForm = () => {
       Host: "smtp.elasticemail.com",
       Username: "anisur.rahman@intelli.global",
       Password: "2597486C56508E185A07F608105A6853404E",
-      To: ["anisur.rahman@intelli.global", "kawser.shovon@intelli.global"],
+      To: [
+        "anisur.rahman@intelli.global",
+        "kawser.shovon@intelli.global",
+        "info@byslglobal.com",
+      ],
       From: "anisur.rahman@intelli.global",
       Subject: `Application for ${data.position}`,
       Body: `<div>

@@ -2,7 +2,7 @@ const socialIcons = [
   {
     id: 0,
     img: "/images/social-icons/facebook.svg",
-    link: "/",
+    link: "https://www.facebook.com/BYSLgroup/",
   },
   {
     id: 1,
@@ -12,7 +12,7 @@ const socialIcons = [
   {
     id: 2,
     img: "/images/social-icons/linkedin.svg",
-    link: "/",
+    link: "https://www.linkedin.com/company/byslgroup/?originalSubdomain=bd",
   },
   {
     id: 3,

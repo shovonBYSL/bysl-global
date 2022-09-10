@@ -1,5 +1,4 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
-// import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
 import SolutionsImageOverview from "../../components/solutions/SolutionsImageOverview";
 import FoodAndBeverageProblemsAndSolutions from "../../components/solutions/food_and_beverage/FoodAndBeverageProblemsAndSolutions";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
@@ -25,7 +24,7 @@ const FoodAndBeverage = ({
     >
       {/* banner section  */}
       <SolutionsBanner data={banner} />
-      {/* <SolutionButtonBanner data={banner} /> */}
+
       <div className="box">
         {/* overview section  */}
         <SolutionsImageOverview data={overviewData} />

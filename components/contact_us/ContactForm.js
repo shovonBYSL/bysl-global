@@ -1,38 +1,66 @@
+import Script from "next/script";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
-import { socialIcons } from "../../public/data/contactUsData";
 import {
   TechnologiesSectionTitle,
   TextGradient,
 } from "../shared/SharedTextgroups";
 
-const ContactForm = () => {
+const ContactForm = ({ data }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // submitting the message
-    emailjs
-      .sendForm(
-        "service_7hk5dfa",
-        "template_vebsjcb",
-        form.current,
-        "DH5QXV_AG3gc3L3wd"
-      )
-      .then(
-        (result) => {
-          e.target.reset();
-          toast.success("Thanks for your message");
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error("Sorry, We couldn't send your message");
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_7hk5dfa",
+    //     "template_vebsjcb",
+    //     form.current,
+    //     "DH5QXV_AG3gc3L3wd"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       e.target.reset();
+    //       toast.success("Thanks for your message");
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //       toast.error("Sorry, We couldn't send your message");
+    //     }
+    //   );
+
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "anisur.rahman@intelli.global",
+      Password: "2597486C56508E185A07F608105A6853404E",
+      To: ["kawser.shovon@intelli.global", "info@byslglobal.com"],
+      From: "anisur.rahman@intelli.global",
+      Subject: `Message From BYSL Website `,
+      Body: `<div>
+      <b>Full Name:</b> <br> ${name} <br><br>
+      <b>Email: </b> <br> ${email} <br><br>
+      <b>Message: </b> <br> ${message} <br><br>
+      </div>`,
+    }).then((message) => {
+      if (message == "OK") {
+        toast.success("Thanks for your message");
+        console.log(message);
+
+        // after successful
+        setName("");
+        setEmail("");
+        setMessage("");
+      }
+    });
   };
 
   const InputTitle = ({ title }) => (
@@ -41,18 +69,20 @@ const ContactForm = () => {
 
   return (
     <div className="py-10 xl:py-16 flex flex-col lg:flex-row gap-6">
+      <Script src="https://smtpjs.com/v3/smtp.js" />
       <ToastContainer theme="dark" />
       <div className="lg:w-2/5 lg:pt-10">
         <TechnologiesSectionTitle start={true}>
           <TextGradient text="CONTACT US" />
         </TechnologiesSectionTitle>
         <p className="my-4 lg:my-6 xl:mb-11 text-sm text-gray-600 text-center lg:text-start">
-        If you have any questions to ask or an idea to communicate, please feel free to share with us. 
+          If you have any questions to ask or an idea to communicate, please
+          feel free to share with us.
         </p>
         <div className="flex justify-center lg:justify-start gap-6 md:gap-4 lg:gap-6">
-          {socialIcons.map(({ id, img, link }) => (
+          {data.map(({ id, img, link }) => (
             <Link key={id} passHref href={link}>
-              <a className="opacity-70">
+              <a target="_blank" className="opacity-70">
                 <Image src={img} height={20} width={20} alt="" />
               </a>
             </Link>
@@ -65,6 +95,8 @@ const ContactForm = () => {
             <div className="w-full">
               <InputTitle title="Enter name" />
               <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 required
                 name="name"
                 type="text"
@@ -75,6 +107,8 @@ const ContactForm = () => {
             <div className="w-full">
               <InputTitle title="Enter email" />
               <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
                 name="email"
                 type="email"
@@ -86,6 +120,8 @@ const ContactForm = () => {
           <div className="w-full my-6 lg:mb-16">
             <InputTitle title="Enter message" />
             <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
               name="message"
               rows="5"
