@@ -91,10 +91,13 @@ const CareerJobCirculars = () => {
           <RiSearchLine className="flex text-3xl lg:text-4xl absolute inset-y-0 right-0 lg:pt-4 items-center pr-3 pointer-events-none text-gray-500" />
         </div>
         <div className="flex gap-6 mt-6">
-          <div className="w-full relative">
+          <button
+            onBlur={() => setDepartmentOpen(false)}
+            className="w-full relative text-start"
+          >
             <div
               onClick={() => setDepartmentOpen(!departmentOpen)}
-              className={`flex justify-between items-center bg-white text-xs lg:text-sm px-1.5 py-2 lg:px-5 lg:py-4  ${
+              className={`w-full flex justify-between items-center bg-white text-xs lg:text-sm px-1.5 py-2 lg:px-5 lg:py-4  ${
                 departmentOpen
                   ? "rounded-t-[11px]"
                   : "rounded-lg lg:rounded-[11px]"
@@ -120,9 +123,12 @@ const CareerJobCirculars = () => {
                 ))}
               </div>
             )}
-          </div>
+          </button>
 
-          <div className="w-full relative">
+          <button
+            onBlur={() => setPositionOpen(false)}
+            className="w-full relative text-start"
+          >
             <div
               onClick={() => setPositionOpen(!positionOpen)}
               // onBlur={() => setPositionOpen(false)}
@@ -152,7 +158,7 @@ const CareerJobCirculars = () => {
                 ))}
               </div>
             )}
-          </div>
+          </button>
         </div>
       </div>
       {filteredData.length > 0 ? (

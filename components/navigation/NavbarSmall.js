@@ -7,8 +7,7 @@ import SideDrawer from "./SideDrawer";
 const NavbarSmall = ({ colorChange, specificPath }) => {
   const [showDrawer, setShowDrawer] = useState(false);
   const handleClick = () => {
-    const ss = document.querySelector(".side-drawer");
-    ss.focus();
+    // document.querySelector(".side-drawer").focus();
     setShowDrawer(!showDrawer);
   };
 
