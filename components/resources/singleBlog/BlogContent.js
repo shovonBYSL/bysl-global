@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import StickyBox from "react-sticky-box";
 import { useState } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 import { ImFacebook, ImLinkedin2, ImTwitter } from "react-icons/im";
+
 import ResourceVideoModal from "../ResourceVideoModal";
 
 const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
@@ -140,11 +142,13 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
           </div>
         </div>
       </div>
-      <div className="lg:col-span-4">
-        <BlogSideBar label="Popular" data={popularBlogs} />
-        <div className="mt-10 xl:mt-16">
-          <BlogSideBar label="Latest" data={latestBlogs} />
-        </div>
+      <div className="lg:col-span-4 ">
+        <StickyBox offsetTop={100}>
+          <BlogSideBar label="Popular" data={popularBlogs} />
+          <div className="mt-10 xl:mt-16">
+            <BlogSideBar label="Latest" data={latestBlogs} />
+          </div>
+        </StickyBox>
       </div>
     </div>
   );
