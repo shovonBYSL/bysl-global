@@ -21,9 +21,9 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
           {label}
         </p>
         <div className="flex flex-col gap-4">
-          {data.map(({ id, banner, title, date }) => {
+          {data.map(({ id, url, banner, title, date }) => {
             return (
-              <Link key={id} passHref href={`/resource/${id}`}>
+              <Link key={id} passHref href={`/resource/${url}`}>
                 <a className="cursor-pointer flex items-center gap-6">
                   <Image
                     src={banner}
