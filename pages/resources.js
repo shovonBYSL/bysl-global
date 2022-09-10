@@ -14,8 +14,8 @@ import {
 const Resources = ({
   banner,
   solutionsResources,
-  blogData,
-  findingsData,
+  // blogData,
+  // findingsData,
   videoData,
 }) => {
   return (
@@ -29,13 +29,13 @@ const Resources = ({
       <ResourcesBanner data={banner} />
       {/* blogs section  */}
       <div className="box">
-        <ResourcesBlogs data={blogData} />
+        <ResourcesBlogs data={solutionsResources} />
       </div>
       {/* featured videos section  */}
       <ResourceFeaturedVideos data={videoData} />
       {/* findings section  */}
       <div className="box">
-        <ResourcesFindings data={findingsData} />
+        <ResourcesFindings data={solutionsResources} />
       </div>
     </SolutionsLayout>
   );
@@ -48,8 +48,8 @@ export async function getStaticProps() {
     props: {
       banner: filteredBanner,
       solutionsResources: solutionsResourcesData,
-      blogData: resourcesBlogsData,
-      findingsData: resourcesFindingsData,
+      // blogData: resourcesBlogsData,
+      // findingsData: solutionsResourcesData,
       videoData: resourcesVideoData,
     },
   };

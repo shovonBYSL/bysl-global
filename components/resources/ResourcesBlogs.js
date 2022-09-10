@@ -10,7 +10,7 @@ const ResourcesBlogs = ({ data }) => {
         See what we’ve written lately
       </TechnologiesSectionTitle>
       <div className="mt-6 xl:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
-        {data.map(({ id, img, subject, title, publishDate }) => {
+        {data.map(({ id, banner, type, title, date }) => {
           return (
             <Link key={id} passHref href={`/resource/${id}`}>
               <a
@@ -21,9 +21,9 @@ const ResourcesBlogs = ({ data }) => {
                 <div className="overflow-hidden">
                   <div className="relative h-[162px] lg:h-[200px] 2xl:h-[276px] group-hover:scale-125 transition duration-1000">
                     <Image
-                      src={img}
+                      src={banner}
                       placeholder="blur"
-                      blurDataURL={img}
+                      blurDataURL={banner}
                       layout="fill"
                       objectFit="cover"
                       alt=""
@@ -32,12 +32,12 @@ const ResourcesBlogs = ({ data }) => {
                 </div>
                 <div className="py-4 px-6">
                   <p className="text-sm lg:text-base text-gray-800">
-                    {subject}
+                    {type}
                   </p>
                   <p className="text-gray-800 font-semibold lg:font-bold lg:text-xl xl:text-2xl my-3 xl:mt-5 xl:mb-4">
                     {title}
                   </p>
-                  <p className="text-gray-500 text-sm">{publishDate}</p>
+                  <p className="text-gray-500 text-sm">{date}</p>
                 </div>
               </a>
             </Link>

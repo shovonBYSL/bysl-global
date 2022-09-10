@@ -8,7 +8,7 @@ const ResourcesFindings = ({ data }) => {
     <div className="py-6 xl:py-10">
       <TechnologiesSectionTitle>Latest Findings</TechnologiesSectionTitle>
       <div className="mt-6 xl:mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {data.slice(0, 4).map(({ id, img, subject, title, publishDate }) => {
+        {data.slice(0, 4).map(({ id, banner, type, title, date }) => {
           return (
             <Link key={id} passHref href={`/resource/${id}`}>
               <a
@@ -18,22 +18,23 @@ const ResourcesFindings = ({ data }) => {
                 <div className="overflow-hidden rounded-xl">
                   <div className="relative h-[150px] w-[130px] group-hover:scale-125 transition duration-700">
                     <Image
-                      src={img}
+                      src={banner}
                       placeholder="blur"
-                      blurDataURL={img}
+                      blurDataURL={banner}
                       layout="fill"
+                      objectFit="cover"
                       alt=""
                     />
                   </div>
                 </div>
                 <div className="w-full">
                   <p className="text-sm lg:text-base font-bold text-gray-500">
-                    {subject}
+                    {type}
                   </p>
                   <p className="text-gray-800 font-medium lg:text-xl mt-2 mb-4">
                     {title}
                   </p>
-                  <p className="text-gray-500 text-sm">{publishDate}</p>
+                  <p className="text-gray-500 text-sm">{date}</p>
                 </div>
               </a>
             </Link>
