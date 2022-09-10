@@ -1,6 +1,7 @@
 const jobList = [
   {
     id: 0,
+    url: "sr-graphics-designer",
     position: "Sr. Graphics Designer",
     department: "Graphics and Multimedia",
     designation: "Sr. Executive",
@@ -71,6 +72,7 @@ const jobList = [
   },
   {
     id: 1,
+    url: "sr-full-stack-developer(python-django,react)",
     position: "Sr. Full Stack Developer (Python / Django, React)",
     department: "Digital Core",
     designation: "Sr. Executive",
@@ -134,6 +136,7 @@ const jobList = [
   },
   {
     id: 2,
+    url: "sr-full-stack-developer",
     position: "Sr. Full Stack Developer",
     department: "Digital Core",
     designation: "Sr. Executive",
@@ -215,6 +218,7 @@ const jobList = [
   },
   {
     id: 3,
+    url: "front-end-developer(angular)",
     position: "Front End Developer (Angular)",
     department: "Digital Core",
     designation: "Executive",
@@ -289,6 +293,7 @@ const jobList = [
   },
   {
     id: 4,
+    url: "mobile-app-developer(android,ios)",
     position: "Mobile App Developer ( Android, iOS )",
     department: "Mobile Application",
     designation: "Executive",

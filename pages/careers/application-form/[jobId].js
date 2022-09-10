@@ -19,8 +19,8 @@ const ApplicationForm = () => {
 
   useEffect(() => {
     if (jobId !== "undefined") {
-      const singleJobData = jobList.find((item) => item.id == jobId);
-      setData(singleJobData);
+      // const singleJobData = jobList.find((item) => item.id == jobId);
+      setData(jobList.find((item) => item.url == jobId));
     }
   }, [jobId]);
 
@@ -86,6 +86,10 @@ const ApplicationForm = () => {
       if (message == "OK") {
         toast.success("Thanks for your application");
         console.log(message);
+
+        setTimeout(() => {
+          router.push("/careers");
+        }, 2000);
         // after successful
         setName("");
         setEmail("");

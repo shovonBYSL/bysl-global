@@ -4,7 +4,7 @@ import Link from "next/link";
 import { TextGradient } from "./SharedTextgroups";
 
 const BlogCard = ({ data }) => {
-  const { id, banner, type, title, subTitle, date, timeToRead } = data;
+  const { url, banner, type, title, subTitle, date, timeToRead } = data;
 
   return (
     <div className="group flex flex-col justify-between blog-card bg-white rounded-md shadow-sm shadow-gray-200/50 mx-auto overflow-hidden h-full">
@@ -34,7 +34,7 @@ const BlogCard = ({ data }) => {
           <p>{date}</p>
           <p>{timeToRead} to read</p>
         </div>
-        <Link passHref href={`/resource/${id}`}>
+        <Link passHref href={`/resource/${url}`}>
           <a className="service-card-bg h-[50px] border-t hover:cursor-pointer flex justify-center items-center">
             <p className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r group-hover:from-white from-blue-900 group-hover:to-white to-blue-700">
               Read More

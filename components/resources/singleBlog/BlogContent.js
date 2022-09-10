@@ -69,7 +69,7 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
               {bullet && (
                 <div className="text-gray-500 mb-10 ml-6 lg:ml-10">
                   {bullet.map((item, i) => (
-                    <p className="my-2 bullets">
+                    <p key={i} className="my-2 bullets">
                       <span className="font-bold">{item.title}: </span>
                       {item.info}
                     </p>
@@ -79,7 +79,7 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
               {points && (
                 <div className="text-gray-500 mb-10 ml-6">
                   {points.map((item, i) => (
-                    <p className="my-2">
+                    <p key={i} className="my-2">
                       <span className="font-bold">{item.title}: </span>
                       {item.info}
                     </p>

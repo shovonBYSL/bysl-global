@@ -53,7 +53,7 @@ const CareerJobCirculars = () => {
   };
 
   const JobCircularList = ({ data }) => {
-    const { id, position, experience, lastDate, jobType } = data;
+    const { url, position, experience, lastDate, jobType } = data;
 
     return (
       <div className="grid grid-cols-1 lg:grid-cols-10 items-center gap-4 lg:gap-6 py-6 border-b border-blue-700 lg:hover:bg-[#EDF1F8] transition duration-500">
@@ -66,7 +66,7 @@ const CareerJobCirculars = () => {
         </p>
         <p className="text-gray-400 font-medium">{jobType}</p>
         <div className="lg:col-span-2 text-gray-400 font-medium w-full">
-          <Link passHref href={`/careers/job-description/${id}`}>
+          <Link passHref href={`/careers/job-description/${url}`}>
             <div className="w-full lg:w-max h-max mx-auto lg:mx-0 text-center rounded-lg text-white text-sm font-semibold px-8 xl:px-[42px] py-2 xl:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
               Apply Now
             </div>

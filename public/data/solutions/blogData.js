@@ -2,7 +2,7 @@ const solutionsResourcesData = [
   {
     id: 0,
     type: "Finance",
-    // url: "glowing-evening-make",
+    url: "what-motivates-financial-professionals-to-use-cloud-infrastructure",
     hits: 122,
     title:
       "What Motivates Financial Professionals to Use Cloud Infrastructure?",
@@ -58,7 +58,7 @@ const solutionsResourcesData = [
   {
     id: 1,
     type: "Marketing",
-    // url: "education-evening",
+    url: "get-impactful-outcomes-through-an-ai-driven-marketing-approach",
     hits: 29,
     title: "Get impactful outcomes through an AI-driven marketing approach",
     subTitle:
@@ -145,7 +145,7 @@ const solutionsResourcesData = [
   {
     id: 2,
     type: "Marketing",
-    // url: "evening-make",
+    url: "iintelligent-marketing-and-sales-analytics-to-accelerate-digital-transformation",
     hits: 12,
     title:
       "IIntelligent Marketing and Sales Analytics to accelerate Digital Transformation",
@@ -179,7 +179,7 @@ const solutionsResourcesData = [
   {
     id: 3,
     type: "Retail",
-    // url: "supply-chain-make",
+    url: "it-enabled-inventory:a-key-to-lead-the-next-gen-omnichannel",
     hits: 55,
     title: "IT-enabled inventory: A key to lead the next-gen omnichannel",
     subTitle:
@@ -231,6 +231,7 @@ const solutionsResourcesData = [
     id: 4,
     type: "Supply Chain",
     hits: 5,
+    url: "three-effective-approaches-to-accelerate-business-development-toward-a-sustainable-supply-chain",
     title:
       "Three effective approaches to accelerate business development toward a sustainable supply chain",
     subTitle:

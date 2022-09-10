@@ -8,14 +8,14 @@ import { jobList } from "../../../public/data/careersData";
 import Loader from "../../../components/shared/Loader";
 
 const JobDescription = () => {
-  const [data, setData] = useState("");
+  const [data, setData] = useState(null);
   const router = useRouter();
   const { jobId } = router.query;
 
   useEffect(() => {
     if (jobId !== "undefined") {
-      const singleJobData = jobList.find((item) => item.id == jobId);
-      setData(singleJobData);
+      // const singleJobData = jobList.find((item) => item.id == jobId);
+      setData(jobList.find((item) => item.url == jobId));
     }
   }, [jobId]);
 
@@ -33,7 +33,7 @@ const JobDescription = () => {
                   BYSL Global Technology Group
                 </p>
               </div>
-              <Link passHref href={`/careers/application-form/${data.id}`}>
+              <Link passHref href={`/careers/application-form/${data.url}`}>
                 <div className="w-max h-max mx-auto lg:mx-0 text-center rounded-lg text-white text-sm font-semibold px-8 xl:px-[42px] py-2 xl:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
                   Apply Now
                 </div>
@@ -62,7 +62,7 @@ const JobDescription = () => {
                 </div>
               );
             })}
-            <Link passHref href={`/careers/application-form/${data.id}`}>
+            <Link passHref href={`/careers/application-form/${data.url}`}>
               <div className="w-max h-max mx-auto text-center rounded-lg text-white text-sm font-semibold px-8 lg:px-[64px] py-2 lg:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
                 Apply Now
               </div>

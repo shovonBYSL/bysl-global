@@ -8,9 +8,9 @@ const ResourcesFindings = ({ data }) => {
     <div className="py-6 xl:py-10">
       <TechnologiesSectionTitle>Latest Findings</TechnologiesSectionTitle>
       <div className="mt-6 xl:mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {data.slice(0, 4).map(({ id, banner, type, title, date }) => {
+        {data.slice(0, 4).map(({ id, url, banner, type, title, date }) => {
           return (
-            <Link key={id} passHref href={`/resource/${id}`}>
+            <Link key={id} passHref href={`/resource/${url}`}>
               <a
                 key={id}
                 className="flex items-center gap-6 group cursor-pointer"

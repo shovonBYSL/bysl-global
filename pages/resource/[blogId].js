@@ -12,11 +12,14 @@ import { popular } from "../../utils/isPopular";
 const SingleResource = () => {
   const router = useRouter();
   const { blogId } = router.query;
-  const [data, setData] = useState(solutionsResourcesData[blogId]);
+  const [data, setData] = useState(null);
+  // const [data, setData] = useState(solutionsResourcesData[blogId]);
 
   useEffect(() => {
     if (blogId !== "undefined") {
-      setData(solutionsResourcesData[blogId]);
+      solutionsResourcesData.find((item) => item.url == blogId);
+      setData(solutionsResourcesData.find((item) => item.url == blogId));
+      // setData(solutionsResourcesData[blogId]);
     }
   }, [blogId, data]);
 
@@ -24,7 +27,7 @@ const SingleResource = () => {
     <>
       {data ? (
         <CommonLayout title="Resource">
-          <PageTitle title={`${data.title}`} />
+          <PageTitle title={`${data?.title}`} />
           <SingleBlogBanner data={data} />
           <BlogContent
             data={data}

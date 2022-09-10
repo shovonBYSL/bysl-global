@@ -31,7 +31,7 @@ const ResourcesBanner = ({ data }) => {
   };
 
   const BannerContent = ({ data }) => {
-    const { id, title, type, date, timeToRead } = data;
+    const { id, url, title, type, date, timeToRead } = data;
 
     return (
       <div className="px-4 pt-6 mb-14 md:px-0 md:pt-0 md:mb-0">
@@ -49,7 +49,7 @@ const ResourcesBanner = ({ data }) => {
               <p className="text-[#888B96] text-sm">{timeToRead} to read</p>
             </div>
           </div>
-          <Link passHref href={`/resource/${id}`}>
+          <Link passHref href={`/resource/${url}`}>
             <a className="w-40 text-sm text-center light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 py-2">
               Read More
             </a>
