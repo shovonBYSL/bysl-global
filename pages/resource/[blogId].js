@@ -32,7 +32,7 @@ const SingleResource = () => {
           <BlogContent
             data={data}
             popularBlogs={popular(solutionsResourcesData, 3)}
-            latestBlogs={solutionsResourcesData.slice(-4)}
+            latestBlogs={solutionsResourcesData.slice(-3)}
           />
         </CommonLayout>
       ) : (
