@@ -10,11 +10,7 @@ const CareersCompanyInfo = () => {
             <Link key={i} passHref href={`/about-us/${item}`}>
               <a className="p-5 hover:bg-[#EDF1F8] rounded-[20px] transition duration-500 hover:cursor-pointer ">
                 <div
-                  className={`mx-auto relative mb-7 ${
-                    i == 2
-                      ? "h-[20px] xl:h-[40px] my-5"
-                      : "h-[40px] xl:h-[61px]"
-                  } `}
+                  className={`mx-auto relative mb-7 h-10 md:h-16 xl:h-[81px]`}
                 >
                   <Image
                     src={`/images/careers/company_info/icon_${i}.png`}

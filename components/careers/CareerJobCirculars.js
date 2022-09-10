@@ -56,8 +56,8 @@ const CareerJobCirculars = () => {
     const { url, position, experience, lastDate, employmentType } = data;
 
     return (
-      <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-4 py-6 text-sm lg:text-base border-b border-blue-700 lg:hover:bg-[#EDF1F8] transition duration-500">
-        <p className="lg:col-span-3 text-gray-800 font-semibold lg:pl-2.5 pb-2 lg:pb-0">
+      <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-4 py-6 text-xs md:text-sm lg:text-base border-b border-blue-700 lg:hover:bg-[#EDF1F8] transition duration-500">
+        <p className="lg:col-span-3 text-gray-800 font-semibold lg:pl-2.5 pb-2 lg:pb-0 text-sm lg:text-base">
           {position}
         </p>
         <p className="lg:col-span-2 text-gray-400 font-medium">{experience}</p>
