@@ -8,9 +8,11 @@ import ResourcesBannerSlider1 from "./ResourcesBannerSlider1";
 import ResourcesBannerSlider2 from "./ResourcesBannerSlider2";
 import Loader from "../shared/Loader";
 import { TextGradient } from "../shared/SharedTextgroups";
+import { readingTime } from "../../utils/readingTime";
 
 const ResourcesBanner = ({ data }) => {
   const newArray = [data[0], data[2], data[1]];
+  readingTime();
 
   const BannerImage = ({ data }) => {
     return (
@@ -46,7 +48,9 @@ const ResourcesBanner = ({ data }) => {
             <p className="text-[#888B96] text-sm">{date}</p>
             <div className="flex items-center gap-3">
               <span className="h-4 w-4 border rounded-full"></span>
-              <p className="text-[#888B96] text-sm">{timeToRead} to read</p>
+              <p id="time" className="text-[#888B96] text-sm">
+                {timeToRead} to read
+              </p>
             </div>
           </div>
           <Link passHref href={`/resource/${url}`}>

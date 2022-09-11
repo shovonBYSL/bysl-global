@@ -58,7 +58,7 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-16">
       {isOpen && <ResourceVideoModal video={videoFile} setIsOpen={setIsOpen} />}
-      <div className="lg:px-5 lg:col-span-8">
+      <div id="article" className="lg:px-5 lg:col-span-8">
         {data.details.map((item, i) => {
           const { title, text, img, thumb, points, bullet, highlight, video } =
             item;

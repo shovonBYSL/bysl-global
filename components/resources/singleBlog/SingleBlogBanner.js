@@ -11,7 +11,7 @@ const SingleBlogBanner = ({ data }) => {
         </p>
         <div className="w-full flex justify-between md:max-w-xs">
           <p className="text-[#888B96] text-sm">{date}</p>
-          <p className="text-[#888B96] text-sm">{timeToRead} to read</p>
+          <p id="time" className="text-[#888B96] text-sm"> to read</p>
         </div>
       </div>
       <Image

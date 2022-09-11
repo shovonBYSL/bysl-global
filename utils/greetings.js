@@ -11,4 +11,5 @@ if (hours >= 5 && hours < 12) {
 } else {
   timeOfDay = "Night";
 }
+
 export { timeOfDay };

@@ -10,7 +10,7 @@ const solutionsResourcesData = [
       "Fintech companies are shifting major portions of their digital infrastructure to advanced cloud platforms. Global fintech...",
     banner: "/images/resources/blogs/banner_0.jpg",
     date: "August 13, 2022",
-    timeToRead: "5 mins",
+    timeToRead: "2 mins",
     details: [
       {
         text: "Fintech companies are shifting major portions of their digital infrastructure to advanced cloud platforms. Global fintech organizations that are valued at billions of dollars highlight industry-wise trends where cloud computing is predominant, evaluated, and implemented. Cloud technology is the new standard for Fintech, and all those who fail to execute this will lose ground to their rivals.",
@@ -65,7 +65,7 @@ const solutionsResourcesData = [
       "It is an exciting time for marketers. It is a time when there is a growing need to build more connections through numerous...",
     banner: "/images/resources/blogs/banner_1.jpg",
     date: "August 24, 2022",
-    timeToRead: "5 mins",
+    timeToRead: "8 mins",
     details: [
       {
         text: "It is an exciting time for marketers. It is a time when there is a growing need to build more connections through numerous channels and pathways. New doorways have opened up new windows to shape the means of connection as well. Marketers have always been apt in detecting new growth catalysts, but high performance calls for a structured improvement in the field of customer experience throughout the business. Businesses need a certain level of technological sophistication and digital infrastructure that many firms are currently struggling to achieve.",
@@ -153,7 +153,7 @@ const solutionsResourcesData = [
       "Over a period of time, the customer experience has undergone a significant transformation. Businesses that used to...",
     banner: "/images/resources/blogs/banner_2.jpg",
     date: "September 2, 2022",
-    timeToRead: "5 mins",
+    timeToRead: "2 mins",
     details: [
       {
         text: "Over a period of time, the customer experience has undergone a significant transformation. Businesses that used to prioritize exceeding customers' expectations by delivering high-quality goods and services are barely meeting their targets today. The reason may be speculated that providing top-notch services is now taken for granted. In the modern day, a fully customized customer experience is essential for retaining customers. Customers anticipate that businesses will pay attention to their requirements and deliver personalized recommendations tailored to their distinct areas of interest.",
@@ -186,7 +186,7 @@ const solutionsResourcesData = [
       "Every successful retailer is built on the fundamentals of customer satisfaction. Retailers must increase sales and get...",
     banner: "/images/resources/blogs/banner_3.png",
     date: "July 25, 2022",
-    timeToRead: "5 mins",
+    timeToRead: "4 mins",
     details: [
       {
         text: "Every successful retailer is built on the fundamentals of customer satisfaction. Retailers must increase sales and get merchandise out the door as efficiently as possible while sometimes sacrificing profitability and efficiency as customer expectations change rapidly. Because of this, a plan that was initially designed to put the customer first ultimately fails, resulting in customers receiving delayed deliveries or having their transactions canceled.",
@@ -238,7 +238,7 @@ const solutionsResourcesData = [
       "Customers would generally want to know where their expensive gemstones originated from, as well as where their coffee...",
     banner: "/images/resources/blogs/banner_3.png",
     date: "September 10, 2022",
-    timeToRead: "5 mins",
+    timeToRead: "4 mins",
     details: [
       {
         text: "Customers would generally want to know where their expensive gemstones originated from, as well as where their coffee beans were grown. In fact, more than 70% of customers say that traceability is extremely essential and that they are prepared to pay a premium of up to 35% for it. Governments as well as investors are holding businesses responsible for using sustainable supply chains.",
@@ -277,37 +277,4 @@ const solutionsResourcesData = [
   },
 ];
 
-const singleBlogData = {
-  id: 0,
-  type: "Fashion",
-  hits: 122,
-  title: "Get the Look: Glowing Evening Make-up",
-  subTitle:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
-  banner: "/images/resources/blogs/banner_0.png",
-  date: "July 30, 2022",
-  timeToRead: "5 mins",
-  details: [
-    {
-      text: "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it comes to OOTDs—outfit of the day—and quick style inspirations, but blogs are where the serious fashionistas go to write about trends, advice, and the latest fashion innovations. Not feeling particularly stylish today? Fashion blogs can give you inspiration for dressing well even on those lazy mornings. Got your eye on this season’s hottest trends? These blogs are great for helping you figure out which clothing pieces and colors suit your frame. They can also provide you with ideas about mixing and matching pieces to create a dozen perfect looks without breaking the bank.",
-    },
-    {
-      text: "Expressa vero in iis aetatibus, quae iam confirmatae sunt. Tum Piso: Atqui, Cicero, inquit, ista studia, si ad imitandos summos viros spectant, ingeniosorum sunt; Quibus autem in rebus tanta obscuratio non fit, fieri tamen potest, ut id ipsum, quod interest, non sit magnum. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo. Ut proverbia non nulla veriora sint quam vestra dogmata.",
-      img: "/images/resources/blogs/img_0.png",
-    },
-    {
-      title: "1. Improve your blog performance",
-      text: "Expressa vero in iis aetatibus, quae iam confirmatae sunt. Tum Piso: Atqui, Cicero, inquit, ista studia, si ad imitandos summos viros spectant, ingeniosorum sunt; Quibus autem in rebus tanta obscuratio non fit, fieri tamen potest, ut id ipsum, quod interest, non sit magnum. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo. Ut proverbia non nulla veriora sint quam vestra dogmata.",
-    },
-    {
-      title: "2. Monetize your blog",
-      text: "Expressa vero in iis aetatibus, quae iam confirmatae sunt. Tum Piso: Atqui, Cicero, inquit, ista studia, si ad imitandos summos viros spectant, ingeniosorum sunt; Quibus autem in rebus tanta obscuratio non fit, fieri tamen potest, ut id ipsum, quod interest, non sit magnum. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo. Ut proverbia non nulla veriora sint quam vestra dogmata.",
-    },
-    {
-      title: "3. Connect with your readers",
-      text: "Expressa vero in iis aetatibus, quae iam confirmatae sunt. Tum Piso: Atqui, Cicero, inquit, ista studia, si ad imitandos summos viros spectant, ingeniosorum sunt; Quibus autem in rebus tanta obscuratio non fit, fieri tamen potest, ut id ipsum, quod interest, non sit magnum. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo. Ut proverbia non nulla veriora sint quam vestra dogmata.",
-    },
-  ],
-};
-
-export { solutionsResourcesData, singleBlogData };
+export { solutionsResourcesData };

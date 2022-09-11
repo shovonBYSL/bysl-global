@@ -8,12 +8,14 @@ import SingleBlogBanner from "../../components/resources/singleBlog/SingleBlogBa
 import Loader from "../../components/shared/Loader";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import { popular } from "../../utils/isPopular";
+import { readingTime } from "../../utils/readingTime";
 
 const SingleResource = () => {
   const router = useRouter();
   const { blogId } = router.query;
   const [data, setData] = useState(null);
   // const [data, setData] = useState(solutionsResourcesData[blogId]);
+  readingTime();
 
   useEffect(() => {
     if (blogId !== "undefined") {
