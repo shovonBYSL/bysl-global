@@ -21,14 +21,14 @@ const mobileFeaturesData1 = [
   },
   {
     id: 1,
-    title: "Un-compromized Quality",
+    title: "No Compromise on Quality",
     subTitle:
       "Unparalleled in design, performance, usability, reilability and dynamic user interface     ",
     img: "/images/technologies/mobile/features/icon_1.svg",
   },
   {
     id: 2,
-    title: "Creative & Pixel Perfect Design",
+    title: "Creative and Pixel Perfect Design",
     subTitle:
       "Intuitive, flexible, visually outstanding designs that serve both the functional and aesthetic requirements.",
     img: "/images/technologies/mobile/features/icon_2.svg",
@@ -38,7 +38,7 @@ const mobileFeaturesData1 = [
 const mobileFeaturesData2 = [
   {
     id: 0,
-    title: "Expertise To Meet Your Expectations",
+    title: "Expertise to Meet Your Expectations",
     subTitle:
       "Offering useful features planned, designed and executed by skilled programmers",
     img: "/images/technologies/mobile/features/icon_3.svg",

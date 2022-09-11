@@ -9,7 +9,7 @@ const solutionsResourcesData = [
     subTitle:
       "Fintech companies are shifting major portions of their digital infrastructure to advanced cloud platforms. Global fintech...",
     banner: "/images/resources/blogs/banner_0.jpg",
-    date: "July 30, 2022",
+    date: "August 13, 2022",
     timeToRead: "5 mins",
     details: [
       {
@@ -64,7 +64,7 @@ const solutionsResourcesData = [
     subTitle:
       "It is an exciting time for marketers. It is a time when there is a growing need to build more connections through numerous...",
     banner: "/images/resources/blogs/banner_1.jpg",
-    date: "August 23, 2022",
+    date: "August 24, 2022",
     timeToRead: "5 mins",
     details: [
       {
@@ -152,7 +152,7 @@ const solutionsResourcesData = [
     subTitle:
       "Over a period of time, the customer experience has undergone a significant transformation. Businesses that used to...",
     banner: "/images/resources/blogs/banner_2.jpg",
-    date: "September 03, 2022",
+    date: "September 2, 2022",
     timeToRead: "5 mins",
     details: [
       {
@@ -185,7 +185,7 @@ const solutionsResourcesData = [
     subTitle:
       "Every successful retailer is built on the fundamentals of customer satisfaction. Retailers must increase sales and get...",
     banner: "/images/resources/blogs/banner_3.png",
-    date: "April 30, 2022",
+    date: "July 25, 2022",
     timeToRead: "5 mins",
     details: [
       {
@@ -237,7 +237,7 @@ const solutionsResourcesData = [
     subTitle:
       "Customers would generally want to know where their expensive gemstones originated from, as well as where their coffee...",
     banner: "/images/resources/blogs/banner_3.png",
-    date: "April 30, 2022",
+    date: "September 10, 2022",
     timeToRead: "5 mins",
     details: [
       {
