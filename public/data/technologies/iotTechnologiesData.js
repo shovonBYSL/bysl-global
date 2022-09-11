@@ -54,7 +54,7 @@ const iotSupportData = {
     "Minimize cost",
     "Smart ecosystems",
   ],
-  img: "/images/technologies/iot/iot_innovative_solution_banner.svg",
+  img: "/images/technologies/iot/iot_innovative_solution_banner.png",
 };
 
 const iotAppDevelopmentBannerData = {

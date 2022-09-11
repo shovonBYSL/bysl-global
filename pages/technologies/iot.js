@@ -33,7 +33,7 @@ const IotTechnologies = ({
         {/* banner section  */}
         <PrimaryBanner
           title="IOT Technologies"
-          sub="Next-generation IOT technologies using data, sensors and connectivity  "
+          sub="Next-generation IOT technologies using data, sensors and connectivity "
           img={banner}
         >
           <TextGradient text="Interconnectivity " /> <br />

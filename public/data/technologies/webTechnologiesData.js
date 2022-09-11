@@ -94,7 +94,7 @@ const webFeaturesData = {
   type: "Features",
   subTitle:
     "Get the right features designed and developed to serve precise needs. ",
-  img: "/images/technologies/web/features/web_features.svg",
+  img: "/images/technologies/web/features/web_features.png",
   features: [
     {
       id: 0,

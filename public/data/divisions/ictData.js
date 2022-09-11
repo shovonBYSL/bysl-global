@@ -60,7 +60,7 @@ const ictSectorsData = [
 const ictSolutionsData = {
   subTitle:
     "Ours is the platform where design ideas unify with engineering vigor, empathy unifies with economics and inspiration streams from the vision of transforming the world into a better place.",
-  img: "/images/divisions/ict/ict_solution_banner.svg",
+  img: "/images/divisions/ict/ict_solution_banner.png",
   features: [
     "Digital Core & AR/VR Development",
     "UI/UX Design & Development ",
@@ -71,7 +71,7 @@ const ictSolutionsData = {
 };
 
 const erpBannerData = {
-  img: "/images/divisions/ict/erp_banner.svg",
+  img: "/images/divisions/ict/erp_banner.png",
   subTitle:
     "A holistic cloud-based ecosystem of scalable applications catering to small, medium and large enterprises with a top-tier infrastructure.",
 };

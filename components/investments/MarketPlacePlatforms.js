@@ -22,9 +22,9 @@ const MarketPlacePlatforms = ({ data }) => {
                   src={img}
                   placeholder="blur"
                   blurDataURL={img}
-                  alt=""
                   layout="fill"
                   objectFit="cover"
+                  alt=""
                 />
               </div>
               <div className="absolute top-0 text-white text-center w-full h-full flex items-center justify-center">

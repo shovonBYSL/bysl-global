@@ -2,7 +2,7 @@ const userExperienceData = {
   title: "Delivering state-of-the-art mobile applications",
   subTitle:
     "We step backward to explore human cognition, behaviorial patterns, psychological mapping and analyze behaviorial cues before we design and develop the minute details of our mobile technolgies that promise matchless user experience throughout. ",
-  img: "/images/technologies/mobile/mobileTechnologies_ui_banner.svg",
+  img: "/images/technologies/mobile/mobileTechnologies_ui_banner.png",
   features: [
     "Dynamic designs translating seamlessly across devices",
     "Integration with robust, stronger ecosystems",

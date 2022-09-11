@@ -71,7 +71,7 @@ const TextBanner = (props) => {
           src={img}
           placeholder="blur"
           blurDataURL={img}
-          height={380}
+          height={408}
           width={648}
           objectFit="contain"
           alt=""
@@ -94,7 +94,11 @@ const GradientBanner = ({ title, details, details2 }) => {
           </p>
         </div>
         <div className="w-full lg:w-1/2">
-          <p className={`text-sm ${investmentPath && "md:text-base xl:text-xl"}`}>{details}</p>
+          <p
+            className={`text-sm ${investmentPath && "md:text-base xl:text-xl"}`}
+          >
+            {details}
+          </p>
           {details2 && <p className="text-sm mt-4">{details2}</p>}
         </div>
       </div>

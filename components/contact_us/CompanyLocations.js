@@ -38,10 +38,10 @@ const CompanyLocations = ({ data }) => {
             <div
               key={id}
               className={`zooming-less-animation h-[350px] pt-16 pl-4 xs:pl-8 md:pl-16 xl:pt-20 xl:pl-24 bg-[#EBEFF5] rounded-xl lg:rounded-[20px] relative ${
-                (id === 0 && "bg-[url('/images/locations/uae.svg')]") ||
-                (id === 1 && "bg-[url('/images/locations/usa.svg')]") ||
-                (id === 2 && "bg-[url('/images/locations/singapore.svg')]") ||
-                (id === 3 && "bg-[url('/images/locations/bangladesh.svg')]")
+                (id === 0 && "bg-[url('/images/locations/uae.png')]") ||
+                (id === 1 && "bg-[url('/images/locations/usa.png')]") ||
+                (id === 2 && "bg-[url('/images/locations/singapore.png')]") ||
+                (id === 3 && "bg-[url('/images/locations/bangladesh.png')]")
               } bg-right-bottom bg-no-repeat`}
             >
               <p className="uppercase break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold text-gray-800 text-start">

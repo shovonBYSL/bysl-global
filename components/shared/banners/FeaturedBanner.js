@@ -30,8 +30,8 @@ const FeaturedBanner = (props) => {
           src={img}
           placeholder="blur"
           blurDataURL={img}
-          height={419}
-          width={687}
+          height={468}
+          width={685}
           objectFit="contain"
           alt=""
         />

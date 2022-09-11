@@ -49,7 +49,7 @@ export async function getStaticProps() {
       banner: "/images/banners/ites_division_banner.svg",
       itesOverview: itesOverviewData,
       itesUpdate: itesUpdateData,
-      itesAppImg: "/images/divisions/ites/ites_team_management.svg",
+      itesAppImg: "/images/divisions/ites/ites_team_management.png",
     },
   };
 }

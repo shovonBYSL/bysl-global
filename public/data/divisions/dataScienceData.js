@@ -38,7 +38,7 @@ const dataScienceControlPanelData = [
 ];
 
 const dataScienceAnalysisData = {
-  img: "/images/divisions/data_science/real-time-data-banner.svg",
+  img: "/images/divisions/data_science/real-time-data-banner.png",
   features: [
     {
       id: 0,

@@ -68,6 +68,7 @@ const BannerWithBulletSingle = (props) => {
           placeholder="blur"
           blurDataURL={img}
           layout="fill"
+          objectFit="contain"
           alt=""
         />
       </div>

@@ -61,9 +61,9 @@ const DataScience = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/data_science_division_banner.svg",
+      banner: "/images/banners/data_science_division_banner.png",
       dataAnalysisImg:
-        "/images/divisions/data_science/data_analysis_banner.svg",
+        "/images/divisions/data_science/data_analysis_banner.png",
       dataScienceControlPanel: dataScienceControlPanelData,
       dataScienceAnalysis: dataScienceAnalysisData,
     },

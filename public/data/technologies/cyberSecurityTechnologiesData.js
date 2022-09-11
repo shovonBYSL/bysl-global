@@ -99,7 +99,7 @@ const cyberProtectionData = {
     "Managing cloud security",
     "Assessing risks & delivering prompt responses",
   ],
-  img: "/images/technologies/cyber_security/cyber_secuirity_protection_banner.svg",
+  img: "/images/technologies/cyber_security/cyber_secuirity_protection_banner.png",
 };
 
 export {
