@@ -10,7 +10,7 @@ const solutionsResourcesData = [
       "Fintech companies are shifting major portions of their digital infrastructure to advanced cloud platforms. Global fintech...",
     banner: "/images/resources/blogs/banner_0.jpg",
     date: "August 13, 2022",
-    timeToRead: "2 mins",
+    timeToRead: "3 mins",
     details: [
       {
         text: "Fintech companies are shifting major portions of their digital infrastructure to advanced cloud platforms. Global fintech organizations that are valued at billions of dollars highlight industry-wise trends where cloud computing is predominant, evaluated, and implemented. Cloud technology is the new standard for Fintech, and all those who fail to execute this will lose ground to their rivals.",
@@ -65,7 +65,7 @@ const solutionsResourcesData = [
       "It is an exciting time for marketers. It is a time when there is a growing need to build more connections through numerous...",
     banner: "/images/resources/blogs/banner_1.jpg",
     date: "August 24, 2022",
-    timeToRead: "8 mins",
+    timeToRead: "12 mins",
     details: [
       {
         text: "It is an exciting time for marketers. It is a time when there is a growing need to build more connections through numerous channels and pathways. New doorways have opened up new windows to shape the means of connection as well. Marketers have always been apt in detecting new growth catalysts, but high performance calls for a structured improvement in the field of customer experience throughout the business. Businesses need a certain level of technological sophistication and digital infrastructure that many firms are currently struggling to achieve.",
@@ -153,7 +153,7 @@ const solutionsResourcesData = [
       "Over a period of time, the customer experience has undergone a significant transformation. Businesses that used to...",
     banner: "/images/resources/blogs/banner_2.jpg",
     date: "September 2, 2022",
-    timeToRead: "2 mins",
+    timeToRead: "3 mins",
     details: [
       {
         text: "Over a period of time, the customer experience has undergone a significant transformation. Businesses that used to prioritize exceeding customers' expectations by delivering high-quality goods and services are barely meeting their targets today. The reason may be speculated that providing top-notch services is now taken for granted. In the modern day, a fully customized customer experience is essential for retaining customers. Customers anticipate that businesses will pay attention to their requirements and deliver personalized recommendations tailored to their distinct areas of interest.",
@@ -186,7 +186,7 @@ const solutionsResourcesData = [
       "Every successful retailer is built on the fundamentals of customer satisfaction. Retailers must increase sales and get...",
     banner: "/images/resources/blogs/banner_3.png",
     date: "July 25, 2022",
-    timeToRead: "4 mins",
+    timeToRead: "5 mins",
     details: [
       {
         text: "Every successful retailer is built on the fundamentals of customer satisfaction. Retailers must increase sales and get merchandise out the door as efficiently as possible while sometimes sacrificing profitability and efficiency as customer expectations change rapidly. Because of this, a plan that was initially designed to put the customer first ultimately fails, resulting in customers receiving delayed deliveries or having their transactions canceled.",
@@ -238,7 +238,7 @@ const solutionsResourcesData = [
       "Customers would generally want to know where their expensive gemstones originated from, as well as where their coffee...",
     banner: "/images/resources/blogs/banner_3.png",
     date: "September 10, 2022",
-    timeToRead: "4 mins",
+    timeToRead: "6 mins",
     details: [
       {
         text: "Customers would generally want to know where their expensive gemstones originated from, as well as where their coffee beans were grown. In fact, more than 70% of customers say that traceability is extremely essential and that they are prepared to pay a premium of up to 35% for it. Governments as well as investors are holding businesses responsible for using sustainable supply chains.",
