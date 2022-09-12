@@ -5,7 +5,7 @@ const WhyBigdata = ({ data }) => {
   return (
     <div className="pt-10 xl:pt-16">
       <div className="mb-10 xl:mb-16">
-        <TechnologiesSectionTitle>Why Big Data?</TechnologiesSectionTitle>
+        <TechnologiesSectionTitle>Why big data?</TechnologiesSectionTitle>
       </div>
       {data.map((item) => (
         <BannerWithBullets

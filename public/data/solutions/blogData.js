@@ -5,7 +5,7 @@ const solutionsResourcesData = [
     url: "what-motivates-financial-professionals-to-use-cloud-infrastructure",
     hits: 122,
     title:
-      "What Motivates Financial Professionals to Use Cloud Infrastructure?",
+      "What motivates financial professionals to use cloud infrastructure?",
     subTitle:
       "Fintech companies are shifting major portions of their digital infrastructure to advanced cloud platforms. Global fintech...",
     banner: "/images/resources/blogs/banner_0.jpg",
