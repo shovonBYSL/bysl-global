@@ -1,5 +1,5 @@
 const retailBannerData = {
-  img: "/images/banners/retail_solutions_banner.svg",
+  img: "/images/banners/retail_solutions_banner.png",
   type: "Retail Industry",
   subHeading:
     "Future of retail is gleaming right through the clouds! The physical is shifting towards digital and e-commerece is consistently winning worldwide but there’s also a place for physical stores. So, we build technologies to capture the next-generation of retail indsutry, building solutions that cater to retailers selling products everywhere.  ",

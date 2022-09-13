@@ -56,7 +56,7 @@ const SupplyChain = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/supply_chain_division_banner.svg",
+      banner: "/images/banners/supply_chain_division_banner.png",
       supplyChainConnectivity: supplyChainConnectivityData,
       connectivityImg:
         "/images/divisions/supply_chain/connectivity/connectivity_banner.svg",

@@ -24,6 +24,7 @@ const Investments = ({ data }) => {
                 placeholder="blur"
                 blurDataURL={data.ITPlatform}
                 alt=""
+                objectFit="contain"
                 height={373}
                 width={640}
               />

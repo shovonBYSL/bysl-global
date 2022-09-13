@@ -66,7 +66,7 @@ const CyberSecurityTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/cyber-security_technologies_banner.svg",
+      banner: "/images/banners/cyber-security_technologies_banner.png",
       cyberBenefits: cyberBenefitsData,
       cyberFeatures: cyberFeaturesData,
       featuresBanner:

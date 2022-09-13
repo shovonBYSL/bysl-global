@@ -1,6 +1,6 @@
 const marketingBannerData = {
-  img: "/images/banners/marketing_solutions_banner.svg",
-  imgSmall: "/images/banners/marketing_solutions_banner_sm.svg",
+  img: "/images/banners/marketing_solutions_banner.png",
+  imgSmall: "/images/banners/marketing_solutions_banner_sm.png",
   type: "Marketing",
   heading: "Utilize innovative marketing solutions to scale",
   subHeading:

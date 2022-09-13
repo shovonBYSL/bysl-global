@@ -80,7 +80,7 @@ const productsData = [
   {
     id: 0,
     title: "Product marketing",
-    video: "/images/divisions/ict/products/0.webm",
+    video: "/images/divisions/ict/products/0.mp4",
   },
   {
     id: 1,

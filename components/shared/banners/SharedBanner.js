@@ -24,9 +24,9 @@ const SectionBanner = ({ data }) => {
         }`}
       >
         <Image
-          src={`/images/banners/${title}_banner.svg`}
+          src={`/images/banners/${title}_banner.png`}
           placeholder="blur"
-          blurDataURL={`/images/banners/${title}_banner.svg`}
+          blurDataURL={`/images/banners/${title}_banner.png`}
           height={(missionPath && 480) || 283}
           width={452}
           objectFit="contain"

@@ -24,6 +24,7 @@ const SecondaryLargeBanner = ({ data, children }) => {
           blurDataURL={img}
           height={bigDataPath ? 633 : 700}
           width={bigDataPath ? 1240 : 1080}
+          objectFit="contain"
         />
       </div>
     </div>

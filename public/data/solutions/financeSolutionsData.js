@@ -1,5 +1,5 @@
 const financeBannerData = {
-  img: "/images/banners/finance_solutions_banner.svg",
+  img: "/images/banners/finance_solutions_banner.png",
   type: "Finance Industry",
   heading: "Creating the next edge for financial institutions",
   subHeading:

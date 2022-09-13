@@ -72,7 +72,7 @@ const BlockchainTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/blockchain_technologies_banner.svg",
+      banner: "/images/banners/blockchain_technologies_banner.png",
       blockchainFeatures: blockchainFeaturesData,
       blockchainHealthBanner: blockchainHealthBannerData,
       blockchainServices: blockchainServicesData,

@@ -2,7 +2,7 @@ const administrationBannerData = {
   heading: "Administration - Division",
   subTitle:
     "Using IT-enabled business operations, integrated APIs, and smart technologies engineered to automate workflows and drive fast and flawless operations ",
-  img: "/images/banners/administration_division_banner.svg",
+  img: "/images/banners/administration_division_banner.png",
 };
 
 const administrationControlPanelData = [
@@ -55,7 +55,7 @@ const workplaceBannerData = {
     "Real-time synchronization",
     "IT-enabled operations   ",
   ],
-  img: "/images/divisions/administration/workplace_banner.svg",
+  img: "/images/divisions/administration/workplace_banner.png",
 };
 
 const administrationMangementData = {
@@ -71,7 +71,7 @@ const administrationMangementData = {
     "Data collection and validation",
     "Compliance",
   ],
-  img: "/images/divisions/administration/management_banner.svg",
+  img: "/images/divisions/administration/management_banner.png",
 };
 
 export {

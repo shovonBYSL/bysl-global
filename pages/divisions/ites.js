@@ -46,7 +46,7 @@ const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/ites_division_banner.svg",
+      banner: "/images/banners/ites_division_banner.png",
       itesOverview: itesOverviewData,
       itesUpdate: itesUpdateData,
       itesAppImg: "/images/divisions/ites/ites_team_management.png",

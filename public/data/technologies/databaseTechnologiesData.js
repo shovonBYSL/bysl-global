@@ -2,7 +2,7 @@ const databaseBannerData = {
   heading: "Database Technologies",
   subTitle:
     "Smart & secure databage technologies with industry-leading systemic architecture for dynamic, scalable and efficient data management",
-  img: "/images/banners/database_technologies_banner.svg",
+  img: "/images/banners/database_technologies_banner.png",
 };
 
 const databaseSolutionsData = [
