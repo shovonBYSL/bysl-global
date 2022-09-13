@@ -42,7 +42,7 @@ const Resources = ({
 };
 
 export async function getStaticProps() {
-  const filteredBanner = popular(solutionsResourcesData, 3);
+  const filteredBanner = popular(solutionsResourcesData, 5);
 
   return {
     props: {

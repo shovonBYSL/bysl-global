@@ -11,7 +11,7 @@ import { TextGradient } from "../shared/SharedTextgroups";
 import { readingTime } from "../../utils/readingTime";
 
 const ResourcesBanner = ({ data }) => {
-  const newArray = [data[0], data[2], data[1]];
+  const newArray = [data[0], data[4], data[3], data[2], data[1]];
   readingTime();
 
   const BannerImage = ({ data }) => {
@@ -73,6 +73,7 @@ const ResourcesBanner = ({ data }) => {
                 return (
                   <SwiperSlide key={i}>
                     <BannerImage data={item} />
+                    {item.title}
                   </SwiperSlide>
                 );
               })}
