@@ -82,7 +82,7 @@ const IotTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/iot_technologies_banner.webp",
+      banner: "/images/banners/iot_technologies_banner.png",
       iotServices: iotServicesData,
       iotAppDevelopmentBanner: iotAppDevelopmentBannerData,
       iotSolutions: iotSolutionsData,

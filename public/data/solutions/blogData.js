@@ -8,7 +8,9 @@ const solutionsResourcesData = [
       "What motivates financial professionals to use cloud infrastructure?",
     subTitle:
       "Fintech companies are shifting major portions of their digital infrastructure to advanced cloud platforms. Global fintech...",
-    banner: "/images/resources/blogs/banner_0.jpg",
+    banner: "/images/resources/blogs/what-motivates/banner.png",
+    squareImg: "/images/resources/blogs/what-motivates/square.png",
+    cardImg: "/images/resources/blogs/what-motivates/card.png",
     date: "August 13, 2022",
     timeToRead: "3 mins",
     details: [
@@ -17,7 +19,7 @@ const solutionsResourcesData = [
       },
       {
         text: "For financial institutions, a hybrid cloud solution that combines public cloud flexibility with private cloud protection is an essential tool in this highly regulated and competitive sector. With a hybrid architecture, the financial industry may expand ahead of its data centers and into cloud services. Major financial institutions are also preparing for a dynamic, mobile-first future by leveraging the cloud to empower technological advancement.",
-        img: "/images/resources/blogs/img_0.png",
+        img: "/images/resources/blogs/what-motivates/content.png",
       },
       {
         title: "Cloud Computing is the Future of Digital Banking",
@@ -63,7 +65,9 @@ const solutionsResourcesData = [
     title: "Get impactful outcomes through an AI-driven marketing approach",
     subTitle:
       "It is an exciting time for marketers. It is a time when there is a growing need to build more connections through numerous...",
-    banner: "/images/resources/blogs/banner_1.jpg",
+    banner: "/images/resources/blogs/get-impactful/banner.png",
+    squareImg: "/images/resources/blogs/get-impactful/square.png",
+    cardImg: "/images/resources/blogs/get-impactful/card.png",
     date: "August 24, 2022",
     timeToRead: "12 mins",
     details: [
@@ -72,8 +76,7 @@ const solutionsResourcesData = [
       },
       {
         text: "Disruptive periods, if it does not kill a business, makes it stronger by helping it relearn new aspects of innovation, grab opportunities it ignored before, and change things to emerge better. By leading that transformation, CMOs may help firms become even more responsive, analytical, and resilient. However, they may avoid doing it on their own.",
-        thumb: "/images/resources/blogs/img_0.png",
-        video: "/images/resources/videos/video_0.webm",
+        img: "/images/resources/blogs/get-impactful/content.png",
       },
       {
         text: "Artificial intelligence (AI) has the potential to be a key differentiator as it can help marketers make faster and smarter decisions with advanced capacity for interpretation, analysis, and learning from a broad range of datasets. AI has the potential to effectively facilitate interactions amongst machines and humans in plentiful innovative ways.",
@@ -145,13 +148,15 @@ const solutionsResourcesData = [
   {
     id: 2,
     type: "Marketing",
-    url: "iintelligent-marketing-and-sales-analytics-to-accelerate-digital-transformation",
+    url: "intelligent-marketing-and-sales-analytics-to-accelerate-digital-transformation",
     hits: 12,
     title:
-      "IIntelligent Marketing and Sales Analytics to accelerate Digital Transformation",
+      "Intelligent Marketing and Sales Analytics to Accelerate Digital Transformation",
     subTitle:
       "Over a period of time, the customer experience has undergone a significant transformation. Businesses that used to...",
-    banner: "/images/resources/blogs/banner_2.jpg",
+    banner: "/images/resources/blogs/intelligent-marketing/banner.png",
+    squareImg: "/images/resources/blogs/intelligent-marketing/square.png",
+    cardImg: "/images/resources/blogs/intelligent-marketing/card.png",
     date: "September 2, 2022",
     timeToRead: "3 mins",
     details: [
@@ -160,7 +165,7 @@ const solutionsResourcesData = [
       },
       {
         text: "Businesses need to bring the right combination of products and services to the customer at the ideal moment through the proper channels in order to participate in personalization and avoid falling behind the competition. This is made possible by analyzing consumer data carefully, which shields the user from exposure to and aversion to meaningless messages and advertisements. A few select companies have taken client personalization and targeting to new dimensions.",
-        img: "/images/resources/blogs/img_0.png",
+        img: "/images/resources/blogs/intelligent-marketing/content.png",
       },
       {
         title:
@@ -184,7 +189,9 @@ const solutionsResourcesData = [
     title: "IT-enabled inventory: A key to lead the next-gen omnichannel",
     subTitle:
       "Every successful retailer is built on the fundamentals of customer satisfaction. Retailers must increase sales and get...",
-    banner: "/images/resources/blogs/banner_3.png",
+    banner: "/images/resources/blogs/it-enabled/banner.png",
+    squareImg: "/images/resources/blogs/it-enabled/square.png",
+    cardImg: "/images/resources/blogs/it-enabled/card.png",
     date: "July 25, 2022",
     timeToRead: "5 mins",
     details: [
@@ -193,7 +200,7 @@ const solutionsResourcesData = [
       },
       {
         text: "However, it is possible to establish cost-effective and accountable promises. There is also no time to squander.",
-        img: "/images/resources/blogs/img_0.png",
+        img: "/images/resources/blogs/it-enabled/content.png",
       },
       {
         title: "The importance of omnichannel retail in today's world",
@@ -236,7 +243,9 @@ const solutionsResourcesData = [
       "Three effective approaches to accelerate business development toward a sustainable supply chain",
     subTitle:
       "Customers would generally want to know where their expensive gemstones originated from, as well as where their coffee...",
-    banner: "/images/resources/blogs/banner_3.png",
+    banner: "/images/resources/blogs/three-effective/banner.png",
+    squareImg: "/images/resources/blogs/three-effective/square.png",
+    cardImg: "/images/resources/blogs/three-effective/card.png",
     date: "September 10, 2022",
     timeToRead: "6 mins",
     details: [
@@ -248,7 +257,7 @@ const solutionsResourcesData = [
       },
       {
         text: "Leaders in the supply chain are responding to the challenge. Approximately 49% of all businesses have sustainability goals for their supply chains, and more than two-thirds want to invest in circular economies over the next few years. Carbon neutrality and energy management are top of mind with the effort to attain Net-Zero. However, there are possibilities to integrate best practices to promote sustainability and support circular economies that minimize waste and promote reuse all throughout the end-to-end supply chain.",
-        img: "/images/resources/blogs/img_0.png",
+        img: "/images/resources/blogs/three-effective/content.png",
       },
       {
         text: "The capability to communicate data throughout your supply chain ecosystem in a safe and competent manner and also a comprehensive, precise, real-time view of inventory are both necessary for achieving supply chain sustainability goals. But the reality is that leaders of supply chains frequently work with very limited data. Over-ordering and working capital invested in inventory to prevent stockouts occur when you don't know precisely how much merchandise you have and where it is located, thus leading to a ripple effect that leads to waste in sectors like warehousing and transportation. Furthermore, it is very challenging to verify product traceability if the relationship with the supplier is not transparent, from point of origin to delivery, in a credible and regulated way to uphold your brand.",

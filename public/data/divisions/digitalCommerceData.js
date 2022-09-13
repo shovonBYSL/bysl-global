@@ -24,7 +24,7 @@ const digitalCommerceOverviewData = [
 const digitalCommerceSolutionsData = {
   subTitle:
     "Our intelligent automation technology aims at creating a spectrum of business opportunities through improved engineering sophistication and design innovation.",
-  img: "/images/divisions/digital_commerce/digital_commerce_solution_banner.svg",
+  img: "/images/divisions/digital_commerce/digital_commerce_solution_banner.png",
   features: [
     "Customer Analytics",
     "Sales Analytics & Demand Forecasting",

@@ -62,23 +62,23 @@ const mobileFeaturesData2 = [
 const mobileSliderData = [
   {
     id: 0,
-    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_0.svg",
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_0.png",
   },
   {
     id: 1,
-    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_1.svg",
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_1.png",
   },
   {
     id: 2,
-    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_2.svg",
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_2.png",
   },
   {
     id: 3,
-    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_3.svg",
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_3.png",
   },
   {
     id: 4,
-    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_4.svg",
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_4.png",
   },
 ];
 

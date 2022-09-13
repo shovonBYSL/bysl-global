@@ -1,17 +1,23 @@
 import Image from "next/image";
+import { TextGradient } from "../../shared/SharedTextgroups";
 
 const SingleBlogBanner = ({ data }) => {
-  const { title, banner, date, timeToRead } = data;
+  const { type, title, banner, date, timeToRead } = data;
 
   return (
     <div className="py-6 lg:py-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div className="md:mt-6 lg:mt-10 2xl:mt-20">
-        <p className="mb-4 break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-bold text-gray-800 text-center lg:text-start">
+        <p className="text-xs md:text-sm lg:text-base font-medium">
+          <TextGradient text={type} />
+        </p>
+        <p className="mt-2 mb-4 break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-bold text-gray-800 text-center lg:text-start">
           {title}
         </p>
         <div className="w-full flex justify-between md:max-w-xs">
           <p className="text-[#888B96] text-sm">{date}</p>
-          <p id="time" className="text-[#888B96] text-sm"> to read</p>
+          <p id="time" className="text-[#888B96] text-sm">
+            to read
+          </p>
         </div>
       </div>
       <Image

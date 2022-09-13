@@ -29,7 +29,14 @@ const MarketPlacePlatforms = ({ data }) => {
               </div>
               <div className="absolute top-0 text-white text-center w-full h-full flex items-center justify-center">
                 <div className="h-4/5 w-11/12 lg:w-4/5 flex flex-col justify-between">
-                  <div className="relative h-20 w-[150px] mx-auto">
+                  <div
+                    className={`relative h-20 ${
+                      (id === 0 && "w-[150px]") ||
+                      (id === 1 && "w-[270px]") ||
+                      (id === 2 && "w-[226px]") ||
+                      (id === 3 && "w-[100px]")
+                    } mx-auto`}
+                  >
                     <Image
                       src={logo}
                       placeholder="blur"

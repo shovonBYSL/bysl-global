@@ -54,9 +54,9 @@ const FoodTech = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/digital_commerce_division_banner.svg",
+      banner: "/images/banners/digital_commerce_division_banner.png",
       digitalCommerceImg:
-        "/images/divisions/digital_commerce/digital_commerce_app.svg",
+        "/images/divisions/digital_commerce/digital_commerce_app.png",
       digitalCommerceOverview: digitalCommerceOverviewData,
       digitalCommerceSolutions: digitalCommerceSolutionsData,
     },

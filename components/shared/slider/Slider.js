@@ -27,7 +27,7 @@ const Slider = ({ size, data }) => {
       {data.map(({ id, img }) => {
         return (
           <SwiperSlide key={id}>
-            <div className=" h-[260px] xl:h-80 w-[140px] xxs:w-[150px] md:w-[120px] xl:w-[150px] overflow-hidden mx-auto drop-shadow-3xl relative mobileTechImg">
+            <div className=" h-[260px] xl:h-80 w-[130px] xxs:w-[150px] md:w-[120px] xl:w-[150px] overflow-hidden mx-auto drop-shadow-3xl relative mobileTechImg">
               <Image
                 src={img}
                 layout="fill"

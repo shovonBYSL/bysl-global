@@ -28,14 +28,14 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
           {label}
         </p>
         <div className="flex flex-col gap-4">
-          {data.map(({ id, url, banner, title, date }) => {
+          {data.map(({ id, url, banner, squareImg, title, date }) => {
             return (
               <Link key={id} passHref href={`/resource/${url}`}>
                 <a className="cursor-pointer flex items-center gap-6">
                   <Image
-                    src={banner}
+                    src={squareImg ? squareImg : banner}
                     placeholder="blur"
-                    blurDataURL={banner}
+                    blurDataURL={squareImg ? squareImg : banner}
                     className="!rounded-full"
                     height={86}
                     width={86}

@@ -9,7 +9,6 @@ const ResourceBlogLayout = ({ size, data }) => {
       slidesPerView={size}
       spaceBetween={20}
       slidesPerGroup={1}
-      grabCursor={true}
       loop={true}
       speed={1000}
       autoplay={{
