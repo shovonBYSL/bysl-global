@@ -73,7 +73,6 @@ const ResourcesBanner = ({ data }) => {
                 return (
                   <SwiperSlide key={i}>
                     <BannerImage data={item} />
-                    {item.title}
                   </SwiperSlide>
                 );
               })}
