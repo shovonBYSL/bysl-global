@@ -26,7 +26,7 @@ const ResourcesBanner = ({ data }) => {
             objectFit="cover"
             alt=""
           />
-          <div className="bg-[#B2C7E2]/30 absolute h-full w-full z-40"></div>
+          {/* <div className="bg-[#B2C7E2]/30 absolute h-full w-full z-40"></div> */}
         </div>
       </>
     );
