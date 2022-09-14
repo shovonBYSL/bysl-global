@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
 import PhoneInput from 'react-phone-input-2'
+// country code
+import 'react-phone-input-2/lib/style.css'
 
 import CommonLayout from "../../../layouts/CommonLayout";
 import Loader from "../../../components/shared/Loader";
