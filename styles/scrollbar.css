@@ -25,3 +25,36 @@
 .careerScrollbar::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to right, #00459f, #1e7ad6);
 }
+
+
+
+/* application form country select scrollbar */
+.react-tel-input .country-list {
+  overflow: hidden;
+  overflow-y: auto !important;
+}
+.react-tel-input .country-list::-webkit-scrollbar {
+  width: 5px;
+}
+.react-tel-input .country-list::-webkit-scrollbar {
+  width: 4px;
+}
+.react-tel-input .country-list::-webkit-scrollbar-thumb ,
+.react-tel-input .country-list::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+}
+.react-tel-input .country-list::-webkit-scrollbar-thumb:hover, 
+.react-tel-input .country-list::-webkit-scrollbar-thumb:hover {
+  background: #a5aaad;
+}
+.react-tel-input .country-list::-webkit-scrollbar-track, 
+.react-tel-input .country-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a5aaad;
+  border-radius: 5px;
+}
+.react-tel-input .country-list::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, #00459f88, #1e7ad67c);
+}
+.react-tel-input .country-list::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, #00459f, #1e7ad6);
+}

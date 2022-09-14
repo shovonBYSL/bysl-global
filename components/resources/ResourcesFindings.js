@@ -10,7 +10,7 @@ const ResourcesFindings = ({ data }) => {
       <div className="mt-6 xl:mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
         {data
           .slice(0, 4)
-          .map(({ id, url, timeToRead, cardImg, type, title, date }) => {
+          .map(({ id, url, timeToRead, cardImg, type, hits, title, date }) => {
             return (
               <Link key={id} passHref href={`/resource/${url}`}>
                 <a
@@ -50,7 +50,7 @@ const ResourcesFindings = ({ data }) => {
                       </p>
                       <span className="h-2.5 w-px bg-gray-900/20" />
                       <p className="text-[#888B96] text-xs lg:text-sm">
-                        125 views
+                        {hits} views
                       </p>
                     </div>
                   </div>

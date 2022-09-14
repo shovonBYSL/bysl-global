@@ -16,6 +16,8 @@ import "swiper/css/navigation";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import 'react-phone-input-2/lib/style.css'
+
 // notification alert
 import "react-toastify/dist/ReactToastify.css";
 

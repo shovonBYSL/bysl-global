@@ -2,6 +2,7 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
+import PhoneInput from 'react-phone-input-2'
 
 import CommonLayout from "../../../layouts/CommonLayout";
 import Loader from "../../../components/shared/Loader";
@@ -110,6 +111,7 @@ const ApplicationForm = () => {
   //   inputFile.current.click();
   // };
 
+  console.log(phone);
   const previewData = [
     {
       id: 0,
@@ -191,8 +193,8 @@ const ApplicationForm = () => {
 
               {/* phone input  */}
               <CareerInputTitle title="Phone" />
-              <div className="relative mb-10">
-                <p className="flex text-sm absolute inset-y-0 left-0 items-center pl-3 pointer-events-none text-gray-800">
+              <div className="mb-10">
+                {/* <p className="flex text-sm absolute inset-y-0 left-0 items-center pl-3 pointer-events-none text-gray-800">
                   +880
                 </p>
                 <input
@@ -203,6 +205,16 @@ const ApplicationForm = () => {
                   type="text"
                   placeholder="9666 722788"
                   className="bg-gray-50 text-sm w-full pl-12 p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600"
+                /> */}
+                <PhoneInput
+                  enableSearch
+                  disableSearchIcon
+                  countryCodeEditable={false}
+                  country={'bd'}
+                  value={phone}
+                  onChange={setPhone}
+                  placeholder="+8809666 722788"
+                  inputClass="!bg-gray-50 !text-sm !w-full !pl-12 !p-5 !rounded-[5px] !text-gray-500 !focus:outline-gray-800/20 !border !border-gray-600"
                 />
               </div>
 

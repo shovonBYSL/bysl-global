@@ -5,25 +5,34 @@
 @import url("http://fonts.cdnfonts.com/css/sf-pro-display");
 /* @import url('https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900'); */
 
-@layer utilities {
-  * {
-    box-sizing: border-box;
-  }
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: "SF Pro Display", sans-serif !important;
-    background-color: #f8f8fa;
-  }
-  /* html {
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "SF Pro Display", sans-serif !important;
+  background-color: #f8f8fa;
+}
+/* html {
   scroll-behavior: smooth !important;
 } */
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.react-tel-input .country-list .search-box {
+  width: -webkit-fill-available;
+  height: 35px;
+  margin-left: 0px !important;
+  margin-right: 6px;
+}
+
+@layer utilities {
   .clip-video video {
     clip-path: inset(1px 1px);
   }
@@ -113,6 +122,8 @@
     width: 0%;
   }
   /* custom border */
+
+
 
   /* media queries  */
   @media (min-width: 360px) {
@@ -222,3 +233,4 @@
     }
   }
 }
+
