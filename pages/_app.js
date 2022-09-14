@@ -16,6 +16,7 @@ import "swiper/css/navigation";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// country code
 import 'react-phone-input-2/lib/style.css'
 
 // notification alert
