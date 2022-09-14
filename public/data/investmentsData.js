@@ -55,10 +55,10 @@ const ITPlatformsData = [
 const marketplacePlatformsData = [
   {
     id: 0,
-    title: "Citimart",
-    motto: "The Premium Supermarket",
+    title: "GetCiti",
+    motto: "Get It All in One Citi",
     img: "/images/investments/marketplace_platforms/citi-mart.svg",
-    logo: "/images/investments/marketplace_platforms/logo_0.svg",
+    logo: "/images/investments/marketplace_platforms/logo_0.png",
   },
   {
     id: 1,

@@ -32,7 +32,7 @@ const ResourcesBlogs = ({ data }) => {
                         />
                       </div>
                     </div>
-                    <div className="pt-4 px-3 xxs:px-6 sm:px-3 md:px-6">
+                    <div className="pt-4 px-3 xxs:px-6 sm:px-3 md:px-6 lg:px-3 xl:px-6">
                       <p className="text-sm lg:text-base text-gray-800">
                         {type}
                       </p>
@@ -41,7 +41,7 @@ const ResourcesBlogs = ({ data }) => {
                       </p>
                     </div>
                   </div>
-                  <div className="pb-4 px-3 xxs:px-6 sm:px-3 md:px-6 w-full flex items-center justify-between md:justify-start gap-3">
+                  <div className="pb-4 px-3 xxs:px-6 sm:px-3 md:px-6 lg:px-3 xl:px-6 w-full flex items-center justify-between md:justify-start gap-3">
                     <p className="text-[#888B96] text-xs xl:text-sm">{date}</p>
                     <span className="h-2.5 w-px bg-gray-900/20" />
                     <p id="time" className="text-[#888B96] text-xs xl:text-sm">

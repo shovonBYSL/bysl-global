@@ -31,10 +31,10 @@ const MarketPlacePlatforms = ({ data }) => {
                 <div className="h-4/5 w-11/12 lg:w-4/5 flex flex-col justify-between">
                   <div
                     className={`relative h-20 ${
-                      (id === 0 && "w-[150px]") ||
-                      (id === 1 && "w-[270px]") ||
-                      (id === 2 && "w-[226px]") ||
-                      (id === 3 && "w-[100px]")
+                      (id === 0 && "w-[110px] xl:w-[150px]") ||
+                      (id === 1 && "w-[200px] xl:w-[270px]") ||
+                      (id === 2 && "w-[150px] xl:w-[226px]") ||
+                      (id === 3 && "w-[80px] xl:w-[100px]")
                     } mx-auto`}
                   >
                     <Image
@@ -42,6 +42,7 @@ const MarketPlacePlatforms = ({ data }) => {
                       placeholder="blur"
                       blurDataURL={logo}
                       alt=""
+                      objectFit="contain"
                       layout="fill"
                     />
                   </div>
