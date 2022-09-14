@@ -20,13 +20,13 @@ const Resources = ({ banner, solutionsResources, videoData }) => {
       {/* banner section  */}
       <ResourcesBanner data={banner} />
       {/* blogs section  */}
-      <div className="px-4">
+      <div className="box">
         <ResourcesBlogs data={solutionsResources} />
       </div>
       {/* featured videos section  */}
       <ResourceFeaturedVideos data={videoData} />
       {/* findings section  */}
-      <div className="px-4">
+      <div className="box">
         <ResourcesFindings data={solutionsResources} />
       </div>
     </SolutionsLayout>
