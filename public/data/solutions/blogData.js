@@ -7,11 +7,11 @@ const solutionsResourcesData = [
     title:
       "What motivates financial professionals to use cloud infrastructure?",
     subTitle:
-      "Fintech companies are shifting major portions of their digital infrastructure to advanced cloud platforms. Global fintech...",
+      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
     banner: "/images/resources/blogs/what-motivates/banner.png",
     squareImg: "/images/resources/blogs/what-motivates/square.png",
     cardImg: "/images/resources/blogs/what-motivates/card.png",
-    date: "August 13, 2022",
+    date: "Aug 13, 2022",
     timeToRead: "3 mins",
     details: [
       {
@@ -64,11 +64,11 @@ const solutionsResourcesData = [
     hits: 29,
     title: "Get impactful outcomes through an AI-driven marketing approach",
     subTitle:
-      "It is an exciting time for marketers. It is a time when there is a growing need to build more connections through numerous...",
+      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
     banner: "/images/resources/blogs/get-impactful/banner.png",
     squareImg: "/images/resources/blogs/get-impactful/square.png",
     cardImg: "/images/resources/blogs/get-impactful/card.png",
-    date: "August 24, 2022",
+    date: "Aug 24, 2022",
     timeToRead: "12 mins",
     details: [
       {
@@ -153,11 +153,11 @@ const solutionsResourcesData = [
     title:
       "Intelligent Marketing and Sales Analytics to Accelerate Digital Transformation",
     subTitle:
-      "Over a period of time, the customer experience has undergone a significant transformation. Businesses that used to...",
+      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
     banner: "/images/resources/blogs/intelligent-marketing/banner.png",
     squareImg: "/images/resources/blogs/intelligent-marketing/square.png",
     cardImg: "/images/resources/blogs/intelligent-marketing/card.png",
-    date: "September 2, 2022",
+    date: "Sep 2, 2022",
     timeToRead: "3 mins",
     details: [
       {
@@ -188,11 +188,11 @@ const solutionsResourcesData = [
     hits: 55,
     title: "IT-enabled inventory: A key to lead the next-gen omnichannel",
     subTitle:
-      "Every successful retailer is built on the fundamentals of customer satisfaction. Retailers must increase sales and get...",
+      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
     banner: "/images/resources/blogs/it-enabled/banner.png",
     squareImg: "/images/resources/blogs/it-enabled/square.png",
     cardImg: "/images/resources/blogs/it-enabled/card.png",
-    date: "July 25, 2022",
+    date: "Jul 25, 2022",
     timeToRead: "5 mins",
     details: [
       {
@@ -242,11 +242,11 @@ const solutionsResourcesData = [
     title:
       "Three effective approaches to accelerate business development toward a sustainable supply chain",
     subTitle:
-      "Customers would generally want to know where their expensive gemstones originated from, as well as where their coffee...",
+      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
     banner: "/images/resources/blogs/three-effective/banner.png",
     squareImg: "/images/resources/blogs/three-effective/square.png",
     cardImg: "/images/resources/blogs/three-effective/card.png",
-    date: "September 10, 2022",
+    date: "Sep 10, 2022",
     timeToRead: "6 mins",
     details: [
       {
@@ -286,4 +286,25 @@ const solutionsResourcesData = [
   },
 ];
 
-export { solutionsResourcesData };
+const resourcesVideoData = [
+  {
+    id: 0,
+    thumb: "/images/resources/videos/video_thumb_0.png",
+    video: "/images/resources/videos/video_0.webm",
+    title: "Changing logistics operations solutions with ",
+  },
+  {
+    id: 1,
+    thumb: "/images/resources/videos/video_thumb_1.png",
+    video: "/images/resources/videos/video_1.webm",
+    title: "Changing logistics operations solutions with ",
+  },
+  {
+    id: 2,
+    thumb: "/images/resources/videos/video_thumb_2.png",
+    video: "/images/resources/videos/video_2.webm",
+    title: "Changing logistics operations solutions with ",
+  },
+];
+
+export { solutionsResourcesData, resourcesVideoData };

@@ -3,21 +3,13 @@ import ResourcesBanner from "../components/resources/ResourcesBanner";
 import ResourcesBlogs from "../components/resources/ResourcesBlogs";
 import ResourcesFindings from "../components/resources/ResourcesFindings";
 import ResourceFeaturedVideos from "../components/resources/ResourceFeaturedVideos";
-import { solutionsResourcesData } from "../public/data/solutions/blogData";
 import { popular } from "../utils/isPopular";
 import {
-  resourcesBlogsData,
-  resourcesFindingsData,
   resourcesVideoData,
-} from "../public/data/resourcesDataNew";
+  solutionsResourcesData,
+} from "../public/data/solutions/blogData";
 
-const Resources = ({
-  banner,
-  solutionsResources,
-  // blogData,
-  // findingsData,
-  videoData,
-}) => {
+const Resources = ({ banner, solutionsResources, videoData }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <SolutionsLayout
@@ -48,8 +40,6 @@ export async function getStaticProps() {
     props: {
       banner: filteredBanner,
       solutionsResources: solutionsResourcesData,
-      // blogData: resourcesBlogsData,
-      // findingsData: solutionsResourcesData,
       videoData: resourcesVideoData,
     },
   };

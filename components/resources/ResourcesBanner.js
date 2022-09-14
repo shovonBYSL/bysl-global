@@ -43,15 +43,15 @@ const ResourcesBanner = ({ data }) => {
         <p className="mt-2 mb-2.5 lg:mb-5 xl:mb-10 break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-bold text-gray-800 text-start">
           {title}
         </p>
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="w-full flex justify-between md:justify-start gap-3">
-            <p className="text-[#888B96] text-sm">{date}</p>
-            <div className="flex items-center gap-3">
-              <span className="h-4 w-4 border rounded-full"></span>
-              <p id="time" className="text-[#888B96] text-sm">
-                {timeToRead} to read
-              </p>
-            </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-y-6 lg:gap-6">
+          <div className="w-full flex items-center justify-between md:justify-start gap-3">
+            <p className="text-[#888B96] text-xs lg:text-sm">{date}</p>
+            <span className="h-2.5 w-px bg-gray-900/20" />
+            <p id="time" className="text-[#888B96] text-xs lg:text-sm">
+              {timeToRead} to read
+            </p>
+            <span className="h-2.5 w-px bg-gray-900/20" />
+            <p className="text-[#888B96] text-xs lg:text-sm">125 views</p>
           </div>
           <Link passHref href={`/resource/${url}`}>
             <a className="w-40 text-sm text-center light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 py-2">
