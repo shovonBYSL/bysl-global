@@ -34,7 +34,7 @@ const ResourcesFindings = ({ data }) => {
                     <p className="text-sm lg:text-base font-bold text-gray-500">
                       {type}
                     </p>
-                    <p className="text-gray-800 font-medium lg:text-xl mt-2 mb-4">
+                    <p className="text-gray-800 font-medium text-sm lg:text-xl mt-2 mb-4">
                       {title}
                     </p>
                     <div className="w-full flex items-center justify-between md:justify-start gap-3">

@@ -28,11 +28,11 @@
     clip-path: inset(1px 1px);
   }
   .box {
-    margin: 0 24px;
+    margin: 0 16px;
   }
 
   .aiml-box {
-    margin-left: 24px;
+    margin-left: 16px;
   }
   .navbar {
     display: none;

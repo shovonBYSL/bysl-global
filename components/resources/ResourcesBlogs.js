@@ -31,21 +31,21 @@ const ResourcesBlogs = ({ data }) => {
                       />
                     </div>
                   </div>
-                  <div className="pt-4 px-6">
+                  <div className="pt-4 px-3 xxs:px-6 sm:px-3 md:px-6">
                     <p className="text-sm lg:text-base text-gray-800">{type}</p>
                     <p className="text-gray-800 font-semibold lg:font-bold lg:text-xl xl:text-2xl my-3 xl:mt-5 xl:mb-4">
                       {title}
                     </p>
                   </div>
                 </div>
-                <div className="pb-4 px-6 w-full flex items-center justify-between md:justify-start gap-3">
-                  <p className="text-[#888B96] text-xs lg:text-sm">{date}</p>
+                <div className="pb-4 px-3 xxs:px-6 sm:px-3 md:px-6 w-full flex items-center justify-between md:justify-start gap-3">
+                  <p className="text-[#888B96] text-xs xl:text-sm">{date}</p>
                   <span className="h-2.5 w-px bg-gray-900/20" />
-                  <p id="time" className="text-[#888B96] text-xs lg:text-sm">
+                  <p id="time" className="text-[#888B96] text-xs xl:text-sm">
                     {timeToRead} to read
                   </p>
                   <span className="h-2.5 w-px bg-gray-900/20" />
-                  <p className="text-[#888B96] text-xs lg:text-sm">125 views</p>
+                  <p className="text-[#888B96] text-xs xl:text-sm">125 views</p>
                 </div>
               </a>
             </Link>
