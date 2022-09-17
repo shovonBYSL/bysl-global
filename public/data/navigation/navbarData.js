@@ -6,41 +6,52 @@ const navbars = [
       {
         id: 0,
         title: "Retail",
+        subTitle: "Powerful web solutions to scale exponentially",
         link: "/solutions/retail",
       },
       {
         id: 1,
         title: "Manufacturing",
+        subTitle:
+          "Secure, agile and scalable cloud solutions for manufacturing",
         link: "/solutions/manufacturing",
       },
       {
         id: 2,
         title: "Healthcare",
+        subTitle: "Powering the healthcare of the future",
         link: "/solutions/healthcare",
       },
       {
         id: 3,
         title: "Marketing",
+        subTitle: "Utilize innovative marketing solutions to scale",
         link: "/solutions/marketing",
       },
       {
         id: 4,
         title: "Finance",
+        subTitle: "Creating the next edge for financial institutions",
         link: "/solutions/finance",
       },
       {
         id: 5,
         title: "Food Services",
+        subTitle:
+          "Balance agility and strength through next-gen FoodTech solutions",
         link: "/solutions/food-services",
       },
       {
         id: 6,
         title: "Supply Chain and Logistics",
+        subTitle:
+          "Building a more resilient supply chain through sustainable solutions",
         link: "/solutions/supply-chain-and-logistics",
       },
       {
         id: 7,
         title: "Education",
+        subTitle: "Shaping the future with better technology for education",
         link: "/solutions/education",
       },
     ],
@@ -225,49 +236,52 @@ const navbars = [
       {
         id: 0,
         title: "ICT",
-        subTitle: "Streamlined communication ",
+        subTitle: "Lead breakthroughs with a complete ICT ecosystem",
         link: "/divisions/ict",
       },
       {
         id: 1,
         title: "ITeS",
-        subTitle: "Building future with Gear & Software",
+        subTitle: "Digitize business with integrated technology",
         link: "/divisions/ites",
       },
       {
         id: 2,
         title: "Food Tech",
-        subTitle: "Simplify one-stop Restaurant System",
+        subTitle:
+          "Revolutionizing the food service industry with advanced tech",
         link: "/divisions/food-tech",
       },
       {
         id: 3,
         title: "Digital Commerce",
-        subTitle: "Powerful solutions for Your Business ",
+        subTitle: "Manage your sales & marketing together",
         link: "/divisions/digital-commerce",
       },
       {
         id: 4,
         title: "Supply Chain",
-        subTitle: "Operations through Evolution, Innovation",
+        subTitle: "Innovating with supply chain 4.0",
         link: "/divisions/supply-chain",
       },
       {
         id: 5,
         title: "Information Security",
-        subTitle: "Your Data Security is our Priority ",
+        subTitle:
+          "Managing information with confidentiality, integrity & availability",
         link: "/divisions/information-security",
       },
       {
         id: 6,
         title: "Administration",
-        subTitle: "Integrated, Smart, Customizable Administration Software",
+        subTitle:
+          "Centralized and integrated ERP for finance and business administration",
         link: "/divisions/administration",
       },
       {
         id: 7,
         title: "Data Science",
-        subTitle: "Data Science & Analytics System",
+        subTitle: "Translating data into key growth factors",
         link: "/divisions/data-science",
       },
     ],

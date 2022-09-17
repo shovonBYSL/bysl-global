@@ -24,6 +24,7 @@ const SolutionsImageOverview = ({ data }) => {
           blurDataURL={img}
           height={327}
           width={358}
+          objectFit="contain"
           alt=""
         />
       </div>

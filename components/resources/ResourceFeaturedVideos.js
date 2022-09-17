@@ -58,7 +58,7 @@ const ResourceFeaturedVideos = ({ data }) => {
                 </div>
                 <p
                   className={`text-white/60 mt-2 ${
-                    id === 0 && "lg:text-white/80 lg:text-xl 2xl:text-2xl"
+                    id === 0 && "lg:text-white/80 lg:text-xl 2xl:text-2xl lg:font-semibold"
                   }`}
                 >
                   {title}

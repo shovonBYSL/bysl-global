@@ -57,12 +57,12 @@ const ServicesCard = (props) => {
             </div>
             <div className="hidden xl:block">
               {title2 && (
-                <p className="text-xl mt-1 font-semibold text-gray-300">
+                <p className="text-xl mt-1 font-semibold text-gray-600">
                   {title2}
                 </p>
               )}
               {subTitle && (
-                <p className="text-sm text-gray-300 mt-3">{subTitle} </p>
+                <p className="text-sm text-gray-600 mt-3">{subTitle} </p>
               )}
             </div>
           </div>

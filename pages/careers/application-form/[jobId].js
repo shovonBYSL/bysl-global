@@ -2,9 +2,9 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
-import PhoneInput from 'react-phone-input-2'
+import PhoneInput from "react-phone-input-2";
 // country code
-import 'react-phone-input-2/lib/style.css'
+import "react-phone-input-2/lib/style.css";
 
 import CommonLayout from "../../../layouts/CommonLayout";
 import Loader from "../../../components/shared/Loader";
@@ -178,7 +178,7 @@ const ApplicationForm = () => {
                 name="name"
                 type="text"
                 placeholder="Your name"
-                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600 mb-10"
+                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-600 placeholder-gray-600 focus:outline-gray-800/20 border border-gray-600 mb-10"
               />
 
               {/* email input  */}
@@ -190,7 +190,7 @@ const ApplicationForm = () => {
                 name="email"
                 type="text"
                 placeholder="Your email"
-                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600 mb-10"
+                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-600 placeholder-gray-600 focus:outline-gray-800/20 border border-gray-600 mb-10"
               />
 
               {/* phone input  */}
@@ -206,17 +206,17 @@ const ApplicationForm = () => {
                   name="phone"
                   type="text"
                   placeholder="9666 722788"
-                  className="bg-gray-50 text-sm w-full pl-12 p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600"
+                  className="bg-gray-50 text-sm w-full pl-12 p-2.5 rounded-[5px] text-gray-600 placeholder-gray-600 focus:outline-gray-800/20 border border-gray-600"
                 /> */}
                 <PhoneInput
                   enableSearch
                   disableSearchIcon
                   countryCodeEditable={false}
-                  country={'bd'}
+                  country={"bd"}
                   value={phone}
                   onChange={setPhone}
                   placeholder="+8809666 722788"
-                  inputClass="!bg-gray-50 !text-sm !w-full !pl-12 !p-5 !rounded-[5px] !text-gray-500 !focus:outline-gray-800/20 !border !border-gray-600"
+                  inputClass="!bg-gray-50 !text-sm !w-full !pl-12 !p-5 !rounded-[5px] !text-gray-600 placeholder-gray-600 !focus:outline-gray-800/20 !border !border-gray-600"
                 />
               </div>
 
@@ -229,7 +229,7 @@ const ApplicationForm = () => {
                 name="location"
                 type="text"
                 placeholder="Dhaka"
-                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600 mb-10"
+                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-600 placeholder-gray-600 focus:outline-gray-800/20 border border-gray-600 mb-10"
               />
 
               {/* experience input  */}
@@ -241,7 +241,7 @@ const ApplicationForm = () => {
                 name="experience"
                 rows="5"
                 placeholder="Explain"
-                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600 mb-10 resize-none"
+                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-600 placeholder-gray-600 focus:outline-gray-800/20 border border-gray-600 mb-10 resize-none"
               />
 
               {/* background input  */}
@@ -253,7 +253,7 @@ const ApplicationForm = () => {
                 name="background"
                 rows="5"
                 placeholder="Explain"
-                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600 mb-10 resize-none"
+                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-600 placeholder-gray-600 focus:outline-gray-800/20 border border-gray-600 mb-10 resize-none"
               />
 
               {/* experience2 input  */}
@@ -265,7 +265,7 @@ const ApplicationForm = () => {
                 name="experience2"
                 rows="5"
                 placeholder="Explain"
-                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-500 focus:outline-gray-800/20 border border-gray-600 mb-10 resize-none"
+                className="bg-gray-50 text-sm w-full p-2.5 rounded-[5px] text-gray-600 placeholder-gray-600 focus:outline-gray-800/20 border border-gray-600 mb-10 resize-none"
               />
 
               {/* resume upload  */}
@@ -295,7 +295,7 @@ const ApplicationForm = () => {
                     name="cv"
                     id=""
                   />
-                  <p className="text-sm text-gray-800/80 font-light">
+                  <p className="text-sm text-gray-700 font-light">
                     Upload Resume
                   </p>
                   <p className="text-xs text-[#B1B6C1] font-light">

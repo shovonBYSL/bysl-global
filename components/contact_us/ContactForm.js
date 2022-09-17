@@ -75,7 +75,7 @@ const ContactForm = ({ data }) => {
         <TechnologiesSectionTitle start={true}>
           <TextGradient text="CONTACT US" />
         </TechnologiesSectionTitle>
-        <p className="my-4 lg:my-6 xl:mb-11 text-sm text-gray-600 text-center lg:text-start">
+        <p className="my-4 lg:my-6 xl:mb-11 text-sm lg:text-base text-gray-600 text-center lg:text-start">
           If you have any questions to ask or an idea to communicate, please
           feel free to share with us.
         </p>
@@ -101,7 +101,7 @@ const ContactForm = ({ data }) => {
                 name="name"
                 type="text"
                 placeholder="Full Name"
-                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none"
+                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-600 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none"
               />
             </div>
             <div className="w-full">
@@ -113,7 +113,7 @@ const ContactForm = ({ data }) => {
                 name="email"
                 type="email"
                 placeholder="Your Email"
-                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-blue-800/10  border border-gray-200/30 sm:border-none"
+                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-600 focus:outline-blue-800/10  border border-gray-200/30 sm:border-none"
               />
             </div>
           </div>
@@ -126,7 +126,7 @@ const ContactForm = ({ data }) => {
               name="message"
               rows="5"
               placeholder="Type message...."
-              className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none resize-none"
+              className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-600 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none resize-none"
             />
           </div>
           <div className="flex justify-center">

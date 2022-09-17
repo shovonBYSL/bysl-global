@@ -18,7 +18,7 @@ const ImageShowcase = (props) => {
       <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       {sub && (
         <p
-          className={`xs:px-4 sm:w-4/5 lg:w-3/5 3xl:w-3/5 mx-auto text-center mt-4 text-gray-300 text-sm md:text-base ${
+          className={`xs:px-4 sm:w-4/5 lg:w-3/5 3xl:w-3/5 mx-auto text-center mt-4 text-gray-600 text-sm md:text-base ${
             itesPath && "max-w-[450px]"
           }`}
         >

@@ -63,7 +63,7 @@ const Technologies = ({ data }) => {
                     (id === 9 && "cyber-text-middle sm:top-0")
                   } ${
                     id === 0 &&
-                    "whitespace-pre text-start text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 "
+                    "whitespace-pre text-start text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 opacity-80"
                   }`}
                 >
                   {title}

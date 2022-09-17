@@ -44,7 +44,7 @@ const Service = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/service_banner.svg",
+      banner: "/images/banners/service_banner.png",
       individualServiceITServices: individualServiceITServicesData,
       serviceWhyChooseUs: serviceWhyChooseUsData,
       serviceResourceBlog: solutionsResourcesData,

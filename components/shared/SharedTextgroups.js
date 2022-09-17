@@ -66,7 +66,7 @@ const SectionTitleType = (props) => {
 
   return (
     <p
-      className={`lg:text-lg xl:text-xl text-center text-gray-300 ${
+      className={`lg:text-lg xl:text-xl text-center text-gray-400 ${
         start && "lg:text-start"
       } ${bold && "font-semibold"}`}
     >

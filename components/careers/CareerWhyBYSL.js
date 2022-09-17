@@ -24,7 +24,7 @@ const CareerWhyBYSL = () => {
                   <p className="text-gray-800 font-semibold xl:text-xl mb-4">
                     {title}
                   </p>
-                  <p className="text-gray-300 text-sm xl:text-base w-11/12">
+                  <p className="text-gray-600 text-sm xl:text-base w-11/12">
                     {subTitle}
                   </p>
                 </div>

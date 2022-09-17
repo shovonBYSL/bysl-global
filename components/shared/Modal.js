@@ -33,7 +33,7 @@ const Modal = (props) => {
           {title2 ? <TextGradient text={title} /> : title}
         </p>
         {title2 && (
-          <p className="text-xl text-center font-semibold text-gray-300 mt-3">
+          <p className="text-xl text-center font-semibold text-gray-600 mt-3">
             {title2}
           </p>
         )}

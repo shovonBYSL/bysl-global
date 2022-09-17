@@ -12,7 +12,7 @@ const SolutionCommonBannerText = ({ data }) => {
           <TextGradient text={type} />
         </p>
         <SectionTitleGradient>{heading}</SectionTitleGradient>
-        <p className="mt-4 text-gray-600 text-sm xl:text-base 2xl:w-4/5 mx-4 md:mx-0">
+        <p className="mt-4 text-gray-600 text-sm lg:text-base xl:text-lg 2xl:text-xl mx-4 md:mx-0">
           {subHeading}
         </p>
       </div>
@@ -33,7 +33,7 @@ const SolutionCommonBannerText = ({ data }) => {
           </div>
         </Scroll> */}
         <Scroll smooth={true} offset={-60} duration={500} to="overview">
-          <div className="h-max text-center text-sm font-medium py-2 xl:py-3 w-52 md:w-[137px] cursor-pointer hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
+          <div className="h-max text-center text-sm font-medium py-2 xl:py-3 w-52 md:w-[137px] cursor-pointer border hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
             Overview
           </div>
         </Scroll>
@@ -43,7 +43,7 @@ const SolutionCommonBannerText = ({ data }) => {
           duration={500}
           to="problems&solutions"
         >
-          <div className="h-max text-center text-sm font-medium py-2 xl:py-3 w-52 cursor-pointer hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
+          <div className="h-max text-center text-sm font-medium py-2 xl:py-3 w-52 cursor-pointer border hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
             Problems & Solutions
           </div>
         </Scroll>

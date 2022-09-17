@@ -33,7 +33,7 @@ const InvestmentsBanner = () => {
               to="it-platform"
               className="z-20"
             >
-              <div className="h-max text-center text-sm font-semibold py-2 xl:py-3 !w-[235px] cursor-pointer hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
+              <div className="h-max text-center text-sm font-semibold py-2 xl:py-3 !w-[235px] cursor-pointer border border-blue-900 hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
                 IT Platforms
               </div>
             </Scroll>
@@ -44,7 +44,7 @@ const InvestmentsBanner = () => {
               to="marketplace-platform"
               className="z-20"
             >
-              <div className="h-max text-center text-sm font-semibold py-2 xl:py-3 !w-[235px] cursor-pointer hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
+              <div className="h-max text-center text-sm font-semibold py-2 xl:py-3 !w-[235px] cursor-pointer border border-blue-900 hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
                 Marketplace Platforms
               </div>
             </Scroll>

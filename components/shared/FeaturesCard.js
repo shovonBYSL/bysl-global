@@ -46,7 +46,7 @@ const FeaturesCard = ({ data }) => {
                 {title}
               </p>
               {subTitle && (
-                <p className="text-gray-300 hidden lg:block text-sm 2xl:text-base mt-2">
+                <p className="text-gray-600 hidden lg:block text-sm 2xl:text-base mt-2">
                   {subTitle}
                 </p>
               )}

@@ -20,7 +20,7 @@ const SingleResourceBanner = ({ data }) => {
             <br className="hidden sm:block" />
             Booking Software
           </p>
-          <p className="text-gray-500 text-sm 2xl:text-base mb-10 xl:mb-16 text-center sm:text-start">
+          <p className="text-gray-600 text-sm 2xl:text-base mb-10 xl:mb-16 text-center sm:text-start">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque
             pellentesque adipiscing pulvinar eu vitae eget eu. Vitae risus eget
             malesuada massa mauris. Porttitor platea hendrerit nibh urna

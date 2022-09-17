@@ -29,7 +29,7 @@ const JobDescription = () => {
                 <p className="text-gray-800 text-2xl font-semibold">
                   {data.position}
                 </p>
-                <p className="mt-4 mb-10 lg:mb-0 text-gray-600 text-lg font-medium">
+                <p className="mt-4 mb-10 lg:mb-0 text-gray-400 text-lg font-medium">
                   BYSL Global Technology Group
                 </p>
               </div>

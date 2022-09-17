@@ -14,7 +14,7 @@ const SectionBanner = ({ data }) => {
 
   return (
     <div
-      className={`flex flex-col md:flex-row-reverse justify-between md:items-center gap-4 2xl:gap-6 ${
+      className={`flex flex-col md:flex-row-reverse justify-between md:items-center gap-6 ${
         !missionPath && "py-10 xl:py-16"
       }`}
     >
@@ -37,7 +37,7 @@ const SectionBanner = ({ data }) => {
         <p className="text-gray-800 text-lg md:text-2xl lg:text-4xl xl:text-5xl 3xl:text-[64px] font-bold uppercase mb-1 md:mb-2 lg:mb-3 3xl:mb-5">
           {title}
         </p>
-        <p className="text-gray-600 leading-5 text-xs sm:text-sm 2xl:text-base text-justify">
+        <p className="text-gray-600 leading-5 text-xs sm:text-sm lg:text-base 2xl:text-lg">
           {subTitle}
         </p>
       </div>
@@ -62,7 +62,7 @@ const TextBanner = (props) => {
             {children}
           </TechnologiesSectionTitle>
         )}
-        <p className="mt-6 text-gray-300 leading-5 text-sm md:text-base text-center lg:text-start lg:w-5/6">
+        <p className="mt-6 text-gray-600 leading-5 text-sm md:text-base text-center lg:text-start lg:w-5/6">
           {subTitle}
         </p>
       </div>

@@ -31,8 +31,8 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
 
     return (
       <div
-        className={`rounded lg:p-0 hover:cursor-pointer ${
-          tabOpen === id ? "p-3 light-border-gradient" : "pl-3 border"
+        className={`rounded-[10px] lg:p-0 hover:cursor-pointer ${
+          tabOpen === id ? "p-3 border-gradient" : "pl-3 border"
         }`}
       >
         <div className={`${tabOpen !== id && "py-2.5"} lg:p-2.5`}>
@@ -40,7 +40,7 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
             className={`${
               tabOpen === id
                 ? "font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 "
-                : "text-gray-500"
+                : "text-gray-800"
             }`}
           >
             {problem}
@@ -71,7 +71,7 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
           objectFit="cover"
           alt=""
         />
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 font-semibold mt-2 xl:mt-4 mb-2">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 xl:text-lg font-semibold mt-2 xl:mt-4 mb-2">
           {solution}
         </p>
         <Info text={solutionInfo} />

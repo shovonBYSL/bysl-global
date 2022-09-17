@@ -18,7 +18,7 @@ const FeaturedBanner = (props) => {
           {children}
         </TechnologiesSectionTitle>
         {subTitle && (
-          <p className="my-4 lg:mt-4 lg:mb-16 text-gray-300 text-center lg:text-start lg:w-11/12 text-sm lg:text-base">
+          <p className="my-4 lg:mt-4 lg:mb-16 text-gray-600 text-center lg:text-start lg:w-11/12 text-sm lg:text-base">
             {subTitle}
           </p>
         )}

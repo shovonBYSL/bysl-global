@@ -26,7 +26,7 @@ const Info = (props) => {
   const { text, noMargin } = props;
 
   return (
-    <p className={`${!noMargin && "mb-6"}  text-sm xl:text-base text-gray-500`}>
+    <p className={`${!noMargin && "mb-6"}  text-sm xl:text-base text-gray-600`}>
       {text}
     </p>
   );

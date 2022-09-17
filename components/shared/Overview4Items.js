@@ -43,7 +43,7 @@ const Overview4Items = (props) => {
         <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       )}
       <div
-        className={`grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-6 ${
+        className={`grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-6 ${
           webPath && "!mt-6"
         } ${children && "mt-10"}`}
       >

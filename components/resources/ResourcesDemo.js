@@ -8,7 +8,7 @@ const ResourcesDemo = () => {
   return (
     <div className="py-10 xl:py-16">
       <TechnologiesSectionTitle>Stunning Demos</TechnologiesSectionTitle>
-      <p className="mt-6 text-gray-500 text-center w-11/12 sm:w-4/5 lg:w-2/3 mx-auto">
+      <p className="mt-6 text-gray-600 text-center w-11/12 sm:w-4/5 lg:w-2/3 mx-auto">
         All home pages, inner pages and elements are included with the purchase.
         Easily import the demos and pages with the one click demo import. If you
         want to create new pages the elements and blocks have got your back. Mix

@@ -45,13 +45,13 @@ const ResourcesBanner = ({ data }) => {
         </p>
         <div className="flex flex-col md:flex-row justify-between items-center gap-y-6 lg:gap-6">
           <div className="w-full flex items-center justify-between md:justify-start gap-3">
-            <p className="text-[#888B96] text-xs lg:text-sm">{date}</p>
+            <p className="text-gray-600 text-xs lg:text-sm">{date}</p>
             <span className="h-2.5 w-px bg-gray-900/20" />
-            <p id="time" className="text-[#888B96] text-xs lg:text-sm">
+            <p id="time" className="text-gray-600 text-xs lg:text-sm">
               {timeToRead} to read
             </p>
             <span className="h-2.5 w-px bg-gray-900/20" />
-            <p className="text-[#888B96] text-xs lg:text-sm">{hits} views</p>
+            <p className="text-gray-600 text-xs lg:text-sm">{hits} views</p>
           </div>
           <Link passHref href={`/resource/${url}`}>
             <a className="w-40 text-sm text-center light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 py-2">

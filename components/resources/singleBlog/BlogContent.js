@@ -44,7 +44,7 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
                   />
                   <div className="w-full">
                     <p className=" text-sm text-gray-800">{title}</p>
-                    <p className="mt-2 text-sm text-gray-300">Posted {date}</p>
+                    <p className="mt-2 text-sm text-gray-600">Posted {date}</p>
                   </div>
                 </a>
               </Link>
@@ -65,16 +65,16 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
 
           return (
             <div key={i}>
-              {title && <p className="text-gray-500 font-extrabold">{title}</p>}
+              {title && <p className="text-gray-600 font-extrabold">{title}</p>}
               {text && (
                 <p
-                  className={`mt-4 ${points ? "mb-4" : "mb-10"} text-gray-500`}
+                  className={`mt-4 ${points ? "mb-4" : "mb-10"} text-gray-600`}
                 >
                   {text}
                 </p>
               )}
               {bullet && (
-                <div className="text-gray-500 mb-10 ml-6 lg:ml-10">
+                <div className="text-gray-600 mb-10 ml-6 lg:ml-10">
                   {bullet.map((item, i) => (
                     <p key={i} className="my-2 bullets">
                       <span className="font-bold">{item.title}: </span>
@@ -84,7 +84,7 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
                 </div>
               )}
               {points && (
-                <div className="text-gray-500 mb-10 ml-6">
+                <div className="text-gray-600 mb-10 ml-6">
                   {points.map((item, i) => (
                     <p key={i} className="my-2">
                       <span className="font-bold">{item.title}: </span>
@@ -94,7 +94,7 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
                 </div>
               )}
               {highlight && (
-                <p className="bg-gray-300/30 p-6 2xl:p-8 text-center text-gray-800/80 font-bold text-xl lg:text-2xl 2xl:text-3xl border border-black/30 mb-10">
+                <p className="bg-gray-300/30 p-6 2xl:p-8 text-center text-gray-700 font-bold text-xl lg:text-2xl 2xl:text-3xl border border-black/30 mb-10">
                   {highlight}
                 </p>
               )}
@@ -139,16 +139,16 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
           );
         })}
         <div className="flex gap-x-2 items-center">
-          <p className="text-sm text-gray-300">Share</p>
+          <p className="text-sm text-gray-600">Share</p>
           <div className="flex gap-x-4">
             <FacebookShareButton url={window.location.href}>
-              <ImFacebook className="text-gray-500 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
+              <ImFacebook className="text-gray-600 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
             </FacebookShareButton>
             <LinkedinShareButton url={window.location.href}>
-              <ImLinkedin2 className="text-gray-500 mt-0 cursor-pointer hover:text-blue-900 transition-all duration-150" />
+              <ImLinkedin2 className="text-gray-600 mt-0 cursor-pointer hover:text-blue-900 transition-all duration-150" />
             </LinkedinShareButton>
             <TwitterShareButton url={window.location.href}>
-              <ImTwitter className="text-gray-500 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
+              <ImTwitter className="text-gray-600 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
             </TwitterShareButton>
           </div>
         </div>

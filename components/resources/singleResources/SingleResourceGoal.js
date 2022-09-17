@@ -13,7 +13,7 @@ const SingleResourceGoal = ({ img }) => {
           sit cras phasellus purus. Proin volutpat eget fames sem facilisis nec
           lobortis.
         </p>
-        <p className="text-sm lg:text-base 2xl:text-lg text-gray-500 text-center md:text-start">
+        <p className="text-sm lg:text-base 2xl:text-lg text-gray-600 text-center md:text-start">
           Praesent in eu, id sed cursus molestie pellentesque et tellus. Non
           risus, in eu elit quisque scelerisque sapien. Integer id nec gravida
           ut justo, neque nullam dignissim. Tempus nulla in volutpat elementum,

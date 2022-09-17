@@ -80,7 +80,7 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
                               className={`text-sm font-medium ${
                                 router.pathname === link
                                   ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
-                                  : "text-gray-300"
+                                  : "text-gray-400"
                               }`}
                             >
                               {title}

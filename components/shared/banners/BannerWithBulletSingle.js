@@ -37,7 +37,7 @@ const BannerWithBulletSingle = (props) => {
             </>
           )}
         </TechnologiesSectionTitle>
-        <p className="mt-4 text-gray-300 leading-5 text-sm md:text-base text-center lg:text-start">
+        <p className="mt-4 text-gray-600 leading-5 text-sm md:text-base text-center lg:text-start">
           {subTitle}
         </p>
         <div className="mx-auto lg:mx-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-2.5 gap-x-5 mt-6">
@@ -49,7 +49,7 @@ const BannerWithBulletSingle = (props) => {
                 height={24}
                 width={24}
               />
-              <p className="text-gray-300 text-sm xl:text-base break-words w-full">
+              <p className="text-gray-600 text-sm xl:text-base break-words w-full">
                 {item}
               </p>
             </div>

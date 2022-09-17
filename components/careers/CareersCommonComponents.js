@@ -1,5 +1,5 @@
 const CompanyDescription = () => (
-  <p className="my-6 lg:my-10 text-center lg:text-start text-gray-800/80">
+  <p className="my-6 lg:my-10 text-center lg:text-start text-gray-700">
     BYSL Global Technology Group stands on four core values regarded as the
     fundamental ideological constants to govern the organization. The chronology
     of these values is arranged on a priority basis. The values we belives are
@@ -12,7 +12,7 @@ const JobTitle = ({ title }) => {
   return (
     <div className="text-center">
       <p className="text-gray-800 text-2xl font-semibold">{title}</p>
-      <p className="mt-4 mb-10 lg:mb-0 text-gray-600 text-lg font-medium">
+      <p className="mt-4 mb-10 lg:mb-0 text-gray-400 text-lg font-medium">
         BYSL Global Technology Group
       </p>
     </div>

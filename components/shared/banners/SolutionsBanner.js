@@ -22,7 +22,7 @@ const SolutionsBanner = ({ data }) => {
           <p className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl 3xl:text-[64px] 3xl:leading-[76px] font-semibold max-w-[1286px] mx-auto">
             {title}
           </p>
-          <p className="text-sm xl:text-base mx-2 max-w-[690px] sm:mx-auto mt-5">
+          <p className="text-sm lg:text-base xl:text-lg 2xl:text-xl mx-2 max-w-[690px] sm:mx-auto mt-5">
             {subTitle}
           </p>
           <div className="mt-10 xl:mt-16 w-full flex gap-6 flex-wrap justify-center items-center">

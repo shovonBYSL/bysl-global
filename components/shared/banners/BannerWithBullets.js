@@ -21,7 +21,7 @@ const BannerWithBullets = (props) => {
         <TechnologiesSectionTitle start={true}>
           {children ? children : title}
         </TechnologiesSectionTitle>
-        {subTitle && <p className="mt-4 text-gray-300">{subTitle}</p>}
+        {subTitle && <p className="mt-4 text-gray-600">{subTitle}</p>}
         <div className="grid grid-cols-1 xxs:grid-cols-2 my-5 xl:mt-6 lg:mb-0 gap-y-2.5 lg:gap-x-2 xl:gap-x-0">
           {features.map((item, i) => (
             <div key={i} className="flex items-start">
@@ -31,7 +31,7 @@ const BannerWithBullets = (props) => {
                 height={24}
                 width={24}
               />
-              <p className="text-gray-300 text-sm xl:text-base ml-3 w-full">
+              <p className="text-gray-600 text-sm xl:text-base ml-3 w-full">
                 {item}
               </p>
             </div>

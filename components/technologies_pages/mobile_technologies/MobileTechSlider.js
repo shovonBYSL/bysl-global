@@ -15,7 +15,7 @@ const MobileTechSlider = ({ mobileTechData }) => {
           &nbsp;& retain users
         </TechnologiesSectionTitle>
       </div>
-      <div className="relative max-w-[1200px] mx-auto">
+      <div className="relative max-w-[1200px] mx-auto mobile-slider">
         <div className="xxs:hidden">
           <Slider data={mobileSliderData} size={1.7} />
         </div>

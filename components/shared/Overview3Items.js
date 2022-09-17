@@ -39,7 +39,7 @@ const Overview3Items = (props) => {
               onClick={() => handleOpen(id)}
               className="p-3 xl:p-5 text-center xxs:max-w-none xs:w-max justify-self-center"
             >
-              <div className="mx-auto h-10 2xl:h-16 w-10 2xl:w-16 relative">
+              <div className="mx-auto h-10 xl:h-16 w-10 xl:w-16 relative">
                 <Image
                   src={img}
                   placeholder="blur"
@@ -48,11 +48,11 @@ const Overview3Items = (props) => {
                   alt=""
                 />
               </div>
-              <p className="2xl:text-xl font-medium text-gray-800 mt-5">
+              <p className="lg:text-lg 2xl:text-xl font-medium text-gray-800 mt-5">
                 {title}
               </p>
               {subTitle && (
-                <p className="hidden md:block text-gray-300 2xl:text-lg mt-5 3xl:w-5/6 mx-auto !leading-6">
+                <p className="hidden md:block text-gray-600 lg:text-lg 2xl:text-xl mt-5 mx-auto !leading-6">
                   {subTitle}
                 </p>
               )}

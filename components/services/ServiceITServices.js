@@ -9,7 +9,7 @@ import {
   TechnologiesSectionTitle,
 } from "../shared/SharedTextgroups";
 
-const ServiceITServices = ({data}) => {
+const ServiceITServices = ({ data }) => {
   return (
     <div className="py-10 sm:pb-16 xl:py-16 xl:pb-24">
       <SectionTitleType title="What We Do" />
@@ -33,7 +33,7 @@ const ServiceITServices = ({data}) => {
                   {title}
                 </p>
                 {subTitle && (
-                  <div className="text-sm text-center text-gray-500 hidden sm:block transition-all duration-500">
+                  <div className="text-sm text-center text-gray-600 hidden sm:block transition-all duration-500">
                     {subTitle}
                   </div>
                 )}

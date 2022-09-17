@@ -29,7 +29,7 @@ const databaseSolutionsData = [
 const managingDatabaseData = {
   subTitle:
     "Our comprehensive solutions for managing secure databases help businesses scale operations through cost-effective data management.  ",
-  img: "/images/technologies/database/database_solution_banner.svg",
+  img: "/images/technologies/database/database_solution_banner.png",
   features: [
     "Autonomous data warehouse",
     "Access control",

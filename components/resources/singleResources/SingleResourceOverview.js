@@ -3,7 +3,7 @@ const SingleResourceOverview = () => {
     <p className="font-bold text-gray-800 text-lg mb-4">{title}</p>
   );
   const OverviewInfoDetails = ({ details }) => (
-    <p className="font-medium text-gray-500">{details}</p>
+    <p className="font-medium text-gray-600">{details}</p>
   );
 
   return (
@@ -29,7 +29,7 @@ const SingleResourceOverview = () => {
                   {["Mobile App", "Branding"].map((item, i) => (
                     <p
                       key={i}
-                      className="bg-white/50 px-4 py-2 rounded-lg text-xs text-gray-500"
+                      className="bg-white/50 px-4 py-2 rounded-lg text-xs text-gray-600"
                     >
                       {item}
                     </p>
@@ -37,7 +37,7 @@ const SingleResourceOverview = () => {
                 </div>
               </div>
             </div>
-            <p className="lg:w-2/3 text-sm xl:text-base 2xl:text-lg text-gray-500 mt-7 lg:mt-12 text-center md:text-start ">
+            <p className="lg:w-2/3 text-sm xl:text-base 2xl:text-lg text-gray-600 mt-7 lg:mt-12 text-center md:text-start ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               pulvinar consectetur eu vel sem elementum sollicitudin. Nisl
               libero lobortis lectus posuere. Volutpat at mauris lorem

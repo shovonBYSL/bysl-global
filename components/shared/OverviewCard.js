@@ -10,6 +10,7 @@ const OverviewCard = (props) => {
   const itesPath = getPath("/divisions/ites");
   const digitalCommercePath = getPath("/divisions/digital-commerce");
   const bigDataPath = getPath("/technologies/bigdata");
+  const cyberPath = getPath("/technologies/cyber-security");
   const investmentsPath = getPath("/investments");
 
   return (
@@ -19,10 +20,10 @@ const OverviewCard = (props) => {
           <div
             key={id}
             onClick={() => handleOpen(id)}
-            className={`p-3 xl:p-4 text-center group ${
+            className={`p-3 text-center group ${
               (digitalCommercePath && "xl:py-10") ||
               (investmentsPath && "xl:py-10")
-            }`}
+            } ${!ictPath && "xl:p-4"}`}
           >
             <div
               className={`mx-auto relative ${
@@ -49,14 +50,15 @@ const OverviewCard = (props) => {
               )}
             </div>
             <p
-              className={`2xl:text-xl font-medium ${
-                bigDataPath && "!font-semibold mt-5"
+              className={`xl:text-lg 2xl:text-xl ${
+                (bigDataPath && "!font-semibold mt-5") ||
+                (cyberPath ? "font-semibold" : "font-medium")
               } text-gray-800 mt-4 ${digitalCommercePath && "mt-10"}`}
             >
               {title}
             </p>
             {subTitle && (
-              <p className="hidden md:block text-gray-600 2xl:text-lg mt-3 !leading-6 ">
+              <p className="hidden md:block text-gray-600 xl:text-lg 2xl:text-xl mt-3 !leading-6 ">
                 {subTitle}
               </p>
             )}

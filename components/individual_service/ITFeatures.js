@@ -22,13 +22,13 @@ const ITFeatures = ({ data }) => {
     <div className="py-10 xl:py-16">
       <div className="grid grid-cols-12 gap-x-6 service-features">
         <div className="col-span-12 lg:col-span-4 2xl:col-span-3 lg:pt-4 lg:pl-5">
-          <p className="lg:text-lg xl:text-xl text-center lg:text-start text-gray-300">
+          <p className="lg:text-lg xl:text-xl text-center lg:text-start text-gray-400">
             {type}
           </p>
           <p className="text-gray-800 text-2xl xl:text-3xl font-bold text-center lg:text-start leading-[38px] mb-5 xl:mb-6">
             {title}
           </p>
-          <p className="text-sm text-gray-300 text-center lg:text-start">
+          <p className="text-sm text-gray-400 text-center lg:text-start">
             {subTitle}
           </p>
           <div className="hidden lg:block">

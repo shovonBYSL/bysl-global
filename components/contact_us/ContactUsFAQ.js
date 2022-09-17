@@ -15,7 +15,7 @@ const ContactUsFAQ = () => {
   return (
     <div className="py-10 xl:py-16 flex flex-col md:flex-row 2xl:gap-32">
       <div className="md:w-2/5">
-        <p className="lg:text-xl 3xl:text-2xl text-center text-gray-300 md:text-start font-semibold">
+        <p className="lg:text-xl 3xl:text-2xl text-center text-gray-400 md:text-start font-semibold">
           FAQ
         </p>
         <p className="break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-semibold text-gray-800 mt-4 text-center md:text-start">
@@ -38,7 +38,7 @@ const ContactUsFAQ = () => {
                   />
                 </div>
                 <AccordionBody>
-                  <p className="text-gray-500">{answer}</p>
+                  <p className="text-gray-600">{answer}</p>
                 </AccordionBody>
               </Accordion>
             </div>

@@ -7,7 +7,7 @@ const BulletPoints = ({ data }) => {
         return (
           <div key={i} className="flex items-start text-start gap-3">
             <Image src="/images/items_icon.svg" alt="" height={24} width={24} />
-            <p className="text-gray-500 text-sm break-words w-full">{item}</p>
+            <p className="text-gray-600 text-sm break-words w-full">{item}</p>
           </div>
         );
       })}
@@ -22,7 +22,7 @@ const BulletPointsDouble = ({ data }) => {
         return (
           <div key={i} className="flex items-start text-start gap-3">
             <Image src="/images/items_icon.svg" alt="" height={24} width={24} />
-            <p className="text-gray-500 text-sm break-words w-full">{item}</p>
+            <p className="text-gray-600 text-sm break-words w-full">{item}</p>
           </div>
         );
       })}

@@ -34,7 +34,7 @@ const ResourceCommonBanner = (props) => {
           >
             {title}
           </p>
-          <p className="text-gray-500 text-sm 2xl:text-base mb-10 xl:mb-16 text-center sm:text-start">
+          <p className="text-gray-600 text-sm 2xl:text-base mb-10 xl:mb-16 text-center sm:text-start">
             {subTitle1}
             <br />
             <br />

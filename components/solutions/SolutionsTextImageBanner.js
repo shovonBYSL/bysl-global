@@ -27,13 +27,13 @@ const SolutionsTextImageBanner = ({ data, children }) => {
           <SectionTitleGradient>
             {heading ? heading : children}
           </SectionTitleGradient>
-          <p className="mt-4 text-gray-600 text-sm xl:text-base 2xl:w-4/5 mx-4 md:mx-0">
+          <p className="mt-4 text-gray-600 text-sm lg:text-base xl:text-lg 2xl:text-xl mx-4 md:mx-0">
             {subHeading}
           </p>
         </div>
         <div className="w-full mt-6 lg:mt-8 xl:mt-10 flex flex-col md:flex-row gap-6 justify-center md:justify-start items-center">
           <Scroll smooth={true} offset={-60} duration={500} to="overview">
-            <div className="h-max text-center text-sm font-medium py-2 xl:py-3 w-52 md:w-[137px] cursor-pointer hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
+            <div className="h-max text-center text-sm font-medium py-2 xl:py-3 w-52 md:w-[137px] cursor-pointer border hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
               Overview
             </div>
           </Scroll>
@@ -43,7 +43,7 @@ const SolutionsTextImageBanner = ({ data, children }) => {
             duration={500}
             to="problems&solutions"
           >
-            <div className="h-max text-center text-sm font-medium py-2 xl:py-3 w-52 cursor-pointer hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
+            <div className="h-max text-center text-sm font-medium py-2 xl:py-3 w-52 cursor-pointer border hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
               Problems & Solutions
             </div>
           </Scroll>
@@ -55,7 +55,7 @@ const SolutionsTextImageBanner = ({ data, children }) => {
           placeholder="blur"
           blurDataURL={img}
           objectFit="contain"
-          height={444}
+          height={430}
           width={536}
           priority
           alt=""

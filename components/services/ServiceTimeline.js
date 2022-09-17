@@ -17,7 +17,7 @@ const ServiceTimeline = ({ data }) => {
                 <p className="py-2.5 text-xs sm:text-sm 2xl:text-base 3xl:text-xl font-bold  text-gray-800">
                   {title}
                 </p>
-                <p className="text-[10px] sm:text-sm text-gray-300">
+                <p className="text-[10px] sm:text-sm text-gray-400">
                   {subTitle}
                 </p>
               </div>

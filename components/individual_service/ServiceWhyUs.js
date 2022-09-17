@@ -7,7 +7,7 @@ import {
   TextGradient,
 } from "../shared/SharedTextgroups";
 
-const ServiceWhyUs = ({data}) => {
+const ServiceWhyUs = ({ data }) => {
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Why Choose us?" />
@@ -24,7 +24,7 @@ const ServiceWhyUs = ({data}) => {
               <p className="font-bold lg:font-extrabold text-xl mt-10 mb-2.5">
                 <TextGradient text={title} />
               </p>
-              <p className="text-sm text-gray-300">{subTitle}</p>
+              <p className="text-sm text-gray-600">{subTitle}</p>
             </div>
           );
         })}

@@ -30,25 +30,25 @@ const ResourcesFindings = ({ data }) => {
                     </div>
                   </div>
                   <div className="w-full">
-                    <p className="text-sm lg:text-base font-bold text-gray-500 mt-4 lg:mt-0">
+                    <p className="text-sm lg:text-base font-bold text-gray-600 mt-4 lg:mt-0">
                       {type}
                     </p>
                     <p className="text-gray-800 font-medium xl:text-xl mt-2 mb-4">
                       {title}
                     </p>
                     <div className="w-full flex items-center justify-between md:justify-start gap-3">
-                      <p className="text-[#888B96] text-xs lg:text-sm">
+                      <p className="text-gray-600 text-xs lg:text-sm">
                         {date}
                       </p>
                       <span className="h-2.5 w-px bg-gray-900/20" />
                       <p
                         id="time"
-                        className="text-[#888B96] text-xs lg:text-sm"
+                        className="text-gray-600 text-xs lg:text-sm"
                       >
                         {timeToRead} to read
                       </p>
                       <span className="h-2.5 w-px bg-gray-900/20" />
-                      <p className="text-[#888B96] text-xs lg:text-sm">
+                      <p className="text-gray-600 text-xs lg:text-sm">
                         {hits} views
                       </p>
                     </div>

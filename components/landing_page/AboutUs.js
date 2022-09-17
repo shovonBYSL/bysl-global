@@ -31,7 +31,7 @@ const AboutUs = ({ summaryData, aboutUsData }) => {
                     <CountUp enableScrollSpy end={number} />
                     {(id === 1 && "k") || (id === 3 && "k")}+
                   </p>
-                  <p className="text-base md:text-lg lg:text-xl xl:text-2xl mt-1 xl:mt-2 2xl:mt-4">
+                  <p className="md:text-lg lg:text-xl xl:text-2xl mt-1 xl:mt-2 2xl:mt-4 text-white/80">
                     {title}
                   </p>
                 </div>
@@ -56,7 +56,7 @@ const AboutUs = ({ summaryData, aboutUsData }) => {
                 >
                   {title}
                 </p>
-                <p className="pb-3 xl:pb-5 px-3 xl:px-4 text-xs md:text-sm xl:text-base 2xl:text-lg text-gray-300 xl:!leading-5 ">
+                <p className="pb-3 xl:pb-5 px-3 xl:px-4 text-xs md:text-sm xl:text-base 2xl:text-lg text-gray-600 xl:!leading-5 ">
                   {description}
                 </p>
               </a>

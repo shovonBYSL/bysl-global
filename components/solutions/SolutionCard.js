@@ -12,7 +12,7 @@ const SolutionCard = ({ data }) => {
         <p className="text-gray-800 font-semibold text-lg xl:text-xl 2xl:text-2xl mb-4">
           {solution}
         </p>
-        <p className="text-gray-500 mb-6">{solutionInfo}</p>
+        <p className="text-gray-600 mb-6">{solutionInfo}</p>
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 my-5 xl:mt-6 lg:mb-0 gap-y-2.5 lg:gap-x-2 xl:gap-x-0">
           {solutionPoints.map((item, i) => (
             <div key={i} className="flex items-start">

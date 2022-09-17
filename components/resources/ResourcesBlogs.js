@@ -42,13 +42,13 @@ const ResourcesBlogs = ({ data }) => {
                     </div>
                   </div>
                   <div className="pb-4 px-3 xxs:px-6 sm:px-3 md:px-6 lg:px-3 xl:px-6 w-full flex items-center justify-between md:justify-start gap-3">
-                    <p className="text-[#888B96] text-xs xl:text-sm">{date}</p>
+                    <p className="text-gray-600 text-xs xl:text-sm">{date}</p>
                     <span className="h-2.5 w-px bg-gray-900/20" />
-                    <p id="time" className="text-[#888B96] text-xs xl:text-sm">
+                    <p id="time" className="text-gray-600 text-xs xl:text-sm">
                       {timeToRead} to read
                     </p>
                     <span className="h-2.5 w-px bg-gray-900/20" />
-                    <p className="text-[#888B96] text-xs xl:text-sm">
+                    <p className="text-gray-600 text-xs xl:text-sm">
                       {hits} views
                     </p>
                   </div>

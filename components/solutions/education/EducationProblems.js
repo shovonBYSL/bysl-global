@@ -35,7 +35,7 @@ const EducationProblems = ({ data }) => {
                     </div>
                   </div>
                   {open === id && (
-                    <p className="mt-2 xl:mt-4 ml-10 text-gray-500 text-sm xl:text-base">
+                    <p className="mt-2 xl:mt-4 ml-10 text-gray-600 text-sm xl:text-base">
                       {problemInfo}
                     </p>
                   )}

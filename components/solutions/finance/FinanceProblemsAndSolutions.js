@@ -42,23 +42,23 @@ const FinanceProblemsAndSolutions = ({ data }) => {
           }`}
         >
           <div
-            className={`w-2 lg:w-3 rounded-lg ${
+            className={`w-1.5 rounded-lg ${
               tabOpen === id
                 ? "bg-gradient-to-b from-blue-900 to-blue-700"
                 : "bg-transparent"
             }`}
           ></div>
-          <div>
+          <div className="w-full">
             <p
               className={`2xl:text-lg font-semibold ${
                 tabOpen === id
                   ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
-                  : "text-gray-500"
+                  : "text-gray-800"
               }`}
             >
               {problem}
             </p>
-            <p className="pt-1 text-sm 2xl:text-base text-gray-500">
+            <p className="pt-1 text-sm 2xl:text-base text-gray-600">
               {problemInfo}
             </p>
           </div>

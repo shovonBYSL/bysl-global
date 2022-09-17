@@ -26,12 +26,14 @@ const BlogCard = ({ data }) => {
             <p className="text-xs font-medium">
               <TextGradient text={type} />
             </p>
-            <p className="text-xl font-bold text-gray-800 pt-1 pb-4">{title}</p>
-            <p className="text-sm text-gray-400 pb-4">{subTitle.slice(0, 120)}...</p>
+            <p className="text-xl font-bold text-gray-800 pt-1">{title}</p>
+            <p className="text-sm text-gray-600 py-4">
+              {subTitle.slice(0, 120)}...
+            </p>
           </div>
         </div>
-        <div className="">
-          <div className="flex justify-between text-xs text-gray-300 px-5 pb-6">
+        <div>
+          <div className="flex justify-between text-xs text-gray-600 px-5 pb-2">
             <p>{date}</p>
             <p>{timeToRead} to read</p>
             <p>{hits} views</p>

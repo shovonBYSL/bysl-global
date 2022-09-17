@@ -18,7 +18,7 @@ const EducationSolutionsBanner = ({ banner }) => {
             <br />
             technology for education
           </SectionTitleGradient>
-          <p className="text-gray-600 text-sm xl:text-base w-5/6 max-w-[730px] mx-auto mt-5">
+          <p className="text-gray-600 text-sm lg:text-base xl:text-lg 2xl:text-xl w-5/6 max-w-[730px] mx-auto mt-5">
             We work to streamline information to classroom from the real world
             as much as moving the classroom outside the four walls. We endeavor
             to connect learning with tech utilizing next-gen applications to

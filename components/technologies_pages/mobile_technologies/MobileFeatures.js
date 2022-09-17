@@ -54,7 +54,7 @@ const MobileFeatures = ({ featuresData }) => {
                 <p className="text-sm md:text-base lg:text-lg 2xl:text-xl font-medium text-gray-800">
                   {title}
                 </p>
-                <p className="text-sm lg:text-base xl:text-lg mt-1 text-gray-300 hidden lg:block !leading-6">
+                <p className="text-sm lg:text-base xl:text-lg mt-1 text-gray-600 hidden lg:block !leading-6">
                   {subTitle}
                 </p>
               </div>

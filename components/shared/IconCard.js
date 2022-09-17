@@ -60,7 +60,7 @@ const IconCard = (props) => {
               {title}
             </p>
             {subTitle && (
-              <div className="text-sm 2xl:text-base text-center text-gray-800/40 group-hover:text-white/80 hidden sm:block transition-all duration-500">
+              <div className="text-sm 2xl:text-base text-center text-gray-600 group-hover:text-white/80 hidden sm:block transition-all duration-500">
                 {subTitle}
               </div>
             )}

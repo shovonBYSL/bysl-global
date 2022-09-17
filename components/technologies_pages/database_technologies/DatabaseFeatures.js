@@ -30,8 +30,11 @@ const DatabaseFeatures = ({ data }) => {
       <div className="md:flex items-center mt-10  gap-6">
         <div className="h-44 xs:h-56 lg:h-[475px] md:w-[55%] lg:w-1/2 xl:w-2/5 3xl:w-1/2 relative">
           <Image
-            src="/images/technologies/database/features/database_features_banner.svg"
+            src="/images/technologies/database/features/database_features_banner.png"
             layout="fill"
+            placeholder="blur"
+            blurDataURL="/images/technologies/database/features/database_features_banner.png"
+            objectFit="contain"
             alt=""
           />
         </div>
@@ -53,7 +56,7 @@ const DatabaseFeatures = ({ data }) => {
                 </div>
                 <div className="hidden xl:block">
                   {subTitle && (
-                    <p className="text-sm text-gray-300 mt-5">{subTitle} </p>
+                    <p className="text-sm text-gray-600 mt-5">{subTitle} </p>
                   )}
                 </div>
               </div>

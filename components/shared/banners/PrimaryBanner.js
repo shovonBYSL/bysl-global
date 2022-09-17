@@ -48,8 +48,8 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
           </p>
           <SectionTitleGradient>{children}</SectionTitleGradient>
           <p
-            className={`mt-4 md:max-w-[350px] lg:max-w-[450px] xl:max-w-[600px] 2xl:max-w-[700px] text-gray-600 text-sm sm:text-base xl:text-xl 
-            ${servicePath && "xl:w-full xl:!text-base mt-10"}`}
+            className={`mt-4 md:max-w-[350px] lg:max-w-[450px] xl:max-w-[600px] 2xl:max-w-[700px] text-gray-600 text-sm sm:text-base lg:text-lg xl:text-xl 
+            ${servicePath && "xl:w-full mt-10"}`}
           >
             {sub}
           </p>

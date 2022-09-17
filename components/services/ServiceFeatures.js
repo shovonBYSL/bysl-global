@@ -9,7 +9,7 @@ import {
 import SliderLayout from "../shared/slider/SliderLayout";
 // import { servicesFeaturesData } from "../../public/data/servicesData";
 
-const ServiceFeatures = ({data}) => {
+const ServiceFeatures = ({ data }) => {
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Features" />
@@ -34,7 +34,7 @@ const ServiceFeatures = ({data}) => {
                 {title}
               </p>
               {subTitle && (
-                <div className="text-sm text-gray-500 group-hover:text-white/75 hidden sm:block transition-all duration-500">
+                <div className="text-sm text-gray-600 group-hover:text-white/75 hidden sm:block transition-all duration-500">
                   {subTitle}
                 </div>
               )}
@@ -44,29 +44,27 @@ const ServiceFeatures = ({data}) => {
       </div>
       <div className="md:hidden mt-10 xl:mt-20 card-slider pb-10">
         <SliderLayout size={1}>
-          {data.map(
-            ({ id, img, title, subTitle }) => {
-              return (
-                <SwiperSlide
-                  key={id}
-                  className="bg-gradient-to-r from-blue-700 to-blue-900 p-5 rounded-[20px]"
-                >
-                  <div className="p-3 flex items-center justify-between">
-                    <div className="h-12 w-11 mx-0 relative">
-                      <Image src={img} layout="fill" alt="" />
-                    </div>
-                    <p className="text-[#1890E5] text-5xl font-semibold">
-                      {"0" + (id + 1)}
-                    </p>
+          {data.map(({ id, img, title, subTitle }) => {
+            return (
+              <SwiperSlide
+                key={id}
+                className="bg-gradient-to-r from-blue-700 to-blue-900 p-5 rounded-[20px]"
+              >
+                <div className="p-3 flex items-center justify-between">
+                  <div className="h-12 w-11 mx-0 relative">
+                    <Image src={img} layout="fill" alt="" />
                   </div>
-                  <p className="text-xl text-white font-bold my-3">{title}</p>
-                  {subTitle && (
-                    <div className="text-sm text-white/75">{subTitle}</div>
-                  )}
-                </SwiperSlide>
-              );
-            }
-          )}
+                  <p className="text-[#1890E5] text-5xl font-semibold">
+                    {"0" + (id + 1)}
+                  </p>
+                </div>
+                <p className="text-xl text-white font-bold my-3">{title}</p>
+                {subTitle && (
+                  <div className="text-sm text-white/75">{subTitle}</div>
+                )}
+              </SwiperSlide>
+            );
+          })}
         </SliderLayout>
       </div>
     </div>

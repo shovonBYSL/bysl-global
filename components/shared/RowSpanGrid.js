@@ -42,11 +42,11 @@ const RowSpanGrid = (props) => {
                 >
                   {title}
                 </p>
-                <p className="text-gray-300 text-sm xl:text-base ">
+                <p className="text-gray-600 text-sm xl:text-base ">
                   {subTitle}
                 </p>
                 {subTitle2 && (
-                  <p className="text-gray-300 text-sm xl:text-base mt-4 hidden lg:block">
+                  <p className="text-gray-600 text-sm xl:text-base mt-4 hidden lg:block">
                     {subTitle2}
                   </p>
                 )}
@@ -65,7 +65,7 @@ const RowSpanGrid = (props) => {
                           height={24}
                           width={24}
                         />
-                        <p className="text-gray-300 ml-3 text-sm xl:text-base">
+                        <p className="text-gray-600 ml-3 text-sm xl:text-base">
                           {item}
                         </p>
                       </div>
