@@ -28,7 +28,7 @@ const BlogCard = ({ data }) => {
             </p>
             <p className="text-xl font-bold text-gray-800 pt-1">{title}</p>
             <p className="text-sm text-gray-600 py-4">
-              {subTitle.slice(0, 120)}...
+              {subTitle.slice(0, 100)}...
             </p>
           </div>
         </div>

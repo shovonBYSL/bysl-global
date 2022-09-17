@@ -7,7 +7,7 @@ const solutionsResourcesData = [
     title:
       "What motivates financial professionals to use cloud infrastructure?",
     subTitle:
-      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
+      "For financial institutions, a hybrid cloud solution that combines public cloud flexibility with private cloud protection is an essential tool in this highly regulated and competitive sector.",
     banner: "/images/resources/blogs/what-motivates/banner.png",
     squareImg: "/images/resources/blogs/what-motivates/square.png",
     cardImg: "/images/resources/blogs/what-motivates/card.png",
@@ -64,7 +64,7 @@ const solutionsResourcesData = [
     hits: 29,
     title: "Get impactful outcomes through an AI-driven marketing approach",
     subTitle:
-      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
+      "When used as part of a comprehensive digital strategy, AI can assist marketing experts in operating at the speed of today's market demands, allowing them to focus on even more important matters.",
     banner: "/images/resources/blogs/get-impactful/banner.png",
     squareImg: "/images/resources/blogs/get-impactful/square.png",
     cardImg: "/images/resources/blogs/get-impactful/card.png",
@@ -153,7 +153,7 @@ const solutionsResourcesData = [
     title:
       "Intelligent Marketing and Sales Analytics to Accelerate Digital Transformation",
     subTitle:
-      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
+      "With the aid of cutting-edge analytical tools and processes, BYSL Global Technology assists businesses in developing and implementing fact-based, data-driven, smart marketing and sales solutions.",
     banner: "/images/resources/blogs/intelligent-marketing/banner.png",
     squareImg: "/images/resources/blogs/intelligent-marketing/square.png",
     cardImg: "/images/resources/blogs/intelligent-marketing/card.png",
@@ -188,7 +188,7 @@ const solutionsResourcesData = [
     hits: 55,
     title: "IT-enabled inventory: A key to lead the next-gen omnichannel",
     subTitle:
-      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
+      "Smarts software can be used to make smart decisions, and it will also aid reliability, preference, and clarity for the retailers to make their service optimum ensuring a frictionless consumer journey.",
     banner: "/images/resources/blogs/it-enabled/banner.png",
     squareImg: "/images/resources/blogs/it-enabled/square.png",
     cardImg: "/images/resources/blogs/it-enabled/card.png",
@@ -242,7 +242,7 @@ const solutionsResourcesData = [
     title:
       "Three effective approaches to accelerate business development toward a sustainable supply chain",
     subTitle:
-      "When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. Instagram is great when it come",
+      "The ability to communicate data throughout your supply chain ecosystem in a safe and competent manner along with a comprehensive, precise, real-time view of inventory are vital to achieving supply chain sustainability goals.",
     banner: "/images/resources/blogs/three-effective/banner.png",
     squareImg: "/images/resources/blogs/three-effective/square.png",
     cardImg: "/images/resources/blogs/three-effective/card.png",
