@@ -7,7 +7,9 @@ const BulletPoints = ({ data }) => {
         return (
           <div key={i} className="flex items-start text-start gap-3">
             <Image src="/images/items_icon.svg" alt="" height={24} width={24} />
-            <p className="text-gray-600 text-sm break-words w-full">{item}</p>
+            <p className="text-gray-600 text-sm xl:text-base break-words w-full">
+              {item}
+            </p>
           </div>
         );
       })}

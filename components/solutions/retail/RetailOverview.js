@@ -31,7 +31,7 @@ const RetailOverview = ({ data }) => {
                 {/* <div className="text-xs xl:text-sm font-semibold break-words w-full">
                   <TextGradient text={item} /> 
                 </div> */}
-                <p className="text-xs xl:text-sm text-gray-600 break-words w-full">{item}</p>
+                <p className="text-xs lg:text-sm xl:text-base text-gray-600 break-words w-full">{item}</p>
               </div>
             ))}
           </div>

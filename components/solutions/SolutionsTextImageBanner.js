@@ -8,17 +8,22 @@ const SolutionsTextImageBanner = ({ data, children }) => {
   const { img, type, heading, subHeading } = data;
 
   const retailPath = getPath("/solutions/retail");
+  const manufacturingPath = getPath("/solutions/manufacturing");
 
   return (
     <div
       className={`${
-        retailPath ? "py-10 xl:py-16" : "pt-6 md:pt-0"
+        retailPath
+          ? "py-10 xl:py-16"
+          : manufacturingPath
+          ? "py-10 xl:py-16"
+          : "pt-6 md:pt-0"
       } grid grid-cols-12 gap-6`}
     >
       <div
-        className={`col-span-12 md:col-span-7 ${
-          !retailPath && "mb-6 md:mt-10"
-        }`}
+        className={`col-span-12 ${
+          manufacturingPath ? "md:col-span-6" : "md:col-span-7"
+        } ${!retailPath && "mb-6 md:mt-10"}`}
       >
         <div className="text-center md:text-start">
           <p className="text-sm sm:text-base lg:text-lg font-bold mb-2">
@@ -49,14 +54,18 @@ const SolutionsTextImageBanner = ({ data, children }) => {
           </Scroll>
         </div>
       </div>
-      <div className="col-span-12 md:col-span-5">
+      <div
+        className={`col-span-12 ${
+          manufacturingPath ? "md:col-span-6" : "md:col-span-5"
+        } `}
+      >
         <Image
           src={img}
           placeholder="blur"
           blurDataURL={img}
           objectFit="contain"
-          height={430}
-          width={536}
+          height={manufacturingPath ? 522 : 430}
+          width={manufacturingPath ? 750 : 536}
           priority
           alt=""
         />

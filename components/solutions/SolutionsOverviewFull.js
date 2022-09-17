@@ -3,7 +3,10 @@ const SolutionsOverviewFull = (props) => {
 
   return (
     <div className="py-10 xl:py-16 ">
-      <div className="bg-gradient-to-r from-blue-900 to-blue-700 px-2.5 py-10 xl:py-24 text-center lg:text-start text-white">
+      <div
+        id="overview"
+        className="bg-gradient-to-r from-blue-900 to-blue-700 px-2.5 py-10 xl:py-24 text-center lg:text-start text-white"
+      >
         <div
           className={`grid grid-cols-1 ${
             !center && "lg:grid-cols-2"

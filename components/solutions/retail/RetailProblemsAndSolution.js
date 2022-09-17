@@ -65,7 +65,7 @@ const RetailProblemsAndSolution = ({ data }) => {
             <p className="my-4 text-2xl xl:text-[28px] 2xl:text-[32px] font-semibold">
               <TextGradient text={problem} />
             </p>
-            <p className="text-gray-600 text-sm leading-[22px]">
+            <p className="text-gray-600 text-sm xl:text-base leading-[22px]">
               {problemInfo}
             </p>
           </div>
@@ -86,7 +86,7 @@ const RetailProblemsAndSolution = ({ data }) => {
                     width={24}
                     alt=""
                   />
-                  <div className="text-gray-600 text-sm break-words w-full">
+                  <div className="text-gray-600 text-sm xl:text-base break-words w-full">
                     {item}
                   </div>
                 </div>

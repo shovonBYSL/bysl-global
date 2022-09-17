@@ -345,6 +345,7 @@ const navbars = [
       {
         id: 4,
         title: "Careers",
+        subTitle: "Be a part of BYSL Global Family",
         link: "/careers",
       },
     ],

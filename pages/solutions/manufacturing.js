@@ -1,12 +1,13 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
-import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
 import SolutionsOverviewFull from "../../components/solutions/SolutionsOverviewFull";
 import ProblemsAndSolutionsToggle from "../../components/solutions/ProblemsAndSolutionsToggle";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
+  manufacturingBannerData,
   manufacturingOverviewData,
   manufacturingProblemsAndSolutionsData,
 } from "../../public/data/solutions/manufacturingSolutionsData";
+import SolutionsTextImageBanner from "../../components/solutions/SolutionsTextImageBanner";
 
 const Manufacturing = ({
   banner,
@@ -23,13 +24,9 @@ const Manufacturing = ({
     >
       <div className="box">
         {/* banner section  */}
-        <PrimaryBanner
-          title="Manufacturing Industry"
-          sub="Powering the manufacturing leaders to maximize digitization of processes and operations utilizing comprehensive cloud-based solutions powered by ML, data analytics and IoT. "
-          img={banner}
-        >
+        <SolutionsTextImageBanner data={banner}>
           Secure, agile and scalable cloud solutions for manufacturing
-        </PrimaryBanner>
+        </SolutionsTextImageBanner>
       </div>
 
       {/* overview section  */}
@@ -49,7 +46,7 @@ const Manufacturing = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/manufacturing_solutions_banner.png",
+      banner: manufacturingBannerData,
       overviewData: manufacturingOverviewData,
       solutionsResources: solutionsResourcesData,
       problemsAndSolutionsData: manufacturingProblemsAndSolutionsData,

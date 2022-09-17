@@ -1,3 +1,10 @@
+const manufacturingBannerData = {
+  img: "/images/banners/manufacturing_solutions_banner.png",
+  type: "Manufacturing Industry",
+  subHeading:
+    "Powering the manufacturing leaders to maximize digitization of processes and operations utilizing comprehensive cloud-based solutions powered by ML, data analytics and IoT.",
+};
+
 const manufacturingOverviewData = {
   title: "Why rely on our solutions",
   subTitle1:
@@ -53,4 +60,8 @@ const manufacturingProblemsAndSolutionsData = [
   },
 ];
 
-export { manufacturingOverviewData, manufacturingProblemsAndSolutionsData };
+export {
+  manufacturingBannerData,
+  manufacturingOverviewData,
+  manufacturingProblemsAndSolutionsData,
+};

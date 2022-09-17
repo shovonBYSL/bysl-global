@@ -76,11 +76,11 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
         </p>
         <Info text={solutionInfo} />
         <BulletPointsDouble data={solutionPoints} />
-        <div className="mt-5 flex justify-end">
+        {/* <div className="mt-5 flex justify-end">
           <div className="h-max text-center rounded-md text-sm font-medium py-2 xl:py-3 w-28 md:w-36 xl:w-52 hover:cursor-pointer text-white bg-gradient-to-r hover:from-blue-700 hover:to-blue-700  from-blue-900 to-blue-700">
             Let&apos;s Talk
           </div>
-        </div>
+        </div> */}
       </div>
     );
   };

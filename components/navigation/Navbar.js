@@ -84,7 +84,7 @@ const Navbar = ({ colorChange, specificPath }) => {
       <Link passHref href={link}>
         <a
           onClick={() => link === "/services#it-services" && handleClick(id)}
-          className={`h-full w-full hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] border-transparent p-4 rounded-lg cursor-pointer transition-all duration-500 ${
+          className={`h-full w-full hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] hover:shadow-none border-transparent p-4 rounded-lg cursor-pointer transition-all duration-500 ${
             link !== "/services#it-services" &&
             router.asPath === link &&
             "text-white bg-gradient-to-r from-blue-900 to-blue-700"
@@ -92,7 +92,7 @@ const Navbar = ({ colorChange, specificPath }) => {
         >
           <div
             className={`flex items-center justify-between ${
-              !subTitle && "h-12 xl:h-14"
+              !subTitle && "h-12"
             }`}
           >
             <p
