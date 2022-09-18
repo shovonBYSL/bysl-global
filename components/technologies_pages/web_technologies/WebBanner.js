@@ -21,15 +21,15 @@ const WebBanner = ({ img }) => {
         <Tech img={img.mui} title="Material UI" />
       </div>
       <div className="node absolute top-[100%] translate-y-[-70%] right-[-10%] w-11 xl:w-14 2xl:w-[70px] h-11 xl:h-14 2xl:h-[70px] shadow-[0px_0px_40px_rgba(0,0,0,0.1)] rounded-full">
-        <Tech img={img.node} title="Node Js" />
+        <Tech img={img.node} title="Node JS" />
       </div>
       <div className="vue absolute top-[-10%] right-[-10%] w-14 xl:w-14 2xl:w-20 h-14 xl:h-14 2xl:h-20 shadow-[0px_0px_40px_rgba(0,0,0,0.1)] rounded-full">
-        <Tech img={img.vue} title="Vue Js" />
+        <Tech img={img.vue} title="Vue JS" />
       </div>
 
       <div className="img_animate2 border w-[177px] xl:w-[230px] 2xl:w-[320px] h-[177px] xl:h-[230px] 2xl:h-[320px] relative top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%]">
         <div className="next absolute top-[-10%] left-[-10%] w-14 xl:w-16 2xl:w-20 h-14 xl:h-16 2xl:h-20 shadow-[0px_0px_40px_rgba(0,0,0,0.1)] rounded-full">
-          <Tech img={img.next} title="Next Js" />
+          <Tech img={img.next} title="Next JS" />
         </div>
         <div className="laravel absolute top-[100%] translate-y-[-57%] left-[10%] w-12 xl:w-14 2xl:w-16 h-12 xl:h-14 2xl:h-16 shadow-[0px_0px_40px_rgba(0,0,0,0.1)] rounded-full">
           <Tech img={img.laravel} title="Laravel" />
@@ -46,7 +46,7 @@ const WebBanner = ({ img }) => {
             <Tech img={img.ts} title="TypeScript" />
           </div>
           <div className="react absolute top-[70%] translate-y-[-70%] right-[-18%] w-10 xl:w-12 2xl:w-16 h-10 xl:h-12 2xl:h-16 shadow-[0px_0px_40px_rgba(0,0,0,0.1)] rounded-full">
-            <Tech img={img.react} title="React Js" />
+            <Tech img={img.react} title="React JS" />
           </div>
         </div>
       </div>
