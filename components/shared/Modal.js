@@ -8,8 +8,12 @@ const Modal = (props) => {
   const { title, title2, subTitle, img, hoverImg } = data;
 
   return (
-    <div className="z-30 backdrop-blur-xs h-screen w-screen fixed top-0 left-0">
-      <div className="centered bg-white px-5 py-10 w-[95%] max-w-[500px] mx-auto rounded-[15px] ">
+    <>
+      <div
+        onClick={handleClose}
+        className="z-30 backdrop-blur-xs h-screen w-screen fixed top-0 left-0"
+      ></div>
+      <div className="fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[40] bg-white px-5 py-10 w-[95%] max-w-[500px] mx-auto rounded-[15px] ">
         <div
           className={`mx-auto ${
             shadow
@@ -45,7 +49,7 @@ const Modal = (props) => {
           <AiOutlinePlus className="text-2xl text-gray-600 rotate-45" />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

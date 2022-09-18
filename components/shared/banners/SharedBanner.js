@@ -62,7 +62,7 @@ const TextBanner = (props) => {
             {children}
           </TechnologiesSectionTitle>
         )}
-        <p className="mt-6 text-gray-600 leading-5 text-sm md:text-base text-center lg:text-start lg:w-5/6">
+        <p className="mt-6 text-gray-600 leading-5 text-sm md:text-base xl:text-lg text-center lg:text-start lg:w-5/6">
           {subTitle}
         </p>
       </div>
