@@ -141,15 +141,15 @@ const Footer = () => {
                 <ImLinkedin2 className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-900 transition-all duration-150" />
               </a>
             </Link>
-            <Link passHref href="/">
-              <a target="_blank">
+            <Link passHref href="">
+              {/* <a target="_blank"> */}
                 <ImTwitter className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-700 transition-all duration-150" />
-              </a>
+              {/* </a> */}
             </Link>
-            <Link passHref href="/">
-              <a target="_blank">
+            <Link passHref href="">
+              {/* <a target="_blank"> */}
                 <FaPinterestP className="text-lg text-white/40 hover:cursor-pointer hover:text-pink-800 transition-all duration-150" />
-              </a>
+              {/* </a> */}
             </Link>
           </div>
           <p className="text-white/40 text-xs xxs:text-sm mb-2 lg:mb-0 text-center">

@@ -19,6 +19,12 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
     showDrawer
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "");
+
+    navbars.map((item) => {
+      item?.dropdowns?.find((dropItems) => {
+        router.asPath === dropItems.link && setOpen(item.id);
+      });
+    });
   }, [showDrawer]);
 
   return (
@@ -52,7 +58,7 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
                       router.pathname === link
                         ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
                         : "text-gray-800"
-                    }`}
+                    } `}
                   >
                     {dropdowns ? (
                       title

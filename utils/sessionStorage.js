@@ -38,4 +38,26 @@ const getState = () => {
 const setState = (param) =>
   sessionStorage.setItem("navState", JSON.stringify(param));
 
-export { getItem, setItem, getState, setState, getLegalState, setLegalState };
+// side drawer state
+const getSideDrawer = () => {
+  if (
+    typeof window !== "undefined" &&
+    sessionStorage.hasOwnProperty("sideDrawer")
+  ) {
+    return JSON.parse(sessionStorage.getItem("sideDrawer"));
+  } else return [];
+};
+
+const setSideDrawer = (param) =>
+  sessionStorage.setItem("sideDrawer", JSON.stringify(param));
+
+export {
+  getItem,
+  setItem,
+  getState,
+  setState,
+  getLegalState,
+  setLegalState,
+  getSideDrawer,
+  setSideDrawer,
+};

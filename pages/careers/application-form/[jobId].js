@@ -184,7 +184,7 @@ const ApplicationForm = () => {
               className="max-w-[416px] mx-auto lg:pt-6"
             >
               {/* name input  */}
-              <CareerInputTitle title="Full name" />
+              <CareerInputTitle title="Full name *" />
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -196,7 +196,7 @@ const ApplicationForm = () => {
               />
 
               {/* email input  */}
-              <CareerInputTitle title="Email" />
+              <CareerInputTitle title="Email *" />
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -208,7 +208,7 @@ const ApplicationForm = () => {
               />
 
               {/* phone input  */}
-              <CareerInputTitle title="Phone" />
+              <CareerInputTitle title="Phone *" />
               <div className="mb-10">
                 {/* <p className="flex text-sm absolute inset-y-0 left-0 items-center pl-3 pointer-events-none text-gray-800">
                   +880
@@ -235,7 +235,7 @@ const ApplicationForm = () => {
               </div>
 
               {/* location input  */}
-              <CareerInputTitle title="Location" />
+              <CareerInputTitle title="Location *" />
               <input
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
