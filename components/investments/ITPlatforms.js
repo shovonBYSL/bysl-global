@@ -24,6 +24,7 @@ const ITPlatforms = ({ data }) => {
                   blurDataURL={item}
                   alt=""
                   layout="fill"
+                  objectFit="contain"
                 />
               </div>
             </div>
