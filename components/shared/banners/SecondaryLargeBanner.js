@@ -13,7 +13,7 @@ const SecondaryLargeBanner = ({ data, children }) => {
         <TextGradient text={heading} />
       </p>
       <SectionTitleGradient centered={true}>{children}</SectionTitleGradient>
-      <p className="xs:px-4 sm:w-4/5 lg:w-[62%] mx-auto mt-6 text-gray-600 leading-5 text-sm md:text-base text-center">
+      <p className="xs:px-4 sm:w-4/5 lg:w-[62%] mx-auto mt-6 text-gray-600 leading-5 text-sm md:text-base xl:text-lg 2xl:text-xl text-center">
         {subTitle}
       </p>
       <div className="mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto">

@@ -92,7 +92,7 @@ const Navbar = ({ colorChange, specificPath }) => {
         >
           <div
             className={`flex items-center justify-between ${
-              !subTitle && "h-12"
+              subTitle ? "mb-2" : "h-12"
             }`}
           >
             <p
