@@ -19,7 +19,7 @@ const ResourceFeaturedVideos = ({ data }) => {
       {isOpen && <ResourceVideoModal video={videoFile} setIsOpen={setIsOpen} />}
       <div className="box text-white">
         <TechnologiesSectionTitle white start>
-          Featured Videos
+          Tutorials
         </TechnologiesSectionTitle>
         <div className="mt-6 xl:mt-10 grid lg:grid-flow-col grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-4 xl:gap-6">
           {data.map(({ id, thumb, video, title }) => {
@@ -58,7 +58,8 @@ const ResourceFeaturedVideos = ({ data }) => {
                 </div>
                 <p
                   className={`text-white/60 mt-2 ${
-                    id === 0 && "lg:text-white/80 lg:text-xl 2xl:text-2xl lg:font-semibold"
+                    id === 0 &&
+                    "lg:text-white/80 lg:text-xl 2xl:text-2xl lg:font-semibold"
                   }`}
                 >
                   {title}

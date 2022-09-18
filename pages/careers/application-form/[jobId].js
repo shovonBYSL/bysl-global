@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
 import PhoneInput from "react-phone-input-2";
-// country code
-import "react-phone-input-2/lib/style.css";
+import { useDropzone } from "react-dropzone";
 
 import CommonLayout from "../../../layouts/CommonLayout";
 import Loader from "../../../components/shared/Loader";
@@ -14,19 +13,13 @@ import {
   JobHeader,
 } from "../../../components/careers/CareersCommonComponents";
 import { jobList } from "../../../public/data/careersData";
+import { TextGradient } from "../../../components/shared/SharedTextgroups";
 
 const ApplicationForm = () => {
   const router = useRouter();
   const { jobId } = router.query;
+
   const [data, setData] = useState("");
-
-  useEffect(() => {
-    if (jobId !== "undefined") {
-      // const singleJobData = jobList.find((item) => item.id == jobId);
-      setData(jobList.find((item) => item.url == jobId));
-    }
-  }, [jobId]);
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -36,17 +29,21 @@ const ApplicationForm = () => {
   const [whyFit, setWhyFit] = useState("");
   const [fileName, setFileName] = useState("");
   const [filePath, setFilePath] = useState("");
+  const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
+    accept: {
+      "application/pdf": [],
+    },
+  });
 
-  const uploadFile = async (e) => {
-    if (e.target.files && e.target.files.length > 0) {
-      let file = e.target.files[0];
+  // const uploadFile = async (e) => {
+  //   if (e.target.files && e.target.files.length > 0) {
+  //   let file = e.target.files[0];
+  //   const base64 = await convertBase64(file);
 
-      const base64 = await convertBase64(file);
-
-      setFilePath(base64);
-      setFileName(file.name);
-    }
-  };
+  //   setFilePath(base64);
+  //   setFileName(file.name);
+  //   }
+  // };
 
   let convertBase64 = (file) => {
     return new Promise((resolve, reject) => {
@@ -61,6 +58,24 @@ const ApplicationForm = () => {
     });
   };
 
+  useEffect(() => {
+    if (jobId !== "undefined") {
+      // const singleJobData = jobList.find((item) => item.id == jobId);
+      setData(jobList.find((item) => item.url == jobId));
+    }
+
+    const uploadFile = async (e) => {
+      if (acceptedFiles.length > 0) {
+        const file = acceptedFiles[0];
+        const base64 = await convertBase64(file);
+
+        setFilePath(base64);
+        setFileName(file.name);
+      }
+    };
+    uploadFile();
+  }, [jobId, acceptedFiles]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     Email.send({
@@ -70,7 +85,7 @@ const ApplicationForm = () => {
       To: [
         "anisur.rahman@intelli.global",
         "kawser.shovon@intelli.global",
-        "info@byslglobal.com",
+        // "info@byslglobal.com",
       ],
       From: "anisur.rahman@intelli.global",
       Subject: `Application for ${data.position}`,
@@ -113,7 +128,6 @@ const ApplicationForm = () => {
   //   inputFile.current.click();
   // };
 
-  console.log(phone);
   const previewData = [
     {
       id: 0,
@@ -270,7 +284,7 @@ const ApplicationForm = () => {
 
               {/* resume upload  */}
               <CareerInputTitle title="Upload your resume here *" />
-              <div className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center">
+              {/* <div className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center">
                 <label className="block">
                   <span className="sr-only">Upload Resume</span>
                   <input
@@ -280,21 +294,42 @@ const ApplicationForm = () => {
     "
                   />
                 </label>
+              </div> */}
+
+              <div
+                {...getRootProps({
+                  className: `h-[120px] ${
+                    acceptedFiles.length > 0 ? "mb-4" : "mb-10"
+                  } bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center hover:cursor-pointer`,
+                })}
+              >
+                <input {...getInputProps()} />
+                <div>
+                  <p className="text-sm text-gray-700 font-light">
+                    Upload Resume
+                  </p>
+                  <p className="text-xs text-[#B1B6C1] font-light">
+                    *pdf format only
+                  </p>
+                </div>
               </div>
+              {acceptedFiles.length > 0 && (
+                <div className="mb-10 flex">
+                  <p className="font-semibold text-gray-600 mr-1">
+                    Selected File:
+                  </p>
+                  <TextGradient
+                    text={`${acceptedFiles[0]?.path} - ${acceptedFiles[0]?.size} bytes`}
+                  />
+                </div>
+              )}
+
               {/* <div
                 id="inputParent"
-                onClick={(e) => onButtonClick(e)}
+                // onClick={(e) => onButtonClick(e)}
                 className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center hover:cursor-pointer"
               >
                 <div>
-                  <input
-                    onClick={handleFile}
-                    ref={inputFile}
-                    // hidden
-                    type="file"
-                    name="cv"
-                    id=""
-                  />
                   <p className="text-sm text-gray-700 font-light">
                     Upload Resume
                   </p>
