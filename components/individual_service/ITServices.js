@@ -31,8 +31,9 @@ const ITServices = ({ data }) => {
   };
 
   useEffect(() => {
-    setTabOpen(serviceId ? (serviceId == "" ? 0 : serviceId) : 0);
-    setTabData(data[tabOpen]);
+    setTabOpen(serviceId == "" ? 0 : serviceId);
+    // setTabOpen(serviceId ? (serviceId == "" ? 0 : serviceId) : 0);
+    setTabData(data[serviceId]);
   }, [serviceId, tabData]);
 
   const Tab = ({ data }) => {

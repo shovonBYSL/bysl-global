@@ -18,6 +18,7 @@ const Navbar = ({ colorChange, specificPath }) => {
   };
 
   const handleClick = (id) => {
+    console.log("click", id);
     setItem(id);
     window.location.pathname === "/service" &&
       Router.reload(window.location.pathname);
@@ -79,6 +80,7 @@ const Navbar = ({ colorChange, specificPath }) => {
   // dropdown items
   const DropdownItems = ({ data }) => {
     const { id, title, subTitle, link } = data;
+    // console.log(id);
 
     return (
       <Link passHref href={link}>
@@ -97,9 +99,9 @@ const Navbar = ({ colorChange, specificPath }) => {
           >
             <p
               className={`w-full ${
-                link !== "/services#it-services" &&
-                router.asPath !== link &&
-                "text-gray-800"
+                link !== "/services#it-services" && router.asPath !== link
+                  ? "text-gray-800"
+                  : ""
               }`}
             >
               {title}
@@ -120,7 +122,7 @@ const Navbar = ({ colorChange, specificPath }) => {
               className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs ${
                 link !== "/services#it-services" && router.asPath === link
                   ? "text-white/40"
-                  : "text-[#393e50]/40"
+                  : "text-gray-400"
               }`}
             >
               {subTitle}

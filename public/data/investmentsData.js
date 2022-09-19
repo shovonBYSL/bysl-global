@@ -69,7 +69,7 @@ const marketplacePlatformsData = [
   },
   {
     id: 2,
-    title: "Evrydy",
+    title: "EVRYDY",
     motto: "Food, Health, Beauty & More",
     img: "/images/investments/marketplace_platforms/evrydy.png",
     logo: "/images/investments/marketplace_platforms/evrydy-logo.png",
