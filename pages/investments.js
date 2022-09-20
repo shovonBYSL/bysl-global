@@ -31,7 +31,7 @@ const Investments = ({
       </div>
 
       {/* IT Platform section  */}
-      <div id="it-platform">
+      <div id="it-platform1">
         <GradientBanner
           title="IT Platforms"
           details="Equipped with the right resources, right skill sets, right guidance and a mission to reinvent and lead the next-generation IT environment."
@@ -43,7 +43,7 @@ const Investments = ({
       </div>
 
       {/* Marketplace Platform section  */}
-      <div id="marketplace-platform">
+      <div id="marketplace-platform1">
         <GradientBanner
           title="Marketplace Platforms"
           details="Like an ocean surrounding an island, we are meeting the needs and demands of modern days from every direction with high-end products and services through a cluster of next-generation marketplace platforms."

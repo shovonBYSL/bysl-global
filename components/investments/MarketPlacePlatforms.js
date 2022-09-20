@@ -15,7 +15,7 @@ const MarketPlacePlatforms = ({ data }) => {
                 (id === 3 && "lg:row-span-2 h-[377px] lg:h-[635px]")
               }`}
             >
-              <div className="relative h-full w-full group-hover:scale-110 transition duration-1000">
+              <div className="relative h-full w-full scale-[101%] group-hover:scale-110 transition duration-1000">
                 <Image
                   src={img}
                   placeholder="blur"
@@ -28,11 +28,11 @@ const MarketPlacePlatforms = ({ data }) => {
               <div className="absolute top-0 text-white text-center w-full h-full flex items-center justify-center">
                 <div className="h-4/5 w-11/12 lg:w-4/5 flex flex-col justify-between">
                   <div
-                    className={`relative h-20 mx-auto ${
-                      (id === 0 && "w-[110px] xl:w-[150px]") ||
-                      (id === 1 && "w-[200px] xl:w-[270px]") ||
-                      (id === 2 && "w-[150px] xl:w-[226px]") ||
-                      (id === 3 && "w-[80px] xl:w-[100px]")
+                    className={`relative h-28 mx-auto ${
+                      (id === 0 && "w-[140px] xl:w-[190px]") ||
+                      (id === 1 && "w-[100px] xl:w-[120px]") ||
+                      (id === 2 && "w-[180px] xl:w-[220px]") ||
+                      (id === 3 && "w-[100px] xl:w-[140px]")
                     }`}
                   >
                     <Image
@@ -45,7 +45,9 @@ const MarketPlacePlatforms = ({ data }) => {
                     />
                   </div>
                   <div>
-                    <p className="text-xl font-semibold mb-2.5">{motto} </p>
+                    <p className="text-lg xl:text-xl font-semibold mb-2.5">
+                      {motto}
+                    </p>
                     <p>&#8211; {title} </p>
                   </div>
                 </div>

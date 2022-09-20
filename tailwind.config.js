@@ -49,7 +49,7 @@ module.exports = {
       },
     },
     screens: {
-      xxxs: "320px",
+      xxxs: "321px",
       xxs: "360px",
       xs: "475px",
       ...defaultTheme.screens,

@@ -54,6 +54,7 @@ const Overview4Items = (props) => {
           <Modal data={modalData} handleClose={handleClose} isOpen={isOpen} />
         )}
       </div>
+      <div id="it-platform" />
     </div>
   );
 };

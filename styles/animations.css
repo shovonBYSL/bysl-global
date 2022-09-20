@@ -1,3 +1,6 @@
+@import "tailwindcss/utilities";
+
+@layer utilities {
 /* scroll animation  */
 @keyframes scrollFromBottomAnimation {
     0% {
@@ -105,10 +108,12 @@
   }
  @keyframes opacityAnimationLess {
     0% {
-      opacity: 30%;
+      /* transform: scale(99%); */
+      opacity: 70%;
     }
     
     100% {
+      /* transform: scale(100%); */
       opacity: 100%;
     }
   }
@@ -117,7 +122,7 @@
     animation: opacityAnimation 1.2s;
   }
   .opacity-animation-slow {
-    animation: opacityAnimationLess 1s ease-in;
+    animation: opacityAnimationLess 0.7s ease-in-out;
   }
   .opacity-animation-fast {
     animation: opacityAnimation 0.5s;
@@ -130,4 +135,5 @@
     .service-scroll {
       animation: scrollFromBottomAnimation 0.8s !important;
     }
+  }
   }

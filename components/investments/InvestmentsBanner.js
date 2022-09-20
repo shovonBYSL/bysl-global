@@ -30,7 +30,7 @@ const InvestmentsBanner = () => {
               smooth={true}
               offset={-56}
               duration={500}
-              to="it-platform"
+              to="it-platform1"
               className="z-20"
             >
               <div className="h-max text-center text-sm font-semibold py-2 xl:py-3 !w-[235px] cursor-pointer border border-blue-900 hover:text-white text-blue-700 solutionsBtn transition-all duration-500">
@@ -41,7 +41,7 @@ const InvestmentsBanner = () => {
               smooth={true}
               offset={-56}
               duration={500}
-              to="marketplace-platform"
+              to="marketplace-platform1"
               className="z-20"
             >
               <div className="h-max text-center text-sm font-semibold py-2 xl:py-3 !w-[235px] cursor-pointer border border-blue-900 hover:text-white text-blue-700 solutionsBtn transition-all duration-500">

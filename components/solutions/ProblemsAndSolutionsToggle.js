@@ -26,11 +26,12 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
   const ProblemAndSolutionText = ({ title, subTitle, image }) => {
     return (
       <div className="opacity-animation-slow">
-        <div className="h-10 w-10 lg:h-16 lg:w-16 2xl:h-20 2xl:w-20 mx-auto lg:mx-0 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
+        {/* <div className="opacity-animation-slow rounded-[20px] p-5 bg-white text-center lg:text-start"> */}
+        {/* <div className="h-10 w-10 lg:h-16 lg:w-16 2xl:h-20 2xl:w-20 mx-auto lg:mx-0 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
           <div className="relative h-3 w-5 lg:h-5 2xl:h-6 lg:w-8 2xl:w-10">
             <Image src={image} layout="fill" alt="" />
           </div>
-        </div>
+        </div> */}
         <p className="text-gray-800 font-semibold sm:text-lg 2xl:text-2xl mt-5 mb-2">
           {title}
         </p>
@@ -90,6 +91,15 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
                   key={id}
                   className="rounded-[20px] p-5 bg-white text-center lg:text-start"
                 >
+                  <div className="h-10 w-10 lg:h-16 lg:w-16 2xl:h-20 2xl:w-20 mx-auto lg:mx-0 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
+                    <div className="relative h-3 w-5 lg:h-5 2xl:h-6 lg:w-8 2xl:w-10">
+                      <Image
+                        src={problems ? problemImg : solutionImg}
+                        layout="fill"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                   {problems ? (
                     <ProblemAndSolutionText
                       title={problem}
