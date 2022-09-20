@@ -42,14 +42,14 @@ const investmentOverviewData = [
 ];
 
 const ITPlatformsData = [
-  "/images/investments/it_platforms/logo_0.svg",
-  "/images/investments/it_platforms/logo_1.svg",
-  "/images/investments/it_platforms/logo_2.svg",
-  "/images/investments/it_platforms/logo_3.svg",
-  "/images/investments/it_platforms/logo_4.svg",
-  "/images/investments/it_platforms/logo_5.svg",
-  "/images/investments/it_platforms/logo_6.svg",
-  "/images/investments/it_platforms/logo_7.svg",
+  "/images/investments/it_platforms/logo_0.png",
+  "/images/investments/it_platforms/logo_1.png",
+  "/images/investments/it_platforms/logo_2.png",
+  "/images/investments/it_platforms/logo_3.png",
+  "/images/investments/it_platforms/logo_4.png",
+  "/images/investments/it_platforms/logo_5.png",
+  "/images/investments/it_platforms/logo_6.png",
+  "/images/investments/it_platforms/logo_7.png",
 ];
 
 const marketplacePlatformsData = [
