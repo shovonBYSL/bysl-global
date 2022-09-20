@@ -25,7 +25,7 @@ import "react-toastify/dist/ReactToastify.css";
 function MyApp({ Component, pageProps }) {
   return (
     <div className="bg-[#f8f8fa]">
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </div>
   );
 }
