@@ -103,8 +103,21 @@
       opacity: 100%;
     }
   }
+ @keyframes opacityAnimationLess {
+    0% {
+      opacity: 30%;
+    }
+    
+    100% {
+      opacity: 100%;
+    }
+  }
+
   .opacity-animation {
     animation: opacityAnimation 1.2s;
+  }
+  .opacity-animation-slow {
+    animation: opacityAnimationLess 1s ease-in;
   }
   .opacity-animation-fast {
     animation: opacityAnimation 0.5s;

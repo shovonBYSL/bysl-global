@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['SF Pro Display', ...defaultTheme.fontFamily.sans],
+      },
       backdropBlur: {
         xs: "2px",
       },

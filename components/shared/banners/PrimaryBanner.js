@@ -56,7 +56,9 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
         </div>
       </div>
       <div
-        className={`${ictPath || foodTechPath ? "md:w-[55%]" : "md:w-[45%]"}`}
+        className={`${
+          ictPath || foodTechPath || webPath ? "md:w-[55%]" : "md:w-[45%]"
+        }`}
       >
         {webPath ? (
           <WebBanner img={img} />

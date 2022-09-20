@@ -94,7 +94,7 @@ const Navbar = ({ colorChange, specificPath }) => {
         >
           <div
             className={`flex items-center justify-between ${
-              subTitle ? "mb-2" : "h-12"
+              !subTitle && "h-12"
             }`}
           >
             <p
@@ -119,7 +119,7 @@ const Navbar = ({ colorChange, specificPath }) => {
           </div>
           {subTitle && (
             <p
-              className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs ${
+              className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs mt-2 ${
                 link !== "/services#it-services" && router.asPath === link
                   ? "text-white/40"
                   : "text-gray-400"

@@ -23,7 +23,11 @@ import "react-phone-input-2/lib/style.css";
 import "react-toastify/dist/ReactToastify.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <div className="bg-[#f8f8fa]">
+      <Component {...pageProps} />;
+    </div>
+  );
 }
 
 export default MyApp;

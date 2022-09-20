@@ -50,7 +50,8 @@ const Investments = ({ data }) => {
         </Link>
         <Link passHref href="/investments#marketplace-platform">
           <a className="p-5 min-h-[240px] 3xl:h-[610px] rounded-[10px] xl:rounded-[20px] bg-gradient-to-tr from-[#D4ACFB] to-[#327EC4] text-white text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-[64px] font-semibold flex justify-center items-center ">
-            Marketplace Platforms
+            Marketplace
+            <br /> Platforms
           </a>
         </Link>
       </div>

@@ -2,23 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+/* @import url("http://fonts.cdnfonts.com/css/sf-pro-display"); */
 /* @import url('https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900'); */
-
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "SF Pro Display", sans-serif;
-  /* font-family: SF Pro Display, system-ui, sans-serif; */
-  background-color: #f8f8fa;
-}
-/* html {
-  scroll-behavior: smooth !important;
-} */
+/* font-family: "SF Pro Display", system-ui, sans-serif; */
 
 a {
   color: inherit;
@@ -36,6 +22,7 @@ a {
   .clip-video video {
     clip-path: inset(1px 1px);
   }
+
   .box {
     margin: 0 16px;
   }
@@ -43,12 +30,15 @@ a {
   .aiml-box {
     margin-left: 16px;
   }
+
   .navbar {
     display: none;
   }
+
   #nav:hover .navbar {
     display: block;
   }
+
   .sol-nav {
     display: none;
   }
@@ -58,16 +48,19 @@ a {
     opacity: 0;
     transition: all 0.3s ease-in;
   }
+
   .nav-dropdown:hover .nav-arrow-icon {
     visibility: visible;
     opacity: 100;
   }
+
   .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .centered1 {
     position: absolute;
     top: 50%;
@@ -80,6 +73,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .text-position-left {
     top: 10%;
     left: 10%;
@@ -89,6 +83,7 @@ a {
   .bullets {
     position: relative;
   }
+
   .bullets::after {
     content: "";
     position: absolute;
@@ -104,6 +99,7 @@ a {
   .connector {
     position: relative;
   }
+
   .connector::after {
     content: "";
     position: absolute;
@@ -115,12 +111,15 @@ a {
     background-image: linear-gradient(to right, transparent 50%, #acaeb6 50%);
     background-size: 20px 100%;
   }
+
   .connector.border-active::after {
     background-image: linear-gradient(to right, transparent 50%, #00469f 50%);
   }
+
   .connector:last-child:after {
     width: 0%;
   }
+
   /* custom border */
 
 
@@ -131,78 +130,99 @@ a {
       height: 325px;
     }
   }
+
   @media (min-width: 640px) {
     .box {
       margin: 0 40px;
     }
+
     .aiml-box,
     .marketing-box {
       margin-left: 40px;
     }
   }
+
   @media (min-width: 768px) {
     .mobileTech .swiper-slide-active .mobileTechImg {
       width: 150px;
     }
   }
+
   @media (min-width: 1024px) {
+
     .box,
     .resource-box {
       margin: 0 60px;
     }
+
     .aiml-box,
     .marketing-box {
       margin-left: 60px;
     }
+
     body {
       overflow: auto !important;
     }
   }
+
   @media (min-width: 1280px) {
+
     .box,
     .resource-box {
       margin: 0 100px;
     }
+
     .aiml-box,
     .marketing-box {
       margin-left: 100px;
     }
+
     .mobileTech .swiper-slide-active .mobileTechImg {
       height: 410px;
       width: 190px;
     }
   }
+
   @media (min-width: 1440px) {
+
     .box,
     .resource-box {
       margin: 0 120px;
     }
+
     .aiml-box,
     .marketing-box {
       margin-left: 120px;
     }
   }
+
   @media (min-width: 1536px) {
+
     .box,
     .resource-box,
     .resource-banner-box {
       max-width: 1320px;
       margin: auto !important;
     }
+
     .aiml-box,
     .marketing-box {
       max-width: 1450px;
       margin-left: auto;
     }
   }
+
   @media (min-width: 1700px) {
+
     .aiml-box,
     .marketing-box {
       max-width: 1610px;
       margin-left: auto;
     }
   }
+
   @media (min-width: 2560px) {
+
     .aiml-box,
     .marketing-box {
       max-width: 1320px;
@@ -225,6 +245,7 @@ a {
       transform: translate(-50%, -50%);
     }
   }
+
   @media (max-width: 1023px) {
     .connector::after {
       top: 50%;
@@ -233,4 +254,3 @@ a {
     }
   }
 }
-
