@@ -46,7 +46,7 @@ const MobileTechnologies = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       mobileFeatures: {

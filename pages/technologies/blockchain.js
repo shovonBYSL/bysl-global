@@ -69,7 +69,7 @@ const BlockchainTechnologies = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       banner: "/images/banners/blockchain_technologies_banner.png",

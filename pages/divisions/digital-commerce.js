@@ -51,7 +51,7 @@ const FoodTech = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       banner: "/images/banners/digital_commerce_division_banner.png",

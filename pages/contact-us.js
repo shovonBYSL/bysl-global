@@ -20,7 +20,7 @@ const ContactUs = ({ companyAddress, socialIcons }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       companyAddress,

@@ -56,7 +56,7 @@ const Investments = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       investmentOverview: investmentOverviewData,

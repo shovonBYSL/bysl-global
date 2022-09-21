@@ -38,7 +38,7 @@ const Education = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       banner: "/images/banners/education_solutions_banner.png",

@@ -56,7 +56,7 @@ const InformationSecurity = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       banner: "/images/banners/information_security_division_banner.png",

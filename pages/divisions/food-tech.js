@@ -49,7 +49,7 @@ const FoodTech = ({ banner, foodTechOverview, foodTechAreas, foodBanner }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       banner: "/images/banners/food_tech_division_banner.png",

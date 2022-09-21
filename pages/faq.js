@@ -25,7 +25,7 @@ const FAQ = ({ faqCategories, faqQuestions }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       faqCategories: faqCategoriesData,

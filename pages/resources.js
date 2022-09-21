@@ -33,7 +33,7 @@ const Resources = ({ banner, solutionsResources, videoData }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const filteredBanner = popular(solutionsResourcesData, 5);
 
   return {
