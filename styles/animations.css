@@ -109,7 +109,7 @@
  @keyframes opacityAnimationLess {
     0% {
       /* transform: scale(99%); */
-      opacity: 70%;
+      opacity: 30%;
     }
     
     100% {
@@ -122,7 +122,7 @@
     animation: opacityAnimation 1.2s;
   }
   .opacity-animation-slow {
-    animation: opacityAnimationLess 0.7s ease-in-out;
+    animation: opacityAnimationLess 1s ease-in;
   }
   .opacity-animation-fast {
     animation: opacityAnimation 0.5s;

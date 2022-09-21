@@ -9,13 +9,17 @@ const MarketPlacePlatforms = ({ data }) => {
             <div
               key={id}
               className={`group relative rounded-[16px] overflow-hidden cursor-pointer ${
-                (id === 0 && "lg:row-span-2 h-[377px] lg:h-[635px]") ||
-                (id === 1 && "h-[377px] lg:h-[306px]") ||
-                (id === 2 && "h-[377px] lg:h-[306px]") ||
-                (id === 3 && "lg:row-span-2 h-[377px] lg:h-[635px]")
+                (id === 0 || id === 3) && "lg:row-span-2"
               }`}
             >
-              <div className="relative h-full w-full scale-[101%] group-hover:scale-110 transition duration-1000">
+              <div
+                className={`relative h-[377px]  w-full scale-[101%] group-hover:scale-110 transition duration-1000 ${
+                  (id === 0 && "h-[377px] lg:h-[635px]") ||
+                  (id === 1 && "h-[377px] lg:h-[306px]") ||
+                  (id === 2 && "h-[377px] lg:h-[306px]") ||
+                  (id === 3 && "h-[377px] lg:h-[635px]")
+                }`}
+              >
                 <Image
                   src={img}
                   placeholder="blur"

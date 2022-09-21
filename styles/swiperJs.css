@@ -4,6 +4,12 @@
   display: none !important;
 }
 
+.techSlides .swiper-wrapper{
+  transition-timing-function : linear;
+  -webkit-transition-timing-function:linear!important;
+    -o-transition-timing-function:linear!important;
+}
+
 .mobileTech .swiper-wrapper {
   align-items: center;
 }
