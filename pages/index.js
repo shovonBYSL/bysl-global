@@ -56,8 +56,7 @@ export async function getStaticProps() {
       projectsShowcase: projectsShowcaseData,
       investmentData,
       solutionsBanner: "/images/banners/landing_solution_banner.webm",
-      landingBanner: "https://i.ibb.co/LJhWtPS/landing-banner.png",
-      // landingBanner: "/images/banners/landing_banner.png",
+      landingBanner: "/images/banners/landing_banner.png",
     },
   };
 }
