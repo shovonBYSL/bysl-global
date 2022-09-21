@@ -99,7 +99,7 @@ const Navbar = ({ colorChange, specificPath }) => {
           >
             <p
               className={`w-full ${
-                link !== "/services#it-services" && router.asPath !== link
+                (link !== "/services#it-services" && router.asPath !== link)
                   ? "text-gray-800"
                   : ""
               }`}
