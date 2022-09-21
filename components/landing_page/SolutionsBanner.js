@@ -1,6 +1,13 @@
+// import { useState } from "react";
+// import { Tooltip, Whisper } from "rsuite";
+// import MouseTooltip from "react-sticky-mouse-tooltip";
+
 import SolutionsNav from "../navigation/SolutionsNav";
+import { useEffect } from "react";
 
 const SolutionsBanner = ({ data }) => {
+  // const [isVisible, setIsVisible] = useState(false);
+
   const handleClick = () => {
     const solnav = document.querySelector(".sol-nav");
 
@@ -9,9 +16,16 @@ const SolutionsBanner = ({ data }) => {
       : (solnav.style.display = "block");
   };
 
+  // useEffect(() => {}, [isVisible]);
+
   return (
-    <>
+    <div
+      // onMouseEnter={() => setIsVisible(true)}
+      // onMouseLeave={() => setIsVisible(false)}
+    >
       <SolutionsNav />
+      {/* <Whisper followCursor speaker={<Tooltip>Click Here</Tooltip>}> */}
+      {/* <MouseTooltip visible={isVisible} offsetX={15} offsetY={10}> */}
       <div
         onClick={handleClick}
         className="solutions-box cursor-pointer relative my-10 xl:my-16 bg-gradient-to-r from-blue-900 to-blue-700 min-h-max 2xl:h-96 3xl:h-[531px] p-5 md:p-7 xl:p-10 3xl:p-16 lg:pl-16 xl:pl-32 text-center text-white rounded-xl lg:rounded-3xl 2xl:rounded-[40px]"
@@ -35,7 +49,9 @@ const SolutionsBanner = ({ data }) => {
           </div>
         </div>
       </div>
-    </>
+      {/* </Whisper> */}
+      {/* </MouseTooltip> */}
+    </div>
   );
 };
 

@@ -7,8 +7,8 @@
 /* font-family: "SF Pro Display", system-ui, sans-serif; */
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 .react-tel-input .country-list .search-box {
