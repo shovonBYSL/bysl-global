@@ -53,7 +53,7 @@ const SupplyChain = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/supply_chain_division_banner.png",

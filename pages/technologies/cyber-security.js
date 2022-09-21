@@ -63,7 +63,7 @@ const CyberSecurityTechnologies = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/cyber-security_technologies_banner.png",

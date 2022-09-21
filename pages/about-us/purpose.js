@@ -19,7 +19,7 @@ const CompanyPurpose = ({ purposeBanner, purposeCard, purposeButton }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       purposeBanner: purposeBannerData,

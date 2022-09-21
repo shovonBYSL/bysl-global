@@ -49,7 +49,7 @@ const Administration = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: administrationBannerData,

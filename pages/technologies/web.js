@@ -64,7 +64,7 @@ const WebTechnologies = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: webBannerData,

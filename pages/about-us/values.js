@@ -19,7 +19,7 @@ const CompanyValues = ({ valuesBanner, valuesCard, valuesButton }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       valuesBanner: valuesBannerData,

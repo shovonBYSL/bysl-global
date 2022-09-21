@@ -41,7 +41,7 @@ const Service = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/service_banner.png",

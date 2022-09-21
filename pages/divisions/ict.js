@@ -51,7 +51,7 @@ const ICT = ({ banner, ictSectors, erpBanner, ictSolutions, products }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/ict_division_banner.png",

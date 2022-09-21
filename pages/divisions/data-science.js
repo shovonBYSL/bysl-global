@@ -58,7 +58,7 @@ const DataScience = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/data_science_division_banner.png",

@@ -60,7 +60,7 @@ const AIMLTechnologies = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/ai-ml_technologies_banner.png",

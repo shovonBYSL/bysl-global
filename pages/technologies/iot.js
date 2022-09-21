@@ -79,7 +79,7 @@ const IotTechnologies = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/iot_technologies_banner.png",

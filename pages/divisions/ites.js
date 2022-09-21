@@ -43,7 +43,7 @@ const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/ites_division_banner.png",

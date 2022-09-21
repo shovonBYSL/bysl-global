@@ -46,7 +46,7 @@ const BigdataTechnologies = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       databaseBanner: databaseBannerData,

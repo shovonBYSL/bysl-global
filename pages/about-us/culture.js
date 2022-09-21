@@ -21,7 +21,7 @@ const CompanyCulture = ({ cultureBanner, cultureCard, cultureButton }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       cultureBanner: cultureBannerData,

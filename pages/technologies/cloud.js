@@ -59,7 +59,7 @@ const CloudTechnologies = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/cloud_technologies_banner.webm",

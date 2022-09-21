@@ -18,7 +18,7 @@ const CompanyMission = ({ missionBanner, missionCard, missionButton }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       missionBanner: missionBannerData,
