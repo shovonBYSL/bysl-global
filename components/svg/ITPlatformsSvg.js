@@ -1,8 +1,8 @@
 const ITPlatformsSvg = () => {
   return (
     <svg
-    //   width="640"
-    //   height="458"
+      //   width="640"
+      //   height="458"
       viewBox="0 0 640 458"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const ITPlatformsSvg = () => {
           fill="white"
           shape-rendering="crispEdges"
         />
-        <g clip-path="url(#clip0_15_2781)">
+        <g clipPath="url(#clip0_15_2781)">
           <path
             d="M434.586 263.091L446.623 262.692L427.666 274.24L415.636 274.638L434.586 263.091Z"
             fill="url(#paint0_linear_15_2781)"
@@ -235,9 +235,9 @@ const ITPlatformsSvg = () => {
           width="110"
           height="110"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -270,9 +270,9 @@ const ITPlatformsSvg = () => {
           width="110"
           height="110"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -305,9 +305,9 @@ const ITPlatformsSvg = () => {
           width="110"
           height="110"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -340,9 +340,9 @@ const ITPlatformsSvg = () => {
           width="110"
           height="110"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -375,9 +375,9 @@ const ITPlatformsSvg = () => {
           width="110"
           height="110"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -410,9 +410,9 @@ const ITPlatformsSvg = () => {
           width="110"
           height="110"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -446,14 +446,14 @@ const ITPlatformsSvg = () => {
           y2="272.07"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.1372" stop-color="#CBCACB" stop-opacity="0.1425" />
-          <stop offset="0.2908" stop-color="#999797" stop-opacity="0.3022" />
-          <stop offset="0.4421" stop-color="#6E6C6C" stop-opacity="0.4594" />
-          <stop offset="0.5877" stop-color="#4E4A4B" stop-opacity="0.6107" />
-          <stop offset="0.7261" stop-color="#363233" stop-opacity="0.7545" />
-          <stop offset="0.8543" stop-color="#282425" stop-opacity="0.8877" />
-          <stop offset="0.9624" stop-color="#231F20" />
+          <stop stopColor="white" stop-opacity="0" />
+          <stop offset="0.1372" stopColor="#CBCACB" stop-opacity="0.1425" />
+          <stop offset="0.2908" stopColor="#999797" stop-opacity="0.3022" />
+          <stop offset="0.4421" stopColor="#6E6C6C" stop-opacity="0.4594" />
+          <stop offset="0.5877" stopColor="#4E4A4B" stop-opacity="0.6107" />
+          <stop offset="0.7261" stopColor="#363233" stop-opacity="0.7545" />
+          <stop offset="0.8543" stopColor="#282425" stop-opacity="0.8877" />
+          <stop offset="0.9624" stopColor="#231F20" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_15_2781"
@@ -463,8 +463,8 @@ const ITPlatformsSvg = () => {
           y2="273.351"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#810098" />
-          <stop offset="1" stop-color="#470A73" />
+          <stop stopColor="#810098" />
+          <stop offset="1" stopColor="#470A73" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_15_2781"
@@ -474,8 +474,8 @@ const ITPlatformsSvg = () => {
           y2="250.615"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#167C91" />
-          <stop offset="1" stop-color="#00C6F8" />
+          <stop stopColor="#167C91" />
+          <stop offset="1" stopColor="#00C6F8" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_15_2781"
@@ -485,8 +485,8 @@ const ITPlatformsSvg = () => {
           y2="257.772"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0066AA" />
-          <stop offset="1" stop-color="#00ABED" />
+          <stop stopColor="#0066AA" />
+          <stop offset="1" stopColor="#00ABED" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_15_2781"
@@ -496,8 +496,8 @@ const ITPlatformsSvg = () => {
           y2="275.215"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#004980" />
-          <stop offset="1" stop-color="#0085C5" />
+          <stop stopColor="#004980" />
+          <stop offset="1" stopColor="#0085C5" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_15_2781"
@@ -507,8 +507,8 @@ const ITPlatformsSvg = () => {
           y2="272.425"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C7009A" />
-          <stop offset="1" stop-color="#FD0093" />
+          <stop stopColor="#C7009A" />
+          <stop offset="1" stopColor="#FD0093" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_15_2781"
@@ -518,14 +518,14 @@ const ITPlatformsSvg = () => {
           y2="272.07"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.1372" stop-color="#CBCACB" stop-opacity="0.1425" />
-          <stop offset="0.2908" stop-color="#999797" stop-opacity="0.3022" />
-          <stop offset="0.4421" stop-color="#6E6C6C" stop-opacity="0.4594" />
-          <stop offset="0.5877" stop-color="#4E4A4B" stop-opacity="0.6107" />
-          <stop offset="0.7261" stop-color="#363233" stop-opacity="0.7545" />
-          <stop offset="0.8543" stop-color="#282425" stop-opacity="0.8877" />
-          <stop offset="0.9624" stop-color="#231F20" />
+          <stop stopColor="white" stop-opacity="0" />
+          <stop offset="0.1372" stopColor="#CBCACB" stop-opacity="0.1425" />
+          <stop offset="0.2908" stopColor="#999797" stop-opacity="0.3022" />
+          <stop offset="0.4421" stopColor="#6E6C6C" stop-opacity="0.4594" />
+          <stop offset="0.5877" stopColor="#4E4A4B" stop-opacity="0.6107" />
+          <stop offset="0.7261" stopColor="#363233" stop-opacity="0.7545" />
+          <stop offset="0.8543" stopColor="#282425" stop-opacity="0.8877" />
+          <stop offset="0.9624" stopColor="#231F20" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_15_2781"
@@ -535,12 +535,12 @@ const ITPlatformsSvg = () => {
           y2="139.537"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.2142" stop-color="#EA4235" stop-opacity="0" />
-          <stop offset="0.2612" stop-color="#DF4235" stop-opacity="0.0711098" />
-          <stop offset="0.4347" stop-color="#BD4235" stop-opacity="0.3336" />
-          <stop offset="0.5995" stop-color="#A54235" stop-opacity="0.5829" />
-          <stop offset="0.7506" stop-color="#964235" stop-opacity="0.8115" />
-          <stop offset="0.8752" stop-color="#914235" />
+          <stop offset="0.2142" stopColor="#EA4235" stop-opacity="0" />
+          <stop offset="0.2612" stopColor="#DF4235" stop-opacity="0.0711098" />
+          <stop offset="0.4347" stopColor="#BD4235" stop-opacity="0.3336" />
+          <stop offset="0.5995" stopColor="#A54235" stop-opacity="0.5829" />
+          <stop offset="0.7506" stopColor="#964235" stop-opacity="0.8115" />
+          <stop offset="0.8752" stopColor="#914235" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_15_2781"
@@ -550,10 +550,10 @@ const ITPlatformsSvg = () => {
           y2="165.528"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.1258" stop-color="#AE8207" />
-          <stop offset="0.3184" stop-color="#C29005" stop-opacity="0.7082" />
-          <stop offset="0.7098" stop-color="#F4B401" stop-opacity="0.1152" />
-          <stop offset="0.7858" stop-color="#FFBB00" stop-opacity="0" />
+          <stop offset="0.1258" stopColor="#AE8207" />
+          <stop offset="0.3184" stopColor="#C29005" stop-opacity="0.7082" />
+          <stop offset="0.7098" stopColor="#F4B401" stop-opacity="0.1152" />
+          <stop offset="0.7858" stopColor="#FFBB00" stop-opacity="0" />
         </linearGradient>
         <clipPath id="clip0_15_2781">
           <rect

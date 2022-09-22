@@ -20,7 +20,7 @@ a {
 
 @layer utilities {
   .clip-video video {
-    clip-path: inset(1px 1px);
+    clippath: inset(1px 1px);
   }
 
   .box {
@@ -122,8 +122,6 @@ a {
 
   /* custom border */
 
-
-
   /* media queries  */
   @media (min-width: 360px) {
     .mobileTech .swiper-slide-active .mobileTechImg {
@@ -149,7 +147,6 @@ a {
   }
 
   @media (min-width: 1024px) {
-
     .box,
     .resource-box {
       margin: 0 60px;
@@ -166,7 +163,6 @@ a {
   }
 
   @media (min-width: 1280px) {
-
     .box,
     .resource-box {
       margin: 0 100px;
@@ -184,7 +180,6 @@ a {
   }
 
   @media (min-width: 1440px) {
-
     .box,
     .resource-box {
       margin: 0 120px;
@@ -197,7 +192,6 @@ a {
   }
 
   @media (min-width: 1536px) {
-
     .box,
     .resource-box,
     .resource-banner-box {
@@ -213,7 +207,6 @@ a {
   }
 
   @media (min-width: 1700px) {
-
     .aiml-box,
     .marketing-box {
       max-width: 1610px;
@@ -222,7 +215,6 @@ a {
   }
 
   @media (min-width: 2560px) {
-
     .aiml-box,
     .marketing-box {
       max-width: 1320px;

@@ -1,12 +1,12 @@
 <svg width="452" height="850" viewBox="0 0 452 850" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_82_3327)">
+<g clipPath="url(#clip0_82_3327)">
 <rect width="452" height="850" fill="white"/>
 <rect x="74" y="86.126" width="424" height="293" rx="51" transform="rotate(-41.7124 74 86.126)" fill="url(#paint0_linear_82_3327)"/>
 </g>
 <defs>
 <linearGradient id="paint0_linear_82_3327" x1="319.316" y1="86.126" x2="21.8949" y2="155.392" gradientUnits="userSpaceOnUse">
-<stop stop-color="#E8E0FF"/>
-<stop offset="1" stop-color="#B4CFF9"/>
+<stop stopColor="#E8E0FF"/>
+<stop offset="1" stopColor="#B4CFF9"/>
 </linearGradient>
 <clipPath id="clip0_82_3327">
 <rect width="452" height="850" fill="white"/>
