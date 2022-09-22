@@ -1,4 +1,7 @@
+import Lottie from "lottie-react";
 import SolutionsNav from "../navigation/SolutionsNav";
+
+import solutionsBannerLottie from "../../public/data/lottieAnimations/landing_solution_banner.json"
 
 const SolutionsBanner = ({ data }) => {
   const handleClick = () => {
@@ -47,7 +50,8 @@ const SolutionsBanner = ({ data }) => {
             </p>
           </div>
           <div className="sm:w-1/2 xs:px-12 sm:px-0 2xl:pl-10 flex justify-center sm:justify-end clip-video">
-            <video className="w-full h-full" src={data} autoPlay muted loop />
+            {/* <video className="w-full h-full" src={data} autoPlay muted loop /> */}
+            <Lottie animationData={solutionsBannerLottie} loop={true} />
           </div>
         </div>
       </div>
