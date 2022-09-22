@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { BYSLMainLogo, BYSLWhiteLogo } from "../svg/BYSLLogo";
+import { MenubarRGB, MenubarWhite } from "../svg/Menubar";
 
 import SideDrawer from "./SideDrawer";
 
@@ -25,7 +27,7 @@ const NavbarSmall = ({ colorChange, specificPath }) => {
           onClick={handleClick}
           // onClick={() => setShowDrawer(!showDrawer)}
         >
-          <Image
+          {/* <Image
             src={
               !colorChange && specificPath
                 ? "/images/menuBar_white.svg"
@@ -33,11 +35,13 @@ const NavbarSmall = ({ colorChange, specificPath }) => {
             }
             layout="fill"
             alt=""
-          />
+          /> */}
+
+          {!colorChange && specificPath ? <MenubarWhite /> : <MenubarRGB />}
         </div>
         <Link passHref href="/">
           <div className="w-max mx-auto flex justify-center items-center">
-            <Image
+            {/* <Image
               src={
                 !colorChange && specificPath
                   ? "/images/logo_light.svg"
@@ -46,7 +50,12 @@ const NavbarSmall = ({ colorChange, specificPath }) => {
               alt=""
               height={28}
               width={57}
-            />
+            /> */}
+            {!colorChange && specificPath ? (
+              <BYSLWhiteLogo />
+            ) : (
+              <BYSLMainLogo />
+            )}
           </div>
         </Link>
       </div>

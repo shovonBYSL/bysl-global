@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useState } from "react";
-// import { AnimatePresence, motion } from "framer-motion";
 
 import SectionHeader from "../shared/SectionHeader";
 import { TextGradient } from "../shared/SharedTextgroups";
@@ -24,23 +23,10 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
     setProblems(false);
   };
 
-  // <AnimatePresence mode={"wait"}>
-  //   <motion.div
-  //     className="item"
-  //     initial={{ scale: 0.8, opacity: 0 }}
-  //     animate={{ scale: 1, opacity: 1 }}
-  //     exit={{ scale: 0.8, opacity: 0 }}
-  //     transition={{ type: "spring" }}
-  //     // key={current}
-  //   >
-  {
-    /* {current} */
-  }
-
   const ProblemAndSolutionText = ({ title, subTitle, image }) => {
     return (
       // <div className="opacity-animation-slow">
-      <div className="opacity-animation-slow rounded-[20px] p-5 bg-white text-center lg:text-start h-full">
+      <div className="rounded-[20px] p-5 bg-white text-center lg:text-start h-full">
         <div className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20 mx-auto lg:mx-0 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
           <div className="relative h-6 w-6 md:h-8 md:w-8 2xl:h-10 2xl:w-10">
             <Image src={image} layout="fill" alt="" objectFit="contain" />
@@ -53,8 +39,6 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
       </div>
     );
   };
-  //   </motion.div>
-  // </AnimatePresence>
 
   return (
     <div id="problems&solutions" className="py-10 xl:py-16">
@@ -97,6 +81,7 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
               return (
                 <div
                   key={id}
+                  className="flip group"
                   // className="rounded-[20px] p-5 bg-white text-center lg:text-start h-full"
                 >
                   {/* <div className="h-10 w-10 lg:h-16 lg:w-16 2xl:h-20 2xl:w-20 mx-auto lg:mx-0 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
@@ -108,7 +93,7 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
                       />
                     </div>
                   </div> */}
-                  {problems ? (
+                  {/* {problems ? (
                     <ProblemAndSolutionText
                       title={problem}
                       subTitle={problemInfo}
@@ -120,7 +105,22 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
                       subTitle={solutionInfo}
                       image={icon}
                     />
-                  )}
+                  )} */}
+
+                  <div className={` ${problems ? "front" : "back"}`}>
+                    <ProblemAndSolutionText
+                      title={problem}
+                      subTitle={problemInfo}
+                      image={icon}
+                    />
+                  </div>
+                  <div className={` ${!problems ? "front" : "back"}`}>
+                    <ProblemAndSolutionText
+                      title={solution}
+                      subTitle={solutionInfo}
+                      image={icon}
+                    />
+                  </div>
                 </div>
               );
             }

@@ -7,6 +7,7 @@ import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
 import { navbars } from "../../public/data/navigation/navbarData";
 import { setItem } from "../../utils/sessionStorage";
+import { BYSLMainLogo, BYSLWhiteLogo } from "../svg/BYSLLogo";
 
 const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
@@ -30,8 +31,8 @@ const Navbar = ({ colorChange, specificPath }) => {
   const NavbarLogo = () => {
     return (
       <Link passHref href="/">
-        <a className="relative h-10 w-16 xl:w-20 hover:cursor-pointer">
-          <Image
+        <a className="hover:cursor-pointer">
+          {/* <Image
             src={
               !colorChange && specificPath
                 ? "/images/logo_light.svg"
@@ -40,7 +41,8 @@ const Navbar = ({ colorChange, specificPath }) => {
             layout="fill"
             priority
             alt=""
-          />
+          /> */}
+          {!colorChange && specificPath ? <BYSLWhiteLogo /> : <BYSLMainLogo />}
         </a>
       </Link>
     );
@@ -99,7 +101,7 @@ const Navbar = ({ colorChange, specificPath }) => {
           >
             <p
               className={`w-full ${
-                (link !== "/services#it-services" && router.asPath !== link)
+                link !== "/services#it-services" && router.asPath !== link
                   ? "text-gray-800"
                   : ""
               }`}

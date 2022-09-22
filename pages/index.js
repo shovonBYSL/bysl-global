@@ -12,6 +12,7 @@ import {
   investmentData,
   techData,
 } from "../public/data/landingPageData";
+import LandingBanner from "../components/svg/LandingBanner";
 
 const Home = ({
   techData,
@@ -26,7 +27,8 @@ const Home = ({
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <CommonLayout noMargin={true}>
       {/* banner section  */}
-      <LandingPageBanner data={landingBanner} />
+      {/* <LandingPageBanner data={landingBanner} /> */}
+      <LandingBanner />
       <div className="box">
         {/* about us section  */}
         <AboutUs summaryData={summaryData} aboutUsData={aboutUsData} />
