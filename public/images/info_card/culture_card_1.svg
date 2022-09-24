@@ -33,13 +33,13 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear_232_4192" x1="55.2687" y1="90.3506" x2="55.2687" y2="0.00255257" gradientUnits="userSpaceOnUse">
-<stop stopColor="#498AC9"/>
-<stop offset="0.28" stopColor="#4888C6"/>
-<stop offset="0.47" stopColor="#4482BD"/>
-<stop offset="0.64" stopColor="#3D76AE"/>
-<stop offset="0.78" stopColor="#336799"/>
-<stop offset="0.92" stopColor="#27537E"/>
-<stop offset="1" stopColor="#1E4469"/>
+<stop stop-color="#498AC9"/>
+<stop offset="0.28" stop-color="#4888C6"/>
+<stop offset="0.47" stop-color="#4482BD"/>
+<stop offset="0.64" stop-color="#3D76AE"/>
+<stop offset="0.78" stop-color="#336799"/>
+<stop offset="0.92" stop-color="#27537E"/>
+<stop offset="1" stop-color="#1E4469"/>
 </linearGradient>
 </defs>
 </svg>

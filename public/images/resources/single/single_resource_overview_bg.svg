@@ -3,14 +3,14 @@
 <rect x="414.5" y="300.5" width="1091" height="225" rx="112.5" fill="url(#paint0_linear_75_1105)"/>
 </g>
 <defs>
-<filter id="filter0_f_75_1105" x="114.5" y="0.5" width="1691" height="825" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_f_75_1105" x="114.5" y="0.5" width="1691" height="825" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_75_1105"/>
 </filter>
 <linearGradient id="paint0_linear_75_1105" x1="438.903" y1="525.5" x2="1414.91" y2="104.785" gradientUnits="userSpaceOnUse">
-<stop stopColor="#BB0768"/>
-<stop offset="1" stopColor="#4CA1F8"/>
+<stop stop-color="#BB0768"/>
+<stop offset="1" stop-color="#4CA1F8"/>
 </linearGradient>
 </defs>
 </svg>

@@ -32,15 +32,16 @@ const Investments = ({ data }) => {
               {/* <ITPlatformsSvg /> */}
               <div className="animate_logo absolute top-[30%] lg:top-[28%] left-1/2 translate-x-[-50%] max-w-[94px] max-h-[94px]">
                 <div className="w-[40px] md:w-[50px] lg:w-[60px] xl:w-[70px] h-[40px] md:h-[50px] lg:h-[60px] xl:h-[70px] 2xl:h-[94px] 2xl:w-[94px]  bg-white rounded-xl shadow-[0px_4px_8px_rgba(8,76,148,0.08)] flex items-center justify-center">
-                  <div className="relative h-8 lg:h-12 w-8 lg:w-12 2xl:h-14 2xl:w-14">
-                    <Image
+                  {/* <div className="relative h-8 lg:h-12 w-8 lg:w-12 2xl:h-14 2xl:w-14"> */}
+                    {/* <Image
                       src={data.live}
                       placeholder="blur"
                       blurDataURL={data.live}
                       alt=""
                       layout="fill"
-                    />
-                  </div>
+                    /> */}
+                     <video className="h-8 lg:h-12 w-8 lg:w-12 2xl:h-14 2xl:w-14 z-10" src={data.live} autoPlay muted loop />
+                  {/* </div> */}
                 </div>
               </div>
             </div>

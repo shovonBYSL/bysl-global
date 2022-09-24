@@ -11,10 +11,10 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear_232_4072" x1="42.8379" y1="26.2699" x2="71.4166" y2="26.2699" gradientUnits="userSpaceOnUse">
-<stop stopColor="#D1D3D4"/>
-<stop offset="0.26" stopColor="#CBCDCF"/>
-<stop offset="0.61" stopColor="#BABDC1"/>
-<stop offset="1" stopColor="#9FA3AA"/>
+<stop stop-color="#D1D3D4"/>
+<stop offset="0.26" stop-color="#CBCDCF"/>
+<stop offset="0.61" stop-color="#BABDC1"/>
+<stop offset="1" stop-color="#9FA3AA"/>
 </linearGradient>
 </defs>
 </svg>

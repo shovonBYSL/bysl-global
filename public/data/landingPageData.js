@@ -19,7 +19,7 @@ const projectsShowcaseData = [
 
 const investmentData = {
   ITPlatform: "/images/IT_platform.webp",
-  live: "/images/bysl-live.gif",
+  live: "/images/bysl-live.webm",
 };
 
 // https://i.ibb.co/yghrdfQ/web-technologies.png
