@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Point from "../svg/Point";
 
 const BulletPoints = ({ data }) => {
   return (
@@ -6,7 +6,7 @@ const BulletPoints = ({ data }) => {
       {data.map((item, i) => {
         return (
           <div key={i} className="flex items-start text-start gap-3">
-            <Image src="/images/items_icon.svg" alt="" height={24} width={24} />
+            <Point />
             <p className="text-gray-600 text-sm xl:text-base break-words w-full">
               {item}
             </p>
@@ -23,7 +23,7 @@ const BulletPointsDouble = ({ data }) => {
       {data.map((item, i) => {
         return (
           <div key={i} className="flex items-start text-start gap-3">
-            <Image src="/images/items_icon.svg" alt="" height={24} width={24} />
+            <Point />
             <p className="text-gray-600 text-sm break-words w-full">{item}</p>
           </div>
         );

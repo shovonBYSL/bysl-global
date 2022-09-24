@@ -8,6 +8,7 @@ import { TextGradient } from "../shared/SharedTextgroups";
 import { navbars } from "../../public/data/navigation/navbarData";
 import { setItem } from "../../utils/sessionStorage";
 import { BYSLMainLogo, BYSLWhiteLogo } from "../svg/BYSLLogo";
+import { ArrowRight } from "../svg/Arrows";
 
 const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
@@ -115,15 +116,22 @@ const Navbar = ({ colorChange, specificPath }) => {
             >
               {title}
             </p>
-            <Image
+            {/* <Image
               src={
                 link !== "/services#it-services" && router.asPath === link
                   ? "/images/navIconRightWhite.svg"
                   : "/images/navIconRight.svg"
               }
               alt=""
-              height={18}
-              width={18}
+              height={16}
+              width={16}
+            /> */}
+            <ArrowRight
+              color={
+                link !== "/services#it-services" && router.asPath === link
+                  ? "#fff"
+                  : "#0853AD"
+              }
             />
           </div>
           {subTitle && (

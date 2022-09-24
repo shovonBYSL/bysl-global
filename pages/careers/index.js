@@ -3,8 +3,9 @@ import CareersBanner from "../../components/careers/CareersBanner";
 import CareersCompanyInfo from "../../components/careers/CareersCompanyInfo";
 import CareerWhyBYSL from "../../components/careers/CareerWhyBYSL";
 import CareerJobCirculars from "../../components/careers/CareerJobCirculars";
+import { aboutUsData } from "../../public/data/aboutUsData";
 
-const Careers = () => {
+const Careers = ({ companyInfo }) => {
   return (
     <BasicLayout title="Careers" noMargin={true}>
       <div className="box">
@@ -15,7 +16,7 @@ const Careers = () => {
         <CareerJobCirculars />
 
         {/* company info section  */}
-        <CareersCompanyInfo />
+        <CareersCompanyInfo data={companyInfo} />
       </div>
 
       {/* why BYSL section  */}
@@ -23,5 +24,13 @@ const Careers = () => {
     </BasicLayout>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      companyInfo: aboutUsData,
+    },
+  };
+}
 
 export default Careers;

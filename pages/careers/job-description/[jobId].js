@@ -53,8 +53,8 @@ const JobDescription = () => {
                   <JobDescriptionTitle title={title} />
                   {details.map((item, i) => (
                     <div key={i} className="flex ml-4 items-start mb-1">
-                      <div className="h-1 w-1 mt-2 mr-2 bg-gray-600 rounded-full"></div>
-                      <p className="text-gray-600 text-sm md:text-base w-full ">
+                      <p className="h-1 w-[5px] mt-2 mr-2 bg-gray-600 rounded-full" />
+                      <p className="text-gray-600 text-sm md:text-base w-full">
                         {item}
                       </p>
                     </div>

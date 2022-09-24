@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { getPath } from "../../../utils/paths";
+import Point from "../../svg/Point";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
@@ -43,12 +44,7 @@ const BannerWithBulletSingle = (props) => {
         <div className="mx-auto lg:mx-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-2.5 gap-x-5 mt-6">
           {features.map((item, i) => (
             <div key={i} className="flex items-start gap-3">
-              <Image
-                src="/images/items_icon.svg"
-                alt=""
-                height={24}
-                width={24}
-              />
+              <Point />
               <p className="text-gray-600 text-sm xl:text-base break-words w-full">
                 {item}
               </p>

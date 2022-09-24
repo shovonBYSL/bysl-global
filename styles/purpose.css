@@ -1,5 +1,10 @@
 /* purpose responsive padding  */
 
+@media (min-width: 1024px) and (max-width: 1037px) {
+  .purposeMargin {
+    margin-top: -180px !important;
+  }
+}
 @media (min-width: 1040px) and (max-width: 1103px) {
   .purpose-padding {
     padding-bottom: 40px;
@@ -39,8 +44,28 @@
 
 
 /* values margin  */
-@media (min-width: 1440px) {
+@media (min-width: 1062px) and (max-width: 1088px) {
   .values-margin{
-    margin-top: -30px;
+    margin-top: -25px !important;
+  }
+}
+@media (min-width: 1089px) and (max-width: 1234px) {
+  .values-margin{
+    margin-top: -45px !important;
+  }
+}
+@media (min-width: 1235px) and (max-width: 1279px) {
+  .values-margin{
+    margin-top: -25px !important;
+  }
+}
+@media (min-width: 1339px) and (max-width: 1410px) {
+  .values-margin{
+    margin-top: -30px !important;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1450px) {
+  .values-margin{
+    margin-top: -30px !important;
   }
 }

@@ -4,6 +4,7 @@ import {
   TechnologiesSectionTitle,
   TextGradient,
 } from "../../shared/SharedTextgroups";
+import Point from "../../svg/Point";
 
 const RetailOverview = ({ data }) => {
   const { details, img, points } = data;
@@ -22,16 +23,13 @@ const RetailOverview = ({ data }) => {
           <div className="grid grid-cols-2 gap-3 max-w-[360px]">
             {points.map((item, i) => (
               <div key={i} className="flex items-start gap-3">
-                <Image
-                  src="/images/items_icon.svg"
-                  height={24}
-                  width={24}
-                  alt=""
-                />
+                <Point />
                 {/* <div className="text-xs xl:text-sm font-semibold break-words w-full">
                   <TextGradient text={item} /> 
                 </div> */}
-                <p className="text-xs lg:text-sm xl:text-base text-gray-600 break-words w-full">{item}</p>
+                <p className="text-xs lg:text-sm xl:text-base text-gray-600 break-words w-full">
+                  {item}
+                </p>
               </div>
             ))}
           </div>

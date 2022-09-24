@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { getPath } from "../../utils/paths";
+import Point from "../svg/Point";
 
 const SolutionCard = ({ data }) => {
   const { solution, solutionInfo, solutionImg, solutionPoints } = data;
@@ -16,12 +17,7 @@ const SolutionCard = ({ data }) => {
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 my-5 xl:mt-6 lg:mb-0 gap-y-2.5 lg:gap-x-2 xl:gap-x-0">
           {solutionPoints.map((item, i) => (
             <div key={i} className="flex items-start">
-              <Image
-                src="/images/items_icon.svg"
-                alt=""
-                height={24}
-                width={24}
-              />
+              <Point />
               <p className="text-gray-600 text-sm xl:text-base ml-3 w-full">
                 {item}
               </p>

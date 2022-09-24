@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { getPath } from "../../utils/paths";
+import Point from "../svg/Point";
 import { TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const RowSpanGrid = (props) => {
@@ -59,12 +60,7 @@ const RowSpanGrid = (props) => {
                     )}
                     {benefits.map((item, i) => (
                       <div key={i} className="flex items-center mt-1 3xl:mt-3">
-                        <Image
-                          src="/images/items_icon.svg"
-                          alt=""
-                          height={24}
-                          width={24}
-                        />
+                        <Point />
                         <p className="text-gray-600 ml-3 text-sm xl:text-base">
                           {item}
                         </p>

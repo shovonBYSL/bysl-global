@@ -1,0 +1,28 @@
+const ArrowRight = ({ color }) => {
+  return (
+    <svg
+      height="16"
+      width="16"
+      viewBox="0 0 16 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.5 8.5H13.5"
+        stroke={color}
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9 4L13.5 8.5L9 13"
+        stroke={color}
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export { ArrowRight };

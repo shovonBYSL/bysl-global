@@ -5,6 +5,7 @@ import {
   TechnologiesSectionTitle,
   TextGradient,
 } from "../../shared/SharedTextgroups";
+import Point from "../../svg/Point";
 
 const RetailProblemsAndSolution = ({ data }) => {
   const [tabData, setTabData] = useState(data[0]);
@@ -80,12 +81,7 @@ const RetailProblemsAndSolution = ({ data }) => {
             <div className="flex flex-col gap-3">
               {benefitPoints.map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <Image
-                    src="/images/items_icon.svg"
-                    height={24}
-                    width={24}
-                    alt=""
-                  />
+                  <Point />
                   <div className="text-gray-600 text-sm xl:text-base break-words w-full">
                     {item}
                   </div>

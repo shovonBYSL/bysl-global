@@ -2,6 +2,11 @@ import Image from "next/image";
 
 import { getPath } from "../../../utils/paths";
 import {
+  CultureBannerSvg,
+  PurposeBannerSvg,
+  ValuesBannerSvg,
+} from "../../svg/AboutBanners";
+import {
   SectionTitleType,
   TechnologiesSectionTitle,
 } from "../SharedTextgroups";
@@ -10,6 +15,8 @@ const SectionBanner = ({ data }) => {
   const { title, subTitle } = data;
 
   const missionPath = getPath("/about-us/mission");
+  const purposePath = getPath("/about-us/purpose");
+  const valuesPath = getPath("/about-us/values");
   const culturePath = getPath("/about-us/culture");
 
   return (
@@ -18,20 +25,33 @@ const SectionBanner = ({ data }) => {
         !missionPath && "py-10 xl:py-16"
       }`}
     >
-      <div
-        className={`w-4/5 md:w-1/2 mx-auto flex justify-end ${
-          culturePath && "px-4 2xl:px-12"
-        }`}
-      >
-        <Image
-          src={`/images/banners/${title}_banner.png`}
-          placeholder="blur"
-          blurDataURL={`/images/banners/${title}_banner.png`}
-          height={(missionPath && 480) || 283}
-          width={452}
-          objectFit="contain"
-          alt=""
-        />
+      <div className={`w-4/5 md:w-1/2 mx-auto flex justify-end`}>
+        {(missionPath && (
+          <Image
+            src={`/images/banners/mission_banner.png`}
+            placeholder="blur"
+            blurDataURL={`/images/banners/mission_banner.png`}
+            height={480}
+            width={452}
+            objectFit="contain"
+            alt=""
+          />
+        )) ||
+          (purposePath && (
+            <div className="lg:w-4/5">
+              <PurposeBannerSvg />
+            </div>
+          )) ||
+          (valuesPath && (
+            <div className="lg:w-4/5">
+              <ValuesBannerSvg />
+            </div>
+          )) ||
+          (culturePath && (
+            <div className="lg:w-4/5">
+              <CultureBannerSvg />
+            </div>
+          ))}
       </div>
       <div className="md:w-3/5 lg:w-1/2">
         <p className="text-gray-800 text-lg md:text-2xl lg:text-4xl xl:text-5xl 3xl:text-[64px] font-bold uppercase mb-1 md:mb-2 lg:mb-3 3xl:mb-5">
