@@ -1,7 +1,7 @@
 const BYSLMainLogo = () => {
   return (
     <svg
-      className="h-7 lg:h-8 xl:h-10 lg:mt-1 xl:mt-0"
+      className="h-7 lg:h-8 xl:h-10"
       viewBox="0 0 80 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const BYSLMainLogo = () => {
 const BYSLWhiteLogo = () => {
   return (
     <svg
-      className="h-7 lg:h-8 xl:h-10 lg:mt-1 xl:mt-0"
+      className="h-7 lg:h-8 xl:h-10"
       viewBox="0 0 101 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

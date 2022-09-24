@@ -4,7 +4,7 @@ const MarketPlacePlatforms = ({ data }) => {
   return (
     <div className="py-10 xl:py-16">
       <div className="grid lg:grid-flow-col grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-        {data.map(({ id, title, img, logo, motto }) => {
+        {data.map(({ id, title, img, icon, motto }) => {
           return (
             <div
               key={id}
@@ -29,25 +29,21 @@ const MarketPlacePlatforms = ({ data }) => {
                   alt=""
                 />
               </div>
-              <div className="absolute top-0 text-white text-center w-full h-full flex items-center justify-center">
-                <div className="h-4/5 w-11/12 lg:w-4/5 flex flex-col justify-between">
+              <div className="absolute top-0 text-white text-center w-full h-full flex items-center justify-center z-10">
+                <div
+                  className={`h-4/5 ${
+                    (id === 1 || id === 2) && "lg:h-4/6"
+                  } flex flex-col justify-between`}
+                >
                   <div
-                    className={`relative h-28 mx-auto ${
+                    dangerouslySetInnerHTML={{ __html: icon }}
+                    className={`mx-auto ${
                       (id === 0 && "w-[140px] xl:w-[190px]") ||
                       (id === 1 && "w-[100px] xl:w-[120px]") ||
-                      (id === 2 && "w-[180px] xl:w-[220px]") ||
+                      (id === 2 && "w-[180px] xl:w-[230px]") ||
                       (id === 3 && "w-[100px] xl:w-[140px]")
                     }`}
-                  >
-                    <Image
-                      src={logo}
-                      placeholder="blur"
-                      blurDataURL={logo}
-                      objectFit="contain"
-                      layout="fill"
-                      alt=""
-                    />
-                  </div>
+                  />
                   <div>
                     <p className="text-lg xl:text-xl font-semibold mb-2.5">
                       {motto}
@@ -56,6 +52,8 @@ const MarketPlacePlatforms = ({ data }) => {
                   </div>
                 </div>
               </div>
+              {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-[#231F20] via-transparent to-[#231F20]/0"/>
+              <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-[#231F20]/0 via-transparent to-[#231F20]"/> */}
             </div>
           );
         })}

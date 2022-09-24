@@ -1,22 +1,25 @@
 import { Link as Scroll } from "react-scroll";
+import { InvestmentBgBottom, InvestmentBgTop } from "../svg/InvestmentBg";
 
 const InvestmentsBanner = () => {
   return (
     <div className="h-[620px] lg:h-screen w-full bg-gradient-to-br from-[#222] to-[#222] relative overflow-hidden">
-      <img
+      {/* <img
         src="/images/bg-top.png"
         className="z-10 absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[50%] xl:-left-[40%] 2xl:-left-[30%] lg:h-[1080px] bg-1"
         alt=""
-      />
-      <img
+      /> */}
+      {/* <img
         src="/images/bg-bottom.png"
         className="z-10 absolute bottom-0 xs:-bottom-[30%] 3xl:-bottom-[40%] -right-[50%] xl:-right-[40%] 2xl:-right-[30%] lg:h-[1080px] bg-2"
         alt=""
-      />
+      /> */}
+        <InvestmentBgTop />
+        <InvestmentBgBottom />
 
       <div className="z-30 flex items-center justify-center text-center text-white pt-14 lg:pt-0 h-full w-full">
         <div>
-          <p className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl 3xl:text-[90px] 3xl:leading-[80px] font-semibold">
+          <p className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl 3xl:text-[90px] font-semibold">
             Investment portfolio of
             <br />
             BYSL Global Technology Group

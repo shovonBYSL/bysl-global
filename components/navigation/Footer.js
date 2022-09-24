@@ -10,6 +10,7 @@ import {
   footerBottomData,
   footerData,
 } from "../../public/data/navigation/footerData";
+import { BYSLWhiteLogo } from "../svg/BYSLLogo";
 
 const Footer = () => {
   const handleClick = (id) => {
@@ -77,8 +78,9 @@ const Footer = () => {
           <div className="col-span-6 xl:col-span-1">
             <Link passHref href="/">
               <a>
-                <div className="h-7 md:h-10 w-16 md:w-20 mx-auto xl:mx-0 relative hover:cursor-pointer">
-                  <Image src="/images/logo_light.svg" layout="fill" alt="" />
+                <div className="h-7 md:h-10 w-max mx-auto xl:mx-0 relative hover:cursor-pointer">
+                  {/* <Image src="/images/logo_light.svg" layout="fill" alt="" /> */}
+                  <BYSLWhiteLogo />
                 </div>
               </a>
             </Link>

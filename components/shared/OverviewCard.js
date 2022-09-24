@@ -15,7 +15,7 @@ const OverviewCard = (props) => {
 
   return (
     <>
-      {data.map(({ id, title, subTitle, img, hoverImg }) => {
+      {data.map(({ id, title, subTitle, img, icon, hoverImg }) => {
         return (
           <div
             key={id}
@@ -36,7 +36,9 @@ const OverviewCard = (props) => {
                 bigDataPath && "h-10 xl:!h-16 w-10 xl:!w-16"
               } ${investmentsPath && "h-10 xl:!h-[70px] w-10 xl:!w-[70px]"}`}
             >
-              {hoverImg ? (
+              {icon ? (
+                <div dangerouslySetInnerHTML={{ __html: icon }}></div>
+              ) : hoverImg ? (
                 <HoverImage img1={img} img2={hoverImg} />
               ) : (
                 <Image

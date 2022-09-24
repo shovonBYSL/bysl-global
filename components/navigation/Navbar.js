@@ -42,7 +42,15 @@ const Navbar = ({ colorChange, specificPath }) => {
             priority
             alt=""
           /> */}
-          {!colorChange && specificPath ? <BYSLWhiteLogo /> : <BYSLMainLogo />}
+          {!colorChange && specificPath ? (
+            <div className="h-7 lg:h-8 xl:h-10 lg:mt-1 xl:mt-0">
+              <BYSLWhiteLogo />
+            </div>
+          ) : (
+            <div className="h-7 lg:h-8 xl:h-10 lg:mt-1 xl:mt-0">
+              <BYSLMainLogo />
+            </div>
+          )}
         </a>
       </Link>
     );
@@ -82,7 +90,6 @@ const Navbar = ({ colorChange, specificPath }) => {
   // dropdown items
   const DropdownItems = ({ data }) => {
     const { id, title, subTitle, link } = data;
-    // console.log(id);
 
     return (
       <Link passHref href={link}>
