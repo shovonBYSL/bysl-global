@@ -10,7 +10,7 @@ const solutionsResourcesData = [
         "For financial institutions, a hybrid cloud solution that combines public cloud flexibility with private cloud protection is an essential tool in this highly regulated and competitive sector.",
       banner: "/images/resources/blogs/what-motivates/banner.png",
       squareImg: "/images/resources/blogs/what-motivates/square.png",
-      cardImg: "/images/resources/blogs/what-motivates/card.png",
+      // cardImg: "/images/resources/blogs/what-motivates/card.png",
       date: "Aug 13, 2022",
       timeToRead: "3 mins",
       details: [
@@ -67,7 +67,7 @@ const solutionsResourcesData = [
         "When used as part of a comprehensive digital strategy, AI can assist marketing experts in operating at the speed of today's market demands, allowing them to focus on even more important matters.",
       banner: "/images/resources/blogs/get-impactful/banner.png",
       squareImg: "/images/resources/blogs/get-impactful/square.png",
-      cardImg: "/images/resources/blogs/get-impactful/card.png",
+      // cardImg: "/images/resources/blogs/get-impactful/card.png",
       date: "Aug 24, 2022",
       timeToRead: "12 mins",
       details: [
@@ -156,7 +156,7 @@ const solutionsResourcesData = [
         "With the aid of cutting-edge analytical tools and processes, BYSL Global Technology assists businesses in developing and implementing fact-based, data-driven, smart marketing and sales solutions.",
       banner: "/images/resources/blogs/intelligent-marketing/banner.png",
       squareImg: "/images/resources/blogs/intelligent-marketing/square.png",
-      cardImg: "/images/resources/blogs/intelligent-marketing/card.png",
+      // cardImg: "/images/resources/blogs/intelligent-marketing/card.png",
       date: "Sep 2, 2022",
       timeToRead: "3 mins",
       details: [
@@ -191,7 +191,7 @@ const solutionsResourcesData = [
         "Smarts software can be used to make smart decisions, and it will also aid reliability, preference, and clarity for the retailers to make their service optimum ensuring a frictionless consumer journey.",
       banner: "/images/resources/blogs/it-enabled/banner.png",
       squareImg: "/images/resources/blogs/it-enabled/square.png",
-      cardImg: "/images/resources/blogs/it-enabled/card.png",
+      // cardImg: "/images/resources/blogs/it-enabled/card.png",
       date: "Jul 25, 2022",
       timeToRead: "5 mins",
       details: [
@@ -245,7 +245,7 @@ const solutionsResourcesData = [
         "The ability to communicate data throughout your supply chain ecosystem in a safe and competent manner along with a comprehensive, precise, real-time view of inventory are vital to achieving supply chain sustainability goals.",
       banner: "/images/resources/blogs/three-effective/banner.png",
       squareImg: "/images/resources/blogs/three-effective/square.png",
-      cardImg: "/images/resources/blogs/three-effective/card.png",
+      // cardImg: "/images/resources/blogs/three-effective/card.png",
       date: "Sep 10, 2022",
       timeToRead: "6 mins",
       details: [

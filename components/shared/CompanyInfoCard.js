@@ -37,7 +37,7 @@ const CompanyInfoCard = ({ data }) => {
         <div
           dangerouslySetInnerHTML={{ __html: icon }}
           className={`relative h-10 lg:h-16 2xl:h-20 ${
-            valuesPath ? "w-16 2xl:w-20" : "w-10 lg:w-16 2xl:w-20"
+            valuesPath ? "!h-11 w-16 2xl:w-20" : "w-10 lg:w-16 2xl:w-20"
           }`}
         >
           {/* <Image

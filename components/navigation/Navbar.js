@@ -33,16 +33,6 @@ const Navbar = ({ colorChange, specificPath }) => {
     return (
       <Link passHref href="/">
         <a className="hover:cursor-pointer">
-          {/* <Image
-            src={
-              !colorChange && specificPath
-                ? "/images/logo_light.svg"
-                : "/images/logo.svg"
-            }
-            layout="fill"
-            priority
-            alt=""
-          /> */}
           {!colorChange && specificPath ? (
             <div className="h-7 lg:h-8 xl:h-10 lg:mt-1 xl:mt-0">
               <BYSLWhiteLogo />
@@ -116,16 +106,6 @@ const Navbar = ({ colorChange, specificPath }) => {
             >
               {title}
             </p>
-            {/* <Image
-              src={
-                link !== "/services#it-services" && router.asPath === link
-                  ? "/images/navIconRightWhite.svg"
-                  : "/images/navIconRight.svg"
-              }
-              alt=""
-              height={16}
-              width={16}
-            /> */}
             <ArrowRight
               color={
                 link !== "/services#it-services" && router.asPath === link
