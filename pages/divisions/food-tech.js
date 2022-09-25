@@ -8,6 +8,7 @@ import {
   foodTechAreasData,
   foodTechOverviewData,
 } from "../../public/data/divisions/foodTechData";
+import { foodTechBanner } from "../../components/svg/divisions/foodTechSvg";
 
 const FoodTech = ({ banner, foodTechOverview, foodTechAreas, foodBanner }) => {
   return (
@@ -52,7 +53,8 @@ const FoodTech = ({ banner, foodTechOverview, foodTechAreas, foodBanner }) => {
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/food_tech_division_banner.png",
+      banner: foodTechBanner,
+      // banner: "/images/banners/food_tech_division_banner.png",
       foodBanner: "/images/divisions/food_tech/food_tech_delivery_app.png",
       foodTechOverview: foodTechOverviewData,
       foodTechAreas: foodTechAreasData,

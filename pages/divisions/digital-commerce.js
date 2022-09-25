@@ -8,6 +8,7 @@ import {
   digitalCommerceOverviewData,
   digitalCommerceSolutionsData,
 } from "../../public/data/divisions/digitalCommerceData";
+import { digitalCommerceBannerSvg } from "../../components/svg/divisions/digitalCommerceSvg";
 
 const FoodTech = ({
   banner,
@@ -54,7 +55,8 @@ const FoodTech = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/digital_commerce_division_banner.png",
+      banner: digitalCommerceBannerSvg,
+      // banner: "/images/banners/digital_commerce_division_banner.png",
       digitalCommerceImg:
         "/images/divisions/digital_commerce/digital_commerce_app.png",
       digitalCommerceOverview: digitalCommerceOverviewData,

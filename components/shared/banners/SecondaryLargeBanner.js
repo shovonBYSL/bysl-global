@@ -27,6 +27,7 @@ const SecondaryLargeBanner = ({ data, children }) => {
           objectFit="contain"
         />
       </div>
+      {/* <div dangerouslySetInnerHTML={{ __html: img }} className="mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto"/> */}
     </div>
   );
 };

@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import {
   SectionTitleGradient,
   SectionTitleType,
 } from "../shared/SharedTextgroups";
-import ITPlatformsSvg from "../svg/ITPlatformsSvg";
+import { itPlatform } from "../svg/ITPlatformsSvg";
 
 const Investments = ({ data }) => {
   return (
@@ -20,28 +19,19 @@ const Investments = ({ data }) => {
         <Link passHref href="/investments#it-platform">
           <a className="3xl:h-[610px] rounded-[10px] xl:rounded-[20px] bg-white pb-8 xl:pb-16 flex flex-col justify-between">
             <div className="w-full max-h-[640px] relative">
-              <Image
-                src={data.ITPlatform}
-                placeholder="blur"
-                blurDataURL={data.ITPlatform}
-                alt=""
-                objectFit="contain"
-                height={458}
-                width={640}
+              <div
+                dangerouslySetInnerHTML={{ __html: itPlatform }}
+                className="w-full h-full"
               />
-              {/* <ITPlatformsSvg /> */}
               <div className="animate_logo absolute top-[30%] lg:top-[28%] left-1/2 translate-x-[-50%] max-w-[94px] max-h-[94px]">
-                <div className="w-[40px] md:w-[50px] lg:w-[60px] xl:w-[70px] h-[40px] md:h-[50px] lg:h-[60px] xl:h-[70px] 2xl:h-[94px] 2xl:w-[94px]  bg-white rounded-xl shadow-[0px_4px_8px_rgba(8,76,148,0.08)] flex items-center justify-center">
-                  {/* <div className="relative h-8 lg:h-12 w-8 lg:w-12 2xl:h-14 2xl:w-14"> */}
-                    {/* <Image
-                      src={data.live}
-                      placeholder="blur"
-                      blurDataURL={data.live}
-                      alt=""
-                      layout="fill"
-                    /> */}
-                     <video className="h-8 lg:h-12 w-8 lg:w-12 2xl:h-14 2xl:w-14 z-10" src={data.live} autoPlay muted loop />
-                  {/* </div> */}
+                <div className="w-[40px] xxs:w-[50px] lg:w-[60px] xl:w-[70px] h-[40px] xxs:h-[50px] lg:h-[60px] xl:h-[70px] 2xl:h-[94px] 2xl:w-[94px]  bg-white rounded-xl shadow-[0px_4px_8px_rgba(8,76,148,0.08)] flex items-center justify-center">
+                  <video
+                    className="h-8 lg:h-12 w-8 lg:w-12 2xl:h-14 2xl:w-14 z-10"
+                    src={data.live}
+                    autoPlay
+                    muted
+                    loop
+                  />
                 </div>
               </div>
             </div>

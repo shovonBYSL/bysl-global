@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import WebBanner from "../../technologies_pages/web_technologies/WebBanner";
 import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
@@ -22,21 +22,21 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
 
   return (
     <div
-      className={`md:flex justify-between gap-6 max-h-max 
+      className={`md:flex justify-between md:items-center xl:items-start gap-6 max-h-max 
       ${
         aiMlPath
           ? "items-center pt-10 md:pt-0"
           : cyberPath || cloudPath || itesPath
           ? "pt-10 xl:pt-16"
           : "py-10 xl:py-16"
-      }`}
+      } ${informationPath && "!pb-0 xl:!py-16"}`}
     >
       <div
-        className={`mb-10 md:my-0 md:pt-10 
+        className={`mb-10 md:my-0 lg:pt-6 xl:pt-10 
         ${
           (iotPath && "xl:!pt-20") ||
           (cloudPath && "xl:!pt-20") ||
-          (blockchainPath && "!pt-20") ||
+          (blockchainPath && "xl:!pt-20") ||
           (aiMlPath && "mt-0") ||
           (webPath && "md:pt-5 lg:pt-10 xl:pt-12 2xl:pt-16") ||
           (ictPath ? "md:w-[50%]" : "md:w-[55%]")
@@ -66,18 +66,21 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
           <video className="w-full h-full" src={video} autoPlay muted loop />
         ) : (
           <div
-            className={`h-56 xs:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative 
+            dangerouslySetInnerHTML={{ __html: img }}
+            // className={`h-52 xs:h-[40vh] md:h-[30vh] lg:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative
+            className={`max-h-[600px] w-full
             ${
-              (ictPath && "xl:h-[40vh]") ||
-              (dataSciencePath && "xl:h-[40vh]") ||
-              (mobilePath && "xl:h-[42vh]") ||
-              (servicePath && "xl:h-[40vh]") ||
-              (manufacturingPath && "xl:h-[450px]") ||
-              (informationPath && "xl:h-[280px]") ||
-              (foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]")
+              ""
+              // (ictPath && "xl:h-[40vh]") ||
+              // (dataSciencePath && "xl:h-[40vh]") ||
+              // (mobilePath && "xl:h-[42vh]") ||
+              // (servicePath && "xl:h-[40vh]") ||
+              // (manufacturingPath && "xl:h-[450px]") ||
+              // (informationPath && "xl:h-[280px]") ||
+              // (foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]")
             }`}
           >
-            <Image
+            {/* <Image
               src={img}
               layout="fill"
               placeholder="blur"
@@ -85,7 +88,7 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
               objectFit="contain"
               priority
               alt=""
-            />
+            /> */}
           </div>
         )}
         <div id="it-services" />

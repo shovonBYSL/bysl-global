@@ -11,6 +11,7 @@ import {
   mobileSliderData,
   userExperienceData,
 } from "../../public/data/technologies/mobileTechnologiesData";
+import { mobileTechBanner } from "../../components/svg/technologies/mobileTechSvg";
 
 const MobileTechnologies = ({
   mobileFeatures,
@@ -59,7 +60,8 @@ export async function getStaticProps() {
           "/images/technologies/mobile/slider/mobileTechnologies_slider_frame.png",
         mobileSliderData,
       },
-      banner: "/images/banners/mobile_technologies_banner.png",
+      banner: mobileTechBanner,
+      // banner: "/images/banners/mobile_technologies_banner.png",
       userExperience: userExperienceData,
       sliderData: techSlidersData[2],
     },

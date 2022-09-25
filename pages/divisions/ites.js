@@ -8,6 +8,7 @@ import {
   itesOverviewData,
   itesUpdateData,
 } from "../../public/data/divisions/itesData";
+import { itesBannerSvg } from "../../components/svg/divisions/itesSvg";
 
 const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
   return (
@@ -46,7 +47,8 @@ const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/ites_division_banner.png",
+      banner: itesBannerSvg,
+      // banner: "/images/banners/ites_division_banner.png",
       itesOverview: itesOverviewData,
       itesUpdate: itesUpdateData,
       itesAppImg: "/images/divisions/ites/ites_team_management.png",

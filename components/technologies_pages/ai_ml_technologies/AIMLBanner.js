@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import {
   SectionTitleGradient,
@@ -20,8 +20,12 @@ const AIMLBanner = ({ title, sub, img, children }) => {
         </div>
       </div>
       <div className="md:w-[45%]">
-        <div className="h-56 xs:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative">
-          <Image
+        {/* <div className="h-56 xs:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative"> */}
+        <div
+          dangerouslySetInnerHTML={{ __html: img }}
+          className="max-h-[600px] w-full"
+        >
+          {/* <Image
             src={img}
             layout="fill"
             placeholder="blur"
@@ -29,7 +33,7 @@ const AIMLBanner = ({ title, sub, img, children }) => {
             objectFit="contain"
             priority
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>

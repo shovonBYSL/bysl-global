@@ -64,7 +64,7 @@ const Footer = () => {
           <br />
           We offer a journey to explore new horizons of possibilities.
         </p>
-        <div className="w-max mx-auto lg:mx-0">
+        <div className="w-max mx-auto xl:mx-0">
           <ButtonWhite link="careers" title="Careers" px={72} />
         </div>
       </>

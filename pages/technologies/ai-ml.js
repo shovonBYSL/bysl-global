@@ -11,6 +11,7 @@ import {
   aimlUserExperienceData,
   aimlServicesData,
 } from "../../public/data/technologies/aimlTechnologiesData";
+import { aimlBannerSvg } from "../../components/svg/technologies/aimlSvg";
 
 const AIMLTechnologies = ({
   banner,
@@ -63,7 +64,8 @@ const AIMLTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/ai-ml_technologies_banner.png",
+      banner: aimlBannerSvg,
+      // banner: "/images/banners/ai-ml_technologies_banner.png",
       aimlFeatures: aimlFeaturesData,
       aimlServices: aimlServicesData,
       servicesVideo:

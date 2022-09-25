@@ -9,6 +9,7 @@ import {
   informationSecurityServicesData,
   informationSecurityShortcomingsData,
 } from "../../public/data/divisions/informationSecurityData";
+import { informationSequrityBannerSvg } from "../../components/svg/divisions/informationSecuritySvg";
 
 const InformationSecurity = ({
   banner,
@@ -59,7 +60,8 @@ const InformationSecurity = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/information_security_division_banner.png",
+      banner: informationSequrityBannerSvg,
+      // banner: "/images/banners/information_security_division_banner.png",
       informationSecurityOverview: informationSecurityOverviewData,
       informationSecurityServices: informationSecurityServicesData,
       informationSecurityShortcomings: informationSecurityShortcomingsData,
