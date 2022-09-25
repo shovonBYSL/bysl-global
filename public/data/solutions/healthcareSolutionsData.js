@@ -1,5 +1,5 @@
 const healthcareSolutionsBannerData = {
-  img: "/images/banners/healthcare_solutions_banner.png",
+  img: "/images/banners/healthcare_solutions_banner.webp",
   heading: "Health care",
   title: "Powering the healthcare of the future",
   subTitle:

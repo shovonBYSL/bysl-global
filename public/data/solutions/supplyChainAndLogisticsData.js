@@ -1,5 +1,5 @@
 const supplyChainAndLogisticsBannerData = {
-  img: "/images/banners/supply_chain_and_logistics_banner.png",
+  img: "/images/banners/supply_chain_and_logistics_banner.webp",
   heading: "Supply Chain Solutions",
   title:
     "Building a more resilient supply chain through sustainable solutions ",

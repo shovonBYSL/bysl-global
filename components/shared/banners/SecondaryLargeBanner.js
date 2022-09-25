@@ -6,6 +6,7 @@ import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 const SecondaryLargeBanner = ({ data, children }) => {
   const { heading, subTitle, img } = data;
   const bigDataPath = getPath("/technologies/bigdata");
+  const adminPath = getPath("/divisions/administration");
 
   return (
     <div className={`py-10 xl:py-16 ${bigDataPath && "!pb-10"}`}>
@@ -16,7 +17,7 @@ const SecondaryLargeBanner = ({ data, children }) => {
       <p className="xs:px-4 sm:w-4/5 lg:w-[62%] mx-auto mt-6 text-gray-600 leading-5 text-sm md:text-base xl:text-lg 2xl:text-xl text-center">
         {subTitle}
       </p>
-      <div className="mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto">
+      {/* <div className="mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto">
         <Image
           src={img}
           alt=""
@@ -26,8 +27,13 @@ const SecondaryLargeBanner = ({ data, children }) => {
           width={bigDataPath ? 1240 : 1080}
           objectFit="contain"
         />
-      </div>
-      {/* <div dangerouslySetInnerHTML={{ __html: img }} className="mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto"/> */}
+      </div> */}
+      <div
+        dangerouslySetInnerHTML={{ __html: img }}
+        className={`mt-5 lg:mt-10 flex justify-center ${
+          adminPath ? "max-w-[1080px]" : "max-w-[1240px]"
+        } mx-auto`}
+      />
     </div>
   );
 };

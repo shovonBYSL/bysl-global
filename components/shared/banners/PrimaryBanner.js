@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 
 import WebBanner from "../../technologies_pages/web_technologies/WebBanner";
 import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
@@ -22,7 +22,9 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
 
   return (
     <div
-      className={`md:flex justify-between md:items-center xl:items-start gap-6 max-h-max 
+      className={`md:flex justify-between md:items-center ${
+        !cyberPath && "xl:items-start"
+      }  gap-6 max-h-max 
       ${
         aiMlPath
           ? "items-center pt-10 md:pt-0"
@@ -64,23 +66,20 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
           <WebBanner img={img} />
         ) : cloudPath ? (
           <video className="w-full h-full" src={video} autoPlay muted loop />
-        ) : (
+        ) : foodTechPath || mobilePath ? (
           <div
-            dangerouslySetInnerHTML={{ __html: img }}
-            // className={`h-52 xs:h-[40vh] md:h-[30vh] lg:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative
-            className={`max-h-[600px] w-full
+            className={`h-52 xs:h-[40vh] md:h-[30vh] lg:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative
             ${
-              ""
               // (ictPath && "xl:h-[40vh]") ||
               // (dataSciencePath && "xl:h-[40vh]") ||
-              // (mobilePath && "xl:h-[42vh]") ||
+              (mobilePath && "xl:h-[42vh]") ||
               // (servicePath && "xl:h-[40vh]") ||
               // (manufacturingPath && "xl:h-[450px]") ||
               // (informationPath && "xl:h-[280px]") ||
-              // (foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]")
+              (foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]")
             }`}
           >
-            {/* <Image
+            <Image
               src={img}
               layout="fill"
               placeholder="blur"
@@ -88,8 +87,13 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
               objectFit="contain"
               priority
               alt=""
-            /> */}
+            />
           </div>
+        ) : (
+          <div
+            dangerouslySetInnerHTML={{ __html: img }}
+            className="max-h-[600px] w-full"
+          />
         )}
         <div id="it-services" />
       </div>

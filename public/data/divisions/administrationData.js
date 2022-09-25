@@ -1,8 +1,11 @@
+import { adminstrationBannerSvg } from "../../../components/svg/divisions/adminstrationSvg";
+
 const administrationBannerData = {
   heading: "Administration - Division",
   subTitle:
     "Using IT-enabled business operations, integrated APIs, and smart technologies engineered to automate workflows and drive fast and flawless operations ",
-  img: "/images/banners/administration_division_banner.png",
+  // img: "/images/banners/administration_division_banner.png",
+  img: adminstrationBannerSvg,
 };
 
 const administrationControlPanelData = [

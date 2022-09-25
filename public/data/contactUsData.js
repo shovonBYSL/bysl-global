@@ -1,22 +1,22 @@
 const socialIcons = [
   {
     id: 0,
-    img: "/images/social-icons/facebook.svg",
+    img: "/images/social-icons/facebook.webp",
     link: "https://www.facebook.com/BYSLgroup/",
   },
   {
     id: 1,
-    img: "/images/social-icons/twitter.svg",
+    img: "/images/social-icons/twitter.webp",
     link: "/",
   },
   {
     id: 2,
-    img: "/images/social-icons/linkedin.svg",
+    img: "/images/social-icons/linkedin.webp",
     link: "https://www.linkedin.com/company/byslgroup/?originalSubdomain=bd",
   },
   {
     id: 3,
-    img: "/images/social-icons/instagram.svg",
+    img: "/images/social-icons/instagram.webp",
     link: "/",
   },
 ];

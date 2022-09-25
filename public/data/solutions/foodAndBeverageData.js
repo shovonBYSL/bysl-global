@@ -1,5 +1,5 @@
 const foodAndBeverageBannerData = {
-  img: "/images/banners/food_and_beverage_solutions_banner.png",
+  img: "/images/banners/food_and_beverage_solutions_banner.webp",
   heading: "Food Service Industry",
   title: "Balance agility and strength through next-gen FoodTech solutions ",
   subTitle:
