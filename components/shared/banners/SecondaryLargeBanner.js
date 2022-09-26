@@ -17,23 +17,26 @@ const SecondaryLargeBanner = ({ data, children }) => {
       <p className="xs:px-4 sm:w-4/5 lg:w-[62%] mx-auto mt-6 text-gray-600 leading-5 text-sm md:text-base xl:text-lg 2xl:text-xl text-center">
         {subTitle}
       </p>
-      {/* <div className="mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto">
-        <Image
-          src={img}
-          alt=""
-          placeholder="blur"
-          blurDataURL={img}
-          height={bigDataPath ? 633 : 700}
-          width={bigDataPath ? 1240 : 1080}
-          objectFit="contain"
+      {bigDataPath ? (
+        <div
+          dangerouslySetInnerHTML={{ __html: img }}
+          className={`mt-5 lg:mt-10 flex justify-center ${
+            adminPath ? "max-w-[1080px]" : "max-w-[1240px]"
+          } mx-auto`}
         />
-      </div> */}
-      <div
-        dangerouslySetInnerHTML={{ __html: img }}
-        className={`mt-5 lg:mt-10 flex justify-center ${
-          adminPath ? "max-w-[1080px]" : "max-w-[1240px]"
-        } mx-auto`}
-      />
+      ) : (
+        <div className="mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto">
+          <Image
+            src={img}
+            alt=""
+            placeholder="blur"
+            blurDataURL={img}
+            height={bigDataPath ? 633 : 700}
+            width={bigDataPath ? 1240 : 1080}
+            objectFit="contain"
+          />
+        </div>
+      )}
     </div>
   );
 };

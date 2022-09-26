@@ -11,7 +11,7 @@ import {
   ictSolutionsData,
   productsData,
 } from "../../public/data/divisions/ictData";
-import { ictBannerSvg } from "../../components/svg/divisions/ictSvg";
+// import { ictBannerSvg } from "../../components/svg/divisions/ictSvg";
 
 const ICT = ({ banner, ictSectors, erpBanner, ictSolutions, products }) => {
   return (
@@ -55,8 +55,8 @@ const ICT = ({ banner, ictSectors, erpBanner, ictSolutions, products }) => {
 export async function getStaticProps() {
   return {
     props: {
-      banner: ictBannerSvg,
-      // banner: "/images/banners/ict_division_banner.png",
+      // banner: ictBannerSvg,
+      banner: "/images/banners/ict_division_banner.png",
       ictSectors: ictSectorsData,
       erpBanner: erpBannerData,
       ictSolutions: ictSolutionsData,

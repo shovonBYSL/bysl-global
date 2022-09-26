@@ -9,7 +9,7 @@ import {
   supplyChainOverviewData,
   supplyChainPerceivabilityData,
 } from "../../public/data/divisions/supplyChainData";
-import { supplyChainBannerSvg } from "../../components/svg/divisions/supplyChainSvg";
+// import { supplyChainBannerSvg } from "../../components/svg/divisions/supplyChainSvg";
 
 const SupplyChain = ({
   banner,
@@ -57,8 +57,8 @@ const SupplyChain = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: supplyChainBannerSvg,
-      // banner: "/images/banners/supply_chain_division_banner.png",
+      // banner: supplyChainBannerSvg,
+      banner: "/images/banners/supply_chain_division_banner.png",
       supplyChainConnectivity: supplyChainConnectivityData,
       connectivityImg:
         "/images/divisions/supply_chain/connectivity/connectivity_banner.svg",

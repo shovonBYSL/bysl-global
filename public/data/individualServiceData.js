@@ -1,3 +1,5 @@
+import { servicesIconSvg } from "../../components/svg/services/servicesSvg";
+
 const serviceWhyChooseUsData = [
   {
     id: 0,
@@ -67,9 +69,10 @@ const individualServiceITServicesData = [
       "Innovation consulting",
       "Product strategy",
     ],
-    img: "/images/services/individual_service/it_services/icon_0.png",
-    activeImg:
-      "/images/services/individual_service/it_services/icon_active_0.png",
+    // img: "/images/services/individual_service/it_services/icon_0.png",
+    // activeImg: "/images/services/individual_service/it_services/icon_active_0.png",
+    icon: servicesIconSvg[0].icon ,
+    activeIcon: servicesIconSvg[0].activeIcon
   },
   {
     id: 1,
@@ -94,9 +97,10 @@ const individualServiceITServicesData = [
       "Web application QA and testing ",
       "Web application support and maintenance",
     ],
-    img: "/images/services/individual_service/it_services/icon_1.png",
-    activeImg:
-      "/images/services/individual_service/it_services/icon_active_1.png",
+    // img: "/images/services/individual_service/it_services/icon_1.png",
+    // activeImg: "/images/services/individual_service/it_services/icon_active_1.png",
+    icon: servicesIconSvg[1].icon ,
+    activeIcon: servicesIconSvg[1].activeIcon
   },
   {
     id: 2,
@@ -121,9 +125,10 @@ const individualServiceITServicesData = [
       "Live messaging and VoIP calling application",
       "Mobile application development consultancy",
     ],
-    img: "/images/services/individual_service/it_services/icon_2.png",
-    activeImg:
-      "/images/services/individual_service/it_services/icon_active_2.png",
+    // img: "/images/services/individual_service/it_services/icon_2.png",
+    // activeImg: "/images/services/individual_service/it_services/icon_active_2.png",
+    icon: servicesIconSvg[2].icon ,
+    activeIcon: servicesIconSvg[2].activeIcon
   },
   {
     id: 3,
@@ -147,9 +152,10 @@ const individualServiceITServicesData = [
       "ERP consulting services",
       "Digital transformation",
     ],
-    img: "/images/services/individual_service/it_services/icon_3.png",
-    activeImg:
-      "/images/services/individual_service/it_services/icon_active_3.png",
+    // img: "/images/services/individual_service/it_services/icon_3.png",
+    // activeImg: "/images/services/individual_service/it_services/icon_active_3.png",
+    icon: servicesIconSvg[3].icon ,
+    activeIcon: servicesIconSvg[3].activeIcon
   },
   {
     id: 4,
@@ -174,9 +180,10 @@ const individualServiceITServicesData = [
       "Sensor data analysis software development",
       "Recommendation engine development",
     ],
-    img: "/images/services/individual_service/it_services/icon_4.png",
-    activeImg:
-      "/images/services/individual_service/it_services/icon_active_4.png",
+    // img: "/images/services/individual_service/it_services/icon_4.png",
+    // activeImg: "/images/services/individual_service/it_services/icon_active_4.png",
+    icon: servicesIconSvg[4].icon ,
+    activeIcon: servicesIconSvg[4].activeIcon
   },
   {
     id: 5,
@@ -201,9 +208,10 @@ const individualServiceITServicesData = [
       "AR/VR Ecommerce Platform Development ",
       "AR/VR development consultancy",
     ],
-    img: "/images/services/individual_service/it_services/icon_5.png",
-    activeImg:
-      "/images/services/individual_service/it_services/icon_active_5.png",
+    // img: "/images/services/individual_service/it_services/icon_5.png",
+    // activeImg: "/images/services/individual_service/it_services/icon_active_5.png",
+    icon: servicesIconSvg[5].icon ,
+    activeIcon: servicesIconSvg[5].activeIcon
   },
   {
     id: 6,
@@ -228,9 +236,10 @@ const individualServiceITServicesData = [
       "KPI and performance analytics ",
       "BI consultation",
     ],
-    img: "/images/services/individual_service/it_services/icon_6.png",
-    activeImg:
-      "/images/services/individual_service/it_services/icon_active_6.png",
+    // img: "/images/services/individual_service/it_services/icon_6.png",
+    // activeImg: "/images/services/individual_service/it_services/icon_active_6.png",
+    icon: servicesIconSvg[6].icon ,
+    activeIcon: servicesIconSvg[6].activeIcon
   },
   {
     id: 7,
@@ -254,9 +263,10 @@ const individualServiceITServicesData = [
       "Reporting automation applications",
       "Workflow automation consultation",
     ],
-    img: "/images/services/individual_service/it_services/icon_7.png",
-    activeImg:
-      "/images/services/individual_service/it_services/icon_active_7.png",
+    // img: "/images/services/individual_service/it_services/icon_7.png",
+    // activeImg: "/images/services/individual_service/it_services/icon_active_7.png",
+    icon: servicesIconSvg[7].icon ,
+    activeIcon: servicesIconSvg[7].activeIcon
   },
 ];
 

@@ -48,7 +48,7 @@ const MarketPlacePlatforms = ({ data }) => {
                     <p className="text-lg xl:text-xl font-semibold mb-2.5">
                       {motto}
                     </p>
-                    <p>&#8211; {title} </p>
+                    <p className="font-semibold">-{title} </p>
                   </div>
                 </div>
               </div>

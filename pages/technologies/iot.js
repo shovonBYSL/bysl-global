@@ -12,7 +12,7 @@ import {
   iotSolutionsData,
   iotSupportData,
 } from "../../public/data/technologies/iotTechnologiesData";
-import { iotTechBannerSvg } from "../../components/svg/technologies/iotTechSvg";
+// import { iotTechBannerSvg } from "../../components/svg/technologies/iotTechSvg";
 
 const IotTechnologies = ({
   banner,
@@ -83,8 +83,8 @@ const IotTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: iotTechBannerSvg,
-      // banner: "/images/banners/iot_technologies_banner.png",
+      // banner: iotTechBannerSvg,
+      banner: "/images/banners/iot_technologies_banner.png",
       iotServices: iotServicesData,
       iotAppDevelopmentBanner: iotAppDevelopmentBannerData,
       iotSolutions: iotSolutionsData,

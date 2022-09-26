@@ -8,6 +8,7 @@ import {
   TechnologiesSectionTitle,
   TextGradient,
 } from "../shared/SharedTextgroups";
+import { PolygonArrow } from "../svg/Arrows";
 
 const ITServices = ({ data }) => {
   const serviceId = getItem();
@@ -37,7 +38,7 @@ const ITServices = ({ data }) => {
   }, [serviceId, tabData]);
 
   const Tab = ({ data }) => {
-    const { id, img, activeImg, tabTitle } = data;
+    const { id, img, activeImg, icon, activeIcon, tabTitle } = data;
 
     return (
       <div
@@ -53,12 +54,17 @@ const ITServices = ({ data }) => {
             tabOpen === id && "mx-auto lg:mx-0"
           }`}
         >
-          <Image
+          {/* <Image
             src={tabOpen === id ? activeImg : img}
             height={24}
             width={24}
             objectFit="contain"
             alt=""
+          /> */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: tabOpen === id ? activeIcon : icon,
+            }}
           />
           <p
             className={`text-sm font-bold w-full ${
@@ -93,13 +99,8 @@ const ITServices = ({ data }) => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 mt-2">
                 {tabData.highlights?.map((item, i) => (
                   <div key={i} className="flex">
-                    <div className="-mt-[2px]">
-                      <Image
-                        src="/images/services/individual_service/arrow_blue.svg"
-                        height={9}
-                        width={9}
-                        alt=""
-                      />
+                    <div className="mt-[5px]">
+                      <PolygonArrow />
                     </div>
                     <div className="ml-2.5 text-gray-800 text-sm font-bold w-full">
                       {item}

@@ -9,7 +9,7 @@ import {
   ITFeaturesData,
   serviceWhyChooseUsData,
 } from "../public/data/individualServiceData";
-import { servicesBannerSvg } from "../components/svg/services/servicesSvg";
+// import { servicesBannerSvg } from "../components/svg/services/servicesSvg";
 
 const Service = ({
   banner,
@@ -45,8 +45,8 @@ const Service = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: servicesBannerSvg,
-      // banner: "/images/banners/service_banner.png",
+      // banner: servicesBannerSvg,
+      banner: "/images/banners/service_banner.webp",
       individualServiceITServices: individualServiceITServicesData,
       serviceWhyChooseUs: serviceWhyChooseUsData,
       serviceResourceBlog: solutionsResourcesData,

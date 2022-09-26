@@ -12,7 +12,7 @@ import {
   cyberProtectionData,
   cyberSolutionsData,
 } from "../../public/data/technologies/cyberSecurityTechnologiesData";
-import { cyberTechBanner } from "../../components/svg/technologies/cyberTechSvg";
+// import { cyberTechBanner } from "../../components/svg/technologies/cyberTechSvg";
 
 const CyberSecurityTechnologies = ({
   banner,
@@ -67,8 +67,8 @@ const CyberSecurityTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: cyberTechBanner,
-      // banner: "/images/banners/cyber-security_technologies_banner.png",
+      // banner: cyberTechBanner,
+      banner: "/images/banners/cyber-security_technologies_banner.png",
       cyberBenefits: cyberBenefitsData,
       cyberFeatures: cyberFeaturesData,
       featuresBanner:
