@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { getItem, setItem } from "../../utils/sessionStorage";
@@ -54,13 +53,6 @@ const ITServices = ({ data }) => {
             tabOpen === id && "mx-auto lg:mx-0"
           }`}
         >
-          {/* <Image
-            src={tabOpen === id ? activeImg : img}
-            height={24}
-            width={24}
-            objectFit="contain"
-            alt=""
-          /> */}
           <div
             dangerouslySetInnerHTML={{
               __html: tabOpen === id ? activeIcon : icon,

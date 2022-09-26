@@ -289,3 +289,8 @@
   }
 }
 /* supply chain slider end */
+
+
+.feature-slider .swiper{
+  padding: 10px;
+}

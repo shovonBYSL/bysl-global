@@ -80,11 +80,9 @@ const ContactForm = ({ data }) => {
           feel free to share with us.
         </p>
         <div className="flex justify-center lg:justify-start gap-6 md:gap-4 lg:gap-6">
-          {data.map(({ id, img, link }) => (
+          {data.map(({ id, icon, link }) => (
             <Link key={id} passHref href={link}>
-              <a target="_blank" className="opacity-70">
-                <Image src={img} height={20} width={20} alt="" />
-              </a>
+              <a dangerouslySetInnerHTML={{ __html: icon }} target="_blank" className="opacity-60" />
             </Link>
           ))}
         </div>
