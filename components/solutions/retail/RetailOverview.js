@@ -35,7 +35,8 @@ const RetailOverview = ({ data }) => {
           </div>
         </div>
         <div className="md:col-span-5 xs:w-3/5 sm:w-1/2 md:w-full mx-auto">
-          <Image
+        <div dangerouslySetInnerHTML={{ __html: img }} />
+          {/* <Image
             src={img}
             placeholder="blur"
             blurDataURL={img}
@@ -43,7 +44,7 @@ const RetailOverview = ({ data }) => {
             width={567}
             objectFit="contain"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>

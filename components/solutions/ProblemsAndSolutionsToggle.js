@@ -23,14 +23,18 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
     setProblems(false);
   };
 
-  const ProblemAndSolutionText = ({ title, subTitle, image }) => {
+  const ProblemAndSolutionText = ({ title, subTitle, icon }) => {
     return (
       // <div className="opacity-animation-slow">
       <div className="opacity-animation-slow rounded-[20px] p-5 bg-white text-center lg:text-start h-full">
         <div className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20 mx-auto lg:mx-0 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
-          <div className="relative h-6 w-6 md:h-8 md:w-8 2xl:h-10 2xl:w-10">
+          {/* <div className="h-6 w-6 md:h-8 md:w-8 2xl:h-10 2xl:w-10">
             <Image src={image} layout="fill" alt="" objectFit="contain" />
-          </div>
+          </div> */}
+          <div
+            className="w-6 md:w-8 2xl:w-10 svgColor"
+            dangerouslySetInnerHTML={{ __html: icon }}
+          />
         </div>
         <p className="text-gray-800 font-semibold sm:text-lg 2xl:text-2xl mt-5 mb-2">
           {title}
@@ -97,13 +101,13 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
                     <ProblemAndSolutionText
                       title={problem}
                       subTitle={problemInfo}
-                      image={icon}
+                      icon={icon}
                     />
                   ) : (
                     <ProblemAndSolutionText
                       title={solution}
                       subTitle={solutionInfo}
-                      image={icon}
+                      icon={icon}
                     />
                   )}
 

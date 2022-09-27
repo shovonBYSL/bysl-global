@@ -61,7 +61,7 @@ export async function getStaticProps() {
         mobileSliderData,
       },
       // banner: mobileTechBanner,
-      banner: "/images/banners/mobile_technologies_banner.png",
+      banner: "/images/banners/mobile_technologies_banner.webp",
       userExperience: userExperienceData,
       sliderData: techSlidersData[2],
     },

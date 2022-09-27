@@ -15,9 +15,9 @@ const Point = () => {
       <path
         d="M16.125 9.75L10.6219 15L7.875 12.375"
         stroke="url(#paint1_linear_328_20253)"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -28,8 +28,8 @@ const Point = () => {
           y2="12.2635"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_328_20253"
@@ -39,12 +39,12 @@ const Point = () => {
           y2="12.4459"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
       </defs>
     </svg>
   );
 };
 
-export default Point;
+export { Point };

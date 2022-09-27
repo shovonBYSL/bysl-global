@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 import { getPath } from "../../utils/paths";
-import Point from "../svg/Point";
+import { Point } from "../svg/Point";
+import SolutionsImageSvg from "../svg/solutions/SolutionsImageSvg";
 
 const SolutionCard = ({ data }) => {
   const { solution, solutionInfo, solutionImg, solutionPoints } = data;
@@ -25,17 +26,20 @@ const SolutionCard = ({ data }) => {
           ))}
         </div>
       </div>
-      <div className="sm:w-2/3 lg:w-full mx-auto">
+      <div className="w-full sm:w-2/3 lg:w-full mx-auto">
         {educationPath ? (
-          <Image
-            src={solutionImg}
-            placeholder="blur"
-            blurDataURL={solutionImg}
-            height={339}
-            width={640}
-            objectFit="contain"
-            alt=""
-          />
+          // <Image
+          //   src={solutionImg}
+          //   placeholder="blur"
+          //   blurDataURL={solutionImg}
+          //   height={339}
+          //   width={640}
+          //   objectFit="contain"
+          //   alt=""
+          // />
+          <div className="xl:w-11/12 mx-auto">
+            <SolutionsImageSvg />
+          </div>
         ) : (
           <Image
             src={solutionImg}

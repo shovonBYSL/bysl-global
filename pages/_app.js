@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import "../styles/swiperJs.css";
+import "../styles/svg-styles.css";
 import "../styles/purpose.css";
 import "../styles/animations.css";
 import "../styles/scrollbar.css";

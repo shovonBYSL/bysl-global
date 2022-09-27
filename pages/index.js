@@ -1,5 +1,6 @@
 import CommonLayout from "../layouts/CommonLayout";
-import LandingPageBanner from "../components/landing_page/LandingPageBanner";
+// import LandingPageBanner from "../components/landing_page/LandingPageBanner";
+import LandingBanner from "../components/svg/LandingBanner";
 import AboutUs from "../components/landing_page/AboutUs";
 import ProjectsShowcase from "../components/landing_page/ProjectsShowcase";
 import SolutionsBanner from "../components/landing_page/SolutionsBanner";
@@ -12,7 +13,6 @@ import {
   investmentData,
   techData,
 } from "../public/data/landingPageData";
-import LandingBanner from "../components/svg/LandingBanner";
 
 const Home = ({
   techData,
@@ -20,7 +20,7 @@ const Home = ({
   aboutUsData,
   investmentData,
   solutionsBanner,
-  landingBanner,
+  // landingBanner,
   projectsShowcase,
 }) => {
   return (
@@ -58,7 +58,7 @@ export async function getStaticProps() {
       projectsShowcase: projectsShowcaseData,
       investmentData,
       solutionsBanner: "/images/banners/landing_solution_banner.webm",
-      landingBanner: "/images/banners/landing_banner.png",
+      // landingBanner: "/images/banners/landing_banner.png",
     },
   };
 }

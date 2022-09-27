@@ -1,3 +1,5 @@
+import { healthcareProblemsSolutionsSvg } from "../../../components/svg/solutions/healthcareSvg";
+
 const healthcareSolutionsBannerData = {
   img: "/images/banners/healthcare_solutions_banner.webp",
   heading: "Health care",
@@ -36,7 +38,8 @@ const healthcareProblemsAndSolutionsData = [
     solutionInfo:
       "Our AI/ML powered data analytics tools use advanced architecture to help healthcare organizations get valuable insights from healthcare data. Institutions can address various critical issues utilizing our well-designed intelligent data analytics applications that provide real time insights, visualizations and forecasting. We help our partners with simplified processes of reporting on various metrics relating to outcomes and processes, while still achieving compliance.",
     // solutionImg: "/images/solutions/healthcare/solution_image_0.png",
-    icon: "/images/solutions/healthcare/icon_0.png",
+    // icon: "/images/solutions/healthcare/icon_0.png",
+    icon: healthcareProblemsSolutionsSvg[0],
   },
   {
     id: 1,
@@ -48,7 +51,8 @@ const healthcareProblemsAndSolutionsData = [
     solutionInfo:
       "From minimizing human intervention during extracting patient’s information, digital operation processing using intelligent document readers, meeting compliance requirements to operating a secure financial system, our partner healthcare organizations can enhance the entire healthcare experience for all.",
     // solutionImg: "/images/solutions/healthcare/solution_image_0.png",
-    icon: "/images/solutions/healthcare/icon_1.png",
+    // icon: "/images/solutions/healthcare/icon_1.png",
+    icon: healthcareProblemsSolutionsSvg[1],
   },
   {
     id: 2,
@@ -60,7 +64,8 @@ const healthcareProblemsAndSolutionsData = [
     solutionInfo:
       "Leverage machine learning by accessing our well-crafted solutions for clinical workflows to reduce burnout for clinicians so that patient care is streamlined. Our applications help minimize both the patients and the clinicians to reduce friction and complexity in the exchange of information and documentation through omni-channel engagements while keeping sensitive information protected.",
     // solutionImg: "/images/solutions/healthcare/solution_image_0.png",
-    icon: "/images/solutions/healthcare/icon_2.png",
+    // icon: "/images/solutions/healthcare/icon_2.png",
+    icon: healthcareProblemsSolutionsSvg[2],
   },
   {
     id: 3,
@@ -72,7 +77,8 @@ const healthcareProblemsAndSolutionsData = [
     solutionInfo:
       "Handle complex data with higher computing power and intelligent analytics for deeper insights.  We develop applications that empower researchers in the healthcare industry to utilize health data to its fullest potential. We provide solutions for collecting, processing and forecasting of relevant data from any targeted group.",
     // solutionImg: "/images/solutions/healthcare/solution_image_0.png",
-    icon: "/images/solutions/healthcare/icon_3.png",
+    // icon: "/images/solutions/healthcare/icon_3.png",
+    icon: healthcareProblemsSolutionsSvg[3],
   },
 ];
 

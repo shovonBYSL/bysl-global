@@ -1,5 +1,7 @@
+import { manufacturingProblemsSolutionsSvg } from "../../../components/svg/solutions/manufacturingSvg";
+
 const manufacturingBannerData = {
-  img: "/images/banners/manufacturing_solutions_banner.png",
+  img: "/images/banners/manufacturing_solutions_banner.webp",
   type: "Manufacturing Industry",
   subHeading:
     "Powering the manufacturing leaders to maximize digitization of processes and operations utilizing comprehensive cloud-based solutions powered by ML, data analytics and IoT.",
@@ -24,7 +26,8 @@ const manufacturingProblemsAndSolutionsData = [
     solutionInfo:
       "Our cost effective models for serverless computing, and a comprehensive ecosystem of microservices enables our partners to achieve competitive advantage in terms of optimizing the entire information and operational technologies. You can effortlessly build connected   smart services and increase operational efficiency connecting factory equipment on the plant floor or deploying connected products on the field, our IoT services provide inexpensive yet secure cloud solutions, analytics, and device management to help achieve full-scale IT and OT needs.",
     // solutionImg: "/images/solutions/manufacturing/solution_image_0.png",
-    icon: "/images/solutions/manufacturing/icon_0.png",
+    // icon: "/images/solutions/manufacturing/icon_0.png",
+    icon: manufacturingProblemsSolutionsSvg[0],
   },
   {
     id: 1,
@@ -36,7 +39,8 @@ const manufacturingProblemsAndSolutionsData = [
     solutionInfo:
       "BYSL Global’s data streams seamlessly collect data from both internal and external applications and perform advanced real time analytics using machine learning and advanced analytics tools. This helps manufacturers build predictive applications without needing an infrastructure. Our solo dashboard applications designed and developed by our engineers allow visualization of data from different plants so that manufacturers can improve process optimization, take immediate actions to solve any issue, and prevent disruption.",
     // solutionImg: "/images/solutions/manufacturing/solution_image_0.png",
-    icon: "/images/solutions/manufacturing/icon_1.png",
+    // icon: "/images/solutions/manufacturing/icon_1.png",
+    icon: manufacturingProblemsSolutionsSvg[1],
   },
   {
     id: 2,
@@ -48,7 +52,8 @@ const manufacturingProblemsAndSolutionsData = [
     solutionInfo:
       "We help our partners drive operational efficiency throughout the business using advanced manufacturing technologies. Through our cloud infrastructure we enable smart factories that provide plant operators the right insight to enhance process orchestration, identify glitches and gain feasibility into manufacturing performance. Our applications help smart products communicate and interact through a centralized cloud server minimizing costs and time for our partners.",
     // solutionImg: "/images/solutions/manufacturing/solution_image_0.png",
-    icon: "/images/solutions/manufacturing/icon_2.png",
+    // icon: "/images/solutions/manufacturing/icon_2.png",
+    icon: manufacturingProblemsSolutionsSvg[2],
   },
   {
     id: 3,
@@ -60,7 +65,8 @@ const manufacturingProblemsAndSolutionsData = [
     solutionInfo:
       "Security by BYSL Global starts with our core infrastructure. We provide defenses against cyberattacks through a holistic security architecture powered by ML and AI to meet the most stringent security needs by our partners. From threat detection, real time responses to incidents, to preventing incidents and predicting potential threats, we provide world class cyber protection for any business at any scale.",
     // solutionImg: "/images/solutions/manufacturing/solution_image_0.png",
-    icon: "/images/solutions/manufacturing/icon_3.png",
+    // icon: "/images/solutions/manufacturing/icon_3.png",
+    icon: manufacturingProblemsSolutionsSvg[3],
   },
 ];
 

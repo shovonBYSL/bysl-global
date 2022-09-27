@@ -3,7 +3,7 @@ import CareersBanner from "../../components/careers/CareersBanner";
 import CareersCompanyInfo from "../../components/careers/CareersCompanyInfo";
 import CareerWhyBYSL from "../../components/careers/CareerWhyBYSL";
 import CareerJobCirculars from "../../components/careers/CareerJobCirculars";
-import { aboutUsData } from "../../public/data/aboutUsData";
+import { careersAboutUsData } from "../../public/data/careersData";
 
 const Careers = ({ companyInfo }) => {
   return (
@@ -28,7 +28,7 @@ const Careers = ({ companyInfo }) => {
 export async function getStaticProps() {
   return {
     props: {
-      companyInfo: aboutUsData,
+      companyInfo: careersAboutUsData,
     },
   };
 }

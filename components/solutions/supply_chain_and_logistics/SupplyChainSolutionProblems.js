@@ -5,6 +5,7 @@ import { Pagination } from "swiper";
 
 import SectionHeader from "../../shared/SectionHeader";
 import { supplyScroll } from "../../../utils/scroller";
+import SolutionsImageSvg from "../../svg/solutions/SolutionsImageSvg";
 
 const SupplyChainSolutionProblems = ({ type, children, data }) => {
   const [open, setOpen] = useState(0);
@@ -90,7 +91,7 @@ const SupplyChainSolutionProblems = ({ type, children, data }) => {
         </div>
       </div> */}
 
-      <div className="relative supplySlide pt-6">
+      <div className="relative supplySlide pt-6 lg:pt-10 xl:pt-16">
         <Swiper
           loop={true}
           speed={1200}
@@ -109,14 +110,17 @@ const SupplyChainSolutionProblems = ({ type, children, data }) => {
           {data.map(({ id, problemInfo, problemImg }) => {
             return (
               <SwiperSlide key={id}>
-                <div key={id} className="grid grid-cols-9 gap-6 lg:pl-[25%]">
+                <div
+                  key={id}
+                  className="grid grid-cols-9 gap-6 lg:pl-[25%] mt-14 lg:mt-1.5"
+                >
                   <div className="col-span-9 md:col-span-5">
                     <p className="text-center md:text-start text-sm xl:text-base text-gray-600">
                       {problemInfo}
                     </p>
                   </div>
-                  <div className="col-span-9 md:col-span-4 text-center">
-                    <Image
+                  <div className="col-span-9 md:col-span-4">
+                    {/* <Image
                       src={problemImg}
                       placeholder="blur"
                       blurDataURL={problemImg}
@@ -124,7 +128,8 @@ const SupplyChainSolutionProblems = ({ type, children, data }) => {
                       width={404}
                       objectFit="cover"
                       alt=""
-                    />
+                    /> */}
+                    <SolutionsImageSvg />
                   </div>
                 </div>
               </SwiperSlide>

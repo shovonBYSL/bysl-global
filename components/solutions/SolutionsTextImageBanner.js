@@ -59,16 +59,23 @@ const SolutionsTextImageBanner = ({ data, children }) => {
           manufacturingPath ? "md:col-span-6" : "md:col-span-5"
         } `}
       >
-        <Image
-          src={img}
-          placeholder="blur"
-          blurDataURL={img}
-          objectFit="contain"
-          height={manufacturingPath ? 522 : 430}
-          width={manufacturingPath ? 750 : 536}
-          priority
-          alt=""
-        />
+        {/* {retailPath ? (
+          <div
+            className="max-w-[430px] xl:ml-auto"
+            dangerouslySetInnerHTML={{ __html: img }}
+          />
+        ) : ( */}
+          <Image
+            src={img}
+            placeholder="blur"
+            blurDataURL={img}
+            objectFit="contain"
+            height={manufacturingPath ? 522 : 430}
+            width={manufacturingPath ? 750 : 536}
+            priority
+            alt=""
+          />
+        {/* )} */}
       </div>
     </div>
   );

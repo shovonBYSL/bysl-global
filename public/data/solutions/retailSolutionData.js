@@ -1,12 +1,16 @@
+import { retailOverviewSvg } from "../../../components/svg/solutions/retailSvg";
+
 const retailBannerData = {
   img: "/images/banners/retail_solutions_banner.png",
+  // img: retailBannerSvg,
   type: "Retail Industry",
   subHeading:
     "Future of retail is gleaming right through the clouds! The physical is shifting towards digital and e-commerece is consistently winning worldwide but there’s also a place for physical stores. So, we build technologies to capture the next-generation of retail indsutry, building solutions that cater to retailers selling products everywhere.  ",
 };
 
 const retailOverviewData = {
-  img: "/images/solutions/retail/overview.png",
+  // img: "/images/solutions/retail/overview.png",
+  img: retailOverviewSvg,
   details:
     "Being one of the major focuses of the investors, the global retail industry has scaled up bigger than any other industries, creating millions of employment and pioneering new ways to touch people’s lives. As the digital landscape widens with e-commerce being in the center, retail brands require a trusted IT foundation that supports the infrastructure, application transformation required to operate in a connected world. Today, a strong digital foundation of e-commerce is essential to run all channels seamlessly and consistently, stable performance with automated scalability. The future is here to streamline your global multi-platform operations and build a digital platform that scales up the business and innovation without disruption.",
   points: [
