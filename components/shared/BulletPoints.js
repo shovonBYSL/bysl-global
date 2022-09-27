@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Point } from "../svg/Point";
 
 const BulletPoints = ({ data }) => {
   return (

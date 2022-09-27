@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { getPath } from "../../utils/paths";
-import { Point } from "../svg/Point";
+import Point from "../svg/Point";
 import SolutionsImageSvg from "../svg/solutions/SolutionsImageSvg";
 
 const SolutionCard = ({ data }) => {
