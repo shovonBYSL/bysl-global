@@ -1,5 +1,4 @@
 import CommonLayout from "../layouts/CommonLayout";
-// import LandingPageBanner from "../components/landing_page/LandingPageBanner";
 import LandingBanner from "../components/svg/LandingBanner";
 import AboutUs from "../components/landing_page/AboutUs";
 import ProjectsShowcase from "../components/landing_page/ProjectsShowcase";
@@ -20,14 +19,12 @@ const Home = ({
   aboutUsData,
   investmentData,
   solutionsBanner,
-  // landingBanner,
   projectsShowcase,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <CommonLayout noMargin={true}>
       {/* banner section  */}
-      {/* <LandingPageBanner data={landingBanner} /> */}
       <LandingBanner />
       <div className="box">
         {/* about us section  */}
@@ -58,7 +55,6 @@ export async function getStaticProps() {
       projectsShowcase: projectsShowcaseData,
       investmentData,
       solutionsBanner: "/images/banners/landing_solution_banner.webm",
-      // landingBanner: "/images/banners/landing_banner.png",
     },
   };
 }
