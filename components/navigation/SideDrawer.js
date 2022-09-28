@@ -6,10 +6,11 @@ import { Accordion, AccordionBody } from "@material-tailwind/react";
 
 import Button from "../shared/buttons/Button";
 import { navbars } from "../../public/data/navigation/navbarData";
-import { setItem } from "../../utils/sessionStorage";
+import { getItem, setItem } from "../../utils/sessionStorage";
 
 const SideDrawer = ({ showDrawer, setShowDrawer }) => {
   const router = useRouter();
+  const serviceId = getItem();
   const [open, setOpen] = useState("");
 
   const handleOpen = (value) => {
@@ -18,7 +19,7 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
 
   const handleClick = (id) => {
     setItem(id);
-    router.asPath === "/services#it-services" && setShowDrawer(false);
+    (router.pathname === "/services" || "/investments") && setShowDrawer(false);
   };
 
   useEffect(() => {
@@ -90,11 +91,14 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
                           <Link href={link} passHref>
                             <p
                               onClick={() =>
-                                link === "/services#it-services" &&
+                                (link === "/services#it-services" ||
+                                  "/investments#marketplace-platform" ||
+                                  "/investments#it-platform" ||
+                                  "/investments") &&
                                 handleClick(id)
                               }
                               className={`text-sm font-medium ${
-                                router.pathname === link
+                                router.asPath === link && serviceId === id
                                   ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
                                   : "text-gray-400"
                               }`}

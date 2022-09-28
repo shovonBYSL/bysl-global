@@ -1,4 +1,4 @@
-const ArrowRight = ({ color }) => {
+const ArrowRight = () => {
   return (
     <svg
       height="16"
@@ -9,14 +9,40 @@ const ArrowRight = ({ color }) => {
     >
       <path
         d="M2.5 8.5H13.5"
-        stroke={color}
+        stroke="#0853AD"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M9 4L13.5 8.5L9 13"
-        stroke={color}
+        stroke="#0853AD"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+const ArrowRightWhite = () => {
+  return (
+    <svg
+      height="16"
+      width="16"
+      viewBox="0 0 16 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.5 8.5H13.5"
+        stroke="#fff"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9 4L13.5 8.5L9 13"
+        stroke="#fff"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -39,4 +65,4 @@ const PolygonArrow = () => {
   );
 };
 
-export { ArrowRight, PolygonArrow };
+export { ArrowRight, ArrowRightWhite, PolygonArrow };

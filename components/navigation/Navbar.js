@@ -4,12 +4,14 @@ import Router, { useRouter } from "next/router";
 import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
 import { navbars } from "../../public/data/navigation/navbarData";
-import { setItem } from "../../utils/sessionStorage";
+import { getItem, setItem } from "../../utils/sessionStorage";
 import { BYSLMainLogo, BYSLWhiteLogo } from "../svg/BYSLLogo";
-import { ArrowRight } from "../svg/Arrows";
+import { ArrowRight, ArrowRightWhite } from "../svg/Arrows";
 
 const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
+  const serviceId = getItem();
+
   const handleMouseOver = () => {
     const nav = document.querySelector(".sol-nav");
     if (nav) {
@@ -103,13 +105,18 @@ const Navbar = ({ colorChange, specificPath }) => {
             >
               {title}
             </p>
-            <ArrowRight
+            {/* <ArrowRight
               color={
                 link !== "/services#it-services" && router.asPath === link
                   ? "#fff"
                   : "#0853AD"
               }
-            />
+            /> */}
+            {link !== "/services#it-services" && router.asPath === link ? (
+              <ArrowRightWhite />
+            ) : (
+              <ArrowRight />
+            )}
           </div>
           {subTitle && (
             <p

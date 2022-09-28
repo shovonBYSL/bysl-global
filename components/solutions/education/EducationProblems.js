@@ -21,7 +21,7 @@ const EducationProblems = ({ data }) => {
                 <div key={id}>
                   <div
                     onClick={() => setOpen(id === open ? "" : id)}
-                    className="flex sm:items-center gap-4 hover:cursor-pointer"
+                    className="flex sm:items-center gap-2 sm:gap-4 hover:cursor-pointer"
                   >
                     <div
                       className={`h-2 w-2 sm:h-3.5 sm:w-3.5 lg:h-4 lg:w-4 rounded-full mt-[9px] sm:mt-0 ${
