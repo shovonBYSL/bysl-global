@@ -4,10 +4,10 @@
   display: none !important;
 }
 
-.techSlides .swiper-wrapper{
-  transition-timing-function : linear;
-  -webkit-transition-timing-function:linear!important;
-    -o-transition-timing-function:linear!important;
+.techSlides .swiper-wrapper {
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
 }
 
 .mobileTech .swiper-wrapper {
@@ -173,7 +173,7 @@
 }
 .supplySlide .swiper-pagination {
   top: 0 !important;
-  transform: translate3d(0px,0%,0) !important;
+  transform: translate3d(0px, 0%, 0) !important;
   right: auto !important;
   width: 100%;
 }
@@ -276,10 +276,15 @@
 
 @media (max-width: 1279px) {
   .supplySlide .swiper-pagination-bullet {
-    /* padding-top: 16px !important;
-    padding-bottom: 16px !important; */
     font-size: 16px;
     height: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .supplySlide .swiper-pagination-bullet {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
   }
 }
 
@@ -295,7 +300,6 @@
 }
 /* supply chain slider end */
 
-
-.feature-slider .swiper{
+.feature-slider .swiper {
   padding: 10px;
 }

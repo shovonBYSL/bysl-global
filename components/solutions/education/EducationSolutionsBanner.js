@@ -14,8 +14,8 @@ const EducationSolutionsBanner = ({ banner }) => {
             <TextGradient text="Education" />
           </p>
           <SectionTitleGradient>
-            Shaping the future with better
-            <br />
+            Shaping the future with better&nbsp;
+            <br className="hidden xs:block" />
             technology for education
           </SectionTitleGradient>
           <p className="text-gray-600 text-sm lg:text-base xl:text-lg 2xl:text-xl w-5/6 max-w-[730px] mx-auto mt-5">

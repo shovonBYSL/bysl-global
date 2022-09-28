@@ -36,7 +36,7 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
         ${
           (iotPath && "xl:!pt-20") ||
           (cloudPath && "xl:!pt-20") ||
-          (blockchainPath && "!pt-20") ||
+          (blockchainPath && "2xl:!pt-20") ||
           (aiMlPath && "mt-0") ||
           (webPath && "md:pt-5 lg:pt-10 xl:pt-12 2xl:pt-16") ||
           (ictPath ? "md:w-[50%]" : "md:w-[55%]")

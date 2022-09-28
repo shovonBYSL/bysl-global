@@ -64,12 +64,13 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
           >
             <div
               className={`transition-all duration-[600ms] h-6 2xl:h-8 w-6 2xl:w-8 -mt-[2px] 2xl:-mt-1 rounded-full bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center translate-x-0 ${
-                !problems && "translate-x-[50%]"
+                !problems && "translate-x-[70%] xl:translate-x-[50%]"
               }`}
             >
               <span className="h-4 2xl:h-5 w-4 2xl:w-5 bg-white rounded-full" />
             </div>
           </div>
+          
           <p
             onClick={handleSolutions}
             className={`text-xl 2xl:text-2xl font-medium hover:cursor-pointer transition-all duration-[600ms] ${

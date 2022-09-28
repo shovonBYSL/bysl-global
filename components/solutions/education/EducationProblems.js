@@ -21,16 +21,16 @@ const EducationProblems = ({ data }) => {
                 <div key={id}>
                   <div
                     onClick={() => setOpen(id === open ? "" : id)}
-                    className="flex items-center gap-4 hover:cursor-pointer"
+                    className="flex sm:items-center gap-4 hover:cursor-pointer"
                   >
                     <div
-                      className={`h-3.5 lg:h-4 w-3.5 lg:w-4 rounded-full ${
+                      className={`h-2 w-2 sm:h-3.5 sm:w-3.5 lg:h-4 lg:w-4 rounded-full mt-[9px] sm:mt-0 ${
                         id === open
                           ? "bg-gradient-to-r from-blue-900 to-blue-700"
                           : "bg-gray-800"
                       }`}
-                    ></div>
-                    <div className="xl:text-xl text-gray-800 font-medium">
+                    />
+                    <div className="xl:text-xl text-gray-800 font-medium w-full">
                       {problem}
                     </div>
                   </div>

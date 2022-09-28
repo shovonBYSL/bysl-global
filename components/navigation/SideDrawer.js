@@ -18,8 +18,9 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
 
   const handleClick = (id) => {
     setItem(id);
-    window.location.pathname === "/service" &&
-      Router.reload(window.location.pathname);
+    // router.asPath === "/service#it-services" &&
+    //   Router.reload(window.location.pathname);
+    console.log(router.asPath);
   };
 
   useEffect(() => {

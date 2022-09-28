@@ -5,7 +5,7 @@ const SolutionsBanner = ({ data }) => {
   const { img, heading, title, subTitle, buttons } = data;
 
   return (
-    <div className="relative h-[500px] lg:h-screen">
+    <div className="relative h-[550px] xs:h-[500px] lg:h-screen">
       <Image
         src={img}
         placeholder="blur"
