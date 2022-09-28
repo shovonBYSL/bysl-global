@@ -33,7 +33,7 @@ const Footer = () => {
       <>
         <p
           className={`text-white mb-6 ${title === "Company" && "mt-10"} ${
-            customItems && "xxxs:text-end sm:text-start"
+            customItems && "text-end sm:text-start"
           } font-semibold`}
         >
           {title}
@@ -44,7 +44,7 @@ const Footer = () => {
               <a
                 onClick={() => title === "Services" && handleClick(id)}
                 className={`block hover:cursor-pointer text-xs xxs:text-sm leading-5 mb-2 lg:mb-4 text-white/60 hover:text-white transition duration-300 ${
-                  customItems && "xxxs:text-end sm:text-start"
+                  customItems && "text-end sm:text-start"
                 }`}
               >
                 {name}
@@ -91,7 +91,7 @@ const Footer = () => {
           {footerData?.map(({ id, title, items, title2, items2 }) => (
             <div
               key={id}
-              className="col-span-6 xxxs:col-span-3 sm:col-span-2 lg:col-span-1"
+              className="col-span-3 sm:col-span-2 lg:col-span-1"
             >
               <Items title={title} data={items} />
               <div className="hidden lg:block mt-10">
@@ -103,7 +103,7 @@ const Footer = () => {
             {footerData?.map(({ id, title2, items2 }) => (
               <div
                 key={id}
-                className="col-span-6 xxxs:col-span-3 sm:col-span-2"
+                className="col-span-3 sm:col-span-2"
               >
                 {title2 && <Items title={title2} data={items2} />}
               </div>

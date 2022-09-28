@@ -70,7 +70,7 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
               <span className="h-4 2xl:h-5 w-4 2xl:w-5 bg-white rounded-full" />
             </div>
           </div>
-          
+
           <p
             onClick={handleSolutions}
             className={`text-xl 2xl:text-2xl font-medium hover:cursor-pointer transition-all duration-[600ms] ${
