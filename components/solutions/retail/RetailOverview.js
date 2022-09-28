@@ -34,8 +34,8 @@ const RetailOverview = ({ data }) => {
             ))}
           </div>
         </div>
-        <div className="md:col-span-5 xs:w-3/5 sm:w-1/2 md:w-full mx-auto">
-        <div dangerouslySetInnerHTML={{ __html: img }} />
+        <div className="md:col-span-5 w-full xs:w-3/5 sm:w-1/2 md:w-full mx-auto">
+          <div dangerouslySetInnerHTML={{ __html: img }} />
           {/* <Image
             src={img}
             placeholder="blur"
