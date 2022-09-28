@@ -41,10 +41,10 @@ const ImageShowcase = (props) => {
           />
         ) : (
           <div
-            className={
+            className={`${
               (digitalCommercePath && "shadow-[0px_0px_25px_0px_#D0E2F4]") ||
               (itesPath && "shadow-[0px_0px_25px_0px_#D0E2F4]")
-            }
+            }`}
           >
             <div
               className={`relative mx-auto h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden 

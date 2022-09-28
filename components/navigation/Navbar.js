@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import Router from "next/router";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 
 import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
@@ -20,7 +18,6 @@ const Navbar = ({ colorChange, specificPath }) => {
   };
 
   const handleClick = (id) => {
-    console.log("click", id);
     setItem(id);
     window.location.pathname === "/service" &&
       Router.reload(window.location.pathname);

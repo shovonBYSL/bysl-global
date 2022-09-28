@@ -4,18 +4,8 @@ import { InvestmentBgBottom, InvestmentBgTop } from "../svg/InvestmentBg";
 const InvestmentsBanner = () => {
   return (
     <div className="h-[620px] lg:h-screen w-full bg-gradient-to-br from-[#222] to-[#222] relative overflow-hidden">
-      {/* <img
-        src="/images/bg-top.png"
-        className="z-10 absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[50%] xl:-left-[40%] 2xl:-left-[30%] lg:h-[1080px] bg-1"
-        alt=""
-      /> */}
-      {/* <img
-        src="/images/bg-bottom.png"
-        className="z-10 absolute bottom-0 xs:-bottom-[30%] 3xl:-bottom-[40%] -right-[50%] xl:-right-[40%] 2xl:-right-[30%] lg:h-[1080px] bg-2"
-        alt=""
-      /> */}
-        <InvestmentBgTop />
-        <InvestmentBgBottom />
+      <InvestmentBgTop />
+      <InvestmentBgBottom />
 
       <div className="z-30 flex items-center justify-center text-center text-white pt-14 lg:pt-0 h-full w-full">
         <div>

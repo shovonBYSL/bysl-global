@@ -1,9 +1,7 @@
 const InvestmentBgTop = () => {
   return (
     <svg
-      //   width="1684"
-      //   height="1669"
-      className="z-10 absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[50%] xl:-left-[40%] 2xl:-left-[30%] lg:h-[1080px] bg-1"
+      className="z-10 absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[100%] lg:-left-[50%] xl:-left-[40%] 2xl:-left-[30%] lg:h-[1080px] bg-1"
       viewBox="0 0 1684 1669"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -28,9 +26,9 @@ const InvestmentBgTop = () => {
           width="1683.14"
           height="1667.44"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -49,9 +47,9 @@ const InvestmentBgTop = () => {
           width="779.915"
           height="765.246"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -71,8 +69,8 @@ const InvestmentBgTop = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(825.902 816.199) rotate(-20.9843) scale(288.174 457.688)"
         >
-          <stop stop-color="#6972CD" />
-          <stop offset="1" stop-color="#FF00FF" />
+          <stop stopColor="#6972CD" />
+          <stop offset="1" stopColor="#FF00FF" />
         </radialGradient>
       </defs>
     </svg>
@@ -81,9 +79,7 @@ const InvestmentBgTop = () => {
 const InvestmentBgBottom = () => {
   return (
     <svg
-      //   width="1735"
-      //   height="1606"
-      className="z-10 absolute bottom-0 xs:-bottom-[30%] 3xl:-bottom-[40%] -right-[50%] xl:-right-[40%] 2xl:-right-[30%] lg:h-[1080px] bg-2"
+      className="z-10 absolute bottom-0 xs:-bottom-[30%] 3xl:-bottom-[40%] -right-[100%] lg:-right-[50%] xl:-right-[40%] 2xl:-right-[30%] lg:h-[1080px] bg-2"
       viewBox="0 0 1735 1606"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -108,9 +104,9 @@ const InvestmentBgBottom = () => {
           width="1733.78"
           height="1605.09"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -129,9 +125,9 @@ const InvestmentBgBottom = () => {
           width="819.635"
           height="818.439"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -151,8 +147,8 @@ const InvestmentBgBottom = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(874.718 829.661) rotate(143.537) scale(288.174 457.688)"
         >
-          <stop stop-color="#6972CD" />
-          <stop offset="1" stop-color="#FF00FF" />
+          <stop stopColor="#6972CD" />
+          <stop offset="1" stopColor="#FF00FF" />
         </radialGradient>
       </defs>
     </svg>

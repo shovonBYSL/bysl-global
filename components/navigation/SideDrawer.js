@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Accordion, AccordionBody } from "@material-tailwind/react";
 
 import Button from "../shared/buttons/Button";
 import { navbars } from "../../public/data/navigation/navbarData";
+import { setItem } from "../../utils/sessionStorage";
 
 const SideDrawer = ({ showDrawer, setShowDrawer }) => {
   const router = useRouter();
@@ -13,6 +14,12 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
 
   const handleOpen = (value) => {
     setOpen(open === value ? "" : value);
+  };
+
+  const handleClick = (id) => {
+    setItem(id);
+    window.location.pathname === "/service" &&
+      Router.reload(window.location.pathname);
   };
 
   useEffect(() => {
@@ -83,6 +90,10 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
                         <div key={id} className="ml-5">
                           <Link href={link} passHref>
                             <p
+                              onClick={() =>
+                                link === "/services#it-services" &&
+                                handleClick(id)
+                              }
                               className={`text-sm font-medium ${
                                 router.pathname === link
                                   ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"

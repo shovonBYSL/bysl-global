@@ -6,7 +6,7 @@ const PurposeBannerSvg = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_3278_187083)">
+      <g clipPath="url(#clip0_3278_187083)">
         <path d="M170.94 280.92H168.58V269.82H170.94V280.92Z" fill="#231F20" />
         <path
           d="M184.83 280.92H182.56L177.27 273.69V280.92H174.91V269.82H177.34L182.47 276.82V269.82H184.83V280.92Z"
@@ -425,10 +425,10 @@ const PurposeBannerSvg = () => {
           y2="77.1504"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9FA3AA" />
-          <stop offset="0.39" stop-color="#BABDC1" />
-          <stop offset="0.74" stop-color="#CBCDCF" />
-          <stop offset="1" stop-color="#D1D3D4" />
+          <stop stopColor="#9FA3AA" />
+          <stop offset="0.39" stopColor="#BABDC1" />
+          <stop offset="0.74" stopColor="#CBCDCF" />
+          <stop offset="1" stopColor="#D1D3D4" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3278_187083"
@@ -438,10 +438,10 @@ const PurposeBannerSvg = () => {
           y2="56.7898"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9FA3AA" />
-          <stop offset="0.39" stop-color="#BABDC1" />
-          <stop offset="0.74" stop-color="#CBCDCF" />
-          <stop offset="1" stop-color="#D1D3D4" />
+          <stop stopColor="#9FA3AA" />
+          <stop offset="0.39" stopColor="#BABDC1" />
+          <stop offset="0.74" stopColor="#CBCDCF" />
+          <stop offset="1" stopColor="#D1D3D4" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_3278_187083"
@@ -451,12 +451,12 @@ const PurposeBannerSvg = () => {
           y2="144.14"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.49" stop-color="#498AC9" />
-          <stop offset="0.59" stop-color="#4787C4" />
-          <stop offset="0.7" stop-color="#417DB7" />
-          <stop offset="0.81" stop-color="#376DA1" />
-          <stop offset="0.92" stop-color="#295682" />
-          <stop offset="1" stop-color="#1E4469" />
+          <stop offset="0.49" stopColor="#498AC9" />
+          <stop offset="0.59" stopColor="#4787C4" />
+          <stop offset="0.7" stopColor="#417DB7" />
+          <stop offset="0.81" stopColor="#376DA1" />
+          <stop offset="0.92" stopColor="#295682" />
+          <stop offset="1" stopColor="#1E4469" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_3278_187083"
@@ -466,10 +466,10 @@ const PurposeBannerSvg = () => {
           y2="56.7895"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.43" stop-color="#515254" />
-          <stop offset="0.66" stop-color="#4B4B4D" />
-          <stop offset="0.99" stop-color="#3A393A" />
-          <stop offset="1" stop-color="#393839" />
+          <stop offset="0.43" stopColor="#515254" />
+          <stop offset="0.66" stopColor="#4B4B4D" />
+          <stop offset="0.99" stopColor="#3A393A" />
+          <stop offset="1" stopColor="#393839" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_3278_187083"
@@ -479,10 +479,10 @@ const PurposeBannerSvg = () => {
           y2="81.4396"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#393839" />
-          <stop offset="0.01" stop-color="#3A393A" />
-          <stop offset="0.34" stop-color="#4B4B4D" />
-          <stop offset="0.57" stop-color="#515254" />
+          <stop stopColor="#393839" />
+          <stop offset="0.01" stopColor="#3A393A" />
+          <stop offset="0.34" stopColor="#4B4B4D" />
+          <stop offset="0.57" stopColor="#515254" />
         </linearGradient>
         <clipPath id="clip0_3278_187083">
           <rect width="451.28" height="281.1" fill="white" />
@@ -500,7 +500,7 @@ const ValuesBannerSvg = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_3278_187291)">
+      <g clipPath="url(#clip0_3278_187291)">
         <path
           d="M241.016 53.3514V177.212C241.098 178.987 241.704 180.703 242.761 182.159C243.819 183.614 245.284 184.748 246.986 185.427L383.549 248.698C391.622 252.43 401.719 247.846 401.719 240.482V116.296C401.63 114.516 401.02 112.796 399.958 111.338C398.897 109.879 397.428 108.741 395.723 108.055L259.186 45.1359C251.088 41.4289 241.016 45.9874 241.016 53.3514Z"
           fill="url(#paint0_linear_3278_187291)"
@@ -533,10 +533,10 @@ const ValuesBannerSvg = () => {
           y2="146.904"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D1D3D4" />
-          <stop offset="0.26" stop-color="#CBCDCF" />
-          <stop offset="0.61" stop-color="#BABDC1" />
-          <stop offset="1" stop-color="#9FA3AA" />
+          <stop stopColor="#D1D3D4" />
+          <stop offset="0.26" stopColor="#CBCDCF" />
+          <stop offset="0.61" stopColor="#BABDC1" />
+          <stop offset="1" stopColor="#9FA3AA" />
         </linearGradient>
         <clipPath id="clip0_3278_187291">
           <rect width="450" height="250" fill="white" />
@@ -554,7 +554,7 @@ const CultureBannerSvg = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_3278_187488)">
+      <g clipPath="url(#clip0_3278_187488)">
         <g style={{ mixBlendMode: "multiply" }}>
           <path
             d="M100.51 17.3004L70.8897 0.220377C70.6414 0.0782015 70.3601 0.00389318 70.074 0.00489277C69.7879 0.00589236 69.5071 0.0821769 69.2598 0.226084C69.0126 0.369991 68.8075 0.576456 68.6653 0.824717C68.5231 1.07298 68.4487 1.35429 68.4497 1.64039V38.6404L100.51 20.1504C100.767 20.0115 100.981 19.8057 101.131 19.5549C101.28 19.304 101.359 19.0174 101.359 18.7254C101.359 18.4333 101.28 18.1468 101.131 17.8959C100.981 17.6451 100.767 17.4393 100.51 17.3004Z"
@@ -1175,13 +1175,13 @@ const CultureBannerSvg = () => {
           y2="0.110012"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#498AC9" />
-          <stop offset="0.28" stop-color="#4888C6" />
-          <stop offset="0.47" stop-color="#4482BD" />
-          <stop offset="0.64" stop-color="#3D76AE" />
-          <stop offset="0.78" stop-color="#336799" />
-          <stop offset="0.92" stop-color="#27537E" />
-          <stop offset="1" stop-color="#1E4469" />
+          <stop stopColor="#498AC9" />
+          <stop offset="0.28" stopColor="#4888C6" />
+          <stop offset="0.47" stopColor="#4482BD" />
+          <stop offset="0.64" stopColor="#3D76AE" />
+          <stop offset="0.78" stopColor="#336799" />
+          <stop offset="0.92" stopColor="#27537E" />
+          <stop offset="1" stopColor="#1E4469" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3278_187488"
@@ -1191,8 +1191,8 @@ const CultureBannerSvg = () => {
           y2="147.54"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1E4469" />
-          <stop offset="1" stop-color="#498AC9" />
+          <stop stopColor="#1E4469" />
+          <stop offset="1" stopColor="#498AC9" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_3278_187488"
@@ -1202,10 +1202,10 @@ const CultureBannerSvg = () => {
           y2="128.31"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9FA3AA" />
-          <stop offset="0.39" stop-color="#BABDC1" />
-          <stop offset="0.74" stop-color="#CBCDCF" />
-          <stop offset="1" stop-color="#D1D3D4" />
+          <stop stopColor="#9FA3AA" />
+          <stop offset="0.39" stopColor="#BABDC1" />
+          <stop offset="0.74" stopColor="#CBCDCF" />
+          <stop offset="1" stopColor="#D1D3D4" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_3278_187488"
@@ -1215,10 +1215,10 @@ const CultureBannerSvg = () => {
           y2="152.55"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#393839" />
-          <stop offset="0.02" stop-color="#3A393A" />
-          <stop offset="0.6" stop-color="#4B4B4D" />
-          <stop offset="1" stop-color="#515254" />
+          <stop stopColor="#393839" />
+          <stop offset="0.02" stopColor="#3A393A" />
+          <stop offset="0.6" stopColor="#4B4B4D" />
+          <stop offset="1" stopColor="#515254" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_3278_187488"
@@ -1228,8 +1228,8 @@ const CultureBannerSvg = () => {
           y2="124.73"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1E4469" />
-          <stop offset="1" stop-color="#498AC9" />
+          <stop stopColor="#1E4469" />
+          <stop offset="1" stopColor="#498AC9" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_3278_187488"
@@ -1239,10 +1239,10 @@ const CultureBannerSvg = () => {
           y2="130.38"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#393839" />
-          <stop offset="0.02" stop-color="#3A393A" />
-          <stop offset="0.6" stop-color="#4B4B4D" />
-          <stop offset="1" stop-color="#515254" />
+          <stop stopColor="#393839" />
+          <stop offset="0.02" stopColor="#3A393A" />
+          <stop offset="0.6" stopColor="#4B4B4D" />
+          <stop offset="1" stopColor="#515254" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_3278_187488"
@@ -1252,10 +1252,10 @@ const CultureBannerSvg = () => {
           y2="170.641"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D1D3D4" />
-          <stop offset="0.26" stop-color="#CBCDCF" />
-          <stop offset="0.61" stop-color="#BABDC1" />
-          <stop offset="1" stop-color="#9FA3AA" />
+          <stop stopColor="#D1D3D4" />
+          <stop offset="0.26" stopColor="#CBCDCF" />
+          <stop offset="0.61" stopColor="#BABDC1" />
+          <stop offset="1" stopColor="#9FA3AA" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_3278_187488"
@@ -1265,10 +1265,10 @@ const CultureBannerSvg = () => {
           y2="167.26"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D1D3D4" />
-          <stop offset="0.26" stop-color="#CBCDCF" />
-          <stop offset="0.61" stop-color="#BABDC1" />
-          <stop offset="1" stop-color="#9FA3AA" />
+          <stop stopColor="#D1D3D4" />
+          <stop offset="0.26" stopColor="#CBCDCF" />
+          <stop offset="0.61" stopColor="#BABDC1" />
+          <stop offset="1" stopColor="#9FA3AA" />
         </linearGradient>
         <clipPath id="clip0_3278_187488">
           <rect

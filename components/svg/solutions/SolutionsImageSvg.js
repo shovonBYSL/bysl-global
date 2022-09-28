@@ -265,9 +265,9 @@ const SolutionsImageSvg = () => {
           width="91.7832"
           height="91.7812"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -300,9 +300,9 @@ const SolutionsImageSvg = () => {
           width="75.7803"
           height="75.7812"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -335,9 +335,9 @@ const SolutionsImageSvg = () => {
           width="88.2129"
           height="88.2109"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -370,9 +370,9 @@ const SolutionsImageSvg = () => {
           width="71.4316"
           height="71.4297"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -405,9 +405,9 @@ const SolutionsImageSvg = () => {
           width="70.959"
           height="70.9609"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -440,9 +440,9 @@ const SolutionsImageSvg = () => {
           width="67.8389"
           height="67.8359"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -476,8 +476,8 @@ const SolutionsImageSvg = () => {
           y2="68.9962"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1413_13404"
@@ -487,8 +487,8 @@ const SolutionsImageSvg = () => {
           y2="43.8527"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1413_13404"
@@ -498,8 +498,8 @@ const SolutionsImageSvg = () => {
           y2="202.539"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_1413_13404"
@@ -509,8 +509,8 @@ const SolutionsImageSvg = () => {
           y2="82.3998"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_1413_13404"
@@ -520,8 +520,8 @@ const SolutionsImageSvg = () => {
           y2="85.9929"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_1413_13404"
@@ -531,8 +531,8 @@ const SolutionsImageSvg = () => {
           y2="89.2813"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_1413_13404"
@@ -542,8 +542,8 @@ const SolutionsImageSvg = () => {
           y2="60.5752"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_1413_13404"
@@ -553,8 +553,8 @@ const SolutionsImageSvg = () => {
           y2="31.4941"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_1413_13404"
@@ -564,8 +564,8 @@ const SolutionsImageSvg = () => {
           y2="51.4777"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_1413_13404"
@@ -575,8 +575,8 @@ const SolutionsImageSvg = () => {
           y2="58.6105"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_1413_13404"
@@ -586,8 +586,8 @@ const SolutionsImageSvg = () => {
           y2="33.7878"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_1413_13404"
@@ -597,8 +597,8 @@ const SolutionsImageSvg = () => {
           y2="38.7688"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_1413_13404"
@@ -608,8 +608,8 @@ const SolutionsImageSvg = () => {
           y2="49.7406"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_1413_13404"
@@ -619,8 +619,8 @@ const SolutionsImageSvg = () => {
           y2="40.426"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_1413_13404"
@@ -630,8 +630,8 @@ const SolutionsImageSvg = () => {
           y2="37.3166"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_1413_13404"
@@ -641,8 +641,8 @@ const SolutionsImageSvg = () => {
           y2="60.3394"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_1413_13404"
@@ -652,8 +652,8 @@ const SolutionsImageSvg = () => {
           y2="111.348"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_1413_13404"
@@ -663,8 +663,8 @@ const SolutionsImageSvg = () => {
           y2="91.409"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint18_linear_1413_13404"
@@ -674,8 +674,8 @@ const SolutionsImageSvg = () => {
           y2="96.5128"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_1413_13404"
@@ -685,8 +685,8 @@ const SolutionsImageSvg = () => {
           y2="101.972"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint20_linear_1413_13404"
@@ -696,8 +696,8 @@ const SolutionsImageSvg = () => {
           y2="107.087"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint21_linear_1413_13404"
@@ -707,8 +707,8 @@ const SolutionsImageSvg = () => {
           y2="112.487"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint22_linear_1413_13404"
@@ -718,8 +718,8 @@ const SolutionsImageSvg = () => {
           y2="117.595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint23_linear_1413_13404"
@@ -729,8 +729,8 @@ const SolutionsImageSvg = () => {
           y2="123.03"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint24_linear_1413_13404"
@@ -740,8 +740,8 @@ const SolutionsImageSvg = () => {
           y2="128.134"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint25_linear_1413_13404"
@@ -751,8 +751,8 @@ const SolutionsImageSvg = () => {
           y2="92.3546"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint26_linear_1413_13404"
@@ -762,8 +762,8 @@ const SolutionsImageSvg = () => {
           y2="87.6306"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint27_linear_1413_13404"
@@ -773,8 +773,8 @@ const SolutionsImageSvg = () => {
           y2="109.952"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint28_linear_1413_13404"
@@ -784,8 +784,8 @@ const SolutionsImageSvg = () => {
           y2="127.745"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint29_linear_1413_13404"
@@ -795,8 +795,8 @@ const SolutionsImageSvg = () => {
           y2="109.937"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint30_linear_1413_13404"
@@ -806,8 +806,8 @@ const SolutionsImageSvg = () => {
           y2="124.675"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint31_linear_1413_13404"
@@ -817,8 +817,8 @@ const SolutionsImageSvg = () => {
           y2="110.019"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint32_linear_1413_13404"
@@ -828,8 +828,8 @@ const SolutionsImageSvg = () => {
           y2="179.194"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint33_linear_1413_13404"
@@ -839,8 +839,8 @@ const SolutionsImageSvg = () => {
           y2="184.298"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint34_linear_1413_13404"
@@ -850,8 +850,8 @@ const SolutionsImageSvg = () => {
           y2="133.182"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint35_linear_1413_13404"
@@ -861,8 +861,8 @@ const SolutionsImageSvg = () => {
           y2="123.609"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
         <linearGradient
           id="paint36_linear_1413_13404"
@@ -872,8 +872,8 @@ const SolutionsImageSvg = () => {
           y2="123.89"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00469F" />
-          <stop offset="1" stop-color="#1E79D6" />
+          <stop stopColor="#00469F" />
+          <stop offset="1" stopColor="#1E79D6" />
         </linearGradient>
       </defs>
     </svg>
