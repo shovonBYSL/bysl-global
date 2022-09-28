@@ -37,7 +37,7 @@ const OverviewCard = (props) => {
               } ${investmentsPath && "h-10 xl:!h-[70px] w-10 xl:!w-[70px]"}`}
             >
               {icon ? (
-                <div dangerouslySetInnerHTML={{ __html: icon }}></div>
+                <div dangerouslySetInnerHTML={{ __html: icon }} />
               ) : hoverImg ? (
                 <HoverImage img1={img} img2={hoverImg} />
               ) : (

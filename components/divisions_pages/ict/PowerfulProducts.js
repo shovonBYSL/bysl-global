@@ -33,7 +33,7 @@ const PowerfulProducts = ({ data }) => {
                       : "h-32 xxs:h-52 xs:h-32 lg:h-40 xl:h-44 2xl:h-52"
                   }`}
                 >
-                  {id === 0 || id === 1 ? (
+                  {video ? (
                     <video
                       className="object-cover h-full w-full"
                       src={video}

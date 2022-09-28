@@ -105,13 +105,7 @@ const Navbar = ({ colorChange, specificPath }) => {
             >
               {title}
             </p>
-            {/* <ArrowRight
-              color={
-                link !== "/services#it-services" && router.asPath === link
-                  ? "#fff"
-                  : "#0853AD"
-              }
-            /> */}
+
             {link !== "/services#it-services" && router.asPath === link ? (
               <ArrowRightWhite />
             ) : (

@@ -5,7 +5,7 @@ import { TextGradient } from "./SharedTextgroups";
 
 const Modal = (props) => {
   const { data, handleClose, shadow, gradientBg } = props;
-  const { title, title2, subTitle, img, hoverImg } = data;
+  const { title, title2, subTitle, icon, img, hoverImg } = data;
 
   return (
     <>
@@ -24,14 +24,21 @@ const Modal = (props) => {
             "h-12 w-12 bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg flex justify-center"
           }`}
         >
-          <Image
-            src={hoverImg && !gradientBg ? hoverImg : img}
-            placeholder="blur"
-            blurDataURL={hoverImg && !gradientBg ? hoverImg : img}
-            height={gradientBg ? 30 : 40}
-            width={gradientBg ? 30 : 40}
-            alt=""
-          />
+          {icon ? (
+            <div
+              className="h-10 w-10"
+              dangerouslySetInnerHTML={{ __html: icon }}
+            />
+          ) : (
+            <Image
+              src={hoverImg && !gradientBg ? hoverImg : img}
+              placeholder="blur"
+              blurDataURL={hoverImg && !gradientBg ? hoverImg : img}
+              height={gradientBg ? 30 : 40}
+              width={gradientBg ? 30 : 40}
+              alt=""
+            />
+          )}
         </div>
         <p className="text-gray-800 text-xl font-semibold text-center mt-5">
           {title2 ? <TextGradient text={title} /> : title}
