@@ -19,6 +19,7 @@ const ApplicationForm = () => {
   const router = useRouter();
   const { jobId } = router.query;
 
+  const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,15 +36,9 @@ const ApplicationForm = () => {
     },
   });
 
-  // const uploadFile = async (e) => {
-  //   if (e.target.files && e.target.files.length > 0) {
-  //   let file = e.target.files[0];
-  //   const base64 = await convertBase64(file);
-
-  //   setFilePath(base64);
-  //   setFileName(file.name);
-  //   }
-  // };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
   let convertBase64 = (file) => {
     return new Promise((resolve, reject) => {
@@ -60,7 +55,6 @@ const ApplicationForm = () => {
 
   useEffect(() => {
     if (jobId !== "undefined") {
-      // const singleJobData = jobList.find((item) => item.id == jobId);
       setData(jobList.find((item) => item.url == jobId));
     }
 
@@ -85,7 +79,7 @@ const ApplicationForm = () => {
       To: [
         "anisur.rahman@intelli.global",
         "kawser.shovon@intelli.global",
-        // "info@byslglobal.com",
+        "info@byslglobal.com",
       ],
       From: "anisur.rahman@intelli.global",
       Subject: `Application for ${data.position}`,
@@ -124,10 +118,6 @@ const ApplicationForm = () => {
     });
   };
 
-  // const getFiles = () => {
-  //   inputFile.current.click();
-  // };
-
   const previewData = [
     {
       id: 0,
@@ -164,6 +154,11 @@ const ApplicationForm = () => {
       question: "Why do you think you are the best fit for this position?",
       answer: whyFit,
     },
+    {
+      id: 7,
+      question: "Your Resume",
+      fileUploaded: fileName,
+    },
   ];
 
   return (
@@ -172,11 +167,13 @@ const ApplicationForm = () => {
       {data ? (
         <CommonLayout title="Application Form">
           <ToastContainer theme="dark" />
-          <CareersPreviewModal
-            jobTitle={data.position}
-            data={previewData}
-            fileName={fileName}
-          />
+          {isOpen && (
+            <CareersPreviewModal
+              jobTitle={data.position}
+              data={previewData}
+              handleClose={handleClose}
+            />
+          )}
           <div className="max-w-[856px] mx-auto py-10 xl:py-16">
             <JobHeader jobTitle={data.position} />
             <form
@@ -210,18 +207,6 @@ const ApplicationForm = () => {
               {/* phone input  */}
               <CareerInputTitle title="Phone *" />
               <div className="mb-10">
-                {/* <p className="flex text-sm absolute inset-y-0 left-0 items-center pl-3 pointer-events-none text-gray-800">
-                  +880
-                </p>
-                <input
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  required
-                  name="phone"
-                  type="text"
-                  placeholder="9666 722788"
-                  className="bg-gray-50 text-sm w-full pl-12 p-2.5 rounded-[5px] text-gray-600 placeholder-gray-600 focus:outline-gray-800/20 border border-gray-600"
-                /> */}
                 <PhoneInput
                   enableSearch
                   disableSearchIcon
@@ -284,18 +269,6 @@ const ApplicationForm = () => {
 
               {/* resume upload  */}
               <CareerInputTitle title="Upload your resume here *" />
-              {/* <div className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center">
-                <label className="block">
-                  <span className="sr-only">Upload Resume</span>
-                  <input
-                    onChange={uploadFile}
-                    type="file"
-                    className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-900 hover:file:bg-blue-100
-    "
-                  />
-                </label>
-              </div> */}
-
               <div
                 {...getRootProps({
                   className: `h-[120px] ${
@@ -323,29 +296,14 @@ const ApplicationForm = () => {
                   />
                 </div>
               )}
-
-              {/* <div
-                id="inputParent"
-                // onClick={(e) => onButtonClick(e)}
-                className="h-[120px] mb-10 bg-[#EBEFF5] hover:bg-blue-400 transition duration-500 rounded-[5px] border border-dashed border-gray-600 flex justify-center items-center text-center hover:cursor-pointer"
-              >
-                <div>
-                  <p className="text-sm text-gray-700 font-light">
-                    Upload Resume
-                  </p>
-                  <p className="text-xs text-[#B1B6C1] font-light">
-                    *pdf or docx formate only
-                  </p>
-                </div>
-              </div> */}
-              {/* {uploadedFile && <p className="">{uploadedFile}</p>} */}
               <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10">
-                <label
-                  htmlFor="application-preview"
+                <div
+                  // htmlFor="application-preview"
+                  onClick={() => setIsOpen(true)}
                   className="w-[150px] h-max mx-auto lg:mx-0 text-center rounded-lg text-sm font-semibold py-2 xl:py-2.5 hover:cursor-pointer light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
                 >
                   Preview
-                </label>
+                </div>
                 <button
                   type="submit"
                   className="w-[150px] h-max mx-auto lg:mx-0 text-center rounded-lg text-white text-sm font-semibold py-2 xl:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700"

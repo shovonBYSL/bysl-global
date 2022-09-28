@@ -1,5 +1,5 @@
 import Script from "next/script";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -99,7 +99,7 @@ const ContactForm = ({ data }) => {
                 name="name"
                 type="text"
                 placeholder="Full Name"
-                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-600 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none"
+                className="bg-blue-400 w-full p-3.5 rounded-lg text-gray-400 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none"
               />
             </div>
             <div className="w-full">
@@ -111,7 +111,7 @@ const ContactForm = ({ data }) => {
                 name="email"
                 type="email"
                 placeholder="Your Email"
-                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-600 focus:outline-blue-800/10  border border-gray-200/30 sm:border-none"
+                className="bg-blue-400 w-full p-3.5 rounded-lg text-gray-400 focus:outline-blue-800/10  border border-gray-200/30 sm:border-none"
               />
             </div>
           </div>
@@ -124,7 +124,7 @@ const ContactForm = ({ data }) => {
               name="message"
               rows="5"
               placeholder="Type message...."
-              className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-600 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none resize-none"
+              className="bg-blue-400 w-full p-3.5 rounded-lg text-gray-400 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none resize-none"
             />
           </div>
           <div className="flex justify-center">
