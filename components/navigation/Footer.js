@@ -43,7 +43,7 @@ const Footer = () => {
             <Link passHref key={id} href={path}>
               <a
                 onClick={() => title === "Services" && handleClick(id)}
-                className={`block hover:cursor-pointer text-xs xxs:text-sm leading-5 mb-2 lg:mb-4 text-white/60 hover:text-white transition duration-300 ${
+                className={`block hover:cursor-pointer text-sm leading-5 mb-2 lg:mb-4 text-white/60 hover:text-white transition duration-300 ${
                   customItems && "text-end sm:text-start"
                 }`}
               >
@@ -59,7 +59,7 @@ const Footer = () => {
   const Career = () => {
     return (
       <>
-        <p className="text-white/60 font-medium my-6 text-xs xxs:text-sm">
+        <p className="text-white/60 font-medium my-6 text-sm">
           More than just a job.
           <br />
           We offer a journey to explore new horizons of possibilities.
@@ -154,7 +154,7 @@ const Footer = () => {
               </a>
             </Link>
           </div>
-          <p className="text-white/40 text-xs xxs:text-sm mb-2 lg:mb-0 text-center">
+          <p className="text-white/40 text-sm mb-2 lg:mb-0 text-center">
             © 2022 BYSL Global Technology Group. All Rights Reserved
           </p>
         </div>
