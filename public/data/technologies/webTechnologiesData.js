@@ -101,21 +101,21 @@ const webFeaturesData = {
       title: "Productivity",
       subTitle:
         "Maximize productivity with well-researched, user-centric, smart features engineered to maximize productivity",
-      img: "/images/technologies/web/features/web_features_icon_0.png",
+      img: "/images/technologies/web/features/icon_0.png",
     },
     {
       id: 1,
       title: "Security",
       subTitle:
         "From threat modeling, implementing secure coding cryptography & design architecture to meticulous app vulnerability testings, strict security is ensured throughout ",
-      img: "/images/technologies/web/features/web_features_icon_1.png",
+      img: "/images/technologies/web/features/icon_1.png",
     },
   ],
 };
 
 const webServicesBannerData = {
   type: "Applications",
-  img: "/images/technologies/web/web_services.png",
+  img: "/images/technologies/web/web_services.webp",
   subTitle:
     "Flexible, cost-saving & dynamic web applications utilizing integrated system architecture.  ",
 };

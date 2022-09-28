@@ -1,8 +1,1 @@
-<svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="88" height="88" rx="8" fill="#393E50" fill-opacity="0.1"/>
-<path d="M38.7266 64.625H25.25C24.7527 64.625 24.2758 64.4275 23.9242 64.0758C23.5725 63.7242 23.375 63.2473 23.375 62.75V25.25C23.375 24.7527 23.5725 24.2758 23.9242 23.9242C24.2758 23.5725 24.7527 23.375 25.25 23.375H62.75C63.2473 23.375 63.7242 23.5725 64.0758 23.9242C64.4275 24.2758 64.625 24.7527 64.625 25.25V50.7266" stroke="#5B5F6E" stroke-width="2.12" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M51.2856 64.5713C56.2562 64.5713 60.2856 60.5419 60.2856 55.5713C60.2856 50.6007 56.2562 46.5713 51.2856 46.5713C46.3151 46.5713 42.2856 50.6007 42.2856 55.5713C42.2856 60.5419 46.3151 64.5713 51.2856 64.5713Z" stroke="#5B5F6E" stroke-width="2.12" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M57.6501 61.9355L62.8573 67.1427" stroke="#5B5F6E" stroke-width="2.12" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M29.4285 31.1426H57.2856" stroke="#5B5F6E" stroke-width="2.12"/>
-<path d="M29.4285 38.8574H57.2856" stroke="#5B5F6E" stroke-width="2.12"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" fill="none" xmlns:v="https://vecta.io/nano"><rect width="88" height="88" rx="8" fill="#393e50" fill-opacity=".1"/><g stroke="#5b5f6e" stroke-width="2.12"><g stroke-linejoin="round"><path d="M38.727 64.625H25.25c-.497 0-.974-.198-1.326-.549s-.549-.828-.549-1.326v-37.5c0-.497.198-.974.549-1.326s.829-.549 1.326-.549h37.5c.497 0 .974.198 1.326.549s.549.829.549 1.326v25.477" stroke-linecap="round"/><path d="M51.286 64.571a9 9 0 0 0 0-18 9 9 0 0 0 0 18z"/><path d="M57.65 61.936l5.207 5.207" stroke-linecap="round"/></g><path d="M29.429 31.143h27.857m-27.857 7.714h27.857"/></g></svg>
