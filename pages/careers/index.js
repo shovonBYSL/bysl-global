@@ -3,7 +3,6 @@ import CareersBanner from "../../components/careers/CareersBanner";
 import CareersCompanyInfo from "../../components/careers/CareersCompanyInfo";
 import CareerWhyBYSL from "../../components/careers/CareerWhyBYSL";
 import CareerJobCirculars from "../../components/careers/CareerJobCirculars";
-import { careersAboutUsData } from "../../public/data/careersData";
 
 const Careers = () => {
   return (
@@ -16,7 +15,7 @@ const Careers = () => {
         <CareerJobCirculars />
 
         {/* company info section  */}
-        <CareersCompanyInfo data={careersAboutUsData} />
+        <CareersCompanyInfo />
       </div>
 
       {/* why BYSL section  */}

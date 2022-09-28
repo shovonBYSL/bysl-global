@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { careersAboutUsData } from "../../public/data/careersData";
 
-const CareersCompanyInfo = ({ data }) => {
+const CareersCompanyInfo = () => {
   return (
     <div className="py-10 lg:py-16">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {data.map(({ id, title, path, icon }) => {
+        {careersAboutUsData.map(({ id, title, path, icon }) => {
           return (
             <Link key={id} passHref href={path}>
               <a className="p-5 hover:bg-[#EDF1F8] rounded-[20px] transition duration-500 hover:cursor-pointer ">
