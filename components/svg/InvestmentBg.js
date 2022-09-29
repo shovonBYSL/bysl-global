@@ -1,7 +1,7 @@
 const InvestmentBgTop = () => {
   return (
     <svg
-      className="z-10 absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[100%] lg:-left-[50%] xl:-left-[40%] 2xl:-left-[30%] lg:h-[1080px] bg-1"
+      className="z-10 absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[100%] lg:-left-[50%] xl:-left-[40%] 2xl:-left-[27%] lg:h-[1080px] bg-1"
       viewBox="0 0 1684 1669"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

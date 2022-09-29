@@ -34,7 +34,7 @@ const JobDescription = () => {
                 </p>
               </div>
               <Link passHref href={`/careers/application-form/${data.url}`}>
-                <div className="w-max h-max mx-auto lg:mx-0 text-center rounded-lg text-white text-sm font-semibold px-8 xl:px-[42px] py-2 xl:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
+                <div className="gradient-btn w-max h-max mx-auto lg:mx-0 text-center rounded-lg text-white text-sm font-semibold px-8 xl:px-[42px] py-2 xl:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
                   Apply Now
                 </div>
               </Link>
@@ -63,7 +63,7 @@ const JobDescription = () => {
               );
             })}
             <Link passHref href={`/careers/application-form/${data.url}`}>
-              <div className="w-max h-max mx-auto text-center rounded-lg text-white text-sm font-semibold px-8 lg:px-[64px] py-2 lg:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
+              <div className="gradient-btn w-max h-max mx-auto text-center rounded-lg text-white text-sm font-semibold px-8 lg:px-[64px] py-2 lg:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
                 Apply Now
               </div>
             </Link>

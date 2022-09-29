@@ -6,7 +6,7 @@ const Button = (props) => {
   return (
     <Link passHref href={`/${link}`}>
       <a
-        className={`w-max h-max text-center rounded-lg text-white py-2 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700 
+        className={`gradient-btn w-max h-max text-center rounded-lg text-white py-2 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700 
         ${py ? "xl:py-2.5" : "xl:py-3"} 
         ${
           (px === 42 && "px-8 xl:px-[42px]") ||
