@@ -12,7 +12,6 @@ const educationProblemsAndSolutionsData = [
     problem: "Too many barriers to unfurl potentials",
     problemInfo:
       "Existing model of the education system is based on the Industrial Age which needs a lot of improvement in terms of modern day technology. Infrastructurally, there’s a dire need for digital transformation. Internal operations require modernization while ensuring full-scale security to data and compliance. ",
-    problemImg: "/images/solutions/education/problem_image_0.png",
     solution: "Increasing digital adoption",
     solutionInfo:
       "We offer educational institutions to gain agility, compliance and data security at lower costs. Our applications are designed to encapsulate all areas of operations management. From upgrading the information system to modernizing internal operations, we help institutions gain faster and safer digital adoption.",
@@ -30,7 +29,6 @@ const educationProblemsAndSolutionsData = [
     problem: "Lack of autonomy, too much control",
     problemInfo:
       "At school our children are shackled to the busy schedules, assigned homeworks, tests and a series of predefined activities that control every minute of their life. This sends a message to them that they are not in control of their life which hampers their personal growth as an adult who is in charge of every decision he or she makes. Autonomy, by virtue, is an innate psychological need for a child to remain motivated.",
-    problemImg: "/images/solutions/education/problem_image_0.png",
     solution: "Enhancing learning and research experience",
     solutionInfo:
       "Focusing on streamlining communication and personalized interactions and engagements, we design our access to information technologies in a way that learners and researchers can have better experience in learning while accessing authenticated digital resources. The element of autonomy is activated by the freedom our database provides for the learners and researchers alike that help accelerate research as well.",
@@ -47,7 +45,6 @@ const educationProblemsAndSolutionsData = [
     problem: "Inadequate access to authentic information",
     problemInfo:
       "Most students hate their textbooks in the classroom and the reason being that these books are bombarded with information that most students can hardly relate to. Also knowledge in different subjects is continuously evolving and changing that many textbooks fail to adapt. Also, the way information is presented in textbooks is unimaginative and mostly uninteresting.",
-    problemImg: "/images/solutions/education/problem_image_0.png",
     solution: "Bridging information with knowledge",
     solutionInfo:
       "As knowledge is built on pieces of information, we create windows for learners to access authentic and updated information. Our digital classroom solutions using AI, AR/VR, ML and blockchain enable students to find their inner potential by utilizing the full spectrum of learning technologies. From activating immersive learning utilizing gamified learning tools, to providing complex computing resources, we build technologies that help both the learners and the educators pursue their passions. ",
@@ -64,7 +61,6 @@ const educationProblemsAndSolutionsData = [
     problem: "Inability to unlock the potential of data",
     problemInfo:
       "In the world of Big Data analytics, every bit of information is valued. Educational institutions are generating a gigantic amount of data every day and in most cases, due to lack of the right technology, the power of data remains locked. It is possible to make better decisions if the existing educational institutions could unlock the potentials of Big Data with the help of advanced analytics. ",
-    problemImg: "/images/solutions/education/problem_image_0.png",
     solution: "Unlocking the power of data",
     solutionInfo:
       "Advanced data analytics can harness the power of institutional data and help making data-driven decisions aided by AI and ML. We provide tools for business intelligence to visualize real time data streams for informed decision making.",

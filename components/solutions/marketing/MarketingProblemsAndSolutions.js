@@ -59,7 +59,9 @@ const MarketingProblemsAndSolutions = ({ data }) => {
                 } py-3 xl:py-5`}
               >
                 <div
-                  dangerouslySetInnerHTML={{ __html: id === tabOpen ? problemIconWhite : problemIcon }}
+                  dangerouslySetInnerHTML={{
+                    __html: id === tabOpen ? problemIconWhite : problemIcon,
+                  }}
                   className="relative h-8 w-8 lg:h-14 lg:w-14 2xl:h-20 2xl:w-20 lg:mx-auto"
                 >
                   {/* <Image
@@ -91,9 +93,9 @@ const MarketingProblemsAndSolutions = ({ data }) => {
           </div>
           <div className="col-span-12 lg:col-span-4">
             <Image
-              src={solutionImg}
+              src="/images/solutions/marketing/solution.png"
               placeholder="blur"
-              blurDataURL={solutionImg}
+              blurDataURL="/images/solutions/marketing/solution.png"
               height={400}
               width={444}
               alt=""

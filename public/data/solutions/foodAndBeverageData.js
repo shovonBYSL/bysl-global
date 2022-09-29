@@ -43,7 +43,6 @@ const foodAndBeverageProblemsAndSolutionsData = [
       "Easy integration",
       "AI/ML-based insights",
     ],
-    solutionImg: "/images/solutions/food_and_beverage/solution_image_0.png",
   },
   {
     id: 1,
@@ -59,7 +58,6 @@ const foodAndBeverageProblemsAndSolutionsData = [
       "Easy to deploy and optimize",
       "Secure and safe",
     ],
-    solutionImg: "/images/solutions/food_and_beverage/solution_image_0.png",
   },
   {
     id: 2,
@@ -75,7 +73,6 @@ const foodAndBeverageProblemsAndSolutionsData = [
       "Custom tools integrated for running frictionless operations",
       "Dynamic database allowing developments of meaningful architectures",
     ],
-    solutionImg: "/images/solutions/food_and_beverage/solution_image_0.png",
   },
   {
     id: 3,
@@ -91,7 +88,6 @@ const foodAndBeverageProblemsAndSolutionsData = [
       "User friendly interface",
       "Real time monitoring and visualization of data",
     ],
-    solutionImg: "/images/solutions/food_and_beverage/solution_image_0.png",
   },
 ];
 

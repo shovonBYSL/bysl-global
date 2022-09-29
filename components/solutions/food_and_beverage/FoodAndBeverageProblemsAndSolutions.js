@@ -62,9 +62,9 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
     return (
       <div className={`${props.animation && "scroll-animation-less"}`}>
         <Image
-          src={solutionImg}
+          src="/images/solutions/food_and_beverage/solution.png"
           placeholder="blur"
-          blurDataURL={solutionImg}
+          blurDataURL="/images/solutions/food_and_beverage/solution.png"
           height={310}
           width={872}
           className="!rounded-lg xl:!rounded-2xl opacity-animation"

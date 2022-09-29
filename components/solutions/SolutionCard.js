@@ -28,23 +28,14 @@ const SolutionCard = ({ data }) => {
       </div>
       <div className="w-full sm:w-2/3 lg:w-full mx-auto">
         {educationPath ? (
-          // <Image
-          //   src={solutionImg}
-          //   placeholder="blur"
-          //   blurDataURL={solutionImg}
-          //   height={339}
-          //   width={640}
-          //   objectFit="contain"
-          //   alt=""
-          // />
           <div className="xl:w-11/12 mx-auto">
             <SolutionsImageSvg />
           </div>
         ) : (
           <Image
-            src={solutionImg}
+            src="/images/solutions/supply_chain/solution.png"
             placeholder="blur"
-            blurDataURL={solutionImg}
+            blurDataURL="/images/solutions/supply_chain/solution.png"
             height={313}
             width={537}
             className="!rounded-[20px]"

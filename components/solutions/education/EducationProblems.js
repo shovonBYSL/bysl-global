@@ -51,9 +51,9 @@ const EducationProblems = ({ data }) => {
         </div>
         <div className="relative h-52 xs:h-60 sm:h-64 md:h-80 lg:h-full ">
           <Image
-            src={data[0].problemImg}
+            src="/images/solutions/education/problem.png"
             placeholder="blur"
-            blurDataURL={data[0].problemImg}
+            blurDataURL="/images/solutions/education/problem.png"
             layout="fill"
             objectFit="cover"
             alt=""

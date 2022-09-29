@@ -40,7 +40,6 @@ const supplyChainAndLogisticsProblemsAndSolutionsData = [
     solution: "Advanced Data Analytics",
     solutionInfo:
       "Aiming to ensure a demand-driven supply chain operational structure for your business, our advanced analytics engines are designed and developed with a human-centric architecture that would accumulate, analyze, and forecast actionable insights from those data and turn them into pieces of valuable information so that you can use those bits of information to scale businesses at an exponential rate. With the help of our advanced analytics, forecasting would not only be faster but also cheaper and more effective.",
-    solutionImg: "/images/solutions/supply_chain/solution_image_0.png",
     solutionPoints: [
       "Data mining",
       "Actionable insights",
@@ -58,7 +57,6 @@ const supplyChainAndLogisticsProblemsAndSolutionsData = [
     solution: "Interconnected Advanced APIs",
     solutionInfo:
       "We design APIs to help businesses keep track of their inventories and share them with any other stakeholders in times of need. We understand that better data helps better decision making but too much data could be overwhelming and that is where we apply technology to help our clients thrive through a well-connected network.",
-    solutionImg: "/images/solutions/supply_chain/solution_image_0.png",
     solutionPoints: [
       "Custom APIs",
       "Dynamic configuration",
@@ -75,7 +73,6 @@ const supplyChainAndLogisticsProblemsAndSolutionsData = [
     solution: "Risk management using AI and ML",
     solutionInfo:
       "Through end-to-end visibility of the entire production process implementing artificial intelligence and machine learning is one fundamental step towards building a resilient supply chain. We help develop advanced tools for our clients so that they can monitor business processes real time and have full control over the production process and operate with greater efficiency.",
-    solutionImg: "/images/solutions/supply_chain/solution_image_0.png",
     solutionPoints: [
       "Monitor business processes to minimize risk",
       "Automatically determine the use of inventory to reduce cost",
@@ -92,7 +89,6 @@ const supplyChainAndLogisticsProblemsAndSolutionsData = [
     solution: "Automation",
     solutionInfo:
       "If you are up for a more resilient operational infrastructure for fulfillment services which can keep up with the most demanding needs of today’s market, automation is a way to go. Our AI and ML based automation applications cover fundamental areas of the supply chain including warehousing, pick, pack and shipping operations, security, data storage, human resources management, finance, communications etc. We provide industry-specific solutions as we understand the diversity of needs in connection with time and place.",
-    solutionImg: "/images/solutions/supply_chain/solution_image_0.png",
     solutionPoints: [
       "AI and ML integration",
       "Real time inventory management",

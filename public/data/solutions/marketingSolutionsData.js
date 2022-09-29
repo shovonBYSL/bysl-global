@@ -38,8 +38,6 @@ const marketingProblemsAndSolutionsData = [
       "Quick set up of data center",
       "Low latency interactions",
     ],
-    solutionImg:
-      "/images/solutions/marketing/problems_and_solutions/solution_image_0.png",
   },
   {
     id: 1,
@@ -59,8 +57,6 @@ const marketingProblemsAndSolutionsData = [
       "Low-latency platform with high peak loads",
       "Entirely cloud-based",
     ],
-    solutionImg:
-      "/images/solutions/marketing/problems_and_solutions/solution_image_0.png",
   },
   {
     id: 2,
@@ -80,8 +76,6 @@ const marketingProblemsAndSolutionsData = [
       "Data activation",
       "Data analysis",
     ],
-    solutionImg:
-      "/images/solutions/marketing/problems_and_solutions/solution_image_0.png",
   },
   {
     id: 3,
@@ -101,8 +95,6 @@ const marketingProblemsAndSolutionsData = [
       "Complete content management system",
       "Applications for customer engagement",
     ],
-    solutionImg:
-      "/images/solutions/marketing/problems_and_solutions/solution_image_0.png",
   },
 ];
 
