@@ -9,7 +9,6 @@ import {
   supplyChainOverviewData,
   supplyChainPerceivabilityData,
 } from "../../public/data/divisions/supplyChainData";
-// import { supplyChainBannerSvg } from "../../components/svg/divisions/supplyChainSvg";
 
 const SupplyChain = ({
   banner,
@@ -40,7 +39,7 @@ const SupplyChain = ({
         padding={true}
       >
         IT-enabled, automated logistics
-        <br />& fulfillment services
+        <br className="hidden xs:block" /> & fulfillment services
       </TriangleCardBanner>
 
       {/* overview section  */}
@@ -57,11 +56,10 @@ const SupplyChain = ({
 export async function getStaticProps() {
   return {
     props: {
-      // banner: supplyChainBannerSvg,
-      banner: "/images/banners/supply_chain_division_banner.png",
+      banner: "/images/banners/supply_chain_division_banner.webp",
       supplyChainConnectivity: supplyChainConnectivityData,
       connectivityImg:
-        "/images/divisions/supply_chain/connectivity/connectivity_banner.svg",
+        "/images/divisions/supply_chain/connectivity_banner.webp",
       supplyChainOverview: supplyChainOverviewData,
       supplyChainPerceivability: supplyChainPerceivabilityData,
     },

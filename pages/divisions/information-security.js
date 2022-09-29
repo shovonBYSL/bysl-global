@@ -61,7 +61,7 @@ export async function getStaticProps() {
   return {
     props: {
       // banner: informationSequrityBannerSvg,
-      banner: "/images/banners/information_security_division_banner.png",
+      banner: "/images/banners/information_security_division_banner.webp",
       informationSecurityOverview: informationSecurityOverviewData,
       informationSecurityServices: informationSecurityServicesData,
       informationSecurityShortcomings: informationSecurityShortcomingsData,

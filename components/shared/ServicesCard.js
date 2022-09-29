@@ -20,7 +20,7 @@ const ServicesCard = (props) => {
 
   return (
     <div className="grid grid-cols-2 grid-rows-2 place-content-center gap-3 lg:gap-5 w-full">
-      {data.map(({ id, img, title, titleNewLine, title2, subTitle }) => {
+      {data.map(({ id, img, icon, title, titleNewLine, title2, subTitle }) => {
         return (
           <div
             key={id}
@@ -32,13 +32,17 @@ const ServicesCard = (props) => {
           >
             <div className="h-14 xl:h-20 w-14 xl:w-20 mb-1 md:mb-5 rounded-full flex items-center justify-center shadow-[0px_0px_20px_0px_#D0E2F4]">
               <div className="h-8 w-8 xl:h-12 xl:w-12 relative">
-                <Image
-                  src={img}
-                  placeholder="blur"
-                  blurDataURL={img}
-                  layout="fill"
-                  alt=""
-                />
+                {icon ? (
+                  <div dangerouslySetInnerHTML={{ __html: icon }} />
+                ) : (
+                  <Image
+                    src={img}
+                    placeholder="blur"
+                    blurDataURL={img}
+                    layout="fill"
+                    alt=""
+                  />
+                )}
               </div>
             </div>
             <div className="text-sm lg:text-base 2xl:text-2xl font-bold">

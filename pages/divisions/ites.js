@@ -48,10 +48,10 @@ export async function getStaticProps() {
   return {
     props: {
       // banner: itesBannerSvg,
-      banner: "/images/banners/ites_division_banner.png",
+      banner: "/images/banners/ites_division_banner.webp",
       itesOverview: itesOverviewData,
       itesUpdate: itesUpdateData,
-      itesAppImg: "/images/divisions/ites/ites_team_management.png",
+      itesAppImg: "/images/divisions/ites/ites_team_management.webp",
     },
   };
 }

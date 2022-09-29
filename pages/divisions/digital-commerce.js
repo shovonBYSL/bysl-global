@@ -56,9 +56,9 @@ export async function getStaticProps() {
   return {
     props: {
       // banner: digitalCommerceBannerSvg,
-      banner: "/images/banners/digital_commerce_division_banner.png",
+      banner: "/images/banners/digital_commerce_division_banner.webp",
       digitalCommerceImg:
-        "/images/divisions/digital_commerce/digital_commerce_app.png",
+        "/images/divisions/digital_commerce/digital_commerce_app.webp",
       digitalCommerceOverview: digitalCommerceOverviewData,
       digitalCommerceSolutions: digitalCommerceSolutionsData,
     },

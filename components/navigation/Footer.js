@@ -59,7 +59,7 @@ const Footer = () => {
   const Career = () => {
     return (
       <>
-        <p className="text-white/60 font-medium my-6 text-sm">
+        <p className="text-white/60 my-6 text-sm">
           More than just a job.
           <br />
           We offer a journey to explore new horizons of possibilities.

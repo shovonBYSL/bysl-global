@@ -42,7 +42,7 @@ const TriangleCardBanner = (props) => {
               className={`${
                 iotPath
                   ? "md:h-80 lg:h-[440px] xl:h-[530px]"
-                  : "h-40 xs:h-56 sm:h-80 md:h-52 lg:h-64 xl:h-80 3xl:h-[440px]"
+                  : "h-56 sm:h-80 md:h-52 lg:h-64 xl:h-80 3xl:h-[440px]"
               } relative`}
             >
               <Image

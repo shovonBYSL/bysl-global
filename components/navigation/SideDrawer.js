@@ -98,7 +98,8 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
                                 handleClick(id)
                               }
                               className={`text-sm font-medium ${
-                                router.asPath === link && serviceId === id
+                                router.asPath === link &&
+                                router.pathname !== "/services"
                                   ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
                                   : "text-gray-400"
                               }`}

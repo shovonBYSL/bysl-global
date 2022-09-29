@@ -8,7 +8,6 @@ import {
   dataScienceAnalysisData,
   dataScienceControlPanelData,
 } from "../../public/data/divisions/dataScienceData";
-// import { dataScienceBannerSvg } from "../../components/svg/divisions/dataScienceSvg";
 
 const DataScience = ({
   banner,
@@ -62,10 +61,9 @@ const DataScience = ({
 export async function getStaticProps() {
   return {
     props: {
-      // banner: dataScienceBannerSvg,
-      banner: "/images/banners/data_science_division_banner.png",
+      banner: "/images/banners/data_science_division_banner.webp",
       dataAnalysisImg:
-        "/images/divisions/data_science/data_analysis_banner.png",
+        "/images/divisions/data_science/data_analysis_banner.webp",
       dataScienceControlPanel: dataScienceControlPanelData,
       dataScienceAnalysis: dataScienceAnalysisData,
     },

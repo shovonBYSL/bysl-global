@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { getPath } from "../../utils/paths";
+import HoverSvg from "../svg/HoverSvg";
 import HoverImage from "./HoverImage";
 import Modal from "./Modal";
 
@@ -23,7 +24,7 @@ const IconCard = (props) => {
 
   return (
     <>
-      {data.map(({ id, img, title, hoverImg, subTitle }) => {
+      {data.map(({ id, img, title, icon, hoverIcon, hoverImg, subTitle }) => {
         return (
           <div
             key={id}
@@ -42,10 +43,11 @@ const IconCard = (props) => {
                   faqPath && "h-5 w-6 lg:h-10 lg:w-10"
                 } mx-auto relative`}
               >
-                <HoverImage
-                  img1={img}
-                  img2={hoverImg ? hoverImg : "/images/icon_hover.svg"}
-                />
+                {icon ? (
+                  <HoverSvg icon1={icon} icon2={hoverIcon} />
+                ) : (
+                  <HoverImage img1={img} img2={hoverImg} />
+                )}
               </div>
             </div>
             <p

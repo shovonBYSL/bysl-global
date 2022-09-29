@@ -4,99 +4,99 @@ const ictSectorsData = [
     title: "Photogrpahy",
     subTitle:
       "Art of photography empowered by the right marketing techniques to create greater value for business",
-    img: "/images/divisions/ict/sectors/icon_0.svg",
-    // icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    // <path d="M45.625 45.625H14.375C13.5462 45.625 12.7513 45.2958 12.1653 44.7097C11.5792 44.1237 11.25 43.3288 11.25 42.5V20.625C11.25 19.7962 11.5792 19.0013 12.1653 18.4153C12.7513 17.8292 13.5462 17.5 14.375 17.5H20.625L23.75 12.8125H36.25L39.375 17.5H45.625C46.4538 17.5 47.2487 17.8292 47.8347 18.4153C48.4208 19.0013 48.75 19.7962 48.75 20.625V42.5C48.75 43.3288 48.4208 44.1237 47.8347 44.7097C47.2487 45.2958 46.4538 45.625 45.625 45.625Z" stroke="url(#paint0_linear_1_9995)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M30 37.8125C33.8833 37.8125 37.0312 34.6645 37.0312 30.7812C37.0312 26.898 33.8833 23.75 30 23.75C26.1167 23.75 22.9688 26.898 22.9688 30.7812C22.9688 34.6645 26.1167 37.8125 30 37.8125Z" stroke="url(#paint1_linear_1_9995)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <defs>
-    // <linearGradient id="paint0_linear_1_9995" x1="11.25" y1="29.6622" x2="48.75" y2="29.6622" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint1_linear_1_9995" x1="22.9688" y1="30.9713" x2="37.0313" y2="30.9713" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // </defs>
-    // </svg>`,
+    // img: "/images/divisions/ict/sectors/icon_0.svg",
+    icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M45.625 45.625H14.375C13.5462 45.625 12.7513 45.2958 12.1653 44.7097C11.5792 44.1237 11.25 43.3288 11.25 42.5V20.625C11.25 19.7962 11.5792 19.0013 12.1653 18.4153C12.7513 17.8292 13.5462 17.5 14.375 17.5H20.625L23.75 12.8125H36.25L39.375 17.5H45.625C46.4538 17.5 47.2487 17.8292 47.8347 18.4153C48.4208 19.0013 48.75 19.7962 48.75 20.625V42.5C48.75 43.3288 48.4208 44.1237 47.8347 44.7097C47.2487 45.2958 46.4538 45.625 45.625 45.625Z" stroke="url(#paint0_linear_1_9995)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 37.8125C33.8833 37.8125 37.0312 34.6645 37.0312 30.7812C37.0312 26.898 33.8833 23.75 30 23.75C26.1167 23.75 22.9688 26.898 22.9688 30.7812C22.9688 34.6645 26.1167 37.8125 30 37.8125Z" stroke="url(#paint1_linear_1_9995)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_9995" x1="11.25" y1="29.6622" x2="48.75" y2="29.6622" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_9995" x1="22.9688" y1="30.9713" x2="37.0313" y2="30.9713" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    </defs>
+    </svg>`,
   },
   {
     id: 1,
     title: "Videography",
     subTitle:
       "Reimagining the fundamentals of videography to create immersive and immersive experiences",
-    img: "/images/divisions/ict/sectors/icon_1.svg",
-    // icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    // <path d="M14.375 42.5L45.625 42.5C47.3509 42.5 48.75 41.1009 48.75 39.375V17.5C48.75 15.7741 47.3509 14.375 45.625 14.375L14.375 14.375C12.6491 14.375 11.25 15.7741 11.25 17.5V39.375C11.25 41.1009 12.6491 42.5 14.375 42.5Z" stroke="url(#paint0_linear_1_10004)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M36.25 48.75H23.75" stroke="url(#paint1_linear_1_10004)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M36.25 28.4375L26.875 22.1875V34.6875L36.25 28.4375Z" stroke="url(#paint2_linear_1_10004)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <defs>
-    // <linearGradient id="paint0_linear_1_10004" x1="48.75" y1="28.0574" x2="11.25" y2="28.0574" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint1_linear_1_10004" x1="23.75" y1="49.2635" x2="36.25" y2="49.2635" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint2_linear_1_10004" x1="26.875" y1="28.6064" x2="36.25" y2="28.6064" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // </defs>
-    // </svg>`,
+    // img: "/images/divisions/ict/sectors/icon_1.svg",
+    icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.375 42.5L45.625 42.5C47.3509 42.5 48.75 41.1009 48.75 39.375V17.5C48.75 15.7741 47.3509 14.375 45.625 14.375L14.375 14.375C12.6491 14.375 11.25 15.7741 11.25 17.5V39.375C11.25 41.1009 12.6491 42.5 14.375 42.5Z" stroke="url(#paint0_linear_1_10004)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36.25 48.75H23.75" stroke="url(#paint1_linear_1_10004)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36.25 28.4375L26.875 22.1875V34.6875L36.25 28.4375Z" stroke="url(#paint2_linear_1_10004)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_10004" x1="48.75" y1="28.0574" x2="11.25" y2="28.0574" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_10004" x1="23.75" y1="49.2635" x2="36.25" y2="49.2635" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear_1_10004" x1="26.875" y1="28.6064" x2="36.25" y2="28.6064" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    </defs>
+    </svg>`,
   },
   {
     id: 2,
     title: "Motion Graphics",
     subTitle:
       " Where art blends with technology in the most challenging yet aesthetic superpositions",
-    img: "/images/divisions/ict/sectors/icon_2.svg",
-    // icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    // <path d="M45.2604 18.75C48.9135 18.75 51.875 21.2684 51.875 24.375C51.875 27.4816 48.9135 30 45.2604 30H8.125" stroke="url(#paint0_linear_1_10014)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M44.3704 48.75C47.1344 48.75 50.5882 47.625 50.5882 43.125C50.5882 38.625 47.1344 37.5 44.3704 37.5H8.125" stroke="url(#paint1_linear_1_10014)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M26.2457 11.25C29.7405 11.25 32.5735 13.7684 32.5735 16.875C32.5735 19.9816 29.7405 22.5 26.2457 22.5H8.125" stroke="url(#paint2_linear_1_10014)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <defs>
-    // <linearGradient id="paint0_linear_1_10014" x1="8.125" y1="24.527" x2="51.875" y2="24.527" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint1_linear_1_10014" x1="8.125" y1="42.973" x2="50.5882" y2="42.973" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint2_linear_1_10014" x1="8.125" y1="17.027" x2="32.5735" y2="17.027" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // </defs>
-    // </svg>`,
+    // img: "/images/divisions/ict/sectors/icon_2.svg",
+    icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M45.2604 18.75C48.9135 18.75 51.875 21.2684 51.875 24.375C51.875 27.4816 48.9135 30 45.2604 30H8.125" stroke="url(#paint0_linear_1_10014)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M44.3704 48.75C47.1344 48.75 50.5882 47.625 50.5882 43.125C50.5882 38.625 47.1344 37.5 44.3704 37.5H8.125" stroke="url(#paint1_linear_1_10014)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26.2457 11.25C29.7405 11.25 32.5735 13.7684 32.5735 16.875C32.5735 19.9816 29.7405 22.5 26.2457 22.5H8.125" stroke="url(#paint2_linear_1_10014)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_10014" x1="8.125" y1="24.527" x2="51.875" y2="24.527" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_10014" x1="8.125" y1="42.973" x2="50.5882" y2="42.973" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear_1_10014" x1="8.125" y1="17.027" x2="32.5735" y2="17.027" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    </defs>
+    </svg>`,
   },
   {
     id: 3,
     title: "UI/UX",
     subTitle:
       "Grounded in behavriorial science and perception fluency and skills to create world-class designs ",
-    img: "/images/divisions/ict/sectors/icon_3.svg",
-    // icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    // <path d="M25.8984 25.8984V43.6719" stroke="url(#paint0_linear_1_10023)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M13.5938 25.8984H46.4062" stroke="url(#paint1_linear_1_10023)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M45.0391 16.3281H14.9609C14.2059 16.3281 13.5938 16.9402 13.5938 17.6953V42.3047C13.5938 43.0598 14.2059 43.6719 14.9609 43.6719H45.0391C45.7941 43.6719 46.4062 43.0598 46.4062 42.3047V17.6953C46.4062 16.9402 45.7941 16.3281 45.0391 16.3281Z" stroke="url(#paint2_linear_1_10023)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <defs>
-    // <linearGradient id="paint0_linear_1_10023" x1="25.8984" y1="35.0253" x2="26.8984" y2="35.0253" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint1_linear_1_10023" x1="13.5938" y1="26.412" x2="46.4062" y2="26.4119" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint2_linear_1_10023" x1="13.5938" y1="30.3695" x2="46.4063" y2="30.3695" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // </defs>
-    // </svg>`,
+    // img: "/images/divisions/ict/sectors/icon_3.svg",
+    icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M25.8984 25.8984V43.6719" stroke="url(#paint0_linear_1_10023)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M13.5938 25.8984H46.4062" stroke="url(#paint1_linear_1_10023)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M45.0391 16.3281H14.9609C14.2059 16.3281 13.5938 16.9402 13.5938 17.6953V42.3047C13.5938 43.0598 14.2059 43.6719 14.9609 43.6719H45.0391C45.7941 43.6719 46.4062 43.0598 46.4062 42.3047V17.6953C46.4062 16.9402 45.7941 16.3281 45.0391 16.3281Z" stroke="url(#paint2_linear_1_10023)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_10023" x1="25.8984" y1="35.0253" x2="26.8984" y2="35.0253" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_10023" x1="13.5938" y1="26.412" x2="46.4062" y2="26.4119" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear_1_10023" x1="13.5938" y1="30.3695" x2="46.4063" y2="30.3695" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    </defs>
+    </svg>`,
   },
   {
     id: 4,
@@ -204,73 +204,73 @@ const ictSectorsData = [
     title: "Web Development",
     subTitle:
       "Feature-rich, fast, scalable,  intuitive, secure and dynamic web applications  ",
-    img: "/images/divisions/ict/sectors/icon_5.svg",
-    // icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    // <path d="M17.5 22.1875L8.125 30L17.5 37.8125" stroke="url(#paint0_linear_1_10058)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M42.5 22.1875L51.875 30L42.5 37.8125" stroke="url(#paint1_linear_1_10058)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M36.25 12.8125L23.75 47.1875" stroke="url(#paint2_linear_1_10058)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <defs>
-    // <linearGradient id="paint0_linear_1_10058" x1="8.125" y1="30.2111" x2="17.5" y2="30.2111" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint1_linear_1_10058" x1="42.5" y1="30.2111" x2="51.875" y2="30.2111" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint2_linear_1_10058" x1="23.75" y1="30.4645" x2="36.25" y2="30.4645" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // </defs>
-    // </svg>`,
+    // img: "/images/divisions/ict/sectors/icon_5.svg",
+    icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.5 22.1875L8.125 30L17.5 37.8125" stroke="url(#paint0_linear_1_10058)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M42.5 22.1875L51.875 30L42.5 37.8125" stroke="url(#paint1_linear_1_10058)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36.25 12.8125L23.75 47.1875" stroke="url(#paint2_linear_1_10058)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_10058" x1="8.125" y1="30.2111" x2="17.5" y2="30.2111" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_10058" x1="42.5" y1="30.2111" x2="51.875" y2="30.2111" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear_1_10058" x1="23.75" y1="30.4645" x2="36.25" y2="30.4645" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    </defs>
+    </svg>`,
   },
   {
     id: 6,
     title: "AR/VR Development",
     subTitle:
       "Determined and armed to create a bigger impact in the realm of virtual world development",
-    img: "/images/divisions/ict/sectors/icon_6.svg",
-    // icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    // <path d="M45.3516 46.8557L14.1016 41.1721C13.7395 41.1077 13.4117 40.9177 13.1759 40.6355C12.9401 40.3532 12.8114 39.9969 12.8125 39.6291V20.3713C12.8114 20.0035 12.9401 19.6472 13.1759 19.3649C13.4117 19.0827 13.7395 18.8927 14.1016 18.8283L45.3516 13.1447C45.5768 13.1047 45.808 13.1146 46.029 13.1737C46.2499 13.2329 46.4552 13.3398 46.6303 13.4869C46.8054 13.6341 46.9461 13.8179 47.0423 14.0254C47.1386 14.2329 47.1882 14.459 47.1875 14.6877V45.3127C47.1882 45.5414 47.1386 45.7675 47.0423 45.975C46.9461 46.1825 46.8054 46.3663 46.6303 46.5134C46.4552 46.6606 46.2499 46.7675 46.029 46.8266C45.808 46.8858 45.5768 46.8957 45.3516 46.8557Z" stroke="url(#paint0_linear_1_10068)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M8.125 30H51.875" stroke="url(#paint1_linear_1_10068)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <defs>
-    // <linearGradient id="paint0_linear_1_10068" x1="12.8125" y1="30.4564" x2="47.1875" y2="30.4564" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint1_linear_1_10068" x1="8.125" y1="30.5135" x2="51.875" y2="30.5135" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // </defs>
-    // </svg>`,
+    // img: "/images/divisions/ict/sectors/icon_6.svg",
+    icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M45.3516 46.8557L14.1016 41.1721C13.7395 41.1077 13.4117 40.9177 13.1759 40.6355C12.9401 40.3532 12.8114 39.9969 12.8125 39.6291V20.3713C12.8114 20.0035 12.9401 19.6472 13.1759 19.3649C13.4117 19.0827 13.7395 18.8927 14.1016 18.8283L45.3516 13.1447C45.5768 13.1047 45.808 13.1146 46.029 13.1737C46.2499 13.2329 46.4552 13.3398 46.6303 13.4869C46.8054 13.6341 46.9461 13.8179 47.0423 14.0254C47.1386 14.2329 47.1882 14.459 47.1875 14.6877V45.3127C47.1882 45.5414 47.1386 45.7675 47.0423 45.975C46.9461 46.1825 46.8054 46.3663 46.6303 46.5134C46.4552 46.6606 46.2499 46.7675 46.029 46.8266C45.808 46.8858 45.5768 46.8957 45.3516 46.8557Z" stroke="url(#paint0_linear_1_10068)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.125 30H51.875" stroke="url(#paint1_linear_1_10068)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_10068" x1="12.8125" y1="30.4564" x2="47.1875" y2="30.4564" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_10068" x1="8.125" y1="30.5135" x2="51.875" y2="30.5135" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    </defs>
+    </svg>`,
   },
   {
     id: 7,
     title: "3D",
     subTitle:
       "Clean geometry, need-based topology, low and high-poly modeling for photo-real market materials  ",
-    img: "/images/divisions/ict/sectors/icon_7.svg",
-    // icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    // <path d="M48.75 39.6289V20.3711C48.7485 20.0929 48.6737 19.8201 48.5331 19.58C48.3925 19.34 48.1911 19.1413 47.9492 19.0039L30.7617 9.33594C30.5301 9.20223 30.2674 9.13184 30 9.13184C29.7326 9.13184 29.4699 9.20223 29.2383 9.33594L12.0508 19.0039C11.8089 19.1413 11.6075 19.34 11.4669 19.58C11.3263 19.8201 11.2515 20.0929 11.25 20.3711V39.6289C11.2515 39.9071 11.3263 40.1799 11.4669 40.42C11.6075 40.66 11.8089 40.8587 12.0508 40.9961L29.2383 50.6641C29.4699 50.7978 29.7326 50.8682 30 50.8682C30.2674 50.8682 30.5301 50.7978 30.7617 50.6641L47.9492 40.9961C48.1911 40.8587 48.3925 40.66 48.5331 40.42C48.6737 40.1799 48.7485 39.9071 48.75 39.6289V39.6289Z" stroke="url(#paint0_linear_1_10077)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M48.5352 19.5703L30.1758 30L11.4648 19.5703" stroke="url(#paint1_linear_1_10077)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <path d="M30.1758 30L30 50.8594" stroke="url(#paint2_linear_1_10077)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    // <defs>
-    // <linearGradient id="paint0_linear_1_10077" x1="11.25" y1="30.564" x2="48.75" y2="30.564" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint1_linear_1_10077" x1="11.4648" y1="24.9261" x2="48.5352" y2="24.9261" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // <linearGradient id="paint2_linear_1_10077" x1="30" y1="40.7116" x2="30.1758" y2="40.7116" gradientUnits="userSpaceOnUse">
-    // <stop stop-color="#00469F"/>
-    // <stop offset="1" stop-color="#1E79D6"/>
-    // </linearGradient>
-    // </defs>
-    // </svg>`,
+    // img: "/images/divisions/ict/sectors/icon_7.svg",
+    icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M48.75 39.6289V20.3711C48.7485 20.0929 48.6737 19.8201 48.5331 19.58C48.3925 19.34 48.1911 19.1413 47.9492 19.0039L30.7617 9.33594C30.5301 9.20223 30.2674 9.13184 30 9.13184C29.7326 9.13184 29.4699 9.20223 29.2383 9.33594L12.0508 19.0039C11.8089 19.1413 11.6075 19.34 11.4669 19.58C11.3263 19.8201 11.2515 20.0929 11.25 20.3711V39.6289C11.2515 39.9071 11.3263 40.1799 11.4669 40.42C11.6075 40.66 11.8089 40.8587 12.0508 40.9961L29.2383 50.6641C29.4699 50.7978 29.7326 50.8682 30 50.8682C30.2674 50.8682 30.5301 50.7978 30.7617 50.6641L47.9492 40.9961C48.1911 40.8587 48.3925 40.66 48.5331 40.42C48.6737 40.1799 48.7485 39.9071 48.75 39.6289V39.6289Z" stroke="url(#paint0_linear_1_10077)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M48.5352 19.5703L30.1758 30L11.4648 19.5703" stroke="url(#paint1_linear_1_10077)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30.1758 30L30 50.8594" stroke="url(#paint2_linear_1_10077)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_10077" x1="11.25" y1="30.564" x2="48.75" y2="30.564" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_10077" x1="11.4648" y1="24.9261" x2="48.5352" y2="24.9261" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear_1_10077" x1="30" y1="40.7116" x2="30.1758" y2="40.7116" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00469F"/>
+    <stop offset="1" stop-color="#1E79D6"/>
+    </linearGradient>
+    </defs>
+    </svg>`,
   },
 ];
 

@@ -55,7 +55,7 @@ const OverviewCard = (props) => {
               className={`xl:text-lg 2xl:text-xl ${
                 (bigDataPath && "!font-semibold mt-5") ||
                 (cyberPath ? "font-semibold" : "font-medium")
-              } text-gray-800 mt-4 ${digitalCommercePath && "mt-10"}`}
+              } text-gray-800 mt-4`}
             >
               {title}
             </p>
