@@ -16,7 +16,7 @@ const MarketingProblemsAndSolutions = ({ data }) => {
 
   const handleClick = (id) => {
     setTabOpen(id);
-    screen.width <= 768 && marketingScroll(id);
+    // screen.width <= 768 && marketingScroll(id);
   };
 
   const {

@@ -1,7 +1,7 @@
 import { marketingProblemSolutionsSvg } from "../../../components/svg/solutions/marketingSvg";
 
 const marketingBannerData = {
-  img: "/images/banners/marketing_solutions_banner.png",
+  img: "/images/banners/marketing_solutions_banner1.png",
   imgSmall: "/images/banners/marketing_solutions_banner_sm.png",
   type: "Marketing",
   heading: "Utilize innovative marketing solutions to scale",
