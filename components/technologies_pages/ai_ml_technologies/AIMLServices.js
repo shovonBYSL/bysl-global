@@ -26,7 +26,7 @@ const AIMLServices = ({ data, video }) => {
         </div>
         <div className="w-full md:w-1/2 mt-10 md:mt-0">
           <div className="grid grid-cols-2 gap-3 2xl:gap-5 w-full">
-            {data.map(({ id, img, title }) => {
+            {data.map(({ id, icon, title }) => {
               const titleArray = title.split("& ");
               return (
                 <div
@@ -37,15 +37,7 @@ const AIMLServices = ({ data, video }) => {
                   }`}
                 >
                   <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-[0px_0px_20px_0px_#D0E2F4]">
-                    <div className="h-6 w-6 xl:h-10 xl:w-10 relative">
-                      <Image
-                        src={img}
-                        placeholder="blur"
-                        blurDataURL={img}
-                        layout="fill"
-                        alt=""
-                      />
-                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: icon }} className="h-6 w-6 xl:h-10 xl:w-10 relative"/>
                   </div>
                   <div className="text-sm lg:text-base 3xl:text-2xl font-bold text-gray-800">
                     {titleArray[0]}&

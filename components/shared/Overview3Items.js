@@ -32,22 +32,29 @@ const Overview3Items = (props) => {
           children && "mt-10 "
         }`}
       >
-        {data.map(({ id, title, img, subTitle }) => {
+        {data.map(({ id, title, img, icon, subTitle }) => {
           return (
             <div
               key={id}
               onClick={() => handleOpen(id)}
               className="p-3 xl:p-5 text-center xxs:max-w-none xs:w-max justify-self-center"
             >
-              <div className="mx-auto h-10 xl:h-16 w-10 xl:w-16 relative">
-                <Image
-                  src={img}
-                  placeholder="blur"
-                  blurDataURL={img}
-                  layout="fill"
-                  alt=""
+              {icon ? (
+                <div
+                  dangerouslySetInnerHTML={{ __html: icon }}
+                  className="mx-auto h-10 xl:h-16 w-10 xl:w-16"
                 />
-              </div>
+              ) : (
+                <div className="mx-auto h-10 xl:h-16 w-10 xl:w-16 relative">
+                  <Image
+                    src={img}
+                    placeholder="blur"
+                    blurDataURL={img}
+                    layout="fill"
+                    alt=""
+                  />
+                </div>
+              )}
               <p className="lg:text-lg 2xl:text-xl font-medium text-gray-800 mt-5">
                 {title}
               </p>

@@ -17,16 +17,16 @@ const Modal = (props) => {
         <div
           className={`mx-auto ${
             shadow
-              ? "flex justify-center shadow-[0px_0px_20px_0px_#D0E2F4] h-16 w-16 rounded-full"
+              ? "flex justify-center items-center shadow-[0px_0px_20px_0px_#D0E2F4] h-16 w-16 rounded-full"
               : "w-max"
           } ${
             gradientBg &&
-            "h-12 w-12 bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg flex justify-center"
+            "h-12 w-12 bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg flex justify-center items-center"
           }`}
         >
           {icon ? (
             <div
-              className="h-10 w-10"
+              className="h-9 w-9"
               dangerouslySetInnerHTML={{ __html: icon }}
             />
           ) : (

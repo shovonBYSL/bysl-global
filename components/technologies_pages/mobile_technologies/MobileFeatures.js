@@ -22,9 +22,10 @@ const MobileFeatures = ({ featuresData }) => {
     const handleClose = () => {
       setIsOpen(false);
     };
+
     return (
       <div className="flex lg:flex-col gap-4 md:gap-x-6 md:gap-y-12 xl:gap-x-10 xl:gap-y-20 w-full">
-        {data.map(({ id, title, subTitle, img }) => {
+        {data.map(({ id, title, subTitle, icon }) => {
           return (
             <div
               key={id}
@@ -34,16 +35,11 @@ const MobileFeatures = ({ featuresData }) => {
               }`}
             >
               <div className="xl:w-1/4 3xl:w-2/12 flex justify-center">
-                <div className="h-10 lg:h-16 w-10 lg:w-16 rounded-full bg-[#F2F2F3] flex justify-center items-center">
-                  <div className="h-4 w-4 lg:h-8 lg:w-8 relative">
-                    <Image
-                      src={img}
-                      placeholder="blur"
-                      blurDataURL={img}
-                      alt=""
-                      layout="fill"
-                    />
-                  </div>
+                <div className="h-10 md:h-16 w-10 md:w-16 rounded-full bg-[#F2F2F3] flex justify-center items-center">
+                  <div
+                    dangerouslySetInnerHTML={{ __html: icon }}
+                    className="h-4 w-4 md:h-8 md:w-8"
+                  />
                 </div>
               </div>
               <div

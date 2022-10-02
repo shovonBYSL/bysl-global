@@ -67,7 +67,7 @@ const ResourcesBanner = ({ data }) => {
     <>
       {data ? (
         <>
-          <div className="hidden md:block relative mb-16 md:h-[65vh] lg:h-screen resource-slider">
+          <div className="hidden md:block relative mb-16 md:h-[500px] lg:h-[700px] xl:h-screen resource-slider">
             <ResourcesBannerSlider1>
               {newArray.map((item, i) => {
                 return (

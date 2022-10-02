@@ -62,7 +62,7 @@ const CareerJobCirculars = () => {
             name="phone"
             type="text"
             placeholder="Search Careers"
-            className=" bg-white text-[10px] xs:text-xs lg:text-sm w-full pr-10 px-1.5 py-2.5 sm:p-3 lg:p-4 rounded-lg lg:rounded-[11px] text-gray-400 focus:outline-gray-500/10 shadow-[0px_4px_15px_0px_#F1F0F0]"
+            className=" bg-white text-xs lg:text-sm w-full pr-10 px-1.5 py-2.5 sm:p-3 lg:p-4 rounded-lg lg:rounded-[11px] text-gray-400 focus:outline-gray-500/10 shadow-[0px_4px_15px_0px_#F1F0F0]"
           />
           <RiSearchLine className="flex text-2xl md:text-3xl lg:text-4xl absolute inset-y-0 right-0 pt-2 xs:pt-3 md:pt-3.5 lg:pt-4 items-center pr-3 pointer-events-none text-gray-600" />
         </div>
@@ -74,7 +74,7 @@ const CareerJobCirculars = () => {
           >
             <div
               onClick={() => setDepartmentOpen(!departmentOpen)}
-              className={`w-full flex justify-between items-center bg-white text-[10px] xs:text-xs lg:text-sm px-1.5 py-2.5 sm:p-3 lg:px-5 lg:py-4  ${
+              className={`w-full flex justify-between items-center bg-white text-xs lg:text-sm px-1.5 py-2.5 sm:p-3 lg:px-5 lg:py-4  ${
                 departmentOpen
                   ? "rounded-t-[11px]"
                   : "rounded-lg lg:rounded-[11px]"
@@ -93,7 +93,7 @@ const CareerJobCirculars = () => {
                   <p
                     key={i}
                     onClick={() => handleDepartment(item)}
-                    className="py-3 text-xs lg:text-sm text-gray-800 hover:cursor-pointer"
+                    className="py-2 md:py-3 text-xs lg:text-sm text-gray-800 hover:cursor-pointer"
                   >
                     {item}
                   </p>
@@ -108,7 +108,7 @@ const CareerJobCirculars = () => {
           >
             <div
               onClick={() => setPositionOpen(!positionOpen)}
-              className={`flex justify-between items-center bg-white text-[10px] xs:text-xs lg:text-sm px-1.5 py-2.5 sm:p-3 lg:px-5 lg:py-4 ${
+              className={`flex justify-between items-center bg-white text-xs lg:text-sm px-1.5 py-2.5 sm:p-3 lg:px-5 lg:py-4 ${
                 positionOpen
                   ? "rounded-t-[11px]"
                   : "rounded-lg lg:rounded-[11px]"
@@ -127,7 +127,7 @@ const CareerJobCirculars = () => {
                   <p
                     key={i}
                     onClick={() => handlePosition(item)}
-                    className="py-3 text-xs lg:text-sm text-gray-800 hover:cursor-pointer"
+                    className="py-2 md:py-3 text-xs lg:text-sm text-gray-800 hover:cursor-pointer"
                   >
                     {item}
                   </p>

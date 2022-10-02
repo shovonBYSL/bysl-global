@@ -39,7 +39,7 @@ const IconCard = (props) => {
               } flex justify-center items-center rounded-lg mx-auto`}
             >
               <div
-                className={`h-5 w-5 z-50 ${!padding && "lg:h-9 lg:w-9"} ${
+                className={`h-6 w-6 z-50 ${!padding && "lg:h-9 lg:w-9"} ${
                   faqPath && "h-5 w-6 lg:h-10 lg:w-10"
                 } mx-auto relative`}
               >

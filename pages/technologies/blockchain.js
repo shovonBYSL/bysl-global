@@ -11,7 +11,6 @@ import {
   blockchainHealthBannerData,
   blockchainServicesData,
 } from "../../public/data/technologies/blockchainTechnologiesData";
-// import { blockchainBannerSvg } from "../../components/svg/technologies/blockChainSvg";
 
 const BlockchainTechnologies = ({
   banner,
@@ -73,12 +72,11 @@ const BlockchainTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      // banner: blockchainBannerSvg,
       banner: "/images/banners/blockchain_technologies_banner.png",
       blockchainFeatures: blockchainFeaturesData,
       blockchainHealthBanner: blockchainHealthBannerData,
       blockchainServices: blockchainServicesData,
-      supplyChainImg: "/images/technologies/blockchain/blockchain_supply.svg",
+      supplyChainImg: "/images/technologies/blockchain/blockchain_supply.png",
       sliderData: techSlidersData[6],
     },
   };

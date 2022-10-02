@@ -13,7 +13,7 @@ const RowSpanGrid = (props) => {
       <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       <div className="mt-6 xl:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 2xl:gap-6">
         {data.map(
-          ({ id, title, title2, subTitle, subTitle2, img, benefits }) => {
+          ({ id, title, title2, subTitle, subTitle2, img, icon, benefits }) => {
             return (
               <div
                 key={id}
@@ -29,7 +29,16 @@ const RowSpanGrid = (props) => {
                   }`}
                 >
                   <div className="h-6 w-6 xl:h-10 xl:w-10 relative">
-                    <Image src={img} layout="fill" alt="" objectFit="contain" />
+                    {icon ? (
+                      <div dangerouslySetInnerHTML={{ __html: icon }} />
+                    ) : (
+                      <Image
+                        src={img}
+                        layout="fill"
+                        alt=""
+                        objectFit="contain"
+                      />
+                    )}
                   </div>
                 </div>
                 <p

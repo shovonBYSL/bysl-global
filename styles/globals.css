@@ -21,7 +21,7 @@ a {
 
 @layer utilities {
   .clip-video video {
-    clippath: inset(1px 1px);
+    clip-path: inset(1px 1px);
   }
 
   .box {

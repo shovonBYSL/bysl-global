@@ -1,9 +1,17 @@
+// import Image from "next/image";
+
 const WebBanner = ({ img }) => {
   const Tech = ({ img, title }) => {
     return (
-      <div className="relative">
-        {/* Image */}
-        <img className="w-full h-full" src={img} alt="" />
+      <div className="relative w-full h-full bg-white rounded-full">
+        <div className="w-full h-full ">
+          <div
+            className="w-2/3 mx-auto h-full flex items-center"
+            dangerouslySetInnerHTML={{ __html: img }}
+          />
+        </div>
+        {/* <Image src={img} alt="" layout="fill" /> */}
+        {/* <img className="w-full h-full" src={img} alt="" /> */}
         <p>{title}</p>
       </div>
     );

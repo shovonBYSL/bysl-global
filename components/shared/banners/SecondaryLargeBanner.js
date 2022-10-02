@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { getPath } from "../../../utils/paths";
+import { bigDataTechBannerSvg } from "../../svg/technologies/bigDataTechBannerSvg";
 import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 
 const SecondaryLargeBanner = ({ data, children }) => {
@@ -23,15 +24,22 @@ const SecondaryLargeBanner = ({ data, children }) => {
           adminPath ? "max-w-[1080px]" : "max-w-[1240px]"
         } mx-auto`}
       >
-        <Image
-          src={img}
-          alt=""
-          placeholder="blur"
-          blurDataURL={img}
-          height={bigDataPath ? 633 : 700}
-          width={bigDataPath ? 1240 : 1080}
-          objectFit="contain"
-        />
+        {bigDataPath ? (
+          <div
+            className="h-full w-full"
+            dangerouslySetInnerHTML={{ __html: bigDataTechBannerSvg }}
+          />
+        ) : (
+          <Image
+            src={img}
+            alt=""
+            placeholder="blur"
+            blurDataURL={img}
+            height={700}
+            width={1080}
+            objectFit="contain"
+          />
+        )}
       </div>
     </div>
   );

@@ -26,7 +26,6 @@ const CloudTechnologies = ({
       <PrimaryBanner
         title="Cloud Technologies"
         sub="Write a success story by harnessing the infinite potential of the next-generation cloud technology utilizing the power of the internet.             "
-        // img={banner}
         video={banner}
       >
         Start Your&nbsp;
@@ -64,7 +63,7 @@ export async function getStaticProps() {
     props: {
       banner: "/images/banners/cloud_technologies_banner.webm",
       cloudServices: cloudServicesData,
-      cloudServiceImg: "/images/technologies/cloud/services/services.png",
+      cloudServiceImg: "/images/technologies/cloud/services.webp",
       cloudFeatures: cloudFeaturesData,
       cloudSupport: cloudSupportData,
       sliderData: techSlidersData[9],

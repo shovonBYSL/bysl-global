@@ -47,7 +47,7 @@ const ImageShowcase = (props) => {
             }`}
           >
             <div
-              className={`relative mx-auto h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden 
+              className={`relative mx-auto h-60 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden 
               ${
                 (dataSciencePath && "3xl:h-[528px]") ||
                 (itesPath && "3xl:h-[735px]") ||

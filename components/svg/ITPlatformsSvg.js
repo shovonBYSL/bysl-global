@@ -1,12 +1,6 @@
 const ITPlatformsSvg = () => {
   return (
-    <svg
-      //   width="640"
-      //   height="458"
-      viewBox="0 0 640 458"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 640 458" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_d_15_2781)">
         <rect
           x="30"

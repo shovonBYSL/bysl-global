@@ -20,7 +20,9 @@ const SolutionsBanner = ({ data }) => {
 
   return (
     <>
-      <SolutionsNav />
+      <div className="hidden lg:block">
+        <SolutionsNav />
+      </div>
       <div
         onClick={handleClick}
         onMouseMove={showTooltip}
@@ -28,7 +30,7 @@ const SolutionsBanner = ({ data }) => {
       >
         <span
           id="solutionsTooltip"
-          className="bg-white/70 text-sm py-1.5 px-4 z-10 absolute text-gray-800 font-bold rounded-lg invisible group-hover:visible group-hover:block group-hover:fixed group-hover:overflow-hidden"
+          className="bg-white/70 text-sm py-1.5 px-4 z-10 absolute text-gray-800 font-bold rounded-lg invisible lg:group-hover:visible group-hover:block group-hover:fixed group-hover:overflow-hidden"
         >
           Click Here To See All Solutions
         </span>

@@ -115,7 +115,7 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
               </Accordion>
             );
           })}
-          <div className="flex justify-center pt-3 pb-6">
+          <div className="flex justify-center pt-3 pb-16">
             <Button link="contact-us" title="Contact Us" px={48} xs />
           </div>
         </div>
