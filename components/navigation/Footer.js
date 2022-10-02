@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Router from "next/router";
 import { ImFacebook, ImLinkedin2, ImTwitter } from "react-icons/im";
@@ -21,7 +20,9 @@ const Footer = () => {
 
   const handleLegal = (id) => {
     setLegalState(id);
-    window.location.pathname === "/legal" &&
+    id !== 3 &&
+      id !== 4 &&
+      window.location.pathname === "/legal" &&
       Router.reload(window.location.pathname);
   };
 
@@ -79,7 +80,6 @@ const Footer = () => {
             <Link passHref href="/">
               <a>
                 <div className="h-7 md:h-10 w-max mx-auto xl:mx-0 relative hover:cursor-pointer">
-                  {/* <Image src="/images/logo_light.svg" layout="fill" alt="" /> */}
                   <BYSLWhiteLogo />
                 </div>
               </a>
@@ -89,10 +89,7 @@ const Footer = () => {
             </div>
           </div>
           {footerData?.map(({ id, title, items, title2, items2 }) => (
-            <div
-              key={id}
-              className="col-span-3 sm:col-span-2 lg:col-span-1"
-            >
+            <div key={id} className="col-span-3 sm:col-span-2 lg:col-span-1">
               <Items title={title} data={items} />
               <div className="hidden lg:block mt-10">
                 {title2 && <Items title={title2} data={items2} />}
@@ -101,10 +98,7 @@ const Footer = () => {
           ))}
           <div className="lg:hidden col-span-3 sm:col-span-2">
             {footerData?.map(({ id, title2, items2 }) => (
-              <div
-                key={id}
-                className="col-span-3 sm:col-span-2"
-              >
+              <div key={id} className="col-span-3 sm:col-span-2">
                 {title2 && <Items title={title2} data={items2} />}
               </div>
             ))}
