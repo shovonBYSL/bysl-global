@@ -34,7 +34,7 @@ const BannerWithBullets = (props) => {
           ))}
         </div>
       </div>
-      <div className="lg:w-[48%] mx-auto clip-video">
+      <div className="w-full lg:w-[48%] mx-auto clip-video">
         {cloudPath ? (
           <video className="w-full h-full" src={video} autoPlay muted loop />
         ) : (
