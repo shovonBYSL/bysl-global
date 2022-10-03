@@ -59,7 +59,7 @@ const MobileFeatures = ({ featuresData }) => {
         })}
         <div className="lg:hidden">
           {isOpen && modalData.subTitle && (
-            <Modal data={modalData} handleClose={handleClose} isOpen={isOpen} />
+            <Modal data={modalData} handleClose={handleClose} isOpen={isOpen} grayBg />
           )}
         </div>
       </div>

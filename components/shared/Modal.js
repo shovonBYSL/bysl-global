@@ -4,24 +4,25 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { TextGradient } from "./SharedTextgroups";
 
 const Modal = (props) => {
-  const { data, handleClose, shadow, gradientBg } = props;
+  const { data, handleClose, shadow, gradientBg, grayBg } = props;
   const { title, title2, subTitle, icon, img, hoverImg } = data;
 
   return (
     <>
       <div
         onClick={handleClose}
-        className="z-30 backdrop-blur-xs h-screen w-screen fixed top-0 left-0"
+        className="z-50 backdrop-blur-xs h-screen w-screen fixed top-0 left-0"
       />
-      <div className="fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[40] bg-white px-5 py-10 w-[95%] max-w-[500px] mx-auto rounded-[15px] ">
+      <div className="fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[50] bg-white px-5 py-10 w-[95%] max-w-[500px] mx-auto rounded-[15px] ">
         <div
           className={`mx-auto ${
             shadow
               ? "flex justify-center items-center shadow-[0px_0px_20px_0px_#D0E2F4] h-16 w-16 rounded-full"
               : "w-max"
           } ${
-            gradientBg &&
-            "h-12 w-12 bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg flex justify-center items-center"
+            (gradientBg &&
+              "h-12 w-12 bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg flex justify-center items-center") ||
+            (grayBg && "p-3 bg-[#F2F2F3] rounded-full")
           }`}
         >
           {icon ? (
