@@ -2,7 +2,7 @@ const bigdataBannerData = {
   heading: "Big Data Technologies",
   subTitle:
     "Harness the potential of mega data pools across various platforms to introduce revolutionary transformations to individual, scientific and business journeys.",
-  img: "/images/banners/bigdata_technologies_banner.png",
+  img: "/images/banners/bigdata_technologies_banner.webp",
 };
 
 const bigdataOverviewData = [
