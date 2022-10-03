@@ -147,7 +147,6 @@ const cookiesPolicyData = [
   {
     id: 2,
     title: "Types of cookies:",
-    // subTitle: "",
     listTitle: "We use the following cookies on our website:",
     listItems: [
       "Required Cookies",

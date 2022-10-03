@@ -84,5 +84,3 @@ const IconCard = (props) => {
 };
 
 export default IconCard;
-
-// ${dataPath && "lg:py-14"} ${dataSciencePath && "lg:py-14"}

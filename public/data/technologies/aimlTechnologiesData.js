@@ -15,7 +15,6 @@ const aimlFeaturesData = [
   {
     id: 0,
     title: "Design & Engineering",
-    // img: "/images/technologies/ai_ml/categories/icon_0.svg",
     icon: `<svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M35 35L61.25 8.75" stroke="url(#paint0_linear_3278_158851)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M53.5667 16.4336C48.9129 11.7659 42.6765 9.01538 36.0915 8.72647C29.5066 8.43756 23.0532 10.6313 18.0086 14.8735C12.964 19.1157 9.69576 25.0972 8.85087 31.634C8.00598 38.1709 9.64596 44.7868 13.4462 50.1722C17.2465 55.5576 22.9301 59.32 29.372 60.7148C35.814 62.1097 42.5449 61.0352 48.2324 57.7041C53.92 54.373 58.1497 49.0281 60.0845 42.7272C62.0192 36.4263 61.518 29.6286 58.6799 23.6797" stroke="url(#paint1_linear_3278_158851)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,7 +39,6 @@ const aimlFeaturesData = [
   {
     id: 1,
     title: "Research & Solution",
-    // img: "/images/technologies/ai_ml/categories/icon_1.svg",
     icon: `<svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M59.0625 13.125H10.9375C9.72938 13.125 8.75 14.1044 8.75 15.3125V48.125C8.75 49.3331 9.72938 50.3125 10.9375 50.3125H59.0625C60.2706 50.3125 61.25 49.3331 61.25 48.125V15.3125C61.25 14.1044 60.2706 13.125 59.0625 13.125Z" stroke="url(#paint0_linear_3278_158859)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M43.75 50.3125L52.5 61.25" stroke="url(#paint1_linear_3278_158859)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -85,7 +83,6 @@ const aimlFeaturesData = [
   {
     id: 2,
     title: "Data Science",
-    // img: "/images/technologies/ai_ml/categories/icon_2.svg",
     icon: `<svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M35 35C48.2894 35 59.0625 29.1237 59.0625 21.875C59.0625 14.6263 48.2894 8.75 35 8.75C21.7106 8.75 10.9375 14.6263 10.9375 21.875C10.9375 29.1237 21.7106 35 35 35Z" stroke="url(#paint0_linear_3278_158871)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M10.9375 21.875V35C10.9375 42.2461 21.7109 48.125 35 48.125C48.2891 48.125 59.0625 42.2461 59.0625 35V21.875" stroke="url(#paint1_linear_3278_158871)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -110,7 +107,6 @@ const aimlFeaturesData = [
   {
     id: 3,
     title: "Cloud Deployment",
-    // img: "/images/technologies/ai_ml/categories/icon_3.svg",
     icon: `<svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M26.25 56.875H19.6875C15.6264 56.875 11.7316 55.2617 8.85993 52.3901C5.98828 49.5184 4.375 45.6236 4.375 41.5625C4.375 37.5014 5.98828 33.6066 8.85993 30.7349C11.7316 27.8633 15.6264 26.25 19.6875 26.25C20.9686 26.2495 22.245 26.4056 23.4883 26.7148" stroke="url(#paint0_linear_3278_158878)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M21.875 35C21.875 31.5339 22.6987 28.1173 24.2781 25.032C25.8576 21.9466 28.1476 19.2808 30.9595 17.2541C33.7713 15.2274 37.0246 13.8979 40.4511 13.3752C43.8776 12.8525 47.3792 13.1515 50.6675 14.2476C53.9557 15.3436 56.9365 17.2054 59.364 19.6795C61.7916 22.1536 63.5965 25.1691 64.63 28.4776C65.6635 31.7861 65.896 35.2928 65.3083 38.7087C64.7207 42.1247 63.3297 45.3521 61.25 48.125" stroke="url(#paint1_linear_3278_158878)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -143,7 +139,6 @@ const aimlServicesData = [
   {
     id: 0,
     title: "Retail & E-commerce",
-    // img: "/images/technologies/ai_ml/services/icon_0.svg",
     icon: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M28.75 28.75H10.9063L6.54688 4.78125C6.49587 4.49421 6.34614 4.23403 6.12358 4.04571C5.90103 3.85739 5.61965 3.75279 5.32812 3.75H2.5" stroke="url(#paint0_linear_3278_158639)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M12.5 35C14.2259 35 15.625 33.6009 15.625 31.875C15.625 30.1491 14.2259 28.75 12.5 28.75C10.7741 28.75 9.375 30.1491 9.375 31.875C9.375 33.6009 10.7741 35 12.5 35Z" stroke="url(#paint1_linear_3278_158639)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -173,7 +168,6 @@ const aimlServicesData = [
   {
     id: 1,
     title: "Transportation & Mobility",
-    // img: "/images/technologies/ai_ml/services/icon_1.svg",
     icon: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_31_1284)">
     <path d="M0 18.3333H40" stroke="url(#paint0_linear_31_1284)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -218,7 +212,6 @@ const aimlServicesData = [
   {
     id: 2,
     title: "Manufacturing & Supply Chain",
-    // img: "/images/technologies/ai_ml/services/icon_2.svg",
     icon: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12.5 27.5H16.875" stroke="url(#paint0_linear_3278_158649)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M23.125 27.5H27.5" stroke="url(#paint1_linear_3278_158649)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -253,7 +246,6 @@ const aimlServicesData = [
   {
     id: 3,
     title: "Healthcare & Life Sciences",
-    // img: "/images/technologies/ai_ml/services/icon_3.svg",
     icon: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5 20H11.5625L14.1875 16L19.4375 24L22.0625 20H26" stroke="url(#paint0_linear_31_1284)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M5.0155 14.9091C5 14.7023 5 14.4796 5 14.2727C5 12.3603 5.64557 10.5069 6.82686 9.02792C8.00816 7.54894 9.65221 6.53573 11.4793 6.16066C13.3064 5.7856 15.2037 6.07186 16.8483 6.97074C18.4929 7.86961 19.7834 9.32558 20.5 11.0909C21.2166 9.32558 22.5071 7.86961 24.1517 6.97074C25.7963 6.07186 27.6936 5.7856 29.5207 6.16066C31.3478 6.53573 32.9918 7.54894 34.1731 9.02792C35.3544 10.5069 36 12.3603 36 14.2727C36 25.0909 20.5 34 20.5 34C20.5 34 14.3155 30.4364 9.7585 25.0909" stroke="url(#paint1_linear_31_1284)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

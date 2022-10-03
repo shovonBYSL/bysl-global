@@ -7,7 +7,6 @@ import {
   TechnologiesSectionTitle,
 } from "../shared/SharedTextgroups";
 import SliderLayout from "../shared/slider/SliderLayout";
-// import { servicesFeaturesData } from "../../public/data/servicesData";
 
 const ServiceFeatures = ({ data }) => {
   return (

@@ -2,8 +2,6 @@ const dataScienceControlPanelData = [
   {
     id: 0,
     title: "Security",
-    // img: "/images/divisions/data_science/control_panel/icon_0.svg",
-    // hoverImg: "/images/divisions/data_science/control_panel/icon_hover_0.svg",
     icon: `<svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M10.8374 27.6125C11.9351 25.4025 12.5043 22.9676 12.4999 20.5C12.5009 19.3002 12.771 18.116 13.2902 17.0343C13.8094 15.9527 14.5645 15.0013 15.4999 14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M20.5 20.5C20.5054 24.5671 19.4728 28.5684 17.5 32.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,8 +56,6 @@ const dataScienceControlPanelData = [
   {
     id: 1,
     title: "Customer Service",
-    // img: "/images/divisions/data_science/control_panel/icon_1.svg",
-    // hoverImg: "/images/divisions/data_science/control_panel/icon_hover_1.svg",
     icon: `<svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_11_21263)">
     <path d="M35.7344 20.5005H30.7344C30.0713 20.5005 29.4354 20.7639 28.9666 21.2328C28.4978 21.7016 28.2344 22.3375 28.2344 23.0005V29.2505C28.2344 29.9136 28.4978 30.5494 28.9666 31.0183C29.4354 31.4871 30.0713 31.7505 30.7344 31.7505H33.2344C33.8974 31.7505 34.5333 31.4871 35.0021 31.0183C35.471 30.5494 35.7344 29.9136 35.7344 29.2505V20.5005ZM35.7344 20.5005C35.7344 18.5201 35.3424 16.5593 34.5807 14.7313C33.8191 12.9032 32.703 11.244 31.2969 9.84948C29.8907 8.45495 28.2224 7.35268 26.388 6.60625C24.5537 5.85982 22.5897 5.48402 20.6094 5.50052C18.6304 5.48609 16.6681 5.86342 14.8355 6.61078C13.003 7.35814 11.3365 8.46074 9.932 9.85506C8.52751 11.2494 7.41283 12.9078 6.65218 14.7349C5.89153 16.5619 5.49995 18.5215 5.5 20.5005V29.2505C5.5 29.9136 5.76339 30.5494 6.23223 31.0183C6.70107 31.4871 7.33696 31.7505 8 31.7505H10.5C11.163 31.7505 11.7989 31.4871 12.2678 31.0183C12.7366 30.5494 13 29.9136 13 29.2505V23.0005C13 22.3375 12.7366 21.7016 12.2678 21.2328C11.7989 20.7639 11.163 20.5005 10.5 20.5005H5.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -96,8 +92,6 @@ const dataScienceControlPanelData = [
   {
     id: 2,
     title: "Finance",
-    // img: "/images/divisions/data_science/control_panel/icon_2.svg",
-    // hoverImg: "/images/divisions/data_science/control_panel/icon_hover_2.svg",
     icon: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M20 20V5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M32.9805 12.5L7.01172 27.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -134,8 +128,6 @@ const dataScienceControlPanelData = [
   {
     id: 3,
     title: "Human Resource",
-    // img: "/images/divisions/data_science/control_panel/icon_3.svg",
-    // hoverImg: "/images/divisions/data_science/control_panel/icon_hover_3.svg",
     icon: `<svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M16.75 8H9.25C8.55964 8 8 8.55964 8 9.25V16.75C8 17.4404 8.55964 18 9.25 18H16.75C17.4404 18 18 17.4404 18 16.75V9.25C18 8.55964 17.4404 8 16.75 8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M16.75 23H9.25C8.55964 23 8 23.5596 8 24.25V31.75C8 32.4404 8.55964 33 9.25 33H16.75C17.4404 33 18 32.4404 18 31.75V24.25C18 23.5596 17.4404 23 16.75 23Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -190,8 +182,6 @@ const dataScienceControlPanelData = [
   {
     id: 4,
     title: "Supply Chain",
-    // img: "/images/divisions/data_science/control_panel/icon_4.svg",
-    // hoverImg: "/images/divisions/data_science/control_panel/icon_hover_4.svg",
     icon: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12.5 25H32.5C32.8315 25 33.1495 24.8683 33.3839 24.6339C33.6183 24.3995 33.75 24.0815 33.75 23.75V7.5C33.75 7.16848 33.6183 6.85054 33.3839 6.61612C33.1495 6.3817 32.8315 6.25 32.5 6.25H15C14.6685 6.25 14.3505 6.3817 14.1161 6.61612C13.8817 6.85054 13.75 7.16848 13.75 7.5V8.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M16.25 21.25L12.5 25L16.25 28.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -228,8 +218,6 @@ const dataScienceControlPanelData = [
   {
     id: 5,
     title: "Sales",
-    // img: "/images/divisions/data_science/control_panel/icon_5.svg",
-    // hoverImg: "/images/divisions/data_science/control_panel/icon_hover_5.svg",
     icon: `<svg viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M36.75 10.5H4.25C3.55964 10.5 3 11.0596 3 11.75V29.25C3 29.9404 3.55964 30.5 4.25 30.5H36.75C37.4404 30.5 38 29.9404 38 29.25V11.75C38 11.0596 37.4404 10.5 36.75 10.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M7 10.5V8.25C7 7.55964 7.55964 7 8.25 7H40.75C41.4404 7 42 7.55964 42 8.25V25.75C42 26.4404 41.4404 27 40.75 27H38" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

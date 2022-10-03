@@ -20,8 +20,6 @@ const foodAndBeverageBannerData = {
 
 const foodAndBeverageOverviewData = {
   img: "/images/solutions/food_and_beverage/overview.svg",
-  // details1:
-  //   "Marketing consulting is considered as professional services provided by experienced and qualified experts in the field of marketing. ",
   details2:
     "Building a complete cloud-based digital infrastructure is key to meeting the continuous shifting demands of consumers especially in the food service industry. The faster a service provider technologically meets the increasing demands for drive through services, mobile and web orderings,  and be able to deliver the menu in real time to the customers with full understanding and control of the data using AI and ML integrated analytics, the better it will be for the business to scale.",
   details3:

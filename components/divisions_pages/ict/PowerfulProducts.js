@@ -1,10 +1,7 @@
 import Image from "next/image";
 
 // import Button from "../../shared/buttons/Button";
-import {
-  TechnologiesSectionTitle,
-  TextGradient,
-} from "../../shared/SharedTextgroups";
+import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
 
 const PowerfulProducts = ({ data }) => {
   return (

@@ -4,7 +4,6 @@ const ictSectorsData = [
     title: "Photogrpahy",
     subTitle:
       "Art of photography empowered by the right marketing techniques to create greater value for business",
-    // img: "/images/divisions/ict/sectors/icon_0.svg",
     icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M45.625 45.625H14.375C13.5462 45.625 12.7513 45.2958 12.1653 44.7097C11.5792 44.1237 11.25 43.3288 11.25 42.5V20.625C11.25 19.7962 11.5792 19.0013 12.1653 18.4153C12.7513 17.8292 13.5462 17.5 14.375 17.5H20.625L23.75 12.8125H36.25L39.375 17.5H45.625C46.4538 17.5 47.2487 17.8292 47.8347 18.4153C48.4208 19.0013 48.75 19.7962 48.75 20.625V42.5C48.75 43.3288 48.4208 44.1237 47.8347 44.7097C47.2487 45.2958 46.4538 45.625 45.625 45.625Z" stroke="url(#paint0_linear_1_9995)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M30 37.8125C33.8833 37.8125 37.0312 34.6645 37.0312 30.7812C37.0312 26.898 33.8833 23.75 30 23.75C26.1167 23.75 22.9688 26.898 22.9688 30.7812C22.9688 34.6645 26.1167 37.8125 30 37.8125Z" stroke="url(#paint1_linear_1_9995)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -25,7 +24,6 @@ const ictSectorsData = [
     title: "Videography",
     subTitle:
       "Reimagining the fundamentals of videography to create immersive and immersive experiences",
-    // img: "/images/divisions/ict/sectors/icon_1.svg",
     icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M14.375 42.5L45.625 42.5C47.3509 42.5 48.75 41.1009 48.75 39.375V17.5C48.75 15.7741 47.3509 14.375 45.625 14.375L14.375 14.375C12.6491 14.375 11.25 15.7741 11.25 17.5V39.375C11.25 41.1009 12.6491 42.5 14.375 42.5Z" stroke="url(#paint0_linear_1_10004)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M36.25 48.75H23.75" stroke="url(#paint1_linear_1_10004)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -51,7 +49,6 @@ const ictSectorsData = [
     title: "Motion Graphics",
     subTitle:
       " Where art blends with technology in the most challenging yet aesthetic superpositions",
-    // img: "/images/divisions/ict/sectors/icon_2.svg",
     icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M45.2604 18.75C48.9135 18.75 51.875 21.2684 51.875 24.375C51.875 27.4816 48.9135 30 45.2604 30H8.125" stroke="url(#paint0_linear_1_10014)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M44.3704 48.75C47.1344 48.75 50.5882 47.625 50.5882 43.125C50.5882 38.625 47.1344 37.5 44.3704 37.5H8.125" stroke="url(#paint1_linear_1_10014)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -77,7 +74,6 @@ const ictSectorsData = [
     title: "UI/UX",
     subTitle:
       "Grounded in behavriorial science and perception fluency and skills to create world-class designs ",
-    // img: "/images/divisions/ict/sectors/icon_3.svg",
     icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M25.8984 25.8984V43.6719" stroke="url(#paint0_linear_1_10023)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M13.5938 25.8984H46.4062" stroke="url(#paint1_linear_1_10023)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -103,7 +99,6 @@ const ictSectorsData = [
     title: "App Development",
     subTitle:
       "Transforming business needs into solutions with the latest tech and disruptive app engineering",
-    // img: "/images/divisions/ict/sectors/icon_4.svg",
     icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M14.7325 33.2171C15.137 33.2171 15.4649 32.8892 15.4649 32.4846V8.09975C15.4649 7.19834 16.1983 6.46491 17.0997 6.46491H41.9602C42.8616 6.46491 43.5951 7.19834 43.5951 8.09975V13.4945C43.5951 13.8991 43.923 14.227 44.3275 14.227C44.732 14.227 45.06 13.8991 45.06 13.4945V8.09975C45.06 6.39049 43.6694 5 41.9602 5H17.0997C15.3906 5 14 6.39049 14 8.09975V32.4846C14 32.8891 14.3279 33.2171 14.7325 33.2171Z" fill="url(#paint0_linear_1_10034)"/>
     <path d="M45.06 16.9104C45.06 16.5058 44.732 16.178 44.3275 16.178C43.923 16.178 43.5951 16.5058 43.5951 16.9104V47.2214H16V35.9005C16 35.4959 15.4045 35.0002 15 35.0002C14.5955 35.0002 14 35.4959 14 35.9005V51.9003C14 53.6095 15.3906 55 17.0997 55H36.4307C36.8352 55 37.5 54.4049 37.5 54.0002C37.5 53.5956 36.9045 53.0002 36.5 53.0002H17.0997C16.1983 53.0002 16 52.8017 16 51.9003V48.6863H43.5951V51.9003C43.5951 52.8017 42.8616 53.5351 41.9602 53.5351H39.8488C39.4443 53.5351 39.1164 53.863 39.1164 54.2676C39.1164 54.6722 39.4443 55 39.8488 55H41.9602C43.6694 55 45.06 53.6095 45.06 51.9003V16.9104Z" fill="url(#paint1_linear_1_10034)"/>
@@ -204,7 +199,6 @@ const ictSectorsData = [
     title: "Web Development",
     subTitle:
       "Feature-rich, fast, scalable,  intuitive, secure and dynamic web applications  ",
-    // img: "/images/divisions/ict/sectors/icon_5.svg",
     icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.5 22.1875L8.125 30L17.5 37.8125" stroke="url(#paint0_linear_1_10058)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M42.5 22.1875L51.875 30L42.5 37.8125" stroke="url(#paint1_linear_1_10058)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -230,7 +224,6 @@ const ictSectorsData = [
     title: "AR/VR Development",
     subTitle:
       "Determined and armed to create a bigger impact in the realm of virtual world development",
-    // img: "/images/divisions/ict/sectors/icon_6.svg",
     icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M45.3516 46.8557L14.1016 41.1721C13.7395 41.1077 13.4117 40.9177 13.1759 40.6355C12.9401 40.3532 12.8114 39.9969 12.8125 39.6291V20.3713C12.8114 20.0035 12.9401 19.6472 13.1759 19.3649C13.4117 19.0827 13.7395 18.8927 14.1016 18.8283L45.3516 13.1447C45.5768 13.1047 45.808 13.1146 46.029 13.1737C46.2499 13.2329 46.4552 13.3398 46.6303 13.4869C46.8054 13.6341 46.9461 13.8179 47.0423 14.0254C47.1386 14.2329 47.1882 14.459 47.1875 14.6877V45.3127C47.1882 45.5414 47.1386 45.7675 47.0423 45.975C46.9461 46.1825 46.8054 46.3663 46.6303 46.5134C46.4552 46.6606 46.2499 46.7675 46.029 46.8266C45.808 46.8858 45.5768 46.8957 45.3516 46.8557Z" stroke="url(#paint0_linear_1_10068)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M8.125 30H51.875" stroke="url(#paint1_linear_1_10068)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -251,7 +244,6 @@ const ictSectorsData = [
     title: "3D",
     subTitle:
       "Clean geometry, need-based topology, low and high-poly modeling for photo-real market materials  ",
-    // img: "/images/divisions/ict/sectors/icon_7.svg",
     icon: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M48.75 39.6289V20.3711C48.7485 20.0929 48.6737 19.8201 48.5331 19.58C48.3925 19.34 48.1911 19.1413 47.9492 19.0039L30.7617 9.33594C30.5301 9.20223 30.2674 9.13184 30 9.13184C29.7326 9.13184 29.4699 9.20223 29.2383 9.33594L12.0508 19.0039C11.8089 19.1413 11.6075 19.34 11.4669 19.58C11.3263 19.8201 11.2515 20.0929 11.25 20.3711V39.6289C11.2515 39.9071 11.3263 40.1799 11.4669 40.42C11.6075 40.66 11.8089 40.8587 12.0508 40.9961L29.2383 50.6641C29.4699 50.7978 29.7326 50.8682 30 50.8682C30.2674 50.8682 30.5301 50.7978 30.7617 50.6641L47.9492 40.9961C48.1911 40.8587 48.3925 40.66 48.5331 40.42C48.6737 40.1799 48.7485 39.9071 48.75 39.6289V39.6289Z" stroke="url(#paint0_linear_1_10077)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M48.5352 19.5703L30.1758 30L11.4648 19.5703" stroke="url(#paint1_linear_1_10077)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

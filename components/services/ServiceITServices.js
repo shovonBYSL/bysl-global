@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// import { servicesServiceData } from "../../public/data/servicesData";
 import { setItem } from "../../utils/sessionStorage";
 import HoverImage from "../shared/HoverImage";
 import {

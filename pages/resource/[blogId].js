@@ -14,14 +14,12 @@ const SingleResource = () => {
   const router = useRouter();
   const { blogId } = router.query;
   const [data, setData] = useState(null);
-  // const [data, setData] = useState(solutionsResourcesData[blogId]);
   readingTime();
 
   useEffect(() => {
     if (blogId !== "undefined") {
       solutionsResourcesData.find((item) => item.url == blogId);
       setData(solutionsResourcesData.find((item) => item.url == blogId));
-      // setData(solutionsResourcesData[blogId]);
     }
   }, [blogId, data]);
 

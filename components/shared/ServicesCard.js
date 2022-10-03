@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { useState } from "react";
-import Modal from "./Modal";
 
+import Modal from "./Modal";
 import { TextGradient } from "./SharedTextgroups";
 
 const ServicesCard = (props) => {
   const { data, black, padding } = props;
+
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModalData] = useState("");
 
@@ -14,6 +15,7 @@ const ServicesCard = (props) => {
     setIsOpen(true);
     setModalData(data[id]);
   };
+  
   const handleClose = () => {
     setIsOpen(false);
   };

@@ -2,7 +2,6 @@ const supplyChainConnectivityData = [
   {
     id: 0,
     title: "Order Fulfillment",
-    // img: "/images/divisions/supply_chain/connectivity/icon_0.svg",
     icon: `<svg viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M14.625 34.2109H20.0938" stroke="url(#paint0_linear_17_2870)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M27.9062 34.2109H33.375" stroke="url(#paint1_linear_17_2870)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -37,7 +36,6 @@ const supplyChainConnectivityData = [
   {
     id: 1,
     title: "Pick, Pack & Ship",
-    // img: "/images/divisions/supply_chain/connectivity/icon_1.svg",
     icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M44.3333 34.1512V13.8488C44.3317 13.5556 44.2513 13.2679 44.1 13.0149C43.9488 12.7618 43.7322 12.5523 43.4721 12.4075L24.9859 2.21517C24.7368 2.07421 24.4543 2 24.1667 2C23.879 2 23.5965 2.07421 23.3474 2.21517L4.86128 12.4075C4.60111 12.5523 4.3845 12.7618 4.23329 13.0149C4.08207 13.2679 4.00161 13.5556 4 13.8488V34.1512C4.00161 34.4444 4.08207 34.7321 4.23329 34.9851C4.3845 35.2382 4.60111 35.4477 4.86128 35.5925L23.3474 45.7848C23.5965 45.9258 23.879 46 24.1667 46C24.4543 46 24.7368 45.9258 24.9859 45.7848L43.4721 35.5925C43.7322 35.4477 43.9488 35.2382 44.1 34.9851C44.2513 34.7321 44.3317 34.4444 44.3333 34.1512V34.1512Z" stroke="url(#paint0_linear_18_422)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M33.6568 29.3514V18.2147L14.6764 6.75677" stroke="url(#paint1_linear_18_422)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -67,7 +65,6 @@ const supplyChainConnectivityData = [
   {
     id: 2,
     title: "Warehousing",
-    // img: "/images/divisions/supply_chain/connectivity/icon_2.svg",
     icon: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M45.621 37.5C45.8053 36.9804 45.75 37.9611 45.75 23.25C45.75 22.0094 44.7406 21 43.5 21C42.8422 21 38.7184 21 38.121 21C38.3053 20.4804 38.25 21.4611 38.25 6.75C38.25 5.50941 37.2406 4.5 36 4.5C32.1714 4.5 27.7829 4.5 24 4.5C22.7594 4.5 21.75 5.50941 21.75 6.75C21.75 21.4631 21.6951 20.4815 21.879 21C21.279 21 17.1651 21 16.5 21C15.2594 21 14.25 22.0094 14.25 23.25C14.25 37.9631 14.1951 36.9815 14.379 37.5H12V4.5C12 2.01862 9.98128 0 7.5 0H2.25C1.00931 0 0 1.00941 0 2.25C0 3.49059 1.00931 4.5 2.25 4.5H6.9375C7.24772 4.5 7.5 4.75228 7.5 5.0625V41.25C7.5 42.4906 8.50931 43.5 9.75 43.5H12.0545C12.4196 46.0408 14.6099 48 17.25 48C19.8901 48 22.0805 46.0408 22.4455 43.5H33.0544C33.4195 46.0408 35.6098 48 38.2499 48C40.89 48 43.0804 46.0408 43.4454 43.5H45.75C46.9907 43.5 48 42.4906 48 41.25V39.75C48 38.6102 47.1345 37.5 45.621 37.5V37.5ZM44.25 23.25V36.75C44.25 37.1635 43.9135 37.5 43.5 37.5H31.5C31.0865 37.5 30.75 37.1635 30.75 36.75V23.25C30.75 22.8365 31.0865 22.5 31.5 22.5H34.5V26.25C34.5 26.6642 34.8358 27 35.25 27H39.75C40.1642 27 40.5 26.6642 40.5 26.25V22.5H43.5C43.9135 22.5 44.25 22.8365 44.25 23.25ZM33.0545 42H22.4455C22.2777 40.8324 21.7246 39.7882 20.9192 39H34.5807C33.7754 39.7882 33.2222 40.8324 33.0545 42ZM39 25.5H36V22.5H39V25.5ZM31.5 6V9H28.5V6H31.5ZM23.25 20.25V6.75C23.25 6.33647 23.5865 6 24 6H27V9.75C27 10.1642 27.3358 10.5 27.75 10.5H32.25C32.6642 10.5 33 10.1642 33 9.75V6H36C36.4135 6 36.75 6.33647 36.75 6.75V20.25C36.75 20.6635 36.4135 21 36 21C30.0895 21 27.4809 21 24 21C23.5865 21 23.25 20.6635 23.25 20.25ZM24 22.5V25.5H21V22.5H24ZM15.75 36.75V23.25C15.75 22.8365 16.0865 22.5 16.5 22.5H19.5V26.25C19.5 26.6642 19.8358 27 20.25 27H24.75C25.1642 27 25.5 26.6642 25.5 26.25V22.5H28.5C28.9135 22.5 29.25 22.8365 29.25 23.25V36.75C29.25 37.1635 28.9135 37.5 28.5 37.5H16.5C16.0865 37.5 15.75 37.1635 15.75 36.75ZM9 9.75H10.5V37.5H9V9.75ZM6.9375 3H2.25C1.83647 3 1.5 2.66353 1.5 2.25C1.5 1.83647 1.83647 1.5 2.25 1.5H7.5C9.15422 1.5 10.5 2.84578 10.5 4.5V8.25H9V5.0625C9 3.92522 8.07478 3 6.9375 3ZM9 41.25V39H13.5808C12.7754 39.7882 12.2223 40.8324 12.0545 42H9.75C9.33647 42 9 41.6635 9 41.25V41.25ZM17.25 46.5C15.1823 46.5 13.5 44.8177 13.5 42.75C13.5 40.6823 15.1823 39 17.25 39C19.3177 39 21 40.6823 21 42.75C21 44.8177 19.3177 46.5 17.25 46.5ZM38.25 46.5C36.1823 46.5 34.5 44.8177 34.5 42.75C34.5 40.6823 36.1823 39 38.25 39C40.3177 39 42 40.6823 42 42.75C42 44.8177 40.3177 46.5 38.25 46.5ZM46.5 41.25C46.5 41.6635 46.1635 42 45.75 42H43.4455C43.2777 40.8324 42.7246 39.7882 41.9192 39H45.75C46.1635 39 46.5 39.3365 46.5 39.75V41.25Z" fill="url(#paint0_linear_18_429)"/>
     <defs>
@@ -87,7 +84,6 @@ const supplyChainOverviewData = [
     title: "Planning",
     subTitle:
       "Improved by predictive analytics in demand planning leveraging market intelligence",
-    // img: "/images/divisions/supply_chain/overview/icon_0.svg",
     icon: `<svg viewBox="0 0 44 51" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M7.70746 28.3808C8.09816 28.3808 8.41492 28.053 8.41492 27.6484V3.26378C8.41492 2.36238 9.12332 1.62896 9.99396 1.62896H34.006C34.8767 1.62896 35.5851 2.36238 35.5851 3.26378V8.65849C35.5851 9.06309 35.9018 9.39093 36.2925 9.39093C36.6832 9.39093 37 9.06309 37 8.65849V3.26378C37 1.55454 35.6569 0.164062 34.006 0.164062H9.99396C8.34313 0.164062 7 1.55454 7 3.26378V27.6484C7 28.0529 7.31675 28.3808 7.70746 28.3808V28.3808Z" fill="url(#paint0_linear_17_3261)"/>
     <path d="M37 12.0749C37 11.6703 36.6832 11.3425 36.2925 11.3425C35.9018 11.3425 35.5851 11.6703 35.5851 12.0749V42.3855H8.41492V31.0648C8.41492 30.6602 8.09816 30.3324 7.70746 30.3324C7.31675 30.3324 7 30.6602 7 31.0648V47.0644C7 48.7736 8.34313 50.1641 9.99396 50.1641H28.6652C29.0559 50.1641 29.3727 49.8362 29.3727 49.4316C29.3727 49.027 29.0559 48.6992 28.6652 48.6992H9.99396C9.12332 48.6992 8.41492 47.9658 8.41492 47.0644V43.8504H35.5851V47.0644C35.5851 47.9658 34.8767 48.6992 34.006 48.6992H31.9667C31.576 48.6992 31.2592 49.027 31.2592 49.4316C31.2592 49.8362 31.576 50.1641 31.9667 50.1641H34.006C35.6569 50.1641 37 48.7736 37 47.0644V12.0749Z" fill="url(#paint1_linear_17_3261)"/>
@@ -189,7 +185,6 @@ const supplyChainOverviewData = [
     title: "Production",
     subTitle:
       "Higher productivity with automated production process and vendor management",
-    // img: "/images/divisions/supply_chain/overview/icon_1.svg",
     icon: `<svg viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.625 34.5391H21.0938" stroke="url(#paint0_linear_17_3284)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M28.9062 34.5391H34.375" stroke="url(#paint1_linear_17_3284)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -226,7 +221,6 @@ const supplyChainOverviewData = [
     title: "Digital Supply Chain",
     subTitle:
       "Analytics-based planning, automated physical flow, performance management, order management and SC strategy",
-    // img: "/images/divisions/supply_chain/overview/icon_2.svg",
     icon: `<svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M23 38.6328C25.7183 38.6328 27.9219 36.4292 27.9219 33.7109C27.9219 30.9927 25.7183 28.7891 23 28.7891C20.2817 28.7891 18.0781 30.9927 18.0781 33.7109C18.0781 36.4292 20.2817 38.6328 23 38.6328Z" stroke="url(#paint0_linear_17_3288)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M33.5469 17.5391C36.2652 17.5391 38.4688 15.3355 38.4688 12.6172C38.4688 9.89891 36.2652 7.69531 33.5469 7.69531C30.8286 7.69531 28.625 9.89891 28.625 12.6172C28.625 15.3355 30.8286 17.5391 33.5469 17.5391Z" stroke="url(#paint1_linear_17_3288)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -263,7 +257,6 @@ const supplyChainOverviewData = [
     title: "Operations",
     subTitle:
       "Enabled by automation increasing visibility and control among various steps of a coordinated network",
-    // img: "/images/divisions/supply_chain/overview/icon_3.svg",
     icon: `<svg viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M34.375 15.7891H42.6953C43.0066 15.787 43.3113 15.8792 43.5692 16.0535C43.8272 16.2278 44.0264 16.476 44.1406 16.7656L46.875 23.6016" stroke="url(#paint0_linear_17_3294)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M3.125 28.2891H34.375" stroke="url(#paint1_linear_17_3294)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import SectionHeader from "../../shared/SectionHeader";
 import { Heading, Info, Title } from "../SolutionsSharedTextStyle";
 import { BulletPoints } from "../../shared/BulletPoints";
-import { marketingScroll } from "../../../utils/scroller";
 
 const MarketingProblemsAndSolutions = ({ data }) => {
   const [tabOpen, setTabOpen] = useState(0);
@@ -16,18 +15,10 @@ const MarketingProblemsAndSolutions = ({ data }) => {
 
   const handleClick = (id) => {
     setTabOpen(id);
-    // screen.width <= 768 && marketingScroll(id);
   };
 
-  const {
-    problem,
-    problemInfo,
-    solution,
-    solutionInfo,
-    solutionPoints,
-    solutionImg,
-    // benefits,
-  } = tabData;
+  const { problem, problemInfo, solution, solutionInfo, solutionPoints } =
+    tabData;
 
   return (
     <div id="problems&solutions" className="py-10 xl:py-16">
@@ -38,47 +29,30 @@ const MarketingProblemsAndSolutions = ({ data }) => {
           (tabOpen === 4 && "rounded-r-lg lg:rounded-r-[20px]")
         }`}
       >
-        {data.map(
-          ({
-            id,
-            problemIcon,
-            problemIconWhite,
-            problemImg,
-            problemImgWhite,
-            problem,
-          }) => {
-            return (
+        {data.map(({ id, problemIcon, problemIconWhite, problem }) => {
+          return (
+            <div
+              id={id}
+              key={id}
+              onClick={() => handleClick(id)}
+              className={`w-max lg:w-full px-2 xl:px-5 2xl:px-10 rounded-lg lg:rounded-[20px] flex lg:flex-col items-center hover:cursor-pointer gap-2 lg:gap-4 ${
+                tabOpen === id
+                  ? "bg-gradient-to-r from-blue-900 to-blue-700  text-white"
+                  : " text-gray-800"
+              } py-3 xl:py-5`}
+            >
               <div
-                id={id}
-                key={id}
-                onClick={() => handleClick(id)}
-                className={`w-max lg:w-full px-2 xl:px-5 2xl:px-10 rounded-lg lg:rounded-[20px] flex lg:flex-col items-center hover:cursor-pointer gap-2 lg:gap-4 ${
-                  tabOpen === id
-                    ? "bg-gradient-to-r from-blue-900 to-blue-700  text-white"
-                    : " text-gray-800"
-                } py-3 xl:py-5`}
-              >
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: id === tabOpen ? problemIconWhite : problemIcon,
-                  }}
-                  className="relative h-8 w-8 lg:h-14 lg:w-14 2xl:h-20 2xl:w-20 lg:mx-auto"
-                >
-                  {/* <Image
-                  src={id === tabOpen ? problemImgWhite : problemImg}
-                  placeholder="blur"
-                  blurDataURL={id === tabOpen ? problemImgWhite : problemImg}
-                  alt=""
-                  layout="fill"
-                /> */}
-                </div>
-                <p className="w-40 lg:w-fit text-sm xl:text-base text-center font-medium capitalize">
-                  {problem}
-                </p>
-              </div>
-            );
-          }
-        )}
+                dangerouslySetInnerHTML={{
+                  __html: id === tabOpen ? problemIconWhite : problemIcon,
+                }}
+                className="relative h-8 w-8 lg:h-14 lg:w-14 2xl:h-20 2xl:w-20 lg:mx-auto"
+              />
+              <p className="w-40 lg:w-fit text-sm xl:text-base text-center font-medium capitalize">
+                {problem}
+              </p>
+            </div>
+          );
+        })}
       </div>
       <div className="pt-6 text-center lg:text-start lg:p-10 lg:pb-0">
         <Title label="Problem" />
@@ -102,12 +76,6 @@ const MarketingProblemsAndSolutions = ({ data }) => {
             />
           </div>
         </div>
-        {/* {benefits && (
-          <>
-            <Title label="Benefits" />
-            <Info noMargin={true} text={benefits} />
-          </>
-        )} */}
       </div>
     </div>
   );

@@ -71,4 +71,3 @@ const SingleResourceOverview = () => {
 };
 
 export default SingleResourceOverview;
-// bg-gradient-to-b from-[#F2E9F1] to-[#F2F4F9]

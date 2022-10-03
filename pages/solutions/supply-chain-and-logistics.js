@@ -1,6 +1,5 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
-// import SupplyChainSolutionBanner from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionBanner";
 import SupplyChainSolutionProblems from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionProblems";
 import SupplyChainSolutionsSolution from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionsSolution";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
@@ -26,7 +25,6 @@ const SupplyChainAndLogistics = ({
     >
       {/* banner section  */}
       <SolutionsBanner data={banner} />
-      {/* <SupplyChainSolutionBanner data={banner} /> */}
       <div className="box">
         {/* overview section  */}
         <SolutionsOverview data={overviewData} />

@@ -1,5 +1,3 @@
-// import Image from "next/image";
-
 const WebBanner = ({ img }) => {
   const Tech = ({ img, title }) => {
     return (
@@ -10,8 +8,6 @@ const WebBanner = ({ img }) => {
             dangerouslySetInnerHTML={{ __html: img }}
           />
         </div>
-        {/* <Image src={img} alt="" layout="fill" /> */}
-        {/* <img className="w-full h-full" src={img} alt="" /> */}
         <p>{title}</p>
       </div>
     );

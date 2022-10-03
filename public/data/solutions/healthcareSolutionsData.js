@@ -33,12 +33,9 @@ const healthcareProblemsAndSolutionsData = [
     problem: "True potential of health data remains undiscovered",
     problemInfo:
       "For the most part, healthcare organizations have to deal with a massive scale of data that remains mostly unused due to lack of proper analytics and processing applications. Besides, due to not having quality metrics reporting, informed decisions are not made on various critical issues. Also the unstructured health data sets obstruct the right utilization of data through advanced processing of health and other records.",
-    // problemImg: "/images/solutions/healthcare/problem_image_0.png",
     solution: "Unlock the power of data",
     solutionInfo:
       "Our AI/ML powered data analytics tools use advanced architecture to help healthcare organizations get valuable insights from healthcare data. Institutions can address various critical issues utilizing our well-designed intelligent data analytics applications that provide real time insights, visualizations and forecasting. We help our partners with simplified processes of reporting on various metrics relating to outcomes and processes, while still achieving compliance.",
-    // solutionImg: "/images/solutions/healthcare/solution_image_0.png",
-    // icon: "/images/solutions/healthcare/icon_0.png",
     icon: healthcareProblemsSolutionsSvg[0],
   },
   {
@@ -46,12 +43,9 @@ const healthcareProblemsAndSolutionsData = [
     problem: "Need for optimization of systems through digitization",
     problemInfo:
       "Operational optimization is key to delivering the best services without compromising quality, time and confidentiality. Healthcare industry, by type, is a heavily regulated one and compliance plays a big role in it. Optimization of operations while maintaining compliance is a big challenge for most organizations.",
-    // problemImg: "/images/solutions/healthcare/problem_image_0.png",
     solution: "Optimize operations",
     solutionInfo:
       "From minimizing human intervention during extracting patient’s information, digital operation processing using intelligent document readers, meeting compliance requirements to operating a secure financial system, our partner healthcare organizations can enhance the entire healthcare experience for all.",
-    // solutionImg: "/images/solutions/healthcare/solution_image_0.png",
-    // icon: "/images/solutions/healthcare/icon_1.png",
     icon: healthcareProblemsSolutionsSvg[1],
   },
   {
@@ -59,12 +53,9 @@ const healthcareProblemsAndSolutionsData = [
     problem: "Unremarkable experience for clinicians & patients",
     problemInfo:
       "Clinicians’ well-being and the patient experience are two major issues every healthcare organization deals with. Burned out physicians often prove to be difficult for patients and the overall healthcare experience. Apart from building a psychological safety net, there is a dire need for systemic efficacy through advanced communication and information processing solutions.",
-    // problemImg: "/images/solutions/healthcare/problem_image_0.png",
     solution: "Create remarkable healthcare experience",
     solutionInfo:
       "Leverage machine learning by accessing our well-crafted solutions for clinical workflows to reduce burnout for clinicians so that patient care is streamlined. Our applications help minimize both the patients and the clinicians to reduce friction and complexity in the exchange of information and documentation through omni-channel engagements while keeping sensitive information protected.",
-    // solutionImg: "/images/solutions/healthcare/solution_image_0.png",
-    // icon: "/images/solutions/healthcare/icon_2.png",
     icon: healthcareProblemsSolutionsSvg[2],
   },
   {
@@ -72,12 +63,9 @@ const healthcareProblemsAndSolutionsData = [
     problem: "Insufficient tech support for medical research",
     problemInfo:
       "Researchers need to access, analyze and store a gigantic volume of data for their works. They often have to use advanced tech like quantum computing, AI and ML to solve intricate problems while sharing their data with other collaborators across the globe. However, the gnawing scarcity of low-cost hi-tech solutions for such needs still persists today.",
-    // problemImg: "/images/solutions/healthcare/problem_image_0.png",
     solution: "Achieve more in medical research",
     solutionInfo:
       "Handle complex data with higher computing power and intelligent analytics for deeper insights.  We develop applications that empower researchers in the healthcare industry to utilize health data to its fullest potential. We provide solutions for collecting, processing and forecasting of relevant data from any targeted group.",
-    // solutionImg: "/images/solutions/healthcare/solution_image_0.png",
-    // icon: "/images/solutions/healthcare/icon_3.png",
     icon: healthcareProblemsSolutionsSvg[3],
   },
 ];

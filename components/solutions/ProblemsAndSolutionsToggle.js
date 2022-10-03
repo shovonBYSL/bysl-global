@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState } from "react";
 
 import SectionHeader from "../shared/SectionHeader";
@@ -25,12 +24,8 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
 
   const ProblemAndSolutionText = ({ title, subTitle, icon }) => {
     return (
-      // <div className="opacity-animation-slow">
       <div className="opacity-animation-slow rounded-[20px] p-5 bg-white text-center lg:text-start h-full">
         <div className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20 mx-auto lg:mx-0 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
-          {/* <div className="h-6 w-6 md:h-8 md:w-8 2xl:h-10 2xl:w-10">
-            <Image src={image} layout="fill" alt="" objectFit="contain" />
-          </div> */}
           <div
             className="w-6 md:w-8 2xl:w-10 svgColor"
             dangerouslySetInnerHTML={{ __html: icon }}
@@ -84,20 +79,7 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
           {data.map(
             ({ id, problem, solution, solutionInfo, problemInfo, icon }) => {
               return (
-                <div
-                  key={id}
-                  className="flip group"
-                  // className="rounded-[20px] p-5 bg-white text-center lg:text-start h-full"
-                >
-                  {/* <div className="h-10 w-10 lg:h-16 lg:w-16 2xl:h-20 2xl:w-20 mx-auto lg:mx-0 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full flex items-center justify-center">
-                    <div className="relative h-3 w-5 lg:h-5 2xl:h-6 lg:w-8 2xl:w-10">
-                      <Image
-                        src={problems ? problemImg : solutionImg}
-                        layout="fill"
-                        alt=""
-                      />
-                    </div>
-                  </div> */}
+                <div key={id} className="flip group">
                   {problems ? (
                     <ProblemAndSolutionText
                       title={problem}
@@ -111,21 +93,6 @@ const ProblemsAndSolutionsToggle = ({ data, children }) => {
                       icon={icon}
                     />
                   )}
-
-                  {/* <div className={` ${problems ? "front" : "back"}`}>
-                    <ProblemAndSolutionText
-                      title={problem}
-                      subTitle={problemInfo}
-                      image={icon}
-                    />
-                  </div>
-                  <div className={` ${!problems ? "front" : "back"}`}>
-                    <ProblemAndSolutionText
-                      title={solution}
-                      subTitle={solutionInfo}
-                      image={icon}
-                    />
-                  </div> */}
                 </div>
               );
             }

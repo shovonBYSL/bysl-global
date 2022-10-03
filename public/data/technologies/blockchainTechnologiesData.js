@@ -2,7 +2,6 @@ const blockchainFeaturesData = [
   {
     id: 0,
     title: "Security",
-    // img: "/images/technologies/blockchain/features/icon_0.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5 15.1334V7.7959C5 7.53068 5.10536 7.27633 5.29289 7.08879C5.48043 6.90126 5.73478 6.7959 6 6.7959H26C26.2652 6.7959 26.5196 6.90126 26.7071 7.08879C26.8946 7.27633 27 7.53068 27 7.7959V15.1334C27 25.6334 18.0875 29.1084 16.3125 29.6959C16.1109 29.7706 15.8891 29.7706 15.6875 29.6959C13.9125 29.1084 5 25.6334 5 15.1334Z" stroke="url(#paint0_linear_3278_161068)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M5.07495 16.7959H26.9249" stroke="url(#paint1_linear_3278_161068)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -36,7 +35,6 @@ const blockchainFeaturesData = [
   {
     id: 1,
     title: "Immutability",
-    // img: "/images/technologies/blockchain/features/icon_1.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M26 11.7959H6C5.44772 11.7959 5 12.2436 5 12.7959V26.7959C5 27.3482 5.44772 27.7959 6 27.7959H26C26.5523 27.7959 27 27.3482 27 26.7959V12.7959C27 12.2436 26.5523 11.7959 26 11.7959Z" stroke="url(#paint0_linear_3278_161102)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M11.5 11.7959V7.2959C11.5 6.10242 11.9741 4.95783 12.818 4.11392C13.6619 3.27 14.8065 2.7959 16 2.7959C17.1935 2.7959 18.3381 3.27 19.182 4.11392C20.0259 4.95783 20.5 6.10242 20.5 7.2959V11.7959" stroke="url(#paint1_linear_3278_161102)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -66,7 +64,6 @@ const blockchainFeaturesData = [
   {
     id: 2,
     title: "Asset Protection",
-    // img: "/images/technologies/blockchain/features/icon_2.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5 15.1334V7.7959C5 7.53068 5.10536 7.27633 5.29289 7.08879C5.48043 6.90126 5.73478 6.7959 6 6.7959H26C26.2652 6.7959 26.5196 6.90126 26.7071 7.08879C26.8946 7.27633 27 7.53068 27 7.7959V15.1334C27 25.6334 18.0875 29.1084 16.3125 29.6959C16.1109 29.7706 15.8891 29.7706 15.6875 29.6959C13.9125 29.1084 5 25.6334 5 15.1334Z" stroke="url(#paint0_linear_3278_161111)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M25.2999 22.3084L16 15.7959L6.69995 22.3084" stroke="url(#paint1_linear_3278_161111)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,7 +83,6 @@ const blockchainFeaturesData = [
   {
     id: 3,
     title: "Transparency",
-    // img: "/images/technologies/blockchain/features/icon_3.svg",
     icon: `<svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12.75 21.7959C17.7206 21.7959 21.75 17.7665 21.75 12.7959C21.75 7.82534 17.7206 3.7959 12.75 3.7959C7.77944 3.7959 3.75 7.82534 3.75 12.7959C3.75 17.7665 7.77944 21.7959 12.75 21.7959Z" stroke="url(#paint0_linear_3278_161119)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M20.75 29.7959C25.7206 29.7959 29.75 25.7665 29.75 20.7959C29.75 15.8253 25.7206 11.7959 20.75 11.7959C15.7794 11.7959 11.75 15.8253 11.75 20.7959C11.75 25.7665 15.7794 29.7959 20.75 29.7959Z" stroke="url(#paint1_linear_3278_161119)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -116,7 +112,6 @@ const blockchainFeaturesData = [
   {
     id: 4,
     title: "Auditability",
-    // img: "/images/technologies/blockchain/features/icon_4.svg",
     icon: `<svg viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M13.4375 27.7959H6.25C5.98478 27.7959 5.73043 27.6905 5.54289 27.503C5.35536 27.3155 5.25 27.0611 5.25 26.7959V6.7959C5.25 6.53068 5.35536 6.27633 5.54289 6.08879C5.73043 5.90126 5.98478 5.7959 6.25 5.7959H26.25C26.5152 5.7959 26.7696 5.90126 26.9571 6.08879C27.1446 6.27633 27.25 6.53068 27.25 6.7959V20.3834" stroke="url(#paint0_linear_3278_161128)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M21.8786 31.2245C24.5296 31.2245 26.6786 29.0755 26.6786 26.4245C26.6786 23.7735 24.5296 21.6245 21.8786 21.6245C19.2276 21.6245 17.0786 23.7735 17.0786 26.4245C17.0786 29.0755 19.2276 31.2245 21.8786 31.2245Z" stroke="url(#paint1_linear_3278_161128)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -161,8 +156,6 @@ const blockchainServicesData = [
     title: "Government Services",
     subTitle:
       "We apply blockchain technologies to decentralize, protect, authenticate and democratize government databases to be easily accessed, validated and used by the public reducing frictions, costs and risks in administrative and financial processes across various ministries and offices.",
-    // img: "/images/technologies/blockchain/services/icon_0.svg",
-    // hoverImg: "/images/technologies/blockchain/services/icon_hover_0.svg",
     icon: `<svg viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5.1875 18.75H45.8125L25.5 6.25L5.1875 18.75Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M11.4375 18.75V32.8125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -219,8 +212,6 @@ const blockchainServicesData = [
     title: "Healthcare & Education",
     subTitle:
       "Facilitating healthcare and education sectors with secure blockchain databases to maintain important records of transactions and information allowing people to have better control and understanding of their data, records and status in real time.",
-    // img: "/images/technologies/blockchain/services/icon_1.svg",
-    // hoverImg: "/images/technologies/blockchain/services/icon_hover_1.svg",
     icon: `<svg viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1.5 17.5H9.3125L12.4375 13L18.6875 22L21.8125 17.5H26.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M1.5185 11.5C1.5 11.2563 1.5 10.9938 1.5 10.75C1.5 8.49605 2.27051 6.31171 3.68045 4.56862C5.09038 2.82554 7.05264 1.63139 9.23336 1.18935C11.4141 0.747315 13.6786 1.08469 15.6415 2.14408C17.6045 3.20347 19.1446 4.91943 20 7.00001C20.8554 4.91943 22.3955 3.20347 24.3585 2.14408C26.3214 1.08469 28.5859 0.747315 30.7666 1.18935C32.9474 1.63139 34.9096 2.82554 36.3196 4.56862C37.7295 6.31171 38.5 8.49605 38.5 10.75C38.5 23.5 20 34 20 34C20 34 12.6185 29.8 7.1795 23.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -247,8 +238,6 @@ const blockchainServicesData = [
     title: "Fintech",
     subTitle:
       "Enhancing reliability and transparency of complicated trade transactions and commercial documents among multiple stakeholders using our next-generation blockchain technologies to simplify and ensure accessibility of financial information.",
-    // img: "/images/technologies/blockchain/services/icon_2.svg",
-    // hoverImg: "/images/technologies/blockchain/services/icon_hover_2.svg",
     icon: `<svg viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M30.9688 19.5312H20.0312V30.4688H30.9688V19.5312Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M39.5625 9.375H11.4375C10.5746 9.375 9.875 10.0746 9.875 10.9375V39.0625C9.875 39.9254 10.5746 40.625 11.4375 40.625H39.5625C40.4254 40.625 41.125 39.9254 41.125 39.0625V10.9375C41.125 10.0746 40.4254 9.375 39.5625 9.375Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -323,8 +312,6 @@ const blockchainServicesData = [
     title: "Intellectual Property",
     subTitle:
       "Credits for intellectual properties are given back to the original creators using blockchain technologies through sophisticated, decentralized yet shared ledger that is always in-sync.",
-    // img: "/images/technologies/blockchain/services/icon_3.svg",
-    // hoverImg: "/images/technologies/blockchain/services/icon_hover_3.svg",
     icon: `<svg viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M25.5 37.5V28.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M19.25 21.875L25.5 28.125L31.75 21.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -363,8 +350,6 @@ const blockchainServicesData = [
     title: "Supply Chain Management",
     subTitle:
       "Grow the potentials of a transparent, fast, resilient, and trusted supply chain by utilizing the enormosity of shared data, advanced validation, secure transactions, smart contracts and realtime visibility of the data.",
-    // img: "/images/technologies/blockchain/services/icon_4.svg",
-    // hoverImg: "/images/technologies/blockchain/services/icon_hover_4.svg",
     icon: `<svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M13.5713 32.1429H43.1511C43.6414 32.1429 44.1117 31.9522 44.4584 31.6129C44.8051 31.2735 44.9999 30.8132 44.9999 30.3333V6.80952C44.9999 6.32961 44.8051 5.86935 44.4584 5.53C44.1117 5.19065 43.6414 5 43.1511 5H17.2688C16.7785 5 16.3082 5.19065 15.9615 5.53C15.6148 5.86935 15.42 6.32961 15.42 6.80952V8.61905" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M19.2856 26.4286L13.5713 32.1429L19.2856 37.8572" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -403,8 +388,6 @@ const blockchainServicesData = [
     title: "Logistics",
     subTitle:
       "Designed to reduce the complexity and volume of point-to-point communication in transportation systems through distributed permission platforms accessible by supply chain ecosystem, digitized workflow and trackings.",
-    // img: "/images/technologies/blockchain/services/icon_5.svg",
-    // hoverImg: "/images/technologies/blockchain/services/icon_hover_5.svg",
     icon: `<svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M34.3242 12.7295H43.4269C43.7675 12.7276 44.1008 12.8156 44.383 12.982C44.6652 13.1484 44.8831 13.3854 45.0081 13.6619L47.9996 20.1888" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M2 25.1621H34.3237" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

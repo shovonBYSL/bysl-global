@@ -17,7 +17,6 @@ const mobileFeaturesData1 = [
     title: "Top-Notch Development Architecture",
     subTitle:
       "Cloud-based,  dynamic development architecture to offer maximum fluidity, security, mobility and ease of use",
-    // img: "/images/technologies/mobile/features/icon_0.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <mask id="path-1-outside-1_3278_159540" maskUnits="userSpaceOnUse" x="0" y="3.50024" width="32" height="25" fill="black">
     <rect fill="white" y="3.50024" width="32" height="25"/>
@@ -43,7 +42,6 @@ const mobileFeaturesData1 = [
     title: "No Compromise on Quality",
     subTitle:
       "Unparalleled in design, performance, usability, reilability and dynamic user interface     ",
-    // img: "/images/technologies/mobile/features/icon_1.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M16 22.5C21.5228 22.5 26 18.0228 26 12.5C26 6.97715 21.5228 2.5 16 2.5C10.4772 2.5 6 6.97715 6 12.5C6 18.0228 10.4772 22.5 16 22.5Z" stroke="url(#paint0_linear_3278_159547)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M16 18.5C19.3137 18.5 22 15.8137 22 12.5C22 9.18629 19.3137 6.5 16 6.5C12.6863 6.5 10 9.18629 10 12.5C10 15.8137 12.6863 18.5 16 18.5Z" stroke="url(#paint1_linear_3278_159547)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -70,7 +68,6 @@ const mobileFeaturesData1 = [
     title: "Creative and Pixel Perfect Design",
     subTitle:
       "Intuitive, flexible, visually outstanding designs that serve both the functional and aesthetic requirements.",
-    // img: "/images/technologies/mobile/features/icon_2.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M2 10.5H13" stroke="url(#paint0_linear_3278_159557)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M19 10.5H30" stroke="url(#paint1_linear_3278_159557)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -120,7 +117,6 @@ const mobileFeaturesData2 = [
     title: "Expertise to Meet Your Expectations",
     subTitle:
       "Offering useful features planned, designed and executed by skilled programmers",
-    // img: "/images/technologies/mobile/features/icon_3.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M16 20.5C18.7614 20.5 21 18.2614 21 15.5C21 12.7386 18.7614 10.5 16 10.5C13.2386 10.5 11 12.7386 11 15.5C11 18.2614 13.2386 20.5 16 20.5Z" stroke="url(#paint0_linear_3278_159957)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M7.9751 25.425C8.72749 23.9431 9.87555 22.6984 11.292 21.8289C12.7085 20.9595 14.3381 20.4993 16.0001 20.4993C17.6621 20.4993 19.2917 20.9595 20.7082 21.8289C22.1246 22.6984 23.2727 23.9431 24.0251 25.425" stroke="url(#paint1_linear_3278_159957)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -162,7 +158,6 @@ const mobileFeaturesData2 = [
     title: "Robust Performance",
     subTitle:
       "Rigorous RND-backed application  design and development for consistent performance throughout app life-cycle",
-    // img: "/images/technologies/mobile/features/icon_4.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M18 28.2429H14" stroke="url(#paint0_linear_3278_159972)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M15.3749 2.71788C12.9999 4.61788 5.06243 12.2179 11.9999 24.2429H19.9999C26.7999 12.2179 18.9749 4.63038 16.6249 2.71788C16.4496 2.57143 16.2284 2.49121 15.9999 2.49121C15.7715 2.49121 15.5503 2.57143 15.3749 2.71788Z" stroke="url(#paint1_linear_3278_159972)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -199,7 +194,6 @@ const mobileFeaturesData2 = [
     title: "Security",
     subTitle:
       "A holistic approach is adapted through code obfuscation, encryption, standard stress testing and timely updates ",
-    // img: "/images/technologies/mobile/features/icon_5.svg",
     icon: `<svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5 14.8375V7.5C5 7.23478 5.10536 6.98043 5.29289 6.79289C5.48043 6.60536 5.73478 6.5 6 6.5H26C26.2652 6.5 26.5196 6.60536 26.7071 6.79289C26.8946 6.98043 27 7.23478 27 7.5V14.8375C27 25.3375 18.0875 28.8125 16.3125 29.4C16.1109 29.4747 15.8891 29.4747 15.6875 29.4C13.9125 28.8125 5 25.3375 5 14.8375Z" stroke="url(#paint0_linear_3278_159978)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M5.0752 16.5H26.9252" stroke="url(#paint1_linear_3278_159978)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

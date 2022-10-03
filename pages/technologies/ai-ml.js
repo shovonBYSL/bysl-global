@@ -63,7 +63,6 @@ const AIMLTechnologies = ({
 export async function getStaticProps() {
   return {
     props: {
-      // banner: aimlBannerSvg,
       banner: "/images/banners/ai-ml_technologies_banner.png",
       aimlFeatures: aimlFeaturesData,
       aimlServices: aimlServicesData,

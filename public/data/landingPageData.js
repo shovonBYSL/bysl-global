@@ -22,16 +22,6 @@ const investmentData = {
   live: "/images/bysl-live.webm",
 };
 
-// https://i.ibb.co/yghrdfQ/web-technologies.png
-// https://i.ibb.co/s9wWZjx/ai-ml-technologies.png
-// https://i.ibb.co/SQq73Dz/bigdata-technologies.png
-// https://i.ibb.co/j6d4pmJ/blockchain-technologies.png
-// https://i.ibb.co/TY0zx9f/cloud-technologies.png
-// https://i.ibb.co/h2JRyhw/cyber-security-technologies.png
-// https://i.ibb.co/1dGgfgH/database-technologies.png
-// https://i.ibb.co/D8pshPH/iot-technologies.png
-// https://i.ibb.co/h8NfLRR/mobile-technologies.png
-
 const techData = [
   {
     id: 0,
@@ -74,7 +64,6 @@ Technologies`,
   {
     id: 6,
     title: "AR/VR Technologies",
-    // img: "/images/technologies/ar_vr_technologies.gif",
     video: "/images/technologies/ar_vr_technologies.webm",
     link: "/technologies/ar-vr",
   },

@@ -1,9 +1,7 @@
 import Script from "next/script";
-// import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-// import emailjs from "@emailjs/browser";
 
 import {
   TechnologiesSectionTitle,
@@ -18,25 +16,6 @@ const ContactForm = ({ data }) => {
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // submitting the message
-    // emailjs
-    //   .sendForm(
-    //     "service_7hk5dfa",
-    //     "template_vebsjcb",
-    //     form.current,
-    //     "DH5QXV_AG3gc3L3wd"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       e.target.reset();
-    //       toast.success("Thanks for your message");
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //       toast.error("Sorry, We couldn't send your message");
-    //     }
-    //   );
 
     Email.send({
       Host: "smtp.elasticemail.com",
