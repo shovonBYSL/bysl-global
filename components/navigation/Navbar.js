@@ -1,32 +1,18 @@
 import Link from "next/link";
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
 import { navbars } from "../../public/data/navigation/navbarData";
-import { getItem, setItem } from "../../utils/sessionStorage";
+import { setItem } from "../../utils/sessionStorage";
 import { BYSLMainLogo, BYSLWhiteLogo } from "../svg/BYSLLogo";
 import { ArrowRight, ArrowRightWhite } from "../svg/Arrows";
+import { handleMouseOver } from "../../utils/scroller";
 
 const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
-  const serviceId = getItem();
-
-  const handleMouseOver = () => {
-    const nav = document.querySelector(".sol-nav");
-    if (nav) {
-      nav.style.display = "none";
-    }
-  };
-
-  const handleClick = (id) => {
-    setItem(id);
-    window.location.pathname === "/service" &&
-      Router.reload(window.location.pathname);
-  };
 
   // breaking navbar code into components start
-
   // navbar logo
   const NavbarLogo = () => {
     return (
@@ -84,7 +70,7 @@ const Navbar = ({ colorChange, specificPath }) => {
     return (
       <Link passHref href={link}>
         <a
-          onClick={() => link === "/services#it-services" && handleClick(id)}
+          onClick={() => link === "/services#it-services" && setItem(id)}
           className={`h-full w-full hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] hover:shadow-none border-transparent p-4 rounded-lg cursor-pointer transition-all duration-500 ${
             link !== "/services#it-services" &&
             router.asPath === link &&
@@ -148,11 +134,11 @@ const Navbar = ({ colorChange, specificPath }) => {
               const { id, title, dropdowns } = item;
 
               return (
-                <div key={id} id="nav" className="inline-block">
+                <div key={id} id="nav" className="inline-block group">
                   <NavItems data={item} />
                   {dropdowns && (
-                    <div className="pt-5 bg-transparent">
-                      <div className="shadow-lg shadow-[#7080B0]/10 py-12 xl:pb-[72px] absolute left-0 top-22 w-full bg-white rounded-b-lg navbar text-gray-700">
+                    <div className="pt-5 bg-transparent transition-all duration-500">
+                      <div className="shadow-lg shadow-[#7080B0]/10 py-12 xl:pb-[72px] absolute left-0 top-22 w-full bg-white rounded-b-lg navbar text-gray-700 hidden group-hover:block transition-all duration-300">
                         <p className="block box font-bold text-2xl pb-8">
                           <TextGradient text={title} />
                         </p>

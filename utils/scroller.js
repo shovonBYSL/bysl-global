@@ -12,6 +12,13 @@ const ScrollCenterCommon = (id, offset) => {
   window.scrollTo({ top: position, behavior: "smooth" });
 };
 
+const handleMouseOver = () => {
+  const nav = document.querySelector(".sol-nav");
+  if (nav) {
+    nav.style.display = "none";
+  }
+};
+
 const scrollCenter = (id) => {
   ScrollCenterCommon(id, 150);
 };
@@ -47,4 +54,5 @@ export {
   marketingScroll,
   supplyScroll,
   educationScroll,
+  handleMouseOver,
 };

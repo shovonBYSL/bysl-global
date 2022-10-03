@@ -32,14 +32,6 @@ a {
     margin-left: 16px;
   }
 
-  .navbar {
-    display: none;
-  }
-
-  #nav:hover .navbar {
-    display: block;
-  }
-
   .sol-nav {
     display: none;
   }
