@@ -17,7 +17,7 @@ const ResourcesBanner = ({ data }) => {
   const BannerImage = ({ data }) => {
     return (
       <>
-        <div className="relative h-[372px] lg:h-[70vh] 2xl:h-[80vh] max-h-[725px] w-full">
+        <div className="relative h-[372px] lg:min-h-[450px] xl:min-h-[550px] 2xl:h-[700px] w-full">
           <Image
             src={data.banner}
             placeholder="blur"
@@ -67,7 +67,7 @@ const ResourcesBanner = ({ data }) => {
     <>
       {data ? (
         <>
-          <div className="hidden md:block relative mb-16 md:h-[500px] lg:h-[700px] xl:h-screen resource-slider">
+          <div className="hidden md:block relative mb-16 resource-slider">
             <ResourcesBannerSlider1>
               {newArray.map((item, i) => {
                 return (
@@ -86,7 +86,7 @@ const ResourcesBanner = ({ data }) => {
                   <VscArrowRight className="text-2xl" />
                 </p>
               </div>
-              <div className="max-h-[320px] flex justify-center items-center md:bg-white md:shadow-[-4px_4px_18px_rgba(34,82,155,0.1)] md:rounded-xl xl:rounded-[20px] p-5 lg:p-7 xl:p-10 max-w-full md:max-w-md lg:max-w-xl xl:max-w-[760px] md:-mt-24 lg:-mt-40 xl:-mt-48 z-40">
+              <div className="max-h-[320px] flex justify-center items-center md:bg-white md:shadow-[-4px_4px_18px_rgba(34,82,155,0.1)] md:rounded-xl xl:rounded-[20px] p-5 lg:p-7 xl:p-10 max-w-full md:max-w-md lg:max-w-xl xl:max-w-[760px] md:-mt-32 lg:-mt-40 xl:-mt-48 z-40">
                 <ResourcesBannerSlider2>
                   {data.map((item, i) => {
                     return (
