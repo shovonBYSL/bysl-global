@@ -191,15 +191,9 @@ a {
       max-width: 1320px;
       margin: auto !important;
     }
-
-    .aiml-box,
-    .marketing-box {
-      max-width: 1450px;
-      margin-left: auto;
-    }
   }
 
-  @media (min-width: 1700px) {
+  @media (min-width: 1800px) {
     .aiml-box,
     .marketing-box {
       max-width: 1610px;
@@ -207,7 +201,7 @@ a {
     }
   }
 
-  @media (min-width: 2560px) {
+  @media (min-width: 1921px) {
     .aiml-box,
     .marketing-box {
       max-width: 1320px;
