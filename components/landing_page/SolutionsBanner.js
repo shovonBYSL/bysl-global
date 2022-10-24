@@ -1,4 +1,5 @@
 import SolutionsNav from "../navigation/SolutionsNav";
+// import { TextGradient } from "../shared/SharedTextgroups";
 
 const SolutionsBanner = ({ data }) => {
   const handleClick = () => {
@@ -47,6 +48,9 @@ const SolutionsBanner = ({ data }) => {
               sustainable solutions catalyzing exponential and sustainable
               growth.
             </p>
+            {/* <div className="hidden lg:block mt-6 w-max text-center rounded-lg text-sm font-semibold py-2 xl:py-3 xl:px-6 cursor-pointer bg-white">
+              <TextGradient text="View all Solutions" />
+            </div> */}
           </div>
           <div className="sm:w-1/2 xs:px-12 sm:px-0 2xl:pl-10 flex justify-center sm:justify-end clip-video">
             <video className="w-full h-full" src={data} autoPlay muted loop />

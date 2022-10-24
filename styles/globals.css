@@ -73,17 +73,27 @@ a {
     transform: translate(-50%, -50%);
   }
 
-  .bullets {
+  .bullets, .bullets-sm {
     position: relative;
   }
 
   .bullets::after {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 8px;
     left: -15px;
     width: 7px;
     height: 7px;
+    border-radius: 50%;
+    background: #858894;
+  }
+  .bullets-sm::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -15px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background: #858894;
   }
@@ -136,6 +146,10 @@ a {
   @media (min-width: 768px) {
     .mobileTech .swiper-slide-active .mobileTechImg {
       width: 150px;
+    }
+
+    .bullets-sm::after {
+      top: 10px;
     }
   }
 

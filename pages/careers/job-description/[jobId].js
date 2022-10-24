@@ -52,12 +52,12 @@ const JobDescription = () => {
                 <div key={id} className="mb-6 lg:mb-10">
                   <JobDescriptionTitle title={title} />
                   {details.map((item, i) => (
-                    <div key={i} className="flex ml-4 items-start mb-1">
-                      <p className="h-1 w-[5px] mt-2 mr-2 bg-gray-600 rounded-full" />
-                      <p className="text-gray-600 text-sm md:text-base w-full">
-                        {item}
-                      </p>
-                    </div>
+                    <p
+                      key={i}
+                      className="ml-6 text-gray-600 text-sm md:text-base mb-1 bullets-sm"
+                    >
+                      {item}
+                    </p>
                   ))}
                 </div>
               );
