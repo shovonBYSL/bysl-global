@@ -15,11 +15,11 @@ const SingleResourceBanner = ({ data }) => {
           />
         </div>
         <div className="md:w-1/2 md:order-1">
-          <p className="break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold text-gray-800 md:text-start text-center sm:mt-10 mb-4 md:mb-6 xl:mb-8 3xl:mb-10">
+          <h3 className="break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold text-gray-800 md:text-start text-center sm:mt-10 mb-4 md:mb-6 xl:mb-8 3xl:mb-10">
             Meeting Room&nbsp;
             <br className="hidden sm:block" />
             Booking Software
-          </p>
+          </h3>
           <p className="text-gray-600 text-sm 2xl:text-base mb-10 xl:mb-16 text-center sm:text-start">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque
             pellentesque adipiscing pulvinar eu vitae eget eu. Vitae risus eget

@@ -25,9 +25,9 @@ const ServiceFeatures = ({ data }) => {
                 <div className="h-12 w-11 mx-0 relative">
                   <HoverImage img1={img} img2={hoverImg} />
                 </div>
-                <p className="text-[#90B2D9] group-hover:text-[#1890E5] text-5xl group-hover:scale-125 font-semibold transition-all duration-500">
+                <h2 className="text-[#90B2D9] group-hover:text-[#1890E5] text-5xl group-hover:scale-125 font-semibold transition-all duration-500">
                   {"0" + (id + 1)}
-                </p>
+                </h2>
               </div>
               <p className="text-sm lg:text-base 3xl:text-xl text-gray-800 group-hover:text-white transition-all duration-500 font-bold my-3 2xl:my-5">
                 {title}

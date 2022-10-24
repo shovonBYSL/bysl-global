@@ -1,8 +1,8 @@
 const BannerTitle = ({ title }) => {
   return (
-    <p className="text-gray-800 2xl:leading-[76px] text-lg md:text-2xl lg:text-4xl xl:text-5xl 3xl:text-[64px] font-bold uppercase mb-1 md:mb-2 lg:mb-3 3xl:mb-5">
+    <h1 className="text-gray-800 2xl:leading-[76px] text-lg md:text-2xl lg:text-4xl xl:text-5xl 3xl:text-[64px] font-bold uppercase mb-1 md:mb-2 lg:mb-3 3xl:mb-5">
       {title}
-    </p>
+    </h1>
   );
 };
 const BannerSubTitle = (props) => {
@@ -18,18 +18,18 @@ const BannerSubTitle = (props) => {
 
 const CompanyInfoTitle = ({ children }) => {
   return (
-    <p className="mx-auto text-center break-words xl:leading-[47px] font-semibold text-lg md:text-xl lg:text-3xl xl:text-[40px] text-gray-800 ">
+    <h3 className="mx-auto text-center break-words xl:leading-[47px] font-semibold text-lg md:text-xl lg:text-3xl xl:text-[40px] text-gray-800 ">
       {children}
-    </p>
+    </h3>
   );
 };
 
 const SectionTitle = ({ title }) => {
   return (
     <div className="mx-8 lg:mx-12 2xl:mx-20">
-      <p className="break-words text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-gray-800 text-center">
+      <h1 className="break-words text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-gray-800 text-center">
         {title}
-      </p>
+      </h1>
     </div>
   );
 };
@@ -38,26 +38,26 @@ const TechnologiesSectionTitle = (props) => {
   const { children, start, white } = props;
 
   return (
-    <p
+    <h2
       className={`break-words text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[40px] font-bold text-center 
       ${white ? "text-white" : "text-gray-800"} 
       ${start && "lg:text-start"}`}
     >
       {children}
-    </p>
+    </h2>
   );
 };
 
 const SectionTitleGradient = (props) => {
   const { children, centered } = props;
   return (
-    <p
+    <h1
       className={`break-words text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[64px] 2xl:leading-[70px] font-bold text-gray-800 ${
         centered && "text-center"
       }`}
     >
       {children}
-    </p>
+    </h1>
   );
 };
 

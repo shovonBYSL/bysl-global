@@ -25,9 +25,9 @@ const ITFeatures = ({ data }) => {
           <p className="lg:text-lg xl:text-xl text-center lg:text-start text-gray-400">
             {type}
           </p>
-          <p className="text-gray-800 text-2xl xl:text-3xl font-bold text-center lg:text-start leading-[38px] mb-5 xl:mb-6">
+          <h4 className="text-gray-800 text-2xl xl:text-3xl font-bold text-center lg:text-start leading-[38px] mb-5 xl:mb-6">
             {title}
-          </p>
+          </h4>
           <p className="text-sm text-gray-400 text-center lg:text-start">
             {subTitle}
           </p>

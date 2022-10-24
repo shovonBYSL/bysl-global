@@ -18,9 +18,9 @@ const ContactUsFAQ = () => {
         <p className="lg:text-xl 3xl:text-2xl text-center text-gray-400 md:text-start font-semibold">
           FAQ
         </p>
-        <p className="break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-semibold text-gray-800 mt-4 text-center md:text-start">
+        <h1 className="break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-semibold text-gray-800 mt-4 text-center md:text-start">
           Frequently asked <TextGradient text="Questions." />
-        </p>
+        </h1>
       </div>
       <div className="md:w-3/5 mt-10 md:mt-0">
         {contactUsFAQData.map(({ id, question, answer }) => {

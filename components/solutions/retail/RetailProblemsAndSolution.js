@@ -60,9 +60,9 @@ const RetailProblemsAndSolution = ({ data }) => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6 xl:mt-10">
           <div className="lg:col-span-5">
-            <p className="text-[32px] xl:text-4xl 2xl:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700">
+            <h2 className="text-[32px] xl:text-4xl 2xl:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700">
               <TextGradient text={`0${id + 1}.`} />
-            </p>
+            </h2>
             <p className="my-4 text-2xl xl:text-[28px] 2xl:text-[32px] font-semibold">
               <TextGradient text={problem} />
             </p>

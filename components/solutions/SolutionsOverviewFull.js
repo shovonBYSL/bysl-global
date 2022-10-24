@@ -18,13 +18,13 @@ const SolutionsOverviewFull = (props) => {
             >
               Overview
             </p>
-            <p
+            <h3
               className={`break-words text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[40px] 2xl:leading-[48px] font-bold text-center text-white ${
                 !center && "lg:text-start"
               }`}
             >
               {data.title}
-            </p>
+            </h3>
           </div>
           <div
             className={`text-white/60 leading-5 text-sm xl:text-base ${

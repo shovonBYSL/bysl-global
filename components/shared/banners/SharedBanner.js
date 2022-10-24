@@ -54,9 +54,9 @@ const SectionBanner = ({ data }) => {
           ))}
       </div>
       <div className="md:w-3/5 lg:w-1/2">
-        <p className="text-gray-800 text-lg md:text-2xl lg:text-4xl xl:text-5xl 3xl:text-[64px] font-bold uppercase mb-1 md:mb-2 lg:mb-3 3xl:mb-5">
+        <h1 className="text-gray-800 text-lg md:text-2xl lg:text-4xl xl:text-5xl 3xl:text-[64px] font-bold uppercase mb-1 md:mb-2 lg:mb-3 3xl:mb-5">
           {title}
-        </p>
+        </h1>
         <p className="text-gray-600 leading-5 text-xs sm:text-sm lg:text-base 2xl:text-lg">
           {subTitle}
         </p>
@@ -109,9 +109,9 @@ const GradientBanner = ({ title, details, details2 }) => {
       <div className="box flex flex-col lg:flex-row items-center gap-6 !max-w-[1050px]">
         <div className="w-full lg:w-1/2">
           <div className="h-[2px] w-[86px] bg-white rounded-full"></div>
-          <p className="mt-6 text-[40px] lg:text-[64px] font-semibold lg:!leading-[76px] break-words">
+          <h1 className="mt-6 text-[40px] lg:text-[64px] font-semibold lg:!leading-[76px] break-words">
             {title}
-          </p>
+          </h1>
         </div>
         <div className="w-full lg:w-1/2">
           <p

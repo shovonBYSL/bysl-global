@@ -94,9 +94,9 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
                 </div>
               )}
               {highlight && (
-                <p className="bg-gray-300/30 p-6 2xl:p-8 text-center text-gray-700 font-bold text-xl lg:text-2xl 2xl:text-3xl border border-black/30 mb-10">
+                <h4 className="bg-gray-300/30 p-6 2xl:p-8 text-center text-gray-700 font-bold text-xl lg:text-2xl 2xl:text-3xl border border-black/30 mb-10">
                   {highlight}
-                </p>
+                </h4>
               )}
               {img && (
                 <div className="mb-11">

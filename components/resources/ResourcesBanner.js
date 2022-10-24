@@ -40,9 +40,9 @@ const ResourcesBanner = ({ data }) => {
         <p className="text-xs md:text-sm lg:text-base font-medium">
           <TextGradient text={type} />
         </p>
-        <p className="mt-2 mb-2.5 lg:mb-5 xl:mb-10 break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-bold text-gray-800 text-start">
+        <h3 className="mt-2 mb-2.5 lg:mb-5 xl:mb-10 break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-bold text-gray-800 text-start">
           {title}
-        </p>
+        </h3>
         <div className="flex flex-col md:flex-row justify-between items-center gap-y-6 lg:gap-6">
           <div className="w-full flex items-center justify-between md:justify-start gap-3">
             <p className="text-gray-600 text-xs lg:text-sm">{date}</p>

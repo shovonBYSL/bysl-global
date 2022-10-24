@@ -10,9 +10,9 @@ const SingleResourceOverview = () => {
     <div className="box py-10 xl:py-16">
       <div className="h-max w-full bg-[url('/images/resources/single/single_resource_overview_bg.svg')] bg-cover bg-center bg-no-repeat">
         <div className="backdrop-blur-sm bg-gray-300/5 rounded-[25px] xl:rounded-[55px] p-4 sm:p-8 md:p-12 lg:p-16 xl:px-28 xl:py-20">
-          <p className="break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[48px] font-black text-gray-800 md:text-start text-center">
+          <h2 className="break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[48px] font-black text-gray-800 md:text-start text-center">
             Overview
-          </p>
+          </h2>
           <div className="flex flex-col lg:flex-row-reverse gap-7 lg:gap-32">
             <div className="flex lg:flex-col flex-wrap justify-between lg:justify-start gap-6 xl:gap-y-16 mt-12 lg:mt-0">
               <div className="w-max">

@@ -16,9 +16,9 @@ const ARVRBanner = ({ banner }) => {
           <p className="text-sm md:text-base xl:text-lg font-bold">
             AR/VR Technologies
           </p>
-          <p className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl 3xl:text-[64px] 3xl:leading-[80px] font-semibold w-4/5 lg:w-3/4 xl:w-4/5 mx-auto">
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl 3xl:text-[64px] 3xl:leading-[80px] font-semibold w-4/5 lg:w-3/4 xl:w-4/5 mx-auto">
             Virtual & Augmented Reality Experience
-          </p>
+          </h1>
           <p className="text-sm xl:text-base w-5/6 sm:w-4/6 md:w-1/2 xl:w-[40%] 2xl:w-1/3 mx-auto mt-5 xl:mt-6">
             Committing to things bigger than life, aspiring to recreate
             connections choosing paths less travelled by.

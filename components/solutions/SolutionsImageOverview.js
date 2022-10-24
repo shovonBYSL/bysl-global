@@ -6,9 +6,9 @@ const SolutionsImageOverview = ({ data }) => {
   return (
     <div id="overview" className="py-6 xl:py-10 grid grid-cols-12 gap-6">
       <div className="col-span-12 lg:col-span-7 mt-6 lg:mt-10 text-center lg:text-start">
-        <p className="text-2xl xl:text-[40px] text-gray-800 font-semibold">
+        <h3 className="text-2xl xl:text-[40px] text-gray-800 font-semibold">
           Overview
-        </p>
+        </h3>
         {details1 && (
           <p className="mt-2 mb-4 xl:text-xl text-gray-600 font-medium">
             {details1}

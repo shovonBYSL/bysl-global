@@ -12,9 +12,9 @@ const EducationProblems = ({ data }) => {
       <div className="bg-white rounded-[16px] xl:rounded-[40px] overflow-hidden shadow-[0px_5px_20px_0px_#E5ECF5] grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="p-4 pb-0 md:p-6 md:pb-0 lg:pb-6 xl:p-10">
           <p className="text-gray-600 mb-2">Problems</p>
-          <p className="break-words text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[40px] font-bold ">
+          <h3 className="break-words text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[40px] font-bold ">
             <TextGradient text="Existing problems in today’s education system" />
-          </p>
+          </h3>
           <div className="mt-6 xl:mt-10 flex flex-col gap-2 xl:gap-4">
             {data.map(({ id, problem, problemInfo }) => {
               return (

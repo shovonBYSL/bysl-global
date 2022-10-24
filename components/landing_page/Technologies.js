@@ -55,7 +55,7 @@ const Technologies = ({ data }) => {
                     />
                   )}
                 </div>
-                <p
+                <h3
                   className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-[40px] font-semibold text-center leading-4 md:leading-5 lg:leading-8 2xl:leading-[48px] absolute py-6 md:py-8 xl:py-14 px-2 sm:px-5 xl:px-8 ${
                     id !== 0 && id !== 9 && "text-position-middle"
                   } ${
@@ -67,7 +67,7 @@ const Technologies = ({ data }) => {
                   }`}
                 >
                   {title}
-                </p>
+                </h3>
               </a>
             </Link>
           );

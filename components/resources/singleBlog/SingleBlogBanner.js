@@ -11,9 +11,9 @@ const SingleBlogBanner = ({ data }) => {
           <p className="text-xs md:text-sm lg:text-base font-medium text-center lg:text-start">
             <TextGradient text={type} />
           </p>
-          <p className="mt-2 mb-4 break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-bold text-gray-800 text-center lg:text-start">
+          <h3 className="mt-2 mb-4 break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-bold text-gray-800 text-center lg:text-start">
             {title}
-          </p>
+          </h3>
         </div>
         <div>
           <p className="text-gray-800 text-center lg:text-start mb-6">

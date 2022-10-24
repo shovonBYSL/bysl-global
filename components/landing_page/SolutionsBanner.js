@@ -37,9 +37,9 @@ const SolutionsBanner = ({ data }) => {
         </span>
         <div className="flex flex-col sm:flex-row justify-between sm:gap-4 sm:items-center xl:items-start">
           <div className="sm:w-1/2 text-center sm:text-start xl:mt-8 3xl:mt-16 mb-11 sm:mb-0">
-            <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-[64px] font-bold mb-5 3xl:mb-6">
+            <h1 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-[64px] font-bold mb-5 3xl:mb-6">
               ​​Solutions
-            </p>
+            </h1>
             <p className="text-white/75 leading-4 text-sm lg:text-base 2xl:text-lg 3xl:text-xl max-w-[450px]">
               Whether it's subtle interactions that improve the UX, or a
               complete restructuring of virtual networks, or hardforking of

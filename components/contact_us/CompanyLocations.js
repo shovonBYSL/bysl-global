@@ -44,9 +44,9 @@ const CompanyLocations = ({ data }) => {
                 (id === 3 && "bg-[url('/images/locations/bangladesh.png')]")
               } bg-right-bottom bg-no-repeat`}
             >
-              <p className="uppercase break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold text-gray-800 text-start">
+              <h3 className="uppercase break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold text-gray-800 text-start">
                 <TextGradient text={country} />
-              </p>
+              </h3>
               <p className="uppercase mt-6 xl:mt-10 mb-4 font-bold lg:text-xl xl:text-2xl text-gray-800">
                 {name}
               </p>

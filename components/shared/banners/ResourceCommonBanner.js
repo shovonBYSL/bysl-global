@@ -28,12 +28,12 @@ const ResourceCommonBanner = (props) => {
           <p className="mt-1 mb-5 md:my-6 text-xs lg:text-sm uppercase font-medium text-center md:text-start">
             <TextGradient text={type} />
           </p>
-          <p
+          <h3
             className={`break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold text-gray-800 md:text-start text-center mb-4 md:mb-6 xl:mb-8 3xl:mb-10 
             ${!full && "md:w-[70%] 3xl:w-[55%]"}`}
           >
             {title}
-          </p>
+          </h3>
           <p className="text-gray-600 text-sm 2xl:text-base mb-10 xl:mb-16 text-center sm:text-start">
             {subTitle1}
             <br />

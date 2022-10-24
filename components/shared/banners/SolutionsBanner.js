@@ -19,9 +19,9 @@ const SolutionsBanner = ({ data }) => {
           <p className="text-sm md:text-base xl:text-lg font-semibold">
             {heading}
           </p>
-          <p className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl 3xl:text-[64px] 3xl:leading-[76px] font-semibold max-w-[1286px] mx-auto">
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl 3xl:text-[64px] 3xl:leading-[76px] font-semibold max-w-[1286px] mx-auto">
             {title}
-          </p>
+          </h1>
           <p className="text-sm lg:text-base xl:text-lg 2xl:text-xl mx-2 max-w-[690px] sm:mx-auto mt-5">
             {subTitle}
           </p>
