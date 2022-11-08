@@ -31,13 +31,12 @@ const ITServices = ({ data }) => {
   };
 
   useEffect(() => {
-    setTabOpen(serviceId == "" ? 0 : serviceId);
-    // setTabOpen(serviceId ? (serviceId == "" ? 0 : serviceId) : 0);
-    setTabData(data[serviceId]);
+    setTabOpen(serviceId === null ? 0 : serviceId);
+    setTabData(data[serviceId === null ? 0 : serviceId]);
   }, [serviceId, tabData]);
 
   const Tab = ({ data }) => {
-    const { id, img, activeImg, icon, activeIcon, tabTitle } = data;
+    const { id, icon, activeIcon, tabTitle } = data;
 
     return (
       <div

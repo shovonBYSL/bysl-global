@@ -15,6 +15,7 @@ import {
 const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   const tabState = getLegalState();
   const [legal, setLegal] = useState(0);
+  console.log("tabState", tabState);
 
   // function for tab handle
   const handleClick = (id) => {
@@ -24,7 +25,7 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   };
 
   useEffect(() => {
-    setLegal(tabState);
+    setLegal(tabState === null ? 0 : tabState);
   }, []);
 
   return (

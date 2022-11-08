@@ -6,7 +6,7 @@ const getItem = () => {
     sessionStorage.hasOwnProperty("serviceId")
   ) {
     return JSON.parse(sessionStorage.getItem("serviceId"));
-  } else return [];
+  } else return null;
 };
 
 const setItem = (param) =>
@@ -19,7 +19,7 @@ const getLegalState = () => {
     sessionStorage.hasOwnProperty("legalId")
   ) {
     return JSON.parse(sessionStorage.getItem("legalId"));
-  } else return [];
+  } else return null;
 };
 
 const setLegalState = (param) =>

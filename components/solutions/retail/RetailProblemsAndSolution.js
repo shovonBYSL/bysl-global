@@ -42,7 +42,7 @@ const RetailProblemsAndSolution = ({ data }) => {
                   <div
                     className={`h-4 w-4 rounded ${
                       tabOpen === id ? "bg-white" : "bg-gray-400"
-                    } bg-gray-600`}
+                    }`}
                   ></div>
                 </div>
                 {/* <p
