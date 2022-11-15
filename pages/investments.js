@@ -26,7 +26,7 @@ const Investments = ({
       {/* overview items section  */}
       <div className="box !max-w-[1250px]">
         <Overview4Items data={investmentOverview}>
-          Emerging with disruptive innovation for a better tommorrow
+          Emerging with disruptive innovation for a better tomorrow
         </Overview4Items>
       </div>
 
