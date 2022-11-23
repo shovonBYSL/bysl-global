@@ -2,6 +2,7 @@ import Script from "next/script";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 import {
   TechnologiesSectionTitle,
@@ -17,29 +18,51 @@ const ContactForm = ({ data }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "anisur.rahman@intelli.global",
-      Password: "2597486C56508E185A07F608105A6853404E",
-      To: ["kawser.shovon@intelli.global", "info@byslglobal.com"],
-      From: "anisur.rahman@intelli.global",
-      Subject: `Message From BYSL Website `,
-      Body: `<div>
-      <b>Full Name:</b> <br> ${name} <br><br>
-      <b>Email: </b> <br> ${email} <br><br>
-      <b>Message: </b> <br> ${message} <br><br>
-      </div>`,
-    }).then((message) => {
-      if (message == "OK") {
-        toast.success("Thanks for your message");
-        console.log(message);
+    emailjs
+      .sendForm(
+        "service_7hk5dfa",
+        "template_vebsjcb",
+        form.current,
+        "DH5QXV_AG3gc3L3wd"
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+          toast.success("Thanks for your message");
+          // after successful
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Sorry, We couldn't send your message");
+        }
+      );
 
-        // after successful
-        setName("");
-        setEmail("");
-        setMessage("");
-      }
-    });
+    // Email.send({
+    //   Host: "smtp.elasticemail.com",
+    //   Username: "anisur.rahman@intelli.global",
+    //   Password: "2597486C56508E185A07F608105A6853404E",
+    //   To: ["kawser.shovon@intelli.global", "info@byslglobal.com"],
+    //   From: "anisur.rahman@intelli.global",
+    //   Subject: `Message From BYSL Website `,
+    //   Body: `<div>
+    //   <b>Full Name:</b> <br> ${name} <br><br>
+    //   <b>Email: </b> <br> ${email} <br><br>
+    //   <b>Message: </b> <br> ${message} <br><br>
+    //   </div>`,
+    // }).then((message) => {
+    //   if (message == "OK") {
+    //     toast.success("Thanks for your message");
+    //     console.log(message);
+
+    //     // after successful
+    //     setName("");
+    //     setEmail("");
+    //     setMessage("");
+    //   }
+    // });
   };
 
   const InputTitle = ({ title }) => (
@@ -61,7 +84,11 @@ const ContactForm = ({ data }) => {
         <div className="flex justify-center lg:justify-start gap-6 md:gap-4 lg:gap-6">
           {data.map(({ id, icon, link }) => (
             <Link key={id} passHref href={link}>
-              <a dangerouslySetInnerHTML={{ __html: icon }} target="_blank" className="opacity-60" />
+              <a
+                dangerouslySetInnerHTML={{ __html: icon }}
+                target="_blank"
+                className="opacity-60"
+              />
             </Link>
           ))}
         </div>

@@ -13,7 +13,7 @@ const CompanyLocations = ({ data }) => {
   return (
     <div className="py-10 xl:py-16 ">
       <TechnologiesSectionTitle>
-        Find Us On <TextGradient text="Globally" />
+        Find Us <TextGradient text="Globally" />
       </TechnologiesSectionTitle>
 
       <div className="flex flex-wrap justify-center gap-4 mt-6 lg:mt-10 mb-10 xl:mb-16">
