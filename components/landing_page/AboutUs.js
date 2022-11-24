@@ -13,7 +13,7 @@ const AboutUs = ({ summaryData, aboutUsData }) => {
       <SectionTitleType title="About Us" />
       <div className="mx-4 lg:mx-12 2xl:mx-20 mb-6 lg:mb-12 2xl:mb-20">
         <SectionTitleGradient>
-          Serve the world with
+          Serve the world with&nbsp;
           <br className="hidden xs:block" />
           exceptional <TextGradient text=" products and services" />
         </SectionTitleGradient>

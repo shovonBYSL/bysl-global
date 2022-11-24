@@ -12,9 +12,9 @@ const CompanyCulture = ({ cultureBanner, cultureCard, cultureButton }) => {
       cardData={cultureCard}
       buttonData={cultureButton}
     >
-      A forward-thinking culture of
+      A forward-thinking culture of&nbsp;
       <br className="hidden xs:block" />
-      learning, teamwork, and integrity,
+      learning, teamwork, and integrity,&nbsp;
       <br className="hidden xs:block" />
       embracing change, fueling innovation, and continuing development.
     </CompanyInfoLayout>

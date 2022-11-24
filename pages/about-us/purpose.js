@@ -12,7 +12,7 @@ const CompanyPurpose = ({ purposeBanner, purposeCard, purposeButton }) => {
       cardData={purposeCard}
       buttonData={purposeButton}
     >
-      Our purpose is to explore, innovate and invest
+      Our purpose is to explore, innovate and invest&nbsp;
       <br className="hidden xs:block" />
       for a better tomorrow.
     </CompanyInfoLayout>

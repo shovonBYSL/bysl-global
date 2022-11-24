@@ -56,7 +56,7 @@ const CompanyLocations = ({ data }) => {
                 </p>
               )}
               <p className="uppercase font-light text-sm xl:text-base text-gray-700">
-                {address}
+                {address}&nbsp;
                 <br className="hidden xs:block" /> {city}
               </p>
             </div>

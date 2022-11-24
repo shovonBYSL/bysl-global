@@ -11,7 +11,7 @@ const CompanyMission = ({ missionBanner, missionCard, missionButton }) => {
       cardData={missionCard}
       buttonData={missionButton}
     >
-      Our mission is to serve the world
+      Our mission is to serve the world&nbsp;
       <br className="hidden xs:block" />
       with exceptional products and services
     </CompanyInfoLayout>

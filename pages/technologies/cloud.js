@@ -40,7 +40,7 @@ const CloudTechnologies = ({
         data={cloudServices}
         img={cloudServiceImg}
       >
-        Create new opportunities <br className="hidden xs:block" /> to make
+        Create new opportunities&nbsp; <br className="hidden xs:block" /> to make
         innovation more accessible
       </TriangleCardBanner>
 

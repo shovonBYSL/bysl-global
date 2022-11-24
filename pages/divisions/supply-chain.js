@@ -38,7 +38,7 @@ const SupplyChain = ({
         black={true}
         padding={true}
       >
-        IT-enabled, automated logistics
+        IT-enabled, automated logistics&nbsp;
         <br className="hidden xs:block" /> & fulfillment services
       </TriangleCardBanner>
 
