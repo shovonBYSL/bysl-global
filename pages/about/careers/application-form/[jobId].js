@@ -73,7 +73,7 @@ const ApplicationForm = () => {
     console.log(support_form);
 
     const endpoint =
-      "http://live.staging.intellidigital.com/api/notification/bysl-job-application/";
+      "http://live.intellidigital.com/api/notification/bysl-job-application/";
 
     if (attachment != null) {
       const res = await fetch(`${endpoint}`, {

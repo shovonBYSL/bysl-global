@@ -25,7 +25,7 @@ const socialIcons = [
     </defs>
     </svg>
     `,
-    link: "/",
+    link: "#",
   },
   {
     id: 2,
