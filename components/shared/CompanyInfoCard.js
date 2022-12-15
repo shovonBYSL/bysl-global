@@ -6,9 +6,9 @@ const CompanyInfoCard = ({ data }) => {
   const { id, title, description, description1, description2, img, icon } =
     data;
 
-  const culturePath = getPath("/about-us/culture");
-  const valuesPath = getPath("/about-us/values");
-  const purposePath = getPath("/about-us/purpose");
+  const culturePath = getPath("/about/culture");
+  const valuesPath = getPath("/about/values");
+  const purposePath = getPath("/about/purpose");
 
   return (
     <div
@@ -24,7 +24,8 @@ const CompanyInfoCard = ({ data }) => {
             (id === 2 &&
               ((valuesPath &&
                 "lg:-mt-[10px] xl:-mt-[50px] 2xl:-mt-[30px] values-margin") ||
-                (purposePath && "lg:-mt-[200px] xl:-mt-[200px] purposeMargin ") ||
+                (purposePath &&
+                  "lg:-mt-[200px] xl:-mt-[200px] purposeMargin ") ||
                 (!valuesPath && !purposePath && "lg:-mt-[180px]"))) ||
             (id === 4 && "lg:-mt-[180px]")
       }`}

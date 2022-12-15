@@ -14,10 +14,10 @@ import {
 const SectionBanner = ({ data }) => {
   const { title, subTitle } = data;
 
-  const missionPath = getPath("/about-us/mission");
-  const purposePath = getPath("/about-us/purpose");
-  const valuesPath = getPath("/about-us/values");
-  const culturePath = getPath("/about-us/culture");
+  const missionPath = getPath("/about/mission");
+  const purposePath = getPath("/about/purpose");
+  const valuesPath = getPath("/about/values");
+  const culturePath = getPath("/about/culture");
 
   return (
     <div

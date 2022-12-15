@@ -2,10 +2,13 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-import CommonLayout from "../../../layouts/CommonLayout";
-import { JobDescriptionTitle } from "../../../components/careers/CareersCommonComponents";
-import { jobList } from "../../../public/data/careersData";
-import Loader from "../../../components/shared/Loader";
+// components
+import CommonLayout from "../../../../layouts/CommonLayout";
+import { JobDescriptionTitle } from "../../../../components/careers/CareersCommonComponents";
+import Loader from "../../../../components/shared/Loader";
+
+// data
+import { jobList } from "../../../../public/data/careersData";
 
 const JobDescription = () => {
   const [data, setData] = useState(null);
@@ -33,7 +36,7 @@ const JobDescription = () => {
                   BYSL Global Technology Group
                 </p>
               </div>
-              <Link passHref href={`/careers/application-form/${data.url}`}>
+              <Link passHref href={`/about/careers/application-form/${data.url}`}>
                 <div className="gradient-btn w-[150px] h-max mx-auto lg:mx-0 text-center rounded-lg text-white text-sm font-semibold py-2 xl:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
                   Apply Now
                 </div>
@@ -62,7 +65,7 @@ const JobDescription = () => {
                 </div>
               );
             })}
-            <Link passHref href={`/careers/application-form/${data.url}`}>
+            <Link passHref href={`/about/careers/application-form/${data.url}`}>
               <div className="gradient-btn w-[150px] h-max mx-auto text-center rounded-lg text-white text-sm font-semibold py-2 lg:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
                 Apply Now
               </div>

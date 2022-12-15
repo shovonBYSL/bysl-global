@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="https://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="https://www.w3.org/1999/xhtml" xmlns:mobile="https://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1" xmlns:video="https://www.google.com/schemas/sitemap-video/1.1">
 <url><loc>https://www.byslglobal.com</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.byslglobal.com/about-us/culture</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.byslglobal.com/about-us/mission</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.byslglobal.com/about-us/purpose</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.byslglobal.com/about-us/values</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.byslglobal.com/careers</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.byslglobal.com/about/culture</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.byslglobal.com/about/mission</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.byslglobal.com/about/purpose</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.byslglobal.com/about/values</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.byslglobal.com/about/careers</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://www.byslglobal.com/contact-us</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://www.byslglobal.com/divisions/administration</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://www.byslglobal.com/divisions/data-science</loc><lastmod>2022-10-31T06:34:43.199Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>

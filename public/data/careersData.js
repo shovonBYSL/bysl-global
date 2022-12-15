@@ -407,7 +407,7 @@ const careersAboutUsData = [
   {
     id: 0,
     title: "MISSION",
-    path: "/about-us/mission",
+    path: "/about/mission",
     description:
       "Our mission is to serve the world with exceptional products & services",
     icon: `<svg viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -639,7 +639,7 @@ const careersAboutUsData = [
   {
     id: 1,
     title: "PURPOSE",
-    path: "/about-us/purpose",
+    path: "/about/purpose",
     description:
       "Our purpose is to explore, innovate & invest for a better tomorrow",
     icon: `<svg viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -654,7 +654,7 @@ const careersAboutUsData = [
   {
     id: 2,
     title: "VALUES",
-    path: "/about-us/values",
+    path: "/about/values",
     description:
       "Our core values are our constants, our guidelines for everything we do",
     icon: `<svg viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -687,7 +687,7 @@ const careersAboutUsData = [
   {
     id: 3,
     title: "CULTURE",
-    path: "/about-us/culture",
+    path: "/about/culture",
     description:
       "Forward-Thinking, Learning, Teamwork, Integrity, Change, Innovation, Development",
     icon: `<svg viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">

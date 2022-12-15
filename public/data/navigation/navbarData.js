@@ -259,34 +259,34 @@ const navbars = [
         title: "Mission",
         subTitle:
           "Our mission is to serve the world with exceptional products and services ",
-        link: "/about-us/mission",
+        link: "/about/mission",
       },
       {
         id: 1,
         title: "Purpose",
         subTitle:
           "Our purpose is to explore, innovate and invest for a better tomorrow ",
-        link: "/about-us/purpose",
+        link: "/about/purpose",
       },
       {
         id: 2,
         title: "Values",
         subTitle:
           "Our core values are our constants, our guidelines for everything we do",
-        link: "/about-us/values",
+        link: "/about/values",
       },
       {
         id: 3,
         title: "Culture",
         subTitle:
           "Forward-Thinking, Learning, Teamwork, Integrity, Change, Innovation, Development",
-        link: "/about-us/culture",
+        link: "/about/culture",
       },
       {
         id: 4,
         title: "Careers",
         subTitle: "Be a part of BYSL Global Family",
-        link: "/careers",
+        link: "/about/careers",
       },
     ],
   },

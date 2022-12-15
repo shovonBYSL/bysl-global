@@ -1,8 +1,8 @@
-import BasicLayout from "../../layouts/BasicLayout";
-import CareersBanner from "../../components/careers/CareersBanner";
-import CareersCompanyInfo from "../../components/careers/CareersCompanyInfo";
-import CareerWhyBYSL from "../../components/careers/CareerWhyBYSL";
-import CareerJobCirculars from "../../components/careers/CareerJobCirculars";
+import BasicLayout from "../../../layouts/BasicLayout";
+import CareersBanner from "../../../components/careers/CareersBanner";
+import CareersCompanyInfo from "../../../components/careers/CareersCompanyInfo";
+import CareerWhyBYSL from "../../../components/careers/CareerWhyBYSL";
+import CareerJobCirculars from "../../../components/careers/CareerJobCirculars";
 
 const Careers = () => {
   return (

@@ -200,22 +200,22 @@ const footerData = [
       {
         id: 0,
         name: "Mission",
-        path: "/about-us/mission",
+        path: "/about/mission",
       },
       {
         id: 1,
         name: "Purpose",
-        path: "/about-us/purpose",
+        path: "/about/purpose",
       },
       {
         id: 2,
         name: "Values",
-        path: "/about-us/values",
+        path: "/about/values",
       },
       {
         id: 3,
         name: "Culture",
-        path: "/about-us/culture",
+        path: "/about/culture",
       },
     ],
     title2: "Investments",

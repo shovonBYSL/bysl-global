@@ -2,7 +2,7 @@ import CompanyInfoCard from "./CompanyInfoCard";
 import { getPath } from "../../utils/paths";
 
 const CompanyInfoCardGroup = ({ data }) => {
-  const culturePath = getPath("/about-us/culture");
+  const culturePath = getPath("/about/culture");
 
   return (
     <div

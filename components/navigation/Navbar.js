@@ -1,12 +1,17 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+// components
 import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
+
+// data
 import { navbars } from "../../public/data/navigation/navbarData";
-import { setItem } from "../../utils/sessionStorage";
 import { BYSLMainLogo, BYSLWhiteLogo } from "../svg/BYSLLogo";
 import { ArrowRight, ArrowRightWhite } from "../svg/Arrows";
+
+// utility functions
+import { setItem } from "../../utils/sessionStorage";
 import { handleMouseOver } from "../../utils/scroller";
 
 const Navbar = ({ colorChange, specificPath }) => {
@@ -42,23 +47,30 @@ const Navbar = ({ colorChange, specificPath }) => {
         className={`${
           !colorChange && specificPath
             ? "text-white hover:text-white/80"
-            : "text-gray-600 hover:text-gray-800/90"
+            : "text-gray-600 hover:text-blue-900"
         } text-sm lg:text-base font-normal py-2 px-4 rounded inline-flex items-center transition duration-100`}
       >
-        <span
+        <div
           className={`mr-1 transition duration-300 ${
-            router.asPath === link &&
+            router.pathname.startsWith(`/${title.toLowerCase()}`) &&
             "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
           } ${!dropdowns && "pb-5"}`}
         >
           {dropdowns ? (
-            title
+            <p>{title}</p>
           ) : (
             <Link href={link} passHref>
               <a>{title}</a>
             </Link>
           )}
-        </span>
+          <span
+            className={`block h-[2px] w-1/2 mx-auto mt-1 ${
+              router.pathname.startsWith(`/${title.toLowerCase()}`)
+                ? "bg-gradient-to-r from-blue-900 to-blue-700"
+                : "bg-transparent"
+            }`}
+          />
+        </div>
       </button>
     );
   };
@@ -123,7 +135,7 @@ const Navbar = ({ colorChange, specificPath }) => {
           colorChange
             ? "bg-white shadow-[0px_-5px_20px_#d7d7d7]"
             : specificPath
-            ? "backdrop-blur-sm bg-white/10 "
+            ? "backdrop-blur-sm bg-white/10"
             : "bg-transparent !pt-10"
         }`}
       >

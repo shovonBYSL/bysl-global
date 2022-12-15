@@ -2,18 +2,21 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
-import PhoneInput from "react-phone-input-2";
 import { useDropzone } from "react-dropzone";
+import PhoneInput from "react-phone-input-2";
 
-import CommonLayout from "../../../layouts/CommonLayout";
-import Loader from "../../../components/shared/Loader";
-import CareersPreviewModal from "../../../components/careers/CareersPreviewModal";
+// components
+import CommonLayout from "../../../../layouts/CommonLayout";
+import Loader from "../../../../components/shared/Loader";
+import CareersPreviewModal from "../../../../components/careers/CareersPreviewModal";
 import {
   CareerInputTitle,
   JobHeader,
-} from "../../../components/careers/CareersCommonComponents";
-import { jobList } from "../../../public/data/careersData";
-import { TextGradient } from "../../../components/shared/SharedTextgroups";
+} from "../../../../components/careers/CareersCommonComponents";
+import { TextGradient } from "../../../../components/shared/SharedTextgroups";
+
+// data
+import { jobList } from "../../../../public/data/careersData";
 
 const ApplicationForm = () => {
   const router = useRouter();
@@ -28,8 +31,8 @@ const ApplicationForm = () => {
   const [experience, setExperience] = useState("");
   const [background, setBackground] = useState("");
   const [whyFit, setWhyFit] = useState("");
+  const [attachment, setAttachment] = useState(null);
   const [fileName, setFileName] = useState("");
-  const [filePath, setFilePath] = useState("");
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
     accept: {
       "application/pdf": [],
@@ -40,71 +43,51 @@ const ApplicationForm = () => {
     setIsOpen(false);
   };
 
-  let convertBase64 = (file) => {
-    return new Promise((resolve, reject) => {
-      const fileReader = new FileReader();
-      fileReader.readAsDataURL(file);
-      fileReader.onload = () => {
-        resolve(fileReader.result);
-      };
-      fileReader.onerror = (error) => {
-        reject(error);
-      };
-    });
-  };
-
   useEffect(() => {
     if (jobId !== "undefined") {
       setData(jobList.find((item) => item.url == jobId));
     }
 
-    const uploadFile = async (e) => {
+    const uploadFile = (e) => {
       if (acceptedFiles.length > 0) {
-        const file = acceptedFiles[0];
-        const base64 = await convertBase64(file);
-
-        setFilePath(base64);
-        setFileName(file.name);
+        setAttachment(acceptedFiles[0]);
+        setFileName(acceptedFiles[0].name);
       }
     };
     uploadFile();
   }, [jobId, acceptedFiles]);
+  console.log(attachment);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "anisur.rahman@intelli.global",
-      Password: "2597486C56508E185A07F608105A6853404E",
-      To: [
-        "anisur.rahman@intelli.global",
-        "kawser.shovon@intelli.global",
-        "info@byslglobal.com",
-      ],
-      From: "anisur.rahman@intelli.global",
-      Subject: `Application for ${data.position}`,
-      Body: `<div>
-      <b>Full Name:</b> <br> ${name} <br><br>
-      <b>Email: </b> <br> ${email} <br><br>
-      <b>Phone: </b> <br> ${phone} <br><br>
-      <b>Location: </b> <br> ${location} <br><br>
-      <b>How many years of professional work experience do you have?: </b> <br> ${experience} <br><br>
-      <b>Could you briefly describe your work background?: </b> <br> ${background} <br><br>
-      <b>Why do you think you are the best fit for this position?: </b> <br> ${whyFit} <br>
-      </div>`,
-      Attachments: [
-        {
-          name: fileName,
-          data: filePath,
-        },
-      ],
-    }).then((message) => {
-      if (message == "OK") {
-        toast.success("Thanks for your application");
-        console.log(message);
+    let support_form = new FormData();
+    support_form.append("subject", `Application for ${data.position}`);
+    support_form.append("name", name);
+    support_form.append("email", email);
+    support_form.append("phone", phone);
+    support_form.append("location", location);
+    support_form.append("experience", experience);
+    support_form.append("background", background);
+    support_form.append("whyFit", whyFit);
+    support_form.append("attachment", attachment);
+    console.log(support_form);
 
+    const endpoint =
+      "http://live.staging.intellidigital.com/api/notification/bysl-job-application/";
+
+    if (attachment != null) {
+      const res = await fetch(`${endpoint}`, {
+        method: "POST",
+        credentials: "include",
+        body: support_form,
+      });
+
+      let result = await res.json();
+
+      if (result.code == 200) {
+        toast.success("Thanks for your application");
         setTimeout(() => {
-          router.push("/careers");
+          router.push("/about/careers");
         }, 2000);
         // after successful
         setName("");
@@ -115,7 +98,9 @@ const ApplicationForm = () => {
         setBackground("");
         setWhyFit("");
       }
-    });
+    } else {
+      toast.error("Please upload your resume.");
+    }
   };
 
   const previewData = [

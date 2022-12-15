@@ -142,11 +142,6 @@ const Footer = () => {
                 <ImTwitter className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-700 transition-all duration-150" />
               </a>
             </Link>
-            <Link passHref href="#">
-              <a target="_blank">
-                <FaPinterestP className="text-lg text-white/40 hover:cursor-pointer hover:text-pink-800 transition-all duration-150" />
-              </a>
-            </Link>
           </div>
           <p className="text-white/40 text-sm mb-2 lg:mb-0 text-center">
             © 2022 BYSL Global Technology Group. All Rights Reserved

@@ -15,7 +15,7 @@ const CompanyInfoLayout = ({
   cardData,
   buttonData,
 }) => {
-  const culturePath = getPath("/about-us/culture");
+  const culturePath = getPath("/about/culture");
 
   return (
     <>
