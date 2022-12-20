@@ -35,7 +35,7 @@ const Manufacturing = ({
       <div className="box">
         {/* problems & solutions section  */}
         <ProblemsAndSolutionsToggle data={problemsAndSolutionsData}>
-          The problems we found in <br className="hidden xxs:block" /> education
+          The problems we found in <br className="hidden xxs:block" /> manufacturing
           industries
         </ProblemsAndSolutionsToggle>
       </div>
