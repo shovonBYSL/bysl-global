@@ -5,20 +5,20 @@ const navbars = [
     dropdowns: [
       {
         id: 0,
-        title: "Retail",
+        title: "Retail Industry",
         subTitle: "Powerful web solutions to scale exponentially",
         link: "/solutions/retail",
       },
       {
         id: 1,
-        title: "Manufacturing",
+        title: "Manufacturing Industry",
         subTitle:
           "Secure, agile and scalable cloud solutions for manufacturing",
         link: "/solutions/manufacturing",
       },
       {
         id: 2,
-        title: "Healthcare",
+        title: "Healthcare Industry",
         subTitle: "Powering the healthcare of the future",
         link: "/solutions/healthcare",
       },
@@ -36,7 +36,7 @@ const navbars = [
       },
       {
         id: 5,
-        title: "Food Services",
+        title: "Food Service Industry",
         subTitle:
           "Balance agility and strength through next-gen FoodTech solutions",
         link: "/solutions/food-services",
