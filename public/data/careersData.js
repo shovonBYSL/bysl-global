@@ -6,7 +6,7 @@ const jobList = [
     department: "Graphics and Multimedia",
     designation: "Sr. Executive",
     experience: "2+ Years Experience",
-    lastDate: "27th Oct, 2022",
+    lastDate: "27th Jan, 2023",
     employmentType: "Full-Time",
     role: "Job Context",
     roleDetails: "",
@@ -77,7 +77,7 @@ const jobList = [
     department: "Digital Core",
     designation: "Sr. Executive",
     experience: "2+ Years Experience",
-    lastDate: "27th Oct, 2022",
+    lastDate: "27th Jan, 2023",
     employmentType: "Full-Time",
     role: "Job Context",
     roleDetails:
@@ -141,7 +141,7 @@ const jobList = [
     department: "Digital Core",
     designation: "Sr. Executive",
     experience: "2+ Years Experience",
-    lastDate: "27th Oct, 2022",
+    lastDate: "27th Jan, 2023",
     employmentType: "Full-Time",
     role: "Job Context",
     roleDetails:
@@ -223,7 +223,7 @@ const jobList = [
     department: "Digital Core",
     designation: "Executive",
     experience: "2+ Years Experience",
-    lastDate: "27th Oct, 2022",
+    lastDate: "27th Jan, 2023",
     employmentType: "Full-Time",
     role: "Job Context",
     roleDetails:
@@ -298,7 +298,7 @@ const jobList = [
     department: "Mobile Application",
     designation: "Executive",
     experience: "2+ Years Experience",
-    lastDate: "27th Oct, 2022",
+    lastDate: "27th Jan, 2023",
     employmentType: "Full-Time",
     role: "Job Context",
     roleDetails:

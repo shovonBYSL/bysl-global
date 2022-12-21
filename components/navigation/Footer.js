@@ -129,17 +129,17 @@ const Footer = () => {
                 <ImFacebook className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-700 transition-all duration-150 " />
               </a>
             </Link>
+            <Link passHref href="#">
+              <a target="_blank">
+                <ImTwitter className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-700 transition-all duration-150" />
+              </a>
+            </Link>
             <Link
               passHref
               href="https://www.linkedin.com/company/byslgroup/?originalSubdomain=bd"
             >
               <a target="_blank">
                 <ImLinkedin2 className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-900 transition-all duration-150" />
-              </a>
-            </Link>
-            <Link passHref href="#">
-              <a target="_blank">
-                <ImTwitter className="text-lg text-white/40 hover:cursor-pointer hover:text-blue-700 transition-all duration-150" />
               </a>
             </Link>
           </div>
