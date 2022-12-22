@@ -22,6 +22,7 @@ const ApplicationForm = () => {
   const router = useRouter();
   const { jobId } = router.query;
 
+  const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState("");
   const [name, setName] = useState("");
@@ -55,13 +56,16 @@ const ApplicationForm = () => {
       }
     };
     uploadFile();
-  }, [jobId, acceptedFiles]);
-  console.log(attachment);
+  }, [jobId, acceptedFiles, isLoading]);
 
   const handleSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
     let support_form = new FormData();
-    support_form.append("subject", `Application for ${data.position}`);
+    support_form.append(
+      "subject",
+      `New Job Application from byslglobal.com for ${data.position}`
+    );
     support_form.append("name", name);
     support_form.append("email", email);
     support_form.append("phone", phone);
@@ -70,7 +74,6 @@ const ApplicationForm = () => {
     support_form.append("background", background);
     support_form.append("whyFit", whyFit);
     support_form.append("attachment", attachment);
-    console.log(support_form);
 
     const endpoint =
       "https://live.intellidigital.com/api/notification/bysl-job-application/";
@@ -86,6 +89,7 @@ const ApplicationForm = () => {
 
       if (result.code == 200) {
         toast.success("Thanks for your application");
+        setIsLoading(false);
         setTimeout(() => {
           router.push("/about/careers");
         }, 2000);
@@ -158,6 +162,12 @@ const ApplicationForm = () => {
               data={previewData}
               handleClose={handleClose}
             />
+          )}
+
+          {isLoading && (
+            <div className="fixed top-0 left-0 h-full w-full bg-white/30 z-40 flex items-center justify-center">
+              <Loader />
+            </div>
           )}
           <div className="max-w-[856px] mx-auto py-10 xl:py-16">
             <JobHeader jobTitle={data.position} />

@@ -1,3 +1,7 @@
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 const ScrollCenterCommon = (id, offset) => {
   document.getElementById(id).scrollIntoView({
     behavior: "auto",
@@ -48,6 +52,7 @@ const scrollYFocus = (id) => {
 };
 
 export {
+  scrollToTop,
   scrollCenter,
   scrollYFocus,
   scrollCenterTop,
