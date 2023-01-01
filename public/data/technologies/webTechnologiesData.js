@@ -232,7 +232,7 @@ const webFeaturesData = {
   type: "Features",
   subTitle:
     "Get the right features designed and developed to serve precise needs. ",
-  img: "/images/technologies/web/features/web_features.png",
+  img: "/images/technologies/web/features/web_features.webp",
   features: [
     {
       id: 0,

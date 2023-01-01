@@ -442,7 +442,7 @@ const blockchainServicesData = [
 ];
 
 const blockchainHealthBannerData = {
-  img: "/images/technologies/blockchain/blockchain_health_banner.png",
+  img: "/images/technologies/blockchain/blockchain_health_banner.webp",
   subTitle:
     "Using blockchain technology to reshape the future of financial landscapes using distributed ledger-based bookkeeping, optimal identification protection through cryptographic ML modeling, increased data security and a next-generation payment system solidifying trust in financial services across the globe. ",
 };

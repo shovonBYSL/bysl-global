@@ -9,8 +9,10 @@ import {
 
 const TriangleCardBanner = (props) => {
   const { children, data, img, video, black, padding, type, reversed } = props;
+
   const iotPath = getPath("/technologies/iot");
   const arVrPath = getPath("/technologies/ar-vr");
+  const cloudPath = getPath("/technologies/cloud");
 
   return (
     <div className="py-10 xl:py-16">
@@ -43,7 +45,7 @@ const TriangleCardBanner = (props) => {
                 iotPath
                   ? "md:h-80 lg:h-[440px] xl:h-[530px]"
                   : "h-56 sm:h-80 md:h-52 lg:h-64 xl:h-80 3xl:h-[440px]"
-              } relative`}
+              } ${cloudPath && "3xl:h-[500px]"} relative`}
             >
               <Image
                 src={img}

@@ -76,7 +76,7 @@ export async function getStaticProps() {
       blockchainFeatures: blockchainFeaturesData,
       blockchainHealthBanner: blockchainHealthBannerData,
       blockchainServices: blockchainServicesData,
-      supplyChainImg: "/images/technologies/blockchain/blockchain_supply.png",
+      supplyChainImg: "/images/technologies/blockchain/blockchain_supply.webp",
       sliderData: techSlidersData[6],
     },
   };

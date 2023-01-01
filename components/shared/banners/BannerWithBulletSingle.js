@@ -23,7 +23,9 @@ const BannerWithBulletSingle = (props) => {
       ${reversed && "lg:flex-row-reverse"}`}
     >
       <div
-        className={`lg:pt-10 ${informationPath ? "lg:w-[50%]" : "lg:w-[55%]"}`}
+        className={`${!aimlPath && "lg:pt-10"} ${
+          informationPath ? "lg:w-[50%]" : "lg:w-[55%]"
+        }`}
       >
         {type && <SectionTitleType title={type} start={true} />}
         <TechnologiesSectionTitle start={true}>
@@ -54,7 +56,7 @@ const BannerWithBulletSingle = (props) => {
       </div>
       <div
         className={`w-full relative xs:w-4/5 lg:w-[45%] lg:h-[350px] xl:h-[450px] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
-          (aimlPath ? "h-52 xxs:h-80" : "h-60 sm:h-80") ||
+          (aimlPath ? "h-52 xxs:h-80 xl:h-[390px]" : "h-60 sm:h-80") ||
           (itesPath && "lg:px-8 2xl:px-16") ||
           (digitalCommercePath && "lg:!w-[50%] 2xl:h-[490px]")
         }`}

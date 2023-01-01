@@ -28,7 +28,7 @@ const DatabaseFeatures = ({ data }) => {
         Multi-model database management
       </TechnologiesSectionTitle>
       <div className="md:flex items-center mt-10  gap-6">
-        <div className="h-44 xs:h-56 lg:h-[475px] md:w-[55%] lg:w-1/2 xl:w-2/5 3xl:w-1/2 relative">
+        <div className="h-44 xs:h-56 lg:h-[424px] md:w-[55%] lg:w-1/2 xl:w-2/5 3xl:w-1/2 relative">
           <Image
             src="/images/technologies/database/database_features_banner.webp"
             layout="fill"

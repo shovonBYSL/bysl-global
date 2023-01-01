@@ -11,6 +11,7 @@ const BannerWithBullets = (props) => {
   const cloudPath = getPath("/technologies/cloud");
   const bigDataPath = getPath("/technologies/bigdata");
   const databasePath = getPath("/technologies/database");
+  const iotPath = getPath("/technologies/iot");
 
   return (
     <div
@@ -42,7 +43,8 @@ const BannerWithBullets = (props) => {
             className={`relative h-48 xs:h-64 sm:h-80 lg:h-[350px] mt-5 lg:mt-0 
             ${!cloudPath && "xl:h-[500px]"}
             ${bigDataPath && "xl:h-[400px]"}
-            ${databasePath && "xl:h-[350px]"}`}
+            ${iotPath && "xl:h-[496px] xl:w-[536px]"}
+            ${databasePath && "xl:h-[416px]"}`}
           >
             <Image
               src={img}

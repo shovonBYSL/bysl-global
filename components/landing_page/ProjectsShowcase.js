@@ -6,9 +6,9 @@ const ProjectsShowcase = ({ data }) => {
       {data.map(({ id, img, video }) => (
         <div
           key={id}
-          className="h-44 md:h-52 lg:h-64 xl:h-72 2xl:h-[350px] w-full rounded-[10px] xl:rounded-[20px] overflow-hidden relative"
+          className="h-44 md:h-52 lg:h-64 xl:h-72 2xl:h-[350px] w-full rounded-xl overflow-hidden relative"
         >
-          {id === 1 ? (
+          {/* {id === 1 ? (
             <video
               className="w-full h-full object-cover"
               src={video}
@@ -16,16 +16,16 @@ const ProjectsShowcase = ({ data }) => {
               muted
               loop
             />
-          ) : (
-            <Image
-              src={img}
-              placeholder="blur"
-              blurDataURL={img}
-              layout="fill"
-              objectFit="cover"
-              alt=""
-            />
-          )}
+          ) : ( */}
+          <Image
+            src={img}
+            placeholder="blur"
+            blurDataURL={img}
+            layout="fill"
+            objectFit="cover"
+            alt=""
+          />
+          {/* )} */}
         </div>
       ))}
     </div>
