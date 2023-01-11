@@ -15,7 +15,6 @@ import {
 const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   const tabState = getLegalState();
   const [legal, setLegal] = useState(0);
-  console.log("tabState", tabState);
 
   // function for tab handle
   const handleClick = (id) => {

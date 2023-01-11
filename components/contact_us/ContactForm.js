@@ -1,68 +1,44 @@
-import Script from "next/script";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import emailjs from "@emailjs/browser";
 
 import {
   TechnologiesSectionTitle,
   TextGradient,
 } from "../shared/SharedTextgroups";
 
+// API endpoint
+import { API } from "../../api";
+
 const ContactForm = ({ data }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const form = useRef();
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_7hk5dfa",
-        "template_vebsjcb",
-        form.current,
-        "DH5QXV_AG3gc3L3wd"
-      )
-      .then(
-        (result) => {
-          e.target.reset();
-          toast.success("Thanks for your message");
-          // after successful
-          setName("");
-          setEmail("");
-          setMessage("");
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error("Sorry, We couldn't send your message");
-        }
-      );
+    let contact_form = new FormData();
 
-    // Email.send({
-    //   Host: "smtp.elasticemail.com",
-    //   Username: "anisur.rahman@intelli.global",
-    //   Password: "2597486C56508E185A07F608105A6853404E",
-    //   To: ["kawser.shovon@intelli.global", "info@byslglobal.com"],
-    //   From: "anisur.rahman@intelli.global",
-    //   Subject: `Message From BYSL Website `,
-    //   Body: `<div>
-    //   <b>Full Name:</b> <br> ${name} <br><br>
-    //   <b>Email: </b> <br> ${email} <br><br>
-    //   <b>Message: </b> <br> ${message} <br><br>
-    //   </div>`,
-    // }).then((message) => {
-    //   if (message == "OK") {
-    //     toast.success("Thanks for your message");
-    //     console.log(message);
+    contact_form.append("name", name);
+    contact_form.append("email", email);
+    contact_form.append("content", message);
 
-    //     // after successful
-    //     setName("");
-    //     setEmail("");
-    //     setMessage("");
-    //   }
-    // });
+    const res = await fetch(`${API}/contact/message/`, {
+      method: "POST",
+      credentials: "include",
+      body: contact_form,
+    });
+
+    if (res.status == 201) {
+      toast.success("Thanks for your message");
+      // after successful
+      setName("");
+      setEmail("");
+      setMessage("");
+    } else {
+      toast.error("Sorry, We couldn't send your message");
+    }
   };
 
   const InputTitle = ({ title }) => (
@@ -71,7 +47,6 @@ const ContactForm = ({ data }) => {
 
   return (
     <div className="py-10 xl:py-16 flex flex-col lg:flex-row gap-6">
-      <Script src="https://smtpjs.com/v3/smtp.js" />
       <ToastContainer theme="dark" />
       <div className="lg:w-2/5 lg:pt-10">
         <TechnologiesSectionTitle start={true}>
@@ -94,7 +69,7 @@ const ContactForm = ({ data }) => {
         </div>
       </div>
       <div className="lg:w-3/5 xs:bg-white rounded-lg lg:rounded-2xl 2xl:rounded-[20px] xs:p-4 sm:p-6 lg:p-8 2xl:px-14 2xl:py-10">
-        <form ref={form} onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="flex flex-col sm:flex-row gap-6 w-full">
             <div className="w-full">
               <InputTitle title="Enter name" />

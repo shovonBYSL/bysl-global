@@ -1,59 +1,63 @@
 import Link from "next/link";
 import Image from "next/image";
+import { format } from "date-fns";
 import { SwiperSlide } from "swiper/react";
 import { VscArrowLeft, VscArrowRight } from "react-icons/vsc";
 
 import SliderLayout from "../shared/slider/SliderLayout";
 import ResourcesBannerSlider1 from "./ResourcesBannerSlider1";
 import ResourcesBannerSlider2 from "./ResourcesBannerSlider2";
-import Loader from "../shared/Loader";
 import { TextGradient } from "../shared/SharedTextgroups";
-import { readingTime } from "../../utils/readingTime";
+import Loader from "../shared/Loader";
 
 const ResourcesBanner = ({ data }) => {
   const newArray = [data[0], data[4], data[3], data[2], data[1]];
-  readingTime();
 
   const BannerImage = ({ data }) => {
     return (
       <>
         <div className="relative h-[372px] lg:min-h-[450px] xl:min-h-[550px] 2xl:h-[700px] w-full">
           <Image
-            src={data.banner}
+            src={data.featured_image}
             placeholder="blur"
-            blurDataURL={data.banner}
+            blurDataURL={data.featured_image}
             layout="fill"
             objectFit="cover"
             alt=""
           />
-          {/* <div className="bg-[#B2C7E2]/30 absolute h-full w-full z-40"></div> */}
+          {/* <div className="bg-[#B2C7E2]/30 absolute h-full w-full z-40"/> */}
         </div>
       </>
     );
   };
 
   const BannerContent = ({ data }) => {
-    const { hits, url, title, type, date, timeToRead } = data;
+    const { view_count, slug, post_title, category, created_at, read_time } =
+      data;
 
     return (
       <div className="px-4 pt-6 mb-14 md:px-0 md:pt-0 md:mb-0">
         <p className="text-xs md:text-sm lg:text-base font-medium">
-          <TextGradient text={type} />
+          <TextGradient text={category.category_name} />
         </p>
         <h3 className="mt-2 mb-2.5 lg:mb-5 xl:mb-10 break-words text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-bold text-gray-800 text-start">
-          {title}
+          {post_title}
         </h3>
         <div className="flex flex-col md:flex-row justify-between items-center gap-y-6 lg:gap-6">
           <div className="w-full flex items-center justify-between md:justify-start gap-3">
-            <p className="text-gray-600 text-xs lg:text-sm">{date}</p>
-            <span className="h-2.5 w-px bg-gray-900/20" />
-            <p id="time" className="text-gray-600 text-xs lg:text-sm">
-              {timeToRead} to read
+            <p className="text-gray-600 text-xs lg:text-sm">
+              {format(new Date(created_at), "MMM d, y")}
             </p>
             <span className="h-2.5 w-px bg-gray-900/20" />
-            <p className="text-gray-600 text-xs lg:text-sm">{hits} views</p>
+            <p id="time" className="text-gray-600 text-xs lg:text-sm">
+              {read_time} mins to read
+            </p>
+            <span className="h-2.5 w-px bg-gray-900/20" />
+            <p className="text-gray-600 text-xs lg:text-sm">
+              {view_count} views
+            </p>
           </div>
-          <Link passHref href={`/resource/${url}`}>
+          <Link passHref href={`/resource/${slug}`}>
             <a className="w-40 text-sm text-center light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 py-2">
               Read More
             </a>

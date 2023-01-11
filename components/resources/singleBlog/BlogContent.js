@@ -1,25 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import StickyBox from "react-sticky-box";
-import { useState } from "react";
+// import { useState } from "react";
+import { format } from "date-fns";
 import {
   FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
 } from "react-share";
-import { BsFillPlayFill } from "react-icons/bs";
+// import { BsFillPlayFill } from "react-icons/bs";
 import { ImFacebook, ImLinkedin2, ImTwitter } from "react-icons/im";
 
-import ResourceVideoModal from "../ResourceVideoModal";
+// import ResourceVideoModal from "../ResourceVideoModal";
 
 const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [videoFile, setVideoFile] = useState();
+  const router = useRouter();
+  const pageLink = `https://byslglobal.com${router.asPath}`;
 
-  const handleClick = (video) => {
-    setIsOpen(true);
-    setVideoFile(video);
-  };
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [videoFile, setVideoFile] = useState();
+
+  // const handleClick = (video) => {
+  //   setIsOpen(true);
+  //   setVideoFile(video);
+  // };
 
   const BlogSideBar = ({ label, data }) => {
     return (
@@ -28,14 +33,14 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
           {label}
         </p>
         <div className="flex flex-col gap-4">
-          {data.map(({ id, url, squareImg, title, date }) => {
+          {data.map(({ id, slug, thumbnail_image, post_title, created_at }) => {
             return (
-              <Link key={id} passHref href={`/resource/${url}`}>
-                <a className="cursor-pointer flex items-center gap-6">
+              <Link key={id} passHref href={`/resource/${slug}`}>
+                <div className="cursor-pointer flex items-center gap-6">
                   <Image
-                    src={squareImg}
+                    src={thumbnail_image}
                     placeholder="blur"
-                    blurDataURL={squareImg}
+                    blurDataURL={thumbnail_image}
                     className="!rounded-full"
                     height={86}
                     width={86}
@@ -43,10 +48,12 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
                     alt=""
                   />
                   <div className="w-full">
-                    <p className=" text-sm text-gray-800">{title}</p>
-                    <p className="mt-2 text-sm text-gray-600">Posted {date}</p>
+                    <p className=" text-sm text-gray-800">{post_title}</p>
+                    <p className="mt-2 text-sm text-gray-600">
+                      Posted {format(new Date(created_at), "MMM d, y")}
+                    </p>
                   </div>
-                </a>
+                </div>
               </Link>
             );
           })}
@@ -57,97 +64,22 @@ const BlogContent = ({ data, popularBlogs, latestBlogs }) => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-16">
-      {isOpen && <ResourceVideoModal video={videoFile} setIsOpen={setIsOpen} />}
-      <div id="article" className="lg:px-5 lg:col-span-8">
-        {data.details.map((item, i) => {
-          const { title, text, img, thumb, points, bullet, highlight, video } =
-            item;
-
-          return (
-            <div key={i}>
-              {title && <p className="text-gray-600 font-extrabold">{title}</p>}
-              {text && (
-                <p
-                  className={`mt-4 ${points ? "mb-4" : "mb-10"} text-gray-600`}
-                >
-                  {text}
-                </p>
-              )}
-              {bullet && (
-                <div className="text-gray-600 mb-10 ml-6 lg:ml-10">
-                  {bullet.map((item, i) => (
-                    <p key={i} className="my-2 bullets">
-                      <span className="font-bold">{item.title}: </span>
-                      {item.info}
-                    </p>
-                  ))}
-                </div>
-              )}
-              {points && (
-                <div className="text-gray-600 mb-10 ml-6">
-                  {points.map((item, i) => (
-                    <p key={i} className="my-2">
-                      <span className="font-bold">{item.title}: </span>
-                      {item.info}
-                    </p>
-                  ))}
-                </div>
-              )}
-              {highlight && (
-                <h4 className="bg-gray-300/30 p-6 2xl:p-8 text-center text-gray-700 font-bold text-xl lg:text-2xl 2xl:text-3xl border border-black/30 mb-10">
-                  {highlight}
-                </h4>
-              )}
-              {img && (
-                <div className="mb-11">
-                  <Image
-                    src={img}
-                    placeholder="blur"
-                    blurDataURL={img}
-                    className="!rounded-[20px]"
-                    height={376}
-                    width={816}
-                    objectFit="cover"
-                    alt=""
-                  />
-                </div>
-              )}
-              {thumb && (
-                <div
-                  onClick={() => handleClick(video)}
-                  className="mb-11 relative"
-                >
-                  <Image
-                    src={thumb}
-                    placeholder="blur"
-                    blurDataURL={thumb}
-                    className="!rounded-[20px]"
-                    height={376}
-                    width={816}
-                    objectFit="cover"
-                    alt=""
-                  />
-                  <div
-                    className={`bg-white h-[46px] w-[46px] relative inline-flex xl:h-[74px] xl:w-[74px] rounded-full justify-center items-center centered`}
-                  >
-                    <BsFillPlayFill className="text-gray-800 text-xl z-10 ml-[3px] xl:text-4xl xl:!ml-1" />
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                  </div>
-                </div>
-              )}
-            </div>
-          );
-        })}
-        <div className="flex gap-x-2 items-center">
+      {/* {isOpen && <ResourceVideoModal video={videoFile} setIsOpen={setIsOpen} />} */}
+      <div className="lg:px-5 lg:col-span-8">
+        <div
+          dangerouslySetInnerHTML={{ __html: data.content }}
+          className="text-gray-600 blogContent"
+        />
+        <div className="flex gap-x-2 items-center mt-10">
           <p className="text-sm text-gray-600">Share</p>
           <div className="flex gap-x-4">
-            <FacebookShareButton url={window.location.href}>
+            <FacebookShareButton url={pageLink}>
               <ImFacebook className="text-gray-600 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
             </FacebookShareButton>
-            <LinkedinShareButton url={window.location.href}>
+            <LinkedinShareButton url={pageLink}>
               <ImLinkedin2 className="text-gray-600 mt-0 cursor-pointer hover:text-blue-900 transition-all duration-150" />
             </LinkedinShareButton>
-            <TwitterShareButton url={window.location.href}>
+            <TwitterShareButton url={pageLink}>
               <ImTwitter className="text-gray-600 mt-0 cursor-pointer hover:text-blue-700 transition-all duration-150" />
             </TwitterShareButton>
           </div>

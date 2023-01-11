@@ -23,9 +23,9 @@ const ResourceBlogLayout = ({ size, data }) => {
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
     >
-      {data.map((item) => {
+      {data.map((item,i) => {
         return (
-          <SwiperSlide key={item.id}>
+          <SwiperSlide key={i}>
             <BlogCard data={item} />
           </SwiperSlide>
         );

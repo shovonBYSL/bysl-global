@@ -1,31 +1,34 @@
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-import {
-  departmentList,
-  jobList,
-  positionTypeList,
-} from "../../public/data/careersData";
+import CareerJobLists from "./CareerJobLists";
 
-const CareerJobCirculars = () => {
-  const [data, setData] = useState(jobList);
-  const [filteredData, setFilteredData] = useState(data);
-
-  const [department, setDepartment] = useState("Departments");
-  const [position, setPosition] = useState("Position Type");
+const CareerJobCirculars = ({
+  careersData,
+  departmentsData,
+  positionsData,
+}) => {
+  const [filteredData, setFilteredData] = useState(careersData);
+  const [department, setDepartment] = useState(0);
+  const [position, setPosition] = useState(0);
   const [departmentOpen, setDepartmentOpen] = useState(false);
   const [positionOpen, setPositionOpen] = useState(false);
 
-  const matchedData = data.filter(
+  const departmentList = [
+    { id: 0, department_name: "All Departments", order_number: 0 },
+    ...departmentsData,
+  ];
+
+  const positionTypeList = [
+    { id: 0, position_name: "All Positions", order_number: 0 },
+    ...positionsData,
+  ];
+
+  const matchedData = careersData.filter(
     (item) =>
-      (item.department == department ||
-        department == "Departments" ||
-        department == "All") &&
-      (item.designation == position ||
-        position == "Position Type" ||
-        position == "All")
+      (item.department.id == department || department == 0) &&
+      (item.position_type.id == position || position == 0)
   );
 
   const handleDepartment = (item) => {
@@ -38,19 +41,19 @@ const CareerJobCirculars = () => {
     setPositionOpen(false);
   };
 
+  const handleSearch = (e) => {
+    const searchText = e.target.value;
+    const matchedJob = careersData.filter((item) =>
+      item.job_title.toLowerCase().includes(searchText.toLowerCase())
+    );
+    setFilteredData(matchedJob);
+    setDepartment(0);
+    setPosition(0);
+  };
+
   useEffect(() => {
     setFilteredData(matchedData);
   }, [position, department]);
-
-  const handleSearch = (e) => {
-    const searchText = e.target.value;
-    const matchedJob = data.filter((item) =>
-      item.position.toLowerCase().includes(searchText.toLowerCase())
-    );
-    setFilteredData(matchedJob);
-    setDepartment("Departments");
-    setPosition("Position Type");
-  };
 
   return (
     <div>
@@ -80,7 +83,12 @@ const CareerJobCirculars = () => {
                   : "rounded-lg lg:rounded-[11px]"
               } text-gray-600 focus:outline-gray-500/10 shadow-[0px_4px_15px_0px_#F1F0F0] hover:cursor-pointer `}
             >
-              <span className="text-gray-400">{department} </span>
+              <span className="text-gray-400">
+                {
+                  departmentList.find((item) => item.id == department)
+                    .department_name
+                }
+              </span>
               <MdKeyboardArrowDown
                 className={`scale-150 xl:scale-[1.7] ${
                   departmentOpen && "-rotate-180 transition duration-700"
@@ -89,13 +97,13 @@ const CareerJobCirculars = () => {
             </div>
             {departmentOpen && (
               <div className="z-20 careerScrollbar shadow-xl lg:shadow-[-3px_10px_15px_0px_#dcdcdc] h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-8 lg:top-12 rounded-b-[11px] left-0 px-5">
-                {departmentList.map((item, i) => (
+                {departmentList.map(({ id, department_name }) => (
                   <p
-                    key={i}
-                    onClick={() => handleDepartment(item)}
+                    key={id}
+                    onClick={() => handleDepartment(id)}
                     className="py-2 md:py-3 text-xs lg:text-sm text-gray-800 hover:cursor-pointer"
                   >
-                    {item}
+                    {department_name}
                   </p>
                 ))}
               </div>
@@ -114,7 +122,12 @@ const CareerJobCirculars = () => {
                   : "rounded-lg lg:rounded-[11px]"
               } text-gray-600 focus:outline-gray-500/10 shadow-[0px_4px_15px_0px_#F1F0F0] hover:cursor-pointer `}
             >
-              <span className="text-gray-400">{position} </span>
+              <span className="text-gray-400">
+                {
+                  positionTypeList.find((item) => item.id == position)
+                    .position_name
+                }
+              </span>
               <MdKeyboardArrowDown
                 className={`scale-150 xl:scale-[1.7] ${
                   positionOpen && "-rotate-180 transition duration-1000"
@@ -123,13 +136,13 @@ const CareerJobCirculars = () => {
             </div>
             {positionOpen && (
               <div className="z-20 careerScrollbar shadow-xl lg:shadow-[-3px_10px_15px_0px_#dcdcdc] h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-8 lg:top-12 rounded-b-[11px] left-0 px-5">
-                {positionTypeList.map((item, i) => (
+                {positionTypeList.map(({ id, position_name }) => (
                   <p
-                    key={i}
-                    onClick={() => handlePosition(item)}
+                    key={id}
+                    onClick={() => handlePosition(id)}
                     className="py-2 md:py-3 text-xs lg:text-sm text-gray-800 hover:cursor-pointer"
                   >
-                    {item}
+                    {position_name}
                   </p>
                 ))}
               </div>
@@ -138,46 +151,7 @@ const CareerJobCirculars = () => {
         </div>
       </div>
 
-      {filteredData.length > 0 ? (
-        <div className="max-w-[1076px] mt-10 lg:mt-16 mx-auto grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-1 gap-x-4 lg:gap-x-0">
-          {filteredData.map(
-            ({ id, url, position, experience, lastDate, employmentType }) => {
-              return (
-                <div
-                  key={id}
-                  className="grid grid-cols-1 lg:grid-cols-12 items-center gap-4 py-6 text-xs md:text-sm lg:text-base border-b border-blue-700 lg:hover:bg-[#EDF1F8] transition duration-500"
-                >
-                  <p className="lg:col-span-3 text-gray-800 font-semibold lg:pl-2.5 pb-2 lg:pb-0 text-sm lg:text-base">
-                    {position}
-                  </p>
-                  <p className="lg:col-span-2 text-gray-600 font-medium">
-                    {experience}
-                  </p>
-                  <p className="lg:col-span-3 text-gray-600 font-medium">
-                    Last Date {lastDate}
-                  </p>
-                  <p className="lg:col-span-2 text-gray-600 font-medium">
-                    {employmentType}
-                  </p>
-                  <div className="lg:col-span-2 text-gray-600 font-medium w-full">
-                    <Link passHref href={`/about/careers/job-description/${url}`}>
-                      <a>
-                        <div className="gradient-btn w-full lg:w-max h-max mx-auto lg:mx-0 text-center rounded-lg text-white text-sm font-semibold px-8 xl:px-[42px] py-2 xl:py-2.5 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700">
-                          Apply Now
-                        </div>
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              );
-            }
-          )}
-        </div>
-      ) : (
-        <p className="shadow-[0px_4px_15px_0px_#F1F0F0] text-xl text-gray-600 font-semibold mt-10 h-32 max-w-[1076px] mx-auto rounded-lg bg-white flex justify-center items-center">
-          No Data Found
-        </p>
-      )}
+      <CareerJobLists data={filteredData} />
     </div>
   );
 };

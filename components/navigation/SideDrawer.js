@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Accordion, AccordionBody } from "@material-tailwind/react";
@@ -10,7 +10,7 @@ import { getItem, setItem } from "../../utils/sessionStorage";
 
 const SideDrawer = ({ showDrawer, setShowDrawer }) => {
   const router = useRouter();
-  const serviceId = getItem();
+  // const serviceId = getItem();
   const [open, setOpen] = useState("");
 
   const handleOpen = (value) => {
@@ -32,6 +32,12 @@ const SideDrawer = ({ showDrawer, setShowDrawer }) => {
         router.asPath === dropItems.link && setOpen(item.id);
       });
     });
+
+    window.addEventListener('resize', function(){
+      if(window.innerWidth >= 1024){
+        document.body.style.overflow = "auto";
+      }
+    })
   }, [showDrawer]);
 
   return (

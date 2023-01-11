@@ -4,7 +4,10 @@ import CareersCompanyInfo from "../../../components/careers/CareersCompanyInfo";
 import CareerWhyBYSL from "../../../components/careers/CareerWhyBYSL";
 import CareerJobCirculars from "../../../components/careers/CareerJobCirculars";
 
-const Careers = () => {
+// API endpoint
+import { API } from "../../../api";
+
+const Careers = ({ careersData, departmentsData, positionsData }) => {
   return (
     <BasicLayout title="Careers" noMargin={true}>
       <div className="box">
@@ -12,7 +15,11 @@ const Careers = () => {
         <CareersBanner />
 
         {/* job circulars section  */}
-        <CareerJobCirculars />
+        <CareerJobCirculars
+          careersData={careersData}
+          departmentsData={departmentsData}
+          positionsData={positionsData}
+        />
 
         {/* company info section  */}
         <CareersCompanyInfo />
@@ -23,5 +30,23 @@ const Careers = () => {
     </BasicLayout>
   );
 };
+
+export async function getStaticProps() {
+  const allJobs = await fetch(`${API}/job-posts/`);
+  const departments = await fetch(`${API}/job-posts/departments/`);
+  const positions = await fetch(`${API}/job-posts/position-types/`);
+
+  const careersData = await allJobs.json();
+  const departmentsData = await departments.json();
+  const positionsData = await positions.json();
+
+  return {
+    props: {
+      careersData,
+      departmentsData,
+      positionsData,
+    },
+  };
+}
 
 export default Careers;
