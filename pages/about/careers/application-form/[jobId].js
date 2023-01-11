@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
@@ -15,16 +14,14 @@ import {
 } from "../../../../components/careers/CareersCommonComponents";
 import { TextGradient } from "../../../../components/shared/SharedTextgroups";
 
-// data
-import { jobList } from "../../../../public/data/careersData";
+// API endpoint
+import { API } from "../../../../api";
 
-const ApplicationForm = () => {
+const ApplicationForm = ({ data }) => {
   const router = useRouter();
-  const { jobId } = router.query;
 
   const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [data, setData] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -45,10 +42,6 @@ const ApplicationForm = () => {
   };
 
   useEffect(() => {
-    if (jobId !== "undefined") {
-      setData(jobList.find((item) => item.url == jobId));
-    }
-
     const uploadFile = (e) => {
       if (acceptedFiles.length > 0) {
         setAttachment(acceptedFiles[0]);
@@ -56,38 +49,31 @@ const ApplicationForm = () => {
       }
     };
     uploadFile();
-  }, [jobId, acceptedFiles, isLoading]);
+  }, [acceptedFiles, isLoading]);
 
   const handleSubmit = async (e) => {
     setIsLoading(true);
     e.preventDefault();
-    let support_form = new FormData();
-    support_form.append(
-      "subject",
-      `New Job Application from byslglobal.com for ${data.position}`
-    );
-    support_form.append("name", name);
-    support_form.append("email", email);
-    support_form.append("phone", phone);
-    support_form.append("location", location);
-    support_form.append("experience", experience);
-    support_form.append("background", background);
-    support_form.append("whyFit", whyFit);
-    support_form.append("attachment", attachment);
+    let application_form = new FormData();
 
-    const endpoint =
-      "https://live.intellidigital.com/api/notification/bysl-job-application/";
+    application_form.append("full_name", name);
+    application_form.append("email", email);
+    application_form.append("phone", phone);
+    application_form.append("location", location);
+    application_form.append("work_experience", experience);
+    application_form.append("work_background_describtion", background);
+    application_form.append("why_fit_for_position", whyFit);
+    application_form.append("resume", attachment);
+    application_form.append("job_post", data.id);
 
     if (attachment != null) {
-      const res = await fetch(`${endpoint}`, {
+      const res = await fetch(`${API}/job-posts/apply/`, {
         method: "POST",
         credentials: "include",
-        body: support_form,
+        body: application_form,
       });
 
-      let result = await res.json();
-
-      if (result.code == 200) {
+      if (res.status === 201) {
         toast.success("Thanks for your application");
         setIsLoading(false);
         setTimeout(() => {
@@ -152,13 +138,12 @@ const ApplicationForm = () => {
 
   return (
     <>
-      <Script src="https://smtpjs.com/v3/smtp.js" />
       {data ? (
         <CommonLayout title="Application Form">
           <ToastContainer theme="dark" />
           {isOpen && (
             <CareersPreviewModal
-              jobTitle={data.position}
+              jobTitle={data.job_title}
               data={previewData}
               handleClose={handleClose}
             />
@@ -170,7 +155,7 @@ const ApplicationForm = () => {
             </div>
           )}
           <div className="max-w-[856px] mx-auto py-10 xl:py-16">
-            <JobHeader jobTitle={data.position} />
+            <JobHeader jobTitle={data.job_title} />
             <form
               onSubmit={handleSubmit}
               className="max-w-[416px] mx-auto lg:pt-6"
@@ -314,5 +299,16 @@ const ApplicationForm = () => {
     </>
   );
 };
+
+export async function getServerSideProps({ params }) {
+  const res = await fetch(`${API}/job-posts/${params.jobId}/`);
+  const jobData = await res.json();
+
+  return {
+    props: {
+      data: jobData,
+    },
+  };
+}
 
 export default ApplicationForm;

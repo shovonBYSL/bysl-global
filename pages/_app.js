@@ -14,9 +14,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 // country code
 import "react-phone-input-2/lib/style.css";
 
@@ -24,11 +21,7 @@ import "react-phone-input-2/lib/style.css";
 import "react-toastify/dist/ReactToastify.css";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <div className="bg-[#f8f8fa]">
-      <Component {...pageProps} />
-    </div>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

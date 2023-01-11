@@ -5,7 +5,7 @@ const nextConfig = {
     scrollRestoration: true,
   },
   images: {
-    domains: ["localhost", "lottiefiles.com", "i.ibb.co"],
+    domains: ["localhost", "lottiefiles.com", "i.ibb.co", "cms-staging.byslglobal.com","cms.byslglobal.com"],
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
