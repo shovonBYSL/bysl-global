@@ -1,25 +1,27 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsImageOverview from "../../components/solutions/SolutionsImageOverview";
 import FoodAndBeverageProblemsAndSolutions from "../../components/solutions/food_and_beverage/FoodAndBeverageProblemsAndSolutions";
-import { solutionsResourcesData } from "../../public/data/solutions/blogData";
+import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
+
 import {
   foodAndBeverageBannerData,
   foodAndBeverageOverviewData,
   foodAndBeverageProblemsAndSolutionsData,
 } from "../../public/data/solutions/foodAndBeverageData";
-import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
+
+import { API } from "../../api";
 
 const FoodAndBeverage = ({
   banner,
   overviewData,
-  solutionsResources,
+  resourcesData,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <SolutionsLayout
       title="Food & Beverage"
-      data={solutionsResources}
+      data={resourcesData}
       noMargin={true}
     >
       {/* banner section  */}
@@ -37,10 +39,13 @@ const FoodAndBeverage = ({
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: foodAndBeverageBannerData,
-      solutionsResources: solutionsResourcesData,
+      resourcesData,
       overviewData: foodAndBeverageOverviewData,
       problemsAndSolutionsData: foodAndBeverageProblemsAndSolutionsData,
     },

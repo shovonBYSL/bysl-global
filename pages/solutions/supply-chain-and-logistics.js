@@ -2,25 +2,27 @@ import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
 import SupplyChainSolutionProblems from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionProblems";
 import SupplyChainSolutionsSolution from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionsSolution";
-import { solutionsResourcesData } from "../../public/data/solutions/blogData";
+import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
+
 import {
   supplyChainAndLogisticsBannerData,
   supplyChainSolutionsOverviewData,
   supplyChainAndLogisticsProblemsAndSolutionsData,
 } from "../../public/data/solutions/supplyChainAndLogisticsData";
-import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
+
+import { API } from "../../api";
 
 const SupplyChainAndLogistics = ({
   banner,
   overviewData,
-  solutionsResources,
+  resourcesData,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <SolutionsLayout
       title="Supply Chain and Logistics"
-      data={solutionsResources}
+      data={resourcesData}
       noMargin={true}
     >
       {/* banner section  */}
@@ -54,10 +56,13 @@ const SupplyChainAndLogistics = ({
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: supplyChainAndLogisticsBannerData,
-      solutionsResources: solutionsResourcesData,
+      resourcesData,
       overviewData: supplyChainSolutionsOverviewData,
       problemsAndSolutionsData: supplyChainAndLogisticsProblemsAndSolutionsData,
     },

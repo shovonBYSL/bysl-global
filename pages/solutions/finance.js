@@ -1,23 +1,25 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import FinanceOverview from "../../components/solutions/finance/FinanceOverview";
 import FinanceProblemsAndSolutions from "../../components/solutions/finance/FinanceProblemsAndSolutions";
-import { solutionsResourcesData } from "../../public/data/solutions/blogData";
+import SolutionsTextImageBanner from "../../components/solutions/SolutionsTextImageBanner";
+
 import {
   financeBannerData,
   financeOverviewData,
   financeProblemsAndSolutionsData,
 } from "../../public/data/solutions/financeSolutionsData";
-import SolutionsTextImageBanner from "../../components/solutions/SolutionsTextImageBanner";
+
+import { API } from "../../api";
 
 const Finance = ({
   banner,
-  solutionsResources,
+  resourcesData,
   overview,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <SolutionsLayout title="Finance" data={solutionsResources}>
+    <SolutionsLayout title="Finance" data={resourcesData}>
       {/* banner section  */}
       <SolutionsTextImageBanner data={banner} />
 
@@ -31,10 +33,13 @@ const Finance = ({
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: financeBannerData,
-      solutionsResources: solutionsResourcesData,
+      resourcesData,
       overview: financeOverviewData,
       problemsAndSolutionsData: financeProblemsAndSolutionsData,
     },
