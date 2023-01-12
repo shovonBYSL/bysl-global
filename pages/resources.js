@@ -29,7 +29,7 @@ const Resources = ({ banner, resourcesData, tutorialsData }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const blogs = await fetch(`${API}/posts/`);
   const tutorials = await fetch(`${API}/posts/tutorials/`);
 

@@ -41,7 +41,7 @@ const Manufacturing = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const blogs = await fetch(`${API}/posts/`);
   const resourcesData = await blogs.json();
 

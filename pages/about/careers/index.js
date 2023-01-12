@@ -31,7 +31,7 @@ const Careers = ({ careersData, departmentsData, positionsData }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const allJobs = await fetch(`${API}/job-posts/`);
   const departments = await fetch(`${API}/job-posts/departments/`);
   const positions = await fetch(`${API}/job-posts/position-types/`);
