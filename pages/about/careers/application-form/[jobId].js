@@ -72,6 +72,7 @@ const ApplicationForm = ({ data }) => {
         credentials: "include",
         body: application_form,
       });
+      console.log(res);
 
       if (res.status === 201) {
         toast.success("Thanks for your application");
