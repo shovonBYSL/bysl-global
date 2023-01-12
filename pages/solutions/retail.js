@@ -3,22 +3,24 @@ import RetailOverview from "../../components/solutions/retail/RetailOverview";
 import SolutionsTextImageBanner from "../../components/solutions/SolutionsTextImageBanner";
 import RetailProblemsAndSolution from "../../components/solutions/retail/RetailProblemsAndSolution";
 import { TextGradient } from "../../components/shared/SharedTextgroups";
-import { solutionsResourcesData } from "../../public/data/solutions/blogData";
+
 import {
   retailBannerData,
   retailOverviewData,
   retailProblemsAndSolutionData,
 } from "../../public/data/solutions/retailSolutionData";
 
+import { API } from "../../api";
+
 const Retail = ({
   banner,
-  solutionsResources,
+  resourcesData,
   overview,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <SolutionsLayout title="Retail" data={solutionsResources}>
+    <SolutionsLayout title="Retail" data={resourcesData}>
       {/* banner section  */}
       <SolutionsTextImageBanner data={banner}>
         Building the
@@ -36,10 +38,13 @@ const Retail = ({
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: retailBannerData,
-      solutionsResources: solutionsResourcesData,
+      resourcesData,
       overview: retailOverviewData,
       problemsAndSolutionsData: retailProblemsAndSolutionData,
     },

@@ -3,18 +3,20 @@ import ITServices from "../components/individual_service/ITServices";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import BlogSlider from "../components/shared/slider/BlogSlider";
 import ITFeatures from "../components/individual_service/ITFeatures";
-import { solutionsResourcesData } from "../public/data/solutions/blogData";
+
 import {
   individualServiceITServicesData,
   ITFeaturesData,
   serviceWhyChooseUsData,
 } from "../public/data/individualServiceData";
 
+import { API } from "../api";
+
 const Service = ({
   banner,
   individualServiceITServices,
   ITFeaturesData,
-  serviceResourceBlog,
+  resourcesData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
@@ -36,18 +38,21 @@ const Service = ({
       <ITFeatures data={ITFeaturesData} />
 
       {/* resources section  */}
-      <BlogSlider data={serviceResourceBlog} />
+      <BlogSlider data={resourcesData} />
     </BasicLayout>
   );
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: "/images/banners/service_banner.webp",
       individualServiceITServices: individualServiceITServicesData,
       serviceWhyChooseUs: serviceWhyChooseUsData,
-      serviceResourceBlog: solutionsResourcesData,
+      resourcesData,
       ITFeaturesData,
     },
   };

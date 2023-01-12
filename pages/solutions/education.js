@@ -3,23 +3,23 @@ import EducationSolutionsBanner from "../../components/solutions/education/Educa
 import EducationSolutions from "../../components/solutions/education/EducationSolutions";
 import EducationProblems from "../../components/solutions/education/EducationProblems";
 import SolutionsOverviewFull from "../../components/solutions/SolutionsOverviewFull";
-import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
   educationOverviewData,
   educationProblemsAndSolutionsData,
 } from "../../public/data/solutions/educationSolutionData";
+import { API } from "../../api";
 
 const Education = ({
   banner,
   overviewData,
-  solutionsResources,
+  resourcesData,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <SolutionsLayout
       title="Education"
-      data={solutionsResources}
+      data={resourcesData}
       noMargin={true}
     >
       {/* banner section  */}
@@ -39,10 +39,13 @@ const Education = ({
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: "/images/banners/education_solutions_banner.png",
-      solutionsResources: solutionsResourcesData,
+      resourcesData,
       overviewData: educationOverviewData,
       problemsAndSolutionsData: educationProblemsAndSolutionsData,
     },

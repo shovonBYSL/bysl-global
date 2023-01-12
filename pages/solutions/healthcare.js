@@ -1,27 +1,24 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
-import { solutionsResourcesData } from "../../public/data/solutions/blogData";
+import ProblemsAndSolutionsToggle from "../../components/solutions/ProblemsAndSolutionsToggle";
+import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
 import {
   healthcareOverviewData,
   healthcareProblemsAndSolutionsData,
   healthcareSolutionsBannerData,
 } from "../../public/data/solutions/healthcareSolutionsData";
-import ProblemsAndSolutionsToggle from "../../components/solutions/ProblemsAndSolutionsToggle";
-import SolutionsBanner from "../../components/shared/banners/SolutionsBanner";
+
+import { API } from "../../api";
 
 const HealthCare = ({
   banner,
-  solutionsResources,
+  resourcesData,
   overviewData,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <SolutionsLayout
-      title="Health Care"
-      data={solutionsResources}
-      noMargin={true}
-    >
+    <SolutionsLayout title="Health Care" data={resourcesData} noMargin={true}>
       {/* banner section  */}
       <SolutionsBanner data={banner} />
 
@@ -40,11 +37,14 @@ const HealthCare = ({
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: healthcareSolutionsBannerData,
       overviewData: healthcareOverviewData,
-      solutionsResources: solutionsResourcesData,
+      resourcesData,
       problemsAndSolutionsData: healthcareProblemsAndSolutionsData,
     },
   };

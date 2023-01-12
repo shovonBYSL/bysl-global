@@ -4,13 +4,15 @@ import BasicLayout from "../layouts/BasicLayout";
 import CookiesPolicy from "../components/legal/CookiesPolicy";
 import PrivacyPolicy from "../components/legal/PrivacyPolicy";
 import TearmsOfUse from "../components/legal/TearmsOfUse";
-import { getLegalState, setLegalState } from "../utils/sessionStorage";
-import { scrollCenter } from "../utils/scroller";
+
 import {
   cookiesPolicyData,
   privacyPolicyData,
   termsAndConditionData,
 } from "../public/data/legalPagesData";
+
+import { getLegalState, setLegalState } from "../utils/sessionStorage";
+import { scrollCenter } from "../utils/scroller";
 
 const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   const tabState = getLegalState();

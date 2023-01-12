@@ -1,27 +1,25 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverviewFull from "../../components/solutions/SolutionsOverviewFull";
 import ProblemsAndSolutionsToggle from "../../components/solutions/ProblemsAndSolutionsToggle";
-import { solutionsResourcesData } from "../../public/data/solutions/blogData";
+import SolutionsTextImageBanner from "../../components/solutions/SolutionsTextImageBanner";
+
 import {
   manufacturingBannerData,
   manufacturingOverviewData,
   manufacturingProblemsAndSolutionsData,
 } from "../../public/data/solutions/manufacturingSolutionsData";
-import SolutionsTextImageBanner from "../../components/solutions/SolutionsTextImageBanner";
+
+import { API } from "../../api";
 
 const Manufacturing = ({
   banner,
-  solutionsResources,
+  resourcesData,
   overviewData,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <SolutionsLayout
-      title="Manufacturing"
-      data={solutionsResources}
-      noMargin={true}
-    >
+    <SolutionsLayout title="Manufacturing" data={resourcesData} noMargin={true}>
       <div className="box">
         {/* banner section  */}
         <SolutionsTextImageBanner data={banner}>
@@ -35,8 +33,8 @@ const Manufacturing = ({
       <div className="box">
         {/* problems & solutions section  */}
         <ProblemsAndSolutionsToggle data={problemsAndSolutionsData}>
-          The problems we found in <br className="hidden xxs:block" /> manufacturing
-          industries
+          The problems we found in <br className="hidden xxs:block" />{" "}
+          manufacturing industries
         </ProblemsAndSolutionsToggle>
       </div>
     </SolutionsLayout>
@@ -44,11 +42,14 @@ const Manufacturing = ({
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: manufacturingBannerData,
       overviewData: manufacturingOverviewData,
-      solutionsResources: solutionsResourcesData,
+      resourcesData,
       problemsAndSolutionsData: manufacturingProblemsAndSolutionsData,
     },
   };

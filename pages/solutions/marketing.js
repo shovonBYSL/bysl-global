@@ -2,26 +2,24 @@ import SolutionsLayout from "../../layouts/SolutionsLayout";
 import MarketingBanner from "../../components/solutions/marketing/MarketingBanner";
 import MarketingProblemsAndSolutions from "../../components/solutions/marketing/MarketingProblemsAndSolutions";
 import SolutionsImageOverview from "../../components/solutions/SolutionsImageOverview";
-import { solutionsResourcesData } from "../../public/data/solutions/blogData";
+
 import {
   marketingBannerData,
   marketingOverviewData,
   marketingProblemsAndSolutionsData,
 } from "../../public/data/solutions/marketingSolutionsData";
 
+import { API } from "../../api";
+
 const Marketing = ({
   banner,
-  solutionsResources,
+  resourcesData,
   marketingOverview,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <SolutionsLayout
-      title="Marketing"
-      data={solutionsResources}
-      noMargin={true}
-    >
+    <SolutionsLayout title="Marketing" data={resourcesData} noMargin={true}>
       {/* banner section  */}
       <MarketingBanner data={banner} />
 
@@ -37,10 +35,13 @@ const Marketing = ({
 };
 
 export async function getStaticProps() {
+  const blogs = await fetch(`${API}/posts/`);
+  const resourcesData = await blogs.json();
+
   return {
     props: {
       banner: marketingBannerData,
-      solutionsResources: solutionsResourcesData,
+      resourcesData,
       marketingOverview: marketingOverviewData,
       problemsAndSolutionsData: marketingProblemsAndSolutionsData,
     },
