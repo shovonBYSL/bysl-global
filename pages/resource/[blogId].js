@@ -19,7 +19,7 @@ const SingleResource = ({ data, allBlogs }) => {
           <BlogContent
             data={data}
             popularBlogs={popular(allBlogs, 3)}
-            latestBlogs={allBlogs.slice(-3)}
+            latestBlogs={allBlogs.slice(0, 3)}
           />
         </CommonLayout>
       ) : (
@@ -31,14 +31,14 @@ const SingleResource = ({ data, allBlogs }) => {
 
 export async function getServerSideProps({ params }) {
   const res = await fetch(`${API}/posts/`);
-  const allResourcesData = await res.json();
+  const resourcesData = await res.json();
 
   const singleRes = await fetch(`${API}/posts/${params.blogId}/`);
   const singleResourcesData = await singleRes.json();
 
   return {
     props: {
-      allBlogs: allResourcesData,
+      allBlogs: resourcesData,
       data: singleResourcesData,
     },
   };

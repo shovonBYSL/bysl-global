@@ -5,7 +5,7 @@ const popular = (arr, n) => {
   return arr
     .slice()
     .sort((a, b) => {
-      return b.hits - a.hits;
+      return b.view_count - a.view_count;
     })
     .slice(0, n);
 };
